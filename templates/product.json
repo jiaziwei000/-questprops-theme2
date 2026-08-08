@@ -25,11 +25,19 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "product-title-md",
+            "title_size": "product-title-lg",
             "title_size_mobile": "product-title-md",
-            "title_tag": "h1",
+            "title_tag": "p",
             "show_price": true,
             "show_rating": true
+          }
+        },
+        "badges_tnb6kp": {
+          "type": "badges",
+          "settings": {
+            "show_sold_out": false,
+            "show_save_amount": true,
+            "save_type": "percent"
           }
         },
         "description": {
@@ -86,6 +94,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share",
             "show_help_desk": true,
@@ -152,6 +161,7 @@
       "block_order": [
         "vendor",
         "title",
+        "badges_tnb6kp",
         "description",
         "countdown",
         "variant_picker",
@@ -267,7 +277,7 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "Video slide 1",
+            "heading": "DAY 1–3 | Pain Fades At Once",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -278,7 +288,7 @@
         "slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "Video slide 2",
+            "heading": "DAY 4–7 | Morning Stiffness Gone",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -289,7 +299,7 @@
         "slide-3": {
           "type": "slide",
           "settings": {
-            "heading": "Video slide 3",
+            "heading": "DAY 8–20 | Chronic Discomfort Eases",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -300,7 +310,7 @@
         "slide-4": {
           "type": "slide",
           "settings": {
-            "heading": "Video slide 4",
+            "heading": "DAY 21–30 | Comfort As Normal",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -315,14 +325,16 @@
         "slide-3",
         "slide-4"
       ],
+      "custom_css": [],
       "settings": {
-        "transparent_header": false,
+        "transparent_header": true,
         "video": "shopify://files/videos/7月15日 (1)(2).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
+        "description": "DAY 1–3🌿First ContactFeel the warmth and gentle pulse from your very first use.",
+        "enable_video_autoplay": false,
         "enable_video_looping": true,
         "content_width": "medium",
+        "video_mobile": "shopify://files/videos/7月15日 (1)(2).mp4",
         "video_url_mobile": "",
         "color_text": "#ffffff",
         "color_background": "",
@@ -442,7 +454,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "description": "<p>QuestProps focuses on professional cervical care. Our ergonomic neck massager combines heat therapy and EMS pulses to ease neck soreness instantly, helping you fix poor posture and relieve fatigue from long hours of work.<br/><br/></p>",
         "button_label": "View more",
         "button_link": "",
         "button_external": false,
