@@ -96,7 +96,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Harmony Sound</strong> is more than just an audio equipment retailer. We represent the grandeur of sound in its finest manifestations. Our mission is to cater to audiophiles and those who simply appreciate quality sound. We offer audio devices that combine unparalleled sound with elegant design. Every product in our catalog promises a full immersion into the world of music for those unwilling to compromise on quality.<br/><br/>We offer everything from the warm sound of vinyl records to the clarity and crispness of modern wireless headphones, ensuring every note sounds impeccable.</p>",
+            "text": "<p><br/>QuestProps is far more than a seller of neck care tools. We capture the calm of tension-free necks at its purest. We cater to busy professionals and all those plagued by daily cervical discomfort. Our neck massagers combine professional relief efficacy with sleek, understated aesthetics. Each unit unlocks deep, uninterrupted neck relaxation for anyone unwilling to settle for fleeting comfort. From quick pulse relief and constant heat compression to targeted acupoint massage and posture correction, we ensure your neck stays loose and pain-free with every use.<br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -115,7 +115,7 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "We believe in the  power of <em>sound</em>",
+        "heading": "We believe in the power of <em>unburdened necks</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
@@ -604,6 +604,7 @@
     },
     "rich-text-2": {
       "type": "rich-text",
+      "disabled": true,
       "custom_css": [
         "@media screen and (min-width: 1536px) and (max-width: 1920px) {.collage, .collage .title-wrapper {padding-inline: 0; }}",
         "@media screen and (min-width: 1920px) {.collage, .collage .title-wrapper {padding-inline: var(--grid-gap); }}"
@@ -611,7 +612,7 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Build your <em>Bundle</em>",
+        "heading": "We believe in the power of <em>cervical relief</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "large",
@@ -1179,6 +1180,7 @@
       ],
       "settings": {
         "transparent_header": false,
+        "image": "shopify://shop_images/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
         "image_height": "750px",
         "content_position": "md:items-center md:justify-center",
         "image_height_mobile": "500px",
@@ -1349,6 +1351,7 @@
         "image-6",
         "image-7"
       ],
+      "disabled": true,
       "settings": {
         "direction": "right",
         "speed": 5,
