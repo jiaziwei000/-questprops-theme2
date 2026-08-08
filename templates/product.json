@@ -42,6 +42,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "text_size": "text-base"
           }
@@ -456,12 +457,12 @@
         "image-4"
       ],
       "settings": {
-        "heading": "Collage",
+        "heading": "Fuel your days with a neck routine that works",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>QuestProps focuses on professional cervical care. Our ergonomic neck massager combines heat therapy and EMS pulses to ease neck soreness instantly, helping you fix poor posture and relieve fatigue from long hours of work.<br/><br/></p>",
+        "description": "<p>Combining EMS pulse therapy, warm compression and acupoint massage, our neck massager merges all your separate neck care steps into one simple daily ritual. So your neck stays relaxed and pain-free, every single day.<br/><br/></p>",
         "button_label": "View more",
         "button_link": "",
         "button_external": false,
