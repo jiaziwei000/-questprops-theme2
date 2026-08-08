@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:sections.footer-group.name",
@@ -68,8 +77,11 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
+        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -91,7 +103,7 @@
         "logo_social": {
           "type": "logo_social",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
+            "logo": "shopify://shop_images/logo543a7cecfd467c8e0_7c852205-5ba0-4350-aca6-d396bff00c93.png",
             "logo_height": 50,
             "show_social": false,
             "enable_follow_on_shop": false
@@ -102,7 +114,8 @@
           "settings": {
             "heading": "Quick links",
             "menu": "footer",
-            "container_width": 50
+            "container_width": 50,
+            "opened": false
           }
         },
         "link_list-2": {
@@ -110,7 +123,8 @@
           "settings": {
             "heading": "Information",
             "menu": "footer",
-            "container_width": 50
+            "container_width": 50,
+            "opened": false
           }
         },
         "brand_information": {
@@ -125,7 +139,8 @@
             "button_link_3": "",
             "button_label_4": "",
             "button_link_4": "",
-            "container_width": 95
+            "container_width": 95,
+            "opened": false
           }
         }
       },
@@ -141,7 +156,6 @@
         "newsletter_heading": "Stay in the loop with our weekly newsletter",
         "newsletter_heading_size": "md:title-lg",
         "newsletter_text": "",
-        "newsletter_logo": "",
         "newsletter_logo_height": 50,
         "show_social": true,
         "enable_follow_on_shop": false,

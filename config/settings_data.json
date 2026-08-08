@@ -10,10 +10,10 @@
 {
   "current": {
     "logo": "{{ shop.brand.logo }}",
-    "white_logo": "",
+    "white_logo": "shopify://shop_images/logo543a7cecfd467c8e0_7c852205-5ba0-4350-aca6-d396bff00c93.png",
     "logo_width": 70,
     "logo_mobile": "shopify://shop_images/logo543a7cecfd467c8e0_7c852205-5ba0-4350-aca6-d396bff00c93.png",
-    "white_logo_mobile": "",
+    "white_logo_mobile": "shopify://shop_images/logo543a7cecfd467c8e0_7c852205-5ba0-4350-aca6-d396bff00c93.png",
     "logo_width_mobile": 70,
     "favicon": "",
     "color_text": "#171717",
@@ -178,7 +178,14 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "7924418359578431505": {
+        "type": "shopify://apps/seoant-ai-seo/blocks/seoant-core/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "installed_preset_name": "Concept",
   "presets": {
