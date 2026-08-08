@@ -19,8 +19,8 @@
           "settings": {
             "icon": "support",
             "custom_icon": "",
-            "heading": "Customer service",
-            "text": "<p>It’s not actually free we just price it into the products.</p>",
+            "heading": "180-Day Risk-Free Trial",
+            "text": "<p><br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -31,13 +31,14 @@
             "icon": "box",
             "custom_icon": "",
             "heading": "Fast Free Shipping",
-            "text": "<p>Get free shipping on orders of $150 or more</p>",
+            "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "column-3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "icon": "users",
             "custom_icon": "",
@@ -102,6 +103,7 @@
       "blocks": {
         "logo_social": {
           "type": "logo_social",
+          "disabled": true,
           "settings": {
             "logo": "shopify://shop_images/logo543a7cecfd467c8e0_7c852205-5ba0-4350-aca6-d396bff00c93.png",
             "logo_height": 50,

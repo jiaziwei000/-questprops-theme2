@@ -204,6 +204,107 @@
         "rounded": false
       }
     },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4",
+        "question-5",
+        "contact"
+      ],
+      "settings": {
+        "style": "with-background",
+        "heading": "FAQs",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 24,
+        "padding_bottom": 36,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "help-drawer": {
       "type": "help-drawer",
       "blocks": {
@@ -529,6 +630,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "600px",
         "image_width": "medium",
@@ -562,7 +664,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
+            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
             "text_size": 160,
             "text_font": "heading",
             "highlighted_text": "stencil",
@@ -669,8 +771,8 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Collapsible row 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "What is QuestProps?",
+            "content": "<p><br/>QuestProps is an all-in-one daily neck relief device built for busy people.<br/>Combining EMS pulse massage, constant warm heat therapy and acupoint kneading, it replaces costly salon neck massages, heating pads and handheld massagers all in one ergonomic pillow. It eases neck soreness from day one, letting you enjoy relaxed, pain-free cervical comfort every single day.<br/><br/></p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -681,7 +783,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Collapsible row 2",
+            "heading": "How do I know if QuestProps is right for me?",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "metafields": "",
             "text_size": "text-base"
@@ -693,14 +795,15 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Collapsible row 3",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "What products & treatments does QuestProps replace?",
+            "content": "<p>QuestProps saves you frequent trips to massage parlors.<br/>It replaces pricey manual neck massages, heating pads, massage guns and neck pain patches.<br/>All your daily neck relief needs are covered in one compact device.</p>",
             "metafields": "",
             "text_size": "text-base"
           }
         },
         "collapsible_tab-4": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
@@ -731,7 +834,7 @@
         "style": "with-border",
         "open_first_row": true,
         "specifications_heading": "Included in the Box",
-        "heading": "Product details",
+        "heading": "Questions? We've got answers.",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -756,106 +859,6 @@
         "padding_bottom": 28,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "settings": {
-            "heading": "Didn’t find your answer?",
-            "text": "<p>Don't hestitate to contact us</p>",
-            "show_phone": false,
-            "avatar_height": 60,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "question-1",
-        "question-2",
-        "question-3",
-        "question-4",
-        "question-5",
-        "contact"
-      ],
-      "settings": {
-        "style": "with-background",
-        "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#ffffff",
-        "color_background": "#171717",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 4,
-        "padding_top": 84,
-        "padding_bottom": 84,
-        "divider": false,
-        "narrow": false,
         "rounded": false
       }
     },
@@ -927,6 +930,7 @@
   },
   "order": [
     "main-product",
+    "faq",
     "help-drawer",
     "video-hero",
     "collage",
@@ -934,7 +938,6 @@
     "scrolling-text",
     "image-with-text-2",
     "product-details",
-    "faq",
     "product-recommendations",
     "recently-viewed"
   ]
