@@ -394,10 +394,11 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline</em>",
-            "heading": "Example heading",
+            "subheading": "Spend more time in the garden.",
+            "heading": "🌿 Gardening",
             "link": "",
             "invert_subheading_heading": false,
+            "image": "shopify://shop_images/1424e19b85d4d4b6087daa64c2dddedf.jpg",
             "image_ratio": "landscape",
             "content_position": "md:items-end md:justify-center",
             "text_alignment": "center",
@@ -406,20 +407,21 @@
             "text_alignment_mobile": "center",
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
+            "color_text": "#F5F5F5",
+            "color_highlight": "#FDE047",
             "gradient_highlight": "",
             "color_overlay": "#171717",
-            "overlay_opacity": 30
+            "overlay_opacity": 40
           }
         },
         "image-2": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline</em>",
-            "heading": "Example heading",
+            "subheading": "Make long drives feel more comfortable.",
+            "heading": "🚗 Driving",
             "link": "",
             "invert_subheading_heading": false,
+            "image": "shopify://shop_images/ed6ceb098891f4eaf51b570e2afbb44c.jpg",
             "image_ratio": "portrait",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
@@ -428,20 +430,21 @@
             "text_alignment_mobile": "left",
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
+            "color_text": "#F5F5F5",
             "color_highlight": "#fde047",
             "gradient_highlight": "",
             "color_overlay": "#171717",
-            "overlay_opacity": 30
+            "overlay_opacity": 40
           }
         },
         "image-3": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline</em>",
-            "heading": "Example heading",
+            "subheading": "Take your routine wherever you go.",
+            "heading": "✈️ Travel",
             "link": "",
             "invert_subheading_heading": false,
+            "image": "shopify://shop_images/5b5059dbad8a13269d8e18ba3ceb901c.jpg",
             "image_ratio": "portrait",
             "content_position": "md:items-start md:justify-end",
             "text_alignment": "right",
@@ -450,20 +453,21 @@
             "text_alignment_mobile": "right",
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
+            "color_text": "#4B5563",
             "color_highlight": "#fde047",
             "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 30
+            "color_overlay": "#160101",
+            "overlay_opacity": 40
           }
         },
         "image-4": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline</em>",
-            "heading": "Example heading",
+            "subheading": "Enjoy your time without constantly thinking about your neck.",
+            "heading": "🏌️ Weekend",
             "link": "",
             "invert_subheading_heading": true,
+            "image": "shopify://shop_images/449a32abeb8d2cd27c190846d0970f70.jpg",
             "image_ratio": "landscape",
             "content_position": "md:items-end md:justify-end",
             "text_alignment": "right",
@@ -472,11 +476,11 @@
             "text_alignment_mobile": "right",
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 30
+            "color_text": "#F5F5F5",
+            "color_highlight": "#EEEEEE",
+            "gradient_highlight": "linear-gradient(86deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+            "color_overlay": "#1F2933",
+            "overlay_opacity": 40
           }
         }
       },
