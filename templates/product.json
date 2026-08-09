@@ -205,6 +205,7 @@
     },
     "1786265603ac9a21f6": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "color_text": "",
         "color_background": "",
@@ -299,10 +300,21 @@
     "video-hero": {
       "type": "video-hero",
       "blocks": {
+        "slide_cK769c": {
+          "type": "slide",
+          "settings": {
+            "heading": "A smarter wayto reset your neck.",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "",
+            "heading": "Soothing warmthwith gentle stimulation.",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -313,7 +325,7 @@
         "slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "",
+            "heading": "A comfortable fitdesigned for everyday use.",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -324,7 +336,7 @@
         "slide-3": {
           "type": "slide",
           "settings": {
-            "heading": "",
+            "heading": "Ten minutesto make time for yourself.",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -345,6 +357,7 @@
         }
       },
       "block_order": [
+        "slide_cK769c",
         "slide-1",
         "slide-2",
         "slide-3",
@@ -687,7 +700,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "What is QuestProps?",
+            "heading": "Product details",
             "content": "<p><br/>QuestProps is an all-in-one daily neck relief device built for busy people.<br/>Combining EMS pulse massage, constant warm heat therapy and acupoint kneading, it replaces costly salon neck massages, heating pads and handheld massagers all in one ergonomic pillow. It eases neck soreness from day one, letting you enjoy relaxed, pain-free cervical comfort every single day.<br/><br/></p>",
             "metafields": "",
             "text_size": "text-base"
