@@ -210,7 +210,7 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "<strong>Product description</strong>",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -219,7 +219,7 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "<strong>Who's it for</strong>",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -228,7 +228,7 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "<strong>Benefits</strong>",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -237,7 +237,7 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "<strong>Why trust us</strong>",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -246,7 +246,7 @@
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "<strong>Shipping & Returns</strong>",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -275,12 +275,12 @@
       ],
       "settings": {
         "style": "with-background",
-        "heading": "FAQs",
+        "heading": "Frequently Asked Questions",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
