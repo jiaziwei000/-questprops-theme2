@@ -700,8 +700,8 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Product details",
-            "content": "<p><br/>QuestProps is an all-in-one daily neck relief device built for busy people.<br/>Combining EMS pulse massage, constant warm heat therapy and acupoint kneading, it replaces costly salon neck massages, heating pads and handheld massagers all in one ergonomic pillow. It eases neck soreness from day one, letting you enjoy relaxed, pain-free cervical comfort every single day.<br/><br/></p>",
+            "heading": "Technology",
+            "content": "<p><br/>EMS Muscle Stimulation + Heat Therapy<br/><br/></p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -712,8 +712,8 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "How do I know if QuestProps is right for me?",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "Session Time",
+            "content": "<p><br/>10–15 minutes per session<br/><br/></p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -724,8 +724,8 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "What products & treatments does QuestProps replace?",
-            "content": "<p>QuestProps saves you frequent trips to massage parlors.<br/>It replaces pricey manual neck massages, heating pads, massage guns and neck pain patches.<br/>All your daily neck relief needs are covered in one compact device.</p>",
+            "heading": "What's Included",
+            "content": "<p><br/>Neck Restore Device + Remote Control + USB Charging Cable + User Guide<br/><br/></p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -763,7 +763,7 @@
         "style": "with-border",
         "open_first_row": true,
         "specifications_heading": "Included in the Box",
-        "heading": "Questions? We've got answers.",
+        "heading": "Tech Specs",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
