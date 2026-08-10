@@ -761,6 +761,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "600px",
         "image_width": "medium",
@@ -1090,10 +1091,10 @@
     "1786265603ac9a21f6",
     "help-drawer",
     "slideshow_bBBh9h",
+    "scrolling-text",
     "video-hero",
     "collage",
     "image-with-text-1",
-    "scrolling-text",
     "image-with-text-2",
     "product-details",
     "product-recommendations",
