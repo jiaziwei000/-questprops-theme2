@@ -941,6 +941,81 @@
         "rounded": false
       }
     },
+    "testimonials_banner_XPL8te": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial_rRhhd7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I’ve been using this after work when my neck feels tight. The heat is probably my favorite part. It only takes about 10 minutes, so it’s easy to fit into my evening routine.</p>",
+            "author": "Sarah M.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_j7UjV7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I sit at a desk most of the day and usually notice my neck getting uncomfortable by the evening. I’ve started using this while watching TV and really like how simple it is.</p>",
+            "author": "Michael R",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_AwdbXj": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I wasn’t sure what to expect from the EMS at first, but after trying a few different settings I found one that feels really comfortable for me. The heat makes it especially relaxing.</p>",
+            "author": "Linda P.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_rRhhd7",
+        "testimonial_j7UjV7",
+        "testimonial_AwdbXj"
+      ],
+      "name": "t:sections.testimonials-banner.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
+        "image_height": "650px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 60,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -1087,6 +1162,7 @@
     "product-details",
     "product-recommendations",
     "recently-viewed",
+    "testimonials_banner_XPL8te",
     "faq",
     "1786266566d2c36dbf"
   ]
