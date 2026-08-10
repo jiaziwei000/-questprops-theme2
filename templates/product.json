@@ -430,7 +430,7 @@
         "slide_cK769c": {
           "type": "slide",
           "settings": {
-            "heading": "① Neck tension builds up.Long hours sitting, driving, or working can leave your neck feeling tight and tired.",
+            "heading": "Neck tension builds up.Long hours sitting, driving, or working can leave your neck feeling tight and tired.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -441,7 +441,7 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "② Put the tension on pause.QUESTPROPS™ combines gentle EMS stimulation with soothing heat.",
+            "heading": "Put the tension on pause.QUESTPROPS™ combines gentle EMS stimulation with soothing heat.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -452,7 +452,7 @@
         "slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "③ Just 10 minutes a day.Relax while the device works around your neck.",
+            "heading": "Just 10 minutes a day.Relax while the device works around your neck.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -463,8 +463,8 @@
         "slide-3": {
           "type": "slide",
           "settings": {
-            "heading": "④ Get back to what you love.Less time thinking about your neck. More time doing what matter",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "Get back to what you love.Less time thinking about your neck. More time doing what matter",
+            "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
