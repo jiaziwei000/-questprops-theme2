@@ -295,7 +295,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sound. Sculpted.",
+            "heading": "Relax. Restore. Repeat.",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -306,7 +306,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>A speaker that excites the eye and ear from every angle.</p>",
+            "text": "<p>A simple daily ritual designed to ease neck tension with soothing heat and gentle EMS.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -321,8 +321,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Echo Elegance",
-            "button_link": "",
+            "button_label": "Shop Neck Restore",
+            "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -542,64 +542,6 @@
         "divider": false,
         "full_width": false,
         "rounded": true
-      }
-    },
-    "image-comparison": {
-      "type": "image-comparison",
-      "blocks": {
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "subheading": "Flow Harmony",
-            "heading": "Gold Tone",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "subheading": "Flow Harmony",
-            "heading": "Crimson Shadow",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image-1",
-        "image-2"
-      ],
-      "settings": {
-        "layout": "horizontal",
-        "image_height": "750px",
-        "image_height_mobile": "300px",
-        "heading": "<em>Vibrant Headphone Choices</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "Sound in Spectrum",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "text",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "linear-gradient(90deg, rgba(249, 197, 141, 1), rgba(43, 43, 43, 1) 100%)",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "rich-text-2": {
@@ -1412,7 +1354,6 @@
     "collection-list",
     "video-with-text-overlay",
     "featured-product",
-    "image-comparison",
     "rich-text-2",
     "product-bundle",
     "scrolling-text-1",
