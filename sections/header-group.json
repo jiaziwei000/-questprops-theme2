@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header-group.name",
@@ -9,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping and returns",
+            "text": "FREE SHIPPING + Guarantee + Warranty",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -19,6 +28,7 @@
         },
         "announcement-2": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "email",
             "text": "A question? Visit our contact page",
@@ -40,9 +50,12 @@
         "enable_country_selector": true,
         "invert_icons_selectors": false,
         "announcement_position": "center",
+        "announcement_layout": "carousel",
         "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
+        "direction": "left",
+        "speed": 20,
         "color_text": "#fafafa",
         "color_background": "#1f1f1f",
         "gradient_background": "",
@@ -71,9 +84,7 @@
             "tab_target_link_1": "shopify://collections/all",
             "tab_products_1": [],
             "tab_product_limit_1": 4,
-            "tab_icon_1": "",
             "tab_icon_width_1": 42,
-            "promo_image_1": "",
             "promo_image_ratio_1": "square",
             "promo_heading_1": "Build your bundle",
             "promo_subtext_1": "Buy 3 and save 30%",
@@ -87,9 +98,7 @@
             "tab_target_link_2": "shopify://collections/all",
             "tab_products_2": [],
             "tab_product_limit_2": 4,
-            "tab_icon_2": "",
             "tab_icon_width_2": 42,
-            "promo_image_2": "",
             "promo_image_ratio_2": "adapt",
             "promo_heading_2": "RhythmiQ",
             "promo_subtext_2": "Compact Power Unleashed",
@@ -103,9 +112,7 @@
             "tab_target_link_3": "shopify://collections/all",
             "tab_products_3": [],
             "tab_product_limit_3": 4,
-            "tab_icon_3": "",
             "tab_icon_width_3": 42,
-            "promo_image_3": "",
             "promo_image_ratio_3": "adapt",
             "promo_heading_3": "Home Audio",
             "promo_subtext_3": "View the collection",
@@ -119,9 +126,7 @@
             "tab_target_link_4": "shopify://collections/all",
             "tab_products_4": [],
             "tab_product_limit_4": 4,
-            "tab_icon_4": "",
             "tab_icon_width_4": 42,
-            "promo_image_4": "",
             "promo_image_ratio_4": "adapt",
             "promo_heading_4": "Build your bundle",
             "promo_subtext_4": "Save $30 when buying all 3 items",
@@ -152,23 +157,28 @@
         "mega-menu"
       ],
       "settings": {
+        "logo_h1": true,
         "menu": "main-menu",
         "menu_mobile": "",
         "menu_active": "block",
         "hover_menu": true,
         "header_layout": "left-center",
         "sticky_header_type": "always",
+        "icons_size": "lg",
+        "menu_drawer_icon_label": "",
         "enable_language_selector_desktop": false,
         "enable_country_selector_desktop": false,
         "show_country_name_dekstop": false,
         "show_country_flag_desktop": false,
         "logo_position_mobile": "center",
+        "accordion_menu_mobile": false,
         "show_social": true,
         "enable_language_selector": true,
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
         "color_text": "#171717",
         "color_background": "#ffffff",
+        "color_localization": "",
         "padding_top": 32,
         "padding_bottom": 32,
         "full_width": true,
