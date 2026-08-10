@@ -390,14 +390,48 @@
         "parallax_direction": "vertical"
       }
     },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "rounded": false
+      }
+    },
     "video-hero": {
       "type": "video-hero",
       "blocks": {
         "slide_cK769c": {
           "type": "slide",
           "settings": {
-            "heading": "A smarter wayto reset your neck.",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "① Neck tension builds up.Long hours sitting, driving, or working can leave your neck feeling tight and tired.",
+            "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
@@ -407,8 +441,8 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "Soothing warmthwith gentle stimulation.",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "② Put the tension on pause.QUESTPROPS™ combines gentle EMS stimulation with soothing heat.",
+            "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
@@ -418,8 +452,8 @@
         "slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "A comfortable fitdesigned for everyday use.",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "③ Just 10 minutes a day.Relax while the device works around your neck.",
+            "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
@@ -429,18 +463,7 @@
         "slide-3": {
           "type": "slide",
           "settings": {
-            "heading": "Ten minutesto make time for yourself.",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "slide-4": {
-          "type": "slide",
-          "settings": {
-            "heading": "",
+            "heading": "④ Get back to what you love.Less time thinking about your neck. More time doing what matter",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -453,8 +476,7 @@
         "slide_cK769c",
         "slide-1",
         "slide-2",
-        "slide-3",
-        "slide-4"
+        "slide-3"
       ],
       "custom_css": [],
       "settings": {
@@ -682,40 +704,6 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
-            "text_size": 160,
-            "text_font": "heading",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "divider": false,
-        "rounded": false
       }
     },
     "image-with-text-2": {
