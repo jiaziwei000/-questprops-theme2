@@ -297,6 +297,99 @@
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
       }
     },
+    "slideshow_bBBh9h": {
+      "type": "slideshow",
+      "blocks": {
+        "image_mERrtB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/909090555559.jpg",
+            "heading": "Long Days Leave Their Mark",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_PD3MHF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/565659.jpg",
+            "image_mobile": "shopify://shop_images/565659.jpg",
+            "heading": "Long Drives Take Their Toll.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_pHJd6y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/676.jpg",
+            "heading": "Screen Time Adds Up.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_wRWDE6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5555559.jpg",
+            "heading": "Give Your Neck 10 Minutes.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_mERrtB",
+        "image_PD3MHF",
+        "image_pHJd6y",
+        "image_wRWDE6"
+      ],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "500px",
+        "content_width": "large",
+        "image_height_mobile": "auto",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "video-hero": {
       "type": "video-hero",
       "blocks": {
@@ -498,7 +591,7 @@
         "subheading": "",
         "description": "<p>Combining EMS pulse therapy, warm compression and acupoint massage, our neck massager merges all your separate neck care steps into one simple daily ritual. So your neck stays relaxed and pain-free, every single day.<br/><br/></p>",
         "button_label": "View more",
-        "button_link": "",
+        "button_link": "shopify://products/neck-massager",
         "button_external": false,
         "button_icon": true,
         "highlighted_text": "scribble",
@@ -996,6 +1089,7 @@
     "main-product",
     "1786265603ac9a21f6",
     "help-drawer",
+    "slideshow_bBBh9h",
     "video-hero",
     "collage",
     "image-with-text-1",
