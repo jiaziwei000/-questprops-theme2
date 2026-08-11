@@ -291,12 +291,46 @@
         "color_overlay": "#171717",
         "overlay_opacity": 60,
         "padding_top": 0,
-        "padding_bottom": 56,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": true,
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "rounded": false
       }
     },
     "video-hero": {
@@ -481,12 +515,12 @@
         "image-4"
       ],
       "settings": {
-        "heading": "A simpler routine for a better-feeling neck",
+        "heading": "10 Minutes for a Better-Feeling Neck",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>One simple routine designed to fit into the moments that already belong to you.</p>",
+        "description": "<p>A simple daily routine designed to help you unwind, reset, and get back to your day.<br/><br/></p>",
         "button_label": "",
         "button_link": "shopify://products/neck-massager",
         "button_external": false,
@@ -1290,41 +1324,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
-            "text_size": 160,
-            "text_font": "heading",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -1362,6 +1361,7 @@
   "order": [
     "main-product",
     "testimonials_banner_XPL8te",
+    "scrolling-text",
     "video-hero",
     "collage",
     "product-details",
@@ -1374,7 +1374,6 @@
     "multicolumn_rKYPKb",
     "help-drawer",
     "slideshow_bBBh9h",
-    "scrolling-text",
     "product-recommendations"
   ]
 }
