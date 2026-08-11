@@ -890,8 +890,8 @@
         "button_QPHEmb": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Get Yours Now",
+            "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
@@ -1018,7 +1018,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Technology",
-            "content": "<p><br/>EMS Muscle Stimulation + Heat Therapy<br/><br/></p>",
+            "content": "<p>EMS (Electrical Muscle Stimulation) + Far-Infrared Heat Therapy — dual-action technology that targets muscle tension at the source while soothing heat promotes deep relaxation.</p><p>Advanced 4D massage head for multi-directional relief.</p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -1029,8 +1029,8 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Session Time",
-            "content": "<p><br/>10–15 minutes per session<br/><br/></p>",
+            "heading": "Session Time & Modes",
+            "content": "<p>Recommended 10–15 minutes per session.<br/>2 massage modes available.<br/>Auto shut-off after 15 minutes for safe, worry-free use.</p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -1042,20 +1042,19 @@
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "What's Included",
-            "content": "<p><br/>Neck Restore Device + Remote Control + USB Charging Cable + User Guide<br/><br/></p>",
+            "content": "<p>1× QUESTPROPS™ Neck Restore Device<br/>1× Remote Control<br/>1× USB Charging Cable<br/>1× User Guide</p>",
             "metafields": "",
             "text_size": "text-base"
           }
         },
         "collapsible_tab-4": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "Collapsible row 4",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "Intensity & Heat Settings",
+            "content": "<p>6 adjustable massage intensity levels<br/>3 vibration modes<br/>3 heat levels for customizable warmth</p>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -1245,6 +1244,7 @@
     "main-product",
     "1786265603ac9a21f6",
     "help-drawer",
+    "1786266566d2c36dbf",
     "slideshow_bBBh9h",
     "scrolling-text",
     "video-hero",
@@ -1256,7 +1256,6 @@
     "image_with_text_9CQh9p",
     "testimonials_banner_XPL8te",
     "product-details",
-    "faq",
-    "1786266566d2c36dbf"
+    "faq"
   ]
 }
