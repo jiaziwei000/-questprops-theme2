@@ -536,7 +536,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 28,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -636,8 +636,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -839,8 +839,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 20,
-        "padding_bottom": 24,
+        "padding_top": 12,
+        "padding_bottom": 12,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -1149,9 +1149,9 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
+        "divider": true,
+        "full_width": true,
+        "rounded": true
       }
     },
     "help-drawer": {
