@@ -1,87 +1,1689 @@
-<div id="glacier-magazine-section" style="height: 400vh; position: relative; background-color: #f7f3ed; overflow: hidden; font-family: sans-serif;">
-  
-  <!-- 核心粘性视窗 -->
-  <div class="magazine-sticky-viewport" style="position: sticky; top: 0; height: 100vh; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
-    
-    <!-- 背景巨型杂志大字 1 (融入冰川蓝/青金石蓝视觉基调) -->
-    <div class="mag-bg-text text-phase-1" style="position: absolute; font-size: 14vw; font-weight: 900; color: rgba(0, 95, 115, 0.08); white-space: nowrap; text-transform: uppercase; z-index: 1; user-select: none;">
-      GLACIER LAKE BLUE
-    </div>
+{% comment %}
+  QUESTPROPS Scroll Cinematic Product Experience
+  Shopify / Liquid / CSS / Vanilla JS
+{% endcomment %}
 
-    <!-- 背景巨型杂志大字 2 -->
-    <div class="mag-bg-text text-phase-2" style="position: absolute; font-size: 16vw; font-weight: 900; color: rgba(0, 95, 115, 0.08); white-space: nowrap; text-transform: uppercase; opacity: 0; z-index: 1; user-select: none;">
-      SMART RELAXATION
-    </div>
+<section
+  id="QuestScrollScenes-{{ section.id }}"
+  class="qp-scroll-scenes"
+>
 
-    <!-- 左侧文案随滚动浮现 -->
-    <div class="mag-side-content left-content" style="position: absolute; left: 8%; top: 35%; max-width: 320px; opacity: 0; transform: translateY(30px); z-index: 3;">
-      <h3 style="font-size: 2rem; font-weight: 800; color: #005f73; margin: 0 0 10px 0;">{{ section.settings.left_heading }}</h3>
-      <p style="font-size: 1.05rem; color: #444; line-height: 1.6; margin: 0;">{{ section.settings.left_text }}</p>
-    </div>
+  <!-- =====================================================
+       SCENE 01
+       ===================================================== -->
 
-    <!-- 右侧文案随滚动浮现 -->
-    <div class="mag-side-content right-content" style="position: absolute; right: 8%; top: 45%; max-width: 320px; opacity: 0; transform: translateY(30px); z-index: 3;">
-      <h3 style="font-size: 2rem; font-weight: 800; color: #005f73; margin: 0 0 10px 0;">{{ section.settings.right_heading }}</h3>
-      <p style="font-size: 1.05rem; color: #444; line-height: 1.6; margin: 0;">{{ section.settings.right_text }}</p>
-    </div>
+  <div class="qp-scene qp-scene-01">
 
-    <!-- 中心核心产品图片 (支持无级缩放) -->
-    <div class="product-container" style="z-index: 2; display: flex; justify-content: center; align-items: center;">
-      {% if section.settings.product_image != blank %}
-        <img id="glacier-product-img" src="{{ section.settings.product_image | image_url: width: 1200 }}" alt="Product" style="width: 380px; max-width: 45vw; height: auto; transform-origin: center; will-change: transform; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));">
-      {% else %}
-        <img id="glacier-product-img" src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" alt="Placeholder" style="width: 380px; max-width: 45vw; height: auto;">
-      {% endif %}
-    </div>
+    <div class="qp-sticky">
 
+      <div class="qp-bg-text qp-bg-text-01">
+        UNLIMITED RELEASE IPA
+      </div>
+
+      <div class="qp-product qp-product-01">
+        {% if section.settings.product_image != blank %}
+          {{
+            section.settings.product_image
+            | image_url: width: 1400
+            | image_tag:
+              loading: 'lazy',
+              widths: '400,600,800,1000,1200,1400',
+              class: 'qp-product-image'
+          }}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'qp-product-image' }}
+        {% endif %}
+      </div>
+
+      <div class="qp-card qp-card-left">
+        <span>DESIGNED FOR</span>
+        <strong>Daily Reset</strong>
+      </div>
+
+      <div class="qp-card qp-card-right">
+        <span>EVERY DAY</span>
+        <strong>Just 10 Minutes</strong>
+      </div>
+
+      <div class="qp-copy qp-copy-01">
+        <h2>
+          YOUR NECK<br>
+          DOES A LOT.
+        </h2>
+      </div>
+
+    </div>
   </div>
-</div>
 
-<!-- 引入官方高性能动效库 GSAP & ScrollTrigger -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- =====================================================
+       SCENE 02
+       ===================================================== -->
+
+  <div class="qp-scene qp-scene-02">
+
+    <div class="qp-sticky">
+
+      <div class="qp-bg-text qp-bg-text-02">
+        MOUTH FEELS
+      </div>
+
+      <div class="qp-visual-02">
+
+        {% if section.settings.secondary_image != blank %}
+          {{
+            section.settings.secondary_image
+            | image_url: width: 1400
+            | image_tag:
+              loading: 'lazy',
+              widths: '400,600,800,1000,1200,1400',
+              class: 'qp-secondary-image'
+          }}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'qp-secondary-image' }}
+        {% endif %}
+
+        <div class="qp-label qp-label-01">
+          EMS
+        </div>
+
+        <div class="qp-label qp-label-02">
+          HEAT
+        </div>
+
+      </div>
+
+      <div class="qp-copy qp-copy-02">
+
+        <span class="qp-eyebrow">
+          THE EXPERIENCE
+        </span>
+
+        <h2>
+          PUT THE<br>
+          TENSION<br>
+          ON PAUSE.
+        </h2>
+
+        <p>
+          Gentle EMS stimulation and soothing heat,
+          designed for a simple daily reset.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       SCENE 03
+       ===================================================== -->
+
+  <div class="qp-scene qp-scene-03">
+
+    <div class="qp-sticky">
+
+      <div class="qp-scene-title">
+
+        <span>
+          ONE SIMPLE ROUTINE
+        </span>
+
+        <h2>
+          YOUR DAILY RESET
+        </h2>
+
+      </div>
+
+
+      <!-- CENTRAL PRODUCT -->
+
+      <div class="qp-center-product">
+
+        {% if section.settings.product_image != blank %}
+          {{
+            section.settings.product_image
+            | image_url: width: 1000
+            | image_tag:
+              loading: 'lazy',
+              widths: '400,600,800,1000',
+              class: 'qp-grid-product-image'
+          }}
+        {% endif %}
+
+      </div>
+
+
+      <!-- PRODUCT GRID -->
+
+      <div class="qp-product-grid">
+
+        {% for i in (1..8) %}
+
+          <div
+            class="qp-grid-item qp-grid-item-{{ i }}"
+            data-index="{{ i }}"
+          >
+
+            {% if section.settings.product_image != blank %}
+
+              {{
+                section.settings.product_image
+                | image_url: width: 600
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '300,400,500,600',
+                  class: 'qp-grid-image'
+              }}
+
+            {% endif %}
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<style>
+
+#QuestScrollScenes-{{ section.id }} {
+
+  --qp-bg: #ffffff;
+  --qp-text: #171717;
+  --qp-soft: rgba(23,23,23,.55);
+  --qp-accent: #fde047;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--qp-bg);
+  color: var(--qp-text);
+
+}
+
+
+/* =====================================================
+   BASE SCENE
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }} .qp-scene {
+
+  position: relative;
+  width: 100%;
+}
+
+#QuestScrollScenes-{{ section.id }} .qp-scene-01 {
+  height: 150vh;
+}
+
+#QuestScrollScenes-{{ section.id }} .qp-scene-02 {
+  height: 200vh;
+}
+
+#QuestScrollScenes-{{ section.id }} .qp-scene-03 {
+  height: 150vh;
+}
+
+
+#QuestScrollScenes-{{ section.id }} .qp-sticky {
+
+  position: sticky;
+
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  height: 100svh;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+/* =====================================================
+   BACKGROUND TYPOGRAPHY
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }} .qp-bg-text {
+
+  position: absolute;
+
+  z-index: 1;
+
+  white-space: nowrap;
+
+  font-size: clamp(
+    80px,
+    15vw,
+    260px
+  );
+
+  font-weight: 900;
+
+  line-height: .8;
+
+  letter-spacing: -.07em;
+
+  text-transform: uppercase;
+
+  color: rgba(23,23,23,.055);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }} .qp-bg-text-01 {
+
+  left: 0;
+
+  transform:
+    translate3d(
+      30vw,
+      0,
+      0
+    );
+
+}
+
+
+#QuestScrollScenes-{{ section.id }} .qp-bg-text-02 {
+
+  left: 0;
+
+  transform:
+    translate3d(
+      25vw,
+      0,
+      0
+    );
+
+}
+
+
+/* =====================================================
+   PRODUCT
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }} .qp-product {
+
+  position: absolute;
+
+  z-index: 5;
+
+  width: min(
+    72vw,
+    760px
+  );
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate3d(
+      -50%,
+      -50%,
+      0
+    )
+    scale(1.3);
+
+  will-change:
+    transform;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-product-image {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+}
+
+
+/* =====================================================
+   CARDS
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }} .qp-card {
+
+  position: absolute;
+
+  z-index: 10;
+
+  width: 220px;
+
+  padding: 22px;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,.82);
+
+  backdrop-filter:
+    blur(14px);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+  opacity: 0;
+
+  transform:
+    translate3d(
+      0,
+      30px,
+      0
+    );
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-card-left {
+
+  left: 6vw;
+  bottom: 15vh;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-card-right {
+
+  right: 6vw;
+  bottom: 15vh;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-card span {
+
+  display: block;
+
+  font-size: 10px;
+
+  letter-spacing: .2em;
+
+  color: var(--qp-soft);
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-card strong {
+
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 18px;
+
+}
+
+
+/* =====================================================
+   COPY
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }} .qp-copy {
+
+  position: absolute;
+
+  z-index: 20;
+
+  pointer-events: none;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-copy-01 {
+
+  left: 50%;
+
+  bottom: 8vh;
+
+  transform:
+    translateX(-50%)
+    translateY(40px);
+
+  opacity: 0;
+
+  text-align: center;
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-copy-01 h2 {
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      32px,
+      5vw,
+      72px
+    );
+
+  line-height: .95;
+
+  letter-spacing: -.04em;
+
+}
+
+
+/* =====================================================
+   SCENE 02
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }}
+.qp-visual-02 {
+
+  position: absolute;
+
+  z-index: 5;
+
+  left: 7vw;
+
+  top: 50%;
+
+  width: min(
+    44vw,
+    620px
+  );
+
+  transform:
+    translate3d(
+      0,
+      -50%,
+      0
+    )
+    scale(.88);
+
+  opacity: 0;
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-secondary-image {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 24px;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-label {
+
+  position: absolute;
+
+  z-index: 5;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: var(--qp-accent);
+
+  color: #171717;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+
+  opacity: 0;
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-label-01 {
+
+  left: 8%;
+
+  top: 25%;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-label-02 {
+
+  right: 8%;
+
+  top: 55%;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-copy-02 {
+
+  right: 8vw;
+
+  top: 50%;
+
+  width: min(
+    38vw,
+    500px
+  );
+
+  transform:
+    translate3d(
+      100px,
+      -50%,
+      0
+    );
+
+  opacity: 0;
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-eyebrow {
+
+  font-size: 10px;
+
+  letter-spacing: .3em;
+
+  color: var(--qp-soft);
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-copy-02 h2 {
+
+  margin:
+    18px 0 0;
+
+  font-size:
+    clamp(
+      42px,
+      6vw,
+      88px
+    );
+
+  line-height: .9;
+
+  letter-spacing: -.055em;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-copy-02 p {
+
+  margin-top: 28px;
+
+  max-width: 430px;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  color: var(--qp-soft);
+
+}
+
+
+/* =====================================================
+   SCENE 03
+   ===================================================== */
+
+#QuestScrollScenes-{{ section.id }}
+.qp-scene-title {
+
+  position: absolute;
+
+  z-index: 30;
+
+  top: 7vh;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  text-align: center;
+
+  pointer-events: none;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-scene-title span {
+
+  font-size: 10px;
+
+  letter-spacing: .3em;
+
+  color: var(--qp-soft);
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-scene-title h2 {
+
+  margin-top: 12px;
+
+  font-size:
+    clamp(
+      32px,
+      5vw,
+      72px
+    );
+
+  letter-spacing: -.05em;
+
+}
+
+
+/* CENTER PRODUCT */
+
+#QuestScrollScenes-{{ section.id }}
+.qp-center-product {
+
+  position: absolute;
+
+  z-index: 20;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: min(
+    42vw,
+    500px
+  );
+
+  transform:
+    translate3d(
+      -50%,
+      -50%,
+      0
+    );
+
+  will-change:
+    transform;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-grid-product-image {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+
+/* PRODUCT GRID */
+
+#QuestScrollScenes-{{ section.id }}
+.qp-product-grid {
+
+  position: absolute;
+
+  z-index: 10;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: min(
+    90vw,
+    1100px
+  );
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 30px;
+
+  transform:
+    translate3d(
+      -50%,
+      -50%,
+      0
+    );
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-grid-item {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  opacity: 0;
+
+  transform:
+    scale(.4);
+
+  will-change:
+    transform,
+    opacity;
+
+}
+
+
+#QuestScrollScenes-{{ section.id }}
+.qp-grid-image {
+
+  width: 100%;
+
+  max-width: 180px;
+
+  height: auto;
+
+  object-fit: contain;
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media screen and (max-width: 749px) {
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-scene-01 {
+
+    height: 140vh;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-scene-02 {
+
+    height: 180vh;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-scene-03 {
+
+    height: 140vh;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-bg-text {
+
+    font-size: 22vw;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-product {
+
+    width: 88vw;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-card {
+
+    width: 140px;
+
+    padding: 15px;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-card-left {
+
+    left: 4vw;
+
+    bottom: 10vh;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-card-right {
+
+    right: 4vw;
+
+    bottom: 10vh;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-visual-02 {
+
+    left: 6vw;
+
+    top: 37%;
+
+    width: 88vw;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-copy-02 {
+
+    left: 7vw;
+
+    right: auto;
+
+    top: auto;
+
+    bottom: 8vh;
+
+    width: 86vw;
+
+    transform:
+      translate3d(
+        40px,
+        0,
+        0
+      );
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-copy-02 h2 {
+
+    font-size: 42px;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-product-grid {
+
+    width: 94vw;
+
+    gap: 10px;
+
+  }
+
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-grid-image {
+
+    max-width: 110px;
+
+  }
+
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-scene {
+
+    height: auto;
+
+  }
+
+  #QuestScrollScenes-{{ section.id }}
+  .qp-sticky {
+
+    position: relative;
+
+    height: auto;
+
+    min-height: 100vh;
+
+  }
+
+}
+
+</style>
+
 
 <script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    // 确保仅在桌面端或性能允许时全开动效，避免移动端滚动卡顿
-    if (window.innerWidth > 768) {
-      gsap.registerPlugin(ScrollTrigger);
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#glacier-magazine-section",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: 1.2, // 惯性平滑度
-          pin: true,
-          anticipatePin: 1
-        }
+(function() {
+
+  const root =
+    document.getElementById(
+      'QuestScrollScenes-{{ section.id }}'
+    );
+
+  if (!root) return;
+
+
+  /*
+   * Get progress of a scene.
+   *
+   * 0 =
+   * scene begins
+   *
+   * 1 =
+   * scene ends
+   */
+
+  function getProgress(scene) {
+
+    const rect =
+      scene.getBoundingClientRect();
+
+    const scrollable =
+      scene.offsetHeight -
+      window.innerHeight;
+
+    if (scrollable <= 0) {
+      return 0;
+    }
+
+    const progress =
+      -rect.top /
+      scrollable;
+
+    return Math.max(
+      0,
+      Math.min(
+        1,
+        progress
+      )
+    );
+
+  }
+
+
+  function lerp(a, b, t) {
+
+    return a + (b - a) * t;
+
+  }
+
+
+  function clamp(value) {
+
+    return Math.max(
+      0,
+      Math.min(
+        1,
+        value
+      )
+    );
+
+  }
+
+
+  function map(
+    value,
+    inMin,
+    inMax,
+    outMin,
+    outMax
+  ) {
+
+    const t =
+      clamp(
+        (value - inMin) /
+        (inMax - inMin)
+      );
+
+    return lerp(
+      outMin,
+      outMax,
+      t
+    );
+
+  }
+
+
+  let ticking = false;
+
+
+  function update() {
+
+    ticking = false;
+
+
+    /*
+     * SCENE 01
+     */
+
+    const scene01 =
+      root.querySelector(
+        '.qp-scene-01'
+      );
+
+    if (scene01) {
+
+      const p =
+        getProgress(scene01);
+
+
+      const bg =
+        root.querySelector(
+          '.qp-bg-text-01'
+        );
+
+      const product =
+        root.querySelector(
+          '.qp-product-01'
+        );
+
+      const cards =
+        root.querySelectorAll(
+          '.qp-scene-01 .qp-card'
+        );
+
+      const copy =
+        root.querySelector(
+          '.qp-copy-01'
+        );
+
+
+      /*
+       * Background
+       */
+
+      const bgX =
+        map(
+          p,
+          0,
+          .75,
+          320,
+          -420
+        );
+
+      const bgOpacity =
+        map(
+          p,
+          .45,
+          .85,
+          1,
+          0
+        );
+
+
+      bg.style.transform =
+        `translate3d(${bgX}px,0,0)`;
+
+      bg.style.opacity =
+        bgOpacity;
+
+
+      /*
+       * Product
+       */
+
+      const scale =
+        map(
+          p,
+          0,
+          .5,
+          1.3,
+          1
+        );
+
+      const y =
+        map(
+          p,
+          0,
+          .5,
+          70,
+          0
+        );
+
+      const x =
+        map(
+          p,
+          .3,
+          .7,
+          0,
+          -100
+        );
+
+
+      product.style.transform =
+        `
+        translate3d(
+          calc(-50% + ${x}px),
+          calc(-50% + ${y}px),
+          0
+        )
+        scale(${scale})
+        `;
+
+
+      /*
+       * Cards
+       */
+
+      const cardProgress =
+        clamp(
+          (p - .08) /
+          .42
+        );
+
+
+      cards.forEach(function(card) {
+
+        const y =
+          map(
+            cardProgress,
+            0,
+            1,
+            30,
+            0
+          );
+
+        card.style.opacity =
+          cardProgress;
+
+        card.style.transform =
+          `translate3d(0,${y}px,0)`;
+
       });
 
-      // 阶段逻辑：滚动时缩放产品、位移背景、淡入两则文案
-      tl.to("#glacier-product-img", { scale: 0.65, ease: "power1.inOut", duration: 1 })
-        .to(".text-phase-1", { x: "-25%", ease: "none", duration: 1 }, 0)
-        .to(".left-content", { opacity: 1, y: 0, duration: 0.6 }, 0.3)
-        .to(".right-content", { opacity: 1, y: 0, duration: 0.6 }, 0.5)
-        .to(".text-phase-1", { opacity: 0, duration: 0.4 }, 0.7)
-        .to(".text-phase-2", { opacity: 1, duration: 0.4 }, 0.7)
-        .to(".text-phase-2", { x: "15%", ease: "none", duration: 0.6 }, 0.7);
+
+      /*
+       * Copy
+       */
+
+      const copyProgress =
+        clamp(
+          (p - .25) /
+          .25
+        );
+
+
+      const copyY =
+        map(
+          copyProgress,
+          0,
+          1,
+          40,
+          0
+        );
+
+
+      copy.style.opacity =
+        copyProgress;
+
+      copy.style.transform =
+        `
+        translate3d(
+          -50%,
+          ${copyY}px,
+          0
+        )
+        `;
+
     }
-  });
+
+
+    /*
+     * SCENE 02
+     */
+
+    const scene02 =
+      root.querySelector(
+        '.qp-scene-02'
+      );
+
+    if (scene02) {
+
+      const p =
+        getProgress(scene02);
+
+
+      const bg =
+        root.querySelector(
+          '.qp-bg-text-02'
+        );
+
+      const visual =
+        root.querySelector(
+          '.qp-visual-02'
+        );
+
+      const copy =
+        root.querySelector(
+          '.qp-copy-02'
+        );
+
+
+      /*
+       * Background
+       */
+
+      const bgX =
+        map(
+          p,
+          0,
+          .75,
+          280,
+          -320
+        );
+
+
+      bg.style.transform =
+        `translate3d(${bgX}px,0,0)`;
+
+
+      /*
+       * Left visual
+       */
+
+      const visualProgress =
+        clamp(
+          p / .45
+        );
+
+
+      const visualScale =
+        map(
+          visualProgress,
+          0,
+          1,
+          .88,
+          1
+        );
+
+
+      visual.style.opacity =
+        visualProgress;
+
+
+      visual.style.transform =
+        `
+        translate3d(
+          0,
+          -50%,
+          0
+        )
+        scale(${visualScale})
+        `;
+
+
+      /*
+       * Labels
+       */
+
+      const label01 =
+        root.querySelector(
+          '.qp-label-01'
+        );
+
+      const label02 =
+        root.querySelector(
+          '.qp-label-02'
+        );
+
+
+      const l1 =
+        clamp(
+          (p - .08) /
+          .18
+        );
+
+      const l2 =
+        clamp(
+          (p - .18) /
+          .18
+        );
+
+
+      label01.style.opacity =
+        l1;
+
+      label01.style.transform =
+        `
+        translate3d(
+          0,
+          ${map(l1,0,1,20,0)}px,
+          0
+        )
+        scale(
+          ${map(l1,0,1,.8,1)}
+        )
+        `;
+
+
+      label02.style.opacity =
+        l2;
+
+      label02.style.transform =
+        `
+        translate3d(
+          0,
+          ${map(l2,0,1,20,0)}px,
+          0
+        )
+        scale(
+          ${map(l2,0,1,.8,1)}
+        )
+        `;
+
+
+      /*
+       * Right text
+       */
+
+      const textProgress =
+        clamp(
+          (p - .45) /
+          .45
+        );
+
+
+      const textX =
+        map(
+          textProgress,
+          0,
+          1,
+          100,
+          0
+        );
+
+
+      copy.style.opacity =
+        textProgress;
+
+
+      copy.style.transform =
+        `
+        translate3d(
+          ${textX}px,
+          -50%,
+          0
+        )
+        `;
+
+    }
+
+
+    /*
+     * SCENE 03
+     */
+
+    const scene03 =
+      root.querySelector(
+        '.qp-scene-03'
+      );
+
+    if (scene03) {
+
+      const p =
+        getProgress(scene03);
+
+
+      const center =
+        root.querySelector(
+          '.qp-center-product'
+        );
+
+
+      const centerScale =
+        map(
+          p,
+          0,
+          1,
+          1,
+          .65
+        );
+
+
+      const centerY =
+        map(
+          p,
+          0,
+          1,
+          0,
+          -80
+        );
+
+
+      center.style.transform =
+        `
+        translate3d(
+          -50%,
+          calc(-50% + ${centerY}px),
+          0
+        )
+        scale(${centerScale})
+        `;
+
+
+      /*
+       * Product Matrix
+       */
+
+      const items =
+        root.querySelectorAll(
+          '.qp-grid-item'
+        );
+
+
+      const positions = [
+
+        [-1,-1],
+        [ 0,-1],
+        [ 1,-1],
+
+        [-1, 0],
+        [ 1, 0],
+
+        [-1, 1],
+        [ 0, 1],
+        [ 1, 1]
+
+      ];
+
+
+      items.forEach(
+        function(item, index) {
+
+          const start =
+            index * .06;
+
+
+          const itemProgress =
+            clamp(
+              (p - start) /
+              .5
+            );
+
+
+          const pos =
+            positions[index];
+
+
+          const x =
+            map(
+              itemProgress,
+              0,
+              1,
+              0,
+              pos[0] * 180
+            );
+
+
+          const y =
+            map(
+              itemProgress,
+              0,
+              1,
+              0,
+              pos[1] * 120
+            );
+
+
+          const scale =
+            map(
+              itemProgress,
+              0,
+              1,
+              .4,
+              1
+            );
+
+
+          item.style.opacity =
+            itemProgress;
+
+
+          item.style.transform =
+            `
+            translate3d(
+              ${x}px,
+              ${y}px,
+              0
+            )
+            scale(${scale})
+            `;
+
+        }
+      );
+
+    }
+
+  }
+
+
+  function onScroll() {
+
+    if (!ticking) {
+
+      window.requestAnimationFrame(
+        update
+      );
+
+      ticking = true;
+
+    }
+
+  }
+
+
+  window.addEventListener(
+    'scroll',
+    onScroll,
+    {
+      passive: true
+    }
+  );
+
+
+  window.addEventListener(
+    'resize',
+    onScroll
+  );
+
+
+  update();
+
+})();
+
 </script>
 
+
 {% schema %}
+
 {
-  "name": "Glacier Magazine Scroll",
+  "name": "QP Scroll Scenes",
   "settings": [
-    { "type": "image_picker", "id": "product_image", "label": "冰川蓝按摩仪图片" },
-    { "type": "text", "id": "left_heading", "label": "左侧标题", "default": "GLACIER LAKE" },
-    { "type": "textarea", "id": "left_text", "label": "左侧描述", "default": "青金石蓝与冰川湖泊美学交融，尽显高奢质感。" },
-    { "type": "text", "id": "right_heading", "label": "右侧标题", "default": "SMART KNOB" },
-    { "type": "textarea", "id": "right_text", "label": "右侧描述", "default": "细腻亲肤材质，搭配橘色智能数显旋钮。" }
+
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Main product image"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "secondary_image",
+      "label": "Secondary visual"
+    }
+
   ],
   "presets": [
-    { "name": "Glacier Magazine Scroll" }
+    {
+      "name": "QP Scroll Scenes"
+    }
   ]
+
 }
+
 {% endschema %}
