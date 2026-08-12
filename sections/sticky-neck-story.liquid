@@ -1,47 +1,93 @@
-<section
-  id="qp-sticky-{{ section.id }}"
-  class="qp-sticky"
-  data-section-id="{{ section.id }}"
->
-  <div class="qp-sticky-track">
+<section id="qp-sticky-{{ section.id }}" class="qp-sticky">
+
+  <div class="qp-sticky-scroll">
 
     <!-- =========================
-         STICKY VISUAL
+         BACKGROUND TEXT
     ========================== -->
-    <div class="qp-sticky-visual">
 
-      <div class="qp-product-stage">
+    <div class="qp-big-copy">
+
+      <div class="qp-copy-line line-1">
+        YOUR NECK
+      </div>
+
+      <div class="qp-copy-line line-2">
+        WORKS ALL DAY.
+      </div>
+
+      <div class="qp-copy-line line-3">
+        MAKE ROOM
+      </div>
+
+      <div class="qp-copy-line line-4">
+        FOR A RESET.
+      </div>
+
+      <div class="qp-copy-line line-5">
+        GENTLE EMS.
+      </div>
+
+      <div class="qp-copy-line line-6">
+        SOOTHING HEAT.
+      </div>
+
+      <div class="qp-copy-line line-7">
+        JUST 10 MINUTES.
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT FOREGROUND
+    ========================== -->
+
+    <div class="qp-product-sticky">
+
+      <div class="qp-product-wrap">
 
         {% if section.settings.product_image != blank %}
+
           {{
             section.settings.product_image
-            | image_url: width: 1800
+            | image_url: width: 2000
             | image_tag:
-              class: 'qp-product',
+              class: 'qp-product-image',
               loading: 'eager',
-              widths: '600,900,1200,1600,1800'
+              widths: '800,1200,1600,2000'
           }}
+
         {% else %}
-          <div class="qp-image-placeholder">
+
+          <div class="qp-placeholder">
             PRODUCT IMAGE
           </div>
+
         {% endif %}
+
+
+        <!-- PACKAGE -->
 
         <div class="qp-package">
 
           {% if section.settings.package_image != blank %}
+
             {{
               section.settings.package_image
-              | image_url: width: 1000
+              | image_url: width: 1400
               | image_tag:
                 class: 'qp-package-image',
                 loading: 'lazy',
-                widths: '400,600,800,1000'
+                widths: '500,800,1100,1400'
             }}
+
           {% else %}
+
             <div class="qp-package-placeholder">
               PACKAGING
             </div>
+
           {% endif %}
 
         </div>
@@ -52,125 +98,36 @@
 
 
     <!-- =========================
-         STORY
+         FINAL CONTENT
     ========================== -->
-    <div class="qp-story">
 
-      <!-- 01 -->
-      <div
-        class="qp-story-step active"
-        data-step="0"
-      >
+    <div class="qp-final">
 
-        <span class="qp-number">01</span>
+      <div class="qp-final-inner">
 
-        <h2>
-          YOUR NECK<br>
-          WORKS ALL DAY.
-        </h2>
-
-        <p>
-          Sitting. Driving. Working.<br>
-          Your neck doesn't really get a break.
-        </p>
-
-      </div>
-
-
-      <!-- 02 -->
-      <div
-        class="qp-story-step"
-        data-step="1"
-      >
-
-        <span class="qp-number">02</span>
-
-        <h2>
-          MAKE ROOM<br>
-          FOR A RESET.
-        </h2>
-
-        <p>
-          A simple daily routine designed
-          around the moments you already have.
-        </p>
-
-      </div>
-
-
-      <!-- 03 -->
-      <div
-        class="qp-story-step"
-        data-step="2"
-      >
-
-        <span class="qp-number">03</span>
-
-        <h2>
-          GENTLE EMS.<br>
-          SOOTHING HEAT.
-        </h2>
-
-        <p>
-          Two comfort technologies.
-          One simple routine.
-        </p>
-
-      </div>
-
-
-      <!-- 04 -->
-      <div
-        class="qp-story-step"
-        data-step="3"
-      >
-
-        <span class="qp-number">04</span>
-
-        <h2>
-          10 MINUTES.<br>
-          THAT'S IT.
-        </h2>
-
-        <p>
-          Take a few minutes for yourself.
-          Then get back to what you love.
-        </p>
-
-      </div>
-
-
-      <!-- FINAL -->
-      <div
-        class="qp-story-step qp-final-step"
-        data-step="4"
-      >
-
-        <span class="qp-final-label">
+        <div class="qp-final-brand">
           QUESTPROPS™ NECK RESTORE
-        </span>
+        </div>
 
         <h2>
           MEET YOUR<br>
           DAILY RESET.
         </h2>
 
-        <div class="qp-price">
+        <div class="qp-final-price">
           $119.99
         </div>
 
         <a
           href="{{ section.settings.button_link }}"
-          class="qp-button"
+          class="qp-final-button"
         >
           {{ section.settings.button_text }}
           <span>→</span>
         </a>
 
-        <div class="qp-trust">
-          60-Day Trial&nbsp;&nbsp;·&nbsp;&nbsp;
-          2-Year Warranty&nbsp;&nbsp;·&nbsp;&nbsp;
-          Free Shipping
+        <div class="qp-final-trust">
+          60-Day Trial · 2-Year Warranty · Free Shipping
         </div>
 
       </div>
@@ -178,38 +135,49 @@
     </div>
 
   </div>
+
 </section>
 
 
 <style>
 
+/* =====================================================
+   MAIN
+===================================================== */
+
 #qp-sticky-{{ section.id }} {
-  --qp-bg: #f4f2ed;
-  --qp-text: #171717;
 
   position: relative;
-  background: var(--qp-bg);
-  color: var(--qp-text);
+
   width: 100%;
+
+  background: #f3f1ec;
+
+  color: #171717;
+
   overflow: clip;
+
 }
 
 
-/* =========================================
-   TRACK
-========================================= */
+/* =====================================================
+   SCROLL LENGTH
+===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-sticky-track {
+#qp-sticky-{{ section.id }} .qp-sticky-scroll {
+
   position: relative;
-  height: 500vh;
+
+  height: 650vh;
+
 }
 
 
-/* =========================================
-   STICKY PRODUCT
-========================================= */
+/* =====================================================
+   PRODUCT STICKY
+===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-sticky-visual {
+#qp-sticky-{{ section.id }} .qp-product-sticky {
 
   position: sticky;
 
@@ -217,6 +185,8 @@
 
   height: 100vh;
 
+  height: 100svh;
+
   width: 100%;
 
   display: flex;
@@ -225,69 +195,22 @@
 
   justify-content: center;
 
-  z-index: 2;
+  z-index: 10;
 
   pointer-events: none;
-}
-
-
-/* =========================================
-   PRODUCT STAGE
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-product-stage {
-
-  position: relative;
-
-  width: min(52vw, 720px);
-
-  height: min(72vh, 760px);
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
 
 }
 
 
-/* =========================================
+/* =====================================================
    PRODUCT
-========================================= */
+===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-product {
+#qp-sticky-{{ section.id }} .qp-product-wrap {
 
   position: relative;
 
-  width: 100%;
-
-  height: auto;
-
-  object-fit: contain;
-
-  transform-origin: center center;
-
-  will-change: transform, opacity;
-
-  transition:
-    transform .65s cubic-bezier(.22,.61,.36,1),
-    opacity .45s ease;
-
-}
-
-
-/* =========================================
-   PLACEHOLDER
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-image-placeholder {
-
-  width: 450px;
-
-  height: 450px;
-
-  border: 1px dashed #aaa;
+  width: min(54vw, 780px);
 
   display: flex;
 
@@ -295,46 +218,10 @@
 
   justify-content: center;
 
-  font-size: 12px;
-
-  letter-spacing: .18em;
-
 }
 
 
-/* =========================================
-   PACKAGE
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-package {
-
-  position: absolute;
-
-  width: 32%;
-
-  right: 1%;
-
-  bottom: 8%;
-
-  opacity: 0;
-
-  transform:
-    translateY(80px)
-    rotate(5deg)
-    scale(.85);
-
-  transform-origin: bottom center;
-
-  will-change: transform, opacity;
-
-  transition:
-    transform .9s cubic-bezier(.22,.61,.36,1),
-    opacity .8s ease;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-package-image {
+#qp-sticky-{{ section.id }} .qp-product-image {
 
   display: block;
 
@@ -344,12 +231,57 @@
 
   object-fit: contain;
 
+  transform-origin: center center;
+
+  will-change: transform;
+
+  filter: drop-shadow(
+    0 25px 45px rgba(0,0,0,.08)
+  );
+
+}
+
+
+/* =====================================================
+   PACKAGE
+===================================================== */
+
+#qp-sticky-{{ section.id }} .qp-package {
+
+  position: absolute;
+
+  width: 31%;
+
+  right: -3%;
+
+  bottom: -7%;
+
+  opacity: 0;
+
+  transform:
+    translateY(100px)
+    rotate(7deg)
+    scale(.75);
+
+  transform-origin: bottom center;
+
+  will-change: transform, opacity;
+
+}
+
+
+#qp-sticky-{{ section.id }} .qp-package-image {
+
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
 }
 
 
 #qp-sticky-{{ section.id }} .qp-package-placeholder {
-
-  width: 100%;
 
   aspect-ratio: 1 / 1;
 
@@ -363,16 +295,16 @@
 
   font-size: 10px;
 
-  letter-spacing: .14em;
+  letter-spacing: .15em;
 
 }
 
 
-/* =========================================
-   STORY
-========================================= */
+/* =====================================================
+   BIG TYPOGRAPHY
+===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-story {
+#qp-sticky-{{ section.id }} .qp-big-copy {
 
   position: absolute;
 
@@ -382,46 +314,172 @@
 
   pointer-events: none;
 
+  overflow: hidden;
+
 }
 
 
-#qp-sticky-{{ section.id }} .qp-story-step {
+#qp-sticky-{{ section.id }} .qp-copy-line {
 
-  position: relative;
+  position: absolute;
+
+  white-space: nowrap;
+
+  font-size: clamp(
+    90px,
+    14vw,
+    220px
+  );
+
+  line-height: .78;
+
+  letter-spacing: -.075em;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  will-change: transform, opacity;
+
+}
+
+
+/* =====================================================
+   TEXT POSITIONS
+===================================================== */
+
+#qp-sticky-{{ section.id }} .line-1 {
+
+  top: 13%;
+
+  left: -2%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-2 {
+
+  top: 27%;
+
+  right: -6%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-3 {
+
+  top: 15%;
+
+  left: -8%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-4 {
+
+  top: 35%;
+
+  right: -10%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-5 {
+
+  top: 17%;
+
+  left: -3%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-6 {
+
+  top: 37%;
+
+  right: -8%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .line-7 {
+
+  top: 25%;
+
+  left: -8%;
+
+}
+
+
+/* =====================================================
+   TEXT Z-INDEX
+===================================================== */
+
+#qp-sticky-{{ section.id }} .qp-big-copy {
+
+  z-index: 5;
+
+}
+
+
+/*
+   Product is above the typography.
+   This creates the "product covering text" effect.
+*/
+
+#qp-sticky-{{ section.id }} .qp-product-sticky {
+
+  z-index: 20;
+
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+#qp-sticky-{{ section.id }} .qp-final {
+
+  position: absolute;
+
+  top: 520vh;
+
+  left: 0;
+
+  width: 100%;
 
   height: 100vh;
 
-  width: 42%;
-
-  margin-left: 7%;
-
   display: flex;
 
-  flex-direction: column;
+  align-items: center;
 
   justify-content: center;
 
-  opacity: .12;
+  z-index: 30;
+
+  pointer-events: none;
+
+}
+
+
+#qp-sticky-{{ section.id }} .qp-final-inner {
+
+  text-align: center;
+
+  opacity: 0;
 
   transform: translateY(50px);
 
   transition:
-    opacity .65s ease,
-    transform .75s cubic-bezier(.22,.61,.36,1);
+    opacity .8s ease,
+    transform .8s cubic-bezier(.22,.61,.36,1);
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-story-step:nth-child(even) {
-
-  margin-left: auto;
-
-  margin-right: 7%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-story-step.active {
+#qp-sticky-{{ section.id }} .qp-final.active
+.qp-final-inner {
 
   opacity: 1;
 
@@ -430,119 +488,44 @@
 }
 
 
-/* =========================================
-   NUMBER
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-number {
+#qp-sticky-{{ section.id }} .qp-final-brand {
 
   font-size: 11px;
 
   letter-spacing: .22em;
-
-  margin-bottom: 25px;
-
-  font-weight: 500;
-
-}
-
-
-/* =========================================
-   HEADLINE
-========================================= */
-
-#qp-sticky-{{ section.id }} h2 {
-
-  margin: 0 0 28px;
-
-  font-size: clamp(48px, 6vw, 94px);
-
-  line-height: .9;
-
-  letter-spacing: -.055em;
-
-  font-weight: 600;
-
-}
-
-
-/* =========================================
-   BODY
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-story-step p {
-
-  margin: 0;
-
-  max-width: 380px;
-
-  font-size: 16px;
-
-  line-height: 1.55;
-
-  letter-spacing: -.01em;
-
-}
-
-
-/* =========================================
-   FINAL
-========================================= */
-
-#qp-sticky-{{ section.id }} .qp-final-step {
-
-  align-items: center;
-
-  text-align: center;
-
-  width: 100%;
-
-  margin: 0;
-
-  padding-top: 52vh;
-
-  opacity: 0;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-final-step.active {
-
-  opacity: 1;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-final-label {
-
-  font-size: 11px;
-
-  letter-spacing: .2em;
 
   margin-bottom: 24px;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-step h2 {
+#qp-sticky-{{ section.id }} .qp-final h2 {
 
-  font-size: clamp(46px, 6vw, 86px);
+  margin: 0 0 22px;
 
-  margin-bottom: 20px;
+  font-size: clamp(
+    55px,
+    7vw,
+    110px
+  );
+
+  line-height: .86;
+
+  letter-spacing: -.065em;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-price {
+#qp-sticky-{{ section.id }} .qp-final-price {
 
-  font-size: 22px;
+  font-size: 23px;
 
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-button {
+#qp-sticky-{{ section.id }} .qp-final-button {
 
   pointer-events: auto;
 
@@ -552,11 +535,11 @@
 
   justify-content: center;
 
-  gap: 14px;
+  gap: 16px;
 
-  min-width: 210px;
+  min-width: 220px;
 
-  padding: 16px 26px;
+  padding: 17px 30px;
 
   background: #171717;
 
@@ -564,11 +547,11 @@
 
   text-decoration: none;
 
-  font-size: 13px;
+  font-size: 12px;
 
   font-weight: 600;
 
-  letter-spacing: .08em;
+  letter-spacing: .09em;
 
   transition:
     transform .25s ease,
@@ -577,7 +560,7 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-button:hover {
+#qp-sticky-{{ section.id }} .qp-final-button:hover {
 
   transform: translateY(-2px);
 
@@ -586,178 +569,174 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-trust {
+#qp-sticky-{{ section.id }} .qp-final-trust {
 
   margin-top: 18px;
 
   font-size: 11px;
 
-  opacity: .65;
+  opacity: .55;
 
 }
 
 
-/* =========================================
+/* =====================================================
    MOBILE
-========================================= */
+===================================================== */
 
 @media screen and (max-width: 749px) {
 
-  #qp-sticky-{{ section.id }} .qp-sticky-track {
 
-    height: 500vh;
+  #qp-sticky-{{ section.id }} .qp-sticky-scroll {
+
+    height: 650vh;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-sticky-visual {
+  #qp-sticky-{{ section.id }} .qp-product-sticky {
 
     height: 100svh;
 
-    align-items: flex-start;
+  }
 
-    padding-top: 5vh;
+
+  #qp-sticky-{{ section.id }} .qp-product-wrap {
+
+    width: 88vw;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-product-stage {
+  #qp-sticky-{{ section.id }} .qp-copy-line {
 
-    width: 86vw;
+    font-size: clamp(
+      58px,
+      17vw,
+      100px
+    );
 
-    height: 57vh;
+    line-height: .8;
 
-    align-items: center;
+    letter-spacing: -.07em;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-product {
+  #qp-sticky-{{ section.id }} .line-1 {
 
-    width: 100%;
+    top: 18%;
+
+    left: -8%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-2 {
+
+    top: 31%;
+
+    right: -35%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-3 {
+
+    top: 16%;
+
+    left: -22%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-4 {
+
+    top: 34%;
+
+    right: -30%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-5 {
+
+    top: 20%;
+
+    left: -8%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-6 {
+
+    top: 36%;
+
+    right: -28%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .line-7 {
+
+    top: 25%;
+
+    left: -25%;
 
   }
 
 
   #qp-sticky-{{ section.id }} .qp-package {
 
-    width: 35%;
+    width: 38%;
 
-    right: 1%;
+    right: -3%;
 
-    bottom: 1%;
+    bottom: -4%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-story-step,
-  #qp-sticky-{{ section.id }} .qp-story-step:nth-child(even) {
+  #qp-sticky-{{ section.id }} .qp-final {
 
-    width: 88%;
-
-    margin: 0 auto;
-
-    padding: 0 6%;
-
-    justify-content: flex-end;
-
-    padding-bottom: 9vh;
+    top: 520vh;
 
     height: 100svh;
 
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-number {
-
-    margin-bottom: 15px;
+    padding: 0 6%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} h2 {
+  #qp-sticky-{{ section.id }} .qp-final h2 {
 
-    font-size: clamp(40px, 12vw, 62px);
-
-    line-height: .9;
-
-    margin-bottom: 18px;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-story-step p {
-
-    font-size: 14px;
-
-    line-height: 1.5;
-
-    max-width: 310px;
+    font-size: clamp(
+      46px,
+      13vw,
+      68px
+    );
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-final-step {
-
-    width: 100%;
-
-    margin: 0;
-
-    padding:
-      57vh
-      6%
-      0;
-
-    justify-content: flex-start;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-final-step h2 {
-
-    font-size: clamp(42px, 12vw, 60px);
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-price {
-
-    font-size: 20px;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-button {
+  #qp-sticky-{{ section.id }} .qp-final-button {
 
     min-width: 190px;
 
-    padding: 15px 22px;
+    padding: 16px 22px;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-trust {
-
-    font-size: 10px;
-
-    line-height: 1.5;
+  #qp-sticky-{{ section.id }} .qp-final-trust {
 
     max-width: 280px;
 
-  }
+    margin-left: auto;
 
-}
+    margin-right: auto;
 
-
-/* =========================================
-   REDUCED MOTION
-========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  #qp-sticky-{{ section.id }} * {
-
-    transition: none !important;
+    line-height: 1.5;
 
   }
 
@@ -770,149 +749,135 @@
 
 (function() {
 
-  const section =
+  const root =
     document.querySelector(
       '#qp-sticky-{{ section.id }}'
     );
 
-  if (!section) return;
+  if (!root) return;
 
 
-  const track =
-    section.querySelector(
-      '.qp-sticky-track'
+  const scrollArea =
+    root.querySelector(
+      '.qp-sticky-scroll'
     );
 
   const product =
-    section.querySelector(
-      '.qp-product'
+    root.querySelector(
+      '.qp-product-image'
     );
 
   const packageBox =
-    section.querySelector(
+    root.querySelector(
       '.qp-package'
     );
 
-  const steps =
-    section.querySelectorAll(
-      '.qp-story-step'
+  const final =
+    root.querySelector(
+      '.qp-final'
+    );
+
+
+  const lines =
+    root.querySelectorAll(
+      '.qp-copy-line'
     );
 
 
   function update() {
 
     const rect =
-      track.getBoundingClientRect();
+      scrollArea.getBoundingClientRect();
 
-    const maxScroll =
-      track.offsetHeight -
+
+    const total =
+      scrollArea.offsetHeight -
       window.innerHeight;
 
 
-    if (maxScroll <= 0) return;
+    if (total <= 0) return;
 
 
     let progress =
-      -rect.top / maxScroll;
+      -rect.top / total;
 
 
     progress =
       Math.max(
         0,
-        Math.min(1, progress)
-      );
-
-
-    /*
-      5 visual stages:
-      0 = intro
-      1 = reset
-      2 = EMS + heat
-      3 = 10 minutes
-      4 = final product + packaging
-    */
-
-    const stage =
-      Math.min(
-        4,
-        Math.floor(
-          progress * 5
+        Math.min(
+          1,
+          progress
         )
       );
 
 
-    steps.forEach(
-      (step, index) => {
-
-        step.classList.toggle(
-          'active',
-          index === stage
-        );
-
-      }
-    );
-
+    /*
+      Product scale
+    */
 
     if (product) {
 
       let scale = 1;
 
-      let rotation = 0;
+      let rotate = 0;
 
       let y = 0;
 
 
-      if (stage === 0) {
+      if (progress < .25) {
 
-        scale = .94;
+        scale =
+          0.92 +
+          progress * .55;
 
-        rotation = -1;
+        rotate =
+          -2 +
+          progress * 8;
 
-        y = 0;
-
-      }
-
-
-      if (stage === 1) {
-
-        scale = 1;
-
-        rotation = 1;
-
-        y = -5;
+        y =
+          progress * -30;
 
       }
 
+      else if (progress < .5) {
 
-      if (stage === 2) {
+        scale =
+          1.05 +
+          (progress - .25) * .45;
 
-        scale = 1.06;
+        rotate =
+          0;
 
-        rotation = -2;
-
-        y = 4;
-
-      }
-
-
-      if (stage === 3) {
-
-        scale = 1.12;
-
-        rotation = 1;
-
-        y = -7;
+        y =
+          -30;
 
       }
 
+      else if (progress < .72) {
 
-      if (stage === 4) {
+        scale =
+          1.16 +
+          (progress - .5) * .35;
 
-        scale = 1.02;
+        rotate =
+          2;
 
-        rotation = 0;
+        y =
+          -10;
 
-        y = 0;
+      }
+
+      else {
+
+        scale =
+          1.23;
+
+        rotate =
+          0;
+
+        y =
+          0;
 
       }
 
@@ -921,61 +886,122 @@
         `
         translateY(${y}px)
         scale(${scale})
-        rotate(${rotation}deg)
+        rotate(${rotate}deg)
         `;
 
     }
 
 
     /*
-      Packaging appears during
-      the final part of the story.
+      Typography movement
+    */
+
+    lines.forEach(
+      function(line, index) {
+
+        let move = 0;
+
+        let opacity = 1;
+
+
+        const offset =
+          index * .035;
+
+
+        move =
+          (progress - offset) *
+          (index % 2 === 0 ? -420 : 420);
+
+
+        /*
+          Fade lines as they leave
+        */
+
+        if (
+          progress >
+          .65
+        ) {
+
+          opacity =
+            Math.max(
+              0,
+              1 -
+              ((progress - .65) / .25)
+            );
+
+        }
+
+
+        line.style.transform =
+          `translate3d(${move}px,0,0)`;
+
+
+        line.style.opacity =
+          opacity;
+
+      }
+    );
+
+
+    /*
+      Packaging enters
     */
 
     if (packageBox) {
 
-      const packageStart = .67;
+      const start =
+        .62;
 
-      let packageProgress =
-        (progress - packageStart) /
-        (.18);
+      let p =
+        (progress - start) /
+        .16;
 
 
-      packageProgress =
+      p =
         Math.max(
           0,
           Math.min(
             1,
-            packageProgress
+            p
           )
         );
 
 
-      const packageY =
-        80 -
-        (80 * packageProgress);
-
-
-      const packageScale =
-        .85 +
-        (.15 * packageProgress);
-
-
-      const packageRotation =
-        5 -
-        (5 * packageProgress);
-
-
       packageBox.style.opacity =
-        packageProgress;
+        p;
 
 
       packageBox.style.transform =
         `
-        translateY(${packageY}px)
-        rotate(${packageRotation}deg)
-        scale(${packageScale})
+        translateY(${100 - (100 * p)}px)
+        rotate(${7 - (7 * p)}deg)
+        scale(${.75 + (.25 * p)})
         `;
+
+    }
+
+
+    /*
+      Final CTA
+    */
+
+    if (final) {
+
+      if (progress > .79) {
+
+        final.classList.add(
+          'active'
+        );
+
+      }
+
+      else {
+
+        final.classList.remove(
+          'active'
+        );
+
+      }
 
     }
 
@@ -987,21 +1013,21 @@
 
   function requestUpdate() {
 
-    if (!ticking) {
+    if (ticking) return;
 
-      window.requestAnimationFrame(
-        function() {
 
-          update();
+    ticking = true;
 
-          ticking = false;
 
-        }
-      );
+    requestAnimationFrame(
+      function() {
 
-      ticking = true;
+        update();
 
-    }
+        ticking = false;
+
+      }
+    );
 
   }
 
@@ -1009,7 +1035,9 @@
   window.addEventListener(
     'scroll',
     requestUpdate,
-    { passive: true }
+    {
+      passive: true
+    }
   );
 
 
@@ -1061,11 +1089,9 @@
   ],
 
   "presets": [
-
     {
       "name": "QP Sticky Neck Story"
     }
-
   ]
 
 }
