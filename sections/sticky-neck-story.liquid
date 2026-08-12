@@ -1,66 +1,40 @@
-<section id="qp-hero-story-{{ section.id }}" class="qp-hero-story">
+<section id="qp-brand-scroll-{{ section.id }}" class="qp-brand-scroll">
 
-  <div class="qp-story-track">
+  <div class="qp-scroll-stage">
 
     <!-- =========================================
-         FIXED TYPOGRAPHY
-         文字完全固定，不跟着滚动移动
+         FIXED BACKGROUND TYPOGRAPHY
+         背景文字始终固定
     ========================================== -->
 
-    <div class="qp-type-layer">
+    <div class="qp-fixed-canvas">
 
-      <div class="qp-type type-top">
-        THE DAY
+      <div class="qp-kicker">
+        QUESTPROPS™ / NECK RESTORE
       </div>
 
-      <div class="qp-type type-middle">
-        DOESN'T
+      <div class="qp-big-text qp-text-top">
+        YOUR DAILY
       </div>
 
-      <div class="qp-type type-middle-right">
-        WAIT.
+      <div class="qp-big-text qp-text-bottom">
+        NECK RESET
       </div>
 
-      <div class="qp-type type-bottom">
-        YOUR NECK
-      </div>
-
-      <div class="qp-type type-bottom-right">
-        HAS ENOUGH.
-      </div>
-
-      <div class="qp-type type-final">
-        TAKE TEN.
+      <div class="qp-small-line">
+        EMS + HEAT THERAPY
       </div>
 
     </div>
 
 
     <!-- =========================================
-         SMALL FIXED BRAND COPY
+         STICKY PRODUCT
     ========================================== -->
 
-    <div class="qp-microcopy">
+    <div class="qp-sticky-product">
 
-      <div class="micro-left">
-        QUESTPROPS™
-      </div>
-
-      <div class="micro-right">
-        DAILY NECK RESET
-      </div>
-
-    </div>
-
-
-    <!-- =========================================
-         PRODUCT
-         产品在最上层移动
-    ========================================== -->
-
-    <div class="qp-product-stage">
-
-      <div class="qp-product-object">
+      <div class="qp-product">
 
         {% if section.settings.product_image != blank %}
 
@@ -70,21 +44,21 @@
             | image_tag:
               class: 'qp-product-image',
               loading: 'eager',
-              widths: '800,1200,1600,2000,2400'
+              widths: '900,1200,1600,2000,2400'
           }}
 
         {% else %}
 
-          <div class="qp-image-placeholder">
+          <div class="qp-placeholder">
             PRODUCT IMAGE
           </div>
 
         {% endif %}
 
 
-        <!-- PACKAGE -->
+        <!-- PACKAGING -->
 
-        <div class="qp-package-object">
+        <div class="qp-package">
 
           {% if section.settings.package_image != blank %}
 
@@ -97,12 +71,6 @@
                 widths: '600,900,1200,1600'
             }}
 
-          {% else %}
-
-            <div class="qp-package-placeholder">
-              PACKAGING
-            </div>
-
           {% endif %}
 
         </div>
@@ -113,28 +81,29 @@
 
 
     <!-- =========================================
-         FINAL CTA
+         FINAL LOCKUP
     ========================================== -->
 
-    <div class="qp-story-final">
+    <div class="qp-final-lockup">
 
-      <div class="qp-final-inner">
+      <div class="qp-final-content">
 
-        <div class="qp-final-eyebrow">
+        <div class="qp-final-brand">
           QUESTPROPS™ NECK RESTORE
         </div>
 
         <h2>
-          COME BACK<br>
-          FEELING READY.
+          A SIMPLE RESET<br>
+          FOR YOUR DAY.
         </h2>
 
         <p>
-          Your simple daily neck reset.
+          EMS stimulation + soothing heat.
         </p>
 
         <div class="qp-final-price">
-          $119.99
+          <span class="qp-old-price">$169.99</span>
+          <strong>$119.99</strong>
         </div>
 
         <a
@@ -146,7 +115,9 @@
         </a>
 
         <div class="qp-final-trust">
-          60-Day Trial · 2-Year Warranty · Free Shipping
+          60-Day Trial&nbsp;&nbsp;·&nbsp;&nbsp;
+          2-Year Warranty&nbsp;&nbsp;·&nbsp;&nbsp;
+          Free Shipping
         </div>
 
       </div>
@@ -164,18 +135,19 @@
    ROOT
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} {
+#qp-brand-scroll-{{ section.id }} {
 
-  --qp-bg: #f3f1ec;
-  --qp-text: #171717;
+  --bg: #f3f1ec;
+
+  --text: #171717;
 
   position: relative;
 
   width: 100%;
 
-  background: var(--qp-bg);
+  background: var(--bg);
 
-  color: var(--qp-text);
+  color: var(--text);
 
   overflow: clip;
 
@@ -183,38 +155,39 @@
 
 
 /* =====================================================
-   LONG SCROLL
+   SCROLL LENGTH
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-story-track {
+#qp-brand-scroll-{{ section.id }}
+.qp-scroll-stage {
 
   position: relative;
 
-  height: 650vh;
+  height: 620vh;
 
 }
 
 
 /* =====================================================
-   FIXED TYPOGRAPHY
-   THIS DOES NOT MOVE
+   FIXED CANVAS
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-type-layer {
+#qp-brand-scroll-{{ section.id }}
+.qp-fixed-canvas {
 
   position: sticky;
 
   top: 0;
-
-  width: 100%;
 
   height: 100vh;
 
   height: 100svh;
 
+  width: 100%;
+
   overflow: hidden;
 
-  z-index: 2;
+  z-index: 1;
 
   pointer-events: none;
 
@@ -222,121 +195,17 @@
 
 
 /* =====================================================
-   GIANT TYPE
+   TOP BRAND LABEL
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-type {
+#qp-brand-scroll-{{ section.id }}
+.qp-kicker {
 
   position: absolute;
 
-  white-space: nowrap;
+  top: 28px;
 
-  font-family: inherit;
-
-  font-size: clamp(
-    100px,
-    15vw,
-    250px
-  );
-
-  font-weight: 800;
-
-  line-height: .76;
-
-  letter-spacing: -.085em;
-
-  text-transform: uppercase;
-
-  color: #171717;
-
-}
-
-
-/* =====================================================
-   TYPE COMPOSITION
-===================================================== */
-
-#qp-hero-story-{{ section.id }} .type-top {
-
-  top: 8%;
-
-  left: -3%;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .type-middle {
-
-  top: 34%;
-
-  left: -7%;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .type-middle-right {
-
-  top: 49%;
-
-  right: -5%;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .type-bottom {
-
-  top: 70%;
-
-  left: -8%;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .type-bottom-right {
-
-  top: 82%;
-
-  right: -12%;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .type-final {
-
-  top: 28%;
-
-  left: -5%;
-
-  opacity: 0;
-
-}
-
-
-/* =====================================================
-   MICRO BRAND
-===================================================== */
-
-#qp-hero-story-{{ section.id }} .qp-microcopy {
-
-  position: sticky;
-
-  top: 0;
-
-  height: 0;
-
-  z-index: 8;
-
-  pointer-events: none;
-
-}
-
-
-#qp-hero-story-{{ section.id }} .micro-left,
-#qp-hero-story-{{ section.id }} .micro-right {
-
-  position: absolute;
-
-  top: 30px;
+  left: 32px;
 
   font-size: 10px;
 
@@ -347,25 +216,86 @@
 }
 
 
-#qp-hero-story-{{ section.id }} .micro-left {
+/* =====================================================
+   GIANT TYPE
+===================================================== */
 
-  left: 32px;
+#qp-brand-scroll-{{ section.id }}
+.qp-big-text {
 
-}
+  position: absolute;
 
+  white-space: nowrap;
 
-#qp-hero-story-{{ section.id }} .micro-right {
+  font-size: clamp(
+    100px,
+    14.5vw,
+    235px
+  );
 
-  right: 32px;
+  font-weight: 800;
+
+  line-height: .78;
+
+  letter-spacing: -.085em;
+
+  text-transform: uppercase;
 
 }
 
 
 /* =====================================================
-   PRODUCT STAGE
+   TYPOGRAPHY COMPOSITION
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-product-stage {
+#qp-brand-scroll-{{ section.id }}
+.qp-text-top {
+
+  top: 18%;
+
+  left: -3%;
+
+}
+
+
+#qp-brand-scroll-{{ section.id }}
+.qp-text-bottom {
+
+  top: 58%;
+
+  right: -5%;
+
+}
+
+
+/* =====================================================
+   SMALL TECH LINE
+===================================================== */
+
+#qp-brand-scroll-{{ section.id }}
+.qp-small-line {
+
+  position: absolute;
+
+  bottom: 30px;
+
+  right: 32px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .18em;
+
+}
+
+
+/* =====================================================
+   STICKY PRODUCT
+===================================================== */
+
+#qp-brand-scroll-{{ section.id }}
+.qp-sticky-product {
 
   position: sticky;
 
@@ -385,7 +315,7 @@
 
   justify-content: center;
 
-  z-index: 20;
+  z-index: 10;
 
   pointer-events: none;
 
@@ -393,37 +323,33 @@
 
 
 /* =====================================================
-   PRODUCT OBJECT
+   PRODUCT
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-product-object {
+#qp-brand-scroll-{{ section.id }}
+.qp-product {
 
   position: relative;
 
-  width: min(
-    54vw,
-    820px
-  );
+  width: min(53vw, 780px);
 
   transform:
+
     translate3d(
       0,
-      52vh,
+      55vh,
       0
     )
+
     scale(.72);
 
-  will-change:
-    transform;
+  will-change: transform;
 
 }
 
 
-/* =====================================================
-   PRODUCT IMAGE
-===================================================== */
-
-#qp-hero-story-{{ section.id }} .qp-product-image {
+#qp-brand-scroll-{{ section.id }}
+.qp-product-image {
 
   display: block;
 
@@ -435,7 +361,7 @@
 
   filter:
     drop-shadow(
-      0 35px 55px rgba(0,0,0,.12)
+      0 30px 45px rgba(0,0,0,.10)
     );
 
 }
@@ -445,28 +371,30 @@
    PACKAGE
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-package-object {
+#qp-brand-scroll-{{ section.id }}
+.qp-package {
 
   position: absolute;
 
-  width: 31%;
+  width: 30%;
 
-  right: -3%;
+  right: -4%;
 
   bottom: -4%;
 
   opacity: 0;
 
   transform:
+
     translate3d(
-      80px,
-      60px,
+      50px,
+      70px,
       0
     )
-    rotate(9deg)
-    scale(.65);
 
-  transform-origin: center bottom;
+    rotate(7deg)
+
+    scale(.65);
 
   will-change:
     transform,
@@ -475,7 +403,8 @@
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-package-image {
+#qp-brand-scroll-{{ section.id }}
+.qp-package-image {
 
   display: block;
 
@@ -485,44 +414,28 @@
 
   filter:
     drop-shadow(
-      0 25px 35px rgba(0,0,0,.12)
+      0 20px 30px rgba(0,0,0,.10)
     );
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-package-placeholder {
-
-  aspect-ratio: 1 / 1;
-
-  border: 1px dashed #999;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  font-size: 9px;
-
-}
-
-
 /* =====================================================
-   FINAL
+   FINAL LOCKUP
 ===================================================== */
 
-#qp-hero-story-{{ section.id }} .qp-story-final {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-lockup {
 
   position: absolute;
 
-  top: 520vh;
+  top: 500vh;
 
   left: 0;
 
   width: 100%;
 
-  min-height: 100vh;
+  min-height: 120vh;
 
   display: flex;
 
@@ -530,29 +443,41 @@
 
   justify-content: center;
 
-  z-index: 40;
+  z-index: 30;
 
   pointer-events: none;
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-inner {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-content {
+
+  width: 100%;
 
   text-align: center;
 
   opacity: 0;
 
-  transform: translateY(30px);
+  transform: translateY(40px);
 
   transition:
-    opacity .8s ease,
-    transform .8s ease;
+
+    opacity .9s ease,
+
+    transform .9s
+    cubic-bezier(
+      .22,
+      .61,
+      .36,
+      1
+    );
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-inner.active {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-content.active {
 
   opacity: 1;
 
@@ -561,30 +486,36 @@
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-eyebrow {
+/* =====================================================
+   FINAL TYPOGRAPHY
+===================================================== */
 
-  margin-bottom: 22px;
+#qp-brand-scroll-{{ section.id }}
+.qp-final-brand {
 
   font-size: 10px;
 
+  font-weight: 600;
+
   letter-spacing: .22em;
 
-  font-weight: 600;
+  margin-bottom: 22px;
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-inner h2 {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-content h2 {
 
   margin: 0;
 
   font-size: clamp(
     55px,
     7vw,
-    115px
+    112px
   );
 
-  line-height: .82;
+  line-height: .84;
 
   letter-spacing: -.075em;
 
@@ -593,28 +524,62 @@
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-inner p {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-content p {
 
   margin:
+
     28px
+
     0
-    12px;
+
+    18px;
 
   font-size: 15px;
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-price {
+/* =====================================================
+   PRICE
+===================================================== */
 
-  font-size: 23px;
+#qp-brand-scroll-{{ section.id }}
+.qp-final-price {
 
   margin-bottom: 24px;
 
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-button {
+#qp-brand-scroll-{{ section.id }}
+.qp-old-price {
+
+  margin-right: 10px;
+
+  opacity: .4;
+
+  text-decoration: line-through;
+
+  font-size: 15px;
+
+}
+
+
+#qp-brand-scroll-{{ section.id }}
+.qp-final-price strong {
+
+  font-size: 24px;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+#qp-brand-scroll-{{ section.id }}
+.qp-final-button {
 
   display: inline-flex;
 
@@ -626,11 +591,11 @@
 
   min-width: 225px;
 
-  padding: 18px 30px;
+  padding: 18px 32px;
 
   background: #171717;
 
-  color: #fff;
+  color: white;
 
   text-decoration: none;
 
@@ -642,16 +607,33 @@
 
   pointer-events: auto;
 
+  transition:
+
+    transform .25s ease,
+
+    opacity .25s ease;
+
 }
 
 
-#qp-hero-story-{{ section.id }} .qp-final-trust {
+#qp-brand-scroll-{{ section.id }}
+.qp-final-button:hover {
+
+  transform: translateY(-2px);
+
+  opacity: .9;
+
+}
+
+
+#qp-brand-scroll-{{ section.id }}
+.qp-final-trust {
 
   margin-top: 18px;
 
   font-size: 10px;
 
-  opacity: .55;
+  opacity: .5;
 
 }
 
@@ -662,14 +644,17 @@
 
 @media screen and (max-width: 749px) {
 
-  #qp-hero-story-{{ section.id }} .qp-story-track {
 
-    height: 650vh;
+  #qp-brand-scroll-{{ section.id }}
+  .qp-scroll-stage {
+
+    height: 620vh;
 
   }
 
 
-  #qp-hero-story-{{ section.id }} .qp-type {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-big-text {
 
     font-size: 19vw;
 
@@ -680,61 +665,38 @@
   }
 
 
-  #qp-hero-story-{{ section.id }} .type-top {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-text-top {
 
-    top: 13%;
+    top: 20%;
 
-    left: -7%;
-
-  }
-
-
-  #qp-hero-story-{{ section.id }} .type-middle {
-
-    top: 36%;
-
-    left: -12%;
+    left: -8%;
 
   }
 
 
-  #qp-hero-story-{{ section.id }} .type-middle-right {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-text-bottom {
 
-    top: 49%;
+    top: 61%;
 
-    right: -15%;
-
-  }
-
-
-  #qp-hero-story-{{ section.id }} .type-bottom {
-
-    top: 69%;
-
-    left: -14%;
+    right: -18%;
 
   }
 
 
-  #qp-hero-story-{{ section.id }} .type-bottom-right {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-product {
 
-    top: 82%;
-
-    right: -35%;
-
-  }
-
-
-  #qp-hero-story-{{ section.id }} .qp-product-object {
-
-    width: 92vw;
+    width: 91vw;
 
   }
 
 
-  #qp-hero-story-{{ section.id }} .qp-package-object {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-package {
 
-    width: 37%;
+    width: 38%;
 
     right: -3%;
 
@@ -743,30 +705,74 @@
   }
 
 
-  #qp-hero-story-{{ section.id }} .micro-left {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-kicker {
+
+    top: 20px;
 
     left: 18px;
 
+    font-size: 8px;
+
   }
 
 
-  #qp-hero-story-{{ section.id }} .micro-right {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-small-line {
+
+    bottom: 20px;
 
     right: 18px;
 
+    font-size: 8px;
+
   }
 
 
-  #qp-hero-story-{{ section.id }} .qp-final-inner {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-final-content {
 
     padding: 0 20px;
 
   }
 
 
-  #qp-hero-story-{{ section.id }} .qp-final-inner h2 {
+  #qp-brand-scroll-{{ section.id }}
+  .qp-final-content h2 {
 
     font-size: 13vw;
+
+  }
+
+
+  #qp-brand-scroll-{{ section.id }}
+  .qp-final-content p {
+
+    font-size: 13px;
+
+  }
+
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+  #qp-brand-scroll-{{ section.id }}
+  .qp-product {
+
+    transform:
+      translate3d(
+        0,
+        0,
+        0
+      )
+      scale(1);
 
   }
 
@@ -781,40 +787,40 @@
 
   const root =
     document.querySelector(
-      '#qp-hero-story-{{ section.id }}'
+      '#qp-brand-scroll-{{ section.id }}'
     );
 
   if (!root) return;
 
 
-  const track =
+  const stage =
     root.querySelector(
-      '.qp-story-track'
+      '.qp-scroll-stage'
     );
 
   const product =
     root.querySelector(
-      '.qp-product-object'
+      '.qp-product'
     );
 
   const packageBox =
     root.querySelector(
-      '.qp-package-object'
+      '.qp-package'
     );
 
   const final =
     root.querySelector(
-      '.qp-final-inner'
+      '.qp-final-content'
     );
 
 
   function update() {
 
     const rect =
-      track.getBoundingClientRect();
+      stage.getBoundingClientRect();
 
     const total =
-      track.offsetHeight -
+      stage.offsetHeight -
       window.innerHeight;
 
 
@@ -836,33 +842,56 @@
 
 
     /* =========================================
-       PRODUCT MOVEMENT
+       PRODUCT JOURNEY
 
-       0 → 从底部进入
-       1 → 最终停住
+       0.00
+       ↓
+       product enters from bottom
+
+       0.25
+       ↓
+       centered
+
+       0.55
+       ↓
+       begins growing
+
+       0.72
+       ↓
+       package enters
+
+       0.82
+       ↓
+       final lockup
     ========================================== */
 
-    let x = 0;
+    let y;
 
-    let y = 0;
+    let x;
 
-    let scale = .72;
+    let scale;
 
-    let rotate = 0;
+    let rotate;
 
 
-    if (progress < .18) {
+    if (progress < .22) {
 
       const p =
-        progress / .18;
+        progress / .22;
+
 
       y =
-        52 -
-        (52 * p);
+        55 -
+        (55 * p);
+
+
+      x = 0;
+
 
       scale =
         .72 +
-        (.18 * p);
+        (.20 * p);
+
 
       rotate =
         -3 +
@@ -870,106 +899,105 @@
 
     }
 
-    else if (progress < .42) {
+    else if (progress < .50) {
 
       const p =
-        (progress - .18) /
-        .24;
+        (progress - .22) /
+        .28;
 
-      y =
-        0;
 
-      x =
-        -14 * p;
+      y = 0;
 
-      scale =
-        .90 +
-        (.10 * p);
-
-      rotate =
-        0;
-
-    }
-
-    else if (progress < .68) {
-
-      const p =
-        (progress - .42) /
-        .26;
 
       x =
-        -14 +
-        (28 * p);
+        -5 * p;
 
-      y =
-        -2 * p;
 
       scale =
-        1.0 +
-        (.14 * p);
-
-      rotate =
-        -2 +
-        (4 * p);
-
-    }
-
-    else if (progress < .82) {
-
-      const p =
-        (progress - .68) /
-        .14;
-
-      x =
-        14 -
-        (8 * p);
-
-      y =
-        -2;
-
-      scale =
-        1.14 +
+        .92 +
         (.08 * p);
 
+
+      rotate = 0;
+
+    }
+
+    else if (progress < .72) {
+
+      const p =
+        (progress - .50) /
+        .22;
+
+
+      y =
+        -3 * p;
+
+
+      x =
+        -5 +
+        (10 * p);
+
+
+      scale =
+        1 +
+        (.18 * p);
+
+
       rotate =
-        2 -
+        -1 +
         (2 * p);
 
     }
 
     else {
 
-      x = 6;
+      const p =
+        Math.min(
+          1,
+          (progress - .72) /
+          .12
+        );
 
-      y = -2;
 
-      scale = 1.22;
+      y = -3;
 
-      rotate = 0;
+
+      x =
+        5 -
+        (5 * p);
+
+
+      scale =
+        1.18 +
+        (.04 * p);
+
+
+      rotate =
+        1 -
+        p;
 
     }
 
 
     product.style.transform =
-      `
-      translate3d(
+
+      `translate3d(
         ${x}vw,
         ${y}vh,
         0
       )
       scale(${scale})
-      rotate(${rotate}deg)
-      `;
+      rotate(${rotate}deg)`;
 
 
     /* =========================================
-       PACKAGE
+       PACKAGE ENTERS VERY LATE
     ========================================== */
 
     if (packageBox) {
 
       let p =
-        (progress - .70) /
+        (progress - .67) /
         .14;
 
 
@@ -983,24 +1011,22 @@
         );
 
 
-      packageBox.style.opacity =
-        p;
+      packageBox.style.opacity = p;
 
 
       packageBox.style.transform =
-        `
-        translate3d(
-          ${80 - (80 * p)}px,
-          ${60 - (60 * p)}px,
+
+        `translate3d(
+          ${50 - (50 * p)}px,
+          ${70 - (70 * p)}px,
           0
         )
         rotate(
-          ${9 - (9 * p)}deg
+          ${7 - (7 * p)}deg
         )
         scale(
           ${.65 + (.35 * p)}
-        )
-        `;
+        )`;
 
     }
 
@@ -1009,21 +1035,17 @@
        FINAL CTA
     ========================================== */
 
-    if (final) {
+    if (progress > .82) {
 
-      if (progress > .84) {
+      final.classList.add(
+        'active'
+      );
 
-        final.classList.add(
-          'active'
-        );
+    } else {
 
-      } else {
-
-        final.classList.remove(
-          'active'
-        );
-
-      }
+      final.classList.remove(
+        'active'
+      );
 
     }
 
@@ -1036,6 +1058,7 @@
   function requestUpdate() {
 
     if (ticking) return;
+
 
     ticking = true;
 
@@ -1078,7 +1101,7 @@
 {% schema %}
 
 {
-  "name": "QP Brand Scroll Story",
+  "name": "QP Brand Product Scroll",
 
   "settings": [
 
@@ -1111,7 +1134,7 @@
 
   "presets": [
     {
-      "name": "QP Brand Scroll Story"
+      "name": "QP Brand Product Scroll"
     }
   ]
 
