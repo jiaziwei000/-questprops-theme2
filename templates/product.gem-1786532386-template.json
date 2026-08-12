@@ -1,0 +1,1379 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "",
+            "help_page_external": false
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "{{ product.vendor }}",
+            "text_size": "text-base"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "title_tag": "h1",
+            "show_price": true,
+            "show_rating": false
+          }
+        },
+        "badges_tnb6kp": {
+          "type": "badges",
+          "settings": {
+            "show_sold_out": false,
+            "show_save_amount": true,
+            "save_type": "percent"
+          }
+        },
+        "rating_cJRMiA": {
+          "type": "rating",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "enable_dynamic_variants": true,
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "variant",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "product_variations_Wbwq3b": {
+          "type": "product_variations",
+          "disabled": true,
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": true,
+            "show_back_in_stock_name": true,
+            "show_back_in_stock_phone": true
+          }
+        },
+        "liquid_hA8ByX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"essential-banners-block\" id=\"fc56aa49-aa33-48f3-b7de-53e6aaf5243f\"><\/div>"
+          }
+        },
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "In stock! Ships within 1-2 business days.",
+            "text_size": "text-sm"
+          }
+        },
+        "text-2": {
+          "type": "text",
+          "settings": {
+            "icon": "headphone",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "180-day risk-free trial",
+            "text_size": "text-sm"
+          }
+        },
+        "text-3": {
+          "type": "text",
+          "settings": {
+            "icon": "award",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "2-Year Warranty",
+            "text_size": "text-sm"
+          }
+        },
+        "text-4": {
+          "type": "text",
+          "settings": {
+            "icon": "box",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "Complimentary shipping & returns",
+            "text_size": "text-sm"
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "complementary": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "heading": "Pairs well with",
+            "product_limit": 4,
+            "show_vendor": false,
+            "show_price": true
+          }
+        }
+      },
+      "block_order": [
+        "share",
+        "sticky_buy_button",
+        "vendor",
+        "title",
+        "badges_tnb6kp",
+        "rating_cJRMiA",
+        "description",
+        "countdown",
+        "variant_picker",
+        "inventory",
+        "product_variations_Wbwq3b",
+        "buy_buttons",
+        "liquid_hA8ByX",
+        "text-1",
+        "text-2",
+        "text-3",
+        "text-4",
+        "pickup_availability",
+        "complementary"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 66,
+        "gallery_layout": "scroll",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "testimonials_banner_XPL8te": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial_rRhhd7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I've been using this after work, and it's become one of my favorite parts of my evening routine. The warmth feels really soothing, and I like that it only takes about 10 minutes.<\/p>",
+            "author": "Sarah M.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_j7UjV7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I sit at a desk most of the day, so my neck usually feels tight by the evening. I started using this while watching TV, and it's easy enough that I actually stick with it.<\/p>",
+            "author": "Michael R.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_AwdbXj": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I wasn't sure what to expect from the EMS at first, but it was surprisingly comfortable. I tried a few different settings and found one that works really well for me.<\/p>",
+            "author": "Linda P.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_rRhhd7",
+        "testimonial_j7UjV7",
+        "testimonial_AwdbXj"
+      ],
+      "name": "t:sections.testimonials-banner.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify:\/\/shop_images\/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
+        "image_height": "650px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 60,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>180-Day Risk-Free Trial<\/strong><\/em>",
+            "text_size": 160,
+            "text_font": "heading",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "video-hero": {
+      "type": "video-hero",
+      "blocks": {
+        "slide_cK769c": {
+          "type": "slide",
+          "settings": {
+            "heading": "01 — Neck tension builds up.Long hours sitting, driving, or working can leave your neck feeling tight and tired.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "02 — Put the tension on pause.QUESTPROPS™ combines gentle EMS stimulation with soothing heat for a simple daily reset.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "heading": "03 — Just 10 minutes a day.Relax while the device works around your neck. Choose the intensity and warmth that feel right for you.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "heading": "04 — Get back to what you love.Less time thinking about your neck. More time doing what matters.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_cK769c",
+        "slide-1",
+        "slide-2",
+        "slide-3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "transparent_header": true,
+        "video": "shopify:\/\/files\/videos\/5月15日.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "{{ product.metafields.reviews.rating | metafield_text }}{{ product.metafields.reviews.rating_count.value }}",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "content_width": "medium",
+        "video_mobile": "shopify:\/\/files\/videos\/5月15日.mp4",
+        "video_url_mobile": "",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "subheading": "Spend more time in the garden.",
+            "heading": "🌿 Gardening",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify:\/\/shop_images\/1424e19b85d4d4b6087daa64c2dddedf.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-center",
+            "text_alignment": "center",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-center",
+            "text_alignment_mobile": "center",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#f5f5f5",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 40
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "subheading": "Make long drives feel more comfortable.",
+            "heading": "🚗 Driving",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify:\/\/shop_images\/ed6ceb098891f4eaf51b570e2afbb44c.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#f5f5f5",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 40
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "Take your routine wherever you go.",
+            "heading": "✈️ Travel",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify:\/\/shop_images\/5b5059dbad8a13269d8e18ba3ceb901c.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-start justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#f5f5f5",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#160101",
+            "overlay_opacity": 40
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "Enjoy your time without constantly thinking about your neck.",
+            "heading": "🏌️ Weekend",
+            "link": "",
+            "invert_subheading_heading": true,
+            "image": "shopify:\/\/shop_images\/449a32abeb8d2cd27c190846d0970f70.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#f5f5f5",
+            "color_highlight": "#eeeeee",
+            "gradient_highlight": "linear-gradient(86deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+            "color_overlay": "#1f2933",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4"
+      ],
+      "settings": {
+        "heading": "10 Minutes for a Better-Feeling Neck",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>A simple daily routine designed to help you unwind, reset, and get back to your day.<br\/><br\/><\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/products\/neck-massager",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Technology",
+            "content": "<p>EMS (Electrical Muscle Stimulation) + soothing heat work together in one simple routine.<\/p><p>The ergonomic neck design is made to sit comfortably around the neck while the adjustable settings let you personalize your session.<\/p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Session Time & Modes",
+            "content": "<p>Recommended session: 10–15 minutes<br\/>2 massage modes<br\/>15-minute automatic shut-off<br\/>Adjustable intensity for a more personalized experience<\/p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "What's Included",
+            "content": "<p>1× QUESTPROPS™ Neck Restore<br\/>1× Remote Control<br\/>1× USB Charging Cable<br\/>1× User Guide<\/p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Intensity & Heat",
+            "content": "<p>6 adjustable intensity levels<br\/>3 vibration modes<br\/>3 heat levels<br\/>Designed for a personalized daily routine<\/p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "specification": {
+          "type": "specification",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "text_size": "text-sm"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab-1",
+        "collapsible_tab-2",
+        "collapsible_tab-3",
+        "collapsible_tab-4",
+        "specification"
+      ],
+      "settings": {
+        "style": "with-border",
+        "open_first_row": true,
+        "specifications_heading": "Included in the Box",
+        "heading": "Tech Specs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How does QUESTPROPS™ Neck Restore work?<\/strong>",
+            "text": "<p>QUESTPROPS™ combines gentle EMS stimulation, massage and soothing heat in one simple routine. Adjustable settings let you choose the intensity and warmth that feel comfortable for you.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How long should I use it?<\/strong>",
+            "text": "<p>We recommend 10–15 minutes per session. The device includes a 15-minute automatic shut-off for added convenience.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Who is it designed for?<\/strong>",
+            "text": "<p>It's designed for adults who spend a lot of time sitting, working at a desk, driving, using screens, or simply want a relaxing neck routine at the end of the day.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is the EMS sensation uncomfortable?<\/strong>",
+            "text": "<p>EMS can feel different from person to person. Start at a low intensity and gradually adjust it to a level that feels comfortable for you.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How does the 180-Day Risk-Free Trial work?<\/strong>",
+            "text": "<p>Try QUESTPROPS™ at home. If it isn't right for you, you can return it within the applicable 180-day trial period. Please see our Return Policy for the full terms and conditions.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_8FE3BR": {
+          "type": "question",
+          "settings": {
+            "title": "Does it come with a warranty?",
+            "text": "<p>Yes. QUESTPROPS™ Neck Restore includes a 2-Year Warranty. If you need help with a warranty claim, our support team is here to assist you.<br\/><br\/><\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Q4E43L": {
+          "type": "question",
+          "settings": {
+            "title": "How long does shipping take?",
+            "text": "<p>Orders typically ship within 1–2 business days. Delivery time depends on your destination and shipping method. Tracking information is provided when your order ships.<br\/><br\/><\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_T7RUaN": {
+          "type": "question",
+          "settings": {
+            "title": "What’s included in the box?",
+            "text": "<p>You’ll receive 1× QUESTPROPS™ Neck Restore, 1× Remote Control, 1× USB Charging Cable, and 1× User Guide.<br\/><br\/><\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "heading": "Still have questions?",
+            "text": "<p>We're happy to help. Contact our support team and we'll get back to you as soon as possible.<\/p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4",
+        "question-5",
+        "question_8FE3BR",
+        "question_Q4E43L",
+        "question_T7RUaN",
+        "contact"
+      ],
+      "settings": {
+        "style": "with-background",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_9CQh9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mdXmyY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still Thinking About It?",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_diaEbf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your neck isn't going to feel better by waiting.<\/p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.<\/p><p>Try QUESTPROPS™ at home, completely risk-free.<\/p><p>✓ 180-Day Risk-Free Trial<br\/>✓ 2-Year Warranty<br\/>✓ Complimentary Shipping & Returns<\/p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_QPHEmb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Yours Now",
+            "button_link": "shopify:\/\/products\/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mdXmyY",
+        "text_diaEbf",
+        "button_QPHEmb"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
+        "image_height": "650px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "1786265603ac9a21f6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_eR7fJE": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_eR7fJE"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "400px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "400px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_rKYPKb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tEiqhi": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "EMS Muscle Stimulation",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Gentle stimulation designed to help relax and activate tired neck muscles.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_he97NW": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Soothing Heat",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Comforting warmth helps make your daily neck reset feel more relaxing.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_EjUa4e": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "10-Minute Routine",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>A simple routine designed to fit easily into your everyday life.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_tEiqhi",
+        "column_he97NW",
+        "column_EjUa4e"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Why QUESTPROPS™?",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": true,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.<\/p>"
+      }
+    },
+    "slideshow_bBBh9h": {
+      "type": "slideshow",
+      "blocks": {
+        "image_mERrtB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/909090555559.jpg",
+            "heading": "Long Days Leave Their Mark",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_PD3MHF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/565659.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/565659.jpg",
+            "heading": "Long Drives Take Their Toll.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_pHJd6y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/676.jpg",
+            "heading": "Screen Time Adds Up.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_wRWDE6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f7524f8f1ef61a8d01daad90794e6e91.png",
+            "heading": "Give Your Neck 10 Minutes.",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_mERrtB",
+        "image_PD3MHF",
+        "image_pHJd6y",
+        "image_wRWDE6"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "500px",
+        "content_width": "large",
+        "image_height_mobile": "auto",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "testimonials_banner_XPL8te",
+    "scrolling-text",
+    "video-hero",
+    "collage",
+    "product-details",
+    "faq",
+    "image_with_text_9CQh9p",
+    "1786265603ac9a21f6",
+    "image-with-text-1",
+    "image-with-text-2",
+    "recently-viewed",
+    "multicolumn_rKYPKb",
+    "help-drawer",
+    "slideshow_bBBh9h",
+    "product-recommendations"
+  ]
+}
