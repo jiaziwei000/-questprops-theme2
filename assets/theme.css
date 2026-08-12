@@ -16407,3 +16407,44 @@ shopify-account::part(dialog) .account__heading {
 .header shopify-account {
   --shopify-account-signed-in-avatar-size: var(--sp-6);
 }
+/* 1. 颜色系统：定义您的冰川湖泊蓝 (Lapis Blue) */
+:root {
+  --color-base-blue: #007BA7; /* 冰川湖泊蓝基准 */
+  --color-cyan-accent: #20B2AA; /* 加入青色调 (Teal) */
+  --color-deep-bg: #0B1E2D; /* 增强对比的深沉底色 */
+  
+  /* 确保响应式间距一致 */
+  --spacing-unit: 1.5rem;
+}
+
+/* 2. 模块化区块设计：例如优雅的按钮 */
+.custom-btn-lapis {
+  background: linear-gradient(135deg, var(--color-base-blue), var(--color-cyan-accent));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  font-weight: 600;
+}
+
+.custom-btn-lapis:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 123, 167, 0.2);
+}
+
+/* 3. 防止盗图/视觉保护：统一的水印或蒙版层处理 */
+.image-protection-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.image-protection-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to bottom right, rgba(0, 123, 167, 0.05), transparent);
+}
