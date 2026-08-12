@@ -15,9 +15,9 @@
   <div class="sticky-column">
     <div class="sticky-box">
       {% if section.settings.product_image != blank %}
-        <img src="{{ section.settings.product_image | image_url: width: 800 }}" alt="Product Image" loading="lazy">
+        <img src="{{ section.settings.product_image | image_url: width: 800 }}" alt="Product Image" style="display:block; width:100%; height:auto;">
       {% else %}
-        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" alt="Placeholder" loading="lazy">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" alt="Placeholder">
       {% endif %}
     </div>
   </div>
@@ -39,104 +39,54 @@
   .magazine-wrapper {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    align-items: flex-start; /* 必须对齐顶部 */
     max-width: 1400px;
     margin: 0 auto;
     padding: 100px 20px;
-    background-color: #f7f3ed; /* 复古米色背景 */
-    overflow: hidden;
+    background-color: #f7f3ed;
   }
 
   .scroll-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 400px; /* 控制上下两段文案之间的滚动距离 */
-    padding: 50px 0;
-    z-index: 2;
+    gap: 500px; /* 增加间距让图片有更长的吸附滚动时间 */
+    padding-bottom: 200px;
   }
 
-  .text-block {
-    max-width: 350px;
-  }
-
-  .left-side {
-    align-items: flex-end;
-    text-align: right;
-  }
-
-  .right-side {
-    align-items: flex-start;
-    text-align: left;
-  }
+  .text-block { max-width: 350px; }
+  .left-side { align-items: flex-end; text-align: right; }
+  .right-side { align-items: flex-start; text-align: left; }
 
   .mag-title {
     font-size: 3.5rem;
     font-weight: 900;
     line-height: 1.1;
-    color: #b3222a; /* 杂志风红黑色调 */
-    margin-bottom: 15px;
+    color: #b3222a;
     text-transform: uppercase;
+    margin: 0 0 15px 0;
   }
 
-  .scroll-column p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-  }
-
-  /* 核心：中间粘性定位列 */
+  /* 核心修复：确保 sticky-column 撑得够大 */
   .sticky-column {
     flex: 1.2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
-    height: 200vh; /* 撑开高度以允许页面滚动 */
+    height: 1200px; /* 给一个固定大高度，或者设为 auto */
   }
 
   .sticky-box {
     position: sticky;
-    top: 15vh; /* 距离屏幕顶部15%的地方死死定住 */
-    width: 100%;
+    position: -webkit-sticky; /* 兼容 Safari */
+    top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .sticky-box img {
-    max-width: 100%;
-    height: auto;
-    max-height: 70vh;
-    object-fit: contain;
-  }
-
-  /* 移动端自适应：屏幕变窄时改为上下堆叠 */
   @media screen and (max-width: 768px) {
-    .magazine-wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-    .sticky-column {
-      height: auto;
-    }
-    .sticky-box {
-      position: relative;
-      top: 0;
-    }
-    .scroll-column {
-      align-items: center;
-      text-align: center;
-      gap: 50px;
-    }
-    .left-side {
-      align-items: center;
-      text-align: center;
-    }
-    .right-side {
-      align-items: center;
-      text-align: center;
-    }
+    .magazine-wrapper { flex-direction: column; }
+    .sticky-column { height: auto; }
+    .sticky-box { position: relative; top: 0; }
   }
 </style>
 
@@ -144,64 +94,16 @@
 {
   "name": "Magazine Sticky Product",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "product_image",
-      "label": "中间产品图片 (冰川蓝按摩仪)"
-    },
-    {
-      "type": "text",
-      "id": "left_title_1",
-      "label": "左侧第一段大标题",
-      "default": "GLACIER BLUE"
-    },
-    {
-      "type": "textarea",
-      "id": "left_text_1",
-      "label": "左侧第一段描述",
-      "default": "采用冰川湖泊蓝美学设计，带来极致视觉享受。"
-    },
-    {
-      "type": "text",
-      "id": "left_title_2",
-      "label": "左侧第二段大标题",
-      "default": "SOFT TOUCH"
-    },
-    {
-      "type": "textarea",
-      "id": "left_text_2",
-      "label": "左侧第二段描述",
-      "default": "婴儿肌亲肤硅胶材质，触感细腻温润。"
-    },
-    {
-      "type": "text",
-      "id": "right_title_1",
-      "label": "右侧第一段大标题",
-      "default": "SMART KNOB"
-    },
-    {
-      "type": "textarea",
-      "id": "right_text_1",
-      "label": "右侧第一段描述",
-      "default": "橘色智能数显旋钮，档位一目了然。"
-    },
-    {
-      "type": "text",
-      "id": "right_title_2",
-      "label": "右侧第二段大标题",
-      "default": "RELAXATION"
-    },
-    {
-      "type": "textarea",
-      "id": "right_text_2",
-      "label": "右侧第二段描述",
-      "default": "深层放松，随时随地释放压力。"
-    }
+    { "type": "image_picker", "id": "product_image", "label": "中间产品图片" },
+    { "type": "text", "id": "left_title_1", "label": "左标题1", "default": "GLACIER BLUE" },
+    { "type": "textarea", "id": "left_text_1", "label": "左描述1", "default": "采用冰川湖泊蓝美学设计。" },
+    { "type": "text", "id": "left_title_2", "label": "左标题2", "default": "SOFT TOUCH" },
+    { "type": "textarea", "id": "left_text_2", "label": "左描述2", "default": "婴儿肌亲肤硅胶材质。" },
+    { "type": "text", "id": "right_title_1", "label": "右标题1", "default": "SMART KNOB" },
+    { "type": "textarea", "id": "right_text_1", "label": "右描述1", "default": "橘色智能数显旋钮。" },
+    { "type": "text", "id": "right_title_2", "label": "右标题2", "default": "RELAXATION" },
+    { "type": "textarea", "id": "right_text_2", "label": "右描述2", "default": "深层放松释放压力。" }
   ],
-  "presets": [
-    {
-      "name": "Magazine Sticky Product"
-    }
-  ]
+  "presets": [{ "name": "Magazine Sticky Product" }]
 }
 {% endschema %}
