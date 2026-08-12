@@ -1,188 +1,88 @@
-{% comment %}
-  QUESTPROPS™ SCROLL STORY
-  Sticky scroll storytelling product page
-  Shopify OS 2.0 single section
-{% endcomment %}
+<section id="qp-scroll-{{ section.id }}" class="qp-scroll">
 
-<section
-  id="QPStory-{{ section.id }}"
-  class="qp-story"
->
+  <!-- =========================
+       SCENE 01
+       ========================= -->
 
-  <!-- ======================================================
-       SCENE 01 — HERO / PRODUCT
-       ====================================================== -->
-
-  <section
-    class="qp-scene qp-scene-hero"
-    data-scene="hero"
-  >
+  <div class="qp-scene qp-scene-01">
 
     <div class="qp-sticky">
 
-      <div class="qp-bg-text qp-bg-hero">
-        {{ section.settings.hero_bg_text }}
+      <div class="qp-bg-text qp-bg-01">
+        {{ section.settings.bg_text_01 }}
       </div>
 
-      <div class="qp-eyebrow">
-        {{ section.settings.hero_eyebrow }}
+      <div class="qp-label">
+        {{ section.settings.label_01 }}
       </div>
 
-      <div class="qp-hero-product">
+      <!-- 产品展示窗口 -->
+      <div class="qp-product-window">
 
-        {% if section.settings.hero_image != blank %}
+        <div class="qp-product">
 
-          {{
-            section.settings.hero_image
-            | image_url: width: 1800
-            | image_tag:
-              widths: '400,600,800,1000,1400,1800',
-              sizes: '90vw',
-              loading: 'eager',
-              class: 'qp-image'
-          }}
+          {% if section.settings.product_image != blank %}
 
-        {% else %}
+            {{
+              section.settings.product_image
+              | image_url: width: 1800
+              | image_tag:
+                widths: '400,600,800,1200,1600,1800',
+                sizes: '90vw',
+                loading: 'eager',
+                class: 'qp-product-image'
+            }}
 
-          <div class="qp-image-placeholder">
-            ADD PRODUCT IMAGE
-          </div>
+          {% else %}
 
-        {% endif %}
-
-      </div>
-
-      <div class="qp-hero-copy">
-
-        <h1>
-          {{ section.settings.hero_heading }}
-        </h1>
-
-        {% if section.settings.hero_text != blank %}
-
-          <div class="qp-richtext">
-            {{ section.settings.hero_text }}
-          </div>
-
-        {% endif %}
-
-      </div>
-
-      <div class="qp-hero-features">
-
-        {% for block in section.blocks %}
-
-          {% if block.type == 'hero_feature' %}
-
-            <div
-              class="qp-feature-card"
-              {{ block.shopify_attributes }}
-            >
-
-              <span class="qp-feature-index">
-                {{ block.settings.number }}
-              </span>
-
-              <strong>
-                {{ block.settings.title }}
-              </strong>
-
-              <p>
-                {{ block.settings.text }}
-              </p>
-
+            <div class="qp-placeholder">
+              ADD PRODUCT IMAGE
             </div>
 
           {% endif %}
 
-        {% endfor %}
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ======================================================
-       SCENE 02 — WHY / TENSION
-       ====================================================== -->
-
-  <section
-    class="qp-scene qp-scene-tension"
-    data-scene="tension"
-  >
-
-    <div class="qp-sticky">
-
-      <div class="qp-bg-text qp-bg-tension">
-        {{ section.settings.tension_bg_text }}
-      </div>
-
-      <div class="qp-eyebrow">
-        {{ section.settings.tension_eyebrow }}
-      </div>
-
-      <div class="qp-tension-image">
-
-        {% if section.settings.tension_image != blank %}
-
-          {{
-            section.settings.tension_image
-            | image_url: width: 1600
-            | image_tag:
-              widths: '400,600,800,1200,1600',
-              sizes: '90vw',
-              loading: 'lazy',
-              class: 'qp-image'
-          }}
-
-        {% endif %}
-
-      </div>
-
-      <div class="qp-tension-heading">
-
-        <h2>
-          {{ section.settings.tension_heading }}
-        </h2>
-
-        <div class="qp-richtext">
-          {{ section.settings.tension_text }}
         </div>
 
       </div>
 
-      <div class="qp-tension-cards">
+
+      <!-- Hero 文案 -->
+
+      <div class="qp-hero-copy">
+
+        <div class="qp-small-label">
+          {{ section.settings.small_label }}
+        </div>
+
+        <h1>
+          {{ section.settings.heading }}
+        </h1>
+
+        <div class="qp-description">
+          {{ section.settings.description }}
+        </div>
+
+      </div>
+
+
+      <!-- 右侧信息 -->
+
+      <div class="qp-side-info">
 
         {% for block in section.blocks %}
 
-          {% if block.type == 'tension_card' %}
+          {% if block.type == 'feature' %}
 
             <div
-              class="qp-tension-card"
+              class="qp-feature"
               {{ block.shopify_attributes }}
             >
 
-              {% if block.settings.image != blank %}
+              <div class="qp-feature-number">
+                {{ block.settings.number }}
+              </div>
 
-                {{
-                  block.settings.image
-                  | image_url: width: 700
-                  | image_tag:
-                    widths: '300,500,700',
-                    sizes: '35vw',
-                    loading: 'lazy',
-                    class: 'qp-image'
-                }}
-
-              {% endif %}
-
-              <div class="qp-card-content">
-
-                <span>
-                  {{ block.settings.number }}
-                </span>
+              <div>
 
                 <h3>
                   {{ block.settings.title }}
@@ -204,66 +104,162 @@
 
     </div>
 
-  </section>
+  </div>
 
 
-  <!-- ======================================================
-       SCENE 03 — HOW IT WORKS
-       ====================================================== -->
+  <!-- =========================
+       SCENE 02
+       ========================= -->
 
-  <section
-    class="qp-scene qp-scene-how"
-    data-scene="how"
-  >
+  <div class="qp-scene qp-scene-02">
 
     <div class="qp-sticky">
 
-      <div class="qp-bg-text qp-bg-how">
-        {{ section.settings.how_bg_text }}
+      <div class="qp-bg-text qp-bg-02">
+        {{ section.settings.bg_text_02 }}
       </div>
 
-      <div class="qp-eyebrow">
-        {{ section.settings.how_eyebrow }}
+      <div class="qp-label">
+        {{ section.settings.label_02 }}
       </div>
 
-      <div class="qp-how-product">
 
-        {% if section.settings.how_image != blank %}
+      <div class="qp-scene02-image">
+
+        {% if section.settings.image_02 != blank %}
 
           {{
-            section.settings.how_image
-            | image_url: width: 1800
+            section.settings.image_02
+            | image_url: width: 1600
             | image_tag:
-              widths: '400,600,800,1000,1400,1800',
+              widths: '400,600,800,1200,1600',
               sizes: '90vw',
-              loading: 'lazy',
-              class: 'qp-image'
+              loading: 'lazy'
           }}
 
         {% endif %}
 
       </div>
 
+
+      <div class="qp-scene02-copy">
+
+        <h2>
+          {{ section.settings.heading_02 }}
+        </h2>
+
+        <div>
+          {{ section.settings.text_02 }}
+        </div>
+
+      </div>
+
+
+      <div class="qp-scene02-cards">
+
+        {% for block in section.blocks %}
+
+          {% if block.type == 'story_card' %}
+
+            <div
+              class="qp-story-card"
+              {{ block.shopify_attributes }}
+            >
+
+              {% if block.settings.image != blank %}
+
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag:
+                    widths: '300,400,600',
+                    sizes: '30vw',
+                    loading: 'lazy'
+                }}
+
+              {% endif %}
+
+              <span>
+                {{ block.settings.number }}
+              </span>
+
+              <h3>
+                {{ block.settings.title }}
+              </h3>
+
+              <p>
+                {{ block.settings.text }}
+              </p>
+
+            </div>
+
+          {% endif %}
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       SCENE 03
+       ========================= -->
+
+  <div class="qp-scene qp-scene-03">
+
+    <div class="qp-sticky">
+
+      <div class="qp-bg-text qp-bg-03">
+        {{ section.settings.bg_text_03 }}
+      </div>
+
+      <div class="qp-label">
+        {{ section.settings.label_03 }}
+      </div>
+
+
+      <div class="qp-how-product">
+
+        {% if section.settings.image_03 != blank %}
+
+          {{
+            section.settings.image_03
+            | image_url: width: 1800
+            | image_tag:
+              widths: '400,600,800,1200,1600,1800',
+              sizes: '90vw',
+              loading: 'lazy'
+          }}
+
+        {% endif %}
+
+      </div>
+
+
       <div class="qp-how-title">
 
         <h2>
-          {{ section.settings.how_heading }}
+          {{ section.settings.heading_03 }}
         </h2>
 
       </div>
 
-      <div class="qp-how-points">
+
+      <div class="qp-how-list">
 
         {% for block in section.blocks %}
 
-          {% if block.type == 'how_point' %}
+          {% if block.type == 'how_item' %}
 
             <div
-              class="qp-how-point"
+              class="qp-how-item"
               {{ block.shopify_attributes }}
             >
 
-              <span class="qp-point-number">
+              <span>
                 {{ block.settings.number }}
               </span>
 
@@ -289,216 +285,189 @@
 
     </div>
 
-  </section>
+  </div>
 
 
-  <!-- ======================================================
-       SCENE 04 — 10 MINUTES
-       ====================================================== -->
+  <!-- =========================
+       SCENE 04
+       ========================= -->
 
-  <section
-    class="qp-scene qp-scene-reset"
-    data-scene="reset"
-  >
+  <div class="qp-scene qp-scene-04">
 
     <div class="qp-sticky">
 
       <div class="qp-big-number">
-        {{ section.settings.reset_number }}
+        {{ section.settings.big_number }}
       </div>
 
       <div class="qp-number-label">
-        {{ section.settings.reset_label }}
+        {{ section.settings.number_label }}
       </div>
 
-      <div class="qp-reset-product">
 
-        {% if section.settings.reset_image != blank %}
+      <div class="qp-final-product">
+
+        {% if section.settings.image_04 != blank %}
 
           {{
-            section.settings.reset_image
+            section.settings.image_04
             | image_url: width: 1800
             | image_tag:
-              widths: '400,600,800,1000,1400,1800',
+              widths: '400,600,800,1200,1600,1800',
               sizes: '90vw',
-              loading: 'lazy',
-              class: 'qp-image'
+              loading: 'lazy'
           }}
 
         {% endif %}
 
       </div>
 
-      <div class="qp-reset-copy">
+
+      <div class="qp-final-copy">
 
         <h2>
-          {{ section.settings.reset_heading }}
+          {{ section.settings.heading_04 }}
         </h2>
 
-        <div class="qp-richtext">
-          {{ section.settings.reset_text }}
+        <div>
+          {{ section.settings.text_04 }}
         </div>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
 
-  <!-- ======================================================
+  <!-- =========================
        FINAL CTA
-       ====================================================== -->
+       ========================= -->
 
-  <section class="qp-final">
+  <div class="qp-final">
 
     <div class="qp-final-inner">
 
-      <span>
-        {{ section.settings.final_eyebrow }}
-      </span>
+      <div class="qp-label">
+        {{ section.settings.final_label }}
+      </div>
 
       <h2>
         {{ section.settings.final_heading }}
       </h2>
 
-      <div class="qp-final-text">
-        {{ section.settings.final_text }}
+      <div class="qp-final-description">
+        {{ section.settings.final_description }}
       </div>
 
-      {% if section.settings.final_button_text != blank %}
+      {% if section.settings.button_text != blank %}
 
         <a
-          href="{{ section.settings.final_button_url }}"
+          href="{{ section.settings.button_link }}"
           class="qp-button"
         >
-          {{ section.settings.final_button_text }}
+          {{ section.settings.button_text }}
         </a>
 
       {% endif %}
 
     </div>
 
-  </section>
+  </div>
 
 </section>
 
 
 <style>
 
-#QPStory-{{ section.id }} {
+#qp-scroll-{{ section.id }} {
 
-  --qp-bg: {{ section.settings.background }};
-  --qp-text: {{ section.settings.text_color }};
-  --qp-muted: {{ section.settings.muted_color }};
-  --qp-accent: {{ section.settings.accent }};
+  --bg: {{ section.settings.background }};
+  --text: {{ section.settings.text }};
+  --muted: {{ section.settings.muted }};
+  --accent: {{ section.settings.accent }};
 
-  background: var(--qp-bg);
-  color: var(--qp-text);
-
-  width: 100%;
+  background: var(--bg);
+  color: var(--text);
 
   overflow: clip;
 
 }
 
 
-/* ======================================================
-   RESET
-   ====================================================== */
-
-#QPStory-{{ section.id }} *,
-#QPStory-{{ section.id }} *::before,
-#QPStory-{{ section.id }} *::after {
+#qp-scroll-{{ section.id }} * {
 
   box-sizing: border-box;
 
 }
 
 
-/* ======================================================
-   SCENES
-   ====================================================== */
+/* =====================================================
+   SCENE
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-scene {
+#qp-scroll-{{ section.id }} .qp-scene {
 
   position: relative;
-
   width: 100%;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-scene-hero {
+#qp-scroll-{{ section.id }} .qp-scene-01 {
+
+  height: 200vh;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-scene-02 {
+
+  height: 210vh;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-scene-03 {
+
+  height: 210vh;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-scene-04 {
 
   height: 190vh;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-scene-tension {
-
-  height: 220vh;
-
-}
-
-
-#QPStory-{{ section.id }} .qp-scene-how {
-
-  height: 230vh;
-
-}
-
-
-#QPStory-{{ section.id }} .qp-scene-reset {
-
-  height: 190vh;
-
-}
-
-
-/* ======================================================
+/* =====================================================
    STICKY
-   ====================================================== */
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-sticky {
+#qp-scroll-{{ section.id }} .qp-sticky {
 
   position: sticky;
 
   top: 0;
 
-  height: 100vh;
-  height: 100svh;
-
   width: 100%;
+
+  height: 100vh;
+
+  height: 100svh;
 
   overflow: hidden;
 
 }
 
 
-/* ======================================================
-   IMAGE
-   ====================================================== */
-
-#QPStory-{{ section.id }} .qp-image {
-
-  display: block;
-
-  width: 100%;
-
-  height: auto;
-
-  object-fit: contain;
-
-}
-
-
-/* ======================================================
+/* =====================================================
    BACKGROUND TEXT
-   ====================================================== */
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-bg-text {
+#qp-scroll-{{ section.id }} .qp-bg-text {
 
   position: absolute;
 
@@ -511,9 +480,9 @@
   white-space: nowrap;
 
   font-size: clamp(
-    130px,
+    140px,
     19vw,
-    330px
+    340px
   );
 
   font-weight: 900;
@@ -522,28 +491,26 @@
 
   letter-spacing: -.09em;
 
-  color: rgba(20,20,20,.055);
+  color: rgba(0,0,0,.055);
 
   pointer-events: none;
 
   user-select: none;
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
 }
 
 
-/* ======================================================
-   EYEBROW
-   ====================================================== */
+/* =====================================================
+   LABEL
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-eyebrow {
+#qp-scroll-{{ section.id }} .qp-label {
 
   position: absolute;
 
-  z-index: 30;
+  z-index: 40;
 
   top: 7vh;
 
@@ -557,43 +524,112 @@
 
   text-transform: uppercase;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-/* ======================================================
-   HERO PRODUCT
-   ====================================================== */
+/* =====================================================
+   PRODUCT WINDOW
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-hero-product {
+#qp-scroll-{{ section.id }} .qp-product-window {
 
   position: absolute;
 
-  z-index: 5;
-
-  width: min(60vw, 820px);
+  z-index: 10;
 
   left: 50%;
 
-  top: 49%;
+  top: 50%;
+
+  width: min(
+    58vw,
+    820px
+  );
+
+  height: min(
+    72vh,
+    780px
+  );
 
   transform:
-    translate(-50%, -50%)
-    scale(.72);
+    translate(-50%, -50%);
+
+  overflow: hidden;
+
+}
+
+
+/* =====================================================
+   PRODUCT
+
+   初始：
+   rotate 24deg
+   scale 1.28
+   translate
+   clip 只露一部分
+   ===================================================== */
+
+#qp-scroll-{{ section.id }} .qp-product {
+
+  position: absolute;
+
+  width: 100%;
+
+  left: 0;
+
+  top: 0;
+
+  transform:
+    translate3d(
+      18vw,
+      12vh,
+      0
+    )
+    rotate(24deg)
+    scale(1.28);
+
+  transform-origin: center center;
+
+  clip-path:
+    inset(
+      0
+      0
+      35%
+      0
+    );
+
+  opacity: 0;
 
   will-change:
     transform,
+    clip-path,
     opacity;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-image-placeholder {
+#qp-scroll-{{ section.id }} .qp-product-image {
 
-  width: 600px;
+  display: block;
 
-  max-width: 70vw;
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+   ===================================================== */
+
+#qp-scroll-{{ section.id }} .qp-placeholder {
+
+  width: 100%;
 
   aspect-ratio: 1 / 1;
 
@@ -605,26 +641,29 @@
 
   color: #aaa;
 
-  font-size: 12px;
+  font-size: 11px;
 
 }
 
 
-/* ======================================================
+/* =====================================================
    HERO COPY
-   ====================================================== */
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-hero-copy {
+#qp-scroll-{{ section.id }} .qp-hero-copy {
 
   position: absolute;
 
-  z-index: 20;
+  z-index: 30;
 
   left: 6vw;
 
-  bottom: 9vh;
+  bottom: 8vh;
 
-  max-width: 430px;
+  width: min(
+    430px,
+    40vw
+  );
 
   opacity: 0;
 
@@ -638,65 +677,73 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-hero-copy h1 {
+#qp-scroll-{{ section.id }} .qp-small-label {
+
+  margin-bottom: 12px;
+
+  font-size: 10px;
+
+  letter-spacing: .2em;
+
+  text-transform: uppercase;
+
+  color: var(--muted);
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-hero-copy h1 {
 
   margin: 0 0 18px;
 
   font-size: clamp(
     48px,
     6vw,
-    88px
+    90px
   );
 
-  line-height: .86;
+  line-height: .84;
 
   letter-spacing: -.07em;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-richtext {
+#qp-scroll-{{ section.id }} .qp-description {
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
-  font-size: 15px;
+  font-size: 14px;
 
   line-height: 1.55;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-richtext p {
+/* =====================================================
+   SIDE INFO
+   ===================================================== */
 
-  margin: 0 0 10px;
-
-}
-
-
-/* ======================================================
-   HERO FEATURES
-   ====================================================== */
-
-#QPStory-{{ section.id }} .qp-hero-features {
+#qp-scroll-{{ section.id }} .qp-side-info {
 
   position: absolute;
 
-  z-index: 20;
+  z-index: 30;
 
   right: 6vw;
 
-  bottom: 9vh;
+  bottom: 8vh;
 
   display: flex;
 
-  gap: 40px;
+  gap: 35px;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-feature-card {
+#qp-scroll-{{ section.id }} .qp-feature {
 
-  width: 180px;
+  width: 170px;
 
   opacity: 0;
 
@@ -710,39 +757,37 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-feature-index {
+#qp-scroll-{{ section.id }} .qp-feature-number {
 
-  display: block;
-
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
   font-size: 9px;
 
   letter-spacing: .2em;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPStory-{{ section.id }} .qp-feature-card strong {
+#qp-scroll-{{ section.id }} .qp-feature h3 {
 
-  display: block;
+  margin: 0 0 8px;
 
   font-size: 13px;
 
-  letter-spacing: .08em;
+  letter-spacing: .1em;
 
   text-transform: uppercase;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-feature-card p {
+#qp-scroll-{{ section.id }} .qp-feature p {
 
-  margin: 8px 0 0;
+  margin: 0;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
   font-size: 12px;
 
@@ -751,25 +796,28 @@
 }
 
 
-/* ======================================================
-   TENSION IMAGE
-   ====================================================== */
+/* =====================================================
+   SCENE 02
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-tension-image {
+#qp-scroll-{{ section.id }} .qp-scene02-image {
 
   position: absolute;
 
   z-index: 5;
 
-  width: min(45vw, 620px);
-
   left: 50%;
 
   top: 50%;
 
+  width: min(
+    46vw,
+    650px
+  );
+
   transform:
     translate(-50%, -50%)
-    scale(.72);
+    scale(.75);
 
   opacity: 0;
 
@@ -780,21 +828,29 @@
 }
 
 
-/* ======================================================
-   TENSION HEADING
-   ====================================================== */
+#qp-scroll-{{ section.id }} .qp-scene02-image img {
 
-#QPStory-{{ section.id }} .qp-tension-heading {
+  width: 100%;
+
+  display: block;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-scene02-copy {
 
   position: absolute;
 
-  z-index: 25;
+  z-index: 30;
 
   left: 7vw;
 
-  top: 30%;
+  top: 28%;
 
-  width: min(32vw, 430px);
+  width: min(
+    32vw,
+    420px
+  );
 
   opacity: 0;
 
@@ -808,39 +864,50 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-heading h2 {
+#qp-scroll-{{ section.id }} .qp-scene02-copy h2 {
 
   margin: 0 0 18px;
 
   font-size: clamp(
-    40px,
+    45px,
     5vw,
-    70px
+    75px
   );
 
-  line-height: .9;
+  line-height: .86;
 
-  letter-spacing: -.065em;
+  letter-spacing: -.07em;
 
 }
 
 
-/* ======================================================
-   TENSION CARDS
-   ====================================================== */
+#qp-scroll-{{ section.id }} .qp-scene02-copy > div {
 
-#QPStory-{{ section.id }} .qp-tension-cards {
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.55;
+
+}
+
+
+/* =====================================================
+   STORY CARDS
+   ===================================================== */
+
+#qp-scroll-{{ section.id }} .qp-scene02-cards {
 
   position: absolute;
 
   inset: 0;
 
-  z-index: 20;
+  z-index: 30;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card {
+#qp-scroll-{{ section.id }} .qp-story-card {
 
   position: absolute;
 
@@ -858,65 +925,69 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card:nth-child(1) {
+#qp-scroll-{{ section.id }} .qp-story-card:nth-child(1) {
 
   left: 7vw;
 
-  bottom: 15vh;
+  bottom: 13vh;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card:nth-child(2) {
+#qp-scroll-{{ section.id }} .qp-story-card:nth-child(2) {
 
   right: 7vw;
 
-  top: 20vh;
+  top: 19vh;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card:nth-child(3) {
+#qp-scroll-{{ section.id }} .qp-story-card:nth-child(3) {
 
-  right: 18vw;
+  right: 20vw;
 
   bottom: 10vh;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card:nth-child(4) {
+#qp-scroll-{{ section.id }} .qp-story-card:nth-child(4) {
 
-  left: 18vw;
+  left: 20vw;
 
-  top: 18vh;
+  top: 17vh;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-tension-card .qp-image {
+#qp-scroll-{{ section.id }} .qp-story-card img {
 
-  aspect-ratio: 1 / 1;
+  width: 100%;
+
+  aspect-ratio: 1;
 
   object-fit: cover;
+
+  display: block;
 
   margin-bottom: 12px;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-card-content span {
+#qp-scroll-{{ section.id }} .qp-story-card span {
 
   font-size: 9px;
 
   letter-spacing: .2em;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPStory-{{ section.id }} .qp-card-content h3 {
+#qp-scroll-{{ section.id }} .qp-story-card h3 {
 
   margin: 7px 0;
 
@@ -924,16 +995,14 @@
 
   letter-spacing: .1em;
 
-  text-transform: uppercase;
-
 }
 
 
-#QPStory-{{ section.id }} .qp-card-content p {
+#qp-scroll-{{ section.id }} .qp-story-card p {
 
   margin: 0;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
   font-size: 12px;
 
@@ -942,11 +1011,11 @@
 }
 
 
-/* ======================================================
-   HOW IT WORKS
-   ====================================================== */
+/* =====================================================
+   SCENE 03
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-how-product {
+#qp-scroll-{{ section.id }} .qp-how-product {
 
   position: absolute;
 
@@ -954,9 +1023,12 @@
 
   left: 50%;
 
-  top: 51%;
+  top: 50%;
 
-  width: min(53vw, 720px);
+  width: min(
+    52vw,
+    740px
+  );
 
   transform:
     translate(-50%, -50%)
@@ -971,29 +1043,34 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-how-title {
+#qp-scroll-{{ section.id }} .qp-how-product img {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-how-title {
 
   position: absolute;
 
-  z-index: 25;
+  z-index: 30;
 
   left: 7vw;
 
-  top: 25%;
+  top: 23%;
 
   opacity: 0;
 
   transform:
     translateY(40px);
 
-  will-change:
-    transform,
-    opacity;
-
 }
 
 
-#QPStory-{{ section.id }} .qp-how-title h2 {
+#qp-scroll-{{ section.id }} .qp-how-title h2 {
 
   margin: 0;
 
@@ -1003,18 +1080,14 @@
     90px
   );
 
-  line-height: .85;
+  line-height: .84;
 
   letter-spacing: -.07em;
 
 }
 
 
-/* ======================================================
-   HOW POINTS
-   ====================================================== */
-
-#QPStory-{{ section.id }} .qp-how-points {
+#qp-scroll-{{ section.id }} .qp-how-list {
 
   position: absolute;
 
@@ -1024,10 +1097,13 @@
 
   top: 50%;
 
-  width: min(30vw, 400px);
+  width: min(
+    31vw,
+    410px
+  );
 
   transform:
-    translate(100px, -50%);
+    translate(80px, -50%);
 
   opacity: 0;
 
@@ -1038,55 +1114,47 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-how-point {
+#qp-scroll-{{ section.id }} .qp-how-item {
 
   display: flex;
 
   gap: 18px;
 
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   opacity: 0;
 
   transform:
-    translateY(35px);
-
-  will-change:
-    transform,
-    opacity;
+    translateY(30px);
 
 }
 
 
-#QPStory-{{ section.id }} .qp-point-number {
-
-  flex: 0 0 auto;
+#qp-scroll-{{ section.id }} .qp-how-item > span {
 
   font-size: 9px;
 
   letter-spacing: .2em;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPStory-{{ section.id }} .qp-how-point h3 {
+#qp-scroll-{{ section.id }} .qp-how-item h3 {
 
   margin: 0 0 7px;
 
-  font-size: 18px;
-
-  letter-spacing: -.02em;
+  font-size: 17px;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-how-point p {
+#qp-scroll-{{ section.id }} .qp-how-item p {
 
   margin: 0;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
   font-size: 13px;
 
@@ -1095,11 +1163,11 @@
 }
 
 
-/* ======================================================
-   RESET / 10 MIN
-   ====================================================== */
+/* =====================================================
+   SCENE 04
+   ===================================================== */
 
-#QPStory-{{ section.id }} .qp-big-number {
+#qp-scroll-{{ section.id }} .qp-big-number {
 
   position: absolute;
 
@@ -1111,21 +1179,21 @@
 
   transform:
     translate(-50%, -50%)
-    scale(1.15);
+    scale(1.2);
 
   font-size: clamp(
     220px,
     38vw,
-    600px
+    620px
   );
 
-  line-height: .65;
+  line-height: .6;
 
   font-weight: 900;
 
   letter-spacing: -.12em;
 
-  color: rgba(20,20,20,.055);
+  color: rgba(0,0,0,.055);
 
   will-change:
     transform;
@@ -1133,13 +1201,13 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-number-label {
+#qp-scroll-{{ section.id }} .qp-number-label {
 
   position: absolute;
 
   z-index: 20;
 
-  top: 23%;
+  top: 20%;
 
   left: 50%;
 
@@ -1152,12 +1220,12 @@
 
   text-transform: uppercase;
 
-  color: var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPStory-{{ section.id }} .qp-reset-product {
+#qp-scroll-{{ section.id }} .qp-final-product {
 
   position: absolute;
 
@@ -1165,13 +1233,15 @@
 
   left: 50%;
 
-  top: 51%;
+  top: 50%;
 
-  width: min(47vw, 640px);
+  width: min(
+    48vw,
+    680px
+  );
 
   transform:
-    translate(-50%, -50%)
-    scale(1);
+    translate(-50%, -50%);
 
   will-change:
     transform;
@@ -1179,17 +1249,29 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-reset-copy {
+#qp-scroll-{{ section.id }} .qp-final-product img {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-final-copy {
 
   position: absolute;
 
-  z-index: 25;
+  z-index: 30;
 
   left: 50%;
 
   bottom: 8vh;
 
-  width: min(800px, 88vw);
+  width: min(
+    800px,
+    88vw
+  );
 
   text-align: center;
 
@@ -1205,7 +1287,7 @@
 }
 
 
-#QPStory-{{ section.id }} .qp-reset-copy h2 {
+#qp-scroll-{{ section.id }} .qp-final-copy h2 {
 
   margin: 0 0 15px;
 
@@ -1215,99 +1297,109 @@
     76px
   );
 
-  line-height: .88;
+  line-height: .87;
 
   letter-spacing: -.07em;
 
 }
 
 
-/* ======================================================
-   FINAL CTA
-   ====================================================== */
+#qp-scroll-{{ section.id }} .qp-final-copy > div {
 
-#QPStory-{{ section.id }} .qp-final {
+  color: var(--muted);
 
-  min-height: 75vh;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 100px 20px;
-
-  text-align: center;
-
-}
-
-
-#QPStory-{{ section.id }} .qp-final-inner {
-
-  width: min(900px, 92vw);
-
-}
-
-
-#QPStory-{{ section.id }} .qp-final-inner > span {
-
-  font-size: 10px;
-
-  letter-spacing: .3em;
-
-  text-transform: uppercase;
-
-  color: var(--qp-muted);
-
-}
-
-
-#QPStory-{{ section.id }} .qp-final-inner h2 {
-
-  margin: 20px 0 30px;
-
-  font-size: clamp(
-    52px,
-    7vw,
-    105px
-  );
-
-  line-height: .83;
-
-  letter-spacing: -.075em;
-
-}
-
-
-#QPStory-{{ section.id }} .qp-final-text {
-
-  max-width: 500px;
-
-  margin: 0 auto 30px;
-
-  color: var(--qp-muted);
+  font-size: 14px;
 
   line-height: 1.5;
 
 }
 
 
-#QPStory-{{ section.id }} .qp-button {
+/* =====================================================
+   FINAL
+   ===================================================== */
+
+#qp-scroll-{{ section.id }} .qp-final {
+
+  min-height: 75vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 100px 20px;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-final-inner {
+
+  width: min(
+    900px,
+    92vw
+  );
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-final-inner .qp-label {
+
+  position: static;
+
+  margin-bottom: 20px;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-final-inner h2 {
+
+  margin: 0 0 25px;
+
+  font-size: clamp(
+    50px,
+    7vw,
+    105px
+  );
+
+  line-height: .84;
+
+  letter-spacing: -.075em;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-final-description {
+
+  max-width: 520px;
+
+  margin: 0 auto 30px;
+
+  color: var(--muted);
+
+  line-height: 1.5;
+
+}
+
+
+#qp-scroll-{{ section.id }} .qp-button {
 
   display: inline-flex;
 
   min-height: 54px;
 
+  padding: 0 32px;
+
   align-items: center;
 
   justify-content: center;
 
-  padding: 0 32px;
+  background: var(--text);
 
-  background: var(--qp-text);
-
-  color: var(--qp-bg);
+  color: var(--bg);
 
   text-decoration: none;
 
@@ -1319,226 +1411,208 @@
 
   text-transform: uppercase;
 
-  transition:
-    transform .25s ease,
-    opacity .25s ease;
-
 }
 
 
-#QPStory-{{ section.id }} .qp-button:hover {
-
-  transform: translateY(-2px);
-
-  opacity: .85;
-
-}
-
-
-/* ======================================================
+/* =====================================================
    MOBILE
-   ====================================================== */
+   ===================================================== */
 
 @media screen and (max-width: 749px) {
 
-  #QPStory-{{ section.id }} .qp-scene-hero {
+  #qp-scroll-{{ section.id }} .qp-scene-01 {
 
-    height: 180vh;
-
-  }
-
-  #QPStory-{{ section.id }} .qp-scene-tension {
-
-    height: 230vh;
+    height: 190vh;
 
   }
 
-  #QPStory-{{ section.id }} .qp-scene-how {
+  #qp-scroll-{{ section.id }} .qp-scene-02 {
 
-    height: 240vh;
+    height: 220vh;
 
   }
 
-  #QPStory-{{ section.id }} .qp-scene-reset {
+  #qp-scroll-{{ section.id }} .qp-scene-03 {
+
+    height: 220vh;
+
+  }
+
+  #qp-scroll-{{ section.id }} .qp-scene-04 {
 
     height: 190vh;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-bg-text {
+  #qp-scroll-{{ section.id }} .qp-bg-text {
 
-    font-size: 28vw;
+    font-size: 29vw;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-eyebrow {
+  #qp-scroll-{{ section.id }} .qp-label {
+
+    left: 20px;
 
     top: 6vh;
 
-    left: 20px;
-
     font-size: 8px;
 
-    letter-spacing: .22em;
+  }
+
+
+  /* 产品窗口 */
+
+  #qp-scroll-{{ section.id }} .qp-product-window {
+
+    width: 94vw;
+
+    height: 70vh;
+
+    top: 45%;
 
   }
 
 
-  /* HERO */
+  /* Hero */
 
-  #QPStory-{{ section.id }} .qp-hero-product {
-
-    width: 92vw;
-
-    top: 43%;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-hero-copy {
+  #qp-scroll-{{ section.id }} .qp-hero-copy {
 
     left: 20px;
 
     right: 20px;
 
-    bottom: 7vh;
-
-    max-width: none;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-hero-copy h1 {
-
-    font-size: 45px;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-richtext {
-
-    font-size: 13px;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-hero-features {
-
-    left: 20px;
-
-    right: 20px;
-
-    bottom: 23vh;
-
-    justify-content: space-between;
-
-    gap: 15px;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-feature-card {
-
-    width: 42%;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-feature-card p {
-
-    font-size: 11px;
-
-  }
-
-
-  /* TENSION */
-
-  #QPStory-{{ section.id }} .qp-tension-image {
-
-    width: 88vw;
-
-    top: 43%;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-tension-heading {
-
-    left: 20px;
-
-    right: 20px;
-
-    top: 17%;
+    bottom: 6vh;
 
     width: auto;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-tension-heading h2 {
+  #qp-scroll-{{ section.id }} .qp-hero-copy h1 {
+
+    font-size: 43px;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-side-info {
+
+    left: 20px;
+
+    right: 20px;
+
+    bottom: 22vh;
+
+    gap: 15px;
+
+    justify-content: space-between;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-feature {
+
+    width: 44%;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-feature p {
+
+    font-size: 10px;
+
+  }
+
+
+  /* Scene 02 */
+
+  #qp-scroll-{{ section.id }} .qp-scene02-copy {
+
+    left: 20px;
+
+    right: 20px;
+
+    top: 15%;
+
+    width: auto;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-scene02-copy h2 {
 
     font-size: 40px;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-tension-card {
-
-    width: 125px;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-tension-card:nth-child(1) {
-
-    left: 20px;
-
-    bottom: 9vh;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-tension-card:nth-child(2) {
-
-    right: 20px;
-
-    top: 25vh;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-tension-card:nth-child(3) {
-
-    right: 20px;
-
-    bottom: 9vh;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-tension-card:nth-child(4) {
-
-    left: 20px;
-
-    top: 25vh;
-
-  }
-
-
-  /* HOW */
-
-  #QPStory-{{ section.id }} .qp-how-product {
+  #qp-scroll-{{ section.id }} .qp-scene02-image {
 
     width: 90vw;
 
-    top: 43%;
+    top: 44%;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-how-title {
+  #qp-scroll-{{ section.id }} .qp-story-card {
+
+    width: 120px;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-story-card:nth-child(1) {
+
+    left: 20px;
+
+    bottom: 9vh;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-story-card:nth-child(2) {
+
+    right: 20px;
+
+    top: 25vh;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-story-card:nth-child(3) {
+
+    right: 20px;
+
+    bottom: 9vh;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-story-card:nth-child(4) {
+
+    left: 20px;
+
+    top: 25vh;
+
+  }
+
+
+  /* Scene 03 */
+
+  #qp-scroll-{{ section.id }} .qp-how-product {
+
+    width: 90vw;
+
+    top: 44%;
+
+  }
+
+
+  #qp-scroll-{{ section.id }} .qp-how-title {
 
     left: 20px;
 
@@ -1547,61 +1621,47 @@
   }
 
 
-  #QPStory-{{ section.id }} .qp-how-title h2 {
+  #qp-scroll-{{ section.id }} .qp-how-title h2 {
 
-    font-size: 45px;
+    font-size: 43px;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-how-points {
+  #qp-scroll-{{ section.id }} .qp-how-list {
 
     left: 20px;
 
     right: 20px;
 
-    bottom: 6vh;
+    bottom: 5vh;
 
     top: auto;
 
     width: auto;
 
-  }
-
-
-  #QPStory-{{ section.id }} .qp-how-point {
-
-    margin-bottom: 18px;
+    transform: translateY(40px);
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-how-point h3 {
+  /* Scene 04 */
 
-    font-size: 16px;
+  #qp-scroll-{{ section.id }} .qp-big-number {
 
-  }
-
-
-  /* RESET */
-
-  #QPStory-{{ section.id }} .qp-big-number {
-
-    font-size: 65vw;
+    font-size: 66vw;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-reset-product {
+  #qp-scroll-{{ section.id }} .qp-final-product {
 
-    width: 85vw;
-
-    top: 43%;
+    width: 88vw;
 
   }
 
 
-  #QPStory-{{ section.id }} .qp-reset-copy {
+  #qp-scroll-{{ section.id }} .qp-final-copy {
 
     left: 20px;
 
@@ -1609,53 +1669,34 @@
 
     width: auto;
 
-    bottom: 7vh;
-
   }
 
 
-  #QPStory-{{ section.id }} .qp-reset-copy h2 {
+  #qp-scroll-{{ section.id }} .qp-final-copy h2 {
 
     font-size: 38px;
 
   }
 
 
-  /* CTA */
-
-  #QPStory-{{ section.id }} .qp-final {
-
-    min-height: 65vh;
-
-  }
-
-
-  #QPStory-{{ section.id }} .qp-final-inner h2 {
-
-    font-size: 50px;
-
-  }
-
 }
 
 
-/* ======================================================
+/* =====================================================
    REDUCED MOTION
-   ====================================================== */
+   ===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
 
-  #QPStory-{{ section.id }} .qp-scene {
+  #qp-scroll-{{ section.id }} .qp-scene {
 
     height: auto;
 
   }
 
-  #QPStory-{{ section.id }} .qp-sticky {
+  #qp-scroll-{{ section.id }} .qp-sticky {
 
     position: relative;
-
-    height: 100svh;
 
   }
 
@@ -1668,21 +1709,25 @@
 
 (function() {
 
-  const root = document.getElementById(
-    'QPStory-{{ section.id }}'
-  );
+  const root =
+    document.getElementById(
+      'qp-scroll-{{ section.id }}'
+    );
 
   if (!root) return;
 
 
-  let ticking = false;
+  let raf = null;
 
 
   function clamp(value) {
 
     return Math.max(
       0,
-      Math.min(1, value)
+      Math.min(
+        1,
+        value
+      )
     );
 
   }
@@ -1690,69 +1735,70 @@
 
   function map(
     value,
-    start,
-    end,
-    outStart,
-    outEnd
+    inMin,
+    inMax,
+    outMin,
+    outMax
   ) {
 
     const p = clamp(
-      (value - start) /
-      (end - start)
+      (value - inMin) /
+      (inMax - inMin)
     );
 
-    return outStart +
-      (outEnd - outStart) * p;
+    return outMin +
+      (outMax - outMin) * p;
 
   }
 
 
-  function getProgress(scene) {
+  function progress(scene) {
 
     const rect =
       scene.getBoundingClientRect();
 
-    const scrollDistance =
+    const distance =
       scene.offsetHeight -
       window.innerHeight;
 
-    if (scrollDistance <= 0) {
+    if (distance <= 0) {
       return 0;
     }
 
     return clamp(
       -rect.top /
-      scrollDistance
+      distance
     );
 
   }
 
 
-  /* ======================================================
+  /* =====================================================
      SCENE 01
-     ====================================================== */
+     ===================================================== */
 
-  function sceneHero() {
+  function scene01() {
 
     const scene =
       root.querySelector(
-        '.qp-scene-hero'
+        '.qp-scene-01'
       );
 
     if (!scene) return;
 
+
     const p =
-      getProgress(scene);
+      progress(scene);
 
 
     const bg =
       root.querySelector(
-        '.qp-bg-hero'
+        '.qp-bg-01'
       );
 
     const product =
       root.querySelector(
-        '.qp-hero-product'
+        '.qp-product'
       );
 
     const copy =
@@ -1762,34 +1808,155 @@
 
     const features =
       root.querySelectorAll(
-        '.qp-feature-card'
+        '.qp-feature'
       );
 
 
-    /* background text */
+    /*
+      ============================================
+      产品核心动画
+      ============================================
+
+      0%
+      歪 24°
+      右移
+      下移
+      放大
+      只露约 65%
+
+      ↓
+
+      40%
+      开始明显摆正
+
+      ↓
+
+      65%
+      完全摆正
+      完整露出
+
+      ↓
+
+      100%
+      保持
+    */
+
+
+    if (product) {
+
+      const rotate =
+        map(
+          p,
+          0,
+          .65,
+          24,
+          0
+        );
+
+
+      const x =
+        map(
+          p,
+          0,
+          .65,
+          18,
+          0
+        );
+
+
+      const y =
+        map(
+          p,
+          0,
+          .65,
+          12,
+          0
+        );
+
+
+      const scale =
+        map(
+          p,
+          0,
+          .65,
+          1.28,
+          1
+        );
+
+
+      const clip =
+        map(
+          p,
+          0,
+          .65,
+          35,
+          0
+        );
+
+
+      const opacity =
+        map(
+          p,
+          0,
+          .08,
+          0,
+          1
+        );
+
+
+      product.style.opacity =
+        opacity;
+
+
+      product.style.transform = `
+        translate3d(
+          ${x}vw,
+          ${y}vh,
+          0
+        )
+        rotate(${rotate}deg)
+        scale(${scale})
+      `;
+
+
+      product.style.clipPath = `
+        inset(
+          0
+          0
+          ${clip}%
+          0
+        )
+      `;
+
+    }
+
+
+    /* =====================
+       背景巨型文字
+       ===================== */
 
     if (bg) {
 
-      bg.style.transform =
-        `
+      bg.style.transform = `
         translate3d(
           ${map(
             p,
             0,
-            .75,
-            35,
+            .8,
+            32,
             -30
           )}vw,
           -50%,
           0
         )
-        `;
+      `;
+
 
       bg.style.opacity =
         map(
           p,
-          .72,
-          1,
+          .68,
+          .95,
           1,
           0
         );
@@ -1797,78 +1964,65 @@
     }
 
 
-    /* product */
-
-    if (product) {
-
-      product.style.transform =
-        `
-        translate3d(
-          -50%,
-          -50%,
-          0
-        )
-        scale(
-          ${map(
-            p,
-            0,
-            .55,
-            .72,
-            1
-          )}
-        )
-        `;
-
-    }
-
-
-    /* heading */
+    /* =====================
+       文案
+       ===================== */
 
     if (copy) {
 
       const cp =
         clamp(
-          (p - .42) /
-          .20
+          (p - .55) /
+          .18
         );
 
-      copy.style.opacity = cp;
 
-      copy.style.transform =
-        `
+      copy.style.opacity =
+        cp;
+
+
+      copy.style.transform = `
         translateY(
           ${map(
             cp,
             0,
             1,
-            45,
+            40,
             0
           )}px
         )
-        `;
+      `;
 
     }
 
 
-    /* feature cards */
+    /* =====================
+       Feature
+       ===================== */
 
     features.forEach(
-      function(card, index) {
+      function(
+        item,
+        index
+      ) {
 
         const start =
-          .18 +
+          .25 +
           index * .10;
+
 
         const fp =
           clamp(
             (p - start) /
-            .18
+            .16
           );
 
-        card.style.opacity = fp;
 
-        card.style.transform =
-          `
+        item.style.opacity =
+          fp;
+
+
+        item.style.transform = `
           translateY(
             ${map(
               fp,
@@ -1878,7 +2032,7 @@
               0
             )}px
           )
-          `;
+        `;
 
       }
     );
@@ -1886,76 +2040,72 @@
   }
 
 
-  /* ======================================================
+  /* =====================================================
      SCENE 02
-     ====================================================== */
+     ===================================================== */
 
-  function sceneTension() {
+  function scene02() {
 
     const scene =
       root.querySelector(
-        '.qp-scene-tension'
+        '.qp-scene-02'
       );
 
     if (!scene) return;
 
+
     const p =
-      getProgress(scene);
+      progress(scene);
 
 
     const bg =
       root.querySelector(
-        '.qp-bg-tension'
+        '.qp-bg-02'
       );
 
     const image =
       root.querySelector(
-        '.qp-tension-image'
+        '.qp-scene02-image'
       );
 
-    const heading =
+    const copy =
       root.querySelector(
-        '.qp-tension-heading'
+        '.qp-scene02-copy'
       );
 
     const cards =
       root.querySelectorAll(
-        '.qp-tension-card'
+        '.qp-story-card'
       );
 
 
-    /* background */
-
     if (bg) {
 
-      bg.style.transform =
-        `
+      bg.style.transform = `
         translate3d(
           ${map(
             p,
             0,
-            .75,
+            .8,
             30,
             -30
           )}vw,
           -50%,
           0
         )
-        `;
+      `;
 
       bg.style.opacity =
         map(
           p,
-          .68,
-          .92,
+          .7,
+          .95,
           1,
           0
         );
 
     }
 
-
-    /* image */
 
     if (image) {
 
@@ -1964,14 +2114,15 @@
           p / .35
         );
 
-      image.style.opacity = ip;
 
-      image.style.transform =
-        `
-        translate3d(
+      image.style.opacity =
+        ip;
+
+
+      image.style.transform = `
+        translate(
           -50%,
-          -50%,
-          0
+          -50%
         )
         scale(
           ${map(
@@ -1982,47 +2133,49 @@
             1
           )}
         )
-        `;
+      `;
 
     }
 
 
-    /* heading */
+    if (copy) {
 
-    if (heading) {
-
-      const hp =
+      const cp =
         clamp(
           (p - .28) /
           .18
         );
 
-      heading.style.opacity = hp;
 
-      heading.style.transform =
-        `
+      copy.style.opacity =
+        cp;
+
+
+      copy.style.transform = `
         translateY(
           ${map(
-            hp,
+            cp,
             0,
             1,
             40,
             0
           )}px
         )
-        `;
+      `;
 
     }
 
 
-    /* cards */
-
     cards.forEach(
-      function(card, index) {
+      function(
+        card,
+        index
+      ) {
 
         const start =
           .42 +
           index * .09;
+
 
         const cp =
           clamp(
@@ -2030,20 +2183,22 @@
             .15
           );
 
-        card.style.opacity = cp;
 
-        card.style.transform =
-          `
+        card.style.opacity =
+          cp;
+
+
+        card.style.transform = `
           translateY(
             ${map(
               cp,
               0,
               1,
-              45,
+              40,
               0
             )}px
           )
-          `;
+        `;
 
       }
     );
@@ -2051,26 +2206,27 @@
   }
 
 
-  /* ======================================================
+  /* =====================================================
      SCENE 03
-     ====================================================== */
+     ===================================================== */
 
-  function sceneHow() {
+  function scene03() {
 
     const scene =
       root.querySelector(
-        '.qp-scene-how'
+        '.qp-scene-03'
       );
 
     if (!scene) return;
 
+
     const p =
-      getProgress(scene);
+      progress(scene);
 
 
     const bg =
       root.querySelector(
-        '.qp-bg-how'
+        '.qp-bg-03'
       );
 
     const product =
@@ -2083,23 +2239,20 @@
         '.qp-how-title'
       );
 
-    const container =
+    const list =
       root.querySelector(
-        '.qp-how-points'
+        '.qp-how-list'
       );
 
-    const points =
+    const items =
       root.querySelectorAll(
-        '.qp-how-point'
+        '.qp-how-item'
       );
 
-
-    /* background */
 
     if (bg) {
 
-      bg.style.transform =
-        `
+      bg.style.transform = `
         translate3d(
           ${map(
             p,
@@ -2111,7 +2264,7 @@
           -50%,
           0
         )
-        `;
+      `;
 
       bg.style.opacity =
         map(
@@ -2125,23 +2278,22 @@
     }
 
 
-    /* product */
-
     if (product) {
 
       const ip =
         clamp(
-          p / .32
+          p / .3
         );
 
-      product.style.opacity = ip;
 
-      product.style.transform =
-        `
-        translate3d(
+      product.style.opacity =
+        ip;
+
+
+      product.style.transform = `
+        translate(
           -50%,
-          -50%,
-          0
+          -50%
         )
         scale(
           ${map(
@@ -2152,12 +2304,10 @@
             1
           )}
         )
-        `;
+      `;
 
     }
 
-
-    /* title */
 
     if (title) {
 
@@ -2167,10 +2317,12 @@
           .18
         );
 
-      title.style.opacity = tp;
 
-      title.style.transform =
-        `
+      title.style.opacity =
+        tp;
+
+
+      title.style.transform = `
         translateY(
           ${map(
             tp,
@@ -2180,69 +2332,73 @@
             0
           )}px
         )
-        `;
+      `;
 
     }
 
 
-    /* points container */
+    if (list) {
 
-    if (container) {
-
-      const cp =
+      const lp =
         clamp(
           (p - .38) /
           .15
         );
 
-      container.style.opacity = cp;
 
-      container.style.transform =
-        `
+      list.style.opacity =
+        lp;
+
+
+      list.style.transform = `
         translate(
           ${map(
-            cp,
+            lp,
             0,
             1,
-            100,
+            80,
             0
           )}px,
           -50%
         )
-        `;
+      `;
 
     }
 
 
-    /* points */
-
-    points.forEach(
-      function(point, index) {
+    items.forEach(
+      function(
+        item,
+        index
+      ) {
 
         const start =
           .45 +
-          index * .13;
+          index * .12;
 
-        const pp =
+
+        const ip =
           clamp(
             (p - start) /
-            .11
+            .12
           );
 
-        point.style.opacity = pp;
 
-        point.style.transform =
-          `
+        item.style.opacity =
+          ip;
+
+
+        item.style.transform = `
           translateY(
             ${map(
-              pp,
+              ip,
               0,
               1,
-              35,
+              30,
               0
             )}px
           )
-          `;
+        `;
 
       }
     );
@@ -2250,21 +2406,22 @@
   }
 
 
-  /* ======================================================
+  /* =====================================================
      SCENE 04
-     ====================================================== */
+     ===================================================== */
 
-  function sceneReset() {
+  function scene04() {
 
     const scene =
       root.querySelector(
-        '.qp-scene-reset'
+        '.qp-scene-04'
       );
 
     if (!scene) return;
 
+
     const p =
-      getProgress(scene);
+      progress(scene);
 
 
     const number =
@@ -2274,21 +2431,18 @@
 
     const product =
       root.querySelector(
-        '.qp-reset-product'
+        '.qp-final-product'
       );
 
     const copy =
       root.querySelector(
-        '.qp-reset-copy'
+        '.qp-final-copy'
       );
 
 
-    /* number */
-
     if (number) {
 
-      number.style.transform =
-        `
+      number.style.transform = `
         translate(
           -50%,
           -50%
@@ -2297,32 +2451,29 @@
           ${map(
             p,
             0,
-            .75,
-            1.15,
+            .8,
+            1.2,
             .88
           )}
         )
-        `;
+      `;
 
     }
 
 
-    /* product */
-
     if (product) {
 
-      product.style.transform =
-        `
+      product.style.transform = `
         translate(
           -50%,
           calc(
-            -50% +
+            -50% -
             ${map(
               p,
               0,
               1,
               0,
-              -110
+              100
             )}px
           )
         )
@@ -2332,15 +2483,13 @@
             0,
             .8,
             1,
-            .72
+            .76
           )}
         )
-        `;
+      `;
 
     }
 
-
-    /* copy */
 
     if (copy) {
 
@@ -2350,49 +2499,56 @@
           .22
         );
 
-      copy.style.opacity = cp;
 
-      copy.style.transform =
-        `
+      copy.style.opacity =
+        cp;
+
+
+      copy.style.transform = `
         translate(
           -50%,
           ${map(
             cp,
             0,
             1,
-            45,
+            40,
             0
           )}px
         )
-        `;
+      `;
 
     }
 
   }
 
 
+  /* =====================================================
+     UPDATE
+     ===================================================== */
+
   function update() {
 
-    ticking = false;
+    raf = null;
 
-    sceneHero();
+    scene01();
 
-    sceneTension();
+    scene02();
 
-    sceneHow();
+    scene03();
 
-    sceneReset();
+    scene04();
 
   }
 
 
   function requestUpdate() {
 
-    if (ticking) return;
+    if (raf) return;
 
-    ticking = true;
-
-    requestAnimationFrame(update);
+    raf =
+      requestAnimationFrame(
+        update
+      );
 
   }
 
@@ -2404,6 +2560,7 @@
       passive: true
     }
   );
+
 
   window.addEventListener(
     'resize',
@@ -2421,7 +2578,7 @@
 {% schema %}
 
 {
-  "name": "QP Scroll Story",
+  "name": "QP Scroll Product",
 
   "settings": [
 
@@ -2434,19 +2591,19 @@
       "type": "color",
       "id": "background",
       "label": "Background",
-      "default": "#FFFFFF"
+      "default": "#ffffff"
     },
 
     {
       "type": "color",
-      "id": "text_color",
+      "id": "text",
       "label": "Text",
       "default": "#171717"
     },
 
     {
       "type": "color",
-      "id": "muted_color",
+      "id": "muted",
       "label": "Muted text",
       "default": "#777777"
     },
@@ -2461,39 +2618,46 @@
 
     {
       "type": "header",
-      "content": "Scene 01 — Hero"
+      "content": "Scene 01"
     },
 
     {
       "type": "text",
-      "id": "hero_bg_text",
+      "id": "bg_text_01",
       "label": "Background text",
       "default": "NECK RESET"
     },
 
     {
       "type": "text",
-      "id": "hero_eyebrow",
-      "label": "Eyebrow",
+      "id": "label_01",
+      "label": "Label",
       "default": "QUESTPROPS™ NECK RESTORE"
     },
 
     {
       "type": "image_picker",
-      "id": "hero_image",
+      "id": "product_image",
       "label": "Product image"
     },
 
     {
       "type": "text",
-      "id": "hero_heading",
+      "id": "small_label",
+      "label": "Small label",
+      "default": "YOUR DAILY RESET"
+    },
+
+    {
+      "type": "text",
+      "id": "heading",
       "label": "Heading",
       "default": "Your daily neck reset."
     },
 
     {
       "type": "richtext",
-      "id": "hero_text",
+      "id": "description",
       "label": "Description",
       "default": "<p>Long hours sitting, driving, or working can leave your neck feeling tight and tired.</p>"
     },
@@ -2501,72 +2665,72 @@
 
     {
       "type": "header",
-      "content": "Scene 02 — Tension"
+      "content": "Scene 02"
     },
 
     {
       "type": "text",
-      "id": "tension_bg_text",
+      "id": "bg_text_02",
       "label": "Background text",
       "default": "TENSION"
     },
 
     {
       "type": "text",
-      "id": "tension_eyebrow",
-      "label": "Eyebrow",
-      "default": "WHY YOUR NECK FEELS TIRED"
+      "id": "label_02",
+      "label": "Label",
+      "default": "WHY IT BUILDS"
     },
 
     {
       "type": "image_picker",
-      "id": "tension_image",
-      "label": "Main image"
+      "id": "image_02",
+      "label": "Image"
     },
 
     {
       "type": "text",
-      "id": "tension_heading",
+      "id": "heading_02",
       "label": "Heading",
       "default": "It builds quietly."
     },
 
     {
       "type": "richtext",
-      "id": "tension_text",
-      "label": "Description",
+      "id": "text_02",
+      "label": "Text",
       "default": "<p>Hours at a desk. Long drives. Looking down at screens. The tension adds up.</p>"
     },
 
 
     {
       "type": "header",
-      "content": "Scene 03 — How It Works"
+      "content": "Scene 03"
     },
 
     {
       "type": "text",
-      "id": "how_bg_text",
+      "id": "bg_text_03",
       "label": "Background text",
       "default": "RESET"
     },
 
     {
       "type": "text",
-      "id": "how_eyebrow",
-      "label": "Eyebrow",
+      "id": "label_03",
+      "label": "Label",
       "default": "HOW IT WORKS"
     },
 
     {
       "type": "image_picker",
-      "id": "how_image",
-      "label": "Product image"
+      "id": "image_03",
+      "label": "Image"
     },
 
     {
       "type": "text",
-      "id": "how_heading",
+      "id": "heading_03",
       "label": "Heading",
       "default": "Two simple therapies."
     },
@@ -2574,41 +2738,41 @@
 
     {
       "type": "header",
-      "content": "Scene 04 — 10 Minutes"
+      "content": "Scene 04"
     },
 
     {
       "type": "text",
-      "id": "reset_number",
+      "id": "big_number",
       "label": "Big number",
       "default": "10"
     },
 
     {
       "type": "text",
-      "id": "reset_label",
+      "id": "number_label",
       "label": "Number label",
       "default": "MINUTES A DAY"
     },
 
     {
       "type": "image_picker",
-      "id": "reset_image",
-      "label": "Product image"
+      "id": "image_04",
+      "label": "Image"
     },
 
     {
       "type": "text",
-      "id": "reset_heading",
+      "id": "heading_04",
       "label": "Heading",
-      "default": "A simple reset you can actually stick with."
+      "default": "A reset you can actually stick with."
     },
 
     {
       "type": "richtext",
-      "id": "reset_text",
-      "label": "Description",
-      "default": "<p>Just 10 minutes a day. Let your routine do the work.</p>"
+      "id": "text_04",
+      "label": "Text",
+      "default": "<p>Just 10 minutes a day.</p>"
     },
 
 
@@ -2619,9 +2783,9 @@
 
     {
       "type": "text",
-      "id": "final_eyebrow",
-      "label": "Eyebrow",
-      "default": "QUESTPROPS™ NECK RESTORE"
+      "id": "final_label",
+      "label": "Label",
+      "default": "QUESTPROPS™"
     },
 
     {
@@ -2633,21 +2797,21 @@
 
     {
       "type": "richtext",
-      "id": "final_text",
+      "id": "final_description",
       "label": "Description",
       "default": "<p>Ten minutes. One simple daily routine.</p>"
     },
 
     {
       "type": "text",
-      "id": "final_button_text",
+      "id": "button_text",
       "label": "Button text",
       "default": "RESET YOUR NECK"
     },
 
     {
       "type": "url",
-      "id": "final_button_url",
+      "id": "button_link",
       "label": "Button link"
     }
 
@@ -2657,9 +2821,9 @@
   "blocks": [
 
     {
-      "type": "hero_feature",
+      "type": "feature",
 
-      "name": "Hero Feature",
+      "name": "Feature",
 
       "settings": [
 
@@ -2680,7 +2844,7 @@
         {
           "type": "textarea",
           "id": "text",
-          "label": "Description",
+          "label": "Text",
           "default": "Gentle electrical stimulation."
         }
 
@@ -2690,9 +2854,9 @@
 
 
     {
-      "type": "tension_card",
+      "type": "story_card",
 
-      "name": "Tension Card",
+      "name": "Story card",
 
       "settings": [
 
@@ -2719,7 +2883,7 @@
         {
           "type": "textarea",
           "id": "text",
-          "label": "Description",
+          "label": "Text",
           "default": "Long hours at a desk."
         }
 
@@ -2729,9 +2893,9 @@
 
 
     {
-      "type": "how_point",
+      "type": "how_item",
 
-      "name": "How It Works Point",
+      "name": "How item",
 
       "settings": [
 
@@ -2752,8 +2916,8 @@
         {
           "type": "textarea",
           "id": "text",
-          "label": "Description",
-          "default": "Gentle stimulation designed for your daily neck routine."
+          "label": "Text",
+          "default": "Gentle stimulation designed for your daily routine."
         }
 
       ]
@@ -2766,21 +2930,16 @@
   "presets": [
 
     {
-      "name": "QP Scroll Story",
+      "name": "QP Scroll Product",
 
       "blocks": [
 
         {
-          "type": "hero_feature",
-          "settings": {
-            "number": "01",
-            "title": "EMS",
-            "text": "Gentle electrical stimulation."
-          }
+          "type": "feature"
         },
 
         {
-          "type": "hero_feature",
+          "type": "feature",
           "settings": {
             "number": "02",
             "title": "HEAT",
@@ -2789,7 +2948,7 @@
         },
 
         {
-          "type": "tension_card",
+          "type": "story_card",
           "settings": {
             "number": "01",
             "title": "SITTING"
@@ -2797,7 +2956,7 @@
         },
 
         {
-          "type": "tension_card",
+          "type": "story_card",
           "settings": {
             "number": "02",
             "title": "DRIVING"
@@ -2805,7 +2964,7 @@
         },
 
         {
-          "type": "tension_card",
+          "type": "story_card",
           "settings": {
             "number": "03",
             "title": "WORKING"
@@ -2813,7 +2972,7 @@
         },
 
         {
-          "type": "tension_card",
+          "type": "story_card",
           "settings": {
             "number": "04",
             "title": "TRAVEL"
@@ -2821,7 +2980,7 @@
         },
 
         {
-          "type": "how_point",
+          "type": "how_item",
           "settings": {
             "number": "01",
             "title": "EMS Muscle Stimulation"
@@ -2829,7 +2988,7 @@
         },
 
         {
-          "type": "how_point",
+          "type": "how_item",
           "settings": {
             "number": "02",
             "title": "Soothing Heat"
@@ -2837,7 +2996,7 @@
         },
 
         {
-          "type": "how_point",
+          "type": "how_item",
           "settings": {
             "number": "03",
             "title": "Neck Curve Support"
