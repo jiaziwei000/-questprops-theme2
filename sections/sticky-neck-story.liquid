@@ -1,75 +1,69 @@
-<section id="qp-brand-scroll-{{ section.id }}" class="qp-brand-scroll">
+<section
+  id="qp-reset-story-{{ section.id }}"
+  class="qp-reset-story"
+>
+  <div class="qp-reset-scroll">
 
-  <div class="qp-scroll-stage">
+    <!-- =========================
+         FIXED VISUAL CANVAS
+    ========================== -->
 
-    <!-- =========================================
-         FIXED BACKGROUND TYPOGRAPHY
-         背景文字始终固定
-    ========================================== -->
+    <div class="qp-reset-canvas">
 
-    <div class="qp-fixed-canvas">
-
-      <div class="qp-kicker">
-        QUESTPROPS™ / NECK RESTORE
+      <!-- small brand mark -->
+      <div class="qp-reset-brand">
+        QUESTPROPS™
       </div>
 
-      <div class="qp-big-text qp-text-top">
-        YOUR DAILY
+      <!-- fixed typography -->
+      <div class="qp-reset-title">
+        <span>MAKE TIME</span>
+        <span>FOR YOUR NECK.</span>
       </div>
 
-      <div class="qp-big-text qp-text-bottom">
-        NECK RESET
+      <div class="qp-reset-meta">
+        NECK RESTORE / 01
       </div>
 
-      <div class="qp-small-line">
-        EMS + HEAT THERAPY
-      </div>
 
-    </div>
+      <!-- =========================
+           PRODUCT
+      ========================== -->
 
+      <div class="qp-reset-product-wrap">
 
-    <!-- =========================================
-         STICKY PRODUCT
-    ========================================== -->
+        <div class="qp-reset-product">
 
-    <div class="qp-sticky-product">
+          {% if section.settings.product_image != blank %}
 
-      <div class="qp-product">
+            {{
+              section.settings.product_image
+              | image_url: width: 2400
+              | image_tag:
+                class: 'qp-reset-product-image',
+                loading: 'eager',
+                widths: '800,1200,1600,2000,2400'
+            }}
 
-        {% if section.settings.product_image != blank %}
-
-          {{
-            section.settings.product_image
-            | image_url: width: 2400
-            | image_tag:
-              class: 'qp-product-image',
-              loading: 'eager',
-              widths: '900,1200,1600,2000,2400'
-          }}
-
-        {% else %}
-
-          <div class="qp-placeholder">
-            PRODUCT IMAGE
-          </div>
-
-        {% endif %}
+          {% endif %}
 
 
-        <!-- PACKAGING -->
-
-        <div class="qp-package">
+          <!-- packaging -->
 
           {% if section.settings.package_image != blank %}
 
-            {{
-              section.settings.package_image
-              | image_url: width: 1600
-              | image_tag:
-                class: 'qp-package-image',
-                loading: 'lazy',
-                widths: '600,900,1200,1600'
-            }}
+            <div class="qp-reset-package">
+
+              {{
+                section.settings.package_image
+                | image_url: width: 1400
+                | image_tag:
+                  class: 'qp-reset-package-image',
+                  loading: 'lazy',
+                  widths: '500,800,1100,1400'
+              }}
+
+            </div>
 
           {% endif %}
 
@@ -77,18 +71,26 @@
 
       </div>
 
-    </div>
+
+      <!-- =========================
+           SECOND MESSAGE
+      ========================== -->
+
+      <div class="qp-reset-ten">
+
+        <span>10 MINUTES.</span>
+        <span>THAT'S IT.</span>
+
+      </div>
 
 
-    <!-- =========================================
-         FINAL LOCKUP
-    ========================================== -->
+      <!-- =========================
+           FINAL PRODUCT LOCKUP
+      ========================== -->
 
-    <div class="qp-final-lockup">
+      <div class="qp-reset-final">
 
-      <div class="qp-final-content">
-
-        <div class="qp-final-brand">
+        <div class="qp-reset-final-brand">
           QUESTPROPS™ NECK RESTORE
         </div>
 
@@ -97,27 +99,26 @@
           FOR YOUR DAY.
         </h2>
 
-        <p>
-          EMS stimulation + soothing heat.
-        </p>
+        <div class="qp-reset-final-price">
 
-        <div class="qp-final-price">
-          <span class="qp-old-price">$169.99</span>
+          <span>$169.99</span>
+
           <strong>$119.99</strong>
+
         </div>
 
         <a
           href="{{ section.settings.button_link }}"
-          class="qp-final-button"
+          class="qp-reset-button"
         >
           {{ section.settings.button_text }}
           <span>→</span>
         </a>
 
-        <div class="qp-final-trust">
-          60-Day Trial&nbsp;&nbsp;·&nbsp;&nbsp;
-          2-Year Warranty&nbsp;&nbsp;·&nbsp;&nbsp;
-          Free Shipping
+        <div class="qp-reset-trust">
+          60-DAY TRIAL&nbsp;&nbsp; · &nbsp;&nbsp;
+          2-YEAR WARRANTY&nbsp;&nbsp; · &nbsp;&nbsp;
+          FREE SHIPPING
         </div>
 
       </div>
@@ -125,7 +126,6 @@
     </div>
 
   </div>
-
 </section>
 
 
@@ -135,22 +135,20 @@
    ROOT
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }} {
+#qp-reset-story-{{ section.id }} {
 
-  --bg: #f3f1ec;
-
-  --text: #171717;
+  --qp-background: #f2f0eb;
+  --qp-black: #171717;
 
   position: relative;
 
   width: 100%;
 
-  background: var(--bg);
+  background: var(--qp-background);
 
-  color: var(--text);
+  color: var(--qp-black);
 
   overflow: clip;
-
 }
 
 
@@ -158,48 +156,44 @@
    SCROLL LENGTH
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-scroll-stage {
+#qp-reset-story-{{ section.id }}
+.qp-reset-scroll {
 
   position: relative;
 
-  height: 620vh;
-
+  height: 560vh;
 }
 
 
 /* =====================================================
-   FIXED CANVAS
+   ONE SINGLE STICKY CANVAS
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-fixed-canvas {
+#qp-reset-story-{{ section.id }}
+.qp-reset-canvas {
 
   position: sticky;
 
   top: 0;
 
+  width: 100%;
+
   height: 100vh;
 
   height: 100svh;
 
-  width: 100%;
-
   overflow: hidden;
 
-  z-index: 1;
-
-  pointer-events: none;
-
+  isolation: isolate;
 }
 
 
 /* =====================================================
-   TOP BRAND LABEL
+   BRAND
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-kicker {
+#qp-reset-story-{{ section.id }}
+.qp-reset-brand {
 
   position: absolute;
 
@@ -207,107 +201,104 @@
 
   left: 32px;
 
+  z-index: 20;
+
   font-size: 10px;
 
-  font-weight: 600;
+  line-height: 1;
+
+  font-weight: 700;
 
   letter-spacing: .18em;
-
 }
 
 
 /* =====================================================
-   GIANT TYPE
+   FIXED GIANT TYPE
+
+   THIS NEVER MOVES
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-big-text {
+#qp-reset-story-{{ section.id }}
+.qp-reset-title {
 
   position: absolute;
 
-  white-space: nowrap;
+  left: -3vw;
+
+  top: 19vh;
+
+  z-index: 1;
+
+  display: flex;
+
+  flex-direction: column;
 
   font-size: clamp(
-    100px,
-    14.5vw,
-    235px
+    82px,
+    14vw,
+    230px
   );
 
-  font-weight: 800;
-
   line-height: .78;
+
+  font-weight: 800;
 
   letter-spacing: -.085em;
 
   text-transform: uppercase;
 
+  white-space: nowrap;
+
+  pointer-events: none;
 }
 
 
-/* =====================================================
-   TYPOGRAPHY COMPOSITION
-===================================================== */
+#qp-reset-story-{{ section.id }}
+.qp-reset-title span:last-child {
 
-#qp-brand-scroll-{{ section.id }}
-.qp-text-top {
-
-  top: 18%;
-
-  left: -3%;
-
-}
-
-
-#qp-brand-scroll-{{ section.id }}
-.qp-text-bottom {
-
-  top: 58%;
-
-  right: -5%;
+  margin-left: 9vw;
 
 }
 
 
 /* =====================================================
-   SMALL TECH LINE
+   SMALL META
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-small-line {
+#qp-reset-story-{{ section.id }}
+.qp-reset-meta {
 
   position: absolute;
 
-  bottom: 30px;
-
   right: 32px;
 
-  font-size: 10px;
+  top: 31px;
+
+  z-index: 20;
+
+  font-size: 9px;
 
   font-weight: 600;
 
   letter-spacing: .18em;
-
 }
 
 
 /* =====================================================
-   STICKY PRODUCT
+   PRODUCT LAYER
+
+   ABOVE TYPOGRAPHY
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-sticky-product {
+#qp-reset-story-{{ section.id }}
+.qp-reset-product-wrap {
 
-  position: sticky;
+  position: absolute;
 
-  top: 0;
+  inset: 0;
 
-  height: 100vh;
-
-  height: 100svh;
-
-  margin-top: -100vh;
-
-  margin-top: -100svh;
+  z-index: 10;
 
   display: flex;
 
@@ -315,41 +306,44 @@
 
   justify-content: center;
 
-  z-index: 10;
-
   pointer-events: none;
-
 }
 
 
 /* =====================================================
    PRODUCT
+
+   JS ONLY CONTROLS THIS
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-product {
+#qp-reset-story-{{ section.id }}
+.qp-reset-product {
 
   position: relative;
 
-  width: min(53vw, 780px);
+  width: min(
+    52vw,
+    760px
+  );
 
   transform:
-
     translate3d(
       0,
-      55vh,
+      62vh,
       0
     )
-
-    scale(.72);
+    scale(.68);
 
   will-change: transform;
-
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-product-image {
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+#qp-reset-story-{{ section.id }}
+.qp-reset-product-image {
 
   display: block;
 
@@ -361,50 +355,49 @@
 
   filter:
     drop-shadow(
-      0 30px 45px rgba(0,0,0,.10)
+      0 28px 38px rgba(0,0,0,.12)
     );
-
 }
 
 
 /* =====================================================
    PACKAGE
+
+   HIDDEN UNTIL THE END
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-package {
+#qp-reset-story-{{ section.id }}
+.qp-reset-package {
 
   position: absolute;
 
-  width: 30%;
+  width: 29%;
 
-  right: -4%;
+  right: -2%;
 
-  bottom: -4%;
+  bottom: -5%;
 
   opacity: 0;
 
   transform:
-
     translate3d(
-      50px,
-      70px,
+      35px,
+      45px,
       0
     )
+    scale(.72)
+    rotate(5deg);
 
-    rotate(7deg)
-
-    scale(.65);
+  transform-origin: center bottom;
 
   will-change:
     transform,
     opacity;
-
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-package-image {
+#qp-reset-story-{{ section.id }}
+.qp-reset-package-image {
 
   display: block;
 
@@ -414,9 +407,55 @@
 
   filter:
     drop-shadow(
-      0 20px 30px rgba(0,0,0,.10)
+      0 20px 28px rgba(0,0,0,.12)
+    );
+}
+
+
+/* =====================================================
+   10 MINUTES MESSAGE
+
+   THIS IS BEHIND PRODUCT
+===================================================== */
+
+#qp-reset-story-{{ section.id }}
+.qp-reset-ten {
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  z-index: 3;
+
+  transform:
+    translate(
+      -50%,
+      -50%
     );
 
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  font-size: clamp(
+    50px,
+    7vw,
+    110px
+  );
+
+  line-height: .82;
+
+  letter-spacing: -.075em;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  opacity: 0;
 }
 
 
@@ -424,95 +463,61 @@
    FINAL LOCKUP
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-lockup {
+#qp-reset-story-{{ section.id }}
+.qp-reset-final {
 
   position: absolute;
 
-  top: 500vh;
-
   left: 0;
 
-  width: 100%;
+  right: 0;
 
-  min-height: 120vh;
+  top: 100vh;
+
+  height: 100vh;
+
+  height: 100svh;
+
+  z-index: 30;
 
   display: flex;
+
+  flex-direction: column;
 
   align-items: center;
 
   justify-content: center;
 
-  z-index: 30;
-
-  pointer-events: none;
-
-}
-
-
-#qp-brand-scroll-{{ section.id }}
-.qp-final-content {
-
-  width: 100%;
-
   text-align: center;
 
   opacity: 0;
 
-  transform: translateY(40px);
-
-  transition:
-
-    opacity .9s ease,
-
-    transform .9s
-    cubic-bezier(
-      .22,
-      .61,
-      .36,
-      1
-    );
-
+  pointer-events: none;
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-content.active {
-
-  opacity: 1;
-
-  transform: translateY(0);
-
-}
-
-
-/* =====================================================
-   FINAL TYPOGRAPHY
-===================================================== */
-
-#qp-brand-scroll-{{ section.id }}
-.qp-final-brand {
-
-  font-size: 10px;
-
-  font-weight: 600;
-
-  letter-spacing: .22em;
+#qp-reset-story-{{ section.id }}
+.qp-reset-final-brand {
 
   margin-bottom: 22px;
 
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: .2em;
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-content h2 {
+#qp-reset-story-{{ section.id }}
+.qp-reset-final h2 {
 
   margin: 0;
 
   font-size: clamp(
-    55px,
-    7vw,
-    112px
+    48px,
+    6.5vw,
+    105px
   );
 
   line-height: .84;
@@ -520,66 +525,48 @@
   letter-spacing: -.075em;
 
   font-weight: 800;
-
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-content p {
+#qp-reset-story-{{ section.id }}
+.qp-reset-final-price {
 
-  margin:
+  display: flex;
 
-    28px
+  align-items: center;
 
-    0
+  gap: 12px;
 
-    18px;
+  margin-top: 28px;
 
-  font-size: 15px;
-
+  margin-bottom: 22px;
 }
 
 
-/* =====================================================
-   PRICE
-===================================================== */
+#qp-reset-story-{{ section.id }}
+.qp-reset-final-price span {
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-price {
-
-  margin-bottom: 24px;
-
-}
-
-
-#qp-brand-scroll-{{ section.id }}
-.qp-old-price {
-
-  margin-right: 10px;
+  font-size: 14px;
 
   opacity: .4;
 
   text-decoration: line-through;
-
-  font-size: 15px;
-
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-price strong {
+#qp-reset-story-{{ section.id }}
+.qp-reset-final-price strong {
 
-  font-size: 24px;
-
+  font-size: 23px;
 }
 
 
 /* =====================================================
-   CTA
+   BUTTON
 ===================================================== */
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-button {
+#qp-reset-story-{{ section.id }}
+.qp-reset-button {
 
   display: inline-flex;
 
@@ -587,54 +574,51 @@
 
   justify-content: center;
 
-  gap: 18px;
+  gap: 20px;
 
-  min-width: 225px;
+  min-width: 230px;
 
-  padding: 18px 32px;
+  padding: 18px 28px;
 
-  background: #171717;
+  background: var(--qp-black);
 
   color: white;
 
   text-decoration: none;
 
-  font-size: 11px;
+  font-size: 10px;
 
   font-weight: 700;
 
-  letter-spacing: .12em;
+  letter-spacing: .15em;
 
   pointer-events: auto;
 
   transition:
-
     transform .25s ease,
-
     opacity .25s ease;
-
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-button:hover {
+#qp-reset-story-{{ section.id }}
+.qp-reset-button:hover {
 
   transform: translateY(-2px);
 
-  opacity: .9;
-
+  opacity: .88;
 }
 
 
-#qp-brand-scroll-{{ section.id }}
-.qp-final-trust {
+#qp-reset-story-{{ section.id }}
+.qp-reset-trust {
 
   margin-top: 18px;
 
-  font-size: 10px;
+  font-size: 9px;
 
-  opacity: .5;
+  letter-spacing: .05em;
 
+  opacity: .45;
 }
 
 
@@ -644,69 +628,16 @@
 
 @media screen and (max-width: 749px) {
 
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-scroll {
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-scroll-stage {
-
-    height: 620vh;
-
-  }
-
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-big-text {
-
-    font-size: 19vw;
-
-    line-height: .78;
-
-    letter-spacing: -.085em;
+    height: 520vh;
 
   }
 
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-text-top {
-
-    top: 20%;
-
-    left: -8%;
-
-  }
-
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-text-bottom {
-
-    top: 61%;
-
-    right: -18%;
-
-  }
-
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-product {
-
-    width: 91vw;
-
-  }
-
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-package {
-
-    width: 38%;
-
-    right: -3%;
-
-    bottom: -3%;
-
-  }
-
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-kicker {
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-brand {
 
     top: 20px;
 
@@ -717,10 +648,10 @@
   }
 
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-small-line {
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-meta {
 
-    bottom: 20px;
+    top: 22px;
 
     right: 18px;
 
@@ -729,50 +660,78 @@
   }
 
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-final-content {
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-title {
+
+    left: -8vw;
+
+    top: 22vh;
+
+    font-size: 18vw;
+
+    line-height: .8;
+
+  }
+
+
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-title span:last-child {
+
+    margin-left: 12vw;
+
+  }
+
+
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-product {
+
+    width: 91vw;
+
+  }
+
+
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-package {
+
+    width: 36%;
+
+    right: -3%;
+
+    bottom: -3%;
+
+  }
+
+
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-ten {
+
+    font-size: 12vw;
+
+  }
+
+
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-final {
 
     padding: 0 20px;
 
   }
 
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-final-content h2 {
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-final h2 {
 
     font-size: 13vw;
 
   }
 
 
-  #qp-brand-scroll-{{ section.id }}
-  .qp-final-content p {
+  #qp-reset-story-{{ section.id }}
+  .qp-reset-trust {
 
-    font-size: 13px;
+    max-width: 280px;
 
-  }
-
-
-}
-
-
-/* =====================================================
-   REDUCED MOTION
-===================================================== */
-
-@media
-(prefers-reduced-motion: reduce) {
-
-  #qp-brand-scroll-{{ section.id }}
-  .qp-product {
-
-    transform:
-      translate3d(
-        0,
-        0,
-        0
-      )
-      scale(1);
+    line-height: 1.7;
 
   }
 
@@ -786,193 +745,215 @@
 (function() {
 
   const root =
-    document.querySelector(
-      '#qp-brand-scroll-{{ section.id }}'
+    document.getElementById(
+      'qp-reset-story-{{ section.id }}'
     );
 
   if (!root) return;
 
 
-  const stage =
+  const scroll =
     root.querySelector(
-      '.qp-scroll-stage'
+      '.qp-reset-scroll'
     );
 
   const product =
     root.querySelector(
-      '.qp-product'
+      '.qp-reset-product'
     );
 
-  const packageBox =
+  const packageEl =
     root.querySelector(
-      '.qp-package'
+      '.qp-reset-package'
+    );
+
+  const ten =
+    root.querySelector(
+      '.qp-reset-ten'
     );
 
   const final =
     root.querySelector(
-      '.qp-final-content'
+      '.qp-reset-final'
     );
+
+
+  function clamp(value, min, max) {
+
+    return Math.max(
+      min,
+      Math.min(
+        max,
+        value
+      )
+    );
+
+  }
+
+
+  function ease(value) {
+
+    return value *
+      value *
+      (3 - 2 * value);
+
+  }
 
 
   function update() {
 
     const rect =
-      stage.getBoundingClientRect();
+      scroll.getBoundingClientRect();
 
-    const total =
-      stage.offsetHeight -
+    const scrollable =
+      scroll.offsetHeight -
       window.innerHeight;
 
 
-    if (total <= 0) return;
+    if (scrollable <= 0) return;
 
 
     let progress =
-      -rect.top / total;
+      -rect.top /
+      scrollable;
 
 
     progress =
-      Math.max(
+      clamp(
+        progress,
         0,
-        Math.min(
-          1,
-          progress
-        )
+        1
       );
 
 
     /* =========================================
-       PRODUCT JOURNEY
+       PRODUCT TIMELINE
 
-       0.00
-       ↓
-       product enters from bottom
+       0 — 20%
+       ENTER
 
-       0.25
-       ↓
-       centered
+       20 — 55%
+       CENTER
 
-       0.55
-       ↓
-       begins growing
+       55 — 76%
+       GROW
 
-       0.72
-       ↓
-       package enters
-
-       0.82
-       ↓
-       final lockup
+       76 — 88%
+       FINAL LOCKUP
     ========================================== */
 
-    let y;
 
-    let x;
+    let y = 0;
 
-    let scale;
+    let x = 0;
 
-    let rotate;
+    let scale = .68;
+
+    let rotation = 0;
 
 
-    if (progress < .22) {
+    if (progress < .20) {
 
       const p =
-        progress / .22;
+        ease(
+          progress / .20
+        );
 
 
       y =
-        55 -
-        (55 * p);
-
-
-      x = 0;
+        62 -
+        (62 * p);
 
 
       scale =
-        .72 +
+        .68 +
         (.20 * p);
 
 
-      rotate =
-        -3 +
-        (3 * p);
-
-    }
-
-    else if (progress < .50) {
-
-      const p =
-        (progress - .22) /
-        .28;
-
-
-      y = 0;
-
-
-      x =
-        -5 * p;
-
-
-      scale =
-        .92 +
-        (.08 * p);
-
-
-      rotate = 0;
-
-    }
-
-    else if (progress < .72) {
-
-      const p =
-        (progress - .50) /
-        .22;
-
-
-      y =
-        -3 * p;
-
-
-      x =
-        -5 +
-        (10 * p);
-
-
-      scale =
-        1 +
-        (.18 * p);
-
-
-      rotate =
-        -1 +
+      rotation =
+        -2 +
         (2 * p);
 
     }
 
+
+    else if (progress < .55) {
+
+      const p =
+        ease(
+          (progress - .20) /
+          .35
+        );
+
+
+      y = 0;
+
+      x =
+        -2 * p;
+
+
+      scale =
+        .88 +
+        (.07 * p);
+
+
+      rotation = 0;
+
+    }
+
+
+    else if (progress < .76) {
+
+      const p =
+        ease(
+          (progress - .55) /
+          .21
+        );
+
+
+      x =
+        -2 +
+        (4 * p);
+
+
+      y =
+        -1 * p;
+
+
+      scale =
+        .95 +
+        (.20 * p);
+
+
+      rotation =
+        1 * p;
+
+    }
+
+
     else {
 
       const p =
-        Math.min(
-          1,
-          (progress - .72) /
+        ease(
+          (progress - .76) /
           .12
         );
 
 
-      y = -3;
-
-
       x =
-        5 -
-        (5 * p);
+        2 -
+        (2 * p);
+
+
+      y = -1;
 
 
       scale =
-        1.18 +
+        1.15 +
         (.04 * p);
 
 
-      rotate =
+      rotation =
         1 -
         p;
 
@@ -987,45 +968,76 @@
         0
       )
       scale(${scale})
-      rotate(${rotate}deg)`;
+      rotate(${rotation}deg)`;
 
 
     /* =========================================
-       PACKAGE ENTERS VERY LATE
+       SECOND MESSAGE
+
+       appears only after product
+       has become the hero
     ========================================== */
 
-    if (packageBox) {
+    let tenProgress =
+      (progress - .50) /
+      .16;
 
-      let p =
+
+    tenProgress =
+      clamp(
+        tenProgress,
+        0,
+        1
+      );
+
+
+    ten.style.opacity =
+      tenProgress;
+
+
+    /* =========================================
+       PACKAGE
+
+       enters near the end
+    ========================================== */
+
+    if (packageEl) {
+
+      let packageProgress =
         (progress - .67) /
-        .14;
+        .13;
 
 
-      p =
-        Math.max(
+      packageProgress =
+        clamp(
+          packageProgress,
           0,
-          Math.min(
-            1,
-            p
-          )
+          1
         );
 
 
-      packageBox.style.opacity = p;
+      const p =
+        ease(
+          packageProgress
+        );
 
 
-      packageBox.style.transform =
+      packageEl.style.opacity =
+        p;
+
+
+      packageEl.style.transform =
 
         `translate3d(
-          ${50 - (50 * p)}px,
-          ${70 - (70 * p)}px,
+          ${35 - (35 * p)}px,
+          ${45 - (45 * p)}px,
           0
         )
-        rotate(
-          ${7 - (7 * p)}deg
-        )
         scale(
-          ${.65 + (.35 * p)}
+          ${.72 + (.28 * p)}
+        )
+        rotate(
+          ${5 - (5 * p)}deg
         )`;
 
     }
@@ -1033,21 +1045,31 @@
 
     /* =========================================
        FINAL CTA
+
+       only appears after everything settles
     ========================================== */
 
-    if (progress > .82) {
+    let finalProgress =
+      (progress - .86) /
+      .09;
 
-      final.classList.add(
-        'active'
+
+    finalProgress =
+      clamp(
+        finalProgress,
+        0,
+        1
       );
 
-    } else {
 
-      final.classList.remove(
-        'active'
-      );
+    final.style.opacity =
+      finalProgress;
 
-    }
+
+    final.style.pointerEvents =
+      finalProgress > .85
+        ? 'auto'
+        : 'none';
 
   }
 
@@ -1101,7 +1123,7 @@
 {% schema %}
 
 {
-  "name": "QP Brand Product Scroll",
+  "name": "QP Reset Story",
 
   "settings": [
 
@@ -1134,7 +1156,7 @@
 
   "presets": [
     {
-      "name": "QP Brand Product Scroll"
+      "name": "QP Reset Story"
     }
   ]
 
