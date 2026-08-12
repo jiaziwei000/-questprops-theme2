@@ -1,86 +1,200 @@
-<section
-  id="QPScrollStory-{{ section.id }}"
-  class="qp-scroll-story"
->
+<section id="QPScroll-{{ section.id }}" class="qp-scroll">
 
   <!-- =====================================================
        SCENE 01
-       THE PROBLEM
        ===================================================== -->
 
-  <section class="qp-scene qp-scene--problem">
+  <div class="qp-scene qp-scene-1">
 
     <div class="qp-sticky">
 
-      <div class="qp-big-word qp-big-word--problem">
+      <div class="qp-bg-text qp-bg-text-1">
         TENSION
       </div>
 
-      <div class="qp-problem-copy">
-        <span>THE DAILY BUILDUP</span>
+      <div class="qp-scene-label qp-label-1">
+        THE DAILY BUILDUP
+      </div>
+
+      <div class="qp-product qp-product-1">
+
+        {% if section.settings.product_image != blank %}
+
+          {{
+            section.settings.product_image
+            | image_url: width: 1800
+            | image_tag:
+              widths: '500,800,1200,1600,1800',
+              loading: 'lazy',
+              class: 'qp-product-image'
+          }}
+
+        {% endif %}
+
+      </div>
+
+      <div class="qp-copy qp-copy-1">
 
         <h2>
           Your neck<br>
           does a lot.
         </h2>
-      </div>
 
-      <div class="qp-main-product">
-
-        {% if section.settings.product_image != blank %}
-
-          {{
-            section.settings.product_image
-            | image_url: width: 1600
-            | image_tag:
-              widths: '500,700,900,1100,1400,1600',
-              loading: 'lazy',
-              class: 'qp-product-img'
-          }}
-
-        {% endif %}
+        <p>
+          Sitting. Driving. Working.
+          Tension can quietly build throughout the day.
+        </p>
 
       </div>
 
-      <div class="qp-side-card qp-side-card--left">
+      <div class="qp-card qp-card-left">
 
-        <strong>LONG HOURS</strong>
+        <strong>
+          LONG HOURS
+        </strong>
 
         <span>
-          Sitting. Driving. Working.
+          Sitting, driving or working.
         </span>
 
       </div>
 
-      <div class="qp-side-card qp-side-card--right">
+      <div class="qp-card qp-card-right">
 
-        <strong>NECK TENSION</strong>
+        <strong>
+          DAILY TENSION
+        </strong>
 
         <span>
-          Builds up over the day.
+          Give your neck a moment to reset.
         </span>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
 
   <!-- =====================================================
        SCENE 02
-       THE RESET
        ===================================================== -->
 
-  <section class="qp-scene qp-scene--reset">
+  <div class="qp-scene qp-scene-2">
 
     <div class="qp-sticky">
 
-      <div class="qp-big-word qp-big-word--reset">
+      <div class="qp-bg-text qp-bg-text-2">
         RESET
       </div>
 
-      <div class="qp-reset-product">
+      <div class="qp-scene-label qp-label-2">
+        QUESTPROPS™ NECK RESTORE
+      </div>
+
+      <div class="qp-product qp-product-2">
+
+        {% if section.settings.product_image != blank %}
+
+          {{
+            section.settings.product_image
+            | image_url: width: 1800
+            | image_tag:
+              widths: '500,800,1200,1600,1800',
+              loading: 'lazy',
+              class: 'qp-product-image'
+          }}
+
+        {% endif %}
+
+      </div>
+
+
+      <div class="qp-tag qp-tag-ems">
+        EMS
+      </div>
+
+      <div class="qp-tag qp-tag-heat">
+        HEAT
+      </div>
+
+
+      <div class="qp-feature-copy">
+
+        <div class="qp-feature feature-1">
+
+          <small>
+            01
+          </small>
+
+          <h3>
+            Gentle EMS
+          </h3>
+
+          <p>
+            Designed to provide soothing electrical stimulation around the neck.
+          </p>
+
+        </div>
+
+
+        <div class="qp-feature feature-2">
+
+          <small>
+            02
+          </small>
+
+          <h3>
+            Soothing Heat
+          </h3>
+
+          <p>
+            Warmth helps create a relaxing part of your daily routine.
+          </p>
+
+        </div>
+
+
+        <div class="qp-feature feature-3">
+
+          <small>
+            03
+          </small>
+
+          <h3>
+            One Simple Reset
+          </h3>
+
+          <p>
+            Put it on, relax and give yourself ten minutes.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       SCENE 03
+       ===================================================== -->
+
+  <div class="qp-scene qp-scene-3">
+
+    <div class="qp-sticky">
+
+      <div class="qp-big-number">
+        10
+      </div>
+
+      <div class="qp-minute-label">
+        MINUTES A DAY
+      </div>
+
+      <div class="qp-product qp-product-3">
 
         {% if section.settings.product_image != blank %}
 
@@ -88,113 +202,38 @@
             section.settings.product_image
             | image_url: width: 1600
             | image_tag:
-              widths: '500,700,900,1100,1400,1600',
+              widths: '500,800,1200,1600',
               loading: 'lazy',
-              class: 'qp-product-img'
-          }}
-
-        {% endif %}
-
-        <div class="qp-feature-tag qp-feature-tag--ems">
-          EMS
-        </div>
-
-        <div class="qp-feature-tag qp-feature-tag--heat">
-          HEAT
-        </div>
-
-      </div>
-
-
-      <div class="qp-reset-copy">
-
-        <span>
-          QUESTPROPS™ NECK RESTORE
-        </span>
-
-        <div class="qp-copy-step qp-copy-step--1">
-
-          Gentle EMS<br>
-          stimulation.
-
-        </div>
-
-        <div class="qp-copy-step qp-copy-step--2">
-
-          Soothing<br>
-          heat.
-
-        </div>
-
-        <div class="qp-copy-step qp-copy-step--3">
-
-          Designed for<br>
-          your daily reset.
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       SCENE 03
-       TEN MINUTES
-       ===================================================== -->
-
-  <section class="qp-scene qp-scene--routine">
-
-    <div class="qp-sticky">
-
-      <div class="qp-routine-number">
-        10
-      </div>
-
-      <div class="qp-routine-label">
-        MINUTES A DAY
-      </div>
-
-      <div class="qp-routine-product">
-
-        {% if section.settings.product_image != blank %}
-
-          {{
-            section.settings.product_image
-            | image_url: width: 1400
-            | image_tag:
-              widths: '500,700,900,1100,1400',
-              loading: 'lazy',
-              class: 'qp-product-img'
+              class: 'qp-product-image'
           }}
 
         {% endif %}
 
       </div>
 
-      <div class="qp-routine-copy">
+      <div class="qp-final-copy">
 
         <h2>
-
           A simple reset<br>
           you can actually stick with.
-
         </h2>
+
+        <p>
+          Just 10 minutes a day.
+        </p>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
 
   <!-- =====================================================
        FINAL CTA
        ===================================================== -->
 
-  <section class="qp-scroll-final">
+  <div class="qp-final">
 
     <div>
 
@@ -203,10 +242,8 @@
       </span>
 
       <h2>
-
         Your daily<br>
         neck reset.
-
       </h2>
 
       {% if section.settings.product_url != blank %}
@@ -219,7 +256,7 @@
 
     </div>
 
-  </section>
+  </div>
 
 </section>
 
@@ -228,77 +265,50 @@
 <style>
 
 /* =========================================================
-   ROOT
+   BASE
    ========================================================= */
 
-#QPScrollStory-{{ section.id }} {
+#QPScroll-{{ section.id }} {
 
-  --qp-bg: #ffffff;
+  --bg: #ffffff;
+  --text: #171717;
+  --muted: rgba(23,23,23,.48);
+  --yellow: #fde047;
 
-  --qp-text: #171717;
+  background: var(--bg);
+  color: var(--text);
 
-  --qp-muted: rgba(23,23,23,.48);
+  width: 100%;
 
-  --qp-accent: #fde047;
-
-  background:
-    var(--qp-bg);
-
-  color:
-    var(--qp-text);
-
-  overflow:
-    clip;
+  overflow: clip;
 
 }
 
 
 /* =========================================================
-   SCENES
+   SCENE
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-scene {
+#QPScroll-{{ section.id }} .qp-scene {
 
-  position:
-    relative;
-
-  width:
-    100%;
+  position: relative;
+  width: 100%;
 
 }
 
 
-/* Scene 01 */
-
-#QPScrollStory-{{ section.id }}
-.qp-scene--problem {
-
-  height:
-    150vh;
-
+#QPScroll-{{ section.id }} .qp-scene-1 {
+  height: 160vh;
 }
 
 
-/* Scene 02 */
-
-#QPScrollStory-{{ section.id }}
-.qp-scene--reset {
-
-  height:
-    200vh;
-
+#QPScroll-{{ section.id }} .qp-scene-2 {
+  height: 210vh;
 }
 
 
-/* Scene 03 */
-
-#QPScrollStory-{{ section.id }}
-.qp-scene--routine {
-
-  height:
-    150vh;
-
+#QPScroll-{{ section.id }} .qp-scene-3 {
+  height: 170vh;
 }
 
 
@@ -306,77 +316,51 @@
    STICKY
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-sticky {
+#QPScroll-{{ section.id }} .qp-sticky {
 
-  position:
-    sticky;
+  position: sticky;
 
-  top:
-    0;
+  top: 0;
 
-  width:
-    100%;
+  width: 100%;
 
-  height:
-    100vh;
+  height: 100vh;
+  height: 100svh;
 
-  height:
-    100svh;
-
-  overflow:
-    hidden;
+  overflow: hidden;
 
 }
 
 
 /* =========================================================
-   GIANT BACKGROUND TEXT
+   BACKGROUND TEXT
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-big-word {
+#QPScroll-{{ section.id }} .qp-bg-text {
 
-  position:
-    absolute;
+  position: absolute;
 
-  left:
-    0;
+  left: 0;
 
-  top:
-    50%;
+  top: 50%;
 
-  z-index:
-    1;
+  z-index: 1;
 
-  white-space:
-    nowrap;
+  white-space: nowrap;
 
-  font-size:
-    clamp(
-      100px,
-      17vw,
-      300px
-    );
+  font-size: clamp(110px,17vw,300px);
 
-  font-weight:
-    900;
+  line-height: .75;
 
-  line-height:
-    .8;
+  font-weight: 900;
 
-  letter-spacing:
-    -.08em;
+  letter-spacing: -.09em;
 
-  color:
-    rgba(23,23,23,.055);
+  color: rgba(23,23,23,.055);
 
-  pointer-events:
-    none;
+  pointer-events: none;
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
 }
 
@@ -385,660 +369,470 @@
    PRODUCT
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-main-product,
-#QPScrollStory-{{ section.id }}
-.qp-reset-product,
-#QPScrollStory-{{ section.id }}
-.qp-routine-product {
+#QPScroll-{{ section.id }} .qp-product {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    5;
+  left: 50%;
+  top: 50%;
 
-  left:
-    50%;
+  z-index: 5;
 
-  top:
-    50%;
-
-  width:
-    min(
-      62vw,
-      760px
-    );
+  width: min(58vw,760px);
 
   transform:
-    translate3d(
-      -50%,
-      -50%,
-      0
-    );
+    translate(-50%,-50%);
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-product-img {
+#QPScroll-{{ section.id }} .qp-product-image {
 
-  display:
-    block;
+  display: block;
 
-  width:
-    100%;
+  width: 100%;
+  height: auto;
 
-  height:
-    auto;
-
-  object-fit:
-    contain;
+  object-fit: contain;
 
 }
 
 
 /* =========================================================
-   SCENE 01 COPY
+   LABEL
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-problem-copy {
+#QPScroll-{{ section.id }} .qp-scene-label {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    10;
+  z-index: 10;
 
-  left:
-    8vw;
+  top: 9vh;
+  left: 7vw;
 
-  bottom:
-    10vh;
+  font-size: 10px;
 
-  opacity:
-    0;
+  letter-spacing: .3em;
 
-  transform:
-    translate3d(
-      0,
-      40px,
-      0
-    );
-
-  will-change:
-    transform,
-    opacity;
-
-}
-
-
-#QPScrollStory-{{ section.id }}
-.qp-problem-copy span {
-
-  display:
-    block;
-
-  margin-bottom:
-    16px;
-
-  font-size:
-    10px;
-
-  letter-spacing:
-    .25em;
-
-  color:
-    var(--qp-muted);
-
-}
-
-
-#QPScrollStory-{{ section.id }}
-.qp-problem-copy h2 {
-
-  margin:
-    0;
-
-  font-size:
-    clamp(
-      40px,
-      6vw,
-      86px
-    );
-
-  line-height:
-    .9;
-
-  letter-spacing:
-    -.06em;
+  color: var(--muted);
 
 }
 
 
 /* =========================================================
-   SIDE CARDS
+   SCENE 1 COPY
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-side-card {
+#QPScroll-{{ section.id }} .qp-copy-1 {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    10;
+  left: 7vw;
+  bottom: 9vh;
 
-  bottom:
-    12vh;
+  z-index: 10;
 
-  width:
-    220px;
+  max-width: 400px;
 
-  opacity:
-    0;
+  opacity: 0;
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-side-card--left {
+#QPScroll-{{ section.id }} .qp-copy-1 h2 {
 
-  left:
-    6vw;
+  margin: 0 0 15px;
 
-}
+  font-size: clamp(42px,5vw,75px);
 
+  line-height: .9;
 
-#QPScrollStory-{{ section.id }}
-.qp-side-card--right {
-
-  right:
-    6vw;
+  letter-spacing: -.06em;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-side-card strong {
+#QPScroll-{{ section.id }} .qp-copy-1 p {
 
-  display:
-    block;
+  max-width: 340px;
 
-  font-size:
-    11px;
+  margin: 0;
 
-  letter-spacing:
-    .18em;
+  font-size: 15px;
 
-}
+  line-height: 1.5;
 
-
-#QPScrollStory-{{ section.id }}
-.qp-side-card span {
-
-  display:
-    block;
-
-  margin-top:
-    7px;
-
-  font-size:
-    14px;
-
-  color:
-    var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
 /* =========================================================
-   SCENE 02 PRODUCT
+   CARDS
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-reset-product {
+#QPScroll-{{ section.id }} .qp-card {
 
-  opacity:
-    0;
+  position: absolute;
 
-  transform:
-    translate3d(
-      -50%,
-      -50%,
-      0
-    )
-    scale(.88);
+  z-index: 10;
+
+  bottom: 12vh;
+
+  width: 220px;
+
+  opacity: 0;
+
+  will-change: transform, opacity;
+
+}
+
+
+#QPScroll-{{ section.id }} .qp-card-left {
+  left: 6vw;
+}
+
+
+#QPScroll-{{ section.id }} .qp-card-right {
+  right: 6vw;
+}
+
+
+#QPScroll-{{ section.id }} .qp-card strong {
+
+  display: block;
+
+  font-size: 10px;
+
+  letter-spacing: .2em;
+
+}
+
+
+#QPScroll-{{ section.id }} .qp-card span {
+
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  color: var(--muted);
 
 }
 
 
 /* =========================================================
-   FEATURE TAGS
+   SCENE 2
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-feature-tag {
+#QPScroll-{{ section.id }} .qp-product-2 {
 
-  position:
-    absolute;
+  opacity: 0;
 
-  padding:
-    10px 18px;
-
-  border-radius:
-    999px;
-
-  background:
-    var(--qp-accent);
-
-  font-size:
-    11px;
-
-  font-weight:
-    800;
-
-  letter-spacing:
-    .15em;
-
-  opacity:
-    0;
-
-  will-change:
-    transform,
-    opacity;
+  transform:
+    translate(-50%,-50%)
+    scale(.82);
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-feature-tag--ems {
+#QPScroll-{{ section.id }} .qp-tag {
 
-  left:
-    8%;
+  position: absolute;
 
-  top:
-    28%;
+  z-index: 10;
+
+  padding: 10px 17px;
+
+  border-radius: 999px;
+
+  background: var(--yellow);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+
+  opacity: 0;
+
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-feature-tag--heat {
+#QPScroll-{{ section.id }} .qp-tag-ems {
 
-  right:
-    7%;
+  left: 14%;
+  top: 35%;
 
-  top:
-    58%;
+}
+
+
+#QPScroll-{{ section.id }} .qp-tag-heat {
+
+  right: 14%;
+  top: 61%;
 
 }
 
 
 /* =========================================================
-   SCENE 02 COPY
+   FEATURE COPY
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-reset-copy {
+#QPScroll-{{ section.id }} .qp-feature-copy {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    10;
+  z-index: 20;
 
-  right:
-    7vw;
+  right: 7vw;
 
-  top:
-    50%;
+  top: 50%;
 
-  width:
-    min(
-      36vw,
-      480px
-    );
+  width: min(32vw,430px);
 
   transform:
-    translate3d(
-      100px,
-      -50%,
-      0
-    );
+    translate(100px,-50%);
 
-  opacity:
-    0;
+  opacity: 0;
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-reset-copy > span {
+#QPScroll-{{ section.id }} .qp-feature {
 
-  display:
-    block;
+  position: absolute;
 
-  margin-bottom:
-    28px;
+  left: 0;
+  top: 0;
 
-  font-size:
-    10px;
+  width: 100%;
 
-  letter-spacing:
-    .25em;
+  opacity: 0;
 
-  color:
-    var(--qp-muted);
+  transform: translateY(30px);
+
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-copy-step {
+#QPScroll-{{ section.id }} .qp-feature small {
 
-  position:
-    absolute;
+  font-size: 10px;
 
-  left:
-    0;
+  letter-spacing: .2em;
 
-  top:
-    0;
+  color: var(--muted);
 
-  font-size:
-    clamp(
-      32px,
-      4vw,
-      64px
-    );
+}
 
-  font-weight:
-    700;
 
-  line-height:
-    1;
+#QPScroll-{{ section.id }} .qp-feature h3 {
 
-  letter-spacing:
-    -.05em;
+  margin: 12px 0;
 
-  opacity:
-    0;
+  font-size: clamp(30px,4vw,55px);
 
-  transform:
-    translateY(
-      30px
-    );
+  line-height: .95;
 
-  will-change:
-    transform,
-    opacity;
+  letter-spacing: -.05em;
+
+}
+
+
+#QPScroll-{{ section.id }} .qp-feature p {
+
+  margin: 0;
+
+  max-width: 330px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: var(--muted);
 
 }
 
 
 /* =========================================================
-   SCENE 03
+   SCENE 3
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-routine-number {
+#QPScroll-{{ section.id }} .qp-big-number {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    1;
+  z-index: 1;
 
-  left:
-    50%;
-
-  top:
-    45%;
+  left: 50%;
+  top: 45%;
 
   transform:
-    translate(
-      -50%,
-      -50%
-    );
+    translate(-50%,-50%);
 
-  font-size:
-    clamp(
-      180px,
-      32vw,
-      520px
-    );
+  font-size: clamp(180px,32vw,520px);
 
-  font-weight:
-    900;
+  font-weight: 900;
 
-  line-height:
-    .75;
+  line-height: .7;
 
-  letter-spacing:
-    -.1em;
+  letter-spacing: -.1em;
 
-  color:
-    rgba(23,23,23,.055);
+  color: rgba(23,23,23,.055);
 
-  will-change:
-    transform;
+  will-change: transform;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-routine-label {
+#QPScroll-{{ section.id }} .qp-minute-label {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    10;
+  z-index: 10;
 
-  left:
-    50%;
-
-  top:
-    27%;
+  top: 25%;
+  left: 50%;
 
   transform:
-    translateX(
-      -50%
-    );
+    translateX(-50%);
 
-  font-size:
-    11px;
+  font-size: 10px;
 
-  letter-spacing:
-    .3em;
+  letter-spacing: .3em;
 
-  color:
-    var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-routine-product {
+#QPScroll-{{ section.id }} .qp-product-3 {
 
-  z-index:
-    5;
-
-  width:
-    min(
-      42vw,
-      520px
-    );
+  width: min(43vw,540px);
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-routine-copy {
+#QPScroll-{{ section.id }} .qp-final-copy {
 
-  position:
-    absolute;
+  position: absolute;
 
-  z-index:
-    10;
+  left: 50%;
+  bottom: 9vh;
 
-  left:
-    50%;
+  z-index: 10;
 
-  bottom:
-    8vh;
+  width: 90%;
 
-  width:
-    min(
-      90vw,
-      700px
-    );
+  text-align: center;
 
   transform:
-    translateX(
-      -50%
-    );
+    translateX(-50%);
 
-  text-align:
-    center;
+  opacity: 0;
 
-  opacity:
-    0;
-
-  will-change:
-    opacity,
-    transform;
+  will-change: transform, opacity;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-routine-copy h2 {
+#QPScroll-{{ section.id }} .qp-final-copy h2 {
 
-  margin:
-    0;
+  margin: 0;
 
-  font-size:
-    clamp(
-      30px,
-      4vw,
-      60px
-    );
+  font-size: clamp(32px,4vw,60px);
 
-  line-height:
-    .95;
+  line-height: .95;
 
-  letter-spacing:
-    -.05em;
+  letter-spacing: -.05em;
+
+}
+
+
+#QPScroll-{{ section.id }} .qp-final-copy p {
+
+  margin-top: 15px;
+
+  color: var(--muted);
 
 }
 
 
 /* =========================================================
-   FINAL CTA
+   FINAL
    ========================================================= */
 
-#QPScrollStory-{{ section.id }}
-.qp-scroll-final {
+#QPScroll-{{ section.id }} .qp-final {
 
-  min-height:
-    70vh;
+  min-height: 70vh;
 
-  display:
-    flex;
+  display: flex;
 
-  align-items:
-    center;
+  align-items: center;
+  justify-content: center;
 
-  justify-content:
-    center;
+  padding: 80px 20px;
 
-  text-align:
-    center;
-
-  padding:
-    80px 20px;
+  text-align: center;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-scroll-final span {
+#QPScroll-{{ section.id }} .qp-final span {
 
-  font-size:
-    10px;
+  font-size: 10px;
 
-  letter-spacing:
-    .3em;
+  letter-spacing: .3em;
 
-  color:
-    var(--qp-muted);
+  color: var(--muted);
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-scroll-final h2 {
+#QPScroll-{{ section.id }} .qp-final h2 {
 
-  margin:
-    20px 0 35px;
+  margin: 20px 0 35px;
 
-  font-size:
-    clamp(
-      42px,
-      7vw,
-      90px
-    );
+  font-size: clamp(45px,7vw,90px);
 
-  line-height:
-    .9;
+  line-height: .88;
 
-  letter-spacing:
-    -.06em;
+  letter-spacing: -.06em;
 
 }
 
 
-#QPScrollStory-{{ section.id }}
-.qp-scroll-final a {
+#QPScroll-{{ section.id }} .qp-final a {
 
-  display:
-    inline-flex;
+  display: inline-flex;
 
-  padding:
-    16px 28px;
+  padding: 16px 28px;
 
-  background:
-    var(--qp-text);
+  background: var(--text);
 
-  color:
-    white;
+  color: #fff;
 
-  text-decoration:
-    none;
+  text-decoration: none;
 
-  font-size:
-    12px;
+  font-size: 11px;
 
-  font-weight:
-    700;
+  font-weight: 700;
 
-  letter-spacing:
-    .12em;
+  letter-spacing: .15em;
 
 }
 
@@ -1049,130 +843,301 @@
 
 @media screen and (max-width: 749px) {
 
-  #QPScrollStory-{{ section.id }}
-  .qp-scene--problem {
 
-    height:
-      145vh;
+  /* -------------------------------------------------------
+     SCENE HEIGHT
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-scene-1 {
+    height: 175vh;
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-scene-2 {
+    height: 220vh;
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-scene-3 {
+    height: 175vh;
+  }
+
+
+  /* -------------------------------------------------------
+     STICKY
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-sticky {
+
+    height: 100svh;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-scene--reset {
+  /* -------------------------------------------------------
+     BIG TEXT
+     ------------------------------------------------------- */
 
-    height:
-      180vh;
+  #QPScroll-{{ section.id }} .qp-bg-text {
 
-  }
+    font-size: 25vw;
 
-
-  #QPScrollStory-{{ section.id }}
-  .qp-scene--routine {
-
-    height:
-      145vh;
+    top: 43%;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-big-word {
+  /* -------------------------------------------------------
+     LABEL
+     ------------------------------------------------------- */
 
-    font-size:
-      24vw;
+  #QPScroll-{{ section.id }} .qp-scene-label {
 
-  }
+    top: 6vh;
 
+    left: 20px;
 
-  #QPScrollStory-{{ section.id }}
-  .qp-main-product,
-  #QPScrollStory-{{ section.id }}
-  .qp-reset-product {
+    font-size: 8px;
 
-    width:
-      88vw;
+    letter-spacing: .22em;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-problem-copy {
+  /* -------------------------------------------------------
+     PRODUCT
+     ------------------------------------------------------- */
 
-    left:
-      7vw;
+  #QPScroll-{{ section.id }} .qp-product {
 
-    bottom:
-      8vh;
+    width: 86vw;
 
-  }
-
-
-  #QPScrollStory-{{ section.id }}
-  .qp-side-card {
-
-    width:
-      140px;
-
-    bottom:
-      18vh;
+    top: 45%;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-side-card--left {
+  /* -------------------------------------------------------
+     SCENE 1 COPY
+     ------------------------------------------------------- */
 
-    left:
-      4vw;
+  #QPScroll-{{ section.id }} .qp-copy-1 {
 
-  }
+    left: 20px;
+    right: 20px;
 
+    bottom: 7vh;
 
-  #QPScrollStory-{{ section.id }}
-  .qp-side-card--right {
-
-    right:
-      4vw;
+    max-width: none;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-reset-product {
+  #QPScroll-{{ section.id }} .qp-copy-1 h2 {
 
-    width:
-      82vw;
+    font-size: 44px;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-reset-copy {
+  #QPScroll-{{ section.id }} .qp-copy-1 p {
 
-    left:
-      7vw;
+    font-size: 13px;
 
-    right:
-      auto;
-
-    top:
-      auto;
-
-    bottom:
-      9vh;
-
-    width:
-      86vw;
+    max-width: 300px;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-routine-product {
+  /* -------------------------------------------------------
+     MOBILE CARDS
+     ------------------------------------------------------- */
 
-    width:
-      78vw;
+  #QPScroll-{{ section.id }} .qp-card {
+
+    bottom: 20vh;
+
+    width: 130px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-card-left {
+
+    left: 20px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-card-right {
+
+    right: 20px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-card strong {
+
+    font-size: 8px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-card span {
+
+    font-size: 11px;
+
+  }
+
+
+  /* -------------------------------------------------------
+     SCENE 2 PRODUCT
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-product-2 {
+
+    width: 88vw;
+
+    top: 42%;
+
+  }
+
+
+  /* -------------------------------------------------------
+     TAGS
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-tag {
+
+    padding: 8px 13px;
+
+    font-size: 8px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-tag-ems {
+
+    left: 8%;
+
+    top: 30%;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-tag-heat {
+
+    right: 8%;
+
+    top: 58%;
+
+  }
+
+
+  /* -------------------------------------------------------
+     FEATURE COPY
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-feature-copy {
+
+    left: 20px;
+    right: 20px;
+
+    top: auto;
+    bottom: 8vh;
+
+    width: auto;
+
+    transform:
+      translateY(40px);
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-feature {
+
+    width: calc(100vw - 40px);
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-feature h3 {
+
+    font-size: 36px;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-feature p {
+
+    max-width: 290px;
+
+    font-size: 13px;
+
+  }
+
+
+  /* -------------------------------------------------------
+     SCENE 3
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-big-number {
+
+    font-size: 58vw;
+
+    top: 42%;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-minute-label {
+
+    top: 22%;
+
+    font-size: 8px;
+
+    letter-spacing: .24em;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-product-3 {
+
+    width: 80vw;
+
+    top: 43%;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-final-copy {
+
+    bottom: 8vh;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-final-copy h2 {
+
+    font-size: 34px;
+
+  }
+
+
+  /* -------------------------------------------------------
+     FINAL
+     ------------------------------------------------------- */
+
+  #QPScroll-{{ section.id }} .qp-final {
+
+    min-height: 65vh;
+
+  }
+
+
+  #QPScroll-{{ section.id }} .qp-final h2 {
+
+    font-size: 48px;
 
   }
 
@@ -1185,23 +1150,18 @@
 
 @media (prefers-reduced-motion: reduce) {
 
-  #QPScrollStory-{{ section.id }}
-  .qp-scene {
+  #QPScroll-{{ section.id }} .qp-scene {
 
-    height:
-      auto;
+    height: auto;
 
   }
 
 
-  #QPScrollStory-{{ section.id }}
-  .qp-sticky {
+  #QPScroll-{{ section.id }} .qp-sticky {
 
-    position:
-      relative;
+    position: relative;
 
-    height:
-      100vh;
+    height: 100svh;
 
   }
 
@@ -1217,7 +1177,7 @@
 
   const root =
     document.getElementById(
-      'QPScrollStory-{{ section.id }}'
+      'QPScroll-{{ section.id }}'
     );
 
   if (!root) return;
@@ -1227,17 +1187,14 @@
 
 
   /* =====================================================
-     BASIC FUNCTIONS
+     HELPERS
      ===================================================== */
 
-  function clamp(value) {
+  function clamp(v) {
 
     return Math.max(
       0,
-      Math.min(
-        1,
-        value
-      )
+      Math.min(1,v)
     );
 
   }
@@ -1245,56 +1202,37 @@
 
   function map(
     value,
-    inMin,
-    inMax,
-    outMin,
-    outMax
+    a,
+    b,
+    c,
+    d
   ) {
 
     const t =
       clamp(
-        (value - inMin) /
-        (inMax - inMin)
+        (value-a)/(b-a)
       );
 
-    return (
-      outMin +
-      (
-        outMax -
-        outMin
-      ) * t
-    );
+    return c+(d-c)*t;
 
   }
 
 
-  /* =====================================================
-     SCENE PROGRESS
-     ===================================================== */
-
-  function progress(scene) {
+  function getProgress(scene) {
 
     const rect =
       scene.getBoundingClientRect();
-
 
     const distance =
       scene.offsetHeight -
       window.innerHeight;
 
-
-    if (
-      distance <= 0
-    ) {
-
+    if (distance <= 0) {
       return 0;
-
     }
 
-
     return clamp(
-      -rect.top /
-      distance
+      -rect.top/distance
     );
 
   }
@@ -1309,74 +1247,62 @@
     ticking = false;
 
 
+    const mobile =
+      window.innerWidth <= 749;
+
+
     /* ===================================================
        SCENE 01
        =================================================== */
 
     const scene1 =
       root.querySelector(
-        '.qp-scene--problem'
+        '.qp-scene-1'
       );
 
 
     if (scene1) {
 
       const p =
-        progress(scene1);
+        getProgress(scene1);
 
 
       const word =
         root.querySelector(
-          '.qp-big-word--problem'
+          '.qp-bg-text-1'
         );
 
 
       const product =
         root.querySelector(
-          '.qp-main-product'
+          '.qp-product-1'
         );
 
 
       const copy =
         root.querySelector(
-          '.qp-problem-copy'
+          '.qp-copy-1'
         );
 
 
       const cards =
         root.querySelectorAll(
-          '.qp-side-card'
+          '.qp-scene-1 .qp-card'
         );
 
 
-      /* -----------------------------------------------
-         BACKGROUND WORD
-         ----------------------------------------------- */
-
-      const wordX =
-        map(
-          p,
-          0,
-          .72,
-          35,
-          -30
-        );
-
-
-      const wordOpacity =
-        map(
-          p,
-          .48,
-          .9,
-          1,
-          0
-        );
-
+      /* BIG WORD */
 
       word.style.transform =
         `
         translate3d(
-          ${wordX}vw,
+          ${map(
+            p,
+            0,
+            .65,
+            mobile ? 18 : 28,
+            mobile ? -18 : -25
+          )}vw,
           -50%,
           0
         )
@@ -1384,57 +1310,41 @@
 
 
       word.style.opacity =
-        wordOpacity;
-
-
-      /* -----------------------------------------------
-         PRODUCT
-         ----------------------------------------------- */
-
-      const productScale =
         map(
           p,
-          0,
-          .55,
-          1.18,
-          1
+          .65,
+          .9,
+          1,
+          0
         );
 
 
-      const productX =
-        map(
-          p,
-          .35,
-          .8,
-          0,
-          -8
-        );
-
+      /* PRODUCT */
 
       product.style.transform =
         `
         translate3d(
-          calc(
-            -50% +
-            ${productX}vw
-          ),
+          -50%,
           -50%,
           0
         )
         scale(
-          ${productScale}
+          ${map(
+            p,
+            0,
+            .55,
+            mobile ? 1.08 : 1.22,
+            1
+          )}
         )
         `;
 
 
-      /* -----------------------------------------------
-         MAIN COPY
-         ----------------------------------------------- */
+      /* COPY */
 
       const copyP =
         clamp(
-          (p - .3) /
-          .22
+          (p-.35)/.2
         );
 
 
@@ -1444,33 +1354,28 @@
 
       copy.style.transform =
         `
-        translate3d(
-          0,
+        translateY(
           ${map(
             copyP,
             0,
             1,
-            40,
+            35,
             0
-          )}px,
-          0
+          )}px
         )
         `;
 
 
-      /* -----------------------------------------------
-         SIDE CARDS
-         ----------------------------------------------- */
+      /* CARDS */
 
       const cardP =
         clamp(
-          (p - .12) /
-          .38
+          (p-.12)/.3
         );
 
 
       cards.forEach(
-        function(card) {
+        function(card,index) {
 
           card.style.opacity =
             cardP;
@@ -1478,16 +1383,14 @@
 
           card.style.transform =
             `
-            translate3d(
-              0,
+            translateY(
               ${map(
                 cardP,
                 0,
                 1,
-                30,
+                25,
                 0
-              )}px,
-              0
+              )}px
             )
             `;
 
@@ -1503,62 +1406,64 @@
 
     const scene2 =
       root.querySelector(
-        '.qp-scene--reset'
+        '.qp-scene-2'
       );
 
 
     if (scene2) {
 
       const p =
-        progress(scene2);
+        getProgress(scene2);
 
 
       const word =
         root.querySelector(
-          '.qp-big-word--reset'
+          '.qp-bg-text-2'
         );
 
 
       const product =
         root.querySelector(
-          '.qp-reset-product'
+          '.qp-product-2'
         );
 
 
-      const copy =
+      const tagEms =
         root.querySelector(
-          '.qp-reset-copy'
+          '.qp-tag-ems'
         );
 
 
-      /* -----------------------------------------------
-         BACKGROUND WORD
-         ----------------------------------------------- */
-
-      const wordX =
-        map(
-          p,
-          0,
-          .75,
-          30,
-          -28
+      const tagHeat =
+        root.querySelector(
+          '.qp-tag-heat'
         );
 
 
-      const wordOpacity =
-        map(
-          p,
-          .7,
-          1,
-          1,
-          0
+      const featureCopy =
+        root.querySelector(
+          '.qp-feature-copy'
         );
 
+
+      const features =
+        root.querySelectorAll(
+          '.qp-feature'
+        );
+
+
+      /* WORD */
 
       word.style.transform =
         `
         translate3d(
-          ${wordX}vw,
+          ${map(
+            p,
+            0,
+            .7,
+            mobile ? 20 : 30,
+            mobile ? -20 : -28
+          )}vw,
           -50%,
           0
         )
@@ -1566,17 +1471,20 @@
 
 
       word.style.opacity =
-        wordOpacity;
+        map(
+          p,
+          .7,
+          .95,
+          1,
+          0
+        );
 
 
-      /* -----------------------------------------------
-         PRODUCT
-         ----------------------------------------------- */
+      /* PRODUCT */
 
       const productP =
         clamp(
-          p /
-          .42
+          p/.35
         );
 
 
@@ -1596,35 +1504,26 @@
             productP,
             0,
             1,
-            .88,
+            .8,
             1
           )}
         )
         `;
 
 
-      /* -----------------------------------------------
-         EMS
-         ----------------------------------------------- */
-
-      const ems =
-        root.querySelector(
-          '.qp-feature-tag--ems'
-        );
-
+      /* EMS */
 
       const emsP =
         clamp(
-          (p - .12) /
-          .16
+          (p-.12)/.15
         );
 
 
-      ems.style.opacity =
+      tagEms.style.opacity =
         emsP;
 
 
-      ems.style.transform =
+      tagEms.style.transform =
         `
         translateY(
           ${map(
@@ -1647,28 +1546,19 @@
         `;
 
 
-      /* -----------------------------------------------
-         HEAT
-         ----------------------------------------------- */
-
-      const heat =
-        root.querySelector(
-          '.qp-feature-tag--heat'
-        );
-
+      /* HEAT */
 
       const heatP =
         clamp(
-          (p - .25) /
-          .16
+          (p-.25)/.15
         );
 
 
-      heat.style.opacity =
+      tagHeat.style.opacity =
         heatP;
 
 
-      heat.style.transform =
+      tagHeat.style.transform =
         `
         translateY(
           ${map(
@@ -1691,79 +1581,78 @@
         `;
 
 
-      /* -----------------------------------------------
-         RIGHT COPY
-         ----------------------------------------------- */
+      /* COPY */
 
       const copyP =
         clamp(
-          (p - .48) /
-          .28
+          (p-.38)/.2
         );
 
 
-      copy.style.opacity =
+      featureCopy.style.opacity =
         copyP;
 
 
-      copy.style.transform =
-        `
-        translate3d(
-          ${map(
-            copyP,
-            0,
-            1,
-            100,
-            0
-          )}px,
-          -50%,
-          0
-        )
-        `;
+      featureCopy.style.transform =
+        mobile
+          ?
+          `
+          translateY(
+            ${map(
+              copyP,
+              0,
+              1,
+              40,
+              0
+            )}px
+          )
+          `
+          :
+          `
+          translate(
+            ${map(
+              copyP,
+              0,
+              1,
+              100,
+              0
+            )}px,
+            -50%
+          )
+          `;
 
 
-      /* -----------------------------------------------
-         COPY STEPS
-         ----------------------------------------------- */
+      /* FEATURES */
 
-      const steps =
-        root.querySelectorAll(
-          '.qp-copy-step'
-        );
+      const starts =
+        mobile
+          ?
+          [.45,.63,.81]
+          :
+          [.48,.64,.80];
 
 
-      steps.forEach(
+      features.forEach(
         function(
-          step,
+          feature,
           index
         ) {
 
-          const starts = [
-            .50,
-            .64,
-            .78
-          ];
-
-
-          const stepP =
+          const fp =
             clamp(
-              (
-                p -
-                starts[index]
-              ) /
-              .12
+              (p-starts[index])/.11
             );
 
 
-          step.style.opacity =
-            stepP;
+          feature.style.opacity =
+            fp;
 
 
-          step.style.transform =
+          feature.style.transform =
             `
             translateY(
               ${map(
-                stepP,
+                fp,
                 0,
                 1,
                 30,
@@ -1784,125 +1673,88 @@
 
     const scene3 =
       root.querySelector(
-        '.qp-scene--routine'
+        '.qp-scene-3'
       );
 
 
     if (scene3) {
 
       const p =
-        progress(scene3);
+        getProgress(scene3);
 
 
       const number =
         root.querySelector(
-          '.qp-routine-number'
+          '.qp-big-number'
         );
 
 
       const product =
         root.querySelector(
-          '.qp-routine-product'
+          '.qp-product-3'
         );
 
 
       const copy =
         root.querySelector(
-          '.qp-routine-copy'
+          '.qp-final-copy'
         );
 
 
-      /* -----------------------------------------------
-         GIANT NUMBER
-         ----------------------------------------------- */
-
-      const numberScale =
-        map(
-          p,
-          0,
-          .7,
-          1.25,
-          1
-        );
-
-
-      const numberY =
-        map(
-          p,
-          0,
-          .7,
-          20,
-          -40
-        );
-
+      /* NUMBER */
 
       number.style.transform =
         `
-        translate3d(
+        translate(
           -50%,
-          calc(
-            -50% +
-            ${numberY}px
-          ),
-          0
+          -50%
         )
         scale(
-          ${numberScale}
+          ${map(
+            p,
+            0,
+            .7,
+            1.15,
+            1
+          )}
         )
         `;
 
 
-      /* -----------------------------------------------
-         PRODUCT
-         ----------------------------------------------- */
-
-      const productScale =
-        map(
-          p,
-          0,
-          .75,
-          1,
-          .7
-        );
-
-
-      const productY =
-        map(
-          p,
-          0,
-          .75,
-          0,
-          -80
-        );
-
+      /* PRODUCT */
 
       product.style.transform =
         `
-        translate3d(
+        translate(
           -50%,
           calc(
             -50% +
-            ${productY}px
-          ),
-          0
+            ${map(
+              p,
+              0,
+              .7,
+              0,
+              -70
+            )}px
+          )
         )
         scale(
-          ${productScale}
+          ${map(
+            p,
+            0,
+            .75,
+            1,
+            .72
+          )}
         )
         `;
 
 
-      /* -----------------------------------------------
-         FINAL COPY
-         ----------------------------------------------- */
+      /* COPY */
 
       const copyP =
         clamp(
-          (
-            p -
-            .65
-          ) /
-          .25
+          (p-.65)/.2
         );
 
 
@@ -1912,16 +1764,15 @@
 
       copy.style.transform =
         `
-        translate3d(
+        translate(
           -50%,
           ${map(
             copyP,
             0,
             1,
-            40,
+            35,
             0
-          )}px,
-          0
+          )}px
         )
         `;
 
@@ -1931,20 +1782,14 @@
 
 
   /* =====================================================
-     RAF SCROLL
+     SCROLL
      ===================================================== */
 
   function requestUpdate() {
 
-    if (ticking) {
-
-      return;
-
-    }
-
+    if (ticking) return;
 
     ticking = true;
-
 
     window.requestAnimationFrame(
       update
@@ -1986,7 +1831,7 @@
     {
       "type": "image_picker",
       "id": "product_image",
-      "label": "Product image"
+      "label": "Product Image"
     },
 
     {
@@ -1998,11 +1843,9 @@
   ],
 
   "presets": [
-
     {
       "name": "QP Scroll Story"
     }
-
   ]
 
 }
