@@ -1,114 +1,100 @@
-<section id="qp-sticky-{{ section.id }}" class="qp-sticky">
-  <div class="qp-scroll">
+<section id="qp-hero-story-{{ section.id }}" class="qp-hero-story">
 
-    <!-- =========================
-         GIANT TYPOGRAPHY
-    ========================== -->
+  <div class="qp-story-track">
 
-    <div class="qp-words">
+    <!-- =========================================
+         FIXED TYPOGRAPHY
+         文字完全固定，不跟着滚动移动
+    ========================================== -->
 
-      <div class="qp-word word-1">
+    <div class="qp-type-layer">
+
+      <div class="qp-type type-top">
         THE DAY
       </div>
 
-      <div class="qp-word word-2">
-        KEEPS GOING.
+      <div class="qp-type type-middle">
+        DOESN'T
       </div>
 
-      <div class="qp-word word-3">
+      <div class="qp-type type-middle-right">
+        WAIT.
+      </div>
+
+      <div class="qp-type type-bottom">
         YOUR NECK
       </div>
 
-      <div class="qp-word word-4">
-        FEELS IT.
+      <div class="qp-type type-bottom-right">
+        HAS ENOUGH.
       </div>
 
-      <div class="qp-word word-5">
-        HEAT.
-      </div>
-
-      <div class="qp-word word-6">
-        STIMULATION.
-      </div>
-
-      <div class="qp-word word-7">
-        QUIET.
-      </div>
-
-      <div class="qp-word word-8">
-        TEN MINUTES.
+      <div class="qp-type type-final">
+        TAKE TEN.
       </div>
 
     </div>
 
 
-    <!-- =========================
-         SMALL SUPPORTING COPY
-    ========================== -->
+    <!-- =========================================
+         SMALL FIXED BRAND COPY
+    ========================================== -->
 
-    <div class="qp-support">
+    <div class="qp-microcopy">
 
-      <div class="support support-1">
-        Sitting. Driving. Working.<br>
-        There's always something next.
+      <div class="micro-left">
+        QUESTPROPS™
       </div>
 
-      <div class="support support-2">
-        So give yourself<br>
-        a few minutes back.
-      </div>
-
-      <div class="support support-3">
-        A simple reset<br>
-        in the middle of your day.
+      <div class="micro-right">
+        DAILY NECK RESET
       </div>
 
     </div>
 
 
-    <!-- =========================
+    <!-- =========================================
          PRODUCT
-    ========================== -->
+         产品在最上层移动
+    ========================================== -->
 
-    <div class="qp-product-layer">
+    <div class="qp-product-stage">
 
-      <div class="qp-product">
+      <div class="qp-product-object">
 
         {% if section.settings.product_image != blank %}
 
           {{
             section.settings.product_image
-            | image_url: width: 2200
+            | image_url: width: 2400
             | image_tag:
-              class: 'qp-product-img',
+              class: 'qp-product-image',
               loading: 'eager',
-              widths: '800,1200,1600,2000,2200'
+              widths: '800,1200,1600,2000,2400'
           }}
 
         {% else %}
 
-          <div class="qp-placeholder">
+          <div class="qp-image-placeholder">
             PRODUCT IMAGE
           </div>
 
         {% endif %}
 
 
-        <!-- =========================
-             PACKAGE
-        ========================== -->
+        <!-- PACKAGE -->
 
-        <div class="qp-package">
+        <div class="qp-package-object">
 
           {% if section.settings.package_image != blank %}
 
             {{
               section.settings.package_image
-              | image_url: width: 1400
+              | image_url: width: 1600
               | image_tag:
-                class: 'qp-package-img',
+                class: 'qp-package-image',
                 loading: 'lazy',
-                widths: '500,800,1100,1400'
+                widths: '600,900,1200,1600'
             }}
 
           {% else %}
@@ -126,41 +112,40 @@
     </div>
 
 
-    <!-- =========================
-         FINAL MESSAGE
-    ========================== -->
+    <!-- =========================================
+         FINAL CTA
+    ========================================== -->
 
-    <div class="qp-final">
+    <div class="qp-story-final">
 
-      <div class="qp-final-content">
+      <div class="qp-final-inner">
 
-        <div class="qp-brand">
+        <div class="qp-final-eyebrow">
           QUESTPROPS™ NECK RESTORE
         </div>
 
         <h2>
-          RESET.<br>
-          THEN GET BACK<br>
-          TO WHAT MATTERS.
+          COME BACK<br>
+          FEELING READY.
         </h2>
 
         <p>
-          Your daily neck reset.
+          Your simple daily neck reset.
         </p>
 
-        <div class="qp-price">
+        <div class="qp-final-price">
           $119.99
         </div>
 
         <a
           href="{{ section.settings.button_link }}"
-          class="qp-button"
+          class="qp-final-button"
         >
           {{ section.settings.button_text }}
           <span>→</span>
         </a>
 
-        <div class="qp-trust">
+        <div class="qp-final-trust">
           60-Day Trial · 2-Year Warranty · Free Shipping
         </div>
 
@@ -169,6 +154,7 @@
     </div>
 
   </div>
+
 </section>
 
 
@@ -178,15 +164,18 @@
    ROOT
 ===================================================== */
 
-#qp-sticky-{{ section.id }} {
+#qp-hero-story-{{ section.id }} {
+
+  --qp-bg: #f3f1ec;
+  --qp-text: #171717;
 
   position: relative;
 
   width: 100%;
 
-  background: #f3f1ec;
+  background: var(--qp-bg);
 
-  color: #171717;
+  color: var(--qp-text);
 
   overflow: clip;
 
@@ -194,23 +183,189 @@
 
 
 /* =====================================================
-   SCROLL LENGTH
+   LONG SCROLL
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-scroll {
+#qp-hero-story-{{ section.id }} .qp-story-track {
 
   position: relative;
 
-  height: 700vh;
+  height: 650vh;
 
 }
 
 
 /* =====================================================
-   PRODUCT LAYER
+   FIXED TYPOGRAPHY
+   THIS DOES NOT MOVE
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-product-layer {
+#qp-hero-story-{{ section.id }} .qp-type-layer {
+
+  position: sticky;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100vh;
+
+  height: 100svh;
+
+  overflow: hidden;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+}
+
+
+/* =====================================================
+   GIANT TYPE
+===================================================== */
+
+#qp-hero-story-{{ section.id }} .qp-type {
+
+  position: absolute;
+
+  white-space: nowrap;
+
+  font-family: inherit;
+
+  font-size: clamp(
+    100px,
+    15vw,
+    250px
+  );
+
+  font-weight: 800;
+
+  line-height: .76;
+
+  letter-spacing: -.085em;
+
+  text-transform: uppercase;
+
+  color: #171717;
+
+}
+
+
+/* =====================================================
+   TYPE COMPOSITION
+===================================================== */
+
+#qp-hero-story-{{ section.id }} .type-top {
+
+  top: 8%;
+
+  left: -3%;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .type-middle {
+
+  top: 34%;
+
+  left: -7%;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .type-middle-right {
+
+  top: 49%;
+
+  right: -5%;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .type-bottom {
+
+  top: 70%;
+
+  left: -8%;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .type-bottom-right {
+
+  top: 82%;
+
+  right: -12%;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .type-final {
+
+  top: 28%;
+
+  left: -5%;
+
+  opacity: 0;
+
+}
+
+
+/* =====================================================
+   MICRO BRAND
+===================================================== */
+
+#qp-hero-story-{{ section.id }} .qp-microcopy {
+
+  position: sticky;
+
+  top: 0;
+
+  height: 0;
+
+  z-index: 8;
+
+  pointer-events: none;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .micro-left,
+#qp-hero-story-{{ section.id }} .micro-right {
+
+  position: absolute;
+
+  top: 30px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .18em;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .micro-left {
+
+  left: 32px;
+
+}
+
+
+#qp-hero-story-{{ section.id }} .micro-right {
+
+  right: 32px;
+
+}
+
+
+/* =====================================================
+   PRODUCT STAGE
+===================================================== */
+
+#qp-hero-story-{{ section.id }} .qp-product-stage {
 
   position: sticky;
 
@@ -220,7 +375,9 @@
 
   height: 100svh;
 
-  width: 100%;
+  margin-top: -100vh;
+
+  margin-top: -100svh;
 
   display: flex;
 
@@ -236,25 +393,37 @@
 
 
 /* =====================================================
-   PRODUCT
+   PRODUCT OBJECT
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-product {
+#qp-hero-story-{{ section.id }} .qp-product-object {
 
   position: relative;
 
-  width: min(58vw, 820px);
+  width: min(
+    54vw,
+    820px
+  );
 
-  display: flex;
+  transform:
+    translate3d(
+      0,
+      52vh,
+      0
+    )
+    scale(.72);
 
-  align-items: center;
-
-  justify-content: center;
+  will-change:
+    transform;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-product-img {
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+#qp-hero-story-{{ section.id }} .qp-product-image {
 
   display: block;
 
@@ -264,13 +433,9 @@
 
   object-fit: contain;
 
-  transform-origin: center center;
-
-  will-change: transform;
-
   filter:
     drop-shadow(
-      0 30px 55px rgba(0,0,0,.08)
+      0 35px 55px rgba(0,0,0,.12)
     );
 
 }
@@ -280,22 +445,28 @@
    PACKAGE
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-package {
+#qp-hero-story-{{ section.id }} .qp-package-object {
 
   position: absolute;
 
-  width: 30%;
+  width: 31%;
 
-  right: -2%;
+  right: -3%;
 
-  bottom: -5%;
+  bottom: -4%;
 
   opacity: 0;
 
   transform:
-    translateY(120px)
-    rotate(8deg)
-    scale(.72);
+    translate3d(
+      80px,
+      60px,
+      0
+    )
+    rotate(9deg)
+    scale(.65);
+
+  transform-origin: center bottom;
 
   will-change:
     transform,
@@ -304,7 +475,7 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-package-img {
+#qp-hero-story-{{ section.id }} .qp-package-image {
 
   display: block;
 
@@ -312,12 +483,15 @@
 
   height: auto;
 
+  filter:
+    drop-shadow(
+      0 25px 35px rgba(0,0,0,.12)
+    );
+
 }
 
 
-#qp-sticky-{{ section.id }} .qp-package-placeholder {
-
-  width: 100%;
+#qp-hero-story-{{ section.id }} .qp-package-placeholder {
 
   aspect-ratio: 1 / 1;
 
@@ -329,195 +503,7 @@
 
   justify-content: center;
 
-  font-size: 10px;
-
-  letter-spacing: .15em;
-
-}
-
-
-/* =====================================================
-   GIANT WORDS
-===================================================== */
-
-#qp-sticky-{{ section.id }} .qp-words {
-
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 5;
-
-  overflow: hidden;
-
-  pointer-events: none;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-word {
-
-  position: absolute;
-
-  white-space: nowrap;
-
-  font-size:
-    clamp(
-      90px,
-      13vw,
-      210px
-    );
-
-  line-height: .78;
-
-  letter-spacing: -.075em;
-
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  will-change:
-    transform,
-    opacity;
-
-}
-
-
-/* =====================================================
-   WORD POSITIONS
-===================================================== */
-
-#qp-sticky-{{ section.id }} .word-1 {
-
-  top: 10%;
-
-  left: -2%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-2 {
-
-  top: 27%;
-
-  right: -6%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-3 {
-
-  top: 13%;
-
-  left: -7%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-4 {
-
-  top: 35%;
-
-  right: -8%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-5 {
-
-  top: 15%;
-
-  left: -3%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-6 {
-
-  top: 31%;
-
-  right: -10%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-7 {
-
-  top: 43%;
-
-  left: 2%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .word-8 {
-
-  top: 22%;
-
-  left: -5%;
-
-}
-
-
-/* =====================================================
-   SUPPORT COPY
-===================================================== */
-
-#qp-sticky-{{ section.id }} .qp-support {
-
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 25;
-
-  pointer-events: none;
-
-}
-
-
-#qp-sticky-{{ section.id }} .support {
-
-  position: absolute;
-
-  font-size: 14px;
-
-  line-height: 1.5;
-
-  letter-spacing: -.01em;
-
-  opacity: 0;
-
-  transition:
-    opacity .5s ease,
-    transform .6s ease;
-
-}
-
-
-#qp-sticky-{{ section.id }} .support-1 {
-
-  left: 8%;
-
-  bottom: 12%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .support-2 {
-
-  right: 8%;
-
-  bottom: 15%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .support-3 {
-
-  left: 8%;
-
-  bottom: 15%;
+  font-size: 9px;
 
 }
 
@@ -526,17 +512,17 @@
    FINAL
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-final {
+#qp-hero-story-{{ section.id }} .qp-story-final {
 
   position: absolute;
 
-  left: 0;
+  top: 520vh;
 
-  top: 560vh;
+  left: 0;
 
   width: 100%;
 
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
 
@@ -551,23 +537,22 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-content {
+#qp-hero-story-{{ section.id }} .qp-final-inner {
 
   text-align: center;
 
   opacity: 0;
 
-  transform: translateY(60px);
+  transform: translateY(30px);
 
   transition:
     opacity .8s ease,
-    transform .8s cubic-bezier(.22,.61,.36,1);
+    transform .8s ease;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final.active
-.qp-final-content {
+#qp-hero-story-{{ section.id }} .qp-final-inner.active {
 
   opacity: 1;
 
@@ -576,59 +561,60 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-brand {
+#qp-hero-story-{{ section.id }} .qp-final-eyebrow {
 
-  font-size: 11px;
+  margin-bottom: 22px;
+
+  font-size: 10px;
 
   letter-spacing: .22em;
 
-  margin-bottom: 25px;
+  font-weight: 600;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final h2 {
+#qp-hero-story-{{ section.id }} .qp-final-inner h2 {
 
   margin: 0;
 
-  font-size:
-    clamp(
-      50px,
-      7vw,
-      110px
-    );
+  font-size: clamp(
+    55px,
+    7vw,
+    115px
+  );
 
-  line-height: .86;
+  line-height: .82;
 
-  letter-spacing: -.065em;
+  letter-spacing: -.075em;
+
+  font-weight: 800;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final p {
+#qp-hero-story-{{ section.id }} .qp-final-inner p {
 
   margin:
     28px
     0
-    14px;
+    12px;
 
-  font-size: 16px;
+  font-size: 15px;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-price {
+#qp-hero-story-{{ section.id }} .qp-final-price {
 
   font-size: 23px;
 
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-button {
-
-  pointer-events: auto;
+#qp-hero-story-{{ section.id }} .qp-final-button {
 
   display: inline-flex;
 
@@ -636,11 +622,11 @@
 
   justify-content: center;
 
-  gap: 15px;
+  gap: 18px;
 
-  min-width: 220px;
+  min-width: 225px;
 
-  padding: 17px 30px;
+  padding: 18px 30px;
 
   background: #171717;
 
@@ -648,20 +634,22 @@
 
   text-decoration: none;
 
-  font-size: 12px;
+  font-size: 11px;
 
-  font-weight: 600;
+  font-weight: 700;
 
-  letter-spacing: .09em;
+  letter-spacing: .12em;
+
+  pointer-events: auto;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-trust {
+#qp-hero-story-{{ section.id }} .qp-final-trust {
 
   margin-top: 18px;
 
-  font-size: 11px;
+  font-size: 10px;
 
   opacity: .55;
 
@@ -674,192 +662,111 @@
 
 @media screen and (max-width: 749px) {
 
-  #qp-sticky-{{ section.id }} .qp-scroll {
+  #qp-hero-story-{{ section.id }} .qp-story-track {
 
-    height: 700vh;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-product {
-
-    width: 92vw;
+    height: 650vh;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-word {
+  #qp-hero-story-{{ section.id }} .qp-type {
 
-    font-size:
-      clamp(
-        58px,
-        17vw,
-        105px
-      );
+    font-size: 19vw;
 
-    line-height: .8;
+    line-height: .78;
 
-    letter-spacing: -.075em;
+    letter-spacing: -.085em;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .word-1 {
+  #qp-hero-story-{{ section.id }} .type-top {
 
-    top: 16%;
+    top: 13%;
 
-    left: -10%;
+    left: -7%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .word-2 {
+  #qp-hero-story-{{ section.id }} .type-middle {
 
-    top: 30%;
+    top: 36%;
+
+    left: -12%;
+
+  }
+
+
+  #qp-hero-story-{{ section.id }} .type-middle-right {
+
+    top: 49%;
+
+    right: -15%;
+
+  }
+
+
+  #qp-hero-story-{{ section.id }} .type-bottom {
+
+    top: 69%;
+
+    left: -14%;
+
+  }
+
+
+  #qp-hero-story-{{ section.id }} .type-bottom-right {
+
+    top: 82%;
 
     right: -35%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .word-3 {
+  #qp-hero-story-{{ section.id }} .qp-product-object {
 
-    top: 17%;
-
-    left: -28%;
+    width: 92vw;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .word-4 {
+  #qp-hero-story-{{ section.id }} .qp-package-object {
 
-    top: 34%;
+    width: 37%;
 
-    right: -32%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .word-5 {
-
-    top: 17%;
-
-    left: -8%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .word-6 {
-
-    top: 31%;
-
-    right: -48%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .word-7 {
-
-    top: 43%;
-
-    left: -5%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .word-8 {
-
-    top: 25%;
-
-    left: -28%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-package {
-
-    width: 38%;
-
-    right: -2%;
+    right: -3%;
 
     bottom: -3%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .support {
+  #qp-hero-story-{{ section.id }} .micro-left {
 
-    font-size: 12px;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .support-1 {
-
-    left: 6%;
-
-    bottom: 8%;
+    left: 18px;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .support-2 {
+  #qp-hero-story-{{ section.id }} .micro-right {
 
-    right: 6%;
-
-    bottom: 8%;
+    right: 18px;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .support-3 {
+  #qp-hero-story-{{ section.id }} .qp-final-inner {
 
-    left: 6%;
-
-    bottom: 8%;
+    padding: 0 20px;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-final {
+  #qp-hero-story-{{ section.id }} .qp-final-inner h2 {
 
-    top: 560vh;
-
-    height: 100svh;
-
-    padding: 0 6%;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-final h2 {
-
-    font-size:
-      clamp(
-        44px,
-        12vw,
-        68px
-      );
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-final p {
-
-    font-size: 14px;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-final-trust {
-
-    max-width: 280px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-    line-height: 1.5;
+    font-size: 13vw;
 
   }
 
@@ -874,58 +781,48 @@
 
   const root =
     document.querySelector(
-      '#qp-sticky-{{ section.id }}'
+      '#qp-hero-story-{{ section.id }}'
     );
 
   if (!root) return;
 
 
-  const scroll =
+  const track =
     root.querySelector(
-      '.qp-scroll'
+      '.qp-story-track'
     );
 
   const product =
     root.querySelector(
-      '.qp-product-img'
+      '.qp-product-object'
     );
 
   const packageBox =
     root.querySelector(
-      '.qp-package'
+      '.qp-package-object'
     );
 
   const final =
     root.querySelector(
-      '.qp-final'
-    );
-
-  const words =
-    root.querySelectorAll(
-      '.qp-word'
-    );
-
-  const supports =
-    root.querySelectorAll(
-      '.support'
+      '.qp-final-inner'
     );
 
 
   function update() {
 
     const rect =
-      scroll.getBoundingClientRect();
+      track.getBoundingClientRect();
 
-    const max =
-      scroll.offsetHeight -
+    const total =
+      track.offsetHeight -
       window.innerHeight;
 
 
-    if (max <= 0) return;
+    if (total <= 0) return;
 
 
     let progress =
-      -rect.top / max;
+      -rect.top / total;
 
 
     progress =
@@ -938,195 +835,142 @@
       );
 
 
-    /* =====================
+    /* =========================================
        PRODUCT MOVEMENT
-    ====================== */
 
-    if (product) {
+       0 → 从底部进入
+       1 → 最终停住
+    ========================================== */
 
-      let scale;
+    let x = 0;
 
-      let rotate;
+    let y = 0;
 
-      let y;
+    let scale = .72;
 
-
-      if (progress < .25) {
-
-        scale =
-          .88 +
-          progress * .75;
-
-        rotate =
-          -2 +
-          progress * 8;
-
-        y =
-          progress * -40;
-
-      }
-
-      else if (progress < .5) {
-
-        scale =
-          1.07 +
-          (progress - .25) * .5;
-
-        rotate =
-          0;
-
-        y =
-          -35;
-
-      }
-
-      else if (progress < .72) {
-
-        scale =
-          1.19 +
-          (progress - .5) * .45;
-
-        rotate =
-          2;
-
-        y =
-          -10;
-
-      }
-
-      else {
-
-        scale =
-          1.29;
-
-        rotate =
-          0;
-
-        y =
-          0;
-
-      }
+    let rotate = 0;
 
 
-      product.style.transform =
-        `
-        translate3d(0,${y}px,0)
-        scale(${scale})
-        rotate(${rotate}deg)
-        `;
+    if (progress < .18) {
+
+      const p =
+        progress / .18;
+
+      y =
+        52 -
+        (52 * p);
+
+      scale =
+        .72 +
+        (.18 * p);
+
+      rotate =
+        -3 +
+        (3 * p);
+
+    }
+
+    else if (progress < .42) {
+
+      const p =
+        (progress - .18) /
+        .24;
+
+      y =
+        0;
+
+      x =
+        -14 * p;
+
+      scale =
+        .90 +
+        (.10 * p);
+
+      rotate =
+        0;
+
+    }
+
+    else if (progress < .68) {
+
+      const p =
+        (progress - .42) /
+        .26;
+
+      x =
+        -14 +
+        (28 * p);
+
+      y =
+        -2 * p;
+
+      scale =
+        1.0 +
+        (.14 * p);
+
+      rotate =
+        -2 +
+        (4 * p);
+
+    }
+
+    else if (progress < .82) {
+
+      const p =
+        (progress - .68) /
+        .14;
+
+      x =
+        14 -
+        (8 * p);
+
+      y =
+        -2;
+
+      scale =
+        1.14 +
+        (.08 * p);
+
+      rotate =
+        2 -
+        (2 * p);
+
+    }
+
+    else {
+
+      x = 6;
+
+      y = -2;
+
+      scale = 1.22;
+
+      rotate = 0;
 
     }
 
 
-    /* =====================
-       WORD MOVEMENT
-    ====================== */
-
-    words.forEach(
-      function(word, index) {
-
-        const direction =
-          index % 2 === 0
-            ? -1
-            : 1;
-
-
-        const speed =
-          280 +
-          index * 45;
+    product.style.transform =
+      `
+      translate3d(
+        ${x}vw,
+        ${y}vh,
+        0
+      )
+      scale(${scale})
+      rotate(${rotate}deg)
+      `;
 
 
-        const move =
-          progress *
-          speed *
-          direction;
-
-
-        let opacity = 1;
-
-
-        if (progress > .55) {
-
-          opacity =
-            Math.max(
-              0,
-              1 -
-              ((progress - .55) / .25)
-            );
-
-        }
-
-
-        word.style.transform =
-          `
-          translate3d(
-            ${move}px,
-            0,
-            0
-          )
-          `;
-
-
-        word.style.opacity =
-          opacity;
-
-      }
-    );
-
-
-    /* =====================
-       SUPPORTING COPY
-    ====================== */
-
-    supports.forEach(
-      function(item) {
-
-        item.style.opacity = 0;
-
-      }
-    );
-
-
-    if (
-      progress > .05 &&
-      progress < .27
-    ) {
-
-      supports[0].style.opacity = 1;
-
-    }
-
-
-    if (
-      progress > .27 &&
-      progress < .48
-    ) {
-
-      supports[1].style.opacity = 1;
-
-    }
-
-
-    if (
-      progress > .48 &&
-      progress < .67
-    ) {
-
-      supports[2].style.opacity = 1;
-
-    }
-
-
-    /* =====================
+    /* =========================================
        PACKAGE
-    ====================== */
+    ========================================== */
 
     if (packageBox) {
 
-      const start = .62;
-
       let p =
-        (progress - start) / .14;
+        (progress - .70) /
+        .14;
 
 
       p =
@@ -1146,28 +990,28 @@
       packageBox.style.transform =
         `
         translate3d(
-          0,
-          ${100 - (100 * p)}px,
+          ${80 - (80 * p)}px,
+          ${60 - (60 * p)}px,
           0
         )
         rotate(
-          ${8 - (8 * p)}deg
+          ${9 - (9 * p)}deg
         )
         scale(
-          ${.72 + (.28 * p)}
+          ${.65 + (.35 * p)}
         )
         `;
 
     }
 
 
-    /* =====================
-       FINAL
-    ====================== */
+    /* =========================================
+       FINAL CTA
+    ========================================== */
 
     if (final) {
 
-      if (progress > .78) {
+      if (progress > .84) {
 
         final.classList.add(
           'active'
@@ -1192,7 +1036,6 @@
   function requestUpdate() {
 
     if (ticking) return;
-
 
     ticking = true;
 
@@ -1235,7 +1078,7 @@
 {% schema %}
 
 {
-  "name": "QP Sticky Neck Story",
+  "name": "QP Brand Scroll Story",
 
   "settings": [
 
@@ -1268,7 +1111,7 @@
 
   "presets": [
     {
-      "name": "QP Sticky Neck Story"
+      "name": "QP Brand Scroll Story"
     }
   ]
 
