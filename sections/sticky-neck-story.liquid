@@ -1,0 +1,273 @@
+<section class="qp-sticky-story" id="qp-sticky-story-{{ section.id }}">
+  <div class="qp-story-inner">
+
+    <div class="qp-story-product">
+      {% if section.settings.product_image != blank %}
+        {{
+          section.settings.product_image
+          | image_url: width: 1600
+          | image_tag:
+            loading: 'eager',
+            class: 'qp-product-image',
+            widths: '500, 800, 1200, 1600'
+        }}
+      {% else %}
+        <div class="qp-product-placeholder">
+          ADD PRODUCT IMAGE
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="qp-story-steps">
+
+      <div class="qp-story-step active" data-step="0">
+        <div class="qp-step-number">01</div>
+        <h2>TENSION<br>BUILDS UP.</h2>
+        <p>
+          Long hours sitting, driving, or working can leave your neck feeling tight and tired.
+        </p>
+      </div>
+
+      <div class="qp-story-step" data-step="1">
+        <div class="qp-step-number">02</div>
+        <h2>PUT THE TENSION<br>ON PAUSE.</h2>
+        <p>
+          Gentle EMS stimulation helps create a soothing part of your daily routine.
+        </p>
+      </div>
+
+      <div class="qp-story-step" data-step="2">
+        <div class="qp-step-number">03</div>
+        <h2>SOOTHING<br>HEAT.</h2>
+        <p>
+          Enjoy gentle warmth while you take a few minutes for yourself.
+        </p>
+      </div>
+
+      <div class="qp-story-step" data-step="3">
+        <div class="qp-step-number">04</div>
+        <h2>JUST 10 MINUTES<br>A DAY.</h2>
+        <p>
+          A simple routine designed to fit into the moments that already belong to you.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #qp-sticky-story-{{ section.id }} {
+    position: relative;
+    background: #f5f3ef;
+    color: #171717;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-inner {
+    position: relative;
+    height: 400vh;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-product {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-product-image {
+    width: min(48vw, 620px);
+    height: auto;
+    object-fit: contain;
+    transition:
+      transform 0.7s cubic-bezier(.22,.61,.36,1),
+      opacity 0.5s ease;
+    will-change: transform;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-product-placeholder {
+    width: min(48vw, 620px);
+    aspect-ratio: 1 / 1;
+    border: 1px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: .15em;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-steps {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-step {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 42%;
+    margin-left: 7%;
+    opacity: .15;
+    transform: translateY(40px);
+    transition:
+      opacity .6s ease,
+      transform .7s cubic-bezier(.22,.61,.36,1);
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-step:nth-child(even) {
+    margin-left: auto;
+    margin-right: 7%;
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-story-step.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #qp-sticky-story-{{ section.id }} .qp-step-number {
+    font-size: 12px;
+    letter-spacing: .2em;
+    margin-bottom: 24px;
+  }
+
+  #qp-sticky-story-{{ section.id }} h2 {
+    font-size: clamp(42px, 6vw, 92px);
+    line-height: .9;
+    letter-spacing: -.055em;
+    margin: 0 0 28px;
+    font-weight: 600;
+  }
+
+  #qp-sticky-story-{{ section.id }} p {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+
+    #qp-sticky-story-{{ section.id }} .qp-story-inner {
+      height: 400vh;
+    }
+
+    #qp-sticky-story-{{ section.id }} .qp-story-product {
+      height: 100vh;
+      align-items: center;
+      padding-bottom: 25vh;
+    }
+
+    #qp-sticky-story-{{ section.id }} .qp-product-image {
+      width: 78vw;
+    }
+
+    #qp-sticky-story-{{ section.id }} .qp-story-step,
+    #qp-sticky-story-{{ section.id }} .qp-story-step:nth-child(even) {
+      width: 88%;
+      margin: 0 auto;
+      padding: 0 6%;
+      justify-content: flex-end;
+      padding-bottom: 13vh;
+    }
+
+    #qp-sticky-story-{{ section.id }} h2 {
+      font-size: clamp(40px, 12vw, 64px);
+    }
+
+    #qp-sticky-story-{{ section.id }} p {
+      font-size: 15px;
+      max-width: 320px;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+
+    const section = document.querySelector(
+      '#qp-sticky-story-{{ section.id }}'
+    );
+
+    if (!section) return;
+
+    const steps = section.querySelectorAll('.qp-story-step');
+    const product = section.querySelector('.qp-product-image');
+
+    function updateStory() {
+
+      const rect = section.getBoundingClientRect();
+      const total = section.offsetHeight - window.innerHeight;
+
+      if (total <= 0) return;
+
+      let progress = -rect.top / total;
+
+      progress = Math.max(0, Math.min(1, progress));
+
+      const index = Math.min(
+        steps.length - 1,
+        Math.floor(progress * steps.length)
+      );
+
+      steps.forEach((step, i) => {
+        step.classList.toggle('active', i === index);
+      });
+
+      if (product) {
+
+        const scale =
+          0.92 +
+          (index * 0.035);
+
+        const rotate =
+          (index - 1.5) * 2;
+
+        const translateY =
+          Math.sin(progress * Math.PI * 2) * 12;
+
+        product.style.transform =
+          `translateY(${translateY}px) scale(${scale}) rotate(${rotate}deg)`;
+      }
+    }
+
+    window.addEventListener(
+      'scroll',
+      updateStory,
+      { passive: true }
+    );
+
+    window.addEventListener(
+      'resize',
+      updateStory
+    );
+
+    updateStory();
+
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "QP Sticky Neck Story",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "QP Sticky Neck Story"
+    }
+  ]
+}
+{% endschema %}
