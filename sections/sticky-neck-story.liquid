@@ -1,186 +1,182 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollytelling Core Architecture</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+<div id="scroll-section-{{ section.id }}" class="scroll-section-wrapper">
+  <div class="sticky-viewport">
+    
+    <!-- 背景文字 1 -->
+    <div class="bg-typography text-phase-1">
+      {{ section.settings.bg_text_1 }}
+    </div>
+
+    <!-- 背景文字 2 -->
+    <div class="bg-typography text-phase-2">
+      {{ section.settings.bg_text_2 }}
+    </div>
+
+    <!-- 左侧浮现文案 -->
+    <div class="side-content left-box">
+      <div class="side-box">
+        <h3>{{ section.settings.left_title }}</h3>
+        <p>{{ section.settings.left_desc }}</p>
+      </div>
+    </div>
+
+    <!-- 右侧浮现文案 -->
+    <div class="side-content right-box">
+      <div class="side-box">
+        <h3>{{ section.settings.right_title }}</h3>
+        <p>{{ section.settings.right_desc }}</p>
+      </div>
+    </div>
+
+    <!-- 核心产品图片 -->
+    <div class="product-layer">
+      {% if section.settings.product_image != blank %}
+        <img id="main-product-{{ section.id }}" src="{{ section.settings.product_image | image_url: width: 1200 }}" alt="Product">
+      {% else %}
+        <img id="main-product-{{ section.id }}" src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" alt="Placeholder">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+<style>
+  #scroll-section-{{ section.id }} {
+    height: 400vh;
+    position: relative;
+    background-color: #f7f3ed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  #scroll-section-{{ section.id }} .sticky-viewport {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  #scroll-section-{{ section.id }} .bg-typography {
+    position: absolute;
+    font-size: 15vw;
+    font-weight: 900;
+    color: rgba(179, 34, 42, 0.06);
+    white-space: nowrap;
+    text-transform: uppercase;
+    z-index: 1;
+    user-select: none;
+    will-change: transform;
+  }
+
+  #scroll-section-{{ section.id }} .text-phase-2 {
+    opacity: 0;
+  }
+
+  #scroll-section-{{ section.id }} .product-layer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #scroll-section-{{ section.id }} .product-layer img {
+    width: 400px;
+    max-width: 50vw;
+    height: auto;
+    transform-origin: center;
+    will-change: transform;
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,0.2));
+  }
+
+  #scroll-section-{{ section.id }} .side-content {
+    position: absolute;
+    width: 280px;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: transform, opacity;
+  }
+
+  #scroll-section-{{ section.id }} .left-box {
+    left: 10%;
+    top: 35%;
+  }
+
+  #scroll-section-{{ section.id }} .right-box {
+    right: 10%;
+    top: 45%;
+  }
+
+  #scroll-section-{{ section.id }} .side-box h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+
+  #scroll-section-{{ section.id }} .side-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+</style>
+
+<!-- 引入 GSAP 动画引擎 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  (function() {
+    const initScrollSection = () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const sectionId = "#scroll-section-{{ section.id }}";
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionId,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1.2,
+          pin: true,
+          anticipatePin: 1
         }
+      });
 
-        body {
-            background-color: #f7f3ed;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            overflow-x: hidden;
-        }
+      tl.to(`${sectionId} img[id^="main-product"]`, { scale: 0.65, ease: "power1.inOut", duration: 1 }, 0)
+        .to(`${sectionId} .text-phase-1`, { x: "-30%", ease: "none", duration: 1 }, 0)
+        .to(`${sectionId} .left-box`, { opacity: 1, y: 0, duration: 0.5 }, 0.3)
+        .to(`${sectionId} .right-box`, { opacity: 1, y: 0, duration: 0.5 }, 0.5)
+        .to(`${sectionId} .text-phase-1`, { opacity: 0, duration: 0.3 }, 0.7)
+        .to(`${sectionId} .text-phase-2`, { opacity: 1, duration: 0.3 }, 0.7)
+        .to(`${sectionId} .text-phase-2`, { x: "20%", ease: "none", duration: 0.6 }, 0.7);
+    };
 
-        /* 滚动容器：高度决定了动画的总行程 (400vh 代表需要滚动 4 个屏幕的高度) */
-        #scroll-section {
-            height: 400vh;
-            position: relative;
-        }
+    if (document.readyState === "complete") {
+      initScrollSection();
+    } else {
+      window.addEventListener("load", initScrollSection);
+    }
+  })();
+</script>
 
-        /* 粘性视窗：让内部元素在滚动过程中固定在屏幕中央 */
-        .sticky-viewport {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        /* 背景巨型文字层 */
-        .bg-typography {
-            position: absolute;
-            font-size: 15vw;
-            font-weight: 900;
-            color: rgba(179, 34, 42, 0.06);
-            white-space: nowrap;
-            text-transform: uppercase;
-            z-index: 1;
-            user-select: none;
-            will-change: transform;
-        }
-
-        /* 阶段二背景文字初始隐藏 */
-        .text-phase-2 {
-            opacity: 0;
-        }
-
-        /* 核心产品视觉层 */
-        .product-layer {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .product-layer img {
-            width: 400px;
-            max-width: 50vw;
-            height: auto;
-            transform-origin: center;
-            will-change: transform;
-            filter: drop-shadow(0 30px 40px rgba(0,0,0,0.2));
-        }
-
-        /* 左右两侧动态文案 */
-        .side-content {
-            position: absolute;
-            width: 280px;
-            z-index: 3;
-            opacity: 0;
-            transform: translateY(30px);
-            will-change: transform, opacity;
-        }
-
-        .left-box {
-            left: 10%;
-            top: 35%;
-        }
-
-        .right-box {
-            right: 10%;
-            top: 45%;
-        }
-
-        .side-box h3 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-        }
-
-        .side-box p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.5;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- 滚动主区块 -->
-    <section id="scroll-section">
-        <div class="sticky-viewport">
-            
-            <!-- 背景文字 1 -->
-            <div class="bg-typography text-phase-1">
-                UNLIMITED RELEASE IPA
-            </div>
-
-            <!-- 背景文字 2 -->
-            <div class="bg-typography text-phase-2">
-                MOUTH FEELS TASTE
-            </div>
-
-            <!-- 左侧浮现文案 -->
-            <div class="side-content left-box">
-                <div class="side-box">
-                    <h3>INDIA PALE ALE</h3>
-                    <p>The taste is a clean mix of refreshing citrus, sweet caramel and pleasant bitterness.</p>
-                </div>
-            </div>
-
-            <!-- 右侧浮现文案 -->
-            <div class="side-content right-box">
-                <div class="side-box">
-                    <h3>6.2% ABV</h3>
-                    <p>Brewed with an abundance of hops to balance malt depth and sharp aroma profiles.</p>
-                </div>
-            </div>
-
-            <!-- 核心产品图片 -->
-            <div class="product-layer">
-                <img id="main-product" src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" alt="Product">
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 引入工业级动画引擎 GSAP 及其滚动插件 ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // 注册 ScrollTrigger 插件
-            gsap.registerPlugin(ScrollTrigger);
-
-            // 创建多阶段主时间轴 (Master Timeline)
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#scroll-section",
-                    start: "top top",      // 视窗顶部触及区块顶部时开始锁定
-                    end: "bottom bottom",  // 区块底部离开时解除锁定
-                    scrub: 1.2,            // 惯性平滑阻尼参数（让动画跟随滚动条实时插值运行）
-                    pin: true,             // 核心：固定视口
-                    anticipatePin: 1
-                }
-            });
-
-            // 【阶段 01：0% ~ 50% 滚动进度】
-            // 1. 产品从超大特写缩小并居中
-            tl.to("#main-product", { scale: 0.65, ease: "power1.inOut", duration: 1 }, 0)
-              // 2. 背景文字 1 向左水平视差平移
-              .to(".text-phase-1", { x: "-30%", ease: "none", duration: 1 }, 0)
-              // 3. 左右两侧文案淡入并上浮
-              .to(".left-box", { opacity: 1, y: 0, duration: 0.5 }, 0.3)
-              .to(".right-box", { opacity: 1, y: 0, duration: 0.5 }, 0.5)
-
-            // 【阶段 02：50% ~ 100% 滚动进度】
-            // 4. 第一层背景字淡出，第二层背景字淡入并反向位移
-              .to(".text-phase-1", { opacity: 0, duration: 0.3 }, 0.7)
-              .to(".text-phase-2", { opacity: 1, duration: 0.3 }, 0.7)
-              .to(".text-phase-2", { x: "20%", ease: "none", duration: 0.6 }, 0.7);
-        });
-    </script>
-</body>
-</html>
+{% schema %}
+{
+  "name": "Scrollytelling Core",
+  "settings": [
+    { "type": "image_picker", "id": "product_image", "label": "核心产品图片" },
+    { "type": "text", "id": "bg_text_1", "label": "背景大字 1", "default": "UNLIMITED RELEASE IPA" },
+    { "type": "text", "id": "bg_text_2", "label": "背景大字 2", "default": "MOUTH FEELS TASTE" },
+    { "type": "text", "id": "left_title", "label": "左侧标题", "default": "INDIA PALE ALE" },
+    { "type": "textarea", "id": "left_desc", "label": "左侧正文", "default": "The taste is a clean mix..." },
+    { "type": "text", "id": "right_title", "label": "右侧标题", "default": "6.2% ABV" },
+    { "type": "textarea", "id": "right_desc", "label": "右侧正文", "default": "Brewed with an abundance of hops..." }
+  ],
+  "presets": [
+    { "name": "Scrollytelling Core" }
+  ]
+}
+{% endschema %}
