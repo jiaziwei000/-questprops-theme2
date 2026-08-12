@@ -1,61 +1,88 @@
 <section id="qp-sticky-{{ section.id }}" class="qp-sticky">
-
-  <div class="qp-sticky-scroll">
+  <div class="qp-scroll">
 
     <!-- =========================
-         BACKGROUND TEXT
+         GIANT TYPOGRAPHY
     ========================== -->
 
-    <div class="qp-big-copy">
+    <div class="qp-words">
 
-      <div class="qp-copy-line line-1">
+      <div class="qp-word word-1">
+        THE DAY
+      </div>
+
+      <div class="qp-word word-2">
+        KEEPS GOING.
+      </div>
+
+      <div class="qp-word word-3">
         YOUR NECK
       </div>
 
-      <div class="qp-copy-line line-2">
-        WORKS ALL DAY.
+      <div class="qp-word word-4">
+        FEELS IT.
       </div>
 
-      <div class="qp-copy-line line-3">
-        MAKE ROOM
+      <div class="qp-word word-5">
+        HEAT.
       </div>
 
-      <div class="qp-copy-line line-4">
-        FOR A RESET.
+      <div class="qp-word word-6">
+        STIMULATION.
       </div>
 
-      <div class="qp-copy-line line-5">
-        GENTLE EMS.
+      <div class="qp-word word-7">
+        QUIET.
       </div>
 
-      <div class="qp-copy-line line-6">
-        SOOTHING HEAT.
-      </div>
-
-      <div class="qp-copy-line line-7">
-        JUST 10 MINUTES.
+      <div class="qp-word word-8">
+        TEN MINUTES.
       </div>
 
     </div>
 
 
     <!-- =========================
-         PRODUCT FOREGROUND
+         SMALL SUPPORTING COPY
     ========================== -->
 
-    <div class="qp-product-sticky">
+    <div class="qp-support">
 
-      <div class="qp-product-wrap">
+      <div class="support support-1">
+        Sitting. Driving. Working.<br>
+        There's always something next.
+      </div>
+
+      <div class="support support-2">
+        So give yourself<br>
+        a few minutes back.
+      </div>
+
+      <div class="support support-3">
+        A simple reset<br>
+        in the middle of your day.
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT
+    ========================== -->
+
+    <div class="qp-product-layer">
+
+      <div class="qp-product">
 
         {% if section.settings.product_image != blank %}
 
           {{
             section.settings.product_image
-            | image_url: width: 2000
+            | image_url: width: 2200
             | image_tag:
-              class: 'qp-product-image',
+              class: 'qp-product-img',
               loading: 'eager',
-              widths: '800,1200,1600,2000'
+              widths: '800,1200,1600,2000,2200'
           }}
 
         {% else %}
@@ -67,7 +94,9 @@
         {% endif %}
 
 
-        <!-- PACKAGE -->
+        <!-- =========================
+             PACKAGE
+        ========================== -->
 
         <div class="qp-package">
 
@@ -77,7 +106,7 @@
               section.settings.package_image
               | image_url: width: 1400
               | image_tag:
-                class: 'qp-package-image',
+                class: 'qp-package-img',
                 loading: 'lazy',
                 widths: '500,800,1100,1400'
             }}
@@ -98,35 +127,40 @@
 
 
     <!-- =========================
-         FINAL CONTENT
+         FINAL MESSAGE
     ========================== -->
 
     <div class="qp-final">
 
-      <div class="qp-final-inner">
+      <div class="qp-final-content">
 
-        <div class="qp-final-brand">
+        <div class="qp-brand">
           QUESTPROPS™ NECK RESTORE
         </div>
 
         <h2>
-          MEET YOUR<br>
-          DAILY RESET.
+          RESET.<br>
+          THEN GET BACK<br>
+          TO WHAT MATTERS.
         </h2>
 
-        <div class="qp-final-price">
+        <p>
+          Your daily neck reset.
+        </p>
+
+        <div class="qp-price">
           $119.99
         </div>
 
         <a
           href="{{ section.settings.button_link }}"
-          class="qp-final-button"
+          class="qp-button"
         >
           {{ section.settings.button_text }}
           <span>→</span>
         </a>
 
-        <div class="qp-final-trust">
+        <div class="qp-trust">
           60-Day Trial · 2-Year Warranty · Free Shipping
         </div>
 
@@ -135,14 +169,13 @@
     </div>
 
   </div>
-
 </section>
 
 
 <style>
 
 /* =====================================================
-   MAIN
+   ROOT
 ===================================================== */
 
 #qp-sticky-{{ section.id }} {
@@ -164,20 +197,20 @@
    SCROLL LENGTH
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-sticky-scroll {
+#qp-sticky-{{ section.id }} .qp-scroll {
 
   position: relative;
 
-  height: 650vh;
+  height: 700vh;
 
 }
 
 
 /* =====================================================
-   PRODUCT STICKY
+   PRODUCT LAYER
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-product-sticky {
+#qp-sticky-{{ section.id }} .qp-product-layer {
 
   position: sticky;
 
@@ -195,7 +228,7 @@
 
   justify-content: center;
 
-  z-index: 10;
+  z-index: 20;
 
   pointer-events: none;
 
@@ -206,11 +239,11 @@
    PRODUCT
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-product-wrap {
+#qp-sticky-{{ section.id }} .qp-product {
 
   position: relative;
 
-  width: min(54vw, 780px);
+  width: min(58vw, 820px);
 
   display: flex;
 
@@ -221,7 +254,7 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-product-image {
+#qp-sticky-{{ section.id }} .qp-product-img {
 
   display: block;
 
@@ -235,9 +268,10 @@
 
   will-change: transform;
 
-  filter: drop-shadow(
-    0 25px 45px rgba(0,0,0,.08)
-  );
+  filter:
+    drop-shadow(
+      0 30px 55px rgba(0,0,0,.08)
+    );
 
 }
 
@@ -250,42 +284,44 @@
 
   position: absolute;
 
-  width: 31%;
+  width: 30%;
 
-  right: -3%;
+  right: -2%;
 
-  bottom: -7%;
+  bottom: -5%;
 
   opacity: 0;
 
   transform:
-    translateY(100px)
-    rotate(7deg)
-    scale(.75);
+    translateY(120px)
+    rotate(8deg)
+    scale(.72);
 
-  transform-origin: bottom center;
-
-  will-change: transform, opacity;
+  will-change:
+    transform,
+    opacity;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-package-image {
+#qp-sticky-{{ section.id }} .qp-package-img {
+
+  display: block;
 
   width: 100%;
 
   height: auto;
-
-  display: block;
 
 }
 
 
 #qp-sticky-{{ section.id }} .qp-package-placeholder {
 
+  width: 100%;
+
   aspect-ratio: 1 / 1;
 
-  border: 1px dashed #aaa;
+  border: 1px dashed #999;
 
   display: flex;
 
@@ -301,35 +337,36 @@
 
 
 /* =====================================================
-   BIG TYPOGRAPHY
+   GIANT WORDS
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-big-copy {
+#qp-sticky-{{ section.id }} .qp-words {
 
   position: absolute;
 
   inset: 0;
 
-  z-index: 3;
-
-  pointer-events: none;
+  z-index: 5;
 
   overflow: hidden;
+
+  pointer-events: none;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-copy-line {
+#qp-sticky-{{ section.id }} .qp-word {
 
   position: absolute;
 
   white-space: nowrap;
 
-  font-size: clamp(
-    90px,
-    14vw,
-    220px
-  );
+  font-size:
+    clamp(
+      90px,
+      13vw,
+      210px
+    );
 
   line-height: .78;
 
@@ -339,25 +376,27 @@
 
   text-transform: uppercase;
 
-  will-change: transform, opacity;
+  will-change:
+    transform,
+    opacity;
 
 }
 
 
 /* =====================================================
-   TEXT POSITIONS
+   WORD POSITIONS
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .line-1 {
+#qp-sticky-{{ section.id }} .word-1 {
 
-  top: 13%;
+  top: 10%;
 
   left: -2%;
 
 }
 
 
-#qp-sticky-{{ section.id }} .line-2 {
+#qp-sticky-{{ section.id }} .word-2 {
 
   top: 27%;
 
@@ -366,70 +405,119 @@
 }
 
 
-#qp-sticky-{{ section.id }} .line-3 {
+#qp-sticky-{{ section.id }} .word-3 {
 
-  top: 15%;
+  top: 13%;
 
-  left: -8%;
+  left: -7%;
 
 }
 
 
-#qp-sticky-{{ section.id }} .line-4 {
+#qp-sticky-{{ section.id }} .word-4 {
 
   top: 35%;
-
-  right: -10%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .line-5 {
-
-  top: 17%;
-
-  left: -3%;
-
-}
-
-
-#qp-sticky-{{ section.id }} .line-6 {
-
-  top: 37%;
 
   right: -8%;
 
 }
 
 
-#qp-sticky-{{ section.id }} .line-7 {
+#qp-sticky-{{ section.id }} .word-5 {
 
-  top: 25%;
+  top: 15%;
 
-  left: -8%;
+  left: -3%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .word-6 {
+
+  top: 31%;
+
+  right: -10%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .word-7 {
+
+  top: 43%;
+
+  left: 2%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .word-8 {
+
+  top: 22%;
+
+  left: -5%;
 
 }
 
 
 /* =====================================================
-   TEXT Z-INDEX
+   SUPPORT COPY
 ===================================================== */
 
-#qp-sticky-{{ section.id }} .qp-big-copy {
+#qp-sticky-{{ section.id }} .qp-support {
 
-  z-index: 5;
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 25;
+
+  pointer-events: none;
 
 }
 
 
-/*
-   Product is above the typography.
-   This creates the "product covering text" effect.
-*/
+#qp-sticky-{{ section.id }} .support {
 
-#qp-sticky-{{ section.id }} .qp-product-sticky {
+  position: absolute;
 
-  z-index: 20;
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  letter-spacing: -.01em;
+
+  opacity: 0;
+
+  transition:
+    opacity .5s ease,
+    transform .6s ease;
+
+}
+
+
+#qp-sticky-{{ section.id }} .support-1 {
+
+  left: 8%;
+
+  bottom: 12%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .support-2 {
+
+  right: 8%;
+
+  bottom: 15%;
+
+}
+
+
+#qp-sticky-{{ section.id }} .support-3 {
+
+  left: 8%;
+
+  bottom: 15%;
 
 }
 
@@ -442,9 +530,9 @@
 
   position: absolute;
 
-  top: 520vh;
-
   left: 0;
+
+  top: 560vh;
 
   width: 100%;
 
@@ -456,20 +544,20 @@
 
   justify-content: center;
 
-  z-index: 30;
+  z-index: 40;
 
   pointer-events: none;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-inner {
+#qp-sticky-{{ section.id }} .qp-final-content {
 
   text-align: center;
 
   opacity: 0;
 
-  transform: translateY(50px);
+  transform: translateY(60px);
 
   transition:
     opacity .8s ease,
@@ -479,7 +567,7 @@
 
 
 #qp-sticky-{{ section.id }} .qp-final.active
-.qp-final-inner {
+.qp-final-content {
 
   opacity: 1;
 
@@ -488,26 +576,27 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-brand {
+#qp-sticky-{{ section.id }} .qp-brand {
 
   font-size: 11px;
 
   letter-spacing: .22em;
 
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 
 }
 
 
 #qp-sticky-{{ section.id }} .qp-final h2 {
 
-  margin: 0 0 22px;
+  margin: 0;
 
-  font-size: clamp(
-    55px,
-    7vw,
-    110px
-  );
+  font-size:
+    clamp(
+      50px,
+      7vw,
+      110px
+    );
 
   line-height: .86;
 
@@ -516,16 +605,28 @@
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-price {
+#qp-sticky-{{ section.id }} .qp-final p {
 
-  font-size: 23px;
+  margin:
+    28px
+    0
+    14px;
 
-  margin-bottom: 24px;
+  font-size: 16px;
 
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-button {
+#qp-sticky-{{ section.id }} .qp-price {
+
+  font-size: 23px;
+
+  margin-bottom: 25px;
+
+}
+
+
+#qp-sticky-{{ section.id }} .qp-button {
 
   pointer-events: auto;
 
@@ -535,7 +636,7 @@
 
   justify-content: center;
 
-  gap: 16px;
+  gap: 15px;
 
   min-width: 220px;
 
@@ -553,23 +654,10 @@
 
   letter-spacing: .09em;
 
-  transition:
-    transform .25s ease,
-    opacity .25s ease;
-
 }
 
 
-#qp-sticky-{{ section.id }} .qp-final-button:hover {
-
-  transform: translateY(-2px);
-
-  opacity: .9;
-
-}
-
-
-#qp-sticky-{{ section.id }} .qp-final-trust {
+#qp-sticky-{{ section.id }} .qp-trust {
 
   margin-top: 18px;
 
@@ -586,102 +674,104 @@
 
 @media screen and (max-width: 749px) {
 
+  #qp-sticky-{{ section.id }} .qp-scroll {
 
-  #qp-sticky-{{ section.id }} .qp-sticky-scroll {
-
-    height: 650vh;
-
-  }
-
-
-  #qp-sticky-{{ section.id }} .qp-product-sticky {
-
-    height: 100svh;
+    height: 700vh;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-product-wrap {
+  #qp-sticky-{{ section.id }} .qp-product {
 
-    width: 88vw;
+    width: 92vw;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-copy-line {
+  #qp-sticky-{{ section.id }} .qp-word {
 
-    font-size: clamp(
-      58px,
-      17vw,
-      100px
-    );
+    font-size:
+      clamp(
+        58px,
+        17vw,
+        105px
+      );
 
     line-height: .8;
 
-    letter-spacing: -.07em;
+    letter-spacing: -.075em;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-1 {
+  #qp-sticky-{{ section.id }} .word-1 {
 
-    top: 18%;
+    top: 16%;
 
-    left: -8%;
+    left: -10%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-2 {
+  #qp-sticky-{{ section.id }} .word-2 {
 
-    top: 31%;
+    top: 30%;
 
     right: -35%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-3 {
+  #qp-sticky-{{ section.id }} .word-3 {
 
-    top: 16%;
+    top: 17%;
 
-    left: -22%;
+    left: -28%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-4 {
+  #qp-sticky-{{ section.id }} .word-4 {
 
     top: 34%;
 
-    right: -30%;
+    right: -32%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-5 {
+  #qp-sticky-{{ section.id }} .word-5 {
 
-    top: 20%;
+    top: 17%;
 
     left: -8%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-6 {
+  #qp-sticky-{{ section.id }} .word-6 {
 
-    top: 36%;
+    top: 31%;
 
-    right: -28%;
+    right: -48%;
 
   }
 
 
-  #qp-sticky-{{ section.id }} .line-7 {
+  #qp-sticky-{{ section.id }} .word-7 {
+
+    top: 43%;
+
+    left: -5%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .word-8 {
 
     top: 25%;
 
-    left: -25%;
+    left: -28%;
 
   }
 
@@ -690,16 +780,50 @@
 
     width: 38%;
 
-    right: -3%;
+    right: -2%;
 
-    bottom: -4%;
+    bottom: -3%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .support {
+
+    font-size: 12px;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .support-1 {
+
+    left: 6%;
+
+    bottom: 8%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .support-2 {
+
+    right: 6%;
+
+    bottom: 8%;
+
+  }
+
+
+  #qp-sticky-{{ section.id }} .support-3 {
+
+    left: 6%;
+
+    bottom: 8%;
 
   }
 
 
   #qp-sticky-{{ section.id }} .qp-final {
 
-    top: 520vh;
+    top: 560vh;
 
     height: 100svh;
 
@@ -710,20 +834,19 @@
 
   #qp-sticky-{{ section.id }} .qp-final h2 {
 
-    font-size: clamp(
-      46px,
-      13vw,
-      68px
-    );
+    font-size:
+      clamp(
+        44px,
+        12vw,
+        68px
+      );
 
   }
 
 
-  #qp-sticky-{{ section.id }} .qp-final-button {
+  #qp-sticky-{{ section.id }} .qp-final p {
 
-    min-width: 190px;
-
-    padding: 16px 22px;
+    font-size: 14px;
 
   }
 
@@ -757,14 +880,14 @@
   if (!root) return;
 
 
-  const scrollArea =
+  const scroll =
     root.querySelector(
-      '.qp-sticky-scroll'
+      '.qp-scroll'
     );
 
   const product =
     root.querySelector(
-      '.qp-product-image'
+      '.qp-product-img'
     );
 
   const packageBox =
@@ -777,29 +900,32 @@
       '.qp-final'
     );
 
-
-  const lines =
+  const words =
     root.querySelectorAll(
-      '.qp-copy-line'
+      '.qp-word'
+    );
+
+  const supports =
+    root.querySelectorAll(
+      '.support'
     );
 
 
   function update() {
 
     const rect =
-      scrollArea.getBoundingClientRect();
+      scroll.getBoundingClientRect();
 
-
-    const total =
-      scrollArea.offsetHeight -
+    const max =
+      scroll.offsetHeight -
       window.innerHeight;
 
 
-    if (total <= 0) return;
+    if (max <= 0) return;
 
 
     let progress =
-      -rect.top / total;
+      -rect.top / max;
 
 
     progress =
@@ -812,53 +938,53 @@
       );
 
 
-    /*
-      Product scale
-    */
+    /* =====================
+       PRODUCT MOVEMENT
+    ====================== */
 
     if (product) {
 
-      let scale = 1;
+      let scale;
 
-      let rotate = 0;
+      let rotate;
 
-      let y = 0;
+      let y;
 
 
       if (progress < .25) {
 
         scale =
-          0.92 +
-          progress * .55;
+          .88 +
+          progress * .75;
 
         rotate =
           -2 +
           progress * 8;
 
         y =
-          progress * -30;
+          progress * -40;
 
       }
 
       else if (progress < .5) {
 
         scale =
-          1.05 +
-          (progress - .25) * .45;
+          1.07 +
+          (progress - .25) * .5;
 
         rotate =
           0;
 
         y =
-          -30;
+          -35;
 
       }
 
       else if (progress < .72) {
 
         scale =
-          1.16 +
-          (progress - .5) * .35;
+          1.19 +
+          (progress - .5) * .45;
 
         rotate =
           2;
@@ -871,7 +997,7 @@
       else {
 
         scale =
-          1.23;
+          1.29;
 
         rotate =
           0;
@@ -884,7 +1010,7 @@
 
       product.style.transform =
         `
-        translateY(${y}px)
+        translate3d(0,${y}px,0)
         scale(${scale})
         rotate(${rotate}deg)
         `;
@@ -892,69 +1018,115 @@
     }
 
 
-    /*
-      Typography movement
-    */
+    /* =====================
+       WORD MOVEMENT
+    ====================== */
 
-    lines.forEach(
-      function(line, index) {
+    words.forEach(
+      function(word, index) {
 
-        let move = 0;
+        const direction =
+          index % 2 === 0
+            ? -1
+            : 1;
+
+
+        const speed =
+          280 +
+          index * 45;
+
+
+        const move =
+          progress *
+          speed *
+          direction;
+
 
         let opacity = 1;
 
 
-        const offset =
-          index * .035;
-
-
-        move =
-          (progress - offset) *
-          (index % 2 === 0 ? -420 : 420);
-
-
-        /*
-          Fade lines as they leave
-        */
-
-        if (
-          progress >
-          .65
-        ) {
+        if (progress > .55) {
 
           opacity =
             Math.max(
               0,
               1 -
-              ((progress - .65) / .25)
+              ((progress - .55) / .25)
             );
 
         }
 
 
-        line.style.transform =
-          `translate3d(${move}px,0,0)`;
+        word.style.transform =
+          `
+          translate3d(
+            ${move}px,
+            0,
+            0
+          )
+          `;
 
 
-        line.style.opacity =
+        word.style.opacity =
           opacity;
 
       }
     );
 
 
-    /*
-      Packaging enters
-    */
+    /* =====================
+       SUPPORTING COPY
+    ====================== */
+
+    supports.forEach(
+      function(item) {
+
+        item.style.opacity = 0;
+
+      }
+    );
+
+
+    if (
+      progress > .05 &&
+      progress < .27
+    ) {
+
+      supports[0].style.opacity = 1;
+
+    }
+
+
+    if (
+      progress > .27 &&
+      progress < .48
+    ) {
+
+      supports[1].style.opacity = 1;
+
+    }
+
+
+    if (
+      progress > .48 &&
+      progress < .67
+    ) {
+
+      supports[2].style.opacity = 1;
+
+    }
+
+
+    /* =====================
+       PACKAGE
+    ====================== */
 
     if (packageBox) {
 
-      const start =
-        .62;
+      const start = .62;
 
       let p =
-        (progress - start) /
-        .16;
+        (progress - start) / .14;
 
 
       p =
@@ -973,29 +1145,35 @@
 
       packageBox.style.transform =
         `
-        translateY(${100 - (100 * p)}px)
-        rotate(${7 - (7 * p)}deg)
-        scale(${.75 + (.25 * p)})
+        translate3d(
+          0,
+          ${100 - (100 * p)}px,
+          0
+        )
+        rotate(
+          ${8 - (8 * p)}deg
+        )
+        scale(
+          ${.72 + (.28 * p)}
+        )
         `;
 
     }
 
 
-    /*
-      Final CTA
-    */
+    /* =====================
+       FINAL
+    ====================== */
 
     if (final) {
 
-      if (progress > .79) {
+      if (progress > .78) {
 
         final.classList.add(
           'active'
         );
 
-      }
-
-      else {
+      } else {
 
         final.classList.remove(
           'active'
