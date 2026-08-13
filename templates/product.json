@@ -14,7 +14,6 @@
       "blocks": {
         "share": {
           "type": "share",
-          "disabled": true,
           "settings": {
             "share_label": "Share",
             "show_help_desk": true,
@@ -207,10 +206,10 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": 66,
-        "gallery_layout": "scroll",
+        "gallery_layout": "thumbnail",
         "thumbnail_position": "beside",
         "image_ratio": "adapt_first",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "hide_variants": false,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -620,6 +619,7 @@
         },
         "collapsible_tab-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
@@ -689,6 +689,87 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "slideshow_RDwmeP": {
+      "type": "slideshow",
+      "blocks": {
+        "image_i8VrpK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
+            "heading": "EMS Massager",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_C4TzPQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9fd8812326a27baf8e5f3909256b205d.jpg",
+            "heading": "USB Charging Cable",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_mBE6qn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
+            "heading": "Wireless Remote Control",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_i8VrpK",
+        "image_C4TzPQ",
+        "image_mBE6qn"
+      ],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "500px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#0B0101",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "17866389272ca337a6": {
+      "type": "_blocks",
+      "settings": {}
     },
     "image_with_text_9CQh9p": {
       "type": "image-with-text",
@@ -1415,6 +1496,8 @@
     "video-hero",
     "collage",
     "product-details",
+    "slideshow_RDwmeP",
+    "17866389272ca337a6",
     "image_with_text_9CQh9p",
     "1786265603ac9a21f6",
     "faq",
