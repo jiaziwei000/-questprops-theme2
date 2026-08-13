@@ -275,10 +275,10 @@
         "testimonial_j7UjV7",
         "testimonial_AwdbXj"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials-banner.name",
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
         "image_height": "650px",
         "content_position": "md:items-center md:justify-center",
         "image_height_mobile": "auto",
@@ -304,6 +304,7 @@
       "blocks": {
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
             "text_size": 160,
@@ -331,6 +332,52 @@
         "padding_bottom": 28,
         "divider": false,
         "rounded": false
+      }
+    },
+    "scroll_spy_rTBpXa": {
+      "type": "scroll-spy",
+      "blocks": {
+        "back_to_top_PEgi68": {
+          "type": "back_to_top",
+          "settings": {}
+        },
+        "nav_item_mYdftA": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Highlights",
+            "target_id": "Video hero"
+          }
+        },
+        "nav_item_EGXbCq": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Features",
+            "target_id": ""
+          }
+        },
+        "nav_item_anEqfz": {
+          "type": "nav_item",
+          "settings": {
+            "title": "FQAs",
+            "target_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "back_to_top_PEgi68",
+        "nav_item_mYdftA",
+        "nav_item_EGXbCq",
+        "nav_item_anEqfz"
+      ],
+      "name": "t:sections.scroll-spy.name",
+      "settings": {
+        "show_highlight": true,
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "#171717",
+        "color_background": "#e8eaeb",
+        "gradient_background": "",
+        "full_width": false
       }
     },
     "video-hero": {
@@ -720,6 +767,7 @@
         },
         "contact": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "heading": "Still have questions?",
             "text": "<p>We're happy to help. Contact our support team and we'll get back to you as soon as possible.</p>",
@@ -757,7 +805,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#8F3916",
+        "color_background": "#617D8B",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1362,6 +1410,7 @@
     "main-product",
     "testimonials_banner_XPL8te",
     "scrolling-text",
+    "scroll_spy_rTBpXa",
     "video-hero",
     "collage",
     "product-details",
