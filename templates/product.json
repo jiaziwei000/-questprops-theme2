@@ -345,14 +345,14 @@
           "type": "nav_item",
           "settings": {
             "title": "Highlights",
-            "target_id": "Video hero"
+            "target_id": "shopify-section-template--21709234897127__product-details"
           }
         },
         "nav_item_EGXbCq": {
           "type": "nav_item",
           "settings": {
             "title": "Features",
-            "target_id": "Tech Specs"
+            "target_id": "shopify-section-template--21709234897127__collage"
           }
         },
         "nav_item_anEqfz": {
