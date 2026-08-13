@@ -387,7 +387,7 @@
         "slide_cK769c": {
           "type": "slide",
           "settings": {
-            "heading": "01 — Neck tension builds up.Long hours sitting, driving, or working can leave your neck feeling tight and tired.",
+            "heading": "Neck tension creeps in. Sitting, driving, working all day leave your neck stiff and worn.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -398,7 +398,7 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "02 — Put the tension on pause.QUESTPROPS™ combines gentle EMS stimulation with soothing heat for a simple daily reset.",
+            "heading": "Pause neck tension. QUESTPROPS™ uses mild EMS + warm heat for your daily neck relief.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -409,7 +409,7 @@
         "slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "03 — Just 10 minutes a day.Relax while the device works around your neck. Choose the intensity and warmth that feel right for you.",
+            "heading": "Only 10 minutes daily. Unwind as it eases your neck; tailor intensity and heat to your liking.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -420,7 +420,7 @@
         "slide-3": {
           "type": "slide",
           "settings": {
-            "heading": "04 — Get back to what you love.Less time thinking about your neck. More time doing what matters.",
+            "heading": "Get back to what you love.Less time thinking about your neck. More time doing what matters.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -820,7 +820,7 @@
         "text_diaEbf": {
           "type": "text",
           "settings": {
-            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>✓ 180-Day Risk-Free Trial<br/>✓ 2-Year Warranty<br/>✓ Complimentary Shipping & Returns</p>",
+            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>180-Day Risk-Free Trial<br/>2-Year Warranty<br/> Complimentary Shipping & Returns</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -1024,7 +1024,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#0B0101",
+        "color_background": "#0b0101",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
