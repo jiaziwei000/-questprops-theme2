@@ -647,8 +647,25 @@
         "specification": {
           "type": "specification",
           "settings": {
-            "heading": "",
-            "text_size": "text-base lg:text-lg"
+            "icon": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
+            "heading": "EMS Massager",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_d7eKab": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/9fd8812326a27baf8e5f3909256b205d.jpg",
+            "heading": "USB Charging Cable",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_bdqAxn": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
+            "heading": "Wireless Remote Control",
+            "text_size": "text-sm"
           }
         }
       },
@@ -657,7 +674,9 @@
         "collapsible_tab-2",
         "collapsible_tab-3",
         "collapsible_tab-4",
-        "specification"
+        "specification",
+        "specification_d7eKab",
+        "specification_bdqAxn"
       ],
       "settings": {
         "style": "with-border",
@@ -696,6 +715,7 @@
       "blocks": {
         "image_i8VrpK": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
             "heading": "EMS Massager",
@@ -710,6 +730,7 @@
         },
         "image_C4TzPQ": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/9fd8812326a27baf8e5f3909256b205d.jpg",
             "heading": "USB Charging Cable",
@@ -724,6 +745,7 @@
         },
         "image_mBE6qn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
             "heading": "Wireless Remote Control",
