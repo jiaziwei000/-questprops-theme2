@@ -42,7 +42,7 @@
           "type": "title",
           "settings": {
             "title_size": "product-title-md",
-            "title_size_mobile": "product-title-md",
+            "title_size_mobile": "product-title-lg",
             "title_tag": "h1",
             "show_price": true,
             "show_rating": false
@@ -757,7 +757,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#171717",
+        "color_background": "#8F3916",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
