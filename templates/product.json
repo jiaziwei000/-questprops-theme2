@@ -352,7 +352,7 @@
           "type": "nav_item",
           "settings": {
             "title": "Features",
-            "target_id": "template--21709234897127__product-details"
+            "target_id": "shopify-section-template--21709234897127__product-details"
           }
         },
         "nav_item_anEqfz": {
@@ -683,7 +683,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
