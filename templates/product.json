@@ -14,6 +14,7 @@
       "blocks": {
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share",
             "show_help_desk": true,
@@ -316,11 +317,12 @@
       "block_order": [
         "text"
       ],
+      "disabled": true,
       "settings": {
-        "direction": "left",
+        "direction": "right",
         "speed": 20,
         "grid_horizontal": 70,
-        "enable_twin": false,
+        "enable_twin": true,
         "enable_parallax": true,
         "color_text": "",
         "color_background": "",
@@ -749,7 +751,7 @@
         "content_width": "small",
         "image_height_mobile": "300px",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#0B0101",
+        "color_text": "#0b0101",
         "color_background": "",
         "gradient_background": "",
         "color_button_text": "#171717",
@@ -991,7 +993,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#617D8B",
+        "color_background": "#0B0101",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
