@@ -667,6 +667,14 @@
             "heading": "Wireless Remote Control",
             "text_size": "text-sm"
           }
+        },
+        "specification_qqJXj7": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/dfc709d8b5c167655554dc1.jpg",
+            "heading": "Instruction Manual",
+            "text_size": "text-sm"
+          }
         }
       },
       "block_order": [
@@ -676,7 +684,8 @@
         "collapsible_tab-4",
         "specification",
         "specification_d7eKab",
-        "specification_bdqAxn"
+        "specification_bdqAxn",
+        "specification_qqJXj7"
       ],
       "settings": {
         "style": "with-border",
@@ -1001,7 +1010,7 @@
       ],
       "settings": {
         "style": "with-background",
-        "heading": "FAQs",
+        "heading": "FQAs",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",

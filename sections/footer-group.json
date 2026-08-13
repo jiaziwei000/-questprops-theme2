@@ -54,7 +54,7 @@
             "icon": "shield",
             "custom_icon": "",
             "heading": "Secure payment",
-            "text": "<p>Your payment information is processed securely</p>",
+            "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
