@@ -1,0 +1,1351 @@
+{%- comment -%}
+  Lagunitas Born Yesterday - Shopify Section
+  All text is editable via Theme Editor schema settings/blocks.
+{%- endcomment -%}
+
+{%- style -%}
+  /* -- CSS Variables (overridable via schema) -- */
+  #shopify-section-{{ section.id }} {
+    --by-cream: {{ section.settings.cream | default: '#F2EDE3' }};
+    --by-cream-l: {{ section.settings.cream_light | default: '#F8F4EC' }};
+    --by-red: {{ section.settings.red | default: '#9E1B1E' }};
+    --by-red-d: {{ section.settings.red_dark | default: '#7A1416' }};
+    --by-black: {{ section.settings.black | default: '#1A1A1A' }};
+    --by-body-sub: {{ section.settings.body_sub | default: '#3A3A3A' }};
+    --by-gold: {{ section.settings.gold | default: '#C8A548' }};
+  }
+
+  /* -- Scope all styles under section -- */
+  #shopify-section-{{ section.id }} .by-section {
+    background: var(--by-cream);
+    color: var(--by-black);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+  }
+  #shopify-section-{{ section.id }} .by-section * { box-sizing: border-box; }
+
+  /* -- Grain Overlay -- */
+  #shopify-section-{{ section.id }} .by-grain {
+    position: absolute; inset: 0; pointer-events: none; z-index: 9999;
+    opacity: .05; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* -- SVG Defs (hidden) -- */
+  #shopify-section-{{ section.id }} .by-svg-defs { position: absolute; width: 0; height: 0; }
+
+  /* -- Nav -- */
+  #shopify-section-{{ section.id }} .by-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: flex-start; justify-content: space-between;
+    padding: 18px 24px;
+  }
+  #shopify-section-{{ section.id }} .by-nav-l {
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  #shopify-section-{{ section.id }} .by-nav-icons {
+    display: flex; flex-direction: column; gap: 10px; align-items: center;
+  }
+  #shopify-section-{{ section.id }} .by-nav-icons .by-icon {
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+  }
+  #shopify-section-{{ section.id }} .by-nav-div {
+    width: 1px; height: 48px; background: var(--by-black); opacity: .3;
+  }
+  #shopify-section-{{ section.id }} .by-nav-logo {
+    display: flex; flex-direction: column; line-height: 1;
+  }
+  #shopify-section-{{ section.id }} .by-nav-logo .by-brand {
+    font-family: 'Anton', sans-serif; font-size: 24px;
+    color: var(--by-red); letter-spacing: 1px;
+  }
+  #shopify-section-{{ section.id }} .by-nav-logo .by-sub {
+    font-size: 9px; letter-spacing: 2px; margin-top: 3px; color: var(--by-black);
+  }
+  #shopify-section-{{ section.id }} .by-nav-cta {
+    background: var(--by-red); color: #fff; border: none;
+    padding: 10px 28px; font-family: 'Inter', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; cursor: pointer; transition: .3s;
+    min-height: 44px; display: inline-flex; align-items: center;
+  }
+  #shopify-section-{{ section.id }} .by-nav-cta:hover { background: var(--by-red-d); }
+
+  /* -- Hero Pin -- */
+  #shopify-section-{{ section.id }} .by-hero-pin-wrap {
+    height: 420vh; position: relative;
+  }
+  #shopify-section-{{ section.id }} .by-hero-pin {
+    height: 100dvh; position: relative; overflow: hidden;
+  }
+  #shopify-section-{{ section.id }} .by-layer {
+    position: absolute; will-change: transform, opacity;
+  }
+  #shopify-section-{{ section.id }} .by-distress { filter: url(#by-grunge); }
+
+  /* -- Background Text -- */
+  #shopify-section-{{ section.id }} .by-bg-text {
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(80px, 14vw, 240px);
+    white-space: nowrap; z-index: 1; pointer-events: none;
+    letter-spacing: -3px; line-height: .9;
+  }
+  #shopify-section-{{ section.id }} .by-bg-text.by-red { color: var(--by-red); }
+  #shopify-section-{{ section.id }} .by-bg-text.by-blk { color: var(--by-black); }
+
+  /* -- Bottle -- */
+  #shopify-section-{{ section.id }} .by-bottle {
+    top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5;
+    width: 140px; height: 420px;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,.18));
+    will-change: transform;
+  }
+  #shopify-section-{{ section.id }} .by-bottle-img {
+    width: 100%; height: 100%; object-fit: contain;
+  }
+
+  /* -- Stamp -- */
+  #shopify-section-{{ section.id }} .by-stamp {
+    top: 13%; left: 50%; transform: translateX(-50%); z-index: 6;
+    width: 72px; height: 72px; border-radius: 50%;
+    border: 2px solid var(--by-black);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center;
+  }
+  #shopify-section-{{ section.id }} .by-stamp .by-dog { font-size: 20px; }
+  #shopify-section-{{ section.id }} .by-stamp .by-rt {
+    font-size: 5px; letter-spacing: .5px; line-height: 1.3; font-weight: 600;
+  }
+
+  /* -- Left Text -- */
+  #shopify-section-{{ section.id }} .by-lft-txt {
+    bottom: 8%; left: 5%; z-index: 4; max-width: 340px;
+    overflow: hidden; height: 105px;
+  }
+  #shopify-section-{{ section.id }} .by-lft-txt .by-hand {
+    font-family: 'Caveat', cursive; font-size: 22px;
+    margin-bottom: 4px; letter-spacing: 1px;
+  }
+  #shopify-section-{{ section.id }} .by-lft-txt .by-big {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(40px, 5.5vw, 68px); line-height: .95; letter-spacing: -1px;
+  }
+  #shopify-section-{{ section.id }} .by-lft-txt .by-dsc {
+    font-size: 13px; color: var(--by-body-sub); line-height: 1.7; margin-top: 14px; max-width: 280px;
+  }
+  #shopify-section-{{ section.id }} .by-lft-txt .by-buy {
+    display: inline-block; margin-top: 16px;
+    background: var(--by-black); color: #fff;
+    padding: 10px 28px; font-family: 'Inter', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; border: none; cursor: pointer;
+    transition: .3s; min-height: 44px;
+  }
+  #shopify-section-{{ section.id }} .by-lft-txt .by-buy:hover { background: var(--by-red); }
+
+  /* -- Info Box -- */
+  #shopify-section-{{ section.id }} .by-info-box {
+    bottom: 10%; right: 5%; z-index: 4;
+    border: 1.5px solid var(--by-black); background: var(--by-cream-l);
+    padding: 18px 22px; max-width: 240px; overflow: hidden; height: 135px;
+  }
+  #shopify-section-{{ section.id }} .by-info-row { position: relative; }
+  #shopify-section-{{ section.id }} .by-info-row + .by-info-row {
+    margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(0,0,0,.15);
+  }
+  #shopify-section-{{ section.id }} .by-info-row .by-lbl {
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+  }
+  #shopify-section-{{ section.id }} .by-info-row .by-slbl {
+    font-size: 9px; color: var(--by-body-sub); margin-bottom: 2px;
+  }
+  #shopify-section-{{ section.id }} .by-info-row .by-val {
+    font-family: 'Anton', sans-serif; font-size: 38px; line-height: 1; letter-spacing: -1px;
+  }
+  #shopify-section-{{ section.id }} .by-info-row .by-desc {
+    font-size: 10px; color: var(--by-body-sub); line-height: 1.5; margin-top: 8px;
+  }
+  #shopify-section-{{ section.id }} .by-info-row .by-rm {
+    font-size: 10px; text-decoration: underline; cursor: pointer;
+    margin-top: 6px; display: inline-block; font-weight: 600;
+  }
+
+  /* -- Video -- */
+  #shopify-section-{{ section.id }} .by-vid { z-index: 4; width: 220px; }
+  #shopify-section-{{ section.id }} .by-vid .by-vimg {
+    width: 100%; height: 130px;
+    background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
+    border-radius: 4px; position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #shopify-section-{{ section.id }} .by-vid .by-vimg::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 40%, rgba(158,27,30,.25), transparent 70%);
+  }
+  #shopify-section-{{ section.id }} .by-vid .by-vimg .by-person { font-size: 55px; opacity: .6; }
+  #shopify-section-{{ section.id }} .by-vid .by-vimg .by-vid-img {
+    width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;
+  }
+  #shopify-section-{{ section.id }} .by-vid .by-play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 46px; height: 46px; border-radius: 50%; background: var(--by-red);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; z-index: 2; box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  }
+  #shopify-section-{{ section.id }} .by-vid .by-play::after {
+    content: ''; width: 0; height: 0;
+    border-left: 14px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent;
+    margin-left: 4px;
+  }
+  #shopify-section-{{ section.id }} .by-vid .by-vcap {
+    font-family: 'Caveat', cursive; font-size: 16px;
+    margin-top: 8px; text-align: center; line-height: 1.3;
+  }
+
+  /* -- Splatters -- */
+  #shopify-section-{{ section.id }} .by-splat {
+    z-index: 4; padding: 22px 20px; color: #fff;
+    display: flex; flex-direction: column; gap: 5px;
+  }
+  #shopify-section-{{ section.id }} .by-splat .by-si { font-size: 20px; }
+  #shopify-section-{{ section.id }} .by-splat .by-st {
+    font-family: 'Anton', sans-serif; font-size: 15px;
+    letter-spacing: 1px; text-transform: uppercase; line-height: 1.1;
+  }
+  #shopify-section-{{ section.id }} .by-splat .by-sx {
+    font-size: 11px; line-height: 1.5; margin-top: 2px;
+  }
+  #shopify-section-{{ section.id }} .by-splat-red { background: var(--by-red); }
+  #shopify-section-{{ section.id }} .by-splat-blk { background: var(--by-black); }
+  #shopify-section-{{ section.id }} .by-clip-red {
+    clip-path: polygon(0% 15%,8% 0%,20% 8%,35% 0%,50% 5%,65% 0%,80% 10%,95% 0%,100% 20%,92% 35%,100% 50%,95% 65%,100% 80%,85% 100%,70% 90%,50% 100%,30% 92%,15% 100%,0% 85%,5% 65%,0% 50%,8% 35%);
+  }
+  #shopify-section-{{ section.id }} .by-clip-blk {
+    clip-path: polygon(5% 0%,15% 10%,30% 0%,45% 8%,60% 0%,75% 5%,90% 0%,100% 15%,95% 30%,100% 45%,95% 60%,100% 75%,90% 90%,100% 100%,80% 95%,65% 100%,50% 92%,35% 100%,20% 88%,5% 95%,0% 75%,8% 55%,0% 40%,10% 20%);
+  }
+
+  /* -- Right Panel -- */
+  #shopify-section-{{ section.id }} .by-rpanel {
+    z-index: 4; right: 3%; top: 22%; max-width: 280px;
+  }
+  #shopify-section-{{ section.id }} .by-rpanel .by-fdesc {
+    font-size: 13px; line-height: 1.75; color: var(--by-body-sub); margin-bottom: 20px;
+  }
+  #shopify-section-{{ section.id }} .by-rpanel .by-pt {
+    font-family: 'Anton', sans-serif; font-size: 14px;
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px; border-bottom: 2px solid var(--by-black); padding-bottom: 6px;
+  }
+  #shopify-section-{{ section.id }} .by-rpanel .by-px {
+    font-size: 12px; line-height: 1.75; color: var(--by-body-sub);
+  }
+  #shopify-section-{{ section.id }} .by-rpanel .by-px + .by-px { margin-top: 12px; }
+
+  /* -- Pint -- */
+  #shopify-section-{{ section.id }} .by-pint { z-index: 4; bottom: 5%; left: 7%; }
+  #shopify-section-{{ section.id }} .abs { position: absolute; }
+
+  /* -- Availability -- */
+  #shopify-section-{{ section.id }} .by-avail {
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 100px 40px; background: var(--by-cream);
+  }
+  #shopify-section-{{ section.id }} .by-avail-h { text-align: center; margin-bottom: 60px; }
+  #shopify-section-{{ section.id }} .by-avail-h .by-ah {
+    font-family: 'Caveat', cursive; font-size: 24px; margin-bottom: 4px;
+  }
+  #shopify-section-{{ section.id }} .by-avail-h .by-ab {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(56px, 9vw, 120px); letter-spacing: -2px; line-height: 1;
+  }
+  #shopify-section-{{ section.id }} .by-prow {
+    display: flex; justify-content: center; gap: 44px;
+    flex-wrap: wrap; align-items: flex-end;
+  }
+  #shopify-section-{{ section.id }} .by-pi { text-align: center; }
+  #shopify-section-{{ section.id }} .by-pi .by-pim {
+    height: 170px; display: flex; align-items: flex-end;
+    justify-content: center; margin-bottom: 14px;
+  }
+  #shopify-section-{{ section.id }} .by-pi .by-pim img {
+    max-height: 100%; object-fit: contain;
+  }
+  #shopify-section-{{ section.id }} .by-pi .by-pl {
+    font-size: 12px; letter-spacing: .5px; line-height: 1.4;
+  }
+  #shopify-section-{{ section.id }} .by-pi .by-pl b { font-weight: 700; }
+  #shopify-section-{{ section.id }} .by-pi .by-pl .by-sm { font-size: 10px; color: var(--by-body-sub); }
+
+  /* -- Recipes -- */
+  #shopify-section-{{ section.id }} .by-recip {
+    min-height: 80vh; display: flex; align-items: center;
+    padding: 80px 40px; overflow: hidden; gap: 40px;
+  }
+  #shopify-section-{{ section.id }} .by-recip-l { flex: 1; z-index: 2; }
+  #shopify-section-{{ section.id }} .by-recip-l .by-rh {
+    font-family: 'Caveat', cursive; font-size: 24px; margin-bottom: 8px;
+  }
+  #shopify-section-{{ section.id }} .by-recip-l .by-rt2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -1px;
+  }
+  #shopify-section-{{ section.id }} .by-recip-r { flex: 1; display: flex; justify-content: center; }
+  #shopify-section-{{ section.id }} .by-food-pic {
+    width: 320px; height: 240px; border-radius: 8px;
+    background: linear-gradient(135deg, #e8c896, #c4954a, #8B5A2B);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 80px; position: relative; overflow: hidden;
+  }
+  #shopify-section-{{ section.id }} .by-food-pic::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.2), transparent 50%);
+  }
+  #shopify-section-{{ section.id }} .by-food-pic img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+
+  /* --------------------------------
+     RESPONSIVE - Tablet (≤900px)
+     -------------------------------- */
+  @media (max-width: 900px) {
+    #shopify-section-{{ section.id }} .by-rpanel { display: none; }
+    #shopify-section-{{ section.id }} .by-vid { width: 150px; }
+    #shopify-section-{{ section.id }} .by-vid .by-vimg { height: 85px; }
+    #shopify-section-{{ section.id }} .by-vid .by-vimg .by-person { font-size: 36px; }
+    #shopify-section-{{ section.id }} .by-splat { padding: 16px; max-width: 130px; }
+    #shopify-section-{{ section.id }} .by-splat .by-st { font-size: 12px; }
+    #shopify-section-{{ section.id }} .by-splat .by-sx { font-size: 10px; }
+    #shopify-section-{{ section.id }} .by-info-box { max-width: 180px; padding: 14px 16px; }
+    #shopify-section-{{ section.id }} .by-info-row .by-val { font-size: 30px; }
+    #shopify-section-{{ section.id }} .by-lft-txt { max-width: 220px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-big { font-size: 36px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-dsc { font-size: 12px; }
+    #shopify-section-{{ section.id }} .by-bottle { width: 100px; height: 300px; }
+    #shopify-section-{{ section.id }} .by-prow { gap: 24px; }
+    #shopify-section-{{ section.id }} .by-pi .by-pim { height: 110px; }
+    #shopify-section-{{ section.id }} .by-bg-text { font-size: clamp(50px, 10vw, 120px); }
+    #shopify-section-{{ section.id }} .by-lft-txt { height: 80px; }
+    #shopify-section-{{ section.id }} .by-info-box { height: 100px; }
+  }
+
+  /* --------------------------------
+     RESPONSIVE - Mobile (≤768px)
+     -------------------------------- */
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .by-hero-pin-wrap { height: 380vh; }
+    #shopify-section-{{ section.id }} .by-nav { padding: 12px 16px; }
+    #shopify-section-{{ section.id }} .by-nav-logo .by-brand { font-size: 20px; }
+    #shopify-section-{{ section.id }} .by-nav-cta {
+      padding: 8px 18px; font-size: 12px; min-height: 44px;
+    }
+
+    /* Hero: stack elements vertically */
+    #shopify-section-{{ section.id }} .by-bottle { width: 80px; height: 240px; }
+    #shopify-section-{{ section.id }} .by-stamp { width: 56px; height: 56px; top: 10%; }
+    #shopify-section-{{ section.id }} .by-stamp .by-dog { font-size: 16px; }
+    #shopify-section-{{ section.id }} .by-stamp .by-rt { font-size: 4px; }
+
+    /* Left text: full width, below bottle */
+    #shopify-section-{{ section.id }} .by-lft-txt {
+      bottom: auto; top: 60%; left: 5%; right: 5%;
+      max-width: 100%; height: auto; overflow: visible;
+      text-align: center;
+    }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-big { font-size: 32px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-dsc { font-size: 12px; max-width: 100%; }
+
+    /* Info box: full width below left text */
+    #shopify-section-{{ section.id }} .by-info-box {
+      bottom: auto; top: auto; bottom: 5%;
+      left: 5%; right: 5%; max-width: 100%; width: calc(100% - 40px);
+      height: auto; overflow: visible;
+    }
+
+    /* Splatters smaller */
+    #shopify-section-{{ section.id }} .by-splat { padding: 12px; max-width: 110px; }
+    #shopify-section-{{ section.id }} .by-splat .by-si { font-size: 16px; }
+    #shopify-section-{{ section.id }} .by-splat .by-st { font-size: 11px; }
+    #shopify-section-{{ section.id }} .by-splat .by-sx { font-size: 9px; }
+
+    /* Video smaller */
+    #shopify-section-{{ section.id }} .by-vid { width: 130px; }
+    #shopify-section-{{ section.id }} .by-vid .by-vimg { height: 75px; }
+
+    /* Availability */
+    #shopify-section-{{ section.id }} .by-avail { padding: 60px 20px; min-height: auto; }
+    #shopify-section-{{ section.id }} .by-avail-h { margin-bottom: 36px; }
+    #shopify-section-{{ section.id }} .by-avail-h .by-ah { font-size: 20px; }
+    #shopify-section-{{ section.id }} .by-avail-h .by-ab { font-size: clamp(40px, 12vw, 72px); }
+    #shopify-section-{{ section.id }} .by-prow { gap: 16px; }
+    #shopify-section-{{ section.id }} .by-pi .by-pim { height: 100px; }
+    #shopify-section-{{ section.id }} .by-pi .by-pl { font-size: 11px; }
+
+    /* Recipes */
+    #shopify-section-{{ section.id }} .by-recip {
+      flex-direction: column; padding: 50px 20px; min-height: auto; gap: 24px;
+    }
+    #shopify-section-{{ section.id }} .by-recip-l { text-align: center; }
+    #shopify-section-{{ section.id }} .by-recip-l .by-rh { font-size: 20px; }
+    #shopify-section-{{ section.id }} .by-recip-l .by-rt2 { font-size: clamp(32px, 8vw, 48px); }
+    #shopify-section-{{ section.id }} .by-food-pic { width: 260px; height: 195px; font-size: 60px; }
+  }
+
+  /* --------------------------------
+     RESPONSIVE - Small Mobile (≤480px)
+     -------------------------------- */
+  @media (max-width: 480px) {
+    #shopify-section-{{ section.id }} .by-nav-logo .by-brand { font-size: 18px; }
+    #shopify-section-{{ section.id }} .by-nav-logo .by-sub { font-size: 8px; }
+    #shopify-section-{{ section.id }} .by-nav-cta {
+      padding: 8px 14px; font-size: 11px; letter-spacing: 1.5px;
+    }
+    #shopify-section-{{ section.id }} .by-bottle { width: 64px; height: 192px; }
+    #shopify-section-{{ section.id }} .by-bg-text { font-size: clamp(36px, 10vw, 80px); letter-spacing: -1px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-big { font-size: 26px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-hand { font-size: 18px; }
+    #shopify-section-{{ section.id }} .by-lft-txt .by-dsc { font-size: 11px; line-height: 1.6; }
+    #shopify-section-{{ section.id }} .by-info-row .by-val { font-size: 28px; }
+    #shopify-section-{{ section.id }} .by-info-row .by-desc { font-size: 9px; }
+
+    /* Product grid: 2 columns on very small screens */
+    #shopify-section-{{ section.id }} .by-prow {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    }
+    #shopify-section-{{ section.id }} .by-pi .by-pim { height: 80px; }
+
+    #shopify-section-{{ section.id }} .by-food-pic { width: 200px; height: 150px; font-size: 48px; }
+
+    /* Simplify splatter positions */
+    #shopify-section-{{ section.id }} .by-splat { max-width: 95px; padding: 10px; }
+    #shopify-section-{{ section.id }} .by-splat .by-st { font-size: 10px; }
+    #shopify-section-{{ section.id }} .by-splat .by-sx { display: none; }
+  }
+
+  /* -- Editor mode: disable fixed nav & pin -- */
+  {% if request.design_mode %}
+  #shopify-section-{{ section.id }} .by-nav { position: relative; }
+  #shopify-section-{{ section.id }} .by-hero-pin-wrap { height: auto !important; }
+  #shopify-section-{{ section.id }} .by-hero-pin {
+    height: auto !important; min-height: 100dvh; position: relative; overflow: visible;
+  }
+  #shopify-section-{{ section.id }} .by-layer { position: relative !important; transform: none !important; opacity: 1 !important; }
+  #shopify-section-{{ section.id }} .by-lft-txt { height: auto !important; overflow: visible; }
+  #shopify-section-{{ section.id }} .by-info-box { height: auto !important; overflow: visible; }
+  #shopify-section-{{ section.id }} .by-rpanel { display: block !important; }
+  {% endif %}
+{%- endstyle -%}
+
+<div class="by-section" id="by-section-{{ section.id }}">
+  {%- comment -%} Grain overlay {%- endcomment -%}
+  <div class="by-grain"></div>
+
+  {%- comment -%} SVG Defs {%- endcomment -%}
+  <svg class="by-svg-defs" aria-hidden="true">
+    <defs>
+      <filter id="by-grunge-{{ section.id }}" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" seed="3"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <linearGradient id="by-bg1-{{ section.id }}" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#2D1508"/><stop offset="35%" style="stop-color:#6B3A15"/>
+        <stop offset="50%" style="stop-color:#9B6B3D"/><stop offset="65%" style="stop-color:#6B3A15"/>
+        <stop offset="100%" style="stop-color:#2D1508"/>
+      </linearGradient>
+      <linearGradient id="by-capG-{{ section.id }}" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#8B7428"/><stop offset="50%" style="stop-color:#C8A548"/>
+        <stop offset="100%" style="stop-color:#8B7428"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  {%- comment -%} ══════════ NAV ══════════ {%- endcomment -%}
+  <nav class="by-nav">
+    <div class="by-nav-l">
+      <div class="by-nav-icons">
+        <div class="by-icon">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none">
+            <line x1="0" y1="2" x2="22" y2="2" stroke="{{ section.settings.black | default: '#1A1A1A' }}" stroke-width="2"/>
+            <line x1="0" y1="9" x2="22" y2="9" stroke="{{ section.settings.black | default: '#1A1A1A' }}" stroke-width="2"/>
+            <line x1="0" y1="16" x2="22" y2="16" stroke="{{ section.settings.black | default: '#1A1A1A' }}" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="by-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="8" cy="8" r="6" stroke="{{ section.settings.black | default: '#1A1A1A' }}" stroke-width="2"/>
+            <line x1="12.5" y1="12.5" x2="19" y2="19" stroke="{{ section.settings.black | default: '#1A1A1A' }}" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="by-nav-div"></div>
+      <div class="by-nav-logo">
+        <span class="by-brand">{{ section.settings.brand_name }}</span>
+        <span class="by-sub">{{ section.settings.brand_subtitle }}</span>
+      </div>
+    </div>
+    <a href="{{ section.settings.nav_cta_link }}" class="by-nav-cta">{{ section.settings.nav_cta_text }}</a>
+  </nav>
+
+  {%- comment -%} ══════════ HERO PIN ══════════ {%- endcomment -%}
+  <div class="by-hero-pin-wrap" id="by-heroWrap-{{ section.id }}">
+    <div class="by-hero-pin" id="by-heroPin-{{ section.id }}">
+
+      {%- comment -%} Background Text 1 {%- endcomment -%}
+      <div class="by-layer by-bg-text by-red by-distress" id="by-bgT1-{{ section.id }}"
+           style="filter:url(#by-grunge-{{ section.id }})">
+        {{ section.settings.bg_text_1 }}
+      </div>
+
+      {%- comment -%} Background Text 2 {%- endcomment -%}
+      <div class="by-layer by-bg-text by-blk by-distress" id="by-bgT2-{{ section.id }}"
+           style="font-size:clamp(70px,11vw,180px);opacity:0;filter:url(#by-grunge-{{ section.id }})">
+        {{ section.settings.bg_text_2 }}
+      </div>
+
+      {%- comment -%} Stamp {%- endcomment -%}
+      <div class="by-layer by-stamp" id="by-stamp-{{ section.id }}">
+        <div class="by-dog">{{ section.settings.stamp_emoji }}</div>
+        <div class="by-rt">{{ section.settings.stamp_text }}</div>
+      </div>
+
+      {%- comment -%} Bottle {%- endcomment -%}
+      <div class="by-layer by-bottle" id="by-bottle-{{ section.id }}">
+        {%- if section.settings.bottle_image != blank -%}
+          <img src="{{ section.settings.bottle_image | image_url: width: 280 }}" alt="{{ section.settings.bottle_alt }}" class="by-bottle-img" loading="lazy" width="140" height="420">
+        {%- else -%}
+          <svg width="140" height="420" viewBox="0 0 140 420" xmlns="http://www.w3.org/2000/svg">
+            <rect x="52" y="2" width="36" height="28" rx="2" fill="url(#by-capG-{{ section.id }})"/>
+            <rect x="50" y="28" width="40" height="6" fill="#A88A30"/>
+            <path d="M56 34 L56 72 Q56 80 61 84 L61 96 L79 96 L79 84 Q84 80 84 72 L84 34 Z" fill="url(#by-bg1-{{ section.id }})"/>
+            <path d="M61 96 Q42 105 40 130 L40 380 Q40 405 58 405 L82 405 Q100 405 100 380 L100 130 Q98 105 79 96 Z" fill="url(#by-bg1-{{ section.id }})"/>
+            <rect x="40" y="155" width="60" height="190" fill="#F5F0E4" rx="1"/>
+            <text x="70" y="180" text-anchor="middle" font-family="Anton" font-size="11" fill="#9E1B1E">LAGUNITAS</text>
+            <text x="70" y="232" text-anchor="middle" font-family="Anton" font-size="44" fill="#1A1A1A">IPA</text>
+            <text x="70" y="250" text-anchor="middle" font-family="Inter" font-size="6.5" fill="#9E1B1E" letter-spacing="1.5" font-weight="600">INDIA PALE ALE</text>
+            <g transform="translate(70 280)"><ellipse cx="0" cy="0" rx="9" ry="13" fill="#4A7C2F" opacity=".55"/><path d="M-5 -8 Q0 -13 5 -8" stroke="#2D5016" stroke-width="1.2" fill="none"/><path d="M-5 8 Q0 13 5 8" stroke="#2D5016" stroke-width="1.2" fill="none"/><path d="M-7 0 Q0 -3 7 0" stroke="#2D5016" stroke-width="1" fill="none"/></g>
+            <text x="70" y="315" text-anchor="middle" font-family="Inter" font-size="5" fill="#1A1A1A">LAGUNITAS BREWING COMPANY</text>
+            <text x="70" y="323" text-anchor="middle" font-family="Inter" font-size="4.5" fill="#1A1A1A">PETALUMA, CALIFORNIA</text>
+            <rect x="44" y="100" width="3" height="280" fill="rgba(255,255,255,0.12)"/>
+          </svg>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} Left Text {%- endcomment -%}
+      <div class="by-layer by-lft-txt abs" id="by-leftTxt-{{ section.id }}">
+        <div class="by-hand">{{ section.settings.hero_hand_text }}</div>
+        <div class="by-big">{{ section.settings.hero_title }}</div>
+        <div class="by-dsc">{{ section.settings.hero_description }}</div>
+        <a href="{{ section.settings.hero_cta_link }}" class="by-buy">{{ section.settings.hero_cta_text }}</a>
+      </div>
+
+      {%- comment -%} Info Box {%- endcomment -%}
+      <div class="by-layer by-info-box abs" id="by-infoBox-{{ section.id }}">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'info_stat' -%}
+              <div class="by-info-row" {{ block.shopify_attributes }}>
+                <div class="by-lbl">{{ block.settings.label }}</div>
+                <div class="by-slbl">{{ block.settings.sublabel }}</div>
+                <div class="by-val" {% if block.settings.value_font_size != blank %}style="font-size:{{ block.settings.value_font_size }}px"{% endif %}>{{ block.settings.value }}</div>
+                <div class="by-desc">{{ block.settings.description }}</div>
+                {%- if block.settings.link_text != blank -%}
+                  <a href="{{ block.settings.link_url }}" class="by-rm">{{ block.settings.link_text }}</a>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+      {%- comment -%} Video {%- endcomment -%}
+      <div class="by-layer by-vid abs" id="by-vid-{{ section.id }}" style="top:24%;left:3%;opacity:0">
+        <div class="by-vimg">
+          {%- if section.settings.video_image != blank -%}
+            <img src="{{ section.settings.video_image | image_url: width: 440 }}" alt="" class="by-vid-img" loading="lazy">
+          {%- else -%}
+            <span class="by-person">🧔</span>
+          {%- endif -%}
+          <div class="by-play"></div>
+        </div>
+        <div class="by-vcap">{{ section.settings.video_caption }}</div>
+      </div>
+
+      {%- comment -%} Flavor Splatters {%- endcomment -%}
+      <div class="by-layer by-splat by-splat-red by-clip-red abs" id="by-sp1-{{ section.id }}" style="top:52%;left:2%;width:165px;opacity:0">
+        <div class="by-si">{{ section.settings.flavor_1_emoji }}</div>
+        <div class="by-st">{{ section.settings.flavor_1_title }}</div>
+        <div class="by-sx">{{ section.settings.flavor_1_desc }}</div>
+      </div>
+      <div class="by-layer by-splat by-splat-red by-clip-red abs" id="by-sp2-{{ section.id }}" style="bottom:22%;left:3%;width:150px;opacity:0">
+        <div class="by-si">{{ section.settings.flavor_2_emoji }}</div>
+        <div class="by-st">{{ section.settings.flavor_2_title }}</div>
+        <div class="by-sx">{{ section.settings.flavor_2_desc }}</div>
+      </div>
+      <div class="by-layer by-splat by-splat-blk by-clip-blk abs" id="by-sp3-{{ section.id }}" style="bottom:20%;right:3%;width:160px;opacity:0">
+        <div class="by-si">{{ section.settings.flavor_3_emoji }}</div>
+        <div class="by-st">{{ section.settings.flavor_3_title }}</div>
+        <div class="by-sx">{{ section.settings.flavor_3_desc }}</div>
+      </div>
+
+      {%- comment -%} Right Panel {%- endcomment -%}
+      <div class="by-layer by-rpanel abs" id="by-rp-{{ section.id }}" style="opacity:0">
+        <div class="by-fdesc">{{ section.settings.flavor_description }}</div>
+        <div class="by-pt">{{ section.settings.style_heading }}</div>
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'style_text' -%}
+              <div class="by-px" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+      {%- comment -%} Pint {%- endcomment -%}
+      <div class="by-layer by-pint abs" id="by-pint-{{ section.id }}" style="opacity:0">
+        {%- if section.settings.pint_image != blank -%}
+          <img src="{{ section.settings.pint_image | image_url: width: 160 }}" alt="" loading="lazy" width="80" height="110" style="object-fit:contain;">
+        {%- else -%}
+          <svg width="80" height="110" viewBox="0 0 80 110">
+            <path d="M12 8 L12 92 Q12 102 22 102 L58 102 Q68 102 68 92 L68 8 Z" fill="rgba(255,255,255,.25)" stroke="#1A1A1A" stroke-width="1.5"/>
+            <path d="M14 38 L14 90 Q14 100 22 100 L58 100 Q66 100 66 90 L66 38 Z" fill="#D4842A" opacity=".85"/>
+            <ellipse cx="40" cy="38" rx="26" ry="7" fill="#F5F0E4" opacity=".9"/>
+            <ellipse cx="40" cy="36" rx="24" ry="5" fill="#FFF8EE" opacity=".7"/>
+            <circle cx="40" cy="62" r="10" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <text x="40" y="66" text-anchor="middle" font-family="Anton" font-size="7" fill="#9E1B1E">LAG</text>
+          </svg>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%} ══════════ AVAILABILITY ══════════ {%- endcomment -%}
+  <section class="by-avail" id="by-avail-{{ section.id }}">
+    <div class="by-avail-h" id="by-availH-{{ section.id }}">
+      <div class="by-ah">{{ section.settings.avail_subtitle }}</div>
+      <div class="by-ab">{{ section.settings.avail_title }}</div>
+    </div>
+    <div class="by-prow" id="by-prow-{{ section.id }}">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'product_item' -%}
+            <div class="by-pi" {{ block.shopify_attributes }}>
+              <div class="by-pim">
+                {%- if block.settings.product_image != blank -%}
+                  <img src="{{ block.settings.product_image | image_url: width: 200 }}" alt="{{ block.settings.product_label }}" loading="lazy">
+                {%- else -%}
+                  {%- comment -%} Fallback SVG silhouettes {%- endcomment -%}
+                  {%- if block.settings.product_variant == 'tap' -%}
+                    <svg width="30" height="140" viewBox="0 0 30 140"><rect x="10" y="0" width="10" height="20" fill="{{ section.settings.black | default: '#1A1A1A' }}"/><rect x="6" y="20" width="18" height="10" fill="{{ section.settings.black | default: '#1A1A1A' }}"/><path d="M8 30 L8 120 Q8 135 15 135 Q22 135 22 120 L22 30 Z" fill="{{ section.settings.black | default: '#1A1A1A' }}"/><rect x="8" y="60" width="14" height="40" fill="#F5F0E4"/></svg>
+                  {%- elsif block.settings.product_variant == 'bottle_22' -%}
+                    <svg width="40" height="150" viewBox="0 0 40 150"><rect x="15" y="0" width="10" height="12" fill="url(#by-capG-{{ section.id }})"/><path d="M14 12 L14 40 Q14 46 17 49 L17 55 L23 55 L23 49 Q26 46 26 40 L26 12 Z" fill="#8B5A2B"/><path d="M17 55 Q8 60 7 72 L7 135 Q7 145 13 145 L27 145 Q33 145 33 135 L33 72 Q32 60 23 55 Z" fill="#8B5A2B"/><rect x="7" y="80" width="26" height="50" fill="#F5F0E4"/></svg>
+                  {%- elsif block.settings.product_variant == 'bottle_12' -%}
+                    <svg width="32" height="140" viewBox="0 0 32 140"><rect x="12" y="0" width="8" height="10" fill="url(#by-capG-{{ section.id }})"/><path d="M11 10 L11 35 Q11 40 14 43 L14 48 L18 48 L18 43 Q21 40 21 35 L21 10 Z" fill="#8B5A2B"/><path d="M14 48 Q6 53 5 63 L5 125 Q5 133 10 133 L22 133 Q27 133 27 125 L27 63 Q26 53 18 48 Z" fill="#8B5A2B"/><rect x="5" y="70" width="22" height="42" fill="#F5F0E4"/></svg>
+                  {%- elsif block.settings.product_variant == 'can_12' -%}
+                    <svg width="34" height="120" viewBox="0 0 34 120"><rect x="0" y="0" width="34" height="8" fill="{{ section.settings.gold | default: '#C8A548' }}"/><rect x="0" y="8" width="34" height="100" fill="#F5F0E4"/><rect x="0" y="108" width="34" height="8" fill="{{ section.settings.gold | default: '#C8A548' }}"/></svg>
+                  {%- elsif block.settings.product_variant == 'can_19' -%}
+                    <svg width="28" height="150" viewBox="0 0 28 150"><rect x="0" y="0" width="28" height="6" fill="{{ section.settings.gold | default: '#C8A548' }}"/><rect x="0" y="6" width="28" height="135" fill="#F5F0E4"/><rect x="0" y="141" width="28" height="6" fill="{{ section.settings.gold | default: '#C8A548' }}"/></svg>
+                  {%- else -%}
+                    <svg width="34" height="120" viewBox="0 0 34 120"><rect x="0" y="0" width="34" height="8" fill="{{ section.settings.gold | default: '#C8A548' }}"/><rect x="0" y="8" width="34" height="100" fill="#F5F0E4"/><rect x="0" y="108" width="34" height="8" fill="{{ section.settings.gold | default: '#C8A548' }}"/></svg>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+              <div class="by-pl">
+                {%- if block.settings.product_bold != blank -%}<b>{{ block.settings.product_bold }}</b><br>{%- endif -%}
+                {{ block.settings.product_label }}
+                {%- if block.settings.product_sub != blank -%}<br><span class="by-sm">{{ block.settings.product_sub }}</span>{%- endif -%}
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </section>
+
+  {%- comment -%} ══════════ RECIPES ══════════ {%- endcomment -%}
+  <section class="by-recip" id="by-recip-{{ section.id }}">
+    <div class="by-recip-l" id="by-recipL-{{ section.id }}">
+      <div class="by-rh">{{ section.settings.recipes_subtitle }}</div>
+      <div class="by-rt2">{{ section.settings.recipes_title }}</div>
+    </div>
+    <div class="by-recip-r" id="by-recipR-{{ section.id }}">
+      {%- if section.settings.food_image != blank -%}
+        <div class="by-food-pic">
+          <img src="{{ section.settings.food_image | image_url: width: 640 }}" alt="{{ section.settings.food_alt }}" loading="lazy">
+        </div>
+      {%- else -%}
+        <div class="by-food-pic">🍜</div>
+      {%- endif -%}
+    </div>
+  </section>
+</div>
+
+{%- comment -%} ══════════ GSAP ANIMATIONS ══════════ {%- endcomment -%}
+<script>
+  (function() {
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+      var gsapScript = document.createElement('script');
+      gsapScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js';
+      gsapScript.onload = function() {
+        var stScript = document.createElement('script');
+        stScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js';
+        stScript.onload = function() { initBornYesterday{{ section.id | replace: '-', '_' }}(); };
+        document.head.appendChild(stScript);
+      };
+      document.head.appendChild(gsapScript);
+    } else {
+      initBornYesterday{{ section.id | replace: '-', '_' }}();
+    }
+
+    function initBornYesterday{{ section.id | replace: '-', '_' }}() {
+      gsap.registerPlugin(ScrollTrigger);
+      var sid = '{{ section.id }}';
+      var H = '#by-heroWrap-' + sid;
+      var isMobile = window.innerWidth <= 768;
+      var isSmall = window.innerWidth <= 480;
+
+      // Skip heavy animations in editor mode
+      if (Shopify && Shopify.designMode) return;
+
+      // Pin hero
+      ScrollTrigger.create({
+        trigger: H, start: 'top top', end: 'bottom bottom',
+        pin: '#by-heroPin-' + sid, pinSpacing: false
+      });
+
+      var q = function(sel) { return '#' + sel + '-' + sid; };
+
+      // Bottle rotation
+      gsap.fromTo(q('bottle'), {rotation: -35}, {
+        rotation: 0, ease: 'power1.out',
+        scrollTrigger: {trigger: H, start: 'top top', end: '45% top', scrub: isMobile ? false : 1}
+      });
+
+      // Stamp fade
+      gsap.to(q('stamp'), {
+        opacity: 0, y: -25, ease: 'none',
+        scrollTrigger: {trigger: H, start: 'top top', end: '20% top', scrub: isMobile ? false : 1}
+      });
+
+      // BG text 1
+      gsap.to(q('bgT1'), {
+        yPercent: -70, opacity: 0, ease: 'none',
+        scrollTrigger: {trigger: H, start: 'top top', end: '38% top', scrub: isMobile ? false : 1}
+      });
+
+      // Left text reveal then exit
+      gsap.to(q('leftTxt'), {
+        height: 360, ease: 'none',
+        scrollTrigger: {trigger: H, start: 'top top', end: '22% top', scrub: isMobile ? false : 1}
+      });
+      gsap.to(q('leftTxt'), {
+        y: -350, opacity: 0, ease: 'none',
+        scrollTrigger: {trigger: H, start: '32% top', end: '45% top', scrub: isMobile ? false : 1}
+      });
+
+      // Info box reveal then exit
+      gsap.to(q('infoBox'), {
+        height: 430, ease: 'none',
+        scrollTrigger: {trigger: H, start: 'top top', end: '26% top', scrub: isMobile ? false : 1}
+      });
+      gsap.to(q('infoBox'), {
+        y: -250, opacity: 0, ease: 'none',
+        scrollTrigger: {trigger: H, start: '32% top', end: '45% top', scrub: isMobile ? false : 1}
+      });
+
+      // BG text 2
+      gsap.fromTo(q('bgT2'), {opacity: 0, yPercent: 30}, {
+        opacity: 1, yPercent: 0, ease: 'none',
+        scrollTrigger: {trigger: H, start: '30% top', end: '44% top', scrub: isMobile ? false : 1}
+      });
+      gsap.to(q('bgT2'), {
+        opacity: 0, yPercent: -30, ease: 'none',
+        scrollTrigger: {trigger: H, start: '55% top', end: '68% top', scrub: isMobile ? false : 1}
+      });
+
+      // Video
+      gsap.fromTo(q('vid'), {x: -80, opacity: 0}, {
+        x: 0, opacity: 1, ease: 'none',
+        scrollTrigger: {trigger: H, start: '34% top', end: '48% top', scrub: isMobile ? false : 1}
+      });
+
+      if (!isSmall) {
+        // Splatters (skip on very small screens)
+        gsap.fromTo(q('sp1'), {scale: 0.15, opacity: 0, rotation: -10}, {
+          scale: 1, opacity: 1, rotation: 0, ease: 'back.out(1.5)',
+          scrollTrigger: {trigger: H, start: '38% top', end: '48% top', scrub: isMobile ? false : 1}
+        });
+        gsap.fromTo(q('sp2'), {scale: 0.15, opacity: 0, rotation: 8}, {
+          scale: 1, opacity: 1, rotation: 0, ease: 'back.out(1.5)',
+          scrollTrigger: {trigger: H, start: '42% top', end: '52% top', scrub: isMobile ? false : 1}
+        });
+        gsap.fromTo(q('sp3'), {scale: 0.15, opacity: 0, rotation: -6}, {
+          scale: 1, opacity: 1, rotation: 0, ease: 'back.out(1.5)',
+          scrollTrigger: {trigger: H, start: '46% top', end: '56% top', scrub: isMobile ? false : 1}
+        });
+      }
+
+      // Right panel
+      gsap.fromTo(q('rp'), {x: 80, opacity: 0}, {
+        x: 0, opacity: 1, ease: 'none',
+        scrollTrigger: {trigger: H, start: '38% top', end: '52% top', scrub: isMobile ? false : 1}
+      });
+
+      // Pint
+      gsap.fromTo(q('pint'), {y: 60, opacity: 0}, {
+        y: 0, opacity: 1, ease: 'none',
+        scrollTrigger: {trigger: H, start: '44% top', end: '58% top', scrub: isMobile ? false : 1}
+      });
+
+      // Fade out flavor elements
+      gsap.to([q('vid'), q('sp1'), q('sp2'), q('sp3'), q('rp'), q('pint')].join(','), {
+        opacity: 0, ease: 'none',
+        scrollTrigger: {trigger: H, start: '58% top', end: '72% top', scrub: isMobile ? false : 1}
+      });
+
+      // Bottle exit
+      gsap.to(q('bottle'), {
+        y: -550, opacity: 0, scale: 0.8, ease: 'none',
+        scrollTrigger: {trigger: H, start: '58% top', end: '74% top', scrub: isMobile ? false : 1}
+      });
+
+      // Availability
+      gsap.fromTo('#by-availH-' + sid, {y: 60, opacity: 0}, {
+        y: 0, opacity: 1, ease: 'power3.out',
+        scrollTrigger: {trigger: '#by-avail-' + sid, start: 'top 70%', toggleActions: 'play none none reverse'}
+      });
+      gsap.fromTo('#by-prow-' + sid + ' .by-pi', {y: 80, opacity: 0}, {
+        y: 0, opacity: 1, ease: 'power3.out', stagger: 0.12, delay: 0.3,
+        scrollTrigger: {trigger: '#by-avail-' + sid, start: 'top 60%', toggleActions: 'play none none reverse'}
+      });
+
+      // Recipes
+      gsap.fromTo('#by-recipL-' + sid, {x: -60, opacity: 0}, {
+        x: 0, opacity: 1, ease: 'power3.out',
+        scrollTrigger: {trigger: '#by-recip-' + sid, start: 'top 75%', toggleActions: 'play none none reverse'}
+      });
+      gsap.fromTo('#by-recipR-' + sid, {x: 60, opacity: 0}, {
+        x: 0, opacity: 1, ease: 'power3.out', delay: 0.2,
+        scrollTrigger: {trigger: '#by-recip-' + sid, start: 'top 75%', toggleActions: 'play none none reverse'}
+      });
+
+      // Refresh after everything loads
+      ScrollTrigger.refresh();
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Lagunitas Born Yesterday",
+  "tag": "section",
+  "class": "lagunitas-born-yesterday-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "🎨 Colors"
+    },
+    {
+      "type": "color",
+      "id": "cream",
+      "label": "Cream Background",
+      "default": "#F2EDE3"
+    },
+    {
+      "type": "color",
+      "id": "cream_light",
+      "label": "Cream Light",
+      "default": "#F8F4EC"
+    },
+    {
+      "type": "color",
+      "id": "red",
+      "label": "Red (Primary Accent)",
+      "default": "#9E1B1E"
+    },
+    {
+      "type": "color",
+      "id": "red_dark",
+      "label": "Red Dark (Hover)",
+      "default": "#7A1416"
+    },
+    {
+      "type": "color",
+      "id": "black",
+      "label": "Black (Text)",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "body_sub",
+      "label": "Body Secondary Text",
+      "default": "#3A3A3A"
+    },
+    {
+      "type": "color",
+      "id": "gold",
+      "label": "Gold (Bottle Cap)",
+      "default": "#C8A548"
+    },
+    {
+      "type": "header",
+      "content": "🧭 Navigation"
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand Name",
+      "default": "LAGUNITAS"
+    },
+    {
+      "type": "text",
+      "id": "brand_subtitle",
+      "label": "Brand Subtitle",
+      "default": "BREWING C°"
+    },
+    {
+      "type": "text",
+      "id": "nav_cta_text",
+      "label": "Nav Button Text",
+      "default": "Buy Beer"
+    },
+    {
+      "type": "url",
+      "id": "nav_cta_link",
+      "label": "Nav Button Link"
+    },
+    {
+      "type": "header",
+      "content": "🏔️ Hero - Background Text"
+    },
+    {
+      "type": "text",
+      "id": "bg_text_1",
+      "label": "Background Text 1",
+      "default": "UNLIMITED RELEASE IPA"
+    },
+    {
+      "type": "text",
+      "id": "bg_text_2",
+      "label": "Background Text 2",
+      "default": "MOUTH FEELS"
+    },
+    {
+      "type": "header",
+      "content": "🏔️ Hero - Stamp"
+    },
+    {
+      "type": "text",
+      "id": "stamp_emoji",
+      "label": "Stamp Emoji",
+      "default": "🐕"
+    },
+    {
+      "type": "textarea",
+      "id": "stamp_text",
+      "label": "Stamp Text",
+      "default": "LAGUNITAS\nBREWING CO\nPETALUMA CAL"
+    },
+    {
+      "type": "header",
+      "content": "🍾 Bottle"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_image",
+      "label": "Bottle Image (optional - uses SVG fallback if empty)"
+    },
+    {
+      "type": "text",
+      "id": "bottle_alt",
+      "label": "Bottle Alt Text",
+      "default": "Lagunitas IPA Bottle"
+    },
+    {
+      "type": "header",
+      "content": "📝 Hero - Left Text"
+    },
+    {
+      "type": "text",
+      "id": "hero_hand_text",
+      "label": "Handwritten Text",
+      "default": "Unlimited release"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_title",
+      "label": "Hero Title (use <br> for line break)",
+      "default": "INDIA<br>PALE ALE"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_description",
+      "label": "Hero Description",
+      "default": "Lagunitas IPA was our first seasonal way back in 1995. The recipe was formulated with malt and hops working together to balance it all out on your 'buds so you can knock back more than one without wearing yourself out. Big on the aroma with a hoppy-sweet finish that'll leave you wantin' another sip. Made with 43 different hops and 65 various malts, this redolent ale will likely float your boat, whatever planet you're on."
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "Hero CTA Button Text",
+      "default": "Buy Now"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta_link",
+      "label": "Hero CTA Button Link"
+    },
+    {
+      "type": "header",
+      "content": "🎬 Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_image",
+      "label": "Video Thumbnail Image (optional)"
+    },
+    {
+      "type": "textarea",
+      "id": "video_caption",
+      "label": "Video Caption",
+      "default": "Hear it from our brewmonster\nJeremy Marshall"
+    },
+    {
+      "type": "header",
+      "content": "🍊 Flavor Splatter 1"
+    },
+    {
+      "type": "text",
+      "id": "flavor_1_emoji",
+      "label": "Emoji",
+      "default": "🍊"
+    },
+    {
+      "type": "text",
+      "id": "flavor_1_title",
+      "label": "Title",
+      "default": "ORANGE - C HOPS"
+    },
+    {
+      "type": "textarea",
+      "id": "flavor_1_desc",
+      "label": "Description",
+      "default": "Old school C-hops bring a touch of citrus flavor that is both bright and deep."
+    },
+    {
+      "type": "header",
+      "content": "🌲 Flavor Splatter 2"
+    },
+    {
+      "type": "text",
+      "id": "flavor_2_emoji",
+      "label": "Emoji",
+      "default": "🌲"
+    },
+    {
+      "type": "text",
+      "id": "flavor_2_title",
+      "label": "Title",
+      "default": "PINE"
+    },
+    {
+      "type": "textarea",
+      "id": "flavor_2_desc",
+      "label": "Description",
+      "default": "Pine from hops brings balance to the citrus and caramel, grounding it."
+    },
+    {
+      "type": "header",
+      "content": "🌾 Flavor Splatter 3"
+    },
+    {
+      "type": "text",
+      "id": "flavor_3_emoji",
+      "label": "Emoji",
+      "default": "🌾"
+    },
+    {
+      "type": "text",
+      "id": "flavor_3_title",
+      "label": "Title",
+      "default": "CARAMEL - MALT"
+    },
+    {
+      "type": "textarea",
+      "id": "flavor_3_desc",
+      "label": "Description",
+      "default": "English caramel malt brings depth of flavor and the beautiful orange color."
+    },
+    {
+      "type": "header",
+      "content": "📖 Flavor Description Panel"
+    },
+    {
+      "type": "textarea",
+      "id": "flavor_description",
+      "label": "Flavor Description",
+      "default": "A well-rounded, highly drinkable IPA packed with \"C-word\" hops and rounded out with some simcoe. The taste is a clean mix of refreshing citrus, sweet caramel and pleasant bitterness. Lagunitas IPA has a light orange body, a long lasting head, a full bodied aroma, and a nice sharp hop finish. Pairs with mild blue cheese, heavy metal and bluegrass."
+    },
+    {
+      "type": "text",
+      "id": "style_heading",
+      "label": "Style Heading",
+      "default": "STYLE"
+    },
+    {
+      "type": "header",
+      "content": "📦 Availability"
+    },
+    {
+      "type": "text",
+      "id": "avail_subtitle",
+      "label": "Availability Subtitle",
+      "default": "Availability:"
+    },
+    {
+      "type": "text",
+      "id": "avail_title",
+      "label": "Availability Title",
+      "default": "YEAR ROUND"
+    },
+    {
+      "type": "header",
+      "content": "🍜 Recipes"
+    },
+    {
+      "type": "text",
+      "id": "recipes_subtitle",
+      "label": "Recipes Subtitle",
+      "default": "Recipes"
+    },
+    {
+      "type": "textarea",
+      "id": "recipes_title",
+      "label": "Recipes Title (use <br> for line break)",
+      "default": "BEER SPEAKS.<br>BELLIES GRUMBLE."
+    },
+    {
+      "type": "image_picker",
+      "id": "food_image",
+      "label": "Food Image (optional - uses emoji fallback if empty)"
+    },
+    {
+      "type": "text",
+      "id": "food_alt",
+      "label": "Food Image Alt Text",
+      "default": "Food pairing"
+    },
+    {
+      "type": "image_picker",
+      "id": "pint_image",
+      "label": "Pint Glass Image (optional - uses SVG fallback if empty)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "info_stat",
+      "name": "Info Stat (ABV/IBU/OG)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label (e.g. ABV)",
+          "default": "ABV"
+        },
+        {
+          "type": "text",
+          "id": "sublabel",
+          "label": "Sub Label",
+          "default": "Alcohol by Volume"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "6.2%"
+        },
+        {
+          "type": "number",
+          "id": "value_font_size",
+          "label": "Value Font Size (px, leave blank for default 38)",
+          "default": 38
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Sed posuere lobortis turpis in rutrum."
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text (e.g. READ MORE)",
+          "default": "READ MORE"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    },
+    {
+      "type": "style_text",
+      "name": "Style Paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Paragraph Text",
+          "default": "In the world of India Pale Ales, our darling is a bit of a rare gem."
+        }
+      ]
+    },
+    {
+      "type": "product_item",
+      "name": "Product Variant",
+      "settings": [
+        {
+          "type": "select",
+          "id": "product_variant",
+          "label": "Variant Type (for fallback SVG)",
+          "options": [
+            { "value": "tap", "label": "On Tap (Keg)" },
+            { "value": "bottle_22", "label": "22 oz Bottle" },
+            { "value": "bottle_12", "label": "12 oz Bottle" },
+            { "value": "can_12", "label": "12 oz Can" },
+            { "value": "can_19", "label": "19.2 oz Can" }
+          ],
+          "default": "can_12"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image (optional - uses SVG silhouette if empty)"
+        },
+        {
+          "type": "text",
+          "id": "product_bold",
+          "label": "Bold Label",
+          "default": "12 oz cans"
+        },
+        {
+          "type": "text",
+          "id": "product_label",
+          "label": "Label Text",
+          "default": "Label"
+        },
+        {
+          "type": "text",
+          "id": "product_sub",
+          "label": "Sub Label",
+          "default": "6-PACK"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lagunitas Born Yesterday",
+      "blocks": [
+        {
+          "type": "info_stat",
+          "settings": {
+            "label": "ABV",
+            "sublabel": "Alcohol by Volume",
+            "value": "6.2%",
+            "value_font_size": 38,
+            "description": "Sed posuere lobortis turpis in rutrum. Cras tristique quam ac metus laoreet semper.",
+            "link_text": "READ MORE",
+            "link_url": "https://example.com"
+          }
+        },
+        {
+          "type": "info_stat",
+          "settings": {
+            "label": "IBU",
+            "sublabel": "Int'l Bitterness Units",
+            "value": "51.5",
+            "value_font_size": 32,
+            "description": "Pellentesque eu pulvinar magna. Sed posuere lobortis turpis in rutrum.",
+            "link_text": "READ MORE",
+            "link_url": "https://example.com"
+          }
+        },
+        {
+          "type": "info_stat",
+          "settings": {
+            "label": "OG",
+            "sublabel": "Original Gravity",
+            "value": "1.060",
+            "value_font_size": 32,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit cras sit amet sem vehicula.",
+            "link_text": "READ MORE",
+            "link_url": "https://example.com"
+          }
+        },
+        {
+          "type": "style_text",
+          "settings": {
+            "text": "In the world of India Pale Ales, our darling is a bit of a rare gem. We've been called easy (to drink). We've been called high (ly drinkable). But don't let the names others call us limit your perception, man."
+          }
+        },
+        {
+          "type": "style_text",
+          "settings": {
+            "text": "We proudly brew Lagunitas IPA year round as a friendly, well balanced beer that's great for IPA beginners and lifelong IPA lovers."
+          }
+        },
+        {
+          "type": "style_text",
+          "settings": {
+            "text": "A well-rounded, highly drinkable IPA with more personality than a monk on acid. This is an India Pale Ale that craft beer newbies and lifelong IPA fans both love."
+          }
+        },
+        {
+          "type": "product_item",
+          "settings": {
+            "product_variant": "tap",
+            "product_bold": "On Tap",
+            "product_label": "Keg",
+            "product_sub": "Fresh"
+          }
+        },
+        {
+          "type": "product_item",
+          "settings": {
+            "product_variant": "bottle_22",
+            "product_bold": "22 oz bottles",
+            "product_label": "Bottle",
+            "product_sub": "6-PACK"
+          }
+        },
+        {
+          "type": "product_item",
+          "settings": {
+            "product_variant": "bottle_12",
+            "product_bold": "12 oz bottles",
+            "product_label": "Bottle",
+            "product_sub": "6- OR 12-PACK"
+          }
+        },
+        {
+          "type": "product_item",
+          "settings": {
+            "product_variant": "can_12",
+            "product_bold": "12 oz cans",
+            "product_label": "Can",
+            "product_sub": "6-PACK"
+          }
+        },
+        {
+          "type": "product_item",
+          "settings": {
+            "product_variant": "can_19",
+            "product_bold": "19.2 oz cans",
+            "product_label": "Tall Can",
+            "product_sub": "Single"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
