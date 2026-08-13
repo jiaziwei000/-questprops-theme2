@@ -644,10 +644,9 @@
         },
         "specification": {
           "type": "specification",
-          "disabled": true,
           "settings": {
             "heading": "",
-            "text_size": "text-sm"
+            "text_size": "text-base lg:text-lg"
           }
         }
       },
@@ -955,7 +954,6 @@
         },
         "contact": {
           "type": "contact",
-          "disabled": true,
           "settings": {
             "heading": "Still have questions?",
             "text": "<p>We're happy to help. Contact our support team and we'll get back to you as soon as possible.</p>",
