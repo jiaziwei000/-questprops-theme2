@@ -916,8 +916,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>How does QUESTPROPS™ Neck Restore work?</strong>",
-            "text": "<p>QUESTPROPS™ combines gentle EMS stimulation, massage and soothing heat in one simple routine. Adjustable settings let you choose the intensity and warmth that feel comfortable for you.</p>",
+            "title": "How long should I use it?",
+            "text": "<p>We recommend starting with a short session and finding the routine and intensity that feel comfortable for you. Many people enjoy making a 10-minute session part of their daily routine.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -925,8 +925,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>How long should I use it?</strong>",
-            "text": "<p>We recommend 10–15 minutes per session. The device includes a 15-minute automatic shut-off for added convenience.</p>",
+            "title": "Can I adjust the massage intensity?",
+            "text": "<p>Yes. You can choose the intensity that feels most comfortable for you.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -934,8 +934,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Who is it designed for?</strong>",
-            "text": "<p>It's designed for adults who spend a lot of time sitting, working at a desk, driving, using screens, or simply want a relaxing neck routine at the end of the day.</p>",
+            "title": "Does it have heat?",
+            "text": "<p>Yes. The built-in heat function adds soothing warmth to your massage session.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -943,8 +943,8 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is the EMS sensation uncomfortable?</strong>",
-            "text": "<p>EMS can feel different from person to person. Start at a low intensity and gradually adjust it to a level that feels comfortable for you.</p>",
+            "title": "Can I use it while sitting?",
+            "text": "<p>Yes. It's designed for comfortable, hands-free use while sitting or relaxing.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -952,8 +952,8 @@
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "<strong>How does the 180-Day Risk-Free Trial work?</strong>",
-            "text": "<p>Try QUESTPROPS™ at home. If it isn't right for you, you can return it within the applicable 180-day trial period. Please see our Return Policy for the full terms and conditions.</p>",
+            "title": "Can I control it with a remote?",
+            "text": "<p>Yes. The included remote lets you adjust your settings without needing to reach for the device.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -961,8 +961,8 @@
         "question_8FE3BR": {
           "type": "question",
           "settings": {
-            "title": "Does it come with a warranty?",
-            "text": "<p>Yes. QUESTPROPS™ Neck Restore includes a 2-Year Warranty. If you need help with a warranty claim, our support team is here to assist you.<br/><br/></p>",
+            "title": "Is it suitable for everyday use?",
+            "text": "<p>It's designed as an everyday relaxation and massage product. Start with a comfortable setting and adjust your routine based on how it feels.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -970,8 +970,8 @@
         "question_Q4E43L": {
           "type": "question",
           "settings": {
-            "title": "How long does shipping take?",
-            "text": "<p>Orders typically ship within 1–2 business days. Delivery time depends on your destination and shipping method. Tracking information is provided when your order ships.<br/><br/></p>",
+            "title": "What if I don't like it?",
+            "text": "<p>You're covered by our 30-Day Return Guarantee.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -979,8 +979,8 @@
         "question_T7RUaN": {
           "type": "question",
           "settings": {
-            "title": "What’s included in the box?",
-            "text": "<p>You’ll receive 1× QUESTPROPS™ Neck Restore, 1× Remote Control, 1× USB Charging Cable, and 1× User Guide.<br/><br/></p>",
+            "title": "How long is the warranty?",
+            "text": "<p>Your purchase includes a 2-Year Warranty.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
