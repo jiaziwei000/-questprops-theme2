@@ -438,7 +438,7 @@
       "custom_css": [],
       "settings": {
         "transparent_header": true,
-        "video": "shopify://files/videos/7月2日.mp4",
+        "video": "shopify://files/videos/8月16日(1).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "{{ product.metafields.reviews.rating | metafield_text }}{{ product.metafields.reviews.rating_count.value }}",
         "enable_video_autoplay": true,
@@ -1024,7 +1024,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#617D8B",
+        "color_background": "#617d8b",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
