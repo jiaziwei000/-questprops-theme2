@@ -1,0 +1,2140 @@
+{% comment %}
+  QUESTPROPS Configure
+  Cowboy-inspired product configurator
+  No external libraries required.
+{% endcomment %}
+
+<section
+  id="QP-Configure-{{ section.id }}"
+  class="qp-configure"
+  data-section-id="{{ section.id }}"
+  data-product-id="{{ product.id }}"
+  data-base-price="{{ section.settings.base_price | times: 100 }}"
+  data-currency="{{ cart.currency.iso_code }}"
+>
+
+  <div class="qp-configure__shell">
+
+    <!-- =========================
+         LEFT — PRODUCT VISUAL
+    ========================== -->
+    <div class="qp-visual">
+
+      <div class="qp-visual__stage">
+
+        {% if section.settings.product_image != blank %}
+          {{
+            section.settings.product_image
+            | image_url: width: 1600
+            | image_tag:
+              class: 'qp-product-image',
+              loading: 'eager',
+              widths: '600,900,1200,1600'
+          }}
+        {% else %}
+          <div class="qp-placeholder">
+            Product Image
+          </div>
+        {% endif %}
+
+
+        <!-- HOTSPOT 01 -->
+        <button
+          class="qp-hotspot"
+          type="button"
+          style="left: {{ section.settings.hotspot_1_x }}%; top: {{ section.settings.hotspot_1_y }}%;"
+          data-hotspot="1"
+          aria-label="View feature"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- HOTSPOT 02 -->
+        <button
+          class="qp-hotspot"
+          type="button"
+          style="left: {{ section.settings.hotspot_2_x }}%; top: {{ section.settings.hotspot_2_y }}%;"
+          data-hotspot="2"
+          aria-label="View feature"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- HOTSPOT 03 -->
+        <button
+          class="qp-hotspot"
+          type="button"
+          style="left: {{ section.settings.hotspot_3_x }}%; top: {{ section.settings.hotspot_3_y }}%;"
+          data-hotspot="3"
+          aria-label="View feature"
+        >
+          <span>+</span>
+        </button>
+
+
+        <!-- HOTSPOT POPUPS -->
+
+        <div class="qp-hotspot-card" data-card="1">
+          <button class="qp-card-close" type="button">×</button>
+
+          <div class="qp-card-number">01</div>
+
+          <h3>
+            {{ section.settings.hotspot_1_title }}
+          </h3>
+
+          <p>
+            {{ section.settings.hotspot_1_text }}
+          </p>
+        </div>
+
+        <div class="qp-hotspot-card" data-card="2">
+          <button class="qp-card-close" type="button">×</button>
+
+          <div class="qp-card-number">02</div>
+
+          <h3>
+            {{ section.settings.hotspot_2_title }}
+          </h3>
+
+          <p>
+            {{ section.settings.hotspot_2_text }}
+          </p>
+        </div>
+
+        <div class="qp-hotspot-card" data-card="3">
+          <button class="qp-card-close" type="button">×</button>
+
+          <div class="qp-card-number">03</div>
+
+          <h3>
+            {{ section.settings.hotspot_3_title }}
+          </h3>
+
+          <p>
+            {{ section.settings.hotspot_3_text }}
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- SMALL PRODUCT LABEL -->
+
+      <div class="qp-visual__label">
+        <span class="qp-label-dot"></span>
+        {{ section.settings.visual_label }}
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         RIGHT — CONFIGURATOR
+    ========================== -->
+
+    <div class="qp-configurator">
+
+      <div class="qp-header">
+
+        <div class="qp-eyebrow">
+          {{ section.settings.eyebrow }}
+        </div>
+
+        <h1>
+          {{ section.settings.heading }}
+        </h1>
+
+        <p class="qp-subheading">
+          {{ section.settings.subheading }}
+        </p>
+
+        <div class="qp-rating">
+          <span>★★★★★</span>
+          <strong>{{ section.settings.rating }}</strong>
+          <small>{{ section.settings.review_text }}</small>
+        </div>
+
+      </div>
+
+
+      <!-- STEP 01 -->
+
+      <div class="qp-step">
+
+        <div class="qp-step__top">
+          <div>
+            <span class="qp-step-number">01</span>
+            <strong>{{ section.settings.step_1_title }}</strong>
+          </div>
+
+          <span class="qp-step-price">
+            {{ section.settings.base_price | money }}
+          </span>
+        </div>
+
+
+        <div class="qp-option qp-option--selected">
+
+          <div class="qp-option__radio"></div>
+
+          <div class="qp-option__content">
+
+            <strong>
+              {{ section.settings.product_name }}
+            </strong>
+
+            <span>
+              {{ section.settings.product_description }}
+            </span>
+
+          </div>
+
+          <strong>
+            {{ section.settings.base_price | money }}
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 02 -->
+
+      <div class="qp-step">
+
+        <div class="qp-step__top">
+
+          <div>
+            <span class="qp-step-number">02</span>
+            <strong>{{ section.settings.step_2_title }}</strong>
+          </div>
+
+        </div>
+
+
+        <div class="qp-options">
+
+          <button
+            type="button"
+            class="qp-choice active"
+            data-price="0"
+          >
+
+            <span class="qp-choice__radio"></span>
+
+            <span class="qp-choice__text">
+              <strong>{{ section.settings.option_1_title }}</strong>
+              <small>{{ section.settings.option_1_text }}</small>
+            </span>
+
+            <span class="qp-choice__price">
+              Included
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="qp-choice"
+            data-price="{{ section.settings.option_2_price | times: 100 }}"
+          >
+
+            <span class="qp-choice__radio"></span>
+
+            <span class="qp-choice__text">
+              <strong>{{ section.settings.option_2_title }}</strong>
+              <small>{{ section.settings.option_2_text }}</small>
+            </span>
+
+            <span class="qp-choice__price">
+              +{{ section.settings.option_2_price | money }}
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 03 -->
+
+      <div class="qp-step">
+
+        <div class="qp-step__top">
+
+          <div>
+            <span class="qp-step-number">03</span>
+            <strong>{{ section.settings.step_3_title }}</strong>
+          </div>
+
+        </div>
+
+
+        <div class="qp-addons">
+
+          <label class="qp-addon">
+
+            <input
+              type="checkbox"
+              class="qp-addon-input"
+              data-price="{{ section.settings.addon_1_price | times: 100 }}"
+            >
+
+            <span class="qp-addon-check"></span>
+
+            <span class="qp-addon-info">
+
+              <strong>
+                {{ section.settings.addon_1_title }}
+              </strong>
+
+              <small>
+                {{ section.settings.addon_1_text }}
+              </small>
+
+            </span>
+
+            <strong>
+              +{{ section.settings.addon_1_price | money }}
+            </strong>
+
+          </label>
+
+
+          <label class="qp-addon">
+
+            <input
+              type="checkbox"
+              class="qp-addon-input"
+              data-price="{{ section.settings.addon_2_price | times: 100 }}"
+            >
+
+            <span class="qp-addon-check"></span>
+
+            <span class="qp-addon-info">
+
+              <strong>
+                {{ section.settings.addon_2_title }}
+              </strong>
+
+              <small>
+                {{ section.settings.addon_2_text }}
+              </small>
+
+            </span>
+
+            <strong>
+              +{{ section.settings.addon_2_price | money }}
+            </strong>
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <!-- GUARANTEE -->
+
+      <div class="qp-trust">
+
+        <div>
+          <strong>60-Day Trial</strong>
+          <span>Try it at home.</span>
+        </div>
+
+        <div>
+          <strong>2-Year Warranty</strong>
+          <span>Built for everyday use.</span>
+        </div>
+
+        <div>
+          <strong>Free Shipping</strong>
+          <span>Worldwide delivery.</span>
+        </div>
+
+      </div>
+
+
+      <!-- SUMMARY -->
+
+      <div class="qp-summary">
+
+        <div class="qp-summary__row">
+
+          <span>Your QUESTPROPS™</span>
+
+          <strong
+            class="qp-total"
+            data-total
+          >
+            {{ section.settings.base_price | money }}
+          </strong>
+
+        </div>
+
+
+        <div class="qp-summary__details">
+          <span>
+            {{ section.settings.product_name }}
+          </span>
+
+          <span>
+            {{ section.settings.delivery_text }}
+          </span>
+        </div>
+
+
+        <button
+          type="button"
+          class="qp-add-cart"
+          data-add-to-cart
+        >
+          <span>{{ section.settings.button_text }}</span>
+          <span class="qp-button-price">
+            {{ section.settings.base_price | money }}
+          </span>
+        </button>
+
+        <div class="qp-secure">
+          Secure checkout · Free shipping · 60-day trial
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+#QP-Configure-{{ section.id }} {
+  --qp-black: #111111;
+  --qp-white: #ffffff;
+  --qp-gray: #f5f5f3;
+  --qp-border: #dededb;
+  --qp-muted: #737373;
+  --qp-accent: #111111;
+
+  background: var(--qp-gray);
+  color: var(--qp-black);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#QP-Configure-{{ section.id }} * {
+  box-sizing: border-box;
+}
+
+
+#QP-Configure-{{ section.id }} button {
+  font-family: inherit;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-configure__shell {
+
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(420px, .65fr);
+
+  min-height: 100vh;
+}
+
+
+/* =========================
+   PRODUCT VISUAL
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-visual {
+
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px;
+
+  background: #eeeeec;
+
+  overflow: hidden;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-visual__stage {
+
+  position: relative;
+
+  width: min(760px, 90%);
+
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-product-image {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  user-select: none;
+
+  transition:
+    transform .5s cubic-bezier(.2,.7,.2,1);
+}
+
+
+#QP-Configure-{{ section.id }} .qp-visual:hover .qp-product-image {
+  transform: scale(1.025);
+}
+
+
+#QP-Configure-{{ section.id }} .qp-placeholder {
+
+  width: 70%;
+  height: 70%;
+
+  border: 1px dashed #aaa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   HOTSPOTS
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-hotspot {
+
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(0,0,0,.15);
+
+  background: rgba(255,255,255,.96);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  z-index: 10;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.12);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: -7px;
+
+  border: 1px solid rgba(0,0,0,.16);
+
+  border-radius: 50%;
+
+  animation: qp-pulse 2.2s infinite;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot span {
+
+  font-size: 23px;
+
+  line-height: 1;
+
+  font-weight: 300;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot:hover {
+
+  transform:
+    translate(-50%, -50%)
+    scale(1.12);
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.18);
+}
+
+
+@keyframes qp-pulse {
+
+  0% {
+    opacity: .7;
+    transform: scale(.8);
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+
+/* =========================
+   HOTSPOT CARD
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-hotspot-card {
+
+  position: absolute;
+
+  width: 290px;
+
+  padding: 26px;
+
+  background: rgba(255,255,255,.98);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.18);
+
+  z-index: 30;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transform:
+    translateY(10px)
+    scale(.97);
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot-card.is-open {
+
+  opacity: 1;
+
+  pointer-events: auto;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+
+#QP-Configure-{{ section.id }} .qp-card-close {
+
+  position: absolute;
+
+  right: 13px;
+  top: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 0;
+
+  background: transparent;
+
+  font-size: 23px;
+
+  cursor: pointer;
+
+  color: #777;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-card-number {
+
+  font-size: 11px;
+
+  letter-spacing: .15em;
+
+  color: #888;
+
+  margin-bottom: 15px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot-card h3 {
+
+  margin: 0 0 9px;
+
+  font-size: 22px;
+
+  letter-spacing: -.03em;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-hotspot-card p {
+
+  margin: 0;
+
+  color: #666;
+
+  line-height: 1.55;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   VISUAL LABEL
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-visual__label {
+
+  position: absolute;
+
+  left: 40px;
+  bottom: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .12em;
+
+  color: #666;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-label-dot {
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #111;
+}
+
+
+/* =========================
+   CONFIGURATOR
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-configurator {
+
+  background: #fff;
+
+  padding:
+    70px
+    clamp(30px, 5vw, 90px);
+
+  min-height: 100vh;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-header {
+
+  margin-bottom: 50px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-eyebrow {
+
+  font-size: 11px;
+
+  letter-spacing: .16em;
+
+  text-transform: uppercase;
+
+  color: #777;
+
+  margin-bottom: 16px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-header h1 {
+
+  margin: 0;
+
+  font-size: clamp(38px, 4vw, 64px);
+
+  line-height: .95;
+
+  letter-spacing: -.055em;
+
+  font-weight: 600;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-subheading {
+
+  max-width: 460px;
+
+  margin: 22px 0 0;
+
+  color: #686868;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-rating {
+
+  margin-top: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 13px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-rating span {
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-rating small {
+
+  color: #777;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-step {
+
+  padding: 28px 0;
+
+  border-top: 1px solid var(--qp-border);
+}
+
+
+#QP-Configure-{{ section.id }} .qp-step__top {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-step__top > div {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-step-number {
+
+  color: #888;
+
+  font-size: 11px;
+
+  letter-spacing: .08em;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-step-price {
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+/* =========================
+   PRODUCT OPTION
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-option {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid #111;
+
+  border-radius: 10px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-option__radio {
+
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  border: 5px solid #111;
+
+  flex: 0 0 auto;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-option__content {
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-option__content span {
+
+  font-size: 12px;
+
+  color: #777;
+}
+
+
+/* =========================
+   CHOICES
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-options {
+
+  display: grid;
+
+  gap: 10px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice {
+
+  width: 100%;
+
+  border: 1px solid var(--qp-border);
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  padding: 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border .2s ease,
+    background .2s ease;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice:hover {
+
+  border-color: #999;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice.active {
+
+  border-color: #111;
+
+  background: #fafafa;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice__radio {
+
+  width: 17px;
+  height: 17px;
+
+  border: 1px solid #999;
+
+  border-radius: 50%;
+
+  flex: 0 0 auto;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice.active .qp-choice__radio {
+
+  border: 5px solid #111;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice__text {
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice__text small {
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-choice__price {
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   ADDONS
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-addons {
+
+  display: grid;
+
+  gap: 10px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 17px;
+
+  border: 1px solid var(--qp-border);
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon:has(input:checked) {
+
+  border-color: #111;
+
+  background: #fafafa;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-input {
+
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-check {
+
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #999;
+
+  border-radius: 4px;
+
+  flex: 0 0 auto;
+
+  position: relative;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-input:checked
+~ .qp-addon-check {
+
+  background: #111;
+
+  border-color: #111;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-input:checked
+~ .qp-addon-check::after {
+
+  content: "✓";
+
+  color: #fff;
+
+  font-size: 12px;
+
+  position: absolute;
+
+  left: 3px;
+
+  top: 0px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-info {
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-addon-info small {
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   TRUST
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-trust {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--qp-border);
+
+  border-bottom: 1px solid var(--qp-border);
+
+  margin-top: 10px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-trust > div {
+
+  padding: 20px 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-trust > div + div {
+
+  border-left: 1px solid var(--qp-border);
+}
+
+
+#QP-Configure-{{ section.id }} .qp-trust strong {
+
+  font-size: 12px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-trust span {
+
+  font-size: 10px;
+
+  color: #777;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+#QP-Configure-{{ section.id }} .qp-summary {
+
+  padding-top: 30px;
+
+  position: sticky;
+
+  bottom: 0;
+
+  background: #fff;
+
+  z-index: 20;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-summary__row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-total {
+
+  font-size: 23px;
+
+  letter-spacing: -.03em;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-summary__details {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #777;
+
+  font-size: 11px;
+
+  margin-bottom: 14px;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-add-cart {
+
+  width: 100%;
+
+  min-height: 60px;
+
+  border: 0;
+
+  border-radius: 5px;
+
+  background: #111;
+
+  color: #fff;
+
+  padding: 0 22px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition:
+    transform .2s ease,
+    opacity .2s ease;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-add-cart:hover {
+
+  transform: translateY(-2px);
+
+  opacity: .9;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-button-price {
+
+  font-weight: 600;
+}
+
+
+#QP-Configure-{{ section.id }} .qp-secure {
+
+  text-align: center;
+
+  font-size: 10px;
+
+  color: #888;
+
+  padding-top: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  #QP-Configure-{{ section.id }} .qp-configure__shell {
+
+    display: block;
+
+    min-height: auto;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-visual {
+
+    position: relative;
+
+    top: auto;
+
+    height: auto;
+
+    min-height: 72vh;
+
+    padding: 30px 20px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-visual__stage {
+
+    width: 100%;
+
+    max-width: 600px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-configurator {
+
+    min-height: auto;
+
+    padding:
+      45px
+      20px
+      30px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-header {
+
+    margin-bottom: 35px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-header h1 {
+
+    font-size: 42px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-summary {
+
+    position: sticky;
+
+    bottom: 0;
+
+    margin-left: -20px;
+
+    margin-right: -20px;
+
+    padding:
+      16px 20px
+      calc(16px + env(safe-area-inset-bottom));
+
+    box-shadow:
+      0 -8px 25px rgba(0,0,0,.07);
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-trust {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-trust > div {
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    padding: 13px 0;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-trust > div + div {
+
+    border-left: 0;
+
+    border-top: 1px solid var(--qp-border);
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-hotspot {
+
+    width: 36px;
+    height: 36px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-hotspot-card {
+
+    width: min(290px, calc(100vw - 60px));
+
+    left: 50% !important;
+
+    top: 50% !important;
+
+    transform:
+      translate(-50%, -45%)
+      scale(.97);
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-hotspot-card.is-open {
+
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+  }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  #QP-Configure-{{ section.id }} .qp-visual {
+
+    min-height: 62vh;
+
+    padding: 20px 12px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-header h1 {
+
+    font-size: 37px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-option {
+
+    padding: 14px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-choice {
+
+    padding: 14px;
+  }
+
+
+  #QP-Configure-{{ section.id }} .qp-summary__details {
+
+    font-size: 10px;
+  }
+
+}
+
+</style>
+
+
+<script>
+
+(function() {
+
+  const root =
+    document.getElementById(
+      'QP-Configure-{{ section.id }}'
+    );
+
+  if (!root) return;
+
+
+  /* =========================
+     HOTSPOTS
+  ========================== */
+
+  const hotspots =
+    root.querySelectorAll('.qp-hotspot');
+
+  const cards =
+    root.querySelectorAll('.qp-hotspot-card');
+
+
+  hotspots.forEach(function(hotspot) {
+
+    hotspot.addEventListener('click', function() {
+
+      const id =
+        hotspot.dataset.hotspot;
+
+      cards.forEach(function(card) {
+
+        card.classList.remove('is-open');
+
+      });
+
+      const card =
+        root.querySelector(
+          '[data-card="' + id + '"]'
+        );
+
+      if (card) {
+
+        card.classList.add('is-open');
+
+      }
+
+    });
+
+  });
+
+
+  root
+    .querySelectorAll('.qp-card-close')
+    .forEach(function(button) {
+
+      button.addEventListener(
+        'click',
+        function() {
+
+          cards.forEach(function(card) {
+
+            card.classList.remove(
+              'is-open'
+            );
+
+          });
+
+        }
+      );
+
+    });
+
+
+  /* =========================
+     PRICE CALCULATOR
+  ========================== */
+
+  const basePrice =
+    Number(
+      root.dataset.basePrice
+    ) || 0;
+
+
+  let selectedOptionPrice = 0;
+
+
+  const totalElement =
+    root.querySelector('[data-total]');
+
+  const buttonPrice =
+    root.querySelector('.qp-button-price');
+
+
+  function formatMoney(cents) {
+
+    return new Intl.NumberFormat(
+      '{{ localization.language.iso_code | default: "en" }}',
+      {
+        style: 'currency',
+        currency:
+          root.dataset.currency || 'USD'
+      }
+    ).format(cents / 100);
+
+  }
+
+
+  function updateTotal() {
+
+    let total =
+      basePrice +
+      selectedOptionPrice;
+
+
+    root
+      .querySelectorAll(
+        '.qp-addon-input:checked'
+      )
+      .forEach(function(input) {
+
+        total +=
+          Number(input.dataset.price) || 0;
+
+      });
+
+
+    totalElement.textContent =
+      formatMoney(total);
+
+    buttonPrice.textContent =
+      formatMoney(total);
+
+  }
+
+
+  /* =========================
+     OPTION SELECT
+  ========================== */
+
+  root
+    .querySelectorAll('.qp-choice')
+    .forEach(function(choice) {
+
+      choice.addEventListener(
+        'click',
+        function() {
+
+          root
+            .querySelectorAll('.qp-choice')
+            .forEach(function(item) {
+
+              item.classList.remove(
+                'active'
+              );
+
+            });
+
+
+          choice.classList.add('active');
+
+
+          selectedOptionPrice =
+            Number(
+              choice.dataset.price
+            ) || 0;
+
+
+          updateTotal();
+
+        }
+      );
+
+    });
+
+
+  /* =========================
+     ADDONS
+  ========================== */
+
+  root
+    .querySelectorAll('.qp-addon-input')
+    .forEach(function(input) {
+
+      input.addEventListener(
+        'change',
+        updateTotal
+      );
+
+    });
+
+
+  /* =========================
+     ADD TO CART
+  ========================== */
+
+  const addButton =
+    root.querySelector(
+      '[data-add-to-cart]'
+    );
+
+
+  addButton.addEventListener(
+    'click',
+    async function() {
+
+      addButton.disabled = true;
+
+      const original =
+        addButton.innerHTML;
+
+      addButton.innerHTML =
+        '<span>Adding...</span>';
+
+
+      try {
+
+        const response =
+          await fetch(
+            '/cart/add.js',
+            {
+              method: 'POST',
+
+              headers: {
+                'Content-Type':
+                  'application/json',
+                'Accept':
+                  'application/json'
+              },
+
+              body: JSON.stringify({
+
+                items: [
+                  {
+                    id:
+                      {{ product.selected_or_first_available_variant.id }},
+                    quantity: 1
+                  }
+                ]
+
+              })
+
+            }
+          );
+
+
+        if (!response.ok) {
+
+          throw new Error(
+            'Add to cart failed'
+          );
+
+        }
+
+
+        window.location.href =
+          '/cart';
+
+      }
+
+      catch (error) {
+
+        console.error(error);
+
+        addButton.innerHTML =
+          original;
+
+        addButton.disabled = false;
+
+        alert(
+          'Sorry, something went wrong. Please try again.'
+        );
+
+      }
+
+    }
+
+  );
+
+
+  updateTotal();
+
+})();
+
+</script>
+
+
+{% schema %}
+
+{
+  "name": "QP Configure",
+  "settings": [
+
+    {
+      "type": "header",
+      "content": "Product"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    },
+
+    {
+      "type": "text",
+      "id": "visual_label",
+      "label": "Visual label",
+      "default": "QUESTPROPS™ Neck Restore"
+    },
+
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "QUESTPROPS™"
+    },
+
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Build Your Neck Reset"
+    },
+
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "A simple 10-minute daily routine designed to help you unwind, wherever the day takes you."
+    },
+
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "Product name",
+      "default": "QUESTPROPS™ Neck Restore"
+    },
+
+    {
+      "type": "textarea",
+      "id": "product_description",
+      "label": "Product description",
+      "default": "EMS stimulation + soothing heat + ergonomic neck support."
+    },
+
+    {
+      "type": "number",
+      "id": "base_price",
+      "label": "Base price",
+      "default": 119
+    },
+
+    {
+      "type": "text",
+      "id": "rating",
+      "label": "Rating",
+      "default": "4.9/5"
+    },
+
+    {
+      "type": "text",
+      "id": "review_text",
+      "label": "Review text",
+      "default": "1,000+ verified reviews"
+    },
+
+
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Choose your device"
+    },
+
+
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Choose your setup"
+    },
+
+    {
+      "type": "text",
+      "id": "option_1_title",
+      "label": "Option 1 title",
+      "default": "Neck Restore"
+    },
+
+    {
+      "type": "text",
+      "id": "option_1_text",
+      "label": "Option 1 text",
+      "default": "The essential daily reset."
+    },
+
+    {
+      "type": "text",
+      "id": "option_2_title",
+      "label": "Option 2 title",
+      "default": "Neck Restore + Remote"
+    },
+
+    {
+      "type": "text",
+      "id": "option_2_text",
+      "label": "Option 2 text",
+      "default": "Adjust your routine from the remote."
+    },
+
+    {
+      "type": "number",
+      "id": "option_2_price",
+      "label": "Option 2 price",
+      "default": 19
+    },
+
+
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Add your essentials"
+    },
+
+    {
+      "type": "text",
+      "id": "addon_1_title",
+      "label": "Add-on 1 title",
+      "default": "Travel Case"
+    },
+
+    {
+      "type": "text",
+      "id": "addon_1_text",
+      "label": "Add-on 1 text",
+      "default": "Take your routine wherever you go."
+    },
+
+    {
+      "type": "number",
+      "id": "addon_1_price",
+      "label": "Add-on 1 price",
+      "default": 15
+    },
+
+    {
+      "type": "text",
+      "id": "addon_2_title",
+      "label": "Add-on 2 title",
+      "default": "Extra Accessories"
+    },
+
+    {
+      "type": "text",
+      "id": "addon_2_text",
+      "label": "Add-on 2 text",
+      "default": "Keep your daily setup ready."
+    },
+
+    {
+      "type": "number",
+      "id": "addon_2_price",
+      "label": "Add-on 2 price",
+      "default": 9
+    },
+
+
+    {
+      "type": "header",
+      "content": "Hotspot 1"
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_1_x",
+      "label": "X position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 38
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_1_y",
+      "label": "Y position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 38
+    },
+
+    {
+      "type": "text",
+      "id": "hotspot_1_title",
+      "label": "Title",
+      "default": "Soothing Heat"
+    },
+
+    {
+      "type": "textarea",
+      "id": "hotspot_1_text",
+      "label": "Text",
+      "default": "Gentle warmth designed to make your daily reset feel more relaxing."
+    },
+
+
+    {
+      "type": "header",
+      "content": "Hotspot 2"
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_2_x",
+      "label": "X position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 65
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_2_y",
+      "label": "Y position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 48
+    },
+
+    {
+      "type": "text",
+      "id": "hotspot_2_title",
+      "label": "Title",
+      "default": "EMS Stimulation"
+    },
+
+    {
+      "type": "textarea",
+      "id": "hotspot_2_text",
+      "label": "Text",
+      "default": "Adjustable stimulation designed to complement your daily neck reset."
+    },
+
+
+    {
+      "type": "header",
+      "content": "Hotspot 3"
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_3_x",
+      "label": "X position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 48
+    },
+
+    {
+      "type": "range",
+      "id": "hotspot_3_y",
+      "label": "Y position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 66
+    },
+
+    {
+      "type": "text",
+      "id": "hotspot_3_title",
+      "label": "Title",
+      "default": "Ergonomic Neck Support"
+    },
+
+    {
+      "type": "textarea",
+      "id": "hotspot_3_text",
+      "label": "Text",
+      "default": "Designed to sit comfortably around the neck during your daily routine."
+    },
+
+
+    {
+      "type": "text",
+      "id": "delivery_text",
+      "label": "Delivery text",
+      "default": "Ships in 3–7 business days"
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "ADD TO CART"
+    }
+
+  ],
+
+  "presets": [
+    {
+      "name": "QP Configure"
+    }
+  ]
+
+}
+
+{% endschema %}
