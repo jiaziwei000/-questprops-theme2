@@ -1,408 +1,432 @@
-{% comment %}
-  QUESTPROPS Configure
-  Cowboy-inspired product configurator
-  No external libraries required.
-{% endcomment %}
+{% liquid
+  assign cfg_product = product
+  assign cfg_variant = product.selected_or_first_available_variant
+  assign cfg_base_price = cfg_variant.price
+%}
 
 <section
-  id="QP-Configure-{{ section.id }}"
-  class="qp-configure"
+  id="QuestConfigurator-{{ section.id }}"
+  class="qp-config"
   data-section-id="{{ section.id }}"
   data-product-id="{{ product.id }}"
-  data-base-price="{{ section.settings.base_price | times: 100 }}"
-  data-currency="{{ cart.currency.iso_code }}"
+  data-variant-id="{{ cfg_variant.id }}"
+  data-base-price="{{ cfg_base_price }}"
 >
 
-  <div class="qp-configure__shell">
+  <div class="qp-config__visual">
 
-    <!-- =========================
-         LEFT — PRODUCT VISUAL
-    ========================== -->
-    <div class="qp-visual">
+    <div class="qp-config__visual-inner">
 
-      <div class="qp-visual__stage">
+      {% if product.featured_image %}
+        {{
+          product.featured_image
+          | image_url: width: 1800
+          | image_tag:
+            class: 'qp-config__product-image',
+            loading: 'eager',
+            widths: '600,900,1200,1500,1800',
+            sizes: '70vw',
+            alt: product.featured_image.alt | escape
+        }}
+      {% else %}
+        <div class="qp-config__placeholder">
+          QUESTPROPS™
+        </div>
+      {% endif %}
 
-        {% if section.settings.product_image != blank %}
-          {{
-            section.settings.product_image
-            | image_url: width: 1600
-            | image_tag:
-              class: 'qp-product-image',
-              loading: 'eager',
-              widths: '600,900,1200,1600'
-          }}
-        {% else %}
-          <div class="qp-placeholder">
-            Product Image
-          </div>
-        {% endif %}
+      <!-- HOTSPOT 01 -->
+      <button
+        type="button"
+        class="qp-hotspot"
+        data-hotspot="heat"
+        style="--x: 37%; --y: 34%;"
+        aria-label="Heat"
+      >
+        <span>+</span>
+      </button>
 
+      <!-- HOTSPOT 02 -->
+      <button
+        type="button"
+        class="qp-hotspot"
+        data-hotspot="ems"
+        style="--x: 64%; --y: 43%;"
+        aria-label="EMS"
+      >
+        <span>+</span>
+      </button>
 
-        <!-- HOTSPOT 01 -->
+      <!-- HOTSPOT 03 -->
+      <button
+        type="button"
+        class="qp-hotspot"
+        data-hotspot="fit"
+        style="--x: 49%; --y: 67%;"
+        aria-label="Neck fit"
+      >
+        <span>+</span>
+      </button>
+
+      <!-- HOTSPOT INFORMATION -->
+      <div
+        class="qp-hotspot-card"
+        data-hotspot-card
+        aria-hidden="true"
+      >
+
         <button
-          class="qp-hotspot"
           type="button"
-          style="left: {{ section.settings.hotspot_1_x }}%; top: {{ section.settings.hotspot_1_y }}%;"
-          data-hotspot="1"
-          aria-label="View feature"
+          class="qp-hotspot-card__close"
+          data-hotspot-close
+          aria-label="Close"
         >
-          <span>+</span>
+          ×
         </button>
 
-        <!-- HOTSPOT 02 -->
-        <button
-          class="qp-hotspot"
-          type="button"
-          style="left: {{ section.settings.hotspot_2_x }}%; top: {{ section.settings.hotspot_2_y }}%;"
-          data-hotspot="2"
-          aria-label="View feature"
+        <div
+          class="qp-hotspot-card__number"
+          data-hotspot-number
         >
-          <span>+</span>
-        </button>
+          01
+        </div>
 
-        <!-- HOTSPOT 03 -->
-        <button
-          class="qp-hotspot"
-          type="button"
-          style="left: {{ section.settings.hotspot_3_x }}%; top: {{ section.settings.hotspot_3_y }}%;"
-          data-hotspot="3"
-          aria-label="View feature"
+        <h3
+          class="qp-hotspot-card__title"
+          data-hotspot-title
         >
-          <span>+</span>
-        </button>
+          Soothing Heat
+        </h3>
 
-
-        <!-- HOTSPOT POPUPS -->
-
-        <div class="qp-hotspot-card" data-card="1">
-          <button class="qp-card-close" type="button">×</button>
-
-          <div class="qp-card-number">01</div>
-
-          <h3>
-            {{ section.settings.hotspot_1_title }}
-          </h3>
-
-          <p>
-            {{ section.settings.hotspot_1_text }}
-          </p>
-        </div>
-
-        <div class="qp-hotspot-card" data-card="2">
-          <button class="qp-card-close" type="button">×</button>
-
-          <div class="qp-card-number">02</div>
-
-          <h3>
-            {{ section.settings.hotspot_2_title }}
-          </h3>
-
-          <p>
-            {{ section.settings.hotspot_2_text }}
-          </p>
-        </div>
-
-        <div class="qp-hotspot-card" data-card="3">
-          <button class="qp-card-close" type="button">×</button>
-
-          <div class="qp-card-number">03</div>
-
-          <h3>
-            {{ section.settings.hotspot_3_title }}
-          </h3>
-
-          <p>
-            {{ section.settings.hotspot_3_text }}
-          </p>
-        </div>
+        <p
+          class="qp-hotspot-card__text"
+          data-hotspot-text
+        >
+          Gentle warmth designed to complement
+          your daily 10-minute reset.
+        </p>
 
       </div>
 
+      <div class="qp-config__visual-label">
+        <span></span>
+        QUESTPROPS™ NECK RESTORE
+      </div>
 
-      <!-- SMALL PRODUCT LABEL -->
+    </div>
 
-      <div class="qp-visual__label">
-        <span class="qp-label-dot"></span>
-        {{ section.settings.visual_label }}
+  </div>
+
+
+  <div class="qp-config__content">
+
+    <div class="qp-config__header">
+
+      <div class="qp-config__eyebrow">
+        QUESTPROPS™
+      </div>
+
+      <h1 class="qp-config__title">
+        Build your<br>
+        daily reset.
+      </h1>
+
+      <p class="qp-config__intro">
+        Explore the device, choose your setup,
+        and make your daily 10-minute reset yours.
+      </p>
+
+      <div class="qp-config__rating">
+        <span>★★★★★</span>
+        <strong>4.9</strong>
+        <span>1,000+ reviews</span>
       </div>
 
     </div>
 
 
-    <!-- =========================
-         RIGHT — CONFIGURATOR
-    ========================== -->
+    <!-- STEP 01 -->
 
-    <div class="qp-configurator">
+    <div class="qp-step">
 
-      <div class="qp-header">
-
-        <div class="qp-eyebrow">
-          {{ section.settings.eyebrow }}
-        </div>
-
-        <h1>
-          {{ section.settings.heading }}
-        </h1>
-
-        <p class="qp-subheading">
-          {{ section.settings.subheading }}
-        </p>
-
-        <div class="qp-rating">
-          <span>★★★★★</span>
-          <strong>{{ section.settings.rating }}</strong>
-          <small>{{ section.settings.review_text }}</small>
-        </div>
-
+      <div class="qp-step__heading">
+        <span>01</span>
+        <h2>Choose your device</h2>
       </div>
 
+      <div class="qp-product-card qp-product-card--active">
 
-      <!-- STEP 01 -->
+        <div class="qp-product-card__radio"></div>
 
-      <div class="qp-step">
-
-        <div class="qp-step__top">
-          <div>
-            <span class="qp-step-number">01</span>
-            <strong>{{ section.settings.step_1_title }}</strong>
-          </div>
-
-          <span class="qp-step-price">
-            {{ section.settings.base_price | money }}
-          </span>
-        </div>
-
-
-        <div class="qp-option qp-option--selected">
-
-          <div class="qp-option__radio"></div>
-
-          <div class="qp-option__content">
-
-            <strong>
-              {{ section.settings.product_name }}
-            </strong>
-
-            <span>
-              {{ section.settings.product_description }}
-            </span>
-
-          </div>
+        <div class="qp-product-card__info">
 
           <strong>
-            {{ section.settings.base_price | money }}
+            {{ product.title }}
           </strong>
 
-        </div>
-
-      </div>
-
-
-      <!-- STEP 02 -->
-
-      <div class="qp-step">
-
-        <div class="qp-step__top">
-
-          <div>
-            <span class="qp-step-number">02</span>
-            <strong>{{ section.settings.step_2_title }}</strong>
-          </div>
-
-        </div>
-
-
-        <div class="qp-options">
-
-          <button
-            type="button"
-            class="qp-choice active"
-            data-price="0"
-          >
-
-            <span class="qp-choice__radio"></span>
-
-            <span class="qp-choice__text">
-              <strong>{{ section.settings.option_1_title }}</strong>
-              <small>{{ section.settings.option_1_text }}</small>
-            </span>
-
-            <span class="qp-choice__price">
-              Included
-            </span>
-
-          </button>
-
-
-          <button
-            type="button"
-            class="qp-choice"
-            data-price="{{ section.settings.option_2_price | times: 100 }}"
-          >
-
-            <span class="qp-choice__radio"></span>
-
-            <span class="qp-choice__text">
-              <strong>{{ section.settings.option_2_title }}</strong>
-              <small>{{ section.settings.option_2_text }}</small>
-            </span>
-
-            <span class="qp-choice__price">
-              +{{ section.settings.option_2_price | money }}
-            </span>
-
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- STEP 03 -->
-
-      <div class="qp-step">
-
-        <div class="qp-step__top">
-
-          <div>
-            <span class="qp-step-number">03</span>
-            <strong>{{ section.settings.step_3_title }}</strong>
-          </div>
-
-        </div>
-
-
-        <div class="qp-addons">
-
-          <label class="qp-addon">
-
-            <input
-              type="checkbox"
-              class="qp-addon-input"
-              data-price="{{ section.settings.addon_1_price | times: 100 }}"
-            >
-
-            <span class="qp-addon-check"></span>
-
-            <span class="qp-addon-info">
-
-              <strong>
-                {{ section.settings.addon_1_title }}
-              </strong>
-
-              <small>
-                {{ section.settings.addon_1_text }}
-              </small>
-
-            </span>
-
-            <strong>
-              +{{ section.settings.addon_1_price | money }}
-            </strong>
-
-          </label>
-
-
-          <label class="qp-addon">
-
-            <input
-              type="checkbox"
-              class="qp-addon-input"
-              data-price="{{ section.settings.addon_2_price | times: 100 }}"
-            >
-
-            <span class="qp-addon-check"></span>
-
-            <span class="qp-addon-info">
-
-              <strong>
-                {{ section.settings.addon_2_title }}
-              </strong>
-
-              <small>
-                {{ section.settings.addon_2_text }}
-              </small>
-
-            </span>
-
-            <strong>
-              +{{ section.settings.addon_2_price | money }}
-            </strong>
-
-          </label>
-
-        </div>
-
-      </div>
-
-
-      <!-- GUARANTEE -->
-
-      <div class="qp-trust">
-
-        <div>
-          <strong>60-Day Trial</strong>
-          <span>Try it at home.</span>
-        </div>
-
-        <div>
-          <strong>2-Year Warranty</strong>
-          <span>Built for everyday use.</span>
-        </div>
-
-        <div>
-          <strong>Free Shipping</strong>
-          <span>Worldwide delivery.</span>
-        </div>
-
-      </div>
-
-
-      <!-- SUMMARY -->
-
-      <div class="qp-summary">
-
-        <div class="qp-summary__row">
-
-          <span>Your QUESTPROPS™</span>
-
-          <strong
-            class="qp-total"
-            data-total
-          >
-            {{ section.settings.base_price | money }}
-          </strong>
-
-        </div>
-
-
-        <div class="qp-summary__details">
           <span>
-            {{ section.settings.product_name }}
+            EMS stimulation + soothing heat
           </span>
 
-          <span>
-            {{ section.settings.delivery_text }}
-          </span>
         </div>
 
+        <strong class="qp-product-card__price">
+          {{ cfg_variant.price | money }}
+        </strong>
+
+      </div>
+
+    </div>
+
+
+    <!-- STEP 02 -->
+
+    <div class="qp-step">
+
+      <div class="qp-step__heading">
+        <span>02</span>
+        <h2>Choose your finish</h2>
+      </div>
+
+      <div class="qp-colors">
 
         <button
           type="button"
-          class="qp-add-cart"
-          data-add-to-cart
+          class="qp-color qp-color--active"
+          data-color="black"
         >
-          <span>{{ section.settings.button_text }}</span>
-          <span class="qp-button-price">
-            {{ section.settings.base_price | money }}
-          </span>
+          <span class="qp-color__swatch qp-color__swatch--black"></span>
+          <span>Black</span>
         </button>
 
-        <div class="qp-secure">
-          Secure checkout · Free shipping · 60-day trial
+        <button
+          type="button"
+          class="qp-color"
+          data-color="white"
+        >
+          <span class="qp-color__swatch qp-color__swatch--white"></span>
+          <span>White</span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- STEP 03 -->
+
+    <div class="qp-step">
+
+      <div class="qp-step__heading">
+        <span>03</span>
+        <h2>Add your essentials</h2>
+      </div>
+
+
+      <div class="qp-options">
+
+        <label class="qp-option">
+
+          <input
+            type="checkbox"
+            data-option="remote"
+          >
+
+          <span class="qp-option__check"></span>
+
+          <span class="qp-option__content">
+
+            <strong>
+              Remote Control
+            </strong>
+
+            <small>
+              Adjust your routine without reaching
+              for the device.
+            </small>
+
+          </span>
+
+          <strong class="qp-option__price">
+            +$19
+          </strong>
+
+        </label>
+
+
+        <label class="qp-option">
+
+          <input
+            type="checkbox"
+            data-option="case"
+          >
+
+          <span class="qp-option__check"></span>
+
+          <span class="qp-option__content">
+
+            <strong>
+              Travel Case
+            </strong>
+
+            <small>
+              Keep your daily reset ready wherever
+              you go.
+            </small>
+
+          </span>
+
+          <strong class="qp-option__price">
+            +$15
+          </strong>
+
+        </label>
+
+
+        <label class="qp-option">
+
+          <input
+            type="checkbox"
+            data-option="accessories"
+          >
+
+          <span class="qp-option__check"></span>
+
+          <span class="qp-option__content">
+
+            <strong>
+              Extra Accessories
+            </strong>
+
+            <small>
+              Keep your setup ready for everyday use.
+            </small>
+
+          </span>
+
+          <strong class="qp-option__price">
+            +$9
+          </strong>
+
+        </label>
+
+      </div>
+
+    </div>
+
+
+    <!-- STEP 04 -->
+
+    <div class="qp-step">
+
+      <div class="qp-step__heading">
+        <span>04</span>
+        <h2>Protection</h2>
+      </div>
+
+      <label class="qp-option">
+
+        <input
+          type="checkbox"
+          checked
+          disabled
+        >
+
+        <span class="qp-option__check qp-option__check--included">
+          ✓
+        </span>
+
+        <span class="qp-option__content">
+
+          <strong>
+            2-Year Warranty
+          </strong>
+
+          <small>
+            Included with every QUESTPROPS™ device.
+          </small>
+
+        </span>
+
+        <strong class="qp-option__price">
+          Included
+        </strong>
+
+      </label>
+
+    </div>
+
+
+    <!-- TRUST -->
+
+    <div class="qp-trust">
+
+      <div>
+        <strong>60-Day Trial</strong>
+        <span>Try it at home.</span>
+      </div>
+
+      <div>
+        <strong>2-Year Warranty</strong>
+        <span>Built for everyday use.</span>
+      </div>
+
+      <div>
+        <strong>Free Shipping</strong>
+        <span>Worldwide delivery.</span>
+      </div>
+
+    </div>
+
+
+    <!-- SUMMARY -->
+
+    <div class="qp-summary">
+
+      <div class="qp-summary__heading">
+
+        <span>
+          Your QUESTPROPS™
+        </span>
+
+        <strong data-total>
+          {{ cfg_variant.price | money }}
+        </strong>
+
+      </div>
+
+
+      <div
+        class="qp-summary__items"
+        data-summary
+      >
+
+        <div>
+          <span>{{ product.title }}</span>
+          <span>{{ cfg_variant.price | money }}</span>
         </div>
 
+      </div>
+
+
+      <button
+        type="button"
+        class="qp-summary__button"
+        data-add-to-cart
+      >
+
+        <span>
+          ADD TO CART
+        </span>
+
+        <span data-button-price>
+          {{ cfg_variant.price | money }}
+        </span>
+
+      </button>
+
+
+      <div class="qp-summary__note">
+        Secure checkout · Free shipping · 60-day trial
       </div>
 
     </div>
@@ -414,40 +438,38 @@
 
 <style>
 
-#QP-Configure-{{ section.id }} {
+#QuestConfigurator-{{ section.id }} {
+
   --qp-black: #111111;
   --qp-white: #ffffff;
-  --qp-gray: #f5f5f3;
-  --qp-border: #dededb;
-  --qp-muted: #737373;
-  --qp-accent: #111111;
+  --qp-bg: #f5f5f3;
+  --qp-gray: #777777;
+  --qp-border: #e4e4e1;
 
-  background: var(--qp-gray);
+  --qp-space-xs: 8px;
+  --qp-space-sm: 12px;
+  --qp-space-md: 20px;
+  --qp-space-lg: 32px;
+  --qp-space-xl: 48px;
+  --qp-space-2xl: 72px;
+  --qp-space-3xl: 110px;
+
   color: var(--qp-black);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--qp-white);
+
+  font-family:
+    inherit;
+
+  -webkit-font-smoothing: antialiased;
+
 }
 
 
-#QP-Configure-{{ section.id }} * {
-  box-sizing: border-box;
-}
+/* ===============================
+   MAIN GRID
+================================ */
 
-
-#QP-Configure-{{ section.id }} button {
-  font-family: inherit;
-}
-
-
-/* =========================
-   MAIN LAYOUT
-========================= */
-
-#QP-Configure-{{ section.id }} .qp-configure__shell {
-
-  width: 100%;
-  max-width: 1500px;
-
-  margin: 0 auto;
+#QuestConfigurator-{{ section.id }} .qp-config {
 
   display: grid;
 
@@ -456,386 +478,369 @@
     minmax(420px, .65fr);
 
   min-height: 100vh;
+
 }
 
 
-/* =========================
-   PRODUCT VISUAL
-========================= */
+/* ===============================
+   VISUAL
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-visual {
+#QuestConfigurator-{{ section.id }} .qp-config__visual {
 
   position: sticky;
+
   top: 0;
 
   height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 60px;
-
-  background: #eeeeec;
-
   overflow: hidden;
+
+  background: var(--qp-bg);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-visual__stage {
+#QuestConfigurator-{{ section.id }} .qp-config__visual-inner {
 
   position: relative;
 
-  width: min(760px, 90%);
+  width: 100%;
 
-  aspect-ratio: 1 / 1;
+  height: 100%;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-product-image {
+#QuestConfigurator-{{ section.id }} .qp-config__product-image {
 
-  width: 100%;
-  height: 100%;
+  width: min(850px, 88%);
+
+  height: auto;
+
+  max-height: 82vh;
 
   object-fit: contain;
 
   display: block;
 
-  user-select: none;
-
-  transition:
-    transform .5s cubic-bezier(.2,.7,.2,1);
 }
 
 
-#QP-Configure-{{ section.id }} .qp-visual:hover .qp-product-image {
-  transform: scale(1.025);
-}
-
-
-#QP-Configure-{{ section.id }} .qp-placeholder {
+#QuestConfigurator-{{ section.id }} .qp-config__placeholder {
 
   width: 70%;
-  height: 70%;
 
-  border: 1px dashed #aaa;
+  aspect-ratio: 1;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
-  color: #777;
+  background: #eeeeeb;
 
-  font-size: 14px;
+  font-size: 28px;
+
+  letter-spacing: .08em;
+
 }
 
 
-/* =========================
+/* ===============================
    HOTSPOTS
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-hotspot {
+#QuestConfigurator-{{ section.id }} .qp-hotspot {
 
   position: absolute;
 
+  left: var(--x);
+
+  top: var(--y);
+
+  z-index: 5;
+
+  width: 44px;
+
+  height: 44px;
+
   transform: translate(-50%, -50%);
 
-  width: 42px;
-  height: 42px;
+  border: 1px solid rgba(0,0,0,.12);
 
   border-radius: 50%;
 
-  border: 1px solid rgba(0,0,0,.15);
-
   background: rgba(255,255,255,.96);
 
+  color: var(--qp-black);
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   cursor: pointer;
 
-  padding: 0;
-
-  z-index: 10;
-
   box-shadow:
-    0 8px 30px rgba(0,0,0,.12);
+    0 10px 35px rgba(0,0,0,.13);
 
   transition:
     transform .25s ease,
     box-shadow .25s ease;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-hotspot::before {
-
-  content: "";
-
-  position: absolute;
-
-  inset: -7px;
-
-  border: 1px solid rgba(0,0,0,.16);
-
-  border-radius: 50%;
-
-  animation: qp-pulse 2.2s infinite;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-hotspot span {
-
-  font-size: 23px;
-
-  line-height: 1;
-
-  font-weight: 300;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-hotspot:hover {
+#QuestConfigurator-{{ section.id }} .qp-hotspot:hover {
 
   transform:
     translate(-50%, -50%)
     scale(1.12);
 
   box-shadow:
-    0 12px 35px rgba(0,0,0,.18);
-}
-
-
-@keyframes qp-pulse {
-
-  0% {
-    opacity: .7;
-    transform: scale(.8);
-  }
-
-  70% {
-    opacity: 0;
-    transform: scale(1.45);
-  }
-
-  100% {
-    opacity: 0;
-  }
+    0 16px 45px rgba(0,0,0,.18);
 
 }
 
 
-/* =========================
+#QuestConfigurator-{{ section.id }} .qp-hotspot span {
+
+  font-size: 23px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+}
+
+
+/* ===============================
    HOTSPOT CARD
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-hotspot-card {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card {
 
   position: absolute;
 
-  width: 290px;
+  z-index: 20;
 
-  padding: 26px;
+  top: 15%;
 
-  background: rgba(255,255,255,.98);
+  right: 6%;
+
+  width: 310px;
+
+  padding: 30px;
+
+  background:
+    rgba(255,255,255,.97);
 
   border-radius: 16px;
 
   box-shadow:
-    0 20px 70px rgba(0,0,0,.18);
-
-  z-index: 30;
+    0 20px 60px rgba(0,0,0,.12);
 
   opacity: 0;
 
   pointer-events: none;
 
-  transform:
-    translateY(10px)
-    scale(.97);
+  transform: translateY(15px);
 
   transition:
     opacity .25s ease,
     transform .25s ease;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-hotspot-card.is-open {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card.is-active {
 
   opacity: 1;
 
   pointer-events: auto;
 
-  transform:
-    translateY(0)
-    scale(1);
+  transform: translateY(0);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-card-close {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card__close {
 
   position: absolute;
 
-  right: 13px;
   top: 10px;
 
-  width: 30px;
-  height: 30px;
+  right: 14px;
 
   border: 0;
 
   background: transparent;
 
-  font-size: 23px;
+  font-size: 25px;
 
   cursor: pointer;
 
-  color: #777;
+  color: var(--qp-gray);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-card-number {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card__number {
 
-  font-size: 11px;
+  margin-bottom: 14px;
 
-  letter-spacing: .15em;
+  color: var(--qp-gray);
 
-  color: #888;
+  font-size: 10px;
 
-  margin-bottom: 15px;
+  letter-spacing: .16em;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-hotspot-card h3 {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card__title {
 
-  margin: 0 0 9px;
+  margin: 0 0 10px;
 
-  font-size: 22px;
+  font-size: 25px;
 
-  letter-spacing: -.03em;
+  line-height: 1;
+
+  letter-spacing: -.04em;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-hotspot-card p {
+#QuestConfigurator-{{ section.id }} .qp-hotspot-card__text {
 
   margin: 0;
 
-  color: #666;
+  color: var(--qp-gray);
+
+  font-size: 14px;
 
   line-height: 1.55;
 
-  font-size: 14px;
 }
 
 
-/* =========================
+/* ===============================
    VISUAL LABEL
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-visual__label {
+#QuestConfigurator-{{ section.id }} .qp-config__visual-label {
 
   position: absolute;
 
-  left: 40px;
-  bottom: 32px;
+  left: 30px;
+
+  bottom: 26px;
 
   display: flex;
 
   align-items: center;
 
-  gap: 8px;
+  gap: 9px;
 
-  font-size: 11px;
+  color: var(--qp-gray);
 
-  text-transform: uppercase;
+  font-size: 10px;
 
-  letter-spacing: .12em;
+  letter-spacing: .14em;
 
-  color: #666;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-label-dot {
+#QuestConfigurator-{{ section.id }} .qp-config__visual-label span {
 
   width: 7px;
+
   height: 7px;
 
   border-radius: 50%;
 
-  background: #111;
+  background: var(--qp-black);
+
 }
 
 
-/* =========================
-   CONFIGURATOR
-========================= */
+/* ===============================
+   CONTENT
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-configurator {
-
-  background: #fff;
+#QuestConfigurator-{{ section.id }} .qp-config__content {
 
   padding:
     70px
-    clamp(30px, 5vw, 90px);
+    clamp(28px, 5vw, 78px)
+    90px;
 
-  min-height: 100vh;
+  background: var(--qp-white);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-header {
+#QuestConfigurator-{{ section.id }} .qp-config__header {
 
-  margin-bottom: 50px;
+  margin-bottom: var(--qp-space-3xl);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-eyebrow {
+#QuestConfigurator-{{ section.id }} .qp-config__eyebrow {
 
-  font-size: 11px;
+  margin-bottom: 18px;
 
-  letter-spacing: .16em;
+  color: var(--qp-gray);
 
-  text-transform: uppercase;
+  font-size: 10px;
 
-  color: #777;
+  letter-spacing: .17em;
 
-  margin-bottom: 16px;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-header h1 {
+#QuestConfigurator-{{ section.id }} .qp-config__title {
 
   margin: 0;
 
-  font-size: clamp(38px, 4vw, 64px);
+  font-size:
+    clamp(46px, 5vw, 70px);
 
-  line-height: .95;
+  line-height: .92;
 
-  letter-spacing: -.055em;
+  letter-spacing: -.06em;
 
   font-weight: 600;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-subheading {
+#QuestConfigurator-{{ section.id }} .qp-config__intro {
 
-  max-width: 460px;
+  max-width: 420px;
 
-  margin: 22px 0 0;
+  margin: 25px 0 0;
 
-  color: #686868;
+  color: var(--qp-gray);
 
-  font-size: 16px;
+  font-size: 14px;
 
-  line-height: 1.55;
+  line-height: 1.6;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-rating {
-
-  margin-top: 24px;
+#QuestConfigurator-{{ section.id }} .qp-config__rating {
 
   display: flex;
 
@@ -843,81 +848,73 @@
 
   gap: 8px;
 
-  font-size: 13px;
+  margin-top: 22px;
+
+  font-size: 11px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-rating span {
+#QuestConfigurator-{{ section.id }} .qp-config__rating span:first-child {
 
   letter-spacing: 2px;
 
-  font-size: 12px;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-rating small {
-
-  color: #777;
-}
-
-
-/* =========================
+/* ===============================
    STEPS
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-step {
+#QuestConfigurator-{{ section.id }} .qp-step {
 
-  padding: 28px 0;
+  padding:
+    31px 0;
 
-  border-top: 1px solid var(--qp-border);
+  border-top:
+    1px solid var(--qp-border);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-step__top {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin-bottom: 18px;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-step__top > div {
+#QuestConfigurator-{{ section.id }} .qp-step__heading {
 
   display: flex;
 
   align-items: center;
 
   gap: 13px;
+
+  margin-bottom: 18px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-step-number {
+#QuestConfigurator-{{ section.id }} .qp-step__heading > span {
 
-  color: #888;
+  color: var(--qp-gray);
 
-  font-size: 11px;
+  font-size: 10px;
 
-  letter-spacing: .08em;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-step-price {
+#QuestConfigurator-{{ section.id }} .qp-step__heading h2 {
 
-  font-size: 13px;
+  margin: 0;
 
-  color: #777;
+  font-size: 16px;
+
+  font-weight: 500;
+
 }
 
 
-/* =========================
-   PRODUCT OPTION
-========================= */
+/* ===============================
+   PRODUCT
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-option {
+#QuestConfigurator-{{ section.id }} .qp-product-card {
 
   display: flex;
 
@@ -925,28 +922,43 @@
 
   gap: 14px;
 
+  width: 100%;
+
   padding: 18px;
 
-  border: 1px solid #111;
+  border:
+    1px solid var(--qp-border);
 
-  border-radius: 10px;
+  border-radius: 12px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-option__radio {
+#QuestConfigurator-{{ section.id }} .qp-product-card--active {
 
-  width: 17px;
-  height: 17px;
+  border-color:
+    var(--qp-black);
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-product-card__radio {
+
+  width: 18px;
+
+  height: 18px;
+
+  flex: 0 0 auto;
 
   border-radius: 50%;
 
-  border: 5px solid #111;
+  border:
+    5px solid var(--qp-black);
 
-  flex: 0 0 auto;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-option__content {
+#QuestConfigurator-{{ section.id }} .qp-product-card__info {
 
   flex: 1;
 
@@ -955,40 +967,108 @@
   flex-direction: column;
 
   gap: 5px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-option__content span {
+#QuestConfigurator-{{ section.id }} .qp-product-card__info span {
 
-  font-size: 12px;
+  color: var(--qp-gray);
 
-  color: #777;
+  font-size: 11px;
+
 }
 
 
-/* =========================
-   CHOICES
-========================= */
+/* ===============================
+   COLORS
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-options {
+#QuestConfigurator-{{ section.id }} .qp-colors {
 
-  display: grid;
+  display: flex;
 
   gap: 10px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-choice {
+#QuestConfigurator-{{ section.id }} .qp-color {
 
-  width: 100%;
+  min-width: 120px;
 
-  border: 1px solid var(--qp-border);
+  padding: 14px;
 
-  background: #fff;
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px solid var(--qp-border);
 
   border-radius: 10px;
 
-  padding: 17px;
+  background: #fff;
+
+  cursor: pointer;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-color--active {
+
+  border-color:
+    var(--qp-black);
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-color__swatch {
+
+  width: 22px;
+
+  height: 22px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid #ccc;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-color__swatch--black {
+
+  background: #111;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-color__swatch--white {
+
+  background: #fff;
+
+}
+
+
+/* ===============================
+   OPTIONS
+================================ */
+
+#QuestConfigurator-{{ section.id }} .qp-options {
+
+  display: grid;
+
+  gap: 9px;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-option {
+
+  position: relative;
 
   display: flex;
 
@@ -996,165 +1076,113 @@
 
   gap: 13px;
 
-  text-align: left;
+  padding: 17px;
+
+  border:
+    1px solid var(--qp-border);
+
+  border-radius: 11px;
 
   cursor: pointer;
 
   transition:
-    border .2s ease,
+    border-color .2s ease,
     background .2s ease;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-choice:hover {
+#QuestConfigurator-{{ section.id }} .qp-option:has(input:checked) {
 
-  border-color: #999;
+  border-color:
+    var(--qp-black);
+
+  background:
+    #fafafa;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-choice.active {
-
-  border-color: #111;
-
-  background: #fafafa;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-choice__radio {
-
-  width: 17px;
-  height: 17px;
-
-  border: 1px solid #999;
-
-  border-radius: 50%;
-
-  flex: 0 0 auto;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-choice.active .qp-choice__radio {
-
-  border: 5px solid #111;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-choice__text {
-
-  flex: 1;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 5px;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-choice__text small {
-
-  color: #777;
-
-  font-size: 12px;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-choice__price {
-
-  font-size: 12px;
-}
-
-
-/* =========================
-   ADDONS
-========================= */
-
-#QP-Configure-{{ section.id }} .qp-addons {
-
-  display: grid;
-
-  gap: 10px;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-addon {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-
-  padding: 17px;
-
-  border: 1px solid var(--qp-border);
-
-  border-radius: 10px;
-
-  cursor: pointer;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-addon:has(input:checked) {
-
-  border-color: #111;
-
-  background: #fafafa;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-addon-input {
+#QuestConfigurator-{{ section.id }} .qp-option input {
 
   position: absolute;
 
   opacity: 0;
 
   pointer-events: none;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-addon-check {
+#QuestConfigurator-{{ section.id }} .qp-option__check {
 
   width: 18px;
+
   height: 18px;
-
-  border: 1px solid #999;
-
-  border-radius: 4px;
 
   flex: 0 0 auto;
 
-  position: relative;
+  border:
+    1px solid #aaa;
+
+  border-radius: 4px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-addon-input:checked
-~ .qp-addon-check {
+#QuestConfigurator-{{ section.id }} .qp-option input:checked
+~ .qp-option__check {
 
-  background: #111;
+  background:
+    var(--qp-black);
 
-  border-color: #111;
+  border-color:
+    var(--qp-black);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-addon-input:checked
-~ .qp-addon-check::after {
+#QuestConfigurator-{{ section.id }} .qp-option input:checked
+~ .qp-option__check::after {
 
   content: "✓";
 
+  display: block;
+
   color: #fff;
 
-  font-size: 12px;
+  font-size: 11px;
 
-  position: absolute;
+  line-height: 17px;
 
-  left: 3px;
+  text-align: center;
 
-  top: 0px;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-addon-info {
+#QuestConfigurator-{{ section.id }} .qp-option__check--included {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    var(--qp-black);
+
+  color:
+    #fff;
+
+  border-color:
+    var(--qp-black);
+
+  font-size: 11px;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-option__content {
 
   flex: 1;
 
@@ -1163,345 +1191,377 @@
   flex-direction: column;
 
   gap: 4px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-addon-info small {
+#QuestConfigurator-{{ section.id }} .qp-option__content small {
 
-  color: #777;
+  color:
+    var(--qp-gray);
+
+  font-size: 11px;
+
+  line-height: 1.45;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-option__price {
+
+  white-space: nowrap;
 
   font-size: 12px;
+
 }
 
 
-/* =========================
+/* ===============================
    TRUST
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-trust {
+#QuestConfigurator-{{ section.id }} .qp-trust {
 
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    repeat(3, 1fr);
 
-  border-top: 1px solid var(--qp-border);
+  border-top:
+    1px solid var(--qp-border);
 
-  border-bottom: 1px solid var(--qp-border);
+  border-bottom:
+    1px solid var(--qp-border);
 
-  margin-top: 10px;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-trust > div {
+#QuestConfigurator-{{ section.id }} .qp-trust > div {
 
-  padding: 20px 10px;
+  padding: 20px 8px;
 
   display: flex;
 
   flex-direction: column;
 
   gap: 5px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-trust > div + div {
+#QuestConfigurator-{{ section.id }} .qp-trust > div + div {
 
-  border-left: 1px solid var(--qp-border);
+  border-left:
+    1px solid var(--qp-border);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-trust strong {
-
-  font-size: 12px;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-trust span {
+#QuestConfigurator-{{ section.id }} .qp-trust strong {
 
   font-size: 10px;
 
-  color: #777;
-
-  line-height: 1.4;
 }
 
 
-/* =========================
+#QuestConfigurator-{{ section.id }} .qp-trust span {
+
+  color: var(--qp-gray);
+
+  font-size: 9px;
+
+}
+
+
+/* ===============================
    SUMMARY
-========================= */
+================================ */
 
-#QP-Configure-{{ section.id }} .qp-summary {
-
-  padding-top: 30px;
+#QuestConfigurator-{{ section.id }} .qp-summary {
 
   position: sticky;
 
   bottom: 0;
 
-  background: #fff;
-
   z-index: 20;
+
+  padding-top: 28px;
+
+  background:
+    #fff;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-summary__row {
+#QuestConfigurator-{{ section.id }} .qp-summary__heading {
 
   display: flex;
-
-  justify-content: space-between;
 
   align-items: center;
 
-  margin-bottom: 10px;
+  justify-content: space-between;
+
+  margin-bottom: 11px;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-total {
+#QuestConfigurator-{{ section.id }} .qp-summary__heading strong {
 
-  font-size: 23px;
+  font-size: 25px;
 
   letter-spacing: -.03em;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-summary__details {
+#QuestConfigurator-{{ section.id }} .qp-summary__items {
+
+  margin-bottom: 15px;
+
+  color: var(--qp-gray);
+
+  font-size: 10px;
+
+}
+
+
+#QuestConfigurator-{{ section.id }} .qp-summary__items div {
 
   display: flex;
 
   justify-content: space-between;
 
-  color: #777;
+  gap: 15px;
 
-  font-size: 11px;
+  margin-bottom: 4px;
 
-  margin-bottom: 14px;
 }
 
 
-#QP-Configure-{{ section.id }} .qp-add-cart {
+#QuestConfigurator-{{ section.id }} .qp-summary__button {
 
   width: 100%;
 
   min-height: 60px;
 
+  padding: 0 22px;
+
   border: 0;
 
-  border-radius: 5px;
+  border-radius: 6px;
 
-  background: #111;
+  background:
+    var(--qp-black);
 
-  color: #fff;
-
-  padding: 0 22px;
+  color:
+    #fff;
 
   display: flex;
 
-  justify-content: space-between;
-
   align-items: center;
+
+  justify-content: space-between;
 
   cursor: pointer;
 
-  font-size: 14px;
-
   transition:
-    transform .2s ease,
-    opacity .2s ease;
+    opacity .2s ease,
+    transform .2s ease;
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-add-cart:hover {
+#QuestConfigurator-{{ section.id }} .qp-summary__button:hover {
 
-  transform: translateY(-2px);
+  opacity: .88;
 
-  opacity: .9;
+  transform:
+    translateY(-2px);
+
 }
 
 
-#QP-Configure-{{ section.id }} .qp-button-price {
+#QuestConfigurator-{{ section.id }} .qp-summary__note {
 
-  font-weight: 600;
-}
-
-
-#QP-Configure-{{ section.id }} .qp-secure {
+  margin-top: 10px;
 
   text-align: center;
 
-  font-size: 10px;
+  color: var(--qp-gray);
 
-  color: #888;
+  font-size: 9px;
 
-  padding-top: 11px;
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* ===============================
+   TABLET / MOBILE
+================================ */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 990px) {
 
-  #QP-Configure-{{ section.id }} .qp-configure__shell {
+  #QuestConfigurator-{{ section.id }} .qp-config {
 
     display: block;
 
-    min-height: auto;
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-visual {
+  #QuestConfigurator-{{ section.id }} .qp-config__visual {
 
     position: relative;
 
-    top: auto;
+    height: 68vh;
 
-    height: auto;
+    min-height: 480px;
 
-    min-height: 72vh;
-
-    padding: 30px 20px;
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-visual__stage {
-
-    width: 100%;
-
-    max-width: 600px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-configurator {
-
-    min-height: auto;
+  #QuestConfigurator-{{ section.id }} .qp-config__content {
 
     padding:
-      45px
-      20px
-      30px;
+      48px 24px 125px;
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-header {
+  #QuestConfigurator-{{ section.id }} .qp-hotspot-card {
 
-    margin-bottom: 35px;
+    top: 50%;
+
+    left: 50%;
+
+    right: auto;
+
+    transform:
+      translate(-50%, -45%);
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-header h1 {
+  #QuestConfigurator-{{ section.id }} .qp-hotspot-card.is-active {
 
-    font-size: 42px;
+    transform:
+      translate(-50%, -50%);
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-summary {
+  #QuestConfigurator-{{ section.id }} .qp-summary {
 
-    position: sticky;
+    position: fixed;
+
+    left: 0;
+
+    right: 0;
 
     bottom: 0;
 
-    margin-left: -20px;
-
-    margin-right: -20px;
-
     padding:
-      16px 20px
-      calc(16px + env(safe-area-inset-bottom));
+      10px 18px
+      calc(10px + env(safe-area-inset-bottom));
 
     box-shadow:
-      0 -8px 25px rgba(0,0,0,.07);
+      0 -10px 35px rgba(0,0,0,.08);
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-trust {
+  #QuestConfigurator-{{ section.id }} .qp-summary__note {
+
+    display: none;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-summary__button {
+
+    min-height: 52px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #QuestConfigurator-{{ section.id }} .qp-config__visual {
+
+    height: 62vh;
+
+    min-height: 420px;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-config__product-image {
+
+    width: 94%;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-config__title {
+
+    font-size: 43px;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-config__content {
+
+    padding:
+      42px 16px 120px;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-hotspot {
+
+    width: 38px;
+
+    height: 38px;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-hotspot-card {
+
+    width:
+      calc(100% - 32px);
+
+    padding: 25px;
+
+  }
+
+
+  #QuestConfigurator-{{ section.id }} .qp-trust {
 
     grid-template-columns: 1fr;
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-trust > div {
+  #QuestConfigurator-{{ section.id }} .qp-trust > div {
 
     flex-direction: row;
 
     justify-content: space-between;
 
     padding: 13px 0;
+
   }
 
 
-  #QP-Configure-{{ section.id }} .qp-trust > div + div {
+  #QuestConfigurator-{{ section.id }} .qp-trust > div + div {
 
     border-left: 0;
 
-    border-top: 1px solid var(--qp-border);
-  }
+    border-top:
+      1px solid var(--qp-border);
 
-
-  #QP-Configure-{{ section.id }} .qp-hotspot {
-
-    width: 36px;
-    height: 36px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-hotspot-card {
-
-    width: min(290px, calc(100vw - 60px));
-
-    left: 50% !important;
-
-    top: 50% !important;
-
-    transform:
-      translate(-50%, -45%)
-      scale(.97);
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-hotspot-card.is-open {
-
-    transform:
-      translate(-50%, -50%)
-      scale(1);
-  }
-
-}
-
-
-/* SMALL MOBILE */
-
-@media (max-width: 480px) {
-
-  #QP-Configure-{{ section.id }} .qp-visual {
-
-    min-height: 62vh;
-
-    padding: 20px 12px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-header h1 {
-
-    font-size: 37px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-option {
-
-    padding: 14px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-choice {
-
-    padding: 14px;
-  }
-
-
-  #QP-Configure-{{ section.id }} .qp-summary__details {
-
-    font-size: 10px;
   }
 
 }
@@ -1515,169 +1575,277 @@
 
   const root =
     document.getElementById(
-      'QP-Configure-{{ section.id }}'
+      'QuestConfigurator-{{ section.id }}'
     );
 
   if (!root) return;
 
 
-  /* =========================
-     HOTSPOTS
-  ========================== */
+  /* ===============================
+     DATA
+  =============================== */
 
-  const hotspots =
-    root.querySelectorAll('.qp-hotspot');
+  const options = {
 
-  const cards =
-    root.querySelectorAll('.qp-hotspot-card');
+    remote: {
+      name: 'Remote Control',
+      price: 19
+    },
+
+    case: {
+      name: 'Travel Case',
+      price: 15
+    },
+
+    accessories: {
+      name: 'Extra Accessories',
+      price: 9
+    }
+
+  };
 
 
-  hotspots.forEach(function(hotspot) {
+  const hotspots = {
 
-    hotspot.addEventListener('click', function() {
+    heat: {
+      number: '01',
+      title: 'Soothing Heat',
+      text:
+        'Gentle warmth designed to complement your daily 10-minute reset.'
+    },
 
-      const id =
-        hotspot.dataset.hotspot;
+    ems: {
+      number: '02',
+      title: 'EMS Stimulation',
+      text:
+        'Adjustable stimulation designed to complement your daily routine.'
+    },
 
-      cards.forEach(function(card) {
+    fit: {
+      number: '03',
+      title: 'Ergonomic Neck Fit',
+      text:
+        'Designed around the natural curve of your neck for everyday comfort.'
+    }
 
-        card.classList.remove('is-open');
+  };
 
-      });
 
-      const card =
-        root.querySelector(
-          '[data-card="' + id + '"]'
-        );
+  /* ===============================
+     STATE
+  =============================== */
 
-      if (card) {
+  const state = {
 
-        card.classList.add('is-open');
+    selectedOptions: [],
+
+    color: 'black',
+
+    basePrice:
+      Number(
+        root.dataset.basePrice
+      ) / 100
+
+  };
+
+
+  /* ===============================
+     ELEMENTS
+  =============================== */
+
+  const totalElement =
+    root.querySelector('[data-total]');
+
+  const buttonPrice =
+    root.querySelector('[data-button-price]');
+
+  const summary =
+    root.querySelector('[data-summary]');
+
+  const addButton =
+    root.querySelector('[data-add-to-cart]');
+
+  const hotspotCard =
+    root.querySelector('[data-hotspot-card]');
+
+  const hotspotNumber =
+    root.querySelector('[data-hotspot-number]');
+
+  const hotspotTitle =
+    root.querySelector('[data-hotspot-title]');
+
+  const hotspotText =
+    root.querySelector('[data-hotspot-text]');
+
+  const hotspotClose =
+    root.querySelector('[data-hotspot-close]');
+
+
+  /* ===============================
+     MONEY
+  =============================== */
+
+  function money(value) {
+
+    return new Intl.NumberFormat(
+      '{{ localization.language.iso_code }}',
+      {
+        style: 'currency',
+        currency: '{{ shop.currency }}'
+      }
+    ).format(value);
+
+  }
+
+
+  /* ===============================
+     TOTAL
+  =============================== */
+
+  function calculateTotal() {
+
+    let total =
+      state.basePrice;
+
+
+    state.selectedOptions.forEach(
+      function(id) {
+
+        if (options[id]) {
+
+          total +=
+            options[id].price;
+
+        }
 
       }
+    );
 
-    });
 
-  });
+    return total;
 
+  }
+
+
+  /* ===============================
+     RENDER PRICE
+  =============================== */
+
+  function renderPrice() {
+
+    const total =
+      calculateTotal();
+
+    const formatted =
+      money(total);
+
+
+    if (totalElement) {
+
+      totalElement.textContent =
+        formatted;
+
+    }
+
+
+    if (buttonPrice) {
+
+      buttonPrice.textContent =
+        formatted;
+
+    }
+
+  }
+
+
+  /* ===============================
+     RENDER SUMMARY
+  =============================== */
+
+  function renderSummary() {
+
+    if (!summary) return;
+
+
+    let html = `
+
+      <div>
+
+        <span>
+          {{ product.title | escape }}
+        </span>
+
+        <span>
+          ${money(state.basePrice)}
+        </span>
+
+      </div>
+
+    `;
+
+
+    state.selectedOptions.forEach(
+      function(id) {
+
+        if (!options[id]) return;
+
+
+        html += `
+
+          <div>
+
+            <span>
+              ${options[id].name}
+            </span>
+
+            <span>
+              +${money(options[id].price)}
+            </span>
+
+          </div>
+
+        `;
+
+      }
+    );
+
+
+    summary.innerHTML =
+      html;
+
+  }
+
+
+  /* ===============================
+     COLOR
+  =============================== */
 
   root
-    .querySelectorAll('.qp-card-close')
+    .querySelectorAll('[data-color]')
     .forEach(function(button) {
 
       button.addEventListener(
         'click',
         function() {
 
-          cards.forEach(function(card) {
-
-            card.classList.remove(
-              'is-open'
-            );
-
-          });
-
-        }
-      );
-
-    });
-
-
-  /* =========================
-     PRICE CALCULATOR
-  ========================== */
-
-  const basePrice =
-    Number(
-      root.dataset.basePrice
-    ) || 0;
-
-
-  let selectedOptionPrice = 0;
-
-
-  const totalElement =
-    root.querySelector('[data-total]');
-
-  const buttonPrice =
-    root.querySelector('.qp-button-price');
-
-
-  function formatMoney(cents) {
-
-    return new Intl.NumberFormat(
-      '{{ localization.language.iso_code | default: "en" }}',
-      {
-        style: 'currency',
-        currency:
-          root.dataset.currency || 'USD'
-      }
-    ).format(cents / 100);
-
-  }
-
-
-  function updateTotal() {
-
-    let total =
-      basePrice +
-      selectedOptionPrice;
-
-
-    root
-      .querySelectorAll(
-        '.qp-addon-input:checked'
-      )
-      .forEach(function(input) {
-
-        total +=
-          Number(input.dataset.price) || 0;
-
-      });
-
-
-    totalElement.textContent =
-      formatMoney(total);
-
-    buttonPrice.textContent =
-      formatMoney(total);
-
-  }
-
-
-  /* =========================
-     OPTION SELECT
-  ========================== */
-
-  root
-    .querySelectorAll('.qp-choice')
-    .forEach(function(choice) {
-
-      choice.addEventListener(
-        'click',
-        function() {
-
           root
-            .querySelectorAll('.qp-choice')
+            .querySelectorAll('[data-color]')
             .forEach(function(item) {
 
               item.classList.remove(
-                'active'
+                'qp-color--active'
               );
 
             });
 
 
-          choice.classList.add('active');
+          button.classList.add(
+            'qp-color--active'
+          );
 
 
-          selectedOptionPrice =
-            Number(
-              choice.dataset.price
-            ) || 0;
-
-
-          updateTotal();
+          state.color =
+            button.dataset.color;
 
         }
       );
@@ -1685,111 +1853,264 @@
     });
 
 
-  /* =========================
-     ADDONS
-  ========================== */
+  /* ===============================
+     OPTIONS
+  =============================== */
 
   root
-    .querySelectorAll('.qp-addon-input')
+    .querySelectorAll('[data-option]')
     .forEach(function(input) {
 
       input.addEventListener(
         'change',
-        updateTotal
+        function() {
+
+          const id =
+            input.dataset.option;
+
+
+          if (input.checked) {
+
+            if (
+              !state.selectedOptions.includes(id)
+            ) {
+
+              state.selectedOptions.push(id);
+
+            }
+
+          } else {
+
+            state.selectedOptions =
+              state.selectedOptions.filter(
+                function(item) {
+
+                  return item !== id;
+
+                }
+              );
+
+          }
+
+
+          renderPrice();
+
+          renderSummary();
+
+        }
       );
 
     });
 
 
-  /* =========================
-     ADD TO CART
-  ========================== */
+  /* ===============================
+     HOTSPOTS
+  =============================== */
 
-  const addButton =
-    root.querySelector(
-      '[data-add-to-cart]'
+  root
+    .querySelectorAll('.qp-hotspot')
+    .forEach(function(button) {
+
+      button.addEventListener(
+        'click',
+        function() {
+
+          const id =
+            button.dataset.hotspot;
+
+          const data =
+            hotspots[id];
+
+          if (!data) return;
+
+
+          hotspotNumber.textContent =
+            data.number;
+
+          hotspotTitle.textContent =
+            data.title;
+
+          hotspotText.textContent =
+            data.text;
+
+
+          hotspotCard
+            .classList.add(
+              'is-active'
+            );
+
+
+          hotspotCard
+            .setAttribute(
+              'aria-hidden',
+              'false'
+            );
+
+        }
+      );
+
+    });
+
+
+  /* ===============================
+     CLOSE HOTSPOT
+  =============================== */
+
+  if (hotspotClose) {
+
+    hotspotClose.addEventListener(
+      'click',
+      function() {
+
+        hotspotCard
+          .classList.remove(
+            'is-active'
+          );
+
+
+        hotspotCard
+          .setAttribute(
+            'aria-hidden',
+            'true'
+          );
+
+      }
     );
 
-
-  addButton.addEventListener(
-    'click',
-    async function() {
-
-      addButton.disabled = true;
-
-      const original =
-        addButton.innerHTML;
-
-      addButton.innerHTML =
-        '<span>Adding...</span>';
+  }
 
 
-      try {
+  /* ===============================
+     ADD TO CART
+  =============================== */
 
-        const response =
-          await fetch(
-            '/cart/add.js',
-            {
-              method: 'POST',
+  if (addButton) {
 
-              headers: {
-                'Content-Type':
-                  'application/json',
-                'Accept':
-                  'application/json'
-              },
+    addButton.addEventListener(
+      'click',
+      async function() {
 
-              body: JSON.stringify({
-
-                items: [
-                  {
-                    id:
-                      {{ product.selected_or_first_available_variant.id }},
-                    quantity: 1
-                  }
-                ]
-
-              })
-
-            }
+        const variantId =
+          Number(
+            root.dataset.variantId
           );
 
 
-        if (!response.ok) {
+        if (!variantId) {
 
-          throw new Error(
-            'Add to cart failed'
+          console.error(
+            'Shopify variant ID missing.'
           );
+
+          return;
 
         }
 
 
-        window.location.href =
-          '/cart';
+        const originalHTML =
+          addButton.innerHTML;
 
-      }
 
-      catch (error) {
-
-        console.error(error);
+        addButton.disabled =
+          true;
 
         addButton.innerHTML =
-          original;
+          '<span>ADDING...</span>';
 
-        addButton.disabled = false;
 
-        alert(
-          'Sorry, something went wrong. Please try again.'
-        );
+        try {
+
+          const response =
+            await fetch(
+              '/cart/add.js',
+              {
+                method: 'POST',
+
+                headers: {
+                  'Content-Type':
+                    'application/json',
+                  'Accept':
+                    'application/json'
+                },
+
+                body:
+                  JSON.stringify({
+
+                    items: [
+
+                      {
+                        id: variantId,
+                        quantity: 1
+                      }
+
+                    ]
+
+                  })
+
+              }
+            );
+
+
+          if (!response.ok) {
+
+            throw new Error(
+              'Cart request failed'
+            );
+
+          }
+
+
+          /*
+           * Refresh Shopify cart drawer
+           * when available.
+           */
+
+          document.dispatchEvent(
+            new CustomEvent(
+              'cart:refresh'
+            )
+          );
+
+
+          /*
+           * Fallback:
+           * open cart page.
+           */
+
+          window.location.href =
+            '/cart';
+
+
+        } catch(error) {
+
+          console.error(error);
+
+          addButton.disabled =
+            false;
+
+          addButton.innerHTML =
+            originalHTML;
+
+          alert(
+            'Unable to add this product to cart. Please try again.'
+          );
+
+        }
 
       }
+    );
 
-    }
-
-  );
+  }
 
 
-  updateTotal();
+  /* ===============================
+     INITIAL RENDER
+  =============================== */
+
+  renderPrice();
+
+  renderSummary();
+
 
 })();
 
@@ -1799,342 +2120,13 @@
 {% schema %}
 
 {
-  "name": "QP Configure",
-  "settings": [
-
-    {
-      "type": "header",
-      "content": "Product"
-    },
-
-    {
-      "type": "image_picker",
-      "id": "product_image",
-      "label": "Product image"
-    },
-
-    {
-      "type": "text",
-      "id": "visual_label",
-      "label": "Visual label",
-      "default": "QUESTPROPS™ Neck Restore"
-    },
-
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow",
-      "default": "QUESTPROPS™"
-    },
-
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Build Your Neck Reset"
-    },
-
-    {
-      "type": "textarea",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "A simple 10-minute daily routine designed to help you unwind, wherever the day takes you."
-    },
-
-    {
-      "type": "text",
-      "id": "product_name",
-      "label": "Product name",
-      "default": "QUESTPROPS™ Neck Restore"
-    },
-
-    {
-      "type": "textarea",
-      "id": "product_description",
-      "label": "Product description",
-      "default": "EMS stimulation + soothing heat + ergonomic neck support."
-    },
-
-    {
-      "type": "number",
-      "id": "base_price",
-      "label": "Base price",
-      "default": 119
-    },
-
-    {
-      "type": "text",
-      "id": "rating",
-      "label": "Rating",
-      "default": "4.9/5"
-    },
-
-    {
-      "type": "text",
-      "id": "review_text",
-      "label": "Review text",
-      "default": "1,000+ verified reviews"
-    },
-
-
-    {
-      "type": "header",
-      "content": "Step 1"
-    },
-
-    {
-      "type": "text",
-      "id": "step_1_title",
-      "label": "Title",
-      "default": "Choose your device"
-    },
-
-
-    {
-      "type": "header",
-      "content": "Step 2"
-    },
-
-    {
-      "type": "text",
-      "id": "step_2_title",
-      "label": "Title",
-      "default": "Choose your setup"
-    },
-
-    {
-      "type": "text",
-      "id": "option_1_title",
-      "label": "Option 1 title",
-      "default": "Neck Restore"
-    },
-
-    {
-      "type": "text",
-      "id": "option_1_text",
-      "label": "Option 1 text",
-      "default": "The essential daily reset."
-    },
-
-    {
-      "type": "text",
-      "id": "option_2_title",
-      "label": "Option 2 title",
-      "default": "Neck Restore + Remote"
-    },
-
-    {
-      "type": "text",
-      "id": "option_2_text",
-      "label": "Option 2 text",
-      "default": "Adjust your routine from the remote."
-    },
-
-    {
-      "type": "number",
-      "id": "option_2_price",
-      "label": "Option 2 price",
-      "default": 19
-    },
-
-
-    {
-      "type": "header",
-      "content": "Step 3"
-    },
-
-    {
-      "type": "text",
-      "id": "step_3_title",
-      "label": "Title",
-      "default": "Add your essentials"
-    },
-
-    {
-      "type": "text",
-      "id": "addon_1_title",
-      "label": "Add-on 1 title",
-      "default": "Travel Case"
-    },
-
-    {
-      "type": "text",
-      "id": "addon_1_text",
-      "label": "Add-on 1 text",
-      "default": "Take your routine wherever you go."
-    },
-
-    {
-      "type": "number",
-      "id": "addon_1_price",
-      "label": "Add-on 1 price",
-      "default": 15
-    },
-
-    {
-      "type": "text",
-      "id": "addon_2_title",
-      "label": "Add-on 2 title",
-      "default": "Extra Accessories"
-    },
-
-    {
-      "type": "text",
-      "id": "addon_2_text",
-      "label": "Add-on 2 text",
-      "default": "Keep your daily setup ready."
-    },
-
-    {
-      "type": "number",
-      "id": "addon_2_price",
-      "label": "Add-on 2 price",
-      "default": 9
-    },
-
-
-    {
-      "type": "header",
-      "content": "Hotspot 1"
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_1_x",
-      "label": "X position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 38
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_1_y",
-      "label": "Y position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 38
-    },
-
-    {
-      "type": "text",
-      "id": "hotspot_1_title",
-      "label": "Title",
-      "default": "Soothing Heat"
-    },
-
-    {
-      "type": "textarea",
-      "id": "hotspot_1_text",
-      "label": "Text",
-      "default": "Gentle warmth designed to make your daily reset feel more relaxing."
-    },
-
-
-    {
-      "type": "header",
-      "content": "Hotspot 2"
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_2_x",
-      "label": "X position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 65
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_2_y",
-      "label": "Y position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 48
-    },
-
-    {
-      "type": "text",
-      "id": "hotspot_2_title",
-      "label": "Title",
-      "default": "EMS Stimulation"
-    },
-
-    {
-      "type": "textarea",
-      "id": "hotspot_2_text",
-      "label": "Text",
-      "default": "Adjustable stimulation designed to complement your daily neck reset."
-    },
-
-
-    {
-      "type": "header",
-      "content": "Hotspot 3"
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_3_x",
-      "label": "X position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 48
-    },
-
-    {
-      "type": "range",
-      "id": "hotspot_3_y",
-      "label": "Y position",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 66
-    },
-
-    {
-      "type": "text",
-      "id": "hotspot_3_title",
-      "label": "Title",
-      "default": "Ergonomic Neck Support"
-    },
-
-    {
-      "type": "textarea",
-      "id": "hotspot_3_text",
-      "label": "Text",
-      "default": "Designed to sit comfortably around the neck during your daily routine."
-    },
-
-
-    {
-      "type": "text",
-      "id": "delivery_text",
-      "label": "Delivery text",
-      "default": "Ships in 3–7 business days"
-    },
-
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button text",
-      "default": "ADD TO CART"
-    }
-
-  ],
-
+  "name": "QUEST Configurator",
+  "settings": [],
   "presets": [
     {
-      "name": "QP Configure"
+      "name": "QUEST Configurator"
     }
   ]
-
 }
 
 {% endschema %}
