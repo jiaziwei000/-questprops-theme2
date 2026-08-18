@@ -167,6 +167,15 @@
             "text_size": "text-sm"
           }
         },
+        "judge_me_reviews_trust_badge_pb9nHM": {
+          "type": "shopify://apps/judge-me-reviews/blocks/trust_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "structure": "default",
+            "color": "default",
+            "star": "default",
+            "alignment": "left"
+          }
+        },
         "pickup_availability": {
           "type": "pickup_availability",
           "disabled": true,
@@ -201,6 +210,7 @@
         "text-2",
         "text-3",
         "text-4",
+        "judge_me_reviews_trust_badge_pb9nHM",
         "pickup_availability",
         "complementary"
       ],
@@ -221,6 +231,38 @@
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
+        "rounded": false
+      }
+    },
+    "1787087874b67870fd": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_trust_badge_HiAYme": {
+          "type": "shopify://apps/judge-me-reviews/blocks/trust_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "structure": "outline",
+            "color": "black",
+            "star": "default",
+            "alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_trust_badge_HiAYme"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -1553,6 +1595,7 @@
   },
   "order": [
     "main-product",
+    "1787087874b67870fd",
     "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_rTBpXa",
