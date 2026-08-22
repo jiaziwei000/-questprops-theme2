@@ -371,22 +371,22 @@
         "nav_item_gNmbB7": {
           "type": "nav_item",
           "settings": {
-            "title": "Item 1",
-            "target_id": ""
+            "title": "Highlights",
+            "target_id": "template--21709234897127__video-hero"
           }
         },
         "nav_item_DCjaa8": {
           "type": "nav_item",
           "settings": {
-            "title": "Item 2",
+            "title": "Features",
             "target_id": "shopify-section-template--21709234897127__product-details"
           }
         },
         "nav_item_9feQNQ": {
           "type": "nav_item",
           "settings": {
-            "title": "Item 3",
-            "target_id": ""
+            "title": "FQAs",
+            "target_id": "shopify-section-template--21709234897127__faq"
           }
         }
       },
