@@ -567,10 +567,19 @@
     "product-details": {
       "type": "product-details",
       "blocks": {
+        "specification_CtfnyP": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
+            "heading": "Example heading",
+            "text_size": "text-sm"
+          }
+        },
         "collapsible_tab-1": {
           "type": "collapsible_tab",
           "settings": {
             "icon": "none",
+            "icon_image": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Technology",
@@ -615,6 +624,13 @@
             "text_size": "text-base"
           }
         },
+        "specification_LGV7bm": {
+          "type": "specification",
+          "settings": {
+            "heading": "Example heading",
+            "text_size": "text-sm"
+          }
+        },
         "specification": {
           "type": "specification",
           "disabled": true,
@@ -625,10 +641,12 @@
         }
       },
       "block_order": [
+        "specification_CtfnyP",
         "collapsible_tab-1",
         "collapsible_tab-2",
         "collapsible_tab-3",
         "collapsible_tab-4",
+        "specification_LGV7bm",
         "specification"
       ],
       "settings": {
