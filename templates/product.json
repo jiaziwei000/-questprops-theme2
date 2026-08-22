@@ -622,11 +622,27 @@
     "product-details": {
       "type": "product-details",
       "blocks": {
+        "specification_zCQp4Q": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
+            "heading": "",
+            "text_size": "text-sm"
+          }
+        },
         "specification_CtfnyP": {
           "type": "specification",
           "settings": {
             "icon": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
-            "heading": "Example heading",
+            "heading": "",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_cfnztc": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/9fd8812326a27baf8e5f3909256b205d.jpg",
+            "heading": "",
             "text_size": "text-sm"
           }
         },
@@ -682,7 +698,8 @@
         "specification_LGV7bm": {
           "type": "specification",
           "settings": {
-            "heading": "Example heading",
+            "icon": "shopify://shop_images/dfc709d8b5c167655554dc1.jpg",
+            "heading": "",
             "text_size": "text-sm"
           }
         },
@@ -696,7 +713,9 @@
         }
       },
       "block_order": [
+        "specification_zCQp4Q",
         "specification_CtfnyP",
+        "specification_cfnztc",
         "collapsible_tab-1",
         "collapsible_tab-2",
         "collapsible_tab-3",
