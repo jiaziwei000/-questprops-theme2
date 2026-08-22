@@ -677,14 +677,15 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "What's Included",
-            "content": "<p>1× QUESTPROPS™ Neck Restore<br/>1× Remote Control<br/>1× USB Charging Cable<br/>1× User Guide</p>",
+            "heading": "Intensity & Heat",
+            "content": "<p>6 adjustable intensity levels3 vibration modes3 heat levelsDesigned for a personalized daily routine</p>",
             "metafields": "",
             "text_size": "text-base"
           }
         },
         "collapsible_tab-4": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
