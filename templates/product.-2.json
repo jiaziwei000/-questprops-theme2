@@ -467,6 +467,7 @@
         "content_cdGxEi": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/6b30c1d9be5d3f824367b61b92df1387.jpg",
             "subheading": "Tight Neck",
             "heading": "Your neck gets tight after long‑time sitting",
             "heading_tag": "h2",
@@ -484,6 +485,7 @@
         "content_E9yMmz": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/efdb3d0dc1faab1258b8258c7ec4d4b4.png",
             "subheading": "Stiff Neck",
             "heading": "You feel an urge to twist your neck",
             "heading_tag": "h2",
@@ -501,6 +503,7 @@
         "content_eD9cpt": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/8780da77ac8b76b2701d72ed22d61a29.png",
             "subheading": "Tired Shoulders & Neck",
             "heading": "Your neck & shoulders feel worn‑out at day‑end",
             "heading_tag": "h2",
