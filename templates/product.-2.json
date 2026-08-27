@@ -461,6 +461,134 @@
         "rounded": false
       }
     },
+    "timeline_ajf8KB": {
+      "type": "timeline",
+      "blocks": {
+        "content_cdGxEi": {
+          "type": "content",
+          "settings": {
+            "subheading": "Tight Neck",
+            "heading": "Ease constant neck tension with our neck massager, built with EMS & heat for soothing comfort after long hours sitting.",
+            "heading_tag": "h2",
+            "text": "<p><br/><br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_E9yMmz": {
+          "type": "content",
+          "settings": {
+            "subheading": "Stiff Neck",
+            "heading": "Ease constant neck tension with our neck massager, built with EMS & heat for soothing comfort after long hours sitting.",
+            "heading_tag": "h2",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_eD9cpt": {
+          "type": "content",
+          "settings": {
+            "subheading": "Tired Shoulders & Neck",
+            "heading": "Wrap on our neck massager for a quick 10‑minute reset, wind down your worn‑out neck & shoulders at the end of a busy day.",
+            "heading_tag": "h2",
+            "text": "<p><br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_hxcYQD": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "subheading": "2024",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_aafyYU": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "subheading": "2025",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "content_cdGxEi",
+        "content_E9yMmz",
+        "content_eD9cpt",
+        "content_hxcYQD",
+        "content_aafyYU"
+      ],
+      "name": "t:sections.timeline.name",
+      "settings": {
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "wide",
+        "heading": "Do you have these common neck annoyances?",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -1526,6 +1654,7 @@
     "scrolling-text",
     "scroll_spy_rTBpXa",
     "video-hero",
+    "timeline_ajf8KB",
     "collage",
     "product-details",
     "slideshow_RDwmeP",
