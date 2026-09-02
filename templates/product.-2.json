@@ -467,7 +467,7 @@
         "counter_qqapbF": {
           "type": "counter",
           "settings": {
-            "title": "Active Users Worldwide",
+            "title": "People Chose QUESTPROPS™",
             "number": "150",
             "unit": "K+",
             "duration": 2
@@ -476,27 +476,27 @@
         "counter_NiYYhf": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "16",
-            "unit": "",
+            "title": "To Unwind Your Neck",
+            "number": "10",
+            "unit": "MIN",
             "duration": 2
           }
         },
         "counter_rpLmW9": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "95",
-            "unit": "%",
+            "title": "Rated By Customers",
+            "number": "4.9",
+            "unit": "/5",
             "duration": 2
           }
         },
         "counter_BDArYH": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "32",
-            "unit": "",
+            "title": "Try It Risk-Free",
+            "number": "180",
+            "unit": "DAYS",
             "duration": 2
           }
         }
