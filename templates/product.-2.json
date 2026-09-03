@@ -115,11 +115,10 @@
             "opened": true,
             "clickable": false,
             "variant_selection": false,
-            "icon": "dairy_free",
-            "icon_image": "shopify://shop_images/56b86503e9188e77960911671c4bac3c.png",
+            "icon": "tag",
             "iwidth": "custom",
-            "icon_width": 20,
-            "heading": "Popular Bundle",
+            "icon_width": 34,
+            "heading": "Add-on Deal: $29.99 (Valued at $69.99, Save $40)",
             "products": [
               "deep-sleep-eye-mask"
             ],
