@@ -109,6 +109,23 @@
             "size_chart": ""
           }
         },
+        "product_bundle_88nBCN": {
+          "type": "product_bundle",
+          "settings": {
+            "opened": true,
+            "clickable": false,
+            "variant_selection": false,
+            "icon": "dairy_free",
+            "icon_image": "shopify://shop_images/56b86503e9188e77960911671c4bac3c.png",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "heading": "Popular Bundle",
+            "products": [
+              "deep-sleep-eye-mask"
+            ],
+            "metafield": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -195,6 +212,7 @@
         "variant_picker",
         "inventory",
         "product_variations_Wbwq3b",
+        "product_bundle_88nBCN",
         "buy_buttons",
         "liquid_hA8ByX",
         "text-1",
