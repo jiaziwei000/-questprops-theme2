@@ -337,6 +337,7 @@
       "block_order": [
         "text"
       ],
+      "disabled": true,
       "settings": {
         "direction": "left",
         "speed": 20,
@@ -544,7 +545,7 @@
             "heading": "",
             "link": "",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/0cc2a42611b70c947641405c89ceb568.png",
+            "image": "shopify://shop_images/cf2deb7d9066a4136c64af00783334e0.png",
             "image_ratio": "portrait",
             "content_position": "md:items-start md:justify-end",
             "text_alignment": "right",
@@ -591,12 +592,12 @@
         "image-4"
       ],
       "settings": {
-        "heading": "10 Minutes for a Better-Feeling Neck",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>A simple daily routine designed to help you unwind, reset, and get back to your day.<br/><br/></p>",
+        "description": "<p><br/><br/></p>",
         "button_label": "",
         "button_link": "shopify://products/neck-massager",
         "button_external": false,
@@ -612,7 +613,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 28,
+        "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -905,7 +906,7 @@
         "text_diaEbf": {
           "type": "text",
           "settings": {
-            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>✓ 180-Day Risk-Free Trial<br/>✓ 2-Year Warranty<br/>✓ Complimentary Shipping & Returns</p>",
+            "text": "<p>Your weary eyes & restless nights won’t get better by waiting.Give yourself a few minutes every day to shut out light, melt away daytime eye‑strain, and sink into deep, undisturbed rest.Try your QUESTPROPS™ sleep mask at home, completely risk‑free.</p><p>✓ 180-Day Risk-Free Trial<br/>✓ 2-Year Warranty<br/>✓ Complimentary Shipping & Returns</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
