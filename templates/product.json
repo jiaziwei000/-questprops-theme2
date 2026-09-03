@@ -724,6 +724,7 @@
         "specification_LGV7bm",
         "specification"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-border",
         "open_first_row": true,
@@ -870,7 +871,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#171717",
+        "color_background": "#4C5E8A",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -940,6 +941,7 @@
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "image_mobile": "shopify://shop_images/e93382225c55e61b9237e2341bd527fa.png",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
