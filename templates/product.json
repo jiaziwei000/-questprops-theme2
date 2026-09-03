@@ -462,6 +462,7 @@
         "slide-2",
         "slide-3"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "transparent_header": true,
@@ -493,11 +494,11 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "subheading": "Spend more time in the garden.",
-            "heading": "🌿 Gardening",
+            "subheading": "",
+            "heading": "",
             "link": "",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/1424e19b85d4d4b6087daa64c2dddedf.jpg",
+            "image": "shopify://shop_images/eb1292be3bbb1256ecc806e0f41a81fe.png",
             "image_ratio": "landscape",
             "content_position": "md:items-end md:justify-center",
             "text_alignment": "center",
@@ -516,11 +517,11 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "subheading": "Make long drives feel more comfortable.",
-            "heading": "🚗 Driving",
+            "subheading": "",
+            "heading": "",
             "link": "",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/ed6ceb098891f4eaf51b570e2afbb44c.jpg",
+            "image": "shopify://shop_images/c81f09681ebe2b902f01078d3be27467.png",
             "image_ratio": "portrait",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
@@ -539,11 +540,11 @@
         "image-3": {
           "type": "image",
           "settings": {
-            "subheading": "Take your routine wherever you go.",
-            "heading": "✈️ Travel",
+            "subheading": "",
+            "heading": "",
             "link": "",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/5b5059dbad8a13269d8e18ba3ceb901c.jpg",
+            "image": "shopify://shop_images/0cc2a42611b70c947641405c89ceb568.png",
             "image_ratio": "portrait",
             "content_position": "md:items-start md:justify-end",
             "text_alignment": "right",
@@ -562,11 +563,11 @@
         "image-4": {
           "type": "image",
           "settings": {
-            "subheading": "Enjoy your time without constantly thinking about your neck.",
-            "heading": "🏌️ Weekend",
+            "subheading": "",
+            "heading": "",
             "link": "",
             "invert_subheading_heading": true,
-            "image": "shopify://shop_images/449a32abeb8d2cd27c190846d0970f70.jpg",
+            "image": "shopify://shop_images/7cbfed2585a493f2a613da91a4603f5c.png",
             "image_ratio": "landscape",
             "content_position": "md:items-end md:justify-end",
             "text_alignment": "right",
@@ -871,7 +872,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#4C5E8A",
+        "color_background": "#7495B8",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -880,7 +881,7 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 0,
         "divider": false,
         "narrow": false,
