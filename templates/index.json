@@ -860,7 +860,7 @@
       ],
       "name": "t:sections.featured-collections.name",
       "settings": {
-        "product_limit": 6,
+        "product_limit": 10,
         "columns": 4,
         "carousel_on_desktop": true,
         "show_view_all": false,
