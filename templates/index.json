@@ -793,20 +793,81 @@
     },
     "featured_collection_F4X9Mp": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.name",
       "settings": {
-        "collection": "",
+        "collection": "massger",
         "products": [
           "your-daily-neck-shoulder-reset"
         ],
+        "product_limit": 8,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "Featured collection",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured_collections_LyGTAe": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_CKdC36": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products": [
+              "deep-sleep-eye-mask",
+              "your-daily-neck-shoulder-reset"
+            ],
+            "title": ""
+          }
+        },
+        "collection_qFLJVL": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "products": [],
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_CKdC36",
+        "collection_qFLJVL"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
         "product_limit": 6,
         "columns": 4,
         "carousel_on_desktop": true,
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "heading": "Featured collection",
-        "heading_size": "title-md",
+        "heading": "Featured collections",
+        "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
@@ -1585,6 +1646,7 @@
     "product-bundle",
     "product_comparison_jm77np",
     "featured_collection_F4X9Mp",
+    "featured_collections_LyGTAe",
     "scrolling-text-1",
     "shop-the-feed",
     "countdown-timer",
