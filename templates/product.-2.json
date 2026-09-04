@@ -532,7 +532,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "text_alignment_mobile": "center",
-        "color_text": "#071C38",
+        "color_text": "#191970",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -697,7 +697,7 @@
             "color_text": "#191970",
             "color_highlight": "",
             "gradient_highlight": "",
-            "color_overlay": "#1A3159",
+            "color_overlay": "#1a3159",
             "overlay_opacity": 30
           }
         },
@@ -719,9 +719,9 @@
             "highlighted_text": "none",
             "highlighted_scribble": "squiggle-underline-2",
             "color_text": "#191970",
-            "color_highlight": "#1A3159",
+            "color_highlight": "#1a3159",
             "gradient_highlight": "",
-            "color_overlay": "#1A3159",
+            "color_overlay": "#1a3159",
             "overlay_opacity": 30
           }
         },
@@ -767,7 +767,7 @@
             "color_text": "#191970",
             "color_highlight": "#eeeeee",
             "gradient_highlight": "",
-            "color_overlay": "#1F2933",
+            "color_overlay": "#1f2933",
             "overlay_opacity": 30
           }
         }
