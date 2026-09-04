@@ -532,7 +532,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "text_alignment_mobile": "center",
-        "color_text": "#1a3159",
+        "color_text": "#332F1F",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -660,7 +660,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#1a3159",
+        "color_text": "#332F1F",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -683,7 +683,7 @@
           "settings": {
             "heading": "10 Minutes for a Better-Feeling Neck",
             "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
+            "heading_tag": "h1",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
@@ -778,7 +778,7 @@
             "color_highlight": "",
             "gradient_highlight": "",
             "color_overlay": "#1a3159",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "image-2": {
@@ -802,7 +802,7 @@
             "color_highlight": "#1a3159",
             "gradient_highlight": "",
             "color_overlay": "#1a3159",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "image-3": {
@@ -825,7 +825,7 @@
             "color_highlight": "#191970",
             "gradient_highlight": "",
             "color_overlay": "#160101",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "image-4": {
@@ -848,7 +848,7 @@
             "color_highlight": "#1a3159",
             "gradient_highlight": "",
             "color_overlay": "#1f2933",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
@@ -1000,7 +1000,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#1a3159",
+        "color_text": "#332F1F",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -1155,7 +1155,7 @@
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
-        "color_text": "#1a3159",
+        "color_text": "#332F1F",
         "color_background": "",
         "gradient_background": "",
         "color_background_2": "",
@@ -1320,7 +1320,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#ffffff",
-        "color_background": "#1a3159",
+        "color_background": "#332F1F",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
