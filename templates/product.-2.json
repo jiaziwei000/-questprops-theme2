@@ -751,7 +751,7 @@
         "image-4": {
           "type": "image",
           "settings": {
-            "subheading": "Advanced Micro-Current Tech",
+            "subheading": "<em>Advanced Micro-Current Tech</em>",
             "heading": "<em>Advanced Micro-Current Tech</em>",
             "link": "",
             "invert_subheading_heading": true,
