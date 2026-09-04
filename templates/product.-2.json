@@ -560,7 +560,7 @@
             "button_style": "primary",
             "button_external": false,
             "button_icon": true,
-            "highlighted_text": "none",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -660,7 +660,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#071C38",
+        "color_text": "#191970",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -692,10 +692,10 @@
             "image_ratio_mobile": "landscape",
             "content_position_mobile": "items-start justify-start",
             "text_alignment_mobile": "left",
-            "highlighted_text": "text",
+            "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#191970",
-            "color_highlight": "#191970",
+            "color_highlight": "",
             "gradient_highlight": "",
             "color_overlay": "#1A3159",
             "overlay_opacity": 30
@@ -728,7 +728,7 @@
         "image-3": {
           "type": "image",
           "settings": {
-            "subheading": "<strong>Instant Muscle Relaxation</strong>",
+            "subheading": "Instant Muscle Relaxation",
             "heading": "Customized Pulses, Zero Effort",
             "link": "",
             "invert_subheading_heading": false,
@@ -742,7 +742,7 @@
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "color_text": "#191970",
-            "color_highlight": "#fde047",
+            "color_highlight": "#191970",
             "gradient_highlight": "",
             "color_overlay": "#160101",
             "overlay_opacity": 30
@@ -768,7 +768,7 @@
             "color_highlight": "#eeeeee",
             "gradient_highlight": "",
             "color_overlay": "#1F2933",
-            "overlay_opacity": 20
+            "overlay_opacity": 30
           }
         }
       },
@@ -792,7 +792,7 @@
         "highlighted_text": "scribble",
         "highlighted_scribble": "basic-underline",
         "highlighted_reveal": false,
-        "color_text": "#071C38",
+        "color_text": "#191970",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -920,7 +920,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#071C38",
+        "color_text": "#191970",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -1075,7 +1075,7 @@
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
-        "color_text": "#071C38",
+        "color_text": "#191970",
         "color_background": "",
         "gradient_background": "",
         "color_background_2": "",
@@ -1101,7 +1101,7 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200,
+            "max_width": 800,
             "show_shop_reviews": false,
             "empty_state": "empty_widget"
           }
