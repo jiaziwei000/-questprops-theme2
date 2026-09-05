@@ -142,6 +142,7 @@
         },
         "liquid_hA8ByX": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"essential-banners-block\" id=\"fc56aa49-aa33-48f3-b7de-53e6aaf5243f\"></div>"
           }
