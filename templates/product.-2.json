@@ -139,6 +139,7 @@
         },
         "liquid_hA8ByX": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"essential-banners-block\" id=\"fc56aa49-aa33-48f3-b7de-53e6aaf5243f\"></div>"
           }
@@ -524,6 +525,7 @@
         "counter_rpLmW9",
         "counter_BDArYH"
       ],
+      "disabled": true,
       "name": "t:sections.number-counter.name",
       "settings": {
         "gap": "large",
@@ -661,7 +663,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#332F1F",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -683,8 +685,8 @@
           "settings": {
             "heading": "10 Minutes for a Better-Feeling Neck",
             "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h1",
-            "highlighted_text": "none",
+            "heading_tag": "span",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -741,7 +743,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -873,7 +875,7 @@
         "highlighted_scribble": "basic-underline",
         "highlighted_reveal": false,
         "color_text": "#1a3159",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -881,7 +883,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 16,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -943,7 +945,7 @@
         "specification": {
           "type": "specification",
           "settings": {
-            "icon": "shopify://shop_images/86f9df0348c5fec395ca37a95ea290c7.jpg",
+            "icon": "shopify://shop_images/9dcf413212cf7e113eec55e164ff4867.png",
             "heading": "EMS Massager",
             "text_size": "text-sm"
           }
@@ -951,7 +953,7 @@
         "specification_d7eKab": {
           "type": "specification",
           "settings": {
-            "icon": "shopify://shop_images/9fd8812326a27baf8e5f3909256b205d.jpg",
+            "icon": "shopify://shop_images/e7cb9118ca14e5f7628095201fa1e4b1.png",
             "heading": "USB Charging Cable",
             "text_size": "text-sm"
           }
@@ -959,7 +961,7 @@
         "specification_bdqAxn": {
           "type": "specification",
           "settings": {
-            "icon": "shopify://shop_images/50af27c6ff4b70978ae038773fa300f5.jpg",
+            "icon": "shopify://shop_images/3705dab7b33d405562d26f72114f844d.png",
             "heading": "Wireless Remote Control",
             "text_size": "text-sm"
           }
@@ -967,7 +969,7 @@
         "specification_qqJXj7": {
           "type": "specification",
           "settings": {
-            "icon": "shopify://shop_images/dfc709d8b5c167655554dc1.jpg",
+            "icon": "shopify://shop_images/848209f79fd0fc527a21b62802eb33b4.png",
             "heading": "Instruction Manual",
             "text_size": "text-sm"
           }
@@ -1001,7 +1003,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#332F1F",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1156,7 +1158,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "#332F1F",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -1192,7 +1194,7 @@
       ],
       "settings": {
         "color_text": "",
-        "color_background": "",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",

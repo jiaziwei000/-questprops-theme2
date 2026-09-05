@@ -17,7 +17,7 @@
     "logo_width_mobile": 80,
     "favicon": "",
     "color_text": "#171717",
-    "color_background": "#ffffff",
+    "color_background": "#E8E8E4",
     "color_highlight": "#ffddbf",
     "color_keyboard_focus": "#0b61cd",
     "color_shadow": "#a8e8e2",
@@ -203,24 +203,24 @@
         "disabled": false,
         "settings": {}
       },
-      "633715221747205101": {
-        "type": "shopify://apps/gempages-cro/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
-        "disabled": false,
-        "settings": {}
-      },
       "7924418359578431505": {
         "type": "shopify://apps/seoant-ai-seo/blocks/seoant-core/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
         "disabled": false,
         "settings": {}
       },
-      "pagefly-ai-page-builder": {
-        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {}
-      },
       "9604309306827082646": {
         "type": "shopify://apps/mori-scratch-card-popup/blocks/popup/019e1d61-0725-7ffa-8de9-7548f2731d08",
-        "disabled": false,
+        "disabled": true,
+        "settings": {}
+      },
+      "633715221747205101": {
+        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": true,
+        "settings": {}
+      },
+      "pagefly-ai-page-builder": {
+        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": true,
         "settings": {}
       }
     }
