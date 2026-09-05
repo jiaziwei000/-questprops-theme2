@@ -378,7 +378,7 @@
           "type": "nav_item",
           "settings": {
             "title": "FAQs",
-            "target_id": "shopify-section-template--21709234897127__faq"
+            "target_id": "shopify-section-template--21765574066407__faq"
           }
         }
       },
@@ -662,8 +662,8 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#332f1f",
-        "color_background": "#e8e8e4",
+        "color_text": "#332F1F",
+        "color_background": "#E8E8E4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -741,7 +741,7 @@
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "",
+        "color_text": "#332F1F",
         "color_background": "#e8e8e4",
         "gradient_background": "",
         "color_highlight": "",
