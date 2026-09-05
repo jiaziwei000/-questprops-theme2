@@ -650,9 +650,9 @@
       "name": "t:sections.timeline.name",
       "settings": {
         "show_navigation": true,
-        "layout": "image_first",
+        "layout": "text_first",
         "image_ratio": "portrait",
-        "image_ratio_mobile": "wide",
+        "image_ratio_mobile": "landscape",
         "heading": "Do you have these common neck annoyances?",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
@@ -670,8 +670,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 72,
+        "padding_top": 84,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false
