@@ -41,9 +41,9 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "product-title-sm",
-            "title_size_mobile": "product-title-md",
-            "title_tag": "h1",
+            "title_size": "product-title-lg",
+            "title_size_mobile": "product-title-lg",
+            "title_tag": "p",
             "show_price": true,
             "show_rating": false
           }
@@ -235,8 +235,8 @@
         "mobile_layout": "partial",
         "image_ratio_mobile": "adapt",
         "mobile_thumbnail": true,
-        "padding_top": 12,
-        "padding_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 100,
         "divider": false,
         "full_width": true,
         "rounded": false
@@ -470,7 +470,7 @@
         "color_highlight": "",
         "gradient_highlight": "",
         "color_overlay": "#332f1f",
-        "overlay_opacity": 65,
+        "overlay_opacity": 61,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -670,7 +670,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 84,
-        "padding_bottom": 32,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -681,6 +681,7 @@
       "blocks": {
         "text_NHgzeY": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>A simple daily routine designed to help you unwind, reset, and get back to your day.</p>",
             "text_font": "body",
@@ -702,13 +703,13 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "10 Minutes for a Better-Feeling Neck",
+        "heading": "10 Minutes for a Better-Feeling Neck.",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "",
+        "description": "<p>A simple daily routine designed to help you unwind, reset, and get back to your day.</p>",
         "button_label": "180-day free trial",
         "button_link": "shopify://products/neck-massager",
         "button_external": true,
@@ -716,16 +717,16 @@
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#332f1f",
-        "color_background": "#e8e8e4",
+        "color_text": "",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 32,
-        "padding_bottom": 16,
+        "padding_top": 100,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -754,7 +755,7 @@
             "color_highlight": "",
             "gradient_highlight": "",
             "color_overlay": "#1a3159",
-            "overlay_opacity": 0
+            "overlay_opacity": 24
           }
         },
         "image-2": {
@@ -838,7 +839,7 @@
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h1",
+        "heading_tag": "h2",
         "subheading": "",
         "description": "<p><br/><br/></p>",
         "button_label": "",
@@ -848,7 +849,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "basic-underline",
         "highlighted_reveal": false,
-        "color_text": "#1a3159",
+        "color_text": "",
         "color_background": "#e8e8e4",
         "gradient_background": "",
         "color_highlight": "",
@@ -857,7 +858,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 36,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -940,8 +941,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 12,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -1069,7 +1070,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 20,
+        "padding_top": 100,
         "padding_bottom": 24,
         "divider": false,
         "full_width": false,
@@ -1279,8 +1280,8 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 24,
-        "padding_bottom": 20,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "divider": false,
         "narrow": false,
         "rounded": false
