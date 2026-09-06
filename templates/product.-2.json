@@ -1106,7 +1106,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/afc44c94f0521effe68f047f39ccb4ac.png",
-            "image_width": "custom",
+            "image_width": "full_width",
             "image_max_width": 40,
             "image_max_width_mobile": 40
           }
@@ -1835,10 +1835,10 @@
     "timeline_ajf8KB",
     "rich_text_468prg",
     "collage",
+    "image_with_text_9CQh9p",
     "product-details",
     "slideshow_RDwmeP",
     "17866389272ca337a6",
-    "image_with_text_9CQh9p",
     "1786265603ac9a21f6",
     "faq",
     "image-with-text-1",
