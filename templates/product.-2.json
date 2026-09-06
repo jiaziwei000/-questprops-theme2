@@ -690,7 +690,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "underline",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "squiggle-underline-2"
           }
         }
