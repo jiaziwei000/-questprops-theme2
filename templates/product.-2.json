@@ -881,11 +881,96 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 16,
+        "padding_bottom": 36,
         "divider": false,
         "full_width": false,
         "rounded": false,
         "enable_parallax": true
+      }
+    },
+    "image_with_text_9CQh9p": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_nKRPPB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/afc44c94f0521effe68f047f39ccb4ac.png",
+            "image_width": "full_width",
+            "image_max_width": 40,
+            "image_max_width_mobile": 40
+          }
+        },
+        "heading_mdXmyY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Still Thinking About It?",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_diaEbf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>180-Day Risk-Free Trial<br/>2-Year Warranty<br/> Complimentary Shipping & Returns</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_QPHEmb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Yours Now",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "image_nKRPPB",
+        "heading_mdXmyY",
+        "text_diaEbf",
+        "button_QPHEmb"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
+        "image_height": "650px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "#332f1f",
+        "color_background": "#e8e8e4",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
       }
     },
     "product-details": {
@@ -1009,7 +1094,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 20,
-        "padding_bottom": 0,
+        "padding_bottom": 24,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1093,127 +1178,6 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
-      }
-    },
-    "17866389272ca337a6": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "image_with_text_9CQh9p": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_nKRPPB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/afc44c94f0521effe68f047f39ccb4ac.png",
-            "image_width": "full_width",
-            "image_max_width": 40,
-            "image_max_width_mobile": 40
-          }
-        },
-        "heading_mdXmyY": {
-          "type": "heading",
-          "settings": {
-            "heading": "Still Thinking About It?",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_diaEbf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>180-Day Risk-Free Trial<br/>2-Year Warranty<br/> Complimentary Shipping & Returns</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_QPHEmb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get Yours Now",
-            "button_link": "shopify://products/neck-massager",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "image_nKRPPB",
-        "heading_mdXmyY",
-        "text_diaEbf",
-        "button_QPHEmb"
-      ],
-      "name": "t:sections.image-with-text.name",
-      "settings": {
-        "image": "shopify://shop_images/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
-        "image_height": "650px",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "#332f1f",
-        "color_background": "#e8e8e4",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "1786265603ac9a21f6": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_eR7fJE": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 800,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_eR7fJE"
-      ],
-      "settings": {
-        "color_text": "",
-        "color_background": "#e8e8e4",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "faq": {
@@ -1339,10 +1303,42 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
+        "padding_top": 24,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "1786265603ac9a21f6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_eR7fJE": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 800,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_eR7fJE"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "#e8e8e4",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "narrow": false,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -1838,9 +1834,8 @@
     "image_with_text_9CQh9p",
     "product-details",
     "slideshow_RDwmeP",
-    "17866389272ca337a6",
-    "1786265603ac9a21f6",
     "faq",
+    "1786265603ac9a21f6",
     "image-with-text-1",
     "image-with-text-2",
     "recently-viewed",
