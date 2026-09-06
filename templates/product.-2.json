@@ -727,7 +727,7 @@
         "padding_top": 32,
         "padding_bottom": 16,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
