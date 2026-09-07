@@ -399,6 +399,111 @@
         "full_width": false
       }
     },
+    "reveal_testimonials_Y6wAYj": {
+      "type": "reveal-testimonials",
+      "blocks": {
+        "testimonial_bhP9xw": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I am happy with the results I got after using it, I must say shipping could be faster (took a week to arrive), but the product works so it's worth the wait. I have a herniated C5-C6 vertebrae and this helps relieve the pain in my neck & shoulder, worth the price.</p>",
+            "author": "Frank Y.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224119_309_75.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_XUFTKV": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>   GET IT<br/>   I work all day long at a computer, and my neck is oftentimes very stiff and I got sensations that are uncomfortable. Can't really describe them as pain, but just uncomfortable.<br/>    I got this as an impulse purchase and when it arrived I wasn't really sure it'd help. IT DOES!!!GET THIS, IT'S A GAMECHANGER!</p>",
+            "author": "Martha W.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224109_308_75_f01bba64-4643-4eb9-a2d9-b88d5e6dffe4.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_DitrV4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>This is my to-go pillow now<br/>I don't go anywhere without this massager now, I used to struggle to fall asleep because of the pain, but this is now a thing of the past!!! I literally lay down on it for 15 minutes before going to sleep, and then sleep like a baby, this thing literally changed my life, and I'm not exagerating, if you have neck pain then you'll know how awful it feels not to be able to enjoy day to day life, or even sleep because of the pain, so when I found something that actually works (this QuestProps massager) I keep praising it to everyone! I don't know what magic potion they put in it, and I honestly don't care, the only thing that matters is that I finally feel good again, and I can't thank QuestProps enough!!!</p>",
+            "author": "Martha S.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224058_307_75.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_tixLQP": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_fTBBnM": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_bhP9xw",
+        "testimonial_XUFTKV",
+        "testimonial_DitrV4",
+        "testimonial_tixLQP",
+        "testimonial_fTBBnM"
+      ],
+      "name": "t:sections.reveal-testimonials.name",
+      "settings": {
+        "heading": "What people are saying",
+        "heading_size": "title-md",
+        "heading_tag": "h2",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
     "video-hero": {
       "type": "video-hero",
       "blocks": {
@@ -720,7 +825,7 @@
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "#C8B04F",
+        "color_highlight": "#c8b04f",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
@@ -1803,6 +1908,7 @@
     "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_rTBpXa",
+    "reveal_testimonials_Y6wAYj",
     "video-hero",
     "number_counter_DLwRDH",
     "timeline_ajf8KB",
