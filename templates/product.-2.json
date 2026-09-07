@@ -872,9 +872,9 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/afc44c94f0521effe68f047f39ccb4ac.png",
-            "image_width": "full_width",
-            "image_max_width": 40,
-            "image_max_width_mobile": 40
+            "image_width": "custom",
+            "image_max_width": 30,
+            "image_max_width_mobile": 30
           }
         },
         "heading_mdXmyY": {
