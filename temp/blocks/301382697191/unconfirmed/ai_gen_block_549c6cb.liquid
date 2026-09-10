@@ -1,6 +1,450 @@
+{% doc %}
+  @prompt
+    我想给我的这个单独页面底部加个粘性跳转按钮
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-sticky-jump-wrapper-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-sticky-jump-bar-{{ ai_gen_id }} {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    z-index: 990;
+    background-color: {{ block.settings.bar_bg_color }};
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid {{ block.settings.bar_border_color }};
+    padding: {{ block.settings.bar_padding }}px 16px calc({{ block.settings.bar_padding }}px + env(safe-area-inset-bottom, 0px));
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .ai-sticky-jump-bar-{{ ai_gen_id }}.ai-sticky-hidden-{{ ai_gen_id }} {
+    transform: translate3d(-50%, 110%, 0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .ai-sticky-jump-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .ai-sticky-jump-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .ai-sticky-jump-title-{{ ai_gen_id }} {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ai-sticky-jump-subtext-{{ ai_gen_id }} {
+    font-size: 12px;
+    line-height: 1.3;
+    color: {{ block.settings.subtext_color }};
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ai-sticky-jump-btn-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  .ai-sticky-jump-btn-{{ ai_gen_id }}:hover {
+    opacity: 0.92;
+  }
+
+  .ai-sticky-jump-btn-{{ ai_gen_id }}:active {
+    transform: scale(0.98);
+  }
+
+  .ai-sticky-jump-btn--full-{{ ai_gen_id }} {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .ai-sticky-jump-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .ai-sticky-jump-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  @media screen and (max-width: 749px) {
+    {% if block.settings.device_display == 'desktop' %}
+      .ai-sticky-jump-bar-{{ ai_gen_id }} {
+        display: none !important;
+      }
+    {% endif %}
+
+    .ai-sticky-jump-bar-{{ ai_gen_id }} {
+      width: 100% !important;
+      left: 0;
+      transform: translateY(0);
+    }
+
+    .ai-sticky-jump-bar-{{ ai_gen_id }}.ai-sticky-hidden-{{ ai_gen_id }} {
+      transform: translateY(110%);
+    }
+
+    {% if block.settings.stack_on_mobile %}
+      .ai-sticky-jump-container-{{ ai_gen_id }} {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .ai-sticky-jump-info-{{ ai_gen_id }} {
+        text-align: center;
+        align-items: center;
+      }
+
+      .ai-sticky-jump-btn-{{ ai_gen_id }} {
+        width: 100%;
+      }
+    {% endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    {% if block.settings.device_display == 'mobile' %}
+      .ai-sticky-jump-bar-{{ ai_gen_id }} {
+        display: none !important;
+      }
+    {% endif %}
+  }
+{% endstyle %}
+
+<sticky-jump-button-{{ ai_gen_id }}
+  class="ai-sticky-jump-wrapper-{{ ai_gen_id }}"
+  data-threshold="{{ block.settings.scroll_threshold }}"
+  data-target-anchor="{{ block.settings.target_anchor }}"
+  {{ block.shopify_attributes }}
+>
+  <div
+    class="ai-sticky-jump-bar-{{ ai_gen_id }} {% if block.settings.scroll_threshold > 0 %}ai-sticky-hidden-{{ ai_gen_id }}{% endif %}"
+    id="sticky-bar-{{ ai_gen_id }}"
+  >
+    <div class="ai-sticky-jump-container-{{ ai_gen_id }}">
+      {% if block.settings.info_heading != blank or block.settings.info_subtext != blank %}
+        <div class="ai-sticky-jump-info-{{ ai_gen_id }}">
+          {% if block.settings.info_heading != blank %}
+            <p class="ai-sticky-jump-title-{{ ai_gen_id }}">{{ block.settings.info_heading }}</p>
+          {% endif %}
+          {% if block.settings.info_subtext != blank %}
+            <p class="ai-sticky-jump-subtext-{{ ai_gen_id }}">{{ block.settings.info_subtext }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <a
+        href="{% if block.settings.target_anchor != blank %}#{{ block.settings.target_anchor | remove: '#' }}{% elsif block.settings.button_url != blank %}{{ block.settings.button_url }}{% else %}#shopify-section-template--main{% endif %}"
+        class="ai-sticky-jump-btn-{{ ai_gen_id }} {% if block.settings.info_heading == blank and block.settings.info_subtext == blank %}ai-sticky-jump-btn--full-{{ ai_gen_id }}{% endif %}"
+        id="jump-btn-{{ ai_gen_id }}"
+      >
+        <span>{{ block.settings.button_label }}</span>
+        {% if block.settings.show_arrow %}
+          <span class="ai-sticky-jump-icon-{{ ai_gen_id }}">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        {% endif %}
+      </a>
+    </div>
+  </div>
+</sticky-jump-button-{{ ai_gen_id }}>
+
+<script>
+  (function () {
+    class StickyJumpButton{{ ai_gen_id }} extends HTMLElement {
+      connectedCallback() {
+        this.bar = this.querySelector('#sticky-bar-{{ ai_gen_id }}');
+        this.btn = this.querySelector('#jump-btn-{{ ai_gen_id }}');
+        this.threshold = parseInt(this.dataset.threshold, 10) || 0;
+        this.targetAnchor = (this.dataset.targetAnchor || '').replace(/^#/, '').trim();
+
+        this.handleScroll = this.handleScroll.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
+        if (this.btn) {
+          this.btn.addEventListener('click', this.handleClick);
+        }
+
+        this.handleScroll();
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('scroll', this.handleScroll);
+        if (this.btn) {
+          this.btn.removeEventListener('click', this.handleClick);
+        }
+      }
+
+      handleScroll() {
+        if (!this.bar) return;
+        if (this.threshold <= 0) {
+          this.bar.classList.remove('ai-sticky-hidden-{{ ai_gen_id }}');
+          return;
+        }
+
+        const currentScroll = window.scrollY || document.documentElement.scrollTop;
+        if (currentScroll >= this.threshold) {
+          this.bar.classList.remove('ai-sticky-hidden-{{ ai_gen_id }}');
+        } else {
+          this.bar.classList.add('ai-sticky-hidden-{{ ai_gen_id }}');
+        }
+      }
+
+      handleClick(e) {
+        let anchorId = this.targetAnchor;
+        const href = this.btn.getAttribute('href') || '';
+
+        if (!anchorId && href.startsWith('#') && href.length > 1) {
+          anchorId = href.substring(1);
+        }
+
+        if (anchorId) {
+          const targetElement = document.getElementById(anchorId) || document.querySelector(`[name="${anchorId}"]`);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+    }
+
+    if (!customElements.get('sticky-jump-button-{{ ai_gen_id }}')) {
+      customElements.define('sticky-jump-button-{{ ai_gen_id }}', StickyJumpButton{{ ai_gen_id }});
+    }
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Sticky jump button",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Button content"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button text",
+      "default": "立即获取 • 限时优惠"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "target_anchor",
+      "label": "Target section or element ID",
+      "default": "shopify-section-template--main"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "label": "Show arrow icon",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Optional side text"
+    },
+    {
+      "type": "text",
+      "id": "info_heading",
+      "label": "Heading",
+      "default": "QuestProps™ 祛浮肿紧致仪"
+    },
+    {
+      "type": "text",
+      "id": "info_subtext",
+      "label": "Subtext",
+      "default": "今日立省 $30 • 全球免邮"
+    },
+    {
+      "type": "header",
+      "content": "Display rules"
+    },
+    {
+      "type": "select",
+      "id": "device_display",
+      "label": "Device visibility",
+      "options": [
+        {
+          "value": "mobile",
+          "label": "Mobile only"
+        },
+        {
+          "value": "all",
+          "label": "All devices"
+        },
+        {
+          "value": "desktop",
+          "label": "Desktop only"
+        }
+      ],
+      "default": "mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "label": "Stack content vertically on mobile",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "scroll_threshold",
+      "min": 0,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Show after scrolling",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Desktop width",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bar_bg_color",
+      "label": "Bar background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "bar_border_color",
+      "label": "Bar top border",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Heading color",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "subtext_color",
+      "label": "Subtext color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Dimensions"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "bar_padding",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Bar vertical padding",
+      "default": 12
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky jump button"
+    }
+  ]
+}
 {% endschema %}
