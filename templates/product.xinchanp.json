@@ -388,6 +388,7 @@
         "nav_item_EGXbCq",
         "nav_item_anEqfz"
       ],
+      "disabled": true,
       "name": "t:sections.scroll-spy.name",
       "settings": {
         "show_highlight": true,
@@ -558,6 +559,7 @@
         "slide-2",
         "slide-3"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "transparent_header": true,
@@ -751,6 +753,7 @@
         "content_hxcYQD",
         "content_aafyYU"
       ],
+      "disabled": true,
       "name": "t:sections.timeline.name",
       "settings": {
         "show_navigation": true,
@@ -804,6 +807,7 @@
       "block_order": [
         "text_NHgzeY"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "left",
@@ -940,6 +944,7 @@
         "image-3",
         "image-4"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "title-sm",
@@ -970,6 +975,387 @@
         "enable_parallax": true
       }
     },
+    "video_with_text_KV9rPw": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_ta6YiT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Close your eyes. Take <em>10 minutes</em> for yourself.",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "highlighted_reveal": false
+          }
+        },
+        "text_GiYbLk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Feel the warmth spread through your neck.</p><p>Gentle pressure reaches the tension you've been holding onto all day.<br/>Slowly, your shoulders let go.<br/></p><p>Your jaw relaxes.<br/></p><p>Your breath becomes deeper.<br/></p><p>Ten quiet minutes later,<br/>the tension feels a little further away.<br/>And peace feels a little closer.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_HArLH9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Not intended to diagnose, treat, or cure medical conditions. Individual results may vary.</p>",
+            "text_font": "subtitle",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_L7M8en": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Body Will <em>Thank You</em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ta6YiT",
+        "text_GiYbLk",
+        "text_HArLH9",
+        "heading_L7M8en"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/9月9日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_RH6jEw": {
+      "type": "video-with-text",
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/8月16日(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "product_details_weYUqg": {
+      "type": "product-details",
+      "blocks": {
+        "description_THfTAH": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "split_mode": false,
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Description",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_jqj4p7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "EMS Microcurrent Stimulation",
+            "content": "<p>Delivers low-frequency microcurrents to gently stimulate deeper muscle layers, causing them to contract and relax rhythmically to effectively break up stubborn stiffness and awaken muscle vitality.<br/><br/></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_4GnCHW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Soothe & Warm Heat Therapy",
+            "content": "<p>Features a built-in constant-temperature heating system that emits comforting thermal energy, penetrating deep into tired areas to quickly melt away chill, tension, and fatigue.<br/><br/></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_fetkyM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Targeted Tension Release",
+            "content": "<p>Precisely acts on hard-to-reach deep fascial layers, using a powerful combination of pulse technology and heat to efficiently dissolve long-term physical stress and heaviness.<br/><br/></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_3eTKYB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Enhanced Circulation & Blood Flow",
+            "content": "<p>Combines gentle warmth with electrical stimulation to effectively boost local microcirculation and metabolism, delivering a fresh supply of oxygen and nutrients to the neck and shoulder tissues.<br/></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_yh64UY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Headache & Migraine Support",
+            "content": "<p>Relaxes the tight muscles at the base of the skull and upper back, helping to alleviate tension headaches and occasional migraines triggered by muscle spasms and poor circulation.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "description_THfTAH",
+        "collapsible_tab_jqj4p7",
+        "collapsible_tab_4GnCHW",
+        "collapsible_tab_fetkyM",
+        "collapsible_tab_3eTKYB",
+        "collapsible_tab_yh64UY"
+      ],
+      "name": "t:sections.product-details.name",
+      "settings": {
+        "style": "with-border",
+        "open_first_row": false,
+        "specifications_heading": "Included in the Box",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "video_with_text_caT8aL": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_jqxgmz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your <em>10-Minute</em> Ritual",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "highlighted_reveal": false
+          }
+        },
+        "text_BQAPLF": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Personalize every session for the results you want.</strong><br/><strong>Intensity: Gentle • Moderate • Intense</strong>: Start gently as your body adjusts, or go deeper for stronger results.<br/><strong>Intensity Impact</strong>: The higher the intensity, the more noticeable the massage.<br/></li><li><strong>EMS Pulse Technology: Low • Mid • High</strong><br/><strong>Deep Muscle Activation</strong>: Low-frequency electrical pulses stimulate deep muscle layers to break down stubborn stiffness and relieve fatigue.<br/><strong>Customizable Stimulation</strong>: Choose the ideal current level to suit your comfort and recovery needs.<br/></li><li><strong>Soothing Heat: 42°C</strong><br/><strong>Thermal Comfort</strong>: A gentle warmth that relaxes tight muscles and makes your daily routine even more comforting.<br/></li><li><strong>Modes: Deep Tissue Massage • Clockwise • Counter-Clockwise</strong><br/><strong>Rotation & Technique</strong>: Switch between targeted neck-first massages or relaxing rhythmic rolls.<br/></li><li><strong>Your routine, your way</strong>—whether you want a light morning refresh or a deeper evening release.</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jqxgmz",
+        "text_BQAPLF"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/7月15日 (1)(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_qGCXGw": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_TVhGCd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Professional relief that feels impossibly human.",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_ybectj": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>26° Ergonomic Traction</strong>: Restores the neck's natural curve and decompresses the spine.</li><li><strong>EMS Microcurrents (Low • Mid • High)</strong>: Stimulates deep muscle contractions to boost circulation and release stubborn stiffness.</li><li><strong>Precision 42°C Heat</strong>: Melts tension instantly and warms tight muscles.</li><li><strong>Customizable Massages</strong>: Switch between deep tissue, clockwise, and counter-clockwise modes with adjustable intensities.</li></ul><p>Just 15 minutes a day melts away desk work and stress, giving you a quick morning refresh or a deeper evening release.</p><p><em>(Not a medical treatment; if pain persists, see your clinician.)</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TVhGCd",
+        "text_ybectj"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/5月15日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "image_with_text_9CQh9p": {
       "type": "image-with-text",
       "blocks": {
@@ -985,18 +1371,18 @@
         "heading_mdXmyY": {
           "type": "heading",
           "settings": {
-            "heading": "Still Thinking About It?",
+            "heading": "<em>Our Guarantee</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "sketch-underline",
+            "highlighted_reveal": true
           }
         },
         "text_diaEbf": {
           "type": "text",
           "settings": {
-            "text": "<p>Your neck isn't going to feel better by waiting.</p><p>Give yourself 10 minutes a day to reset, relax and get back to what you enjoy.</p><p>Try QUESTPROPS™ at home, completely risk-free.</p><p>180-Day Risk-Free Trial<br/>2-Year Warranty<br/> Complimentary Shipping & Returns</p>",
+            "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><strong>• 180-day returns</strong> — full refund if you're not satisfied<br/><strong>• 2-year warranty</strong> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -1004,8 +1390,8 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline"
           }
         },
         "button_QPHEmb": {
@@ -1424,148 +1810,6 @@
         "rounded": false
       }
     },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image_width": "custom",
-            "image_max_width": 50,
-            "image_max_width_mobile": 50
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "image",
-        "heading",
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_height": "600px",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "400px",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "#fafafa",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "image-with-text-2": {
-      "type": "image-with-text",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image_width": "custom",
-            "image_max_width": 50,
-            "image_max_width_mobile": 50
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "image",
-        "heading",
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_height": "600px",
-        "image_width": "medium",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "400px",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "#fafafa",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -1594,107 +1838,6 @@
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "multicolumn_rKYPKb": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_tEiqhi": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image_ratio": "adapt",
-            "heading": "EMS Muscle Stimulation",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Gentle stimulation designed to help relax and activate tired neck muscles.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_he97NW": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image_ratio": "adapt",
-            "heading": "Soothing Heat",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Comforting warmth helps make your daily neck reset feel more relaxing.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_EjUa4e": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image_ratio": "adapt",
-            "heading": "10-Minute Routine",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>A simple routine designed to fit easily into your everyday life.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_tEiqhi",
-        "column_he97NW",
-        "column_EjUa4e"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn.name",
-      "settings": {
-        "gap": "large",
-        "columns": 3,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Why QUESTPROPS™?",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": true,
         "full_width": false,
         "rounded": false
       }
@@ -1914,15 +2057,17 @@
     "timeline_ajf8KB",
     "rich_text_468prg",
     "collage",
+    "video_with_text_KV9rPw",
+    "video_with_text_RH6jEw",
+    "product_details_weYUqg",
+    "video_with_text_caT8aL",
+    "video_with_text_qGCXGw",
     "image_with_text_9CQh9p",
     "product-details",
     "slideshow_RDwmeP",
     "faq",
     "1786265603ac9a21f6",
-    "image-with-text-1",
-    "image-with-text-2",
     "recently-viewed",
-    "multicolumn_rKYPKb",
     "help-drawer",
     "slideshow_bBBh9h",
     "product-recommendations"

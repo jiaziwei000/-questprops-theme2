@@ -44,7 +44,6 @@
         "announcement-1",
         "announcement-2"
       ],
-      "disabled": true,
       "settings": {
         "show_social": true,
         "enable_language_selector": true,
@@ -58,7 +57,7 @@
         "direction": "left",
         "speed": 20,
         "color_text": "#fafafa",
-        "color_background": "#617d8b",
+        "color_background": "#484B4D",
         "gradient_background": "",
         "color_highlight": "#f5f5f5",
         "gradient_highlight": "",
@@ -178,7 +177,7 @@
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
         "color_text": "#171717",
-        "color_background": "#E8E8E4",
+        "color_background": "#e8e8e4",
         "color_localization": "",
         "padding_top": 8,
         "padding_bottom": 8,
