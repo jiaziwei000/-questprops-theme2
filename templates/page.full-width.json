@@ -107,7 +107,7 @@
         "text_alignment": "center",
         "text_alignment_mobile": "center",
         "heading": "Fix Your Puffy Face & Under-Eye Bags in <em>30 Days </em>— or Your Money Back.",
-        "heading_size": "title-lg tracking-heading",
+        "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
@@ -128,7 +128,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 60,
         "padding_bottom": 0,
         "divider": false,
         "narrow": true,
@@ -146,6 +146,7 @@
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "image_height": "500px",
+        "video_url_mobile": "",
         "image_height_mobile": "300px",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -246,7 +247,7 @@
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -258,8 +259,8 @@
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
@@ -717,12 +718,12 @@
       ],
       "name": "t:sections.portfolio.name",
       "settings": {
-        "columns": 4,
+        "columns": 3,
         "carousel_on_desktop": true,
         "layout": "default",
         "image_ratio": "square",
         "image_ratio_mobile": "portrait",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "The EMS + Thermo 3D System",
         "heading_size": "title-lg tracking-heading",
@@ -747,9 +748,9 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
+        "divider": true,
+        "full_width": true,
+        "rounded": true
       }
     },
     "image_with_text_WnCyE4": {
@@ -1440,6 +1441,40 @@
         "enable_parallax": true,
         "parallax_direction": "zoom"
       }
+    },
+    "17890577721cf551f9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_549c6cb_deB4Kz": {
+          "type": "ai_gen_block_549c6cb",
+          "settings": {
+            "button_label": "Shop QuestProps",
+            "button_url": "shopify://products/neck-massager",
+            "target_anchor": "shopify-section-template--main",
+            "show_arrow": true,
+            "info_heading": "",
+            "info_subtext": "",
+            "device_display": "mobile",
+            "stack_on_mobile": false,
+            "scroll_threshold": 100,
+            "desktop_width_percent": 100,
+            "bar_bg_color": "#ffffff",
+            "bar_border_color": "#e5e5e5",
+            "button_bg_color": "#171717",
+            "button_text_color": "#ffffff",
+            "text_color": "#171717",
+            "subtext_color": "#666666",
+            "button_border_radius": 24,
+            "button_font_size": 15,
+            "bar_padding": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_549c6cb_deB4Kz"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -1460,6 +1495,7 @@
     "reveal_testimonials_UkpDUP",
     "rich_text_k7hcLx",
     "rich_text_GYXRUh",
-    "image_with_text_iradXC"
+    "image_with_text_iradXC",
+    "17890577721cf551f9"
   ]
 }
