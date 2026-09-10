@@ -1042,8 +1042,8 @@
         "video": "shopify://files/videos/9月9日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
         "image_height": "adapt",
         "video_width": "medium",
         "layout": "video_first",
@@ -1263,8 +1263,8 @@
         "video": "shopify://files/videos/7月15日 (1)(1).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
         "image_height": "adapt",
         "video_width": "medium",
         "layout": "video_first",
@@ -1474,23 +1474,11 @@
             "highlighted_text": "scribble",
             "highlighted_scribble": "squiggle-underline"
           }
-        },
-        "button_GCFcaB": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_TjXyVi",
-        "text_cyVEyR",
-        "button_GCFcaB"
+        "text_cyVEyR"
       ],
       "name": "t:sections.video-with-text.name",
       "settings": {
