@@ -994,7 +994,7 @@
           "settings": {
             "text": "<p>Feel the warmth spread through your neck.</p><p>Gentle pressure reaches the tension you've been holding onto all day.<br/>Slowly, your shoulders let go.<br/></p><p>Your jaw relaxes.<br/></p><p>Your breath becomes deeper.<br/></p><p>Ten quiet minutes later,<br/>the tension feels a little further away.<br/>And peace feels a little closer.</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -1127,61 +1127,61 @@
         "collapsible_tab_jqj4p7": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "EMS Microcurrent Stimulation",
             "content": "<p>Delivers low-frequency microcurrents to gently stimulate deeper muscle layers, causing them to contract and relax rhythmically to effectively break up stubborn stiffness and awaken muscle vitality.<br/><br/></p>",
             "metafields": "",
-            "text_size": "text-base"
+            "text_size": "text-base lg:text-xl"
           }
         },
         "collapsible_tab_4GnCHW": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Soothe & Warm Heat Therapy",
             "content": "<p>Features a built-in constant-temperature heating system that emits comforting thermal energy, penetrating deep into tired areas to quickly melt away chill, tension, and fatigue.<br/><br/></p>",
             "metafields": "",
-            "text_size": "text-base"
+            "text_size": "text-base lg:text-xl"
           }
         },
         "collapsible_tab_fetkyM": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
-            "iwidth": "custom",
+            "icon": "chat_bubble",
+            "iwidth": "fit",
             "icon_width": 24,
             "heading": "Targeted Tension Release",
             "content": "<p>Precisely acts on hard-to-reach deep fascial layers, using a powerful combination of pulse technology and heat to efficiently dissolve long-term physical stress and heaviness.<br/><br/></p>",
             "metafields": "",
-            "text_size": "text-base"
+            "text_size": "text-base lg:text-xl"
           }
         },
         "collapsible_tab_3eTKYB": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Enhanced Circulation & Blood Flow",
             "content": "<p>Combines gentle warmth with electrical stimulation to effectively boost local microcirculation and metabolism, delivering a fresh supply of oxygen and nutrients to the neck and shoulder tissues.<br/></p>",
             "metafields": "",
-            "text_size": "text-base"
+            "text_size": "text-base lg:text-xl"
           }
         },
         "collapsible_tab_yh64UY": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Headache & Migraine Support",
             "content": "<p>Relaxes the tight muscles at the base of the skull and upper back, helping to alleviate tension headaches and occasional migraines triggered by muscle spasms and poor circulation.</p>",
             "metafields": "",
-            "text_size": "text-base"
+            "text_size": "text-base lg:text-xl"
           }
         }
       },
@@ -1221,9 +1221,9 @@
         "color_button_gradient": "",
         "padding_top": 0,
         "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
+        "divider": true,
+        "full_width": true,
+        "rounded": true
       }
     },
     "video_with_text_caT8aL": {
@@ -1245,7 +1245,7 @@
           "settings": {
             "text": "<ul><li><strong>Personalize every session for the results you want.</strong><br/><strong>Intensity: Gentle • Moderate • Intense</strong>: Start gently as your body adjusts, or go deeper for stronger results.<br/><strong>Intensity Impact</strong>: The higher the intensity, the more noticeable the massage.<br/></li><li><strong>EMS Pulse Technology: Low • Mid • High</strong><br/><strong>Deep Muscle Activation</strong>: Low-frequency electrical pulses stimulate deep muscle layers to break down stubborn stiffness and relieve fatigue.<br/><strong>Customizable Stimulation</strong>: Choose the ideal current level to suit your comfort and recovery needs.<br/></li><li><strong>Soothing Heat: 42°C</strong><br/><strong>Thermal Comfort</strong>: A gentle warmth that relaxes tight muscles and makes your daily routine even more comforting.<br/></li><li><strong>Modes: Deep Tissue Massage • Clockwise • Counter-Clockwise</strong><br/><strong>Rotation & Technique</strong>: Switch between targeted neck-first massages or relaxing rhythmic rolls.<br/></li><li><strong>Your routine, your way</strong>—whether you want a light morning refresh or a deeper evening release.</li></ul>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -1301,20 +1301,20 @@
         "heading_TVhGCd": {
           "type": "heading",
           "settings": {
-            "heading": "Professional relief that feels impossibly human.",
+            "heading": "<em>Professional relief that feels impossibly human.</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_ybectj": {
           "type": "text",
           "settings": {
-            "text": "<ul><li><strong>26° Ergonomic Traction</strong>: Restores the neck's natural curve and decompresses the spine.</li><li><strong>EMS Microcurrents (Low • Mid • High)</strong>: Stimulates deep muscle contractions to boost circulation and release stubborn stiffness.</li><li><strong>Precision 42°C Heat</strong>: Melts tension instantly and warms tight muscles.</li><li><strong>Customizable Massages</strong>: Switch between deep tissue, clockwise, and counter-clockwise modes with adjustable intensities.</li></ul><p>Just <em>10-15 minutes</em> a day melts away desk work and stress, giving you a quick morning refresh or a deeper evening release.</p><p><em>(Not a medical treatment; if pain persists, see your clinician.)</em></p>",
+            "text": "<ul><li><strong>26° Ergonomic Traction</strong>: Restores the neck's natural curve and decompresses the spine.</li><li><strong>EMS Microcurrents (Low • Mid • High)</strong>: Stimulates deep muscle contractions to boost circulation and release stubborn stiffness.</li><li><strong>Precision 42°C Heat</strong>: Melts tension instantly and warms tight muscles.</li><li><strong>Customizable Massages</strong>: Switch between deep tissue, clockwise, and counter-clockwise modes with adjustable intensities.</li></ul><p>Just <em>10-15 minutes</em> a day melts away desk work and stress, giving you a quick morning refresh or a deeper evening release.</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -1323,11 +1323,27 @@
             "highlighted_text": "scribble",
             "highlighted_scribble": "squiggle-underline"
           }
+        },
+        "text_b6wcca": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Not a medical treatment; if pain persists, see your clinician.)</p>",
+            "text_font": "subtitle",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
         "heading_TVhGCd",
-        "text_ybectj"
+        "text_ybectj",
+        "text_b6wcca"
       ],
       "name": "t:sections.video-with-text.name",
       "settings": {
@@ -1356,7 +1372,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -1469,7 +1485,7 @@
           "settings": {
             "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><strong>• 180-day returns</strong> — full refund if you're not satisfied<br/><strong>• 2-year warranty</strong> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
