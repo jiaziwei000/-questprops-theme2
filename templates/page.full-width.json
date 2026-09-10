@@ -104,7 +104,7 @@
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
-        "text_alignment": "center",
+        "text_alignment": "left",
         "text_alignment_mobile": "center",
         "heading": "Fix Your Puffy Face & Under-Eye Bags in <em>30 Days </em>— or Your Money Back.",
         "heading_size": "title-md",
@@ -1450,7 +1450,7 @@
           "settings": {
             "button_label": "Shop QuestProps",
             "button_url": "shopify://products/neck-massager",
-            "target_anchor": "shopify-section-template--main",
+            "target_anchor": "",
             "show_arrow": true,
             "info_heading": "",
             "info_subtext": "",
