@@ -1,7 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-page": {
       "type": "main-page-full-width",
+      "disabled": true,
       "settings": {
         "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-left",
@@ -12,9 +22,748 @@
         "divider": false,
         "rounded": false
       }
+    },
+    "rich_text_fEN3zz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9cBGBe": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>30-Day Money-Back Guarantee</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_RGEtnG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Yes, the claims are bold.<em> But so is QuestProps.</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
+          }
+        },
+        "button_G4MKCa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Try QuestProps Risk-Free",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_NY6Pep": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · 180-day money-back · 2-year warranty</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_NdUedB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>★★★★★4.8/5100,000+ verified customers<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_9cBGBe",
+        "heading_RGEtnG",
+        "button_G4MKCa",
+        "text_NY6Pep",
+        "text_NdUedB"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "Fix Your Puffy Face & Under-Eye Bags in <em>30 Days </em>— or Your Money Back.",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "squiggle-underline-2",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "video_PX4bi4": {
+      "type": "video",
+      "name": "t:sections.video.name",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/7月15日 (1)(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "image_height_mobile": "300px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": true,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "lookbook_kRGe4n": {
+      "type": "lookbook",
+      "blocks": {
+        "product_nPmWD3": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "color_text": "#ffffff",
+            "vertical": 25,
+            "horizontal": 25,
+            "vertical_mobile": 25,
+            "horizontal_mobile": 25
+          }
+        },
+        "product_yDn7mc": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "color_text": "#ffffff",
+            "vertical": 75,
+            "horizontal": 65,
+            "vertical_mobile": 75,
+            "horizontal_mobile": 65
+          }
+        }
+      },
+      "block_order": [
+        "product_nPmWD3",
+        "product_yDn7mc"
+      ],
+      "disabled": true,
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/b0caeb9c46dacfce2bf0688e65c3ee50.jpg",
+        "image_mobile": "shopify://shop_images/b0caeb9c46dacfce2bf0688e65c3ee50.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 36,
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_iULtwP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4QCxAQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Just look at these results fromover <em>100,000+</em> verified customers",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_GHT6Bi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Swipe through unretouched before & afters. Individual results vary.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4QCxAQ",
+        "text_GHT6Bi"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "timeline_V4EEkU": {
+      "type": "timeline",
+      "blocks": {
+        "content_ftGaqb": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/9ebb6d8029b754757a32f967937fbab0.jpg",
+            "subheading": "Hannah M.",
+            "heading": "Age 33 · 28 days",
+            "heading_tag": "h2",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_6xDNpz": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/16f34a4957c53b724d4fa66940e05f74.jpg",
+            "subheading": "Destiny R.",
+            "heading": "Age 27 · 30 days",
+            "heading_tag": "h2",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_pPi8YK": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/047b380c7a781c67c3aa287f04486b14.jpg",
+            "subheading": "Mei L.",
+            "heading": "Age 41 · 30 days",
+            "heading_tag": "h2",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_gHKAcV": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/9c1fac785926fb65b7f7a5b2307573a0.jpg",
+            "subheading": "Camila S.",
+            "heading": "Age 35 · 26 days",
+            "heading_tag": "h2",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "content_ftGaqb",
+        "content_6xDNpz",
+        "content_pPi8YK",
+        "content_gHKAcV"
+      ],
+      "name": "t:sections.timeline.name",
+      "settings": {
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "landscape",
+        "image_ratio_mobile": "landscape",
+        "heading": "Just look at these results fromover <em>100,000+</em> verified customers",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "squiggle-underline",
+        "highlighted_reveal": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 44,
+        "divider": true,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "rich_text_x3YrnR": {
+      "type": "rich-text",
+      "blocks": {
+        "button_tiQBCE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get QuestProps Today",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": true,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_tiQBCE"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_ktVJ8R": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TfQpcM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why every facial starts at the neck",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_amE9ti": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you've ever had a professional lymphatic drainage facial, you know every therapist starts at the <strong>neck first</strong> — and for good reason.</p><p>They understand that <strong>80% of the results come from the neck, and 20% from the face.</strong> You can get most of the de-puffing benefit just by massaging the neck, opening the lymph nodes, and letting gravity drain the fluid.</p><p>Here's the part the beauty industry doesn't advertise: the highest density of lymph nodes in your body sits in your neck. That's a well-established fact in medicine.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_JEDzr3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The cervical (neck) region contains the largest concentration of lymph nodes in the human body — the main gateway for fluid leaving the face</p>",
+            "text_font": "heading",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "link_KR9KBM": {
+          "type": "link",
+          "settings": {
+            "label": "📄 Read the research on cervical lymph nodes →",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/?term=cervical+lymph+nodes+head+neck+drainage",
+            "external": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_TfQpcM",
+        "text_amE9ti",
+        "text_JEDzr3",
+        "link_KR9KBM"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/0bb32fce9887e0ba29a983dd122bc2ed.jpg",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": true,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_NPLwej": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_mG3Dp3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The neck holds the body's highest concentration of lymph nodes — the main drain for your face.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PJYgcL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Clinical observations</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_bnzd9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "What our customers report",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "text_mG3Dp3",
+        "text_PJYgcL",
+        "heading_bnzd9b"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/7b76b14ba339f14521405a9e1e851d90.jpg",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "number_counter_9jcKwY": {
+      "type": "number-counter",
+      "blocks": {
+        "counter_cCbGcj": {
+          "type": "counter",
+          "settings": {
+            "title": "noticed reduced puffiness within 3 weeks",
+            "number": "96",
+            "unit": "%",
+            "duration": 2
+          }
+        },
+        "counter_yPTxNj": {
+          "type": "counter",
+          "settings": {
+            "title": "said their eyes looked less swollen within 4 weeks",
+            "number": "90",
+            "unit": "%",
+            "duration": 2
+          }
+        },
+        "counter_QpCcxb": {
+          "type": "counter",
+          "settings": {
+            "title": "said their face looked & felt fresher within 1 week",
+            "number": "92",
+            "unit": "%",
+            "duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "counter_cCbGcj",
+        "counter_yPTxNj",
+        "counter_QpCcxb"
+      ],
+      "name": "t:sections.number-counter.name",
+      "settings": {
+        "gap": "large",
+        "columns": 4,
+        "text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "portfolio_HmkWYz": {
+      "type": "portfolio",
+      "blocks": {
+        "profile_eRf89b": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
+            "image_mobile": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
+            "heading": "EMS Micro-Pulse Stimulation",
+            "text": "<p>Targeted EMS micro-pulses mimic the kneading pressure of a therapist’s hands. They activate neck and facial lymphatic pathways, encouraging stagnant fluid to drain downwards and reduce facial puffiness.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_AeRwPF": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "heading": "42°C Therapeutic Warmth",
+            "text": "<p>42°C constant heat<br/>Gentle consistent warmth boosts circulation and softens tight tissue. It relaxes lymphatic vessels so trapped fluid can flow freely instead of pooling under eyes and cheeks.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_xE9TJQ": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/c7292e38499a12ce2fb7cdaadb071ea9.png",
+            "heading": "26° Ergonomic Pillow Angle",
+            "text": "<p>26° contoured pillow design<br/>The pillow cradles your neck at a precise 45° angle. Ultra-comfortable to rest on, this engineered position uses gravity to support your natural lymph drainage.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "profile_eRf89b",
+        "profile_AeRwPF",
+        "profile_xE9TJQ"
+      ],
+      "name": "t:sections.portfolio.name",
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "layout": "default",
+        "image_ratio": "square",
+        "image_ratio_mobile": "portrait",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "The EMS + Thermo 3D System",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-center justify-center",
+        "heading_tag": "h2",
+        "subheading": "Our device combines EMS micro-stimulation and soothing heat to mimic a therapist’s hands. It awakens sluggish lymph nodes, draining trapped fluid that creates puffy cheeks and under-eye bags for a naturally lifted look.",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
-    "main-page"
+    "main-page",
+    "rich_text_fEN3zz",
+    "video_PX4bi4",
+    "lookbook_kRGe4n",
+    "rich_text_iULtwP",
+    "timeline_V4EEkU",
+    "rich_text_x3YrnR",
+    "image_with_text_ktVJ8R",
+    "image_with_text_NPLwej",
+    "number_counter_9jcKwY",
+    "portfolio_HmkWYz"
   ]
 }

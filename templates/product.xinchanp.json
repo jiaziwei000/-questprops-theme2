@@ -237,9 +237,9 @@
         "mobile_thumbnail": true,
         "padding_top": 12,
         "padding_bottom": 0,
-        "divider": false,
+        "divider": true,
         "full_width": true,
-        "rounded": false
+        "rounded": true
       }
     },
     "testimonials_banner_XPL8te": {
@@ -1212,7 +1212,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#F4F1EB",
+        "color_background": "#f4f1eb",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
