@@ -1041,6 +1041,7 @@
       "settings": {
         "video": "shopify://files/videos/9月9日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -1077,6 +1078,7 @@
       "settings": {
         "video": "shopify://files/videos/8月16日(1).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -1262,6 +1264,7 @@
       "settings": {
         "video": "shopify://files/videos/7月15日 (1)(1).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -1330,6 +1333,7 @@
       "settings": {
         "video": "shopify://files/videos/5月15日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -1484,6 +1488,7 @@
       "settings": {
         "video": "shopify://files/videos/7月2日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
