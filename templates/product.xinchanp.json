@@ -1022,12 +1022,12 @@
         "heading_L7M8en": {
           "type": "heading",
           "settings": {
-            "heading": "Your Body Will <em>Thank You</em>",
+            "heading": "<em>Your Body Will Thank You</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline",
-            "highlighted_reveal": false
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
           }
         }
       },
@@ -1064,7 +1064,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 12,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false,
