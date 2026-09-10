@@ -751,6 +751,695 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "image_with_text_WnCyE4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MrnHMV": {
+          "type": "heading",
+          "settings": {
+            "heading": "You'll see it the very first time",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_wRLLtQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clinicians note that the immediate drop in puffiness after drainage is simply <strong>fluid leaving the tissue</strong> — not anything structural. The warmth opens blood flow within the first minute, and the rollers start guiding backed-up fluid down and out.</p><p>The first time you use it, you'll likely feel your neck loosen, a light \"freshness\" as things start moving — and see your face look a little less full, a little more defined, right after.</p><p>That instant hit fades for everyone, with every method, because the fluid comes back. Which is exactly why making the daily version <strong>effortless</strong> is the whole point.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MrnHMV",
+        "text_wRLLtQ"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/c8cbb87aa6ffc4ba2fbcff7e1a796ee7.png",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "timeline_nA3Xqt": {
+      "type": "timeline",
+      "blocks": {
+        "content_jKUt99": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/25a8888bc49646a92b995caf27.jpg",
+            "subheading": "WEEK 1",
+            "heading": "\"Oh, that's the feeling.\"",
+            "heading_tag": "h2",
+            "text": "<p>Your neck loosening, tension lifting, a light fresh feeling as fluid starts to move. Right after, your face looks a little less puffy. It fades during the day — that's normal.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_fBLAxm": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/45454614071a97379b3d54dd727600.jpg",
+            "subheading": "Week 2",
+            "heading": "\"My mornings are different.\"",
+            "heading_tag": "h2",
+            "text": "<p>You wake up and your face isn't as puffy as it used to be. The pillow-face is softer. The effect starts carrying overnight instead of disappearing by lunch.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_BneRkg": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/444333351e37005d7ede9848668f6ac5d.jpg",
+            "subheading": "Week 3",
+            "heading": "\"Where has my jawline been?\"",
+            "heading_tag": "h2",
+            "text": "<p>Your baseline resets. The jawline you forgot you had shows up more consistently — it was never fat, it was fluid sitting on top of it. Under-eyes look less tired.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_qgRpYq": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/555566664db5cda89acc1c7eb10878af.jpg",
+            "subheading": "Week 4",
+            "heading": "\"This is just my face now.\"",
+            "heading_tag": "h2",
+            "text": "<p>A thirty-second habit, not a chore — and that's what makes it stick. You're maintaining an open drain with almost no effort.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "content_jKUt99",
+        "content_fBLAxm",
+        "content_BneRkg",
+        "content_qgRpYq"
+      ],
+      "name": "t:sections.timeline.name",
+      "settings": {
+        "show_navigation": true,
+        "layout": "text_first",
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "heading": "What consistent daily use tends to look like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "Use it every night before bed. For faster results, use the highest intensity twice daily — morning and night.",
+        "description": "<p><strong>An honest timeline</strong></p>",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": true,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "rich_text_mMkxAm": {
+      "type": "rich-text",
+      "blocks": {
+        "text_caL87X": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Results vary person to person and depend on consistency. Hizoo supports the appearance of a less puffy, more defined face — it works by keeping fluid moving, so the look is maintained through daily use rather than being permanent.<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_f4Tiwm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start My 30 Days",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "text_caL87X",
+        "button_f4Tiwm"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "reveal_testimonials_UkpDUP": {
+      "type": "reveal-testimonials",
+      "blocks": {
+        "testimonial_CajEQV": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Ordered this for the puffiness under my eyes and honestly didn't expect much. Two weeks in and my husband asked if I'd \"done something\" to my face 😂 It's the neck thing, I swear.<br/><br/></p>",
+            "author": "Diana Wallace",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/2.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_PwHcLM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I've spent SO much money on gua sha, ice rollers, creams… none of it touched the morning puffiness like this does. Wish I found it sooner.<br/><br/></p>",
+            "author": "Megan O'Brien",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/19eb89ba9e0b85c06fc8b0b1deda5547_e3d33346-d2f2-45e4-8441-654f5c9d2139.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_jkUh6R": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>My esthetician actually recommended I get one for between appointments. That says everything. The 42° heat feels amazing before bed.</p>",
+            "author": "Theresa Kim",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/7.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_VNkptW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I was skeptical of the \"80% is your neck\" claim but the depuffing is real. My under-eye bags in the AM are basically gone. The gravity/26° angle actually makes sense once you feel i</p>",
+            "author": "Anyone else obsessed with the neck-drainage thing? (not an ad)",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_Npz4kx": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Jawline is noticeably more defined and I'm not doing anything else different. It's the only \"device\" I've kept using past week one because you literally just lie on it.</p>",
+            "author": "Update: 4 weeks in with the QuestProps pillow",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_CajEQV",
+        "testimonial_PwHcLM",
+        "testimonial_jkUh6R",
+        "testimonial_VNkptW",
+        "testimonial_Npz4kx"
+      ],
+      "name": "t:sections.reveal-testimonials.name",
+      "settings": {
+        "heading": "What people are saying",
+        "heading_size": "title-lg tracking-heading",
+        "heading_tag": "h2",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "rich_text_k7hcLx": {
+      "type": "rich-text",
+      "blocks": {
+        "button_3Tfjnk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Them — Shop QuestProps",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_3Tfjnk"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_GYXRUh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DRwN4R": {
+          "type": "heading",
+          "settings": {
+            "heading": "The evidence is clear",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_diCEtU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why the neck is the most important area for a less-puffy face.<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_dcb9NT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cervical lymph nodes are the densest in the body",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_YCn8Tt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Head & neck lymphatic anatomy</p><p>Up to ~300 of the body's ~600 lymph nodes are located in the head and neck region — the primary drainage route for facial fluid.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "link_y3qfrB": {
+          "type": "link",
+          "settings": {
+            "label": "View source →",
+            "link": "https://www.ncbi.nlm.nih.gov/books/NBK513237/",
+            "external": true
+          }
+        },
+        "spacing_QVpTpa": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
+        "heading_GGJ43q": {
+          "type": "heading",
+          "settings": {
+            "heading": "MLD reduces facial & tissue edema",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_HakJdN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "link_n6Rrem": {
+          "type": "link",
+          "settings": {
+            "label": "View source →",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/?term=manual+lymphatic+drainage+edema",
+            "external": true
+          }
+        },
+        "spacing_7kTWKe": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
+        "heading_iFTiyD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Local warmth increases microcirculation",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_94dFdD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Peer-reviewed research on PubMed</p><p>Applying ~40–42°C heat measurably increased local blood flow and vessel dilation, supporting fluid movement out of tissue.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "link_yMhK3j": {
+          "type": "link",
+          "settings": {
+            "label": "View source →",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/?term=local+heating+skin+blood+flow",
+            "external": true
+          }
+        },
+        "spacing_iBNrHN": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
+        "text_AxhbXK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hizoo is a wellness device and is not intended to diagnose, treat, cure, or prevent any disease.<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DRwN4R",
+        "text_diCEtU",
+        "heading_dcb9NT",
+        "text_YCn8Tt",
+        "link_y3qfrB",
+        "spacing_QVpTpa",
+        "heading_GGJ43q",
+        "text_HakJdN",
+        "link_n6Rrem",
+        "spacing_7kTWKe",
+        "heading_iFTiyD",
+        "text_94dFdD",
+        "link_yMhK3j",
+        "spacing_iBNrHN",
+        "text_AxhbXK"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_iradXC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GQXKbf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Try it risk-free for <em>180</em> days",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_jqVFxb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use it every night. If your face isn't less puffy in 180 days, send it back for a full refund. That simple.</p><ul><li>180-day money-back guarantee</li><li>2-year warranty</li><li>Free shipping · 100,000+ happy customers</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_ph7B7p": {
+          "type": "button",
+          "settings": {
+            "button_label": "Claim My 180-Day Trial",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_GQXKbf",
+        "text_jqVFxb",
+        "button_ph7B7p"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/c611bd6b5cd2abacfd1a61826cf3f8be.jpg",
+        "image_height": "400px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "300px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": true,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "zoom"
+      }
     }
   },
   "order": [
@@ -764,6 +1453,13 @@
     "image_with_text_ktVJ8R",
     "image_with_text_NPLwej",
     "number_counter_9jcKwY",
-    "portfolio_HmkWYz"
+    "portfolio_HmkWYz",
+    "image_with_text_WnCyE4",
+    "timeline_nA3Xqt",
+    "rich_text_mMkxAm",
+    "reveal_testimonials_UkpDUP",
+    "rich_text_k7hcLx",
+    "rich_text_GYXRUh",
+    "image_with_text_iradXC"
   ]
 }

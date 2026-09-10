@@ -66,6 +66,7 @@
         "column-3",
         "column-4"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-border",
         "columns": 4,
@@ -162,7 +163,7 @@
         "show_social": true,
         "enable_follow_on_shop": false,
         "color_text": "#ffffff",
-        "color_background": "#3A3A3A",
+        "color_background": "#3a3a3a",
         "gradient_background": "",
         "color_button_text": "#000000",
         "color_button_background": "#ffffff",
@@ -186,7 +187,7 @@
         "show_copyright": true,
         "copyright_text": "",
         "color_text": "#ffffff",
-        "color_background": "#3A3A3A",
+        "color_background": "#3a3a3a",
         "gradient_background": "",
         "divider": false,
         "full_width": true,
