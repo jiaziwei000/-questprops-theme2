@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "FREE SHIPPING + Guarantee + Warranty",
+            "text": "FREE SHIPPING + 180-DAY TRIAL",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -57,7 +57,7 @@
         "direction": "left",
         "speed": 20,
         "color_text": "#fafafa",
-        "color_background": "#484B4D",
+        "color_background": "#484b4d",
         "gradient_background": "",
         "color_highlight": "#f5f5f5",
         "gradient_highlight": "",
