@@ -286,7 +286,7 @@
         "padding_top": 52,
         "padding_bottom": 20,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
@@ -397,9 +397,9 @@
         "color_button_gradient": "",
         "padding_top": 20,
         "padding_bottom": 44,
-        "divider": true,
-        "full_width": true,
-        "rounded": true
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "rich_text_x3YrnR": {
@@ -449,7 +449,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
@@ -534,10 +534,10 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": true,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
@@ -812,7 +812,7 @@
         "divider": false,
         "full_width": false,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
@@ -923,9 +923,9 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": true,
-        "full_width": true,
-        "rounded": true
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "rich_text_mMkxAm": {
@@ -1304,7 +1304,7 @@
         "text_AxhbXK": {
           "type": "text",
           "settings": {
-            "text": "<p>Hizoo is a wellness device and is not intended to diagnose, treat, cure, or prevent any disease.<br/><br/></p>",
+            "text": "<p>QuestProps is a wellness device and is not intended to diagnose, treat, cure, or prevent any disease.<br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -1363,7 +1363,7 @@
         "padding_top": 72,
         "padding_bottom": 0,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
@@ -1435,10 +1435,10 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": true,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
         "parallax_direction": "zoom"
       }
     },
