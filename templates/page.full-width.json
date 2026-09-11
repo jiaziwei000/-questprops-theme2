@@ -1193,10 +1193,10 @@
         "heading_DRwN4R": {
           "type": "heading",
           "settings": {
-            "heading": "The evidence is clear",
+            "heading": "<em>The evidence is clear</em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1411,10 +1411,10 @@
         "heading_GQXKbf": {
           "type": "heading",
           "settings": {
-            "heading": "Try it risk-free for <em>180</em> days",
+            "heading": "<em>Try it risk-free for 180 days</em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
