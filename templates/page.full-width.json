@@ -472,7 +472,7 @@
             "heading": "<em>Why every facial starts at the neck</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -669,11 +669,11 @@
       "name": "t:sections.number-counter.name",
       "settings": {
         "gap": "large",
-        "columns": 4,
-        "text_alignment": "left",
+        "columns": 3,
+        "text_alignment": "center",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "text_alignment_mobile": "left",
+        "swipe_on_mobile": false,
+        "text_alignment_mobile": "center",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -998,10 +998,10 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 0,
         "padding_bottom": 72,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
