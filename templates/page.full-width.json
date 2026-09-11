@@ -26,6 +26,32 @@
     "rich_text_fEN3zz": {
       "type": "rich-text",
       "blocks": {
+        "text_AzkizV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>30-Day Money-Back Guarantee</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_zyCAiM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Fix Your Puffy Face & Under-Eye Bags in 30 Days — or Your Money Back.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
         "text_9cBGBe": {
           "type": "text",
           "disabled": true,
@@ -96,6 +122,8 @@
         }
       },
       "block_order": [
+        "text_AzkizV",
+        "heading_zyCAiM",
         "text_9cBGBe",
         "heading_RGEtnG",
         "button_G4MKCa",
@@ -106,7 +134,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "Fix Your Puffy Face & Under-Eye Bags in <em>30 Days </em>— or Your Money Back.",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
@@ -621,7 +649,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 20,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
