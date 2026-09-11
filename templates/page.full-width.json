@@ -29,7 +29,7 @@
         "text_AzkizV": {
           "type": "text",
           "settings": {
-            "text": "<p><em>30-Day Money-Back Guarantee</em></p>",
+            "text": "<p><em>180-Day Money-Back Guarantee</em></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -972,14 +972,14 @@
         "text_caL87X": {
           "type": "text",
           "settings": {
-            "text": "<p>Results vary person to person and depend on consistency. QuestProps supports the appearance of a less puffy, more defined face — it works by keeping fluid moving, so the look is maintained through daily use rather than being permanent.<br/><br/></p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
+            "text": "<p>Results vary person to person and depend on consistency. QuestProps supports the appearance of a less puffy, more defined face — it works by keeping fluid moving, so the look is maintained through daily use rather than being permanent.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1422,7 +1422,7 @@
         "text_jqVFxb": {
           "type": "text",
           "settings": {
-            "text": "<p>Use it every night. If your face isn't less puffy in 180 days, send it back for a full refund. That simple.</p><ul><li>180-day money-back guarantee</li><li>2-year warranty</li><li>Free shipping · 100,000+ happy customers</li></ul>",
+            "text": "<p>Use it every night. If your face isn't less puffy in 30 days, send it back for a full refund. That simple.</p><ul><li>180-day money-back guarantee</li><li>2-year warranty</li><li>Free shipping · 100,000+ happy customers</li></ul>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
