@@ -1196,7 +1196,7 @@
             "heading": "<em>The evidence is clear</em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "half_text",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1222,7 +1222,7 @@
             "heading": "<em>Cervical lymph nodes are the densest in the body</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "marker",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1263,7 +1263,7 @@
             "heading": "<em>MLD reduces facial & tissue edema</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "marker",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1304,7 +1304,7 @@
             "heading": "<em>Local warmth increases microcirculation</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "marker",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1342,7 +1342,7 @@
         "text_AxhbXK": {
           "type": "text",
           "settings": {
-            "text": "<p>QuestProps is a wellness device and is not intended to diagnose, treat, cure, or prevent any disease.<br/><br/></p>",
+            "text": "<p>QuestProps is a wellness device and is not intended to diagnose, treat, cure, or prevent any disease.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -1471,7 +1471,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 20,
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
