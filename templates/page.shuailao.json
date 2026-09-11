@@ -1077,8 +1077,8 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#F4F1EB",
-        "color_background": "#3A3A3A",
+        "color_text": "#f4f1eb",
+        "color_background": "#3a3a3a",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1391,7 +1391,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 20,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -2073,7 +2073,7 @@
         "text_mm7zyt": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Platysmaplasty (neck lift surgery)</p><p><em>$5,000 – $8,000</em></p><p>Platysma Botox (per session)</p><p><em>$500 – $1,000</em></p><p>Microcurrent device (treats face, not cause)</p><p><em>$250 – $400</em></p><p>Filler (temporary, repeating cost)</p><p><em>$600 – $1,200/session</em><br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -2081,19 +2081,75 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
         },
-        "button_Egiq68": {
+        "text_ieWU7X": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/products/neck-massager\" title=\"Your Daily 10-Minute Neck Reset\"><em><strong>QuestProps — targets the actual cause$139</strong></em></a></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FMirVW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>30-Day Visible Difference Guarantee.</strong></em><em> Use the Hizoo for 10 minutes a day for 30 days. If you don't see a visible improvement in your jawline definition, facial puffiness, or sagging — send it back for a full refund. No questions asked.</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_JyRGNt": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Your face isn't aging. It's being pulled down.Fix the pull.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "button_rJGjth": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Release the Tension → See Your Real Face",
             "button_link": "",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
             "button_icon": true
+          }
+        },
+        "text_BXwDT4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · 30-day guarantee · Results in as little as 7 days</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
@@ -2103,7 +2159,11 @@
         "heading_4JfzNN",
         "image_KRm6ra",
         "text_mm7zyt",
-        "button_Egiq68"
+        "text_ieWU7X",
+        "text_FMirVW",
+        "heading_JyRGNt",
+        "button_rJGjth",
+        "text_BXwDT4"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
