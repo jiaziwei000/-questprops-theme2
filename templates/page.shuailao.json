@@ -181,8 +181,8 @@
         "button_XdqJDK": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Fix the Posture - Fix the Face",
+            "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
