@@ -984,7 +984,7 @@
             "heading": "Close your eyes. Take <em>10 minutes</em> for yourself.",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "marker",
             "highlighted_scribble": "squiggle-underline",
             "highlighted_reveal": false
           }
@@ -1025,7 +1025,7 @@
             "heading": "<em>Your Body Will Thank You</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": true
           }
@@ -1235,7 +1235,7 @@
             "heading": "Your <em>10-Minute</em> Ritual",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "squiggle-underline",
             "highlighted_reveal": false
           }
@@ -1304,7 +1304,7 @@
             "heading": "<em>Professional relief that feels impossibly human.</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": true
           }
@@ -1475,7 +1475,7 @@
             "heading": "<em>Our Guarantee</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "marker",
             "highlighted_scribble": "squiggle-underline",
             "highlighted_reveal": false
           }
@@ -1634,7 +1634,7 @@
         "style": "with-border",
         "open_first_row": true,
         "specifications_heading": "Included in the Box",
-        "heading": "Tech Specs",
+        "heading": "<em>Tech Specs</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -1644,7 +1644,7 @@
         "button_link": "",
         "button_external": false,
         "button_icon": true,
-        "highlighted_text": "none",
+        "highlighted_text": "marker",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#332f1f",
