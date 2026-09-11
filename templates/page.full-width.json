@@ -322,7 +322,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 20,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -416,13 +416,13 @@
         "layout": "image_first",
         "image_ratio": "landscape",
         "image_ratio_mobile": "landscape",
-        "heading": "Just look at these results fromover <em>100,000+</em> verified customers",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
-        "highlighted_text": "scribble",
+        "highlighted_text": "marker",
         "highlighted_scribble": "squiggle-underline",
         "highlighted_reveal": true,
         "color_text": "",
@@ -433,7 +433,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 20,
+        "padding_top": 0,
         "padding_bottom": 44,
         "divider": false,
         "full_width": false,
@@ -602,13 +602,13 @@
           "settings": {
             "text": "<p><em>Clinical observations</em></p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "scribble",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle"
           }
         },
@@ -1219,10 +1219,10 @@
         "heading_dcb9NT": {
           "type": "heading",
           "settings": {
-            "heading": "Cervical lymph nodes are the densest in the body",
+            "heading": "<em>Cervical lymph nodes are the densest in the body</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1260,10 +1260,10 @@
         "heading_GGJ43q": {
           "type": "heading",
           "settings": {
-            "heading": "MLD reduces facial & tissue edema",
+            "heading": "<em>MLD reduces facial & tissue edema</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1301,10 +1301,10 @@
         "heading_iFTiyD": {
           "type": "heading",
           "settings": {
-            "heading": "Local warmth increases microcirculation",
+            "heading": "<em>Local warmth increases microcirculation</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
