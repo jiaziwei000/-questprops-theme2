@@ -1153,7 +1153,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -1453,7 +1453,7 @@
         "text_p6Vykd": {
           "type": "text",
           "settings": {
-            "text": "<p>✦<strong>4 kneading nodes</strong> that physically work into locked SCM and deep neck muscles — not vibration, mechanical release</p><p>✦<strong>42°C sustained heat</strong> that penetrates deep muscle tissue to release chronic tension the nodes can't reach alone</p><p>✦<strong>10 minutes per session</strong> — used on the back of the neck before bed or in the morning</p><p>✦<strong>Targets the source</strong> — releases the SCM to take tension off the platysma, opens drainage pathways<br/><br/></p>",
+            "text": "<p>✦<strong>16 kneading nodes</strong> that physically work into locked SCM and deep neck muscles — not vibration, mechanical release</p><p>✦<strong>42°C sustained heat</strong> that penetrates deep muscle tissue to release chronic tension the nodes can't reach alone</p><p>✦<strong>10 minutes per session</strong> — used on the back of the neck before bed or in the morning</p><p>✦<strong>Targets the source</strong> — releases the SCM to take tension off the platysma, opens drainage pathways<br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
