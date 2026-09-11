@@ -424,7 +424,7 @@
           "type": "text",
           "settings": {
             "text": "<p><em>A landmark 2014 study published in Surgical Technology International by Dr. Kenneth Hansraj found that at a 45-degree forward tilt — the angle most people hold their phone at — the effective weight on the cervical spine increases to </em><em><strong>49.4 pounds</strong></em><em>.</em></p><p><em>That's nearly 50 pounds of force, pulling on your neck muscles, every time you look at your phone.</em></p>",
-            "text_font": "body",
+            "text_font": "heading",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_line_height": 1.6,
@@ -440,7 +440,7 @@
           "settings": {
             "text": "<p>Over months and years, this isn't just \"bad posture.\" It physically changes the muscle structure in your neck. And those muscles are directly connected to your face.</p><p><strong>Forward head posture doesn't just make you look slouchy. It changes the way your face looks.</strong> Here's the anatomy that explains why.</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
