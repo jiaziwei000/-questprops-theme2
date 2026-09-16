@@ -1,0 +1,2226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page-full-width",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "17890577721cf551f9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_549c6cb_deB4Kz": {
+          "type": "ai_gen_block_549c6cb",
+          "settings": {
+            "button_label": "Shop QuestProps",
+            "button_url": "shopify://products/neck-massager",
+            "target_anchor": "",
+            "show_arrow": true,
+            "info_heading": "Drain your",
+            "info_subtext": "face in 10 minutes",
+            "device_display": "mobile",
+            "stack_on_mobile": false,
+            "scroll_threshold": 100,
+            "desktop_width_percent": 100,
+            "bar_bg_color": "#ffffff",
+            "bar_border_color": "#e5e5e5",
+            "button_bg_color": "#171717",
+            "button_text_color": "#ffffff",
+            "text_color": "#171717",
+            "subtext_color": "#666666",
+            "button_border_radius": 24,
+            "button_font_size": 15,
+            "bar_padding": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_549c6cb_deB4Kz"
+      ],
+      "settings": {}
+    },
+    "rich_text_Lqgipe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rWQyEH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Medical Review • Postural Science</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_NXtt8k": {
+          "type": "text",
+          "settings": {
+            "text": "<h1><strong>Harvard Study Reveals: Forward Head Posture Is Pulling Your Face Down — And 90% of Adults Have It</strong></h1>",
+            "text_font": "heading",
+            "text_size": "subtext-custom",
+            "text_max_size": 32,
+            "text_line_height": 1,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_CRVDdC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>New research in postural anatomy reveals why millions of people are aging faster than they should — and why everything they've tried hasn't worked.</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_f7Ezyc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7 min read  ·  Updated March 2026</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_rWQyEH",
+        "text_NXtt8k",
+        "text_CRVDdC",
+        "text_f7Ezyc"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 40,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_cik67a": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_XiwD4b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Forward head posture: The average head shifts 2–3 inches forward — changing the way your entire face looks.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_XdqJDK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Fix the Posture - Fix the Face",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_Hwk39n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · 180-day money-back guarantee</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_XiwD4b",
+        "button_XdqJDK",
+        "text_Hwk39n"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/888889acdff146e6993928b68b09c0.jpg",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_qE7BaU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_d6rwjz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The Problem</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_iJ7P7D": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Something is happening to your face. And you can't figure out what it is.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_g7DibU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You look in the mirror and something is off. You can't quite name it, but your face doesn't look the way it used to.</p><p>Your jawline isn't as sharp. There's puffiness under your eyes that doesn't go away no matter how much water you drink or how much sleep you get. Your face looks heavier, softer — like it's slowly sliding downward. Maybe one side looks slightly different than the other. People guess you're older than you are. You look tired even when you're not.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_d6rwjz",
+        "heading_iJ7P7D",
+        "text_g7DibU"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_Hzd6kr": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_JXFiiL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The signs: disappearing jawline, under-eye puffiness, jowling, and facial asymmetry — none caused by aging.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_RqY6DM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>So you do what everyone does. You buy retinol serums. You try gua sha. You get an ice roller. Maybe you invest in a microcurrent device, or even look into filler. Some of it helps a little, temporarily. But your face always settles right back to where it was. Nothing sticks.</p><p><strong>Here's why: you've been treating your face. But the problem isn't on your face.</strong></p><p>The problem is in your neck. And until you fix it there, nothing you put on your face will make a lasting difference.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_3Ntj3D": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The Cause</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_hKKjqh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Your phone is aging your face. Here's the biomechanics.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_9JACVt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The average American spends over 7 hours a day looking at a screen. Every time you look down at your phone or lean forward at a desk, your head shifts forward of your shoulders. This is called <strong>forward head posture</strong> — and research estimates that 66% to 90% of the population has it.</p><p>That might not sound like a big deal. But here's what's actually happening inside your body:</p><p>Your head weighs about 10 to 12 pounds. When it sits directly over your shoulders, your neck supports that weight efficiently. But for every inch your head moves forward, the effective load on your neck increases dramatically.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_YFAJHY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/565.jpg",
+            "image_width": "full_width",
+            "image_max_width": 1000,
+            "image_max_width_mobile": 100
+          }
+        },
+        "text_Ar7Tby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hansraj, 2014: At a 45° tilt — the angle you hold your phone — your neck bears nearly 50 lbs of force.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_VWAzff": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>A landmark 2014 study published in Surgical Technology International by Dr. Kenneth Hansraj found that at a 45-degree forward tilt — the angle most people hold their phone at — the effective weight on the cervical spine increases to </em><em><strong>49.4 pounds</strong></em><em>.</em></p><p><em>That's nearly 50 pounds of force, pulling on your neck muscles, every time you look at your phone.</em></p>",
+            "text_font": "heading",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FWcmJ3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Over months and years, this isn't just \"bad posture.\" It physically changes the muscle structure in your neck. And those muscles are directly connected to your face.</p><p><strong>Forward head posture doesn't just make you look slouchy. It changes the way your face looks.</strong> Here's the anatomy that explains why.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_JXFiiL",
+        "text_RqY6DM",
+        "text_3Ntj3D",
+        "heading_hKKjqh",
+        "text_9JACVt",
+        "image_YFAJHY",
+        "text_Ar7Tby",
+        "text_VWAzff",
+        "text_FWcmJ3"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/622f09454dd53914780bc5a5cd65584f.jpg",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "number_counter_czc98p": {
+      "type": "number-counter",
+      "blocks": {
+        "counter_NGwewG": {
+          "type": "counter",
+          "settings": {
+            "title": "Force on your neck at 45° phone tilt",
+            "number": "49.4",
+            "unit": "lbs",
+            "duration": 2
+          }
+        },
+        "counter_VVq4GH": {
+          "type": "counter",
+          "settings": {
+            "title": "of adults have forward head posture",
+            "number": "66",
+            "unit": "–90%",
+            "duration": 2
+          }
+        },
+        "counter_xpLeNH": {
+          "type": "counter",
+          "settings": {
+            "title": "Average daily screen time (US adults)",
+            "number": "7",
+            "unit": "+ hrs",
+            "duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "counter_NGwewG",
+        "counter_VVq4GH",
+        "counter_xpLeNH"
+      ],
+      "name": "t:sections.number-counter.name",
+      "settings": {
+        "gap": "small",
+        "columns": 4,
+        "text_alignment": "center",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_yJ7JaE": {
+      "type": "rich-text",
+      "blocks": {
+        "button_8TDhjJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "See How QuestProps Reverses Forward Head Posture",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "lg",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "text_pz7gdy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Results in as little as 7 days</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "button_8TDhjJ",
+        "text_pz7gdy"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_A9JTJQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rY3CXp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The Mechanism</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_Lg4Lib": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Two muscles you've never heard of are reshaping your face right now.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "heading_rk7MTF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Muscle #1: The SCM (sternocleidomastoid)",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "image_MFTXaj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1488f510894cf3b21d536fd12b54ed6b.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_RaxEg9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SCM muscle: runs from behind your ear to your collarbone. When locked, it holds your head forward and compresses drainage.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_XzQVBx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Running from behind your ear down to your collarbone, the SCM is one of the thickest, most powerful muscles in your neck. Its job is to rotate and flex your head. But when you have forward head posture, the SCM gets locked in a shortened, contracted position — sometimes for years without ever fully releasing.</p><p>A locked SCM does two things that directly affect your appearance:</p><p><strong>First, it holds your head in the forward position,</strong> maintaining the postural pattern that causes all the downstream effects on your face.</p><p><strong>Second, it compresses the jugular veins and lymphatic drainage pathways that run alongside it.</strong> These are the channels that drain fluid out of your face. When they're compressed by a tight SCM, the fluid that's supposed to drain downward gets trapped — under your eyes, in your cheeks, along your jawline. You wake up puffy, and it never fully goes away, because the drain is physically being squeezed shut 24 hours a day.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_G8Pgqw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/555666.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_B3cN8r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Left: Normal drainage flow. Right: Locked SCM compressing veins and lymphatic pathways — trapping fluid in the face.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Rtzk3M": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SCM has been identified as a key contributor to cervicogenic fluid retention and impaired cranial venous drainage when chronically shortened. — Adapted from clinical postural anatomy literature</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_GbabmY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Muscle #2: The Platysma",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_7NMNFR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is the muscle that most people — including most skincare professionals — have never heard of. And it might be the single most important muscle in facial aging.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_ALgqEw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/33344.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_nfw8eW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The platysma muscle: a thin sheet running from your chest to your jawline. When tight, it pulls your entire lower face down.</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_UDVwkd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The platysma is a thin, broad sheet of muscle that originates on your upper chest and collarbone, runs up through your entire neck, and inserts directly into your jawline and the corners of your mouth. It is physically connected to the structures that define your lower face.</p><p>When your head sits forward and the SCM is locked, the platysma gets pulled into a chronically shortened, tight position. And because it's directly attached to your jawline, <strong>a tight platysma literally pulls your entire lower face downward.</strong></p><p>The result:</p><p>Your jawline loses definition — not because of fat, but because it's being pulled down from below. Jowls form along the jaw as tissue sags under the constant downward tension. Nasolabial folds (smile lines) deepen as the midface gets dragged. Neck bands appear as the platysma fibers become visible through the skin. And because most people's forward head posture isn't perfectly symmetrical, the pull is uneven — creating facial asymmetry that makes one side look different from the other.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_dJJBrV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/09090909.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_w3NxFJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The platysma pull: one tight muscle creating jawline loss, jowls, deeper smile lines, neck bands, and facial asymmetry.</em></p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_jew7tW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The platysma originates from the fascia of the upper chest and inserts into the mandible (jawbone) and the skin of the lower face. Chronic platysma tension is a primary factor in lower face ptosis and the appearance of jowling. — StatPearls, National Library of Medicine (NBK545294)</p><p>Board-certified facial plastic surgeon Dr. Anil Shah has documented how platysma tension \"lowers the eyelids and midface, accentuating malar and nasolabial folds.\" — Shah Facial Plastics</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_bLjmrb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is the same muscle that plastic surgeons cut and tighten during a <strong>platysmaplasty — a surgical procedure that costs $5,000 to $8,000.</strong> They're literally cutting the muscle that forward head posture has been tightening for free, every day, for years.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_rY3CXp",
+        "heading_Lg4Lib",
+        "heading_rk7MTF",
+        "image_MFTXaj",
+        "text_RaxEg9",
+        "text_XzQVBx",
+        "image_G8Pgqw",
+        "text_B3cN8r",
+        "text_Rtzk3M",
+        "heading_GbabmY",
+        "text_7NMNFR",
+        "image_ALgqEw",
+        "text_nfw8eW",
+        "text_UDVwkd",
+        "image_dJJBrV",
+        "text_w3NxFJ",
+        "text_jew7tW",
+        "text_bLjmrb"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_w7CydR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dyg76a": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>Step 1 </strong></em><em>→</em><em><strong> The Trigger</strong></em>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Phone and desk use pushes your head forward<br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline"
+          }
+        },
+        "column_DNgUqa": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>Step 2 → The Lock</strong></em>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>SCM muscles shorten and lock, compressing drainage pathways</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline-2"
+          }
+        },
+        "column_f39mYm": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>Step 3 → The Pull</strong></em>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Locked SCM pulls on the platysma, dragging the jawline and lower face downward</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "underline",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_fE8eTJ": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "<em><strong>Step 4 → The Visible Damage</strong></em>",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Sagging jawline, jowls, puffiness, neck bands, asymmetry, aged appearance</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_dyg76a",
+        "column_DNgUqa",
+        "column_f39mYm",
+        "column_fE8eTJ"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "<em>The Forward Head Posture → Facial Aging Chain</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "marker",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_aRfL4f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AWeQRP": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>\"Think of your face like a curtain on a rod. The rod is your neck posture. When the rod is straight, the curtain hangs smooth and tight. When the rod tilts forward, the curtain bunches, sags, and wrinkles.\"</em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "underline",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_tbCTAr": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Every serum, roller, and face exercise is trying to iron the curtain while the rod is still tilted. Fix the rod, the curtain fixes itself.<br/><br/></p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AWeQRP",
+        "text_tbCTAr"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#f4f1eb",
+        "color_background": "#3a3a3a",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_QcBENd": {
+      "type": "rich-text",
+      "blocks": {
+        "button_kQAEJL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Fix the Rod- Lift the Curtain",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_mwyKzR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>30-day visible difference guarantee<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "button_kQAEJL",
+        "text_mwyKzR"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "reveal_testimonials_igQzi9": {
+      "type": "reveal-testimonials",
+      "blocks": {
+        "testimonial_d7pNFM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>The connection between forward head posture and facial aging is supported by peer-reviewed research across multiple disciplines — orthopedic surgery, facial plastic surgery, postural rehabilitation, and dermatology.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_ck7C8K": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>Hansraj, 2014 — Surgical Technology International:</strong> Quantified that forward head tilt to 45° increases effective cervical load to 49.4 lbs, causing chronic muscular adaptation in the SCM and surrounding structures.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_TekWfh": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>3D Imaging Study (PubMed 33314499):</strong> Used three-dimensional photogrammetry to demonstrate that head flexion increases gravitational pull on lower facial structures, accelerating jowl formation and nasolabial fold deepening.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_fKYXqy": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy custom<strong>Australian Spinal Research Foundation:</strong> Estimated forward head posture prevalence at 66% to 90% of the adult population, with higher rates in populations with desk-based occupations and high smartphone use.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_jyCaGL": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>StatPearls — National Library of Medicine (NBK545294):</strong> Confirms platysma anatomy — originating from the pectoral and deltoid fascia, inserting into the mandible and perioral skin. Documents the muscle's role in lower facial support and the effects of chronic tension.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_ULbHfW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>Dr. Anil Shah, Board-Certified Facial Plastic Surgeon:</strong> Published research showing platysma tension contributes to midface descent, accentuated nasolabial folds, and visible jowling — the same effects produced by chronic forward head posture.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_jaC4YF": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p><strong>Cutis Laser Clinics Research:</strong> Documented that poor posture — specifically forward head position — accelerates visible aging in the face and neck by altering muscular tension patterns and compressing cervical vasculature.</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_qRMrey": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "text": "<p><strong>The science is clear: forward head posture changes the muscular forces acting on your face. The SCM locks. The platysma pulls. Drainage gets blocked. And your face ages faster than it should — not from time, but from tension.</strong></p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_d7pNFM",
+        "testimonial_ck7C8K",
+        "testimonial_TekWfh",
+        "testimonial_fKYXqy",
+        "testimonial_jyCaGL",
+        "testimonial_ULbHfW",
+        "testimonial_jaC4YF",
+        "testimonial_qRMrey"
+      ],
+      "name": "t:sections.reveal-testimonials.name",
+      "settings": {
+        "heading": "This isn't a theory. It's published science.",
+        "heading_size": "title-md",
+        "heading_tag": "h2",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "rich_text_mm9RMX": {
+      "type": "rich-text",
+      "blocks": {
+        "text_VGTVG4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>The Solution</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_GxkBmF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Release the neck. Reverse the pull.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_y3ppXD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If the problem is locked SCM muscles pulling your head forward and tightening the platysma — then the fix isn't on your face. It's releasing the muscles that started the chain.</p><p>That means you need something that can physically get into the deep muscle tissue of the posterior neck — where the SCM and surrounding muscles lock up — and release the chronic tension that's been building for years. Not vibration. Not surface-level massage. A deep, mechanical muscle release with sustained heat.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_qXfKEc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/906994c779d05ee6c8d3340533a28d17.png",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "text_VGTVG4",
+        "heading_GxkBmF",
+        "text_y3ppXD",
+        "image_qXfKEc"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_rfRz7b": {
+      "type": "rich-text",
+      "blocks": {
+        "text_A79XgU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Introducing</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_tHrBHP": {
+          "type": "heading",
+          "settings": {
+            "heading": "QuestProps — The Posture Release Tool for Your Face",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "image_pPR6Xk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/e3eb20618715a00161459b119272ce4f.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_hFLbCR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>QuestProps was designed to target the exact area where forward head posture originates — the back of the neck, where the SCM and deep cervical muscles lock up. It's not a general-purpose massager. It's a precision release tool built for one job: undoing the postural tension that's pulling your face down.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_p6Vykd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦<strong>16 kneading nodes</strong> that physically work into locked SCM and deep neck muscles — not vibration, mechanical release</p><p>✦<strong>42°C sustained heat</strong> that penetrates deep muscle tissue to release chronic tension the nodes can't reach alone</p><p>✦<strong>10 minutes per session</strong> — used on the back of the neck before bed or in the morning</p><p>✦<strong>Targets the source</strong> — releases the SCM to take tension off the platysma, opens drainage pathways<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_hh7niz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_3ijdxT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Four kneading nodes target the locked SCM directly. 42°C heat penetrates deep tissue. The chain reverses.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_fFFFTd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When the SCM releases, the head moves back over the shoulders. Tension comes off the platysma. The drainage pathways in your neck decompress. And your face returns to its natural position — the one that's been hidden under years of postural tension.</p><p><strong>This isn't skincare. It's structural. Fix the neck, and the face fixes itself.</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_NGPqnj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Release the Tension - See Your Real Face",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_fGpJXV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · 30-day guarantee · Results in as little as 7 days<br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_A79XgU",
+        "heading_tHrBHP",
+        "image_pPR6Xk",
+        "text_hFLbCR",
+        "text_p6Vykd",
+        "image_hh7niz",
+        "text_3ijdxT",
+        "text_fFFFTd",
+        "button_NGPqnj",
+        "text_fGpJXV"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_comparison_fnewb7": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_rh7Dpe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/45454614071a97379b3d54dd727600.jpg",
+            "image_mobile": "shopify://shop_images/45454614071a97379b3d54dd727600.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        },
+        "image_WRVhGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/444333351e37005d7ede9848668f6ac5d.jpg",
+            "image_mobile": "shopify://shop_images/444333351e37005d7ede9848668f6ac5d.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_rh7Dpe",
+        "image_WRVhGT"
+      ],
+      "name": "t:sections.image-comparison.name",
+      "settings": {
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "image_height_mobile": "adapt",
+        "heading": "What happens when you release the pull.",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_Cy9hPn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_n7weR3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Same weight. No procedures. No filler. Just 10 minutes of neck release per day.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_n7weR3"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "reveal_testimonials_3T4ycW": {
+      "type": "reveal-testimonials",
+      "blocks": {
+        "testimonial_8QYHN8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>\"I've used this for two weeks and my husband asked me if I got Botox. I didn't. My jawline is sharper, the puffiness under my eyes is almost gone, and I look less tired. I'm the same weight. I didn't change my diet. I just released my neck for 10 minutes a night.\"</p>",
+            "author": " Sarah M.",
+            "author_info": "36 · Verified Buyer · 14 days of use",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_aWGamb": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>\"I'm a software engineer and I've had forward head posture for years. I always thought my double chin was genetic because I'm not overweight. After three weeks with the Hizoo, the tissue under my chin is visibly tighter. My face looks like it did in my 20s. I literally can't believe a neck device did this.\"</p>",
+            "author": "Rachel K.",
+            "author_info": "41 · Verified Buyer · 21 days of use",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_6n6mwA": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>\"Someone at work said I looked 'refreshed' and asked if I'd been on vacation. I've been working overtime. The only thing different is this device on my neck before bed. My smile lines look softer and my face looks more lifted. I've spent thousands on skincare over the years and nothing did what this did in two weeks.\"</p>",
+            "author": "Michelle T.",
+            "author_info": "38 · Verified Buyer · 16 days of use",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_iJec8z": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>\"I was about to book a consultation for a neck lift. I'm so glad I tried this first. The neck bands that have been bothering me for years are less visible, my jawline is more defined, and the asymmetry in my face — one side always looked heavier — has improved noticeably. My face isn't sagging. My neck was just pulling it down.\"</p>",
+            "author": " Linda P",
+            "author_info": "52 · Verified Buyer · 28 days of use",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_8QYHN8",
+        "testimonial_aWGamb",
+        "testimonial_6n6mwA",
+        "testimonial_iJec8z"
+      ],
+      "name": "t:sections.reveal-testimonials.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_tag": "h2",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "rich_text_TRqWKW": {
+      "type": "rich-text",
+      "blocks": {
+        "button_UF6hNk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Try Hizoo Risk-Free for 30 Days",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_bPfdyq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · Full refund if you don't see results<br/><br/></p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "button_UF6hNk",
+        "text_bPfdyq"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_with_icons_PH3rJM": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_i69Fik": {
+          "type": "column",
+          "settings": {
+            "icon": "time",
+            "custom_icon": "",
+            "heading": "<em><strong>Day 1–3</strong></em>",
+            "text": "<p><em><strong>The release begins</strong></em></p><p>You'll feel the kneading nodes find tension you didn't know you had — deep tightness at the base of your skull and along the sides of your neck. After each session your neck feels looser and your head sits slightly further back. Some people notice reduced puffiness the morning after their first session. Your neck may feel mildly sore — that's the locked SCM starting to release.</p>",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_R6kFwz": {
+          "type": "column",
+          "settings": {
+            "icon": "time",
+            "custom_icon": "",
+            "heading": "<em><strong>Day 4–7</strong></em>",
+            "text": "<p><em><strong>Drainage opens up</strong></em></p><p>As the SCM releases, the compression on your drainage pathways eases. Morning puffiness starts to clear faster. Under-eye bags look less pronounced. Your face may look slightly \"thinner\" or more defined — this is fluid draining, not fat loss. You'll start to notice your neck looks longer and your head sits differently.<br/><br/></p>",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_kgMJUd": {
+          "type": "column",
+          "settings": {
+            "icon": "time",
+            "custom_icon": "",
+            "heading": "<em><strong>Day 7–14</strong></em>",
+            "text": "<p><em><strong>The face starts to lift</strong></em></p><p>This is where most people see their first visible change in the mirror. As chronic SCM tension releases and stays released, the platysma begins to relax its downward pull. Jawline definition starts to return. Jowling softens. The \"tired\" look fades. This is typically when other people start noticing — the \"did you lose weight?\" or \"you look refreshed\" comments begin.<br/><br/></p>",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ihpk98": {
+          "type": "column",
+          "settings": {
+            "icon": "time",
+            "custom_icon": "",
+            "heading": "<em><strong>Day 14–21</strong></em>",
+            "text": "<p><em><strong>Structural change becomes visible</strong></em></p><p>By now the postural correction is becoming more habitual. Your head defaults to a position closer to where it should be — over your shoulders, not in front of them. The platysma is under significantly less tension. Smile lines may appear softer. Facial asymmetry begins to even out as the unequal pull resolves. Neck bands become less prominent. Side-by-side photos show a clear difference.<br/><br/></p>",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_YRyxbC": {
+          "type": "column",
+          "settings": {
+            "icon": "time",
+            "custom_icon": "",
+            "heading": "<em><strong>Day 21–30</strong></em>",
+            "text": "<p><em><strong>Your real face emerges</strong></em></p><p>A month of consistent use produces the full effect of releasing years of postural tension. Your jawline is defined. Puffiness is resolved. Your face looks lifted without filler, surgery, or a single skincare product applied below your chin. The face you see in the mirror is the face that was always there — it was just being held hostage by your neck.<br/><br/></p>",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_i69Fik",
+        "column_R6kFwz",
+        "column_kgMJUd",
+        "column_ihpk98",
+        "column_YRyxbC"
+      ],
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "<strong>Your first 30 days with QuestProps.</strong>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_wAtALK": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_3VHVjD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 30-day progression: as postural tension releases, the face returns to its natural structure.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_KmnD9V": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Your 30-Day Transformation",
+            "button_link": "shopify://products/neck-massager",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_r7jhDy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most people see first changes by day 7</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_3VHVjD",
+        "button_KmnD9V",
+        "text_r7jhDy"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/222111.jpg",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "image_height_mobile": "adapt",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_REjwXy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_kkeNKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Why This Is Different</strong></em></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_GTNkf4": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading_4JfzNN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>You've been treating the symptom. This fixes the cause.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "image_KRm6ra": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/77777774947785193758fc959d51d78.jpg",
+            "image_width": "full_width",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "text_mm7zyt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Platysmaplasty (neck lift surgery)</p><p><em>$5,000 – $8,000</em></p><p>Platysma Botox (per session)</p><p><em>$500 – $1,000</em></p><p>Microcurrent device (treats face, not cause)</p><p><em>$250 – $400</em></p><p>Filler (temporary, repeating cost)</p><p><em>$600 – $1,200/session</em><br/><br/></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_ieWU7X": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/products/neck-massager\" title=\"Your Daily 10-Minute Neck Reset\"><em><strong>QuestProps — targets the actual cause$139</strong></em></a></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FMirVW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>30-Day Visible Difference Guarantee.</strong></em><em> Use the Hizoo for 10 minutes a day for 30 days. If you don't see a visible improvement in your jawline definition, facial puffiness, or sagging — send it back for a full refund. No questions asked.</em></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_JyRGNt": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Your face isn't aging. It's being pulled down.Fix the pull.</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "button_rJGjth": {
+          "type": "button",
+          "settings": {
+            "button_label": "Release the Tension → See Your Real Face",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
+        "text_BXwDT4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping · 30-day guarantee · Results in as little as 7 days</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_kkeNKD",
+        "image_GTNkf4",
+        "heading_4JfzNN",
+        "image_KRm6ra",
+        "text_mm7zyt",
+        "text_ieWU7X",
+        "text_FMirVW",
+        "heading_JyRGNt",
+        "button_rJGjth",
+        "text_BXwDT4"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 52,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "17890577721cf551f9",
+    "rich_text_Lqgipe",
+    "image_with_text_cik67a",
+    "rich_text_qE7BaU",
+    "image_with_text_Hzd6kr",
+    "number_counter_czc98p",
+    "rich_text_yJ7JaE",
+    "rich_text_A9JTJQ",
+    "multicolumn_w7CydR",
+    "rich_text_aRfL4f",
+    "rich_text_QcBENd",
+    "reveal_testimonials_igQzi9",
+    "rich_text_mm9RMX",
+    "rich_text_rfRz7b",
+    "image_comparison_fnewb7",
+    "rich_text_Cy9hPn",
+    "reveal_testimonials_3T4ycW",
+    "rich_text_TRqWKW",
+    "multicolumn_with_icons_PH3rJM",
+    "image_with_text_wAtALK",
+    "rich_text_REjwXy"
+  ]
+}
