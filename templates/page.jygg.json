@@ -458,7 +458,7 @@
         "image_YFAJHY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/565.jpg",
+            "image": "shopify://shop_images/8b363bb4a3a0200e60fcf88a6dfb8ff3.jpg",
             "image_width": "full_width",
             "image_max_width": 1000,
             "image_max_width_mobile": 100
@@ -508,14 +508,14 @@
         "text_bjz9ne": {
           "type": "text",
           "settings": {
-            "text": "<p>Clinical-grade SCM release · 30-day money-back guarantee</p>",
-            "text_font": "body",
+            "text": "<p>Clinical-grade SCM release · 180-day money-back guarantee</p>",
+            "text_font": "subtitle",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -538,7 +538,7 @@
         "image_w4TApY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/222111.jpg",
+            "image": "shopify://shop_images/fbfa96c7134874bbd72e4a3e01bde673.jpg",
             "image_width": "full_width",
             "image_max_width": 50,
             "image_max_width_mobile": 50
@@ -638,7 +638,7 @@
         "text_ffHrmd": {
           "type": "text",
           "settings": {
-            "text": "<p>$200 once · No subscription · Free shipping</p>",
+            "text": "<p>$139 once · No subscription · Free shipping</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -653,7 +653,7 @@
         "text_Xezpxn": {
           "type": "text",
           "settings": {
-            "text": "<h2>The part I didn't expect.</h2><p>I bought Hizoo for the hump. I was singularly focused on my neck. But about 10 days in, something else happened.</p><p>I started sleeping through the night.</p><p>Not \"sleeping better.\" Sleeping <em>through</em>. No 3am wake-up. No groggy mornings. Just... sleep.</p><p>I mentioned it to the PT who'd told me about the SCM. She wasn't surprised. She said: <strong>\"The same muscle that causes your hump also compresses your vagus nerve — the nerve that regulates your entire sleep cycle. Release the muscle, and the nerve decompresses. Sleep improves.\"</strong></p><p>Then, about 3 weeks in, my husband asked if I'd changed my skincare routine. I hadn't. But my face looked... less puffy. Sharper jawline. Less swollen in the mornings.</p><p>Same explanation: the SCM compresses the jugular veins that drain fluid from your face. Release it, and the drainage improves overnight.</p><p><strong>One muscle. Three problems. I paid for the neck. The sleep and the face were free.</strong></p>",
+            "text": "<h2>The part I didn't expect.</h2><p>I bought QuestProps for the hump. I was singularly focused on my neck. But about 10 days in, something else happened.</p><p>I started sleeping through the night.</p><p>Not \"sleeping better.\" Sleeping <em>through</em>. No 3am wake-up. No groggy mornings. Just... sleep.</p><p>I mentioned it to the PT who'd told me about the SCM. She wasn't surprised. She said: <strong>\"The same muscle that causes your hump also compresses your vagus nerve — the nerve that regulates your entire sleep cycle. Release the muscle, and the nerve decompresses. Sleep improves.\"</strong></p><p>Then, about 3 weeks in, my husband asked if I'd changed my skincare routine. I hadn't. But my face looked... less puffy. Sharper jawline. Less swollen in the mornings.</p><p>Same explanation: the SCM compresses the jugular veins that drain fluid from your face. Release it, and the drainage improves overnight.</p><p><strong>One muscle. Three problems. I paid for the neck. The sleep and the face were free.</strong></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -712,7 +712,7 @@
       ],
       "name": "t:sections.image-with-text.name",
       "settings": {
-        "image": "shopify://shop_images/622f09454dd53914780bc5a5cd65584f.jpg",
+        "image": "shopify://shop_images/4ab76ab2d0ad76326f2cc4e8fa437445.jpg",
         "image_height": "adapt",
         "image_width": "medium",
         "layout": "image_first",
@@ -758,7 +758,7 @@
             "chiro_1": "✗",
             "video_1": "✗",
             "feature_2": "Cost",
-            "brand_2": "$200 once",
+            "brand_2": "$139 once",
             "brace_2": "$25–$45",
             "chiro_2": "$1,200+/yr",
             "video_2": "Free",
@@ -782,15 +782,15 @@
             "brace_6": "✗",
             "chiro_6": "✗",
             "video_6": "✗",
-            "text_color": "#332F1F",
-            "heading_color": "#332F1F",
-            "label_color": "#332F1F",
-            "header_background": "#332F1F",
-            "header_text_color": "#FFFFFF",
-            "highlight_background": "#E6F1EE",
-            "highlight_text_color": "#123C35",
-            "table_background": "#FFFFFF",
-            "border_color": "#D9D4C9",
+            "text_color": "#332f1f",
+            "heading_color": "#332f1f",
+            "label_color": "#332f1f",
+            "header_background": "#332f1f",
+            "header_text_color": "#ffffff",
+            "highlight_background": "#e6f1ee",
+            "highlight_text_color": "#123c35",
+            "table_background": "#ffffff",
+            "border_color": "#d9d4c9",
             "heading_size": 30,
             "body_size": 15
           },
