@@ -29,25 +29,25 @@
         "ai_gen_block_549c6cb_deB4Kz": {
           "type": "ai_gen_block_549c6cb",
           "settings": {
-            "button_label": "Shop QuestProps",
+            "button_label": "Check Availability ",
             "button_url": "shopify://products/neck-massager",
             "target_anchor": "",
             "show_arrow": true,
-            "info_heading": "Drain your",
-            "info_subtext": "face in 10 minutes",
+            "info_heading": "QuestProps",
+            "info_subtext": "· Clinical-Grade SCM Release · $139 Once · 180-Day Guarantee",
             "device_display": "mobile",
             "stack_on_mobile": false,
-            "scroll_threshold": 100,
-            "desktop_width_percent": 100,
+            "scroll_threshold": 0,
+            "desktop_width_percent": 80,
             "bar_bg_color": "#ffffff",
             "bar_border_color": "#e5e5e5",
             "button_bg_color": "#171717",
             "button_text_color": "#ffffff",
             "text_color": "#171717",
             "subtext_color": "#666666",
-            "button_border_radius": 24,
-            "button_font_size": 15,
-            "bar_padding": 12
+            "button_border_radius": 10,
+            "button_font_size": 12,
+            "bar_padding": 8
           },
           "blocks": {}
         }
@@ -121,8 +121,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 40,
+        "padding_top": 36,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -213,7 +213,7 @@
         "text_d6rwjz": {
           "type": "text",
           "settings": {
-            "text": "<p><em>The Problem</em></p>",
+            "text": "<p>The Problem</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -228,10 +228,10 @@
         "heading_iJ7P7D": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Here's everything I tried (and why none of it worked):</strong>",
+            "heading": "<em><strong>Here's everything I tried (and why none of it worked):</strong></em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -440,10 +440,21 @@
             "button_icon": true
           }
         },
+        "heading_UWHXaT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>Then a physical therapist told me something nobody else had.</strong></em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
         "text_yYgWrq": {
           "type": "text",
           "settings": {
-            "text": "<h2>Then a physical therapist told me something nobody else had.</h2><p>She said: <em>\"The problem isn't your posture. It's a muscle.\"</em></p><p>There's a muscle on the front of your neck called the <strong>SCM — the sternocleidomastoid</strong>. You've never heard of it. Neither had I.</p><p>Every hour you spend looking at a screen — your phone, your laptop, your monitor — this muscle tightens. It shortens. And it physically <strong>pulls your head forward and down</strong>, forcing your upper spine to curve into that visible hump.</p>",
+            "text": "<p>She said: \"The problem isn't your posture. It's a muscle.\"</p><p>There's a muscle on the front of your neck called the <strong>SCM — the sternocleidomastoid</strong>. You've never heard of it. Neither had I.</p><p>Every hour you spend looking at a screen — your phone, your laptop, your monitor — this muscle tightens. It shortens. And it physically <strong>pulls your head forward and down</strong>, forcing your upper spine to curve into that visible hump.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -451,7 +462,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle"
           }
         },
@@ -509,7 +520,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Clinical-grade SCM release · 180-day money-back guarantee</p>",
-            "text_font": "subtitle",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
@@ -520,10 +531,21 @@
             "highlighted_scribble": "circle"
           }
         },
+        "heading_9YgCCq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>There are really only 3 ways to release the SCM.</strong></em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
         "text_XtFnRd": {
           "type": "text",
           "settings": {
-            "text": "<h2>There are really only 3 ways to release the SCM.</h2><h3>Option 1: Manual therapy (PT or specialized massage)</h3><p>This works. A skilled therapist can physically grip the SCM and release it. The problem is cost and access. Sessions run $125–$290 each. A full treatment protocol is 9–12 months. Total cost: $1,500–$3,500. And you have to go to someone's office, on their schedule, in their city. It works. Most people simply can't sustain it.</p><h3>Option 2: Do nothing and hope it resolves</h3><p>The SCM doesn't relax on its own — not while you're still using screens 8+ hours a day. Every month you wait, the muscle locks tighter, the curve deepens, and the hump becomes more visible. What looks like a cosmetic issue at 38 can become a structural problem by 48. The trajectory only goes one direction.</p>",
+            "text": "<h3>Option 1: Manual therapy (PT or specialized massage)</h3><p>This works. A skilled therapist can physically grip the SCM and release it. The problem is cost and access. Sessions run $125–$290 each. A full treatment protocol is 9–12 months. Total cost: $1,500–$3,500. And you have to go to someone's office, on their schedule, in their city. It works. Most people simply can't sustain it.</p><h3>Option 2: Do nothing and hope it resolves</h3><p>The SCM doesn't relax on its own — not while you're still using screens 8+ hours a day. Every month you wait, the muscle locks tighter, the curve deepens, and the hump becomes more visible. What looks like a cosmetic issue at 38 can become a structural problem by 48. The trajectory only goes one direction.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -562,10 +584,10 @@
         "button_dTXjMC": {
           "type": "button",
           "settings": {
-            "button_label": "See If Hizoo Is Right For You",
+            "button_label": "See If QuestProps Is Right For You",
             "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": true
           }
@@ -574,21 +596,32 @@
           "type": "text",
           "settings": {
             "text": "<p>180-day money-back guarantee · Free shipping</p>",
-            "text_font": "body",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
+          }
+        },
+        "heading_d4ANL4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>How QuestProps releases the SCM (the same muscle your therapist would target)</strong></em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
           }
         },
         "text_FWcmJ3": {
           "type": "text",
           "settings": {
-            "text": "<h2>How QuestProps releases the SCM (the same muscle your therapist would target)</h2><p>Hizoo uses a <strong>4-prong deep-tissue grip</strong> that positions directly on the SCM — the same hand-placement a physical therapist uses during manual release.</p><p>You lie down. The device does the work. The 4 prongs apply targeted pressure that physically decompresses the locked muscle.</p><p>Combined with <strong>42°C precision heat</strong> — the exact temperature that softens connective tissue without burning — the release penetrates deeper than pressure alone.</p>",
+            "text": "<p>QuestProps uses a <strong>4-prong deep-tissue grip</strong> that positions directly on the SCM — the same hand-placement a physical therapist uses during manual release.</p><p>You lie down. The device does the work. The 4 prongs apply targeted pressure that physically decompresses the locked muscle.</p><p>Combined with <strong>42°C precision heat</strong> — the exact temperature that softens connective tissue without burning — the release penetrates deeper than pressure alone.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -630,7 +663,7 @@
             "button_label": "Check Availability",
             "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": true
           }
@@ -639,13 +672,13 @@
           "type": "text",
           "settings": {
             "text": "<p>$139 once · No subscription · Free shipping</p>",
-            "text_font": "body",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -653,7 +686,7 @@
         "text_Xezpxn": {
           "type": "text",
           "settings": {
-            "text": "<h2>The part I didn't expect.</h2><p>I bought QuestProps for the hump. I was singularly focused on my neck. But about 10 days in, something else happened.</p><p>I started sleeping through the night.</p><p>Not \"sleeping better.\" Sleeping <em>through</em>. No 3am wake-up. No groggy mornings. Just... sleep.</p><p>I mentioned it to the PT who'd told me about the SCM. She wasn't surprised. She said: <strong>\"The same muscle that causes your hump also compresses your vagus nerve — the nerve that regulates your entire sleep cycle. Release the muscle, and the nerve decompresses. Sleep improves.\"</strong></p><p>Then, about 3 weeks in, my husband asked if I'd changed my skincare routine. I hadn't. But my face looked... less puffy. Sharper jawline. Less swollen in the mornings.</p><p>Same explanation: the SCM compresses the jugular veins that drain fluid from your face. Release it, and the drainage improves overnight.</p><p><strong>One muscle. Three problems. I paid for the neck. The sleep and the face were free.</strong></p>",
+            "text": "<h2><em>The part I didn't expect.</em></h2><p>I bought QuestProps for the hump. I was singularly focused on my neck. But about 10 days in, something else happened.</p><p>I started sleeping through the night.</p><p>Not \"sleeping better.\" Sleeping <em>through</em>. No 3am wake-up. No groggy mornings. Just... sleep.</p><p>I mentioned it to the PT who'd told me about the SCM. She wasn't surprised. She said: <strong>\"The same muscle that causes your hump also compresses your vagus nerve — the nerve that regulates your entire sleep cycle. Release the muscle, and the nerve decompresses. Sleep improves.\"</strong></p><p>Then, about 3 weeks in, my husband asked if I'd changed my skincare routine. I hadn't. But my face looked... less puffy. Sharper jawline. Less swollen in the mornings.</p><p>Same explanation: the SCM compresses the jugular veins that drain fluid from your face. Release it, and the drainage improves overnight.</p><p><strong>One muscle. Three problems. I paid for the neck. The sleep and the face were free.</strong></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -661,14 +694,14 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
           }
         },
         "text_tP7ay8": {
           "type": "text",
           "settings": {
-            "text": "<h2>What other women are saying</h2><p>\"I saw myself in a wedding photo and ordered this that night. 3 weeks later I took the same photo in the same dress. My sister asked what I'd done.\"</p><p>— Rachel M., 41</p><p>\"I tried the brace, the pillow, the chiropractor. None of it touched the hump. This was the first thing that actually changed the shape of my neck.\"</p><p>— Jennifer L., 46</p><p>\"I was watching it get worse every year. Comparing photos from 2020 to 2024 was terrifying. After 6 weeks with Hizoo, I finally see it going the other direction.\"</p><p>— Danielle K., 38<br/><br/></p>",
+            "text": "<h2><em>What other women are saying</em></h2><p>\"I saw myself in a wedding photo and ordered this that night. 3 weeks later I took the same photo in the same dress. My sister asked what I'd done.\"</p><p>— Rachel M., 41</p><p>\"I tried the brace, the pillow, the chiropractor. None of it touched the hump. This was the first thing that actually changed the shape of my neck.\"</p><p>— Jennifer L., 46</p><p>\"I was watching it get worse every year. Comparing photos from 2020 to 2024 was terrifying. After 6 weeks with Hizoo, I finally see it going the other direction.\"</p><p>— Danielle K., 38<br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -676,7 +709,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
           }
         }
@@ -691,17 +724,20 @@
         "text_jGKXzX",
         "text_bbTH3t",
         "button_n6PLVw",
+        "heading_UWHXaT",
         "text_yYgWrq",
         "image_YFAJHY",
         "text_DzjTBz",
         "text_Ar7Tby",
         "button_HTEacw",
         "text_bjz9ne",
+        "heading_9YgCCq",
         "text_XtFnRd",
         "image_w4TApY",
         "text_VWAzff",
         "button_dTXjMC",
         "text_p8jqAi",
+        "heading_d4ANL4",
         "text_FWcmJ3",
         "image_wGkdTH",
         "text_xFGwNk",
@@ -819,7 +855,7 @@
         "text_pz7gdy": {
           "type": "text",
           "settings": {
-            "text": "<p>30-day money-back guarantee · Free shipping</p>",
+            "text": "<p>180-day money-back guarantee · Free shipping</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -834,7 +870,7 @@
         "text_UK9cU7": {
           "type": "text",
           "settings": {
-            "text": "<h2>How much I've spent trying to fix this:</h2><ul><li>Posture brace: $35</li><li>Cervical pillow: $50</li><li>8 chiropractor visits: $750</li><li>Neck cream (don't judge me): $25</li><li>Total spent on things that didn't work: $860</li></ul><p>Hizoo costs $200. Once. No refills. No appointments. No subscriptions.</p><p>That's less than 3 chiropractor visits. Less than what you've probably already spent on things sitting in a drawer right now.</p><p>And unlike everything else I tried: <strong>30-day money-back guarantee.</strong> If you don't see your neck changing in the mirror, you send it back. Full refund.</p><p>You either get results or you get your money back. That's it.</p>",
+            "text": "<h2>How much I've spent trying to fix this:</h2><ul><li>Posture brace: $35</li><li>Cervical pillow: $50</li><li>8 chiropractor visits: $750</li><li>Neck cream (don't judge me): $25</li><li>Total spent on things that didn't work: $860</li></ul><p><em>QuestProps costs $139. Once</em>. No refills. No appointments. No subscriptions.</p><p>That's less than 3 chiropractor visits. Less than what you've probably already spent on things sitting in a drawer right now.</p><p>And unlike everything else I tried: <strong>180-day money-back guarantee.</strong> If you don't see your neck changing in the mirror, you send it back. Full refund.</p><p>You either get results or you get your money back. That's it.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -842,8 +878,8 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline"
           }
         },
         "button_ebnmU3": {
@@ -852,7 +888,7 @@
             "button_label": "Check Availability ",
             "button_link": "shopify://products/neck-massager",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": true
           }
@@ -860,14 +896,14 @@
         "text_zB9LxJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Free shipping · 30-day guarantee · No subscription</p>",
-            "text_font": "body",
+            "text": "<p>Free shipping · 180-day guarantee · No subscription</p>",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
