@@ -1232,7 +1232,7 @@
         "heading_jqxgmz": {
           "type": "heading",
           "settings": {
-            "heading": "Your <em>10-Minute</em> Ritual",
+            "heading": "<em>Your 10-Minute Ritual</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
@@ -1328,13 +1328,13 @@
           "type": "text",
           "settings": {
             "text": "<p>(Not a medical treatment; if pain persists, see your clinician.)</p>",
-            "text_font": "subtitle",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1483,7 +1483,7 @@
         "text_cyVEyR": {
           "type": "text",
           "settings": {
-            "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><strong>• 180-day returns</strong> — full refund if you're not satisfied<br/><strong>• 2-year warranty</strong> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
+            "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><em><strong>• 180-day returns</strong></em> — full refund if you're not satisfied<br/><em><strong>• 2-year warranty</strong></em> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -1491,7 +1491,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "scribble",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "squiggle-underline"
           }
         }
