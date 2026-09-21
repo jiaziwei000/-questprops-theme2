@@ -149,13 +149,14 @@
           "settings": {
             "icon": "truck",
             "iwidth": "custom",
-            "icon_width": 20,
-            "text": "In stock! Ships within 1-2 business days.",
+            "icon_width": 40,
+            "text": "Ships from California & Massachusetts. Most orders arrive in 3–5 business days.",
             "text_size": "text-sm"
           }
         },
         "text-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "headphone",
             "iwidth": "custom",
@@ -166,6 +167,7 @@
         },
         "text-3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "award",
             "iwidth": "custom",
@@ -176,6 +178,7 @@
         },
         "text-4": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "box",
             "iwidth": "custom",
@@ -398,6 +401,95 @@
         "color_background": "#e8eaeb",
         "gradient_background": "",
         "full_width": false
+      }
+    },
+    "faq_pPgBLe": {
+      "type": "faq",
+      "blocks": {
+        "question_fjzh9M": {
+          "type": "question",
+          "settings": {
+            "title": "Description",
+            "text": "<p><br/>Professional-grade engineering for your neck. Spa-level precision, deep tissue massage + EMS heat therapy, at home. Breathe freely again.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_QhTdqi": {
+          "type": "question",
+          "settings": {
+            "title": "Risk Free Guarantee",
+            "text": "<p>Your satisfaction is our priority. If you aren't 100% happy with your purchase, you can return it <strong>within 180 days for a full refund.</strong> View our complete policy <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">here.</a></p><p><strong>2-Year Warranty Included:</strong> We stand by our quality so you can enjoy total peace of mind for years to come.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qdCbkk": {
+          "type": "question",
+          "settings": {
+            "title": "Features",
+            "text": "<p>Wireless operation, USB‑C charging.<br/>3 intensity levels: Gentle, Medium, Powerful.<br/>2 heat settings: Low Warmth, High Heat.<br/>Modes: Clockwise, Counter‑Clockwise, Deep Tissue Massage & EMS Pulse Therapy.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_ptU7mq": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_nCAY8t": {
+          "type": "question",
+          "settings": {
+            "title": "International Shipping",
+            "text": "<p>Apart from the US, QuestProps is currently available in and delivers to the following countries:</p><p>Canada, Australia, UK, Hong Kong, New Zealand, Singapore, Chile, Mexico, Thailand, Malaysia, Taiwan, South Korea, Japan, Kuwait, Qatar, UAE, Singapore, Norway and Switzerland.</p><p><strong>Processing + Delivery time:</strong> 7 to 14 business days (Updated 9/12/2025)</p><p><strong>Tracking, Insurance & Free returns included in all orders.<br/><br/></strong>Read more about our return policy in our \"Risk Free Guarantee\" below.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_fjzh9M",
+        "question_QhTdqi",
+        "question_qdCbkk",
+        "question_ptU7mq",
+        "question_nCAY8t"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
       }
     },
     "reveal_testimonials_Y6wAYj": {
@@ -2065,6 +2157,7 @@
     "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_rTBpXa",
+    "faq_pPgBLe",
     "reveal_testimonials_Y6wAYj",
     "video-hero",
     "number_counter_DLwRDH",
