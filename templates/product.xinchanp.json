@@ -93,8 +93,8 @@
           "settings": {
             "inventory_threshold": 15,
             "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
+            "show_inventory_quantity": "always",
+            "color_scheme": "accent-5"
           }
         },
         "product_variations_Wbwq3b": {
