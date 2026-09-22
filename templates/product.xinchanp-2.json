@@ -516,17 +516,8 @@
         "question_fjzh9M": {
           "type": "question",
           "settings": {
-            "title": "Description",
-            "text": "<p><br/>Professional-grade engineering for your neck. Spa-level precision, deep tissue massage + EMS heat therapy, at home. Breathe freely again.<br/><br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_QhTdqi": {
-          "type": "question",
-          "settings": {
-            "title": "Risk Free Guarantee",
-            "text": "<p>Your satisfaction is our priority. If you aren't 100% happy with your purchase, you can return it <strong>within 180 days for a full refund.</strong> View our complete policy <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">here.</a></p><p><strong>2-Year Warranty Included:</strong> We stand by our quality so you can enjoy total peace of mind for years to come.</p>",
+            "title": "WHY DOES MY NECK ALWAYS FEEL LIKE IT'S WORKING?",
+            "text": "<p>Your neck doesn't really get a break.</p><p>Sitting at a desk.<br/>Driving.<br/>Looking down at your phone.<br/>Working.<br/>Traveling.</p><p>All day, your neck is constantly supporting, adjusting and holding.</p><p>And when you finally try to relax, you often start another routine — stretching, massaging, repositioning, adjusting.</p><p><strong>Maybe your neck doesn't need more work.<br/>Maybe it needs a chance to let go.</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -534,8 +525,8 @@
         "question_qdCbkk": {
           "type": "question",
           "settings": {
-            "title": "Features",
-            "text": "<p>Wireless operation, USB‑C charging.<br/>3 intensity levels: Gentle, Medium, Powerful.<br/>2 heat settings: Low Warmth, High Heat.<br/>Modes: Clockwise, Counter‑Clockwise, Deep Tissue Massage & EMS Pulse Therapy.<br/><br/></p>",
+            "title": "HOW FAST WILL I FEEL THE DIFFERENCE?",
+            "text": "<p><strong>First Use</strong><br/>Get familiar with your 10-minute reset.</p><p><strong>First Week</strong><br/>Build a simple daily routine.</p><p><strong>Long Term</strong><br/>Make 10 minutes of hands-free reset part of your day.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -543,8 +534,8 @@
         "question_ptU7mq": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "WHAT IF NECK RESTORE ISN'T FOR ME?",
+            "text": "<p><strong>180-Day Risk-Free Trial</strong></p><p>Take your time getting used to your new routine. If it's not right for you, you're covered by our 180-day trial.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -552,8 +543,26 @@
         "question_nCAY8t": {
           "type": "question",
           "settings": {
-            "title": "International Shipping",
-            "text": "<p>Apart from the US, QuestProps is currently available in and delivers to the following countries:</p><p>Canada, Australia, UK, Hong Kong, New Zealand, Singapore, Chile, Mexico, Thailand, Malaysia, Taiwan, South Korea, Japan, Kuwait, Qatar, UAE, Singapore, Norway and Switzerland.</p><p><strong>Processing + Delivery time:</strong> 7 to 14 business days (Updated 9/12/2025)</p><p><strong>Tracking, Insurance & Free returns included in all orders.<br/><br/></strong>Read more about our return policy in our \"Risk Free Guarantee\" below.</p>",
+            "title": "WHAT DO I DO?",
+            "text": "<p><strong>1 —</strong> Position Neck Restore comfortably.</p><p><strong>2 —</strong> Choose your preferred settings.</p><p><strong>3 —</strong> Relax for 10 minutes.</p><p><strong>4 —</strong> Done.</p><p><strong>No complicated routine.<br/>No holding a device.<br/>Just 10 minutes.</strong></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_ATJ9xc": {
+          "type": "question",
+          "settings": {
+            "title": "IS THIS JUST ANOTHER NECK MASSAGER?",
+            "text": "<p><strong>Not exactly.</strong></p><p>It's not just a handheld massager.</p><p>It's not just heat.</p><p>It's not a device you need to keep operating.</p><p><strong>26° Support + Heat + Massage + Gentle EMS</strong></p><p><strong>Combined into one 10-minute hands-free routine.</strong></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_QhTdqi": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT'S INSIDE NECK RESTORE?",
+            "text": "<p><strong>26° Support</strong></p><p><strong>Heat</strong></p><p><strong>Massage</strong></p><p><strong>Gentle EMS</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -561,16 +570,17 @@
       },
       "block_order": [
         "question_fjzh9M",
-        "question_QhTdqi",
         "question_qdCbkk",
         "question_ptU7mq",
-        "question_nCAY8t"
+        "question_nCAY8t",
+        "question_ATJ9xc",
+        "question_QhTdqi"
       ],
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-border",
         "heading": "",
-        "heading_size": "title-md",
+        "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
@@ -591,7 +601,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
-        "overlay_opacity": 4,
+        "overlay_opacity": 10,
         "padding_top": 20,
         "padding_bottom": 20,
         "divider": false,
@@ -725,13 +735,81 @@
         "parallax_direction": "horizontal"
       }
     },
+    "blocks_pQ6eaq": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ab934ad_VP47pG": {
+          "type": "ai_gen_block_ab934ad",
+          "settings": {
+            "heading": "",
+            "desktop_width_percent": 100,
+            "feature_heading": "Comparison",
+            "brand_heading": "Neck Restore",
+            "brace_heading": "Traditional Approach",
+            "chiro_heading": "",
+            "video_heading": "",
+            "feature_1": "Hands-free",
+            "brand_1": "✓",
+            "brace_1": "—",
+            "chiro_1": "",
+            "video_1": "",
+            "feature_2": "26° supported design",
+            "brand_2": "✓",
+            "brace_2": "—",
+            "chiro_2": "",
+            "video_2": "",
+            "feature_3": "Heat",
+            "brand_3": "✓",
+            "brace_3": "Sometimes",
+            "chiro_3": "",
+            "video_3": "",
+            "feature_4": "Massage",
+            "brand_4": "✓",
+            "brace_4": "✓",
+            "chiro_4": "",
+            "video_4": "",
+            "feature_5": "EMS",
+            "brand_5": "✓",
+            "brace_5": "—",
+            "chiro_5": "",
+            "video_5": "",
+            "feature_6": "10-minute routine",
+            "brand_6": "✓",
+            "brace_6": "Often requires more effort",
+            "chiro_6": "",
+            "video_6": "",
+            "text_color": "#24364b",
+            "heading_color": "#0b1f3a",
+            "label_color": "#E8E8E4",
+            "header_background": "#0F192D",
+            "header_text_color": "#ffffff",
+            "highlight_background": "#123c6a",
+            "highlight_text_color": "#ffffff",
+            "table_background": "#ffffff",
+            "border_color": "#dbe5ef",
+            "heading_size": 30,
+            "body_size": 15
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ab934ad_VP47pG"
+      ],
+      "name": "Comparison table",
+      "settings": {}
+    },
+    "1790066332024cd932": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "video_with_text_KV9rPw": {
       "type": "video-with-text",
       "blocks": {
         "heading_ta6YiT": {
           "type": "heading",
           "settings": {
-            "heading": "Close your eyes. Take <em>10 minutes</em> for yourself.",
+            "heading": "Your Neck Doesn't Need More Work.It's Been Working All Day",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "marker",
@@ -742,7 +820,7 @@
         "text_GiYbLk": {
           "type": "text",
           "settings": {
-            "text": "<p>Feel the warmth spread through your neck.</p><p>Gentle pressure reaches the tension you've been holding onto all day.<br/>Slowly, your shoulders let go.<br/></p><p>Your jaw relaxes.<br/></p><p>Your breath becomes deeper.<br/></p><p>Ten quiet minutes later,<br/>the tension feels a little further away.<br/>And peace feels a little closer.</p>",
+            "text": "<p>Your day already asks your neck to support you from morning to night.</p><p>Neck Restore gives you a simple 10-minute window where you don't have to keep thinking about it.</p>",
             "text_font": "body",
             "text_size": "subtext-xl",
             "text_max_size": 32,
@@ -753,39 +831,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "text_HArLH9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>*Not intended to diagnose, treat, or cure medical conditions. Individual results may vary.</p>",
-            "text_font": "subtitle",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "heading_L7M8en": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>Your Body Will Thank You</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
         }
       },
       "block_order": [
         "heading_ta6YiT",
-        "text_GiYbLk",
-        "text_HArLH9",
-        "heading_L7M8en"
+        "text_GiYbLk"
       ],
       "name": "t:sections.video-with-text.name",
       "settings": {
@@ -859,98 +909,76 @@
         "parallax_direction": "vertical"
       }
     },
-    "product_details_weYUqg": {
-      "type": "product-details",
+    "portfolio_TyQdme": {
+      "type": "portfolio",
       "blocks": {
-        "description_THfTAH": {
-          "type": "description",
-          "disabled": true,
+        "profile_76prL9": {
+          "type": "profile",
           "settings": {
-            "split_mode": false,
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Description",
-            "text_size": "text-base"
+            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "image_mobile": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "heading": "26° Support",
+            "text": "<p>A supported 26° position designed to keep Neck Restore comfortably positioned during your routine.<br/><br/></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
           }
         },
-        "collapsible_tab_jqj4p7": {
-          "type": "collapsible_tab",
+        "profile_XinCmJ": {
+          "type": "profile",
           "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "EMS Microcurrent Stimulation",
-            "content": "<p>Delivers low-frequency microcurrents to gently stimulate deeper muscle layers, causing them to contract and relax rhythmically to effectively break up stubborn stiffness and awaken muscle vitality.<br/><br/></p>",
-            "metafields": "",
-            "text_size": "text-base lg:text-xl"
+            "heading": "Heat",
+            "text": "<p>Comfortable warmth that turns your 10-minute routine into a more relaxing reset.<br/><br/></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
           }
         },
-        "collapsible_tab_4GnCHW": {
-          "type": "collapsible_tab",
+        "profile_8NXC6m": {
+          "type": "profile",
           "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Soothe & Warm Heat Therapy",
-            "content": "<p>Features a built-in constant-temperature heating system that emits comforting thermal energy, penetrating deep into tired areas to quickly melt away chill, tension, and fatigue.<br/><br/></p>",
-            "metafields": "",
-            "text_size": "text-base lg:text-xl"
+            "heading": "Massage",
+            "text": "<p>Hands-free massage sensation without needing to hold or move a device.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
           }
         },
-        "collapsible_tab_fetkyM": {
-          "type": "collapsible_tab",
+        "profile_TkHdAz": {
+          "type": "profile",
           "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "fit",
-            "icon_width": 24,
-            "heading": "Targeted Tension Release",
-            "content": "<p>Precisely acts on hard-to-reach deep fascial layers, using a powerful combination of pulse technology and heat to efficiently dissolve long-term physical stress and heaviness.<br/><br/></p>",
-            "metafields": "",
-            "text_size": "text-base lg:text-xl"
+            "heading": "Gentle EMS",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
           }
         },
-        "collapsible_tab_3eTKYB": {
-          "type": "collapsible_tab",
+        "profile_nBt8cJ": {
+          "type": "profile",
           "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Enhanced Circulation & Blood Flow",
-            "content": "<p>Combines gentle warmth with electrical stimulation to effectively boost local microcirculation and metabolism, delivering a fresh supply of oxygen and nutrients to the neck and shoulder tissues.<br/></p>",
-            "metafields": "",
-            "text_size": "text-base lg:text-xl"
-          }
-        },
-        "collapsible_tab_yh64UY": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Headache & Migraine Support",
-            "content": "<p>Relaxes the tight muscles at the base of the skull and upper back, helping to alleviate tension headaches and occasional migraines triggered by muscle spasms and poor circulation.</p>",
-            "metafields": "",
-            "text_size": "text-base lg:text-xl"
+            "heading": "Gentle EMS",
+            "text": "<p>A subtle electrical stimulation experience designed to complement your daily routine.<br/><br/></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
           }
         }
       },
       "block_order": [
-        "description_THfTAH",
-        "collapsible_tab_jqj4p7",
-        "collapsible_tab_4GnCHW",
-        "collapsible_tab_fetkyM",
-        "collapsible_tab_3eTKYB",
-        "collapsible_tab_yh64UY"
+        "profile_76prL9",
+        "profile_XinCmJ",
+        "profile_8NXC6m",
+        "profile_TkHdAz",
+        "profile_nBt8cJ"
       ],
-      "name": "t:sections.product-details.name",
+      "name": "t:sections.portfolio.name",
       "settings": {
-        "style": "with-border",
-        "open_first_row": false,
-        "specifications_heading": "Included in the Box",
-        "heading": "",
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "layout": "default",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "The 10-Minute System Behind Neck Restore",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center justify-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
@@ -962,15 +990,15 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#f4f1eb",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -982,7 +1010,7 @@
         "heading_jqxgmz": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Your 10-Minute Ritual</em>",
+            "heading": "<em>Try Neck Restore Risk-Free For 180 Days</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
@@ -993,7 +1021,7 @@
         "text_BQAPLF": {
           "type": "text",
           "settings": {
-            "text": "<ul><li><strong>Personalize every session for the results you want.</strong><br/><strong>Intensity: Gentle • Moderate • Intense</strong>: Start gently as your body adjusts, or go deeper for stronger results.<br/><strong>Intensity Impact</strong>: The higher the intensity, the more noticeable the massage.<br/></li><li><strong>EMS Pulse Technology: Low • Mid • High</strong><br/><strong>Deep Muscle Activation</strong>: Low-frequency electrical pulses stimulate deep muscle layers to break down stubborn stiffness and relieve fatigue.<br/><strong>Customizable Stimulation</strong>: Choose the ideal current level to suit your comfort and recovery needs.<br/></li><li><strong>Soothing Heat: 42°C</strong><br/><strong>Thermal Comfort</strong>: A gentle warmth that relaxes tight muscles and makes your daily routine even more comforting.<br/></li><li><strong>Modes: Deep Tissue Massage • Clockwise • Counter-Clockwise</strong><br/><strong>Rotation & Technique</strong>: Switch between targeted neck-first massages or relaxing rhythmic rolls.<br/></li><li><strong>Your routine, your way</strong>—whether you want a light morning refresh or a deeper evening release.</li></ul>",
+            "text": "<p>Give yourself time to make the 10-minute reset part of your routine.</p><p><strong>180-Day Trial</strong></p><p><strong>2-Year Warranty</strong></p>",
             "text_font": "body",
             "text_size": "subtext-xl",
             "text_max_size": 32,
@@ -1045,500 +1073,138 @@
         "parallax_direction": "vertical"
       }
     },
-    "video_with_text_qGCXGw": {
-      "type": "video-with-text",
+    "179006638137ca5647": {
+      "type": "apps",
       "blocks": {
-        "heading_TVhGCd": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>Professional relief that feels impossibly human.</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_ybectj": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li><strong>26° Ergonomic Traction</strong>: Restores the neck's natural curve and decompresses the spine.</li><li><strong>EMS Microcurrents (Low • Mid • High)</strong>: Stimulates deep muscle contractions to boost circulation and release stubborn stiffness.</li><li><strong>Precision 42°C Heat</strong>: Melts tension instantly and warms tight muscles.</li><li><strong>Customizable Massages</strong>: Switch between deep tissue, clockwise, and counter-clockwise modes with adjustable intensities.</li></ul><p>Just <em>10-15 minutes</em> a day melts away desk work and stress, giving you a quick morning refresh or a deeper evening release.</p>",
-            "text_font": "body",
-            "text_size": "subtext-xl",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "text_b6wcca": {
-          "type": "text",
-          "settings": {
-            "text": "<p>(Not a medical treatment; if pain persists, see your clinician.)</p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
+        "judge_me_reviews_preview_badge_c6cHbR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "heading_TVhGCd",
-        "text_ybectj",
-        "text_b6wcca"
+        "judge_me_reviews_preview_badge_c6cHbR"
       ],
-      "name": "t:sections.video-with-text.name",
       "settings": {
-        "video": "shopify://files/videos/5月15日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "500px",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 32,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "image_with_text_9CQh9p": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_nKRPPB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/afc44c94f0521effe68f047f39ccb4ac.png",
-            "image_width": "custom",
-            "image_max_width": 30,
-            "image_max_width_mobile": 30
-          }
-        },
-        "heading_mdXmyY": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>Our Guarantee</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "sketch-underline",
-            "highlighted_reveal": true
-          }
-        },
-        "text_diaEbf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><strong>• 180-day returns</strong> — full refund if you're not satisfied<br/><strong>• 2-year warranty</strong> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "button_QPHEmb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get Yours Now",
-            "button_link": "shopify://products/neck-massager",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "image_nKRPPB",
-        "heading_mdXmyY",
-        "text_diaEbf",
-        "button_QPHEmb"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.name",
-      "settings": {
-        "image": "shopify://shop_images/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
-        "image_height": "650px",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "#332f1f",
-        "color_background": "#e8e8e4",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "video_with_text_GKmjMR": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_TjXyVi": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>Our Guarantee</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "marker",
-            "highlighted_scribble": "squiggle-underline",
-            "highlighted_reveal": false
-          }
-        },
-        "text_cyVEyR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>QuestProps isn't for everyone—and that's okay.<br/>But you already know if it's for you.<br/>You know because you feel that tension every single day. You know because you've tried other things and they haven't worked. You know because you're still here, reading this, looking for something that actually helps.<br/>Most people love it: 9 out of 10 keep their QuestProps after trying it.<br/>If you're looking for a magic cure or overnight transformation, this isn't it. But if you're looking for lasting change through consistent use—a gentle, <em>10-minute </em>daily ritual that addresses the source of your neck tension, reduces morning puffiness, and helps you feel like yourself again—QuestProps is made for you.<br/>And you already know you need it.<br/>Try it risk-free:<br/><em><strong>• 180-day returns</strong></em> — full refund if you're not satisfied<br/><em><strong>• 2-year warranty</strong></em> — built to last<br/>You have nothing to lose. Except the tension you've been carrying. The puffiness you wake up with. The headaches that won't quit.<br/>Love it, or your money back.</p>",
-            "text_font": "body",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        }
-      },
-      "block_order": [
-        "heading_TjXyVi",
-        "text_cyVEyR"
-      ],
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video": "shopify://files/videos/7月2日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "500px",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 20,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "product-details": {
-      "type": "product-details",
-      "blocks": {
-        "collapsible_tab-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Technology",
-            "content": "<p>EMS (Electrical Muscle Stimulation) + soothing heat work together in one simple routine.</p><p>The ergonomic neck design is made to sit comfortably around the neck while the adjustable settings let you personalize your session.</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Session Time & Modes",
-            "content": "<p>Recommended session: 10–15 minutes<br/>2 massage modes<br/>15-minute automatic shut-off<br/>Adjustable intensity for a more personalized experience</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "What's Included",
-            "content": "<p>1× QUESTPROPS™ Neck Restore<br/>1× Remote Control<br/>1× USB Charging Cable<br/>1× User Guide</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab-4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Intensity & Heat",
-            "content": "<p>6 adjustable intensity levels<br/>3 vibration modes<br/>3 heat levels<br/>Designed for a personalized daily routine</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "specification": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/9dcf413212cf7e113eec55e164ff4867.png",
-            "heading": "EMS Massager",
-            "text_size": "text-sm"
-          }
-        },
-        "specification_d7eKab": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/e7cb9118ca14e5f7628095201fa1e4b1.png",
-            "heading": "USB Charging Cable",
-            "text_size": "text-sm"
-          }
-        },
-        "specification_bdqAxn": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/3705dab7b33d405562d26f72114f844d.png",
-            "heading": "Wireless Remote Control",
-            "text_size": "text-sm"
-          }
-        },
-        "specification_qqJXj7": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/848209f79fd0fc527a21b62802eb33b4.png",
-            "heading": "Instruction Manual",
-            "text_size": "text-sm"
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_tab-1",
-        "collapsible_tab-2",
-        "collapsible_tab-3",
-        "collapsible_tab-4",
-        "specification",
-        "specification_d7eKab",
-        "specification_bdqAxn",
-        "specification_qqJXj7"
-      ],
-      "settings": {
-        "style": "with-border",
-        "open_first_row": true,
-        "specifications_heading": "Included in the Box",
-        "heading": "<em>Tech Specs</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "marker",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#332f1f",
-        "color_background": "#f4f1eb",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 20,
-        "padding_bottom": 24,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "faq": {
-      "type": "faq",
+    "timeline_GkbVR3": {
+      "type": "timeline",
       "blocks": {
-        "question-1": {
-          "type": "question",
+        "content_4fVdtW": {
+          "type": "content",
           "settings": {
-            "title": "<strong>How does QUESTPROPS™ Neck Restore work?</strong>",
-            "text": "<p>QUESTPROPS™ combines gentle EMS stimulation, massage and soothing heat in one simple routine. Adjustable settings let you choose the intensity and warmth that feel comfortable for you.</p>",
+            "subheading": "DAY 1",
+            "heading": "<strong>Start the reset</strong>",
+            "heading_tag": "h2",
+            "text": "<p>Get familiar with your 10-minute routine.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
           }
         },
-        "question-2": {
-          "type": "question",
+        "content_D4awQY": {
+          "type": "content",
           "settings": {
-            "title": "<strong>How long should I use it?</strong>",
-            "text": "<p>We recommend 10–15 minutes per session. The device includes a 15-minute automatic shut-off for added convenience.</p>",
+            "subheading": "WEEK 1",
+            "heading": "Build consistency",
+            "heading_tag": "h2",
+            "text": "<p>Make 10 minutes part of your day.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
           }
         },
-        "question-3": {
-          "type": "question",
+        "content_DQrEnB": {
+          "type": "content",
           "settings": {
-            "title": "<strong>Who is it designed for?</strong>",
-            "text": "<p>It's designed for adults who spend a lot of time sitting, working at a desk, driving, using screens, or simply want a relaxing neck routine at the end of the day.</p>",
+            "subheading": "WEEK 2–3",
+            "heading": "Make it automatic",
+            "heading_tag": "h2",
+            "text": "<p>Less thinking. More routine.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
           }
         },
-        "question-4": {
-          "type": "question",
+        "content_jUBMdn": {
+          "type": "content",
           "settings": {
-            "title": "<strong>Is the EMS sensation uncomfortable?</strong>",
-            "text": "<p>EMS can feel different from person to person. Start at a low intensity and gradually adjust it to a level that feels comfortable for you.</p>",
+            "subheading": "LONG TERM",
+            "heading": "Your new daily reset",
+            "heading_tag": "h2",
+            "text": "<p>Ten minutes becomes one of the easiest parts of your day.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "<strong>How does the 180-Day Risk-Free Trial work?</strong>",
-            "text": "<p>Try QUESTPROPS™ at home. If it isn't right for you, you can return it within the applicable 180-day trial period. Please see our Return Policy for the full terms and conditions.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_8FE3BR": {
-          "type": "question",
-          "settings": {
-            "title": "Does it come with a warranty?",
-            "text": "<p>Yes. QUESTPROPS™ Neck Restore includes a 2-Year Warranty. If you need help with a warranty claim, our support team is here to assist you.<br/><br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_Q4E43L": {
-          "type": "question",
-          "settings": {
-            "title": "How long does shipping take?",
-            "text": "<p>Orders typically ship within 1–2 business days. Delivery time depends on your destination and shipping method. Tracking information is provided when your order ships.<br/><br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_T7RUaN": {
-          "type": "question",
-          "settings": {
-            "title": "What’s included in the box?",
-            "text": "<p>You’ll receive 1× QUESTPROPS™ Neck Restore, 1× Remote Control, 1× USB Charging Cable, and 1× User Guide.<br/><br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "settings": {
-            "heading": "Still have questions?",
-            "text": "<p>We're happy to help. Contact our support team and we'll get back to you as soon as possible.</p>",
-            "show_phone": false,
-            "avatar_height": 60,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
           }
         }
       },
       "block_order": [
-        "question-1",
-        "question-2",
-        "question-3",
-        "question-4",
-        "question-5",
-        "question_8FE3BR",
-        "question_Q4E43L",
-        "question_T7RUaN",
-        "contact"
+        "content_4fVdtW",
+        "content_D4awQY",
+        "content_DQrEnB",
+        "content_jUBMdn"
       ],
+      "name": "t:sections.timeline.name",
       "settings": {
-        "style": "with-background",
-        "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "wide",
+        "heading": "Your 10-Minute Routine, Week by Week",
+        "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#ffffff",
-        "color_background": "#686866",
+        "color_text": "",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
+        "color_button_text": "",
+        "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 4,
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
-        "narrow": false,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -1819,15 +1485,14 @@
     "faq_pPgBLe",
     "rich_text_ULKVqP",
     "slideshow_hwmiUc",
+    "blocks_pQ6eaq",
+    "1790066332024cd932",
     "video_with_text_KV9rPw",
     "video_with_text_RH6jEw",
-    "product_details_weYUqg",
+    "portfolio_TyQdme",
     "video_with_text_caT8aL",
-    "video_with_text_qGCXGw",
-    "image_with_text_9CQh9p",
-    "video_with_text_GKmjMR",
-    "product-details",
-    "faq",
+    "179006638137ca5647",
+    "timeline_GkbVR3",
     "1786265603ac9a21f6",
     "recently-viewed",
     "help-drawer",
