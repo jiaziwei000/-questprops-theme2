@@ -103,7 +103,7 @@
         "text_VQqgct": {
           "type": "text",
           "settings": {
-            "icon": "watch",
+            "icon": "time",
             "iwidth": "custom",
             "icon_width": 34,
             "text": "SPECIAL OFFER ENDS THIS WEEK",
@@ -433,9 +433,9 @@
         "column_PEYUmm": {
           "type": "column",
           "settings": {
-            "icon": "bag",
+            "icon": "wash",
             "custom_icon": "",
-            "heading": "FreeShipping (2-7 days)",
+            "heading": "Free Worldwide Shipping",
             "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1457,8 +1457,8 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/402147f6e5c1e00522d6494bcbd0a232.jpg",
-            "heading": "26° Support",
-            "text": "<h3><strong>26° SUPPORT</strong></h3><p><strong>A position designed to let you settle in.</strong></p><p>Neck Restore is built around a 26° supported angle to help keep the device comfortably positioned during your 10-minute routine.</p><p>No constant repositioning.<br/><br/>No holding it in place.<br/><br/>Just settle in and let the routine begin.<br/></p>",
+            "heading": "26° SUPPORT ANGLE",
+            "text": "<p><strong>A 26° support angle helps position your neck comfortably during your routine.</strong></p><p><strong>26° design</strong><br/></p>",
             "color_text": "#ffffff",
             "color_background": "#171717"
           }
@@ -1467,8 +1467,8 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/38c3047fc18b260fd16e378384fb10f2.jpg",
-            "heading": "Heat",
-            "text": "<h3><strong>COMFORTABLE HEAT</strong></h3><p><strong>Warmth that makes it easier to slow down.</strong></p><p>Gentle heat adds a comfortable layer to your 10-minute reset — especially after a long day of sitting, driving or working.</p><p>Just choose your setting and let the warmth become part of the routine.<br/><br/></p>",
+            "heading": "HEAT THERAPY",
+            "text": "<p><strong>Gentle warmth helps you ease into your daily reset.</strong></p><p><strong>Targeted warmth</strong><br/><br/></p>",
             "color_text": "#ffffff",
             "color_background": "#171717"
           }
@@ -1476,9 +1476,9 @@
         "profile_8NXC6m": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
+            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
             "heading": "Massage",
-            "text": "<p><strong>Hands-free massage, without the work.</strong></p><p>Built-in massage adds a soothing physical sensation while you sit back and let the 10-minute routine run.</p><p>No holding.<br/><br/>No reaching behind your neck.<br/><br/>No complicated technique</p>",
+            "text": "<p><strong>Massage helps create a more relaxing, hands-on feel without booking an appointment.</strong></p><p><strong>At-home use</strong></p>",
             "color_text": "#ffffff",
             "color_background": "#171717"
           }
@@ -1486,9 +1486,9 @@
         "profile_TkHdAz": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/c611bd6b5cd2abacfd1a61826cf3f8be.jpg",
-            "heading": "Gentle EMS",
-            "text": "<h3><strong>GENTLE EMS</strong></h3><p><strong>A subtle pulse to complement your reset.</strong></p><p>Gentle electrical stimulation adds another layer to the Neck Restore experience, designed to complement heat and massage during your 10-minute routine.</p><p>Choose your preferred intensity and let the device do the work.</p>",
+            "image": "shopify://shop_images/513bd48e78d1b98727126e212ef0cfeb.png",
+            "heading": "EMS",
+            "text": "<p><strong>Gentle electrical stimulation adds another layer to your at-home routine.</strong></p><p><strong>Adjustable intensity</strong></p>",
             "color_text": "#ffffff",
             "color_background": "#171717"
           }
@@ -1509,7 +1509,7 @@
         "image_ratio_mobile": "portrait",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "<em><strong>The 10-Minute System Behind Neck Restore</strong></em>",
+        "heading": "<em><strong>The Science-Driven System For Releasing Daily Neck Tension</strong></em>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center justify-center",
         "heading_tag": "h2",
