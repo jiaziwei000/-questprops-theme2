@@ -12,6 +12,10 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
+        "rating_cJRMiA": {
+          "type": "rating",
+          "settings": {}
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -28,16 +32,6 @@
           "type": "sticky_buy_button",
           "disabled": true,
           "settings": {}
-        },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "{{ product.vendor }}",
-            "text_size": "text-base"
-          }
         },
         "title": {
           "type": "title",
@@ -56,10 +50,6 @@
             "show_save_amount": true,
             "save_type": "percent"
           }
-        },
-        "rating_cJRMiA": {
-          "type": "rating",
-          "settings": {}
         },
         "description": {
           "type": "description",
@@ -206,12 +196,11 @@
         }
       },
       "block_order": [
+        "rating_cJRMiA",
         "share",
         "sticky_buy_button",
-        "vendor",
         "title",
         "badges_tnb6kp",
-        "rating_cJRMiA",
         "description",
         "countdown",
         "variant_picker",
@@ -237,14 +226,14 @@
         "hide_variants": false,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
-        "mobile_layout": "partial",
-        "image_ratio_mobile": "adapt",
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "square",
         "mobile_thumbnail": true,
         "padding_top": 12,
         "padding_bottom": 0,
-        "divider": true,
-        "full_width": true,
-        "rounded": true
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "testimonials_banner_XPL8te": {
@@ -1049,7 +1038,7 @@
         "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "#FFFFFF",
+        "color_highlight": "#ffffff",
         "gradient_highlight": "",
         "color_overlay": "#171717",
         "overlay_opacity": 57,
