@@ -411,7 +411,7 @@
           "settings": {
             "icon": "5-stars",
             "text": "<p>I've had my QuestProps for almost 2 weeks. It took me a few tries to find the right position, but now I look forward to my 10 minutes of luxurious relaxation every night! I'm amazed at the points it's able to hit and the release of tension that is immediate. I'm very happy with my purchase.  ☺️</p>",
-            "author": "Frank Y.",
+            "author": "Jess J.",
             "author_info": "",
             "author_url": "",
             "image": "shopify://shop_images/20260521224119_309_75.png",
@@ -651,7 +651,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
-            "heading": "<strong>Frank Y.</strong>",
+            "heading": "Frank Y.",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "button_label": "",
@@ -665,7 +665,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
-            "heading": "<strong>Jess J.</strong>",
+            "heading": "Jess J.",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "button_label": "",
@@ -679,8 +679,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/20260521224109_308_75_f01bba64-4643-4eb9-a2d9-b88d5e6dffe4.png",
-            "heading": "<strong>Martha W.</strong>",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "Martha W.",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "button_label": "",
             "button_link": "",
@@ -694,20 +694,7 @@
           "settings": {
             "image": "shopify://shop_images/20260521224148_311_75.png",
             "heading": "Martha S.",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_fMGiqp": {
-          "type": "image",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "button_label": "",
             "button_link": "",
@@ -721,8 +708,7 @@
         "image_37zMjc",
         "image_rAa8Th",
         "image_maVUzf",
-        "image_8tKAk4",
-        "image_fMGiqp"
+        "image_8tKAk4"
       ],
       "name": "t:sections.slideshow.name",
       "settings": {
@@ -1174,7 +1160,7 @@
         "text_alignment": "center",
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "color_text": "",
         "color_background": "#F4F1EB",
         "gradient_background": "",
