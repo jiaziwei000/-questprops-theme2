@@ -49,8 +49,8 @@
             "icon": "none",
             "iwidth": "fit",
             "icon_width": 10,
-            "text": "<em>Sitting. Driving. Working. Scrolling.</em>",
-            "text_size": "text-base lg:text-xl"
+            "text": "Sitting. Driving. Working. Scrolling.",
+            "text_size": "text-sm"
           }
         },
         "text_xxEBHL": {
@@ -60,7 +60,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "text": "10-Minute Hands-Free Reset",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_FNX9RH": {
@@ -70,7 +70,7 @@
             "iwidth": "fit",
             "icon_width": 50,
             "text": "Heat + Massage + Gentle&nbsp;",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_QwEjqy": {
@@ -80,7 +80,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "text": "180-Day Risk-Free Trial",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_DVWtrb": {
@@ -90,7 +90,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "text": "EMS | 26° Support Angle",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "description": {
