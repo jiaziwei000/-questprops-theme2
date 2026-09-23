@@ -39,8 +39,20 @@
             "title_size": "product-title-lg",
             "title_size_mobile": "product-title-lg",
             "title_tag": "h2",
-            "show_price": true,
-            "show_rating": false
+            "show_price": false,
+            "show_rating": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "price_FdJzQz": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
           }
         },
         "badges_tnb6kp": {
@@ -49,12 +61,6 @@
             "show_sold_out": false,
             "show_save_amount": true,
             "save_type": "percent"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "text_size": "text-base"
           }
         },
         "countdown": {
@@ -210,8 +216,9 @@
         "share",
         "sticky_buy_button",
         "title",
-        "badges_tnb6kp",
         "description",
+        "price_FdJzQz",
+        "badges_tnb6kp",
         "countdown",
         "variant_picker",
         "inventory",
@@ -574,7 +581,7 @@
         "heading_size": "title-sm",
         "heading_tag": "h2",
         "color_text": "",
-        "color_background": "",
+        "color_background": "#F4F1EB",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -826,14 +833,14 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#f4f1eb",
+        "color_background": "#FFFFFF",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 40,
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
