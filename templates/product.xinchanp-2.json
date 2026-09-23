@@ -407,23 +407,23 @@
     "multicolumn_with_icons_8JY49F": {
       "type": "multicolumn-with-icons",
       "blocks": {
+        "column_EQiheB": {
+          "type": "column",
+          "settings": {
+            "icon": "watch",
+            "custom_icon": "",
+            "heading": "180 DayGuarantee",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "column_RiqH3K": {
           "type": "column",
           "settings": {
             "icon": "star",
             "custom_icon": "",
             "heading": "75.000+Customers",
-            "text": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_EQiheB": {
-          "type": "column",
-          "settings": {
-            "icon": "dairy_free",
-            "custom_icon": "",
-            "heading": "180 DayGuarantee",
             "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -442,14 +442,14 @@
         }
       },
       "block_order": [
-        "column_RiqH3K",
         "column_EQiheB",
+        "column_RiqH3K",
         "column_PEYUmm"
       ],
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-border",
-        "columns": 2,
+        "columns": 3,
         "text_alignment": "center",
         "heading": "",
         "heading_size": "title-sm",
@@ -950,7 +950,7 @@
         "image_height_mobile": "auto",
         "accessibility_info": "Slideshow about our brand",
         "color_text": "#ffffff",
-        "color_background": "#F4F1EB",
+        "color_background": "#FFFFFF",
         "gradient_background": "",
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
@@ -964,6 +964,100 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "horizontal"
+      }
+    },
+    "logo_list_EaLbPb": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_C89zCG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/007f35bed22a763671382ba2a7065ea7.jpg",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_MV9x9Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/20260521224058_307_75.png",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_eBab8j": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/1068bc61-434a-4b1b-a68c-b34a565ccd8e.webp",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_NqhFDH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_rVHBUm": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0000.jpg",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_PRhcT6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/20260521224127_310_75.png",
+            "height": 152,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_C89zCG",
+        "logo_MV9x9Y",
+        "logo_eBab8j",
+        "logo_NqhFDH",
+        "logo_rVHBUm",
+        "logo_PRhcT6"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 50,
+        "direction": "left",
+        "speed": 7,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "#FFFFFF",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
       }
     },
     "custom_liquid_rFkMbR": {
@@ -1707,6 +1801,7 @@
     "product_details_BeyWNM",
     "rich_text_ULKVqP",
     "slideshow_hwmiUc",
+    "logo_list_EaLbPb",
     "custom_liquid_rFkMbR",
     "comparison_table_H43Yrg",
     "blocks_pQ6eaq",
