@@ -576,6 +576,7 @@
         "question_ATJ9xc",
         "question_QhTdqi"
       ],
+      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-border",
@@ -615,10 +616,10 @@
         "collapsible_tab_J49Gai": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "WHY DOES MY NECK ALWAYS FEEL LIKE IT'S WORKING?",
+            "heading": "WHY IS MY NECK ALWAYS WORKING?",
             "content": "<p>Your neck doesn't really get a break.</p><p>Sitting at a desk.<br/>Driving.<br/>Looking down at your phone.<br/>Working.<br/>Traveling.</p><p>All day, your neck is constantly supporting, adjusting and holding.</p><p>And when you finally try to relax, you often start another routine — stretching, massaging, repositioning, adjusting.</p><p><strong>Maybe your neck doesn't need more work.<br/>Maybe it needs a chance to let go.</strong></p>",
             "metafields": "",
             "text_size": "text-base"
@@ -627,8 +628,8 @@
         "collapsible_tab_jHhikx": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
-            "iwidth": "custom",
+            "icon": "chat_bubble",
+            "iwidth": "fit",
             "icon_width": 24,
             "heading": "HOW FAST WILL I FEEL THE DIFFERENCE?",
             "content": "<p><strong>First Use</strong><br/>Get familiar with your 10-minute reset.</p><p><strong>First Week</strong><br/>Build a simple daily routine.</p><p><strong>Long Term</strong><br/>Make 10 minutes of hands-free reset part of your day.</p>",
@@ -639,7 +640,7 @@
         "collapsible_tab_TDDQ8R": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "WHAT IF NECK RESTORE ISN'T FOR ME?",
@@ -651,7 +652,7 @@
         "collapsible_tab_GYT7Fm": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "WHAT DO I DO?",
@@ -663,7 +664,7 @@
         "collapsible_tab_hkTydY": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "IS THIS JUST ANOTHER NECK MASSAGER?",
@@ -675,7 +676,7 @@
         "collapsible_tab_Lath8z": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "WHAT'S INSIDE NECK RESTORE?",
@@ -712,7 +713,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "",
+        "color_background": "#F4F1EB",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
