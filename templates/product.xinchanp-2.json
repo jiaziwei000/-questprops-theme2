@@ -1381,7 +1381,7 @@
         "heading_ta6YiT": {
           "type": "heading",
           "settings": {
-            "heading": "<em><strong>Your Neck Doesn't Need More Work.It's Been Working All Day</strong></em>",
+            "heading": "<em>Your Neck Doesn't Need More Work.It's Been Working All Day</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
@@ -1682,7 +1682,7 @@
         "layout": "image_first",
         "image_ratio": "portrait",
         "image_ratio_mobile": "wide",
-        "heading": "<em><strong>Your 10-Minute Routine, Week by Week</strong></em>",
+        "heading": "<em>Your 10-Minute Routine, Week by Week</em>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
