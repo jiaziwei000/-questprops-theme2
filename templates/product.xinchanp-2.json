@@ -581,7 +581,7 @@
         "heading_size": "title-sm",
         "heading_tag": "h2",
         "color_text": "",
-        "color_background": "#F4F1EB",
+        "color_background": "#f4f1eb",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -759,6 +759,7 @@
         },
         "specification_JUBDxi": {
           "type": "specification",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/3705dab7b33d405562d26f72114f844d.png",
             "heading": "REMOTE CONTROL",
@@ -767,6 +768,7 @@
         },
         "specification_8G8QQV": {
           "type": "specification",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/848209f79fd0fc527a21b62802eb33b4.png",
             "heading": "USER MANUAL",
@@ -775,6 +777,7 @@
         },
         "specification_VQznDt": {
           "type": "specification",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/9dcf413212cf7e113eec55e164ff4867.png",
             "heading": "MASSAGER",
@@ -783,6 +786,7 @@
         },
         "specification_QHm76k": {
           "type": "specification",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/e7cb9118ca14e5f7628095201fa1e4b1.png",
             "heading": "USB",
@@ -820,7 +824,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#FFFFFF",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -854,7 +858,7 @@
         "highlighted_text": "half_text",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#F4F1EB",
+        "color_text": "#f4f1eb",
         "color_background": "#252422",
         "gradient_background": "",
         "color_highlight": "",
@@ -1136,7 +1140,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#221F1C",
+        "color_background": "#221f1c",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
