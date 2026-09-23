@@ -100,6 +100,16 @@
             "size_chart": ""
           }
         },
+        "text_VQqgct": {
+          "type": "text",
+          "settings": {
+            "icon": "watch",
+            "iwidth": "custom",
+            "icon_width": 34,
+            "text": "SPECIAL OFFER ENDS THIS WEEK",
+            "text_size": "text-base"
+          }
+        },
         "product_bundle_88nBCN": {
           "type": "product_bundle",
           "settings": {
@@ -206,6 +216,7 @@
         "variant_picker",
         "inventory",
         "product_variations_Wbwq3b",
+        "text_VQqgct",
         "product_bundle_88nBCN",
         "buy_buttons",
         "liquid_hA8ByX",
