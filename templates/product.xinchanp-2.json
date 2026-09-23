@@ -1020,13 +1020,13 @@
         "image_height": "adapt",
         "video_width": "medium",
         "layout": "video_first",
-        "text_alignment": "left",
+        "text_alignment": "center",
         "content_position": "align-self-center",
         "video_url_mobile": "",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
-        "color_background": "",
+        "color_background": "#F4F1EB",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -1171,7 +1171,7 @@
         "image_height": "500px",
         "image_width": "medium",
         "layout": "image_first",
-        "text_alignment": "left",
+        "text_alignment": "center",
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
@@ -1202,7 +1202,7 @@
           "settings": {
             "image": "shopify://shop_images/c7292e38499a12ce2fb7cdaadb071ea9.png",
             "subheading": "WEEK 1",
-            "heading": "<strong>Feel The Difference</strong>",
+            "heading": "<em>Feel The Difference</em>",
             "heading_tag": "h2",
             "text": "<p><strong>Your first week is about finding your reset.</strong></p><p>Ten minutes gives you a simple moment to step away from hours of sitting, driving, working and looking down.</p><p>Many users describe the experience as a warm, relaxing break for their neck and shoulders.</p>",
             "button_label": "",
@@ -1210,8 +1210,8 @@
             "button_style": "primary",
             "button_external": false,
             "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "squiggle-underline-2",
             "highlighted_reveal": false
           }
         },
@@ -1220,7 +1220,7 @@
           "settings": {
             "image": "shopify://shop_images/906994c779d05ee6c8d3340533a28d17.png",
             "subheading": "WEEK 2",
-            "heading": "RESULTS GET CLEARER",
+            "heading": "<em>Results get clearer</em>",
             "heading_tag": "h2",
             "text": "<p><strong>It gets easier to make time for yourself.</strong></p><p>By the second week, your 10-minute reset can start feeling less like something you have to remember — and more like something you naturally look forward to.</p><p>After long days at a desk, behind the wheel or on your phone, it's a simple way to slow down and let your neck settle.</p>",
             "button_label": "",
@@ -1228,7 +1228,7 @@
             "button_style": "primary",
             "button_external": false,
             "button_icon": true,
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1238,7 +1238,7 @@
           "settings": {
             "image": "shopify://shop_images/423987f66c7c5d9867d497fc69972bd2.jpg",
             "subheading": "WEEK 3–4",
-            "heading": "YOUR ROUTINE TAKES HOLD",
+            "heading": "<em>Your routine takes hold</em>",
             "heading_tag": "h2",
             "text": "<p><strong>This is where 10 minutes becomes a habit.</strong></p><p>You know when to use it.<br/><br/>You know how it feels.<br/><br/>And you don't need to turn it into another complicated routine.</p><p>Just 10 minutes to step away, reset and get on with your day.</p>",
             "button_label": "",
@@ -1246,7 +1246,7 @@
             "button_style": "primary",
             "button_external": false,
             "button_icon": true,
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1256,7 +1256,7 @@
           "settings": {
             "image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
             "subheading": "MONTH 2+",
-            "heading": "Your Daily Reset",
+            "heading": "<em>Your Daily Reset</em>",
             "heading_tag": "h2",
             "text": "<p><strong>The routine becomes the easy part.</strong></p><p>Ten minutes doesn't feel like another task anymore.</p><p>It's simply your time to slow down after a demanding day — and give your neck a moment where it doesn't have to keep working.</p><p><strong>Your day keeps moving. Your reset stays simple.</strong></p><p></p>",
             "button_label": "",
@@ -1264,7 +1264,7 @@
             "button_style": "primary",
             "button_external": false,
             "button_icon": true,
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1284,7 +1284,7 @@
         "image_ratio_mobile": "wide",
         "heading": "<em><strong>Your 10-Minute Routine, Week by Week</strong></em>",
         "heading_size": "title-sm",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
