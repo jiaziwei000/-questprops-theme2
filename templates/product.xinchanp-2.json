@@ -685,7 +685,7 @@
             "text_size": "text-base"
           }
         },
-        "specification_TPCKdi": {
+        "specification_JUBDxi": {
           "type": "specification",
           "settings": {
             "icon": "shopify://shop_images/3705dab7b33d405562d26f72114f844d.png",
@@ -693,7 +693,7 @@
             "text_size": "text-sm"
           }
         },
-        "specification_9LPJpA": {
+        "specification_8G8QQV": {
           "type": "specification",
           "settings": {
             "icon": "shopify://shop_images/848209f79fd0fc527a21b62802eb33b4.png",
@@ -701,7 +701,7 @@
             "text_size": "text-sm"
           }
         },
-        "specification_eiwfm8": {
+        "specification_VQznDt": {
           "type": "specification",
           "settings": {
             "icon": "shopify://shop_images/9dcf413212cf7e113eec55e164ff4867.png",
@@ -709,7 +709,7 @@
             "text_size": "text-sm"
           }
         },
-        "specification_FyAkQL": {
+        "specification_QHm76k": {
           "type": "specification",
           "settings": {
             "icon": "shopify://shop_images/e7cb9118ca14e5f7628095201fa1e4b1.png",
@@ -725,10 +725,10 @@
         "collapsible_tab_GYT7Fm",
         "collapsible_tab_hkTydY",
         "collapsible_tab_Lath8z",
-        "specification_TPCKdi",
-        "specification_9LPJpA",
-        "specification_eiwfm8",
-        "specification_FyAkQL"
+        "specification_JUBDxi",
+        "specification_8G8QQV",
+        "specification_VQznDt",
+        "specification_QHm76k"
       ],
       "name": "t:sections.product-details.name",
       "settings": {
@@ -1164,7 +1164,7 @@
         "content_position": "align-self-center",
         "video_url_mobile": "",
         "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "color_text": "",
         "color_background": "#F4F1EB",
         "gradient_background": "",
@@ -1314,7 +1314,7 @@
         "text_alignment": "center",
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "color_text": "",
         "color_background": "#F4F1EB",
         "gradient_background": "",
