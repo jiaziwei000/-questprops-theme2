@@ -757,18 +757,6 @@
             "text_size": "text-base"
           }
         },
-        "collapsible_tab_Lath8z": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "WHAT FEATURES DOES QUESTPROPS HAVE?",
-            "content": "<p><strong>26° Support</strong></p><p><strong>Heat</strong></p><p><strong>Massage</strong></p><p><strong>Gentle EMS</strong></p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
         "specification_JUBDxi": {
           "type": "specification",
           "settings": {
@@ -808,7 +796,6 @@
         "collapsible_tab_TDDQ8R",
         "collapsible_tab_GYT7Fm",
         "collapsible_tab_hkTydY",
-        "collapsible_tab_Lath8z",
         "specification_JUBDxi",
         "specification_8G8QQV",
         "specification_VQznDt",
@@ -1516,7 +1503,7 @@
         "image_ratio_mobile": "portrait",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "<em><strong>The Science-Driven System For Releasing Daily Neck Tension</strong></em>",
+        "heading": "<em>&nbsp;THE 4-TECHNOLOGY SYSTEM BEHIND YOUR 10-MINUTE RESET&nbsp;</em>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center justify-center",
         "heading_tag": "h2",
@@ -1614,10 +1601,10 @@
           "type": "content",
           "settings": {
             "image": "shopify://shop_images/c7292e38499a12ce2fb7cdaadb071ea9.png",
-            "subheading": "WEEK 1",
+            "subheading": "FIRST USE",
             "heading": "<em>Feel The Difference</em>",
             "heading_tag": "h2",
-            "text": "<p><strong>Your first week is about finding your reset.</strong></p><p>Ten minutes gives you a simple moment to step away from hours of sitting, driving, working and looking down.</p><p>Many users describe the experience as a warm, relaxing break for their neck and shoulders.</p>",
+            "text": "<p>Warmth. Gentle massage. Support.<br/>A noticeable reset from your very first session.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -1632,10 +1619,10 @@
           "type": "content",
           "settings": {
             "image": "shopify://shop_images/906994c779d05ee6c8d3340533a28d17.png",
-            "subheading": "WEEK 2",
-            "heading": "<em>Results get clearer</em>",
+            "subheading": "WEEK 1",
+            "heading": "<em>Find Your Perfect Setting</em>",
             "heading_tag": "h2",
-            "text": "<p><strong>It gets easier to make time for yourself.</strong></p><p>By the second week, your 10-minute reset can start feeling less like something you have to remember — and more like something you naturally look forward to.</p><p>After long days at a desk, behind the wheel or on your phone, it's a simple way to slow down and let your neck settle.</p>",
+            "text": "<p>Discover the heat, massage and EMS combination that feels right for you.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -1650,10 +1637,10 @@
           "type": "content",
           "settings": {
             "image": "shopify://shop_images/423987f66c7c5d9867d497fc69972bd2.jpg",
-            "subheading": "WEEK 3–4",
-            "heading": "<em>Your routine takes hold</em>",
+            "subheading": "WEEK 2",
+            "heading": "<em>Make It A Ritual</em>",
             "heading_tag": "h2",
-            "text": "<p><strong>This is where 10 minutes becomes a habit.</strong></p><p>You know when to use it.<br/><br/>You know how it feels.<br/><br/>And you don't need to turn it into another complicated routine.</p><p>Just 10 minutes to step away, reset and get on with your day.</p>",
+            "text": "<p>After work. Before bed. After a long drive.<br/>Just 10 minutes when your neck needs a break.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -1668,10 +1655,10 @@
           "type": "content",
           "settings": {
             "image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
-            "subheading": "MONTH 2+",
-            "heading": "<em>Your Daily Reset</em>",
+            "subheading": "WEEK 3+",
+            "heading": "<em>Keep Giving Your Neck A Break</em>",
             "heading_tag": "h2",
-            "text": "<p><strong>The routine becomes the easy part.</strong></p><p>Ten minutes doesn't feel like another task anymore.</p><p>It's simply your time to slow down after a demanding day — and give your neck a moment where it doesn't have to keep working.</p><p><strong>Your day keeps moving. Your reset stays simple.</strong></p><p></p>",
+            "text": "<p>The goal isn't another complicated routine.<br/>It's making 10 quiet minutes for yourself part of the day.</p><p></p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
