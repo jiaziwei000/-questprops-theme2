@@ -410,7 +410,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "text": "<p>I've had my QuestProps for almost 2 weeks. It took me a few tries to find the right position, but now I look forward to my 10 minutes of luxurious relaxation every night! I'm amazed at the points it's able to hit and the release of tension that is immediate. I'm very happy with my purchase.  ☺️</p>",
+            "text": "<p>I’ve had my QuestProps for almost 2 weeks. Once I found the right position, those 10 minutes every night deliver instant tension release — I absolutely love it.</p>",
             "author": "Jess J.",
             "author_info": "",
             "author_url": "",
@@ -562,7 +562,7 @@
           "type": "question",
           "settings": {
             "title": "WHAT'S INSIDE NECK RESTORE?",
-            "text": "<p><strong>26° Support</strong></p><p><strong>Heat</strong></p><p><strong>Massage</strong></p><p><strong>Gentle EMS</strong></p>",
+            "text": "<p>26° Support</p><p>Heat</p><p>Massage</p><p>Gentle EMS</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -606,6 +606,123 @@
         "padding_bottom": 20,
         "divider": false,
         "narrow": true,
+        "rounded": false
+      }
+    },
+    "product_details_BeyWNM": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab_J49Gai": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "WHY DOES MY NECK ALWAYS FEEL LIKE IT'S WORKING?",
+            "content": "<p>Your neck doesn't really get a break.</p><p>Sitting at a desk.<br/>Driving.<br/>Looking down at your phone.<br/>Working.<br/>Traveling.</p><p>All day, your neck is constantly supporting, adjusting and holding.</p><p>And when you finally try to relax, you often start another routine — stretching, massaging, repositioning, adjusting.</p><p><strong>Maybe your neck doesn't need more work.<br/>Maybe it needs a chance to let go.</strong></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_jHhikx": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "HOW FAST WILL I FEEL THE DIFFERENCE?",
+            "content": "<p><strong>First Use</strong><br/>Get familiar with your 10-minute reset.</p><p><strong>First Week</strong><br/>Build a simple daily routine.</p><p><strong>Long Term</strong><br/>Make 10 minutes of hands-free reset part of your day.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_TDDQ8R": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "WHAT IF NECK RESTORE ISN'T FOR ME?",
+            "content": "<p><strong>180-Day Risk-Free Trial</strong></p><p>Take your time getting used to your new routine. If it's not right for you, you're covered by our 180-day trial.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_GYT7Fm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "WHAT DO I DO?",
+            "content": "<p><strong>1 —</strong> Position Neck Restore comfortably.</p><p><strong>2 —</strong> Choose your preferred settings.</p><p><strong>3 —</strong> Relax for 10 minutes.</p><p><strong>4 —</strong> Done.</p><p><strong>No complicated routine.<br/>No holding a device.<br/>Just 10 minutes.</strong></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_hkTydY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "IS THIS JUST ANOTHER NECK MASSAGER?",
+            "content": "<p><strong>Not exactly.</strong></p><p>It's not just a handheld massager.</p><p>It's not just heat.</p><p>It's not a device you need to keep operating.</p><p><strong>26° Support + Heat + Massage + Gentle EMS</strong></p><p><strong>Combined into one 10-minute hands-free routine.</strong></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_Lath8z": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "WHAT'S INSIDE NECK RESTORE?",
+            "content": "<p><strong>26° Support</strong></p><p><strong>Heat</strong></p><p><strong>Massage</strong></p><p><strong>Gentle EMS</strong></p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_J49Gai",
+        "collapsible_tab_jHhikx",
+        "collapsible_tab_TDDQ8R",
+        "collapsible_tab_GYT7Fm",
+        "collapsible_tab_hkTydY",
+        "collapsible_tab_Lath8z"
+      ],
+      "name": "t:sections.product-details.name",
+      "settings": {
+        "style": "with-border",
+        "open_first_row": false,
+        "specifications_heading": "Included in the Box",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -1160,7 +1277,7 @@
         "text_alignment": "center",
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
-        "text_alignment_mobile": "center",
+        "text_alignment_mobile": "left",
         "color_text": "",
         "color_background": "#F4F1EB",
         "gradient_background": "",
@@ -1473,6 +1590,7 @@
     "scroll_spy_rTBpXa",
     "reveal_testimonials_Y6wAYj",
     "faq_pPgBLe",
+    "product_details_BeyWNM",
     "rich_text_ULKVqP",
     "slideshow_hwmiUc",
     "custom_liquid_rFkMbR",
