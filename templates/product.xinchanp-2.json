@@ -752,7 +752,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "NOT JUST ANOTHER NECK MASSAGER.",
-            "content": "<p>26° SUPPORT<br/>Designed around a 26° support angle.<br/>HEAT<br/>Gentle warmth for your daily reset.<br/>MASSAGE<br/>A hands-on feel without holding a device.<br/>GENTLE EMS<br/>Adds another layer to your at-home 4 technologies. 1 simple 10-minute reset.routine.</p>",
+            "content": "<h3>26° SUPPORT</h3><p>Designed around a 26° support angle.</p><h3>HEAT</h3><p>Gentle warmth for your daily reset.</p><h3>MASSAGE</h3><p>A hands-on feel without holding a device.</p><h3>GENTLE EMS</h3><p>Adds another layer to your simple 10-minute reset.</p>",
             "metafields": "",
             "text_size": "text-base"
           }
