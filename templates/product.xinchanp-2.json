@@ -679,10 +679,42 @@
             "icon": "chat_bubble",
             "iwidth": "custom",
             "icon_width": 24,
-            "heading": "WHAT'S INSIDE NECK RESTORE?",
+            "heading": "WHAT FEATURES DOES QUESTPROPS HAVE?",
             "content": "<p><strong>26° Support</strong></p><p><strong>Heat</strong></p><p><strong>Massage</strong></p><p><strong>Gentle EMS</strong></p>",
             "metafields": "",
             "text_size": "text-base"
+          }
+        },
+        "specification_TPCKdi": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/3705dab7b33d405562d26f72114f844d.png",
+            "heading": "REMOTE CONTROL",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_9LPJpA": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/848209f79fd0fc527a21b62802eb33b4.png",
+            "heading": "USER MANUAL",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_eiwfm8": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/9dcf413212cf7e113eec55e164ff4867.png",
+            "heading": "MASSAGER",
+            "text_size": "text-sm"
+          }
+        },
+        "specification_FyAkQL": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/e7cb9118ca14e5f7628095201fa1e4b1.png",
+            "heading": "USB",
+            "text_size": "text-sm"
           }
         }
       },
@@ -692,7 +724,11 @@
         "collapsible_tab_TDDQ8R",
         "collapsible_tab_GYT7Fm",
         "collapsible_tab_hkTydY",
-        "collapsible_tab_Lath8z"
+        "collapsible_tab_Lath8z",
+        "specification_TPCKdi",
+        "specification_9LPJpA",
+        "specification_eiwfm8",
+        "specification_FyAkQL"
       ],
       "name": "t:sections.product-details.name",
       "settings": {
