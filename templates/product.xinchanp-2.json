@@ -1574,7 +1574,7 @@
       "name": "t:sections.image-with-text.name",
       "settings": {
         "image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
-        "image_height": "500px",
+        "image_height": "600px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "center",
