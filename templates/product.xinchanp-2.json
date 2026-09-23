@@ -941,6 +941,7 @@
         "image_maVUzf",
         "image_8tKAk4"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.name",
       "settings": {
         "autoplay": true,
@@ -965,6 +966,100 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "horizontal"
+      }
+    },
+    "testimonials_banner_mUptUN": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial_8Eexjc": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>There's mine. I've used it twice for 2 nights in a row. I read the instructions and I used it once facing one way for 15 minutes or when it stopped. Then I used it again facing the other way. Wow, I can really tell! Good so far.<br/></p>",
+            "author": "Nick W.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_7TegmL": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "text": "<p>I’ve had neck pain for 2.5 years with little relief. It complements my stretching routine well, but avoid overuse — too much triggers inflammation for me. Best with selective use; temperature and timer controls are simple.</p>",
+            "author": "Bobby",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224127_310_75_e9cbb892-5677-430c-8bb0-7da30dffd830.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_yXgWEd": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>Nice neck support. The heat really helps relieving my muscle soreness, better effect than my other neck massager. I usually go with medium heat; the high heat can be a bit too strong on bare skin. Love the timer too so that I can totally relax without worrying about falling asleep with the heat on.</p>",
+            "author": "Liam",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_4dXdMz": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>8 years of programming left me with neck tension that turned into arm pain and headaches. Nothing I tried helped — until QuestProps. It reversed years of strain in just 2 weeks. You’ll feel a difference day one, stick with it for two weeks for full results.</p>",
+            "author": "Martha S.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224109_308_75_db166abe-3a52-4294-bb11-b2a61d4a323e.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_8Eexjc",
+        "testimonial_7TegmL",
+        "testimonial_yXgWEd",
+        "testimonial_4dXdMz"
+      ],
+      "name": "t:sections.testimonials-banner.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/d2b0e4a440759a6658bfbc5fb21ecfd2.png",
+        "image_height": "900px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#FFFFFF",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 57,
+        "padding_top": 8,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
     "logo_list_EaLbPb": {
@@ -1802,6 +1897,7 @@
     "product_details_BeyWNM",
     "rich_text_ULKVqP",
     "slideshow_hwmiUc",
+    "testimonials_banner_mUptUN",
     "logo_list_EaLbPb",
     "custom_liquid_rFkMbR",
     "comparison_table_H43Yrg",
