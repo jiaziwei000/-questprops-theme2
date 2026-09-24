@@ -164,7 +164,7 @@
             "iwidth": "custom",
             "icon_width": 34,
             "text": "SPECIAL OFFER ENDS THIS WEEK",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "product_bundle_88nBCN": {
@@ -1452,7 +1452,7 @@
         "text_GiYbLk": {
           "type": "text",
           "settings": {
-            "text": "<p>Your day already asks your neck to support you from morning to night.</p><p>Neck Restore gives you a simple 10-minute window where you don't have to keep thinking about it.</p>",
+            "text": "<p>&nbsp;Your day already asks your neck to support you from morning to night. &nbsp;QuestProps gives you a simple 10-minute window where you don't have to keep thinking about it.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -1608,7 +1608,7 @@
         "text_ALztjj": {
           "type": "text",
           "settings": {
-            "text": "<p>Give yourself 180 days to decide if QuestProps belongs in your routine.</p><p><strong>180-DAY TRIAL</strong><br/><br/><strong>2-YEAR WARRANTY</strong><br/><br/><strong>FREE SHIPPING</strong></p>",
+            "text": "<p>Give yourself 180 days to decide if QuestProps belongs in your routine.</p><p><em>180-DAY TRIAL<br/><br/>2-YEAR WARRANTY<br/><br/>FREE SHIPPING</em></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -1616,7 +1616,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "circle"
           }
         }
