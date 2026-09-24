@@ -46,50 +46,50 @@
         "text_FjqDgN": {
           "type": "text",
           "settings": {
+            "icon": "calendar",
+            "iwidth": "fit",
+            "icon_width": 82,
+            "text": "<strong>Sitting. Driving. Working. Scrolling.</strong>",
+            "text_size": "text-base lg:text-xl"
+          }
+        },
+        "text_4Ep77n": {
+          "type": "text",
+          "settings": {
             "icon": "none",
             "iwidth": "fit",
-            "icon_width": 10,
-            "text": "Sitting. Driving. Working. Scrolling.",
-            "text_size": "text-sm"
+            "icon_width": 24,
+            "text": "<strong>You've probably gotten used to it. &nbsp; The tightness. The heaviness. That feeling that your neck is still “on” even when the day is over. But getting used to it doesn't mean you have to keep living with it.</strong>",
+            "text_size": "text-base"
           }
         },
         "text_xxEBHL": {
           "type": "text",
           "settings": {
-            "icon": "check_mark",
+            "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "10-Minute Hands-Free Reset",
+            "text": "Give your neck 10 minutes.",
             "text_size": "text-sm"
           }
         },
         "text_FNX9RH": {
           "type": "text",
           "settings": {
-            "icon": "check_mark",
+            "icon": "none",
             "iwidth": "fit",
             "icon_width": 50,
-            "text": "Heat + Massage + Gentle&nbsp;",
+            "text": "Heat + Massage + Gentle EMS + 26° Support.",
             "text_size": "text-sm"
           }
         },
         "text_QwEjqy": {
           "type": "text",
           "settings": {
-            "icon": "check_mark",
+            "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "180-Day Risk-Free Trial",
-            "text_size": "text-sm"
-          }
-        },
-        "text_DVWtrb": {
-          "type": "text",
-          "settings": {
-            "icon": "check_mark",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "text": "EMS | 26° Support Angle",
+            "text": "180-Day Risk-Free Trial · Free Shipping",
             "text_size": "text-sm"
           }
         },
@@ -268,10 +268,10 @@
         "sticky_buy_button",
         "title",
         "text_FjqDgN",
+        "text_4Ep77n",
         "text_xxEBHL",
         "text_FNX9RH",
         "text_QwEjqy",
-        "text_DVWtrb",
         "description",
         "price_FdJzQz",
         "badges_tnb6kp",
