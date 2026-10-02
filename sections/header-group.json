@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Limited Time September Sale - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Save 53% </strong>With <strong>Free Shipping</strong> | 180 &nbsp;Day Guarantee&nbsp;",
+            "text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Limited Time &nbsp;October Sale &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Save 53% </strong>With <strong>Free Shipping</strong> | 180 &nbsp;Day Guarantee&nbsp;",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -49,7 +49,7 @@
         "enable_language_selector": true,
         "enable_country_selector": true,
         "invert_icons_selectors": false,
-        "announcement_position": "start",
+        "announcement_position": "center",
         "announcement_layout": "carousel",
         "autoplay": true,
         "autoplay_speed": 5,
