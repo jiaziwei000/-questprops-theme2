@@ -103,7 +103,7 @@
         "price_FdJzQz": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "badges_tnb6kp": {
@@ -291,7 +291,7 @@
         "complementary"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "media_size": 66,
         "gallery_layout": "thumbnail",
         "thumbnail_position": "beside",
