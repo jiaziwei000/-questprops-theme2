@@ -194,7 +194,7 @@
             "icon": "time",
             "iwidth": "custom",
             "icon_width": 34,
-            "text": "SPECIAL OFFER ENDS THIS WEEK",
+            "text": "OCTOBER SURPRISE",
             "text_size": "text-sm"
           }
         },
@@ -207,7 +207,7 @@
             "icon": "tag",
             "iwidth": "fit",
             "icon_width": 34,
-            "heading": "Add-on Deal: $29.99 (Valued at $69.99, Save $40)",
+            "heading": "Add-on Deal: Just $5.99— Valued at $69.99",
             "products": [
               "deep-sleep-eye-mask"
             ],
