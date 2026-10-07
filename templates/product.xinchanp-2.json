@@ -45,8 +45,9 @@
         },
         "text_FjqDgN": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "icon": "calendar",
+            "icon": "award",
             "iwidth": "fit",
             "icon_width": 82,
             "text": "<strong>Sitting. Driving. Working. Scrolling.</strong>",
@@ -59,8 +60,28 @@
             "icon": "none",
             "iwidth": "fit",
             "icon_width": 24,
-            "text": "<strong>You've probably gotten used to it. &nbsp; The tightness. The heaviness. That feeling that your neck is still “on” even when the day is over. But getting used to it doesn't mean you have to keep living with it.</strong>",
+            "text": "<strong>At first, it’s just a little soreness. A little stiffness. You tell yourself it’s nothing and keep going.&nbsp;</strong>",
+            "text_size": "text-base"
+          }
+        },
+        "text_kxnwNT": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "<strong>&nbsp;But keep pushing through it day after day, and that “little problem” can start taking more from you — more comfort, more freedom to move, more energy to enjoy the things you actually want to do.&nbsp;</strong>",
             "text_size": "text-sm"
+          }
+        },
+        "text_zVwCKF": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "<strong>&nbsp;Don’t let a few minutes of daily care become something you wish you had started sooner.&nbsp;</strong>",
+            "text_size": "text-base"
           }
         },
         "text_xxEBHL": {
@@ -80,6 +101,16 @@
             "iwidth": "fit",
             "icon_width": 50,
             "text": "Heat + Massage + Gentle EMS + 26° Support.",
+            "text_size": "text-sm"
+          }
+        },
+        "text_Gz7xFw": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "Less Than $0.50 A Day.",
             "text_size": "text-sm"
           }
         },
@@ -269,8 +300,11 @@
         "title",
         "text_FjqDgN",
         "text_4Ep77n",
+        "text_kxnwNT",
+        "text_zVwCKF",
         "text_xxEBHL",
         "text_FNX9RH",
+        "text_Gz7xFw",
         "text_QwEjqy",
         "description",
         "price_FdJzQz",
