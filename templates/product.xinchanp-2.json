@@ -577,6 +577,76 @@
         "rounded": false
       }
     },
+    "images_with_text_dpq4mA": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_rnCkVY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Research Says: Neck Pain Doesn’t Always Just Go Away",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_BbhqzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A 2024 umbrella review of 16 systematic reviews found that multiple factors are associated with worse pain, disability, quality of life, and recovery outcomes in people with neck pain.</p><p><strong>In other words: ignoring recurring neck discomfort doesn't guarantee it will disappear.</strong></p><p><strong>Source: Clinical Rehabilitation, 2024</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_RqPyfD": {
+          "type": "button",
+          "settings": {
+            "button_label": "View original PubMed paper",
+            "button_link": "https://pubmed.ncbi.nlm.nih.gov/39363645/",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_rnCkVY",
+        "text_BbhqzP",
+        "button_RqPyfD"
+      ],
+      "name": "t:sections.images-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/0b1c94be666f840953079c4a4d7d325d.png",
+        "image_ratio": "portrait",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
     "reveal_testimonials_Y6wAYj": {
       "type": "reveal-testimonials",
       "blocks": {
@@ -1980,6 +2050,7 @@
     "scrolling-text",
     "scroll_spy_rTBpXa",
     "multicolumn_with_icons_8JY49F",
+    "images_with_text_dpq4mA",
     "reveal_testimonials_Y6wAYj",
     "faq_pPgBLe",
     "product_details_BeyWNM",
