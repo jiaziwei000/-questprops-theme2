@@ -583,7 +583,7 @@
         "heading_rnCkVY": {
           "type": "heading",
           "settings": {
-            "heading": "Research Says: Neck Pain Doesn’t Always Just Go Away",
+            "heading": "&nbsp;Research Says: Don’t Wait Until Your Neck Starts Complaining.&nbsp;",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -594,7 +594,7 @@
         "text_BbhqzP": {
           "type": "text",
           "settings": {
-            "text": "<p>A 2024 umbrella review of 16 systematic reviews found that multiple factors are associated with worse pain, disability, quality of life, and recovery outcomes in people with neck pain.</p><p><strong>In other words: ignoring recurring neck discomfort doesn't guarantee it will disappear.</strong></p><p><strong>Source: Clinical Rehabilitation, 2024</strong></p>",
+            "text": "<p>Neck pain doesn’t always simply disappear. Evidence shows that neck problems can persist, recur, and affect daily function and quality of life.</p><p><strong>Whether your neck feels tight today — or feels fine — taking care of it before discomfort becomes your normal makes sense.</strong></p><p><strong>Source: Clinical Rehabilitation · 2024</strong></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
