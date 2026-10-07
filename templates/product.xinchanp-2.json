@@ -61,7 +61,7 @@
             "iwidth": "fit",
             "icon_width": 24,
             "text": "<strong>At first, it’s just a little soreness. A little stiffness. You tell yourself it’s nothing and keep going.&nbsp;</strong>",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_kxnwNT": {
@@ -81,7 +81,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "text": "<strong>&nbsp;Don’t let a few minutes of daily care become something you wish you had started sooner.&nbsp;</strong>",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_xxEBHL": {
