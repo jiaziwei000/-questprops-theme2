@@ -583,10 +583,10 @@
         "heading_rnCkVY": {
           "type": "heading",
           "settings": {
-            "heading": "Research Says: Don’t Wait For The Pain.&nbsp;",
+            "heading": "<em>RESEARCH SAYSDon’t Wait Until Your Neck Hurts.</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "marker",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -594,7 +594,7 @@
         "text_BbhqzP": {
           "type": "text",
           "settings": {
-            "text": "<p>Neck pain can persist, return, and interfere with everyday life.</p><p><strong>You don’t have to wait until your neck hurts to start taking care of it.</strong></p><p><strong>Clinical Rehabilitation · 2024</strong></p>",
+            "text": "<p>Neck problems can persist, return, and interfere with everyday life.</p><p><strong>You don’t need to wait for discomfort to become your normal before taking care of your neck.</strong></p><p><strong>Based on a 2024 umbrella review published in Clinical Rehabilitation.</strong></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
