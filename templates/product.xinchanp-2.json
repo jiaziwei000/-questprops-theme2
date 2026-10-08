@@ -646,114 +646,6 @@
         "enable_parallax": true
       }
     },
-    "reveal_testimonials_Y6wAYj": {
-      "type": "reveal-testimonials",
-      "blocks": {
-        "testimonial_bhP9xw": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>I’ve had my QuestProps for almost 2 weeks. Once I found the right position, those 10 minutes every night deliver instant tension release — I absolutely love it.</p>",
-            "author": "Jess J.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224119_309_75.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_XUFTKV": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>HEYYYY!!! i was waiting to try all the pros - nooooo cons ! OF THIS LITTLE FRIEND !!! <br/>The QuestProps DELIVERED !!!! i suffer tension headaches n neck pain SINCE i was 25!!! Teaching for 20 ys DID NOT HELP ! <br/>HERE COMES THIS NOT HEAVY <br/>STILL LEARNING U CAN USE ON CALVES N BACKKKK !! <br/>its STRONGGGG! in the Soft mode for me yet ! <br/><br/>Happy so far !! Released my tense neck and upper shoulders !!! 👍👍😜😈🙏🙏🙏🙏<br/><br/>Finally something that works ?!!!!!! <br/>♥️♥️♥️🙌🙌🙌🙌🙌🙌🙌🥂🥂🥳<br/><br/><br/></p>",
-            "author": "Martha W.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224109_308_75_f01bba64-4643-4eb9-a2d9-b88d5e6dffe4.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_DitrV4": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "4-stars",
-            "text": "<p>Working at a computer all day used to leave me with constant neck pain and stiffness. Since using the QuestProps, the kinks and soreness are completely gone—and as a nice bonus, I’ve even noticed an improvement in my jawline!</p>",
-            "author": "Martha S.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224058_307_75.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_tixLQP": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_fTBBnM": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_bhP9xw",
-        "testimonial_XUFTKV",
-        "testimonial_DitrV4",
-        "testimonial_tixLQP",
-        "testimonial_fTBBnM"
-      ],
-      "name": "t:sections.reveal-testimonials.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "title-sm",
-        "heading_tag": "h2",
-        "color_text": "",
-        "color_background": "#f4f1eb",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "faq_pPgBLe": {
       "type": "faq",
       "blocks": {
@@ -984,7 +876,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#ffffff",
+        "color_background": "#F4F1EB",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -2052,7 +1944,6 @@
     "scroll_spy_rTBpXa",
     "multicolumn_with_icons_8JY49F",
     "images_with_text_dpq4mA",
-    "reveal_testimonials_Y6wAYj",
     "faq_pPgBLe",
     "product_details_BeyWNM",
     "rich_text_ULKVqP",
