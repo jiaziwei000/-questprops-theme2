@@ -1545,7 +1545,7 @@
         "heading_ta6YiT": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Your Neck Doesn't Need More Work.It's Been Working All Day</em>",
+            "heading": "<em>Don’t Wait Until Tension Feels Normal.</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
@@ -1556,7 +1556,7 @@
         "text_GiYbLk": {
           "type": "text",
           "settings": {
-            "text": "<p>&nbsp;Your day already asks your neck to support you from morning to night. &nbsp;QuestProps gives you a simple 10-minute window where you don't have to keep thinking about it.</p>",
+            "text": "<p>Your neck works all day.<br/>You keep pushing through.<br/>Until “I’m fine” becomes “I’m used to it.”<br/>10 minutes can change how you end your day.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
