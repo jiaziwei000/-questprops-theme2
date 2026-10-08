@@ -70,7 +70,27 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "<strong>That “just a little tension” is easy to ignore — until stiffness, tightness, and discomfort become something you simply live with.&nbsp;</strong>",
+            "text": "<strong>Sometimes, the tension in your neck doesn’t stay in your neck</strong>",
+            "text_size": "text-sm"
+          }
+        },
+        "text_FizpHb": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "<strong>A tight, overworked neck can be associated with the pressure, heaviness, and discomfort you feel around your head.</strong>",
+            "text_size": "text-sm"
+          }
+        },
+        "text_6KUbLy": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "<strong>That “just a little tension” is easy to ignore — until stiffness, tightness, and discomfort become something you simply live with.</strong>",
             "text_size": "text-sm"
           }
         },
@@ -291,6 +311,8 @@
         "text_FjqDgN",
         "text_4Ep77n",
         "text_kxnwNT",
+        "text_FizpHb",
+        "text_6KUbLy",
         "text_zVwCKF",
         "text_xxEBHL",
         "text_Gz7xFw",
