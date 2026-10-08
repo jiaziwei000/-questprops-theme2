@@ -641,6 +641,7 @@
       "blocks": {
         "testimonial_bhP9xw": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "icon": "5-stars",
             "text": "<p>I’ve had my QuestProps for almost 2 weeks. Once I found the right position, those 10 minutes every night deliver instant tension release — I absolutely love it.</p>",
