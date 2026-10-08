@@ -57,10 +57,10 @@
         "text_4Ep77n": {
           "type": "text",
           "settings": {
-            "icon": "none",
+            "icon": "alert",
             "iwidth": "fit",
             "icon_width": 24,
-            "text": "<strong>At first, it’s just a little soreness. A little stiffness. You tell yourself it’s nothing and keep going.&nbsp;</strong>",
+            "text": "&nbsp;Sitting. Driving. Scrolling. Stiff.&nbsp;",
             "text_size": "text-sm"
           }
         },
@@ -70,7 +70,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "<strong>&nbsp;But keep pushing through it day after day, and that “little problem” can start taking more from you — more comfort, more freedom to move, more energy to enjoy the things you actually want to do.&nbsp;</strong>",
+            "text": "<strong>That “just a little tension” is easy to ignore — until stiffness, tightness, and discomfort become something you simply live with.&nbsp;</strong>",
             "text_size": "text-sm"
           }
         },
@@ -80,7 +80,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "<strong>&nbsp;Don’t let a few minutes of daily care become something you wish you had started sooner.&nbsp;</strong>",
+            "text": "<strong>Don’t Wait Until It Becomes Your Normal.</strong>&nbsp;",
             "text_size": "text-sm"
           }
         },
@@ -90,17 +90,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "Give your neck 10 minutes.",
-            "text_size": "text-sm"
-          }
-        },
-        "text_FNX9RH": {
-          "type": "text",
-          "settings": {
-            "icon": "none",
-            "iwidth": "fit",
-            "icon_width": 50,
-            "text": "Heat + Massage + Gentle EMS + 26° Support.",
+            "text": "For less than $0.50 a day, give your neck 10 minutes of Heat + Massage + Gentle EMS + 26° Support",
             "text_size": "text-sm"
           }
         },
@@ -110,7 +100,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "Less Than $0.50 A Day.",
+            "text": "10 minutes today is easier than wishing you started sooner.",
             "text_size": "text-sm"
           }
         },
@@ -303,7 +293,6 @@
         "text_kxnwNT",
         "text_zVwCKF",
         "text_xxEBHL",
-        "text_FNX9RH",
         "text_Gz7xFw",
         "text_QwEjqy",
         "description",
