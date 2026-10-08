@@ -616,23 +616,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_RqPyfD": {
-          "type": "button",
-          "settings": {
-            "button_label": "View original PubMed paper",
-            "button_link": "https://pubmed.ncbi.nlm.nih.gov/39363645/",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_rnCkVY",
-        "text_BbhqzP",
-        "button_RqPyfD"
+        "text_BbhqzP"
       ],
       "name": "t:sections.images-with-text.name",
       "settings": {
@@ -1670,6 +1658,7 @@
         "profile_8NXC6m",
         "profile_TkHdAz"
       ],
+      "disabled": true,
       "name": "t:sections.portfolio.name",
       "settings": {
         "columns": 2,
