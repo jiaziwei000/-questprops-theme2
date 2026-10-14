@@ -148,7 +148,7 @@
         "price_FdJzQz": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": true
+            "show_taxes_notice": false
           }
         },
         "badges_tnb6kp": {
@@ -588,9 +588,44 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 20,
-        "padding_bottom": 0,
+        "padding_bottom": 28,
         "divider": false,
         "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_ULKVqP": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "<em><strong>75000+Happy Customers</strong></em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#f4f1eb",
+        "color_background": "#252422",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 24,
+        "divider": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -893,41 +928,6 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "rich_text_ULKVqP": {
-      "type": "rich-text",
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "heading": "<em><strong>75000+Happy Customers</strong></em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "half_text",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#f4f1eb",
-        "color_background": "#252422",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 24,
-        "divider": false,
-        "narrow": true,
         "rounded": false
       }
     },
@@ -1949,13 +1949,13 @@
     "scrolling-text",
     "scroll_spy_rTBpXa",
     "multicolumn_with_icons_8JY49F",
+    "rich_text_ULKVqP",
+    "testimonials_banner_mUptUN",
+    "logo_list_EaLbPb",
     "images_with_text_dpq4mA",
     "faq_pPgBLe",
     "product_details_BeyWNM",
-    "rich_text_ULKVqP",
     "slideshow_hwmiUc",
-    "testimonials_banner_mUptUN",
-    "logo_list_EaLbPb",
     "custom_liquid_rFkMbR",
     "comparison_table_H43Yrg",
     "blocks_pQ6eaq",
