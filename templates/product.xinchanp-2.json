@@ -1751,6 +1751,7 @@
         "content_DQrEnB",
         "content_jUBMdn"
       ],
+      "disabled": true,
       "name": "t:sections.timeline.name",
       "settings": {
         "show_navigation": true,
