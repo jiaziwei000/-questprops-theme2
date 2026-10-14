@@ -17,7 +17,7 @@
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "icon": "none",
+            "icon": "alert",
             "text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Limited Time &nbsp;October Sale &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Save 50% </strong>With <strong>Free Shipping</strong> | 180 &nbsp;Day Guarantee&nbsp;",
             "link": "",
             "hide_icon_mobile": true,
@@ -48,7 +48,7 @@
         "show_social": true,
         "enable_language_selector": true,
         "enable_country_selector": true,
-        "invert_icons_selectors": false,
+        "invert_icons_selectors": true,
         "announcement_position": "center",
         "announcement_layout": "carousel",
         "autoplay": true,
