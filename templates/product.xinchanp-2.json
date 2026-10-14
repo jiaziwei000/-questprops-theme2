@@ -60,7 +60,7 @@
             "icon": "alert",
             "iwidth": "fit",
             "icon_width": 24,
-            "text": "&nbsp;Sitting. Driving. Scrolling. Stiff.&nbsp;",
+            "text": "&nbsp;Sitting. Driving. Scrolling &nbsp;Stiff",
             "text_size": "text-sm"
           }
         },
