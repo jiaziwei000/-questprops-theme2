@@ -64,6 +64,16 @@
             "text_size": "text-sm"
           }
         },
+        "text_PmfzLH": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "HOW LONG WILL YOU KEEP PUTTING IT OFF?&nbsp;",
+            "text_size": "text-sm"
+          }
+        },
         "text_kxnwNT": {
           "type": "text",
           "disabled": true,
@@ -316,6 +326,7 @@
         "title",
         "text_FjqDgN",
         "text_4Ep77n",
+        "text_PmfzLH",
         "text_kxnwNT",
         "text_FizpHb",
         "text_6KUbLy",
@@ -626,6 +637,194 @@
         "padding_bottom": 24,
         "divider": false,
         "narrow": true,
+        "rounded": false
+      }
+    },
+    "testimonials_banner_mUptUN": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial_8Eexjc": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>There's mine. I've used it twice for 2 nights in a row. I read the instructions and I used it once facing one way for 15 minutes or when it stopped. Then I used it again facing the other way. Wow, I can really tell! Good so far.<br/></p>",
+            "author": "Nick W.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_7TegmL": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "text": "<p>I’ve had neck pain for 2.5 years with little relief. It complements my stretching routine well, but avoid overuse — too much triggers inflammation for me. Best with selective use; temperature and timer controls are simple.</p>",
+            "author": "Bobby",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224127_310_75_e9cbb892-5677-430c-8bb0-7da30dffd830.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_yXgWEd": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>Nice neck support. The heat really helps relieving my muscle soreness, better effect than my other neck massager. I usually go with medium heat; the high heat can be a bit too strong on bare skin. Love the timer too so that I can totally relax without worrying about falling asleep with the heat on.</p>",
+            "author": "Liam",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_4dXdMz": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>8 years of programming left me with neck tension that turned into arm pain and headaches. Nothing I tried helped — until QuestProps. It reversed years of strain in just 2 weeks. You’ll feel a difference day one, stick with it for two weeks for full results.</p>",
+            "author": "Martha S.",
+            "author_info": "",
+            "author_url": "",
+            "image": "shopify://shop_images/20260521224109_308_75_db166abe-3a52-4294-bb11-b2a61d4a323e.png",
+            "image_ratio": "rounded",
+            "image_height": 30,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_8Eexjc",
+        "testimonial_7TegmL",
+        "testimonial_yXgWEd",
+        "testimonial_4dXdMz"
+      ],
+      "name": "t:sections.testimonials-banner.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/d2b0e4a440759a6658bfbc5fb21ecfd2.png",
+        "image_height": "900px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#ffffff",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 57,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "logo_list_EaLbPb": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_C89zCG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/007f35bed22a763671382ba2a7065ea7.jpg",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_MV9x9Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/20260521224058_307_75.png",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_eBab8j": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/1068bc61-434a-4b1b-a68c-b34a565ccd8e.webp",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_NqhFDH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_rVHBUm": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0000.jpg",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_PRhcT6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/20260521224127_310_75.png",
+            "height": 152,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_C89zCG",
+        "logo_MV9x9Y",
+        "logo_eBab8j",
+        "logo_NqhFDH",
+        "logo_rVHBUm",
+        "logo_PRhcT6"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "marquee",
+        "grid_horizontal": 50,
+        "direction": "left",
+        "speed": 7,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "#221f1c",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": true,
         "rounded": false
       }
     },
@@ -1022,194 +1221,6 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "horizontal"
-      }
-    },
-    "testimonials_banner_mUptUN": {
-      "type": "testimonials-banner",
-      "blocks": {
-        "testimonial_8Eexjc": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>There's mine. I've used it twice for 2 nights in a row. I read the instructions and I used it once facing one way for 15 minutes or when it stopped. Then I used it again facing the other way. Wow, I can really tell! Good so far.<br/></p>",
-            "author": "Nick W.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_7TegmL": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "4-stars",
-            "text": "<p>I’ve had neck pain for 2.5 years with little relief. It complements my stretching routine well, but avoid overuse — too much triggers inflammation for me. Best with selective use; temperature and timer controls are simple.</p>",
-            "author": "Bobby",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224127_310_75_e9cbb892-5677-430c-8bb0-7da30dffd830.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_yXgWEd": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>Nice neck support. The heat really helps relieving my muscle soreness, better effect than my other neck massager. I usually go with medium heat; the high heat can be a bit too strong on bare skin. Love the timer too so that I can totally relax without worrying about falling asleep with the heat on.</p>",
-            "author": "Liam",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_4dXdMz": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>8 years of programming left me with neck tension that turned into arm pain and headaches. Nothing I tried helped — until QuestProps. It reversed years of strain in just 2 weeks. You’ll feel a difference day one, stick with it for two weeks for full results.</p>",
-            "author": "Martha S.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224109_308_75_db166abe-3a52-4294-bb11-b2a61d4a323e.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_8Eexjc",
-        "testimonial_7TegmL",
-        "testimonial_yXgWEd",
-        "testimonial_4dXdMz"
-      ],
-      "name": "t:sections.testimonials-banner.name",
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/d2b0e4a440759a6658bfbc5fb21ecfd2.png",
-        "image_height": "900px",
-        "content_position": "md:items-center md:justify-center",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#ffffff",
-        "gradient_highlight": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 57,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "logo_list_EaLbPb": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_C89zCG": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/007f35bed22a763671382ba2a7065ea7.jpg",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_MV9x9Y": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/20260521224058_307_75.png",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_eBab8j": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/1068bc61-434a-4b1b-a68c-b34a565ccd8e.webp",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_NqhFDH": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_rVHBUm": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/0000.jpg",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_PRhcT6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/20260521224127_310_75.png",
-            "height": 152,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_C89zCG",
-        "logo_MV9x9Y",
-        "logo_eBab8j",
-        "logo_NqhFDH",
-        "logo_rVHBUm",
-        "logo_PRhcT6"
-      ],
-      "name": "t:sections.logo-list.name",
-      "settings": {
-        "layout": "marquee",
-        "grid_horizontal": 50,
-        "direction": "left",
-        "speed": 7,
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "#221f1c",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
       }
     },
     "custom_liquid_rFkMbR": {
