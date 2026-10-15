@@ -890,7 +890,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "<em><strong>75000+Happy Customers</strong></em>",
+        "heading": "<em><strong>75,000+Happy Customers</strong></em>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
