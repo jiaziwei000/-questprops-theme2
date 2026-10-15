@@ -613,7 +613,7 @@
           "type": "feed",
           "settings": {
             "video": "shopify://files/videos/10月15日.mp4",
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": false,
             "button_label": "",
@@ -644,14 +644,14 @@
             "hotspot_color_text_4": "#ffffff",
             "hotspot_vertical_4": 50,
             "hotspot_horizontal_4": 50,
-            "hotspot_product_4": "neck-massager"
+            "hotspot_product_4": ""
           }
         },
         "feed_pgjPFW": {
           "type": "feed",
           "settings": {
             "video": "shopify://files/videos/5月20日 (1).mp4",
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": false,
             "button_label": "",
@@ -678,7 +678,7 @@
             "hotspot_color_text_3": "#ffffff",
             "hotspot_vertical_3": 60,
             "hotspot_horizontal_3": 75,
-            "hotspot_product_3": "neck-massager",
+            "hotspot_product_3": "",
             "hotspot_color_text_4": "#ffffff",
             "hotspot_vertical_4": 50,
             "hotspot_horizontal_4": 50,
@@ -689,7 +689,7 @@
           "type": "feed",
           "settings": {
             "video": "shopify://files/videos/5月20日(1).mp4",
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": false,
             "button_label": "",
@@ -708,7 +708,7 @@
             "hotspot_color_text_1": "#ffffff",
             "hotspot_vertical_1": 45,
             "hotspot_horizontal_1": 25,
-            "hotspot_product_1": "neck-massager",
+            "hotspot_product_1": "",
             "hotspot_color_text_2": "#ffffff",
             "hotspot_vertical_2": 30,
             "hotspot_horizontal_2": 65,
@@ -727,7 +727,7 @@
           "type": "feed",
           "settings": {
             "video": "shopify://files/videos/5月20日 (1)(1).mp4",
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": false,
             "button_label": "",
@@ -754,7 +754,7 @@
             "hotspot_color_text_3": "#ffffff",
             "hotspot_vertical_3": 60,
             "hotspot_horizontal_3": 75,
-            "hotspot_product_3": "neck-massager",
+            "hotspot_product_3": "",
             "hotspot_color_text_4": "#ffffff",
             "hotspot_vertical_4": 50,
             "hotspot_horizontal_4": 50,
@@ -765,7 +765,7 @@
           "type": "feed",
           "settings": {
             "video": "shopify://files/videos/5月20日 (1)(2).mp4",
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": false,
             "button_label": "",
@@ -803,7 +803,7 @@
           "type": "feed",
           "disabled": true,
           "settings": {
-            "enable_video_autoplay": true,
+            "enable_video_autoplay": false,
             "enable_video_looping": true,
             "video_on_hover": true,
             "button_label": "",
