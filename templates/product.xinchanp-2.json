@@ -862,7 +862,7 @@
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
-        "button_label": "Follow",
+        "button_label": "",
         "button_link": "",
         "button_external": false,
         "button_icon": false,
@@ -1163,6 +1163,73 @@
         "full_width": false,
         "rounded": false,
         "enable_parallax": true
+      }
+    },
+    "video_with_text_Rcpxrn": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_AKmMjF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>4TECHNOLOGIES. &nbsp; 1 SIMPLE 10-MINUTE RESET.&nbsp;</em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_9BnKUi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>QuestProps combines four features in one easy-to-use neck relaxation routine.</p><p><em><strong>GENTLE EMS</strong></em><br/>An additional layer of stimulation for your daily routine.</p><p><em><strong>SOOTHING HEAT</strong></em><br/>Enjoy gentle warmth as you unwind.</p><p><em><strong>HANDS-FREE MASSAGE</strong></em><br/>Sit back and enjoy a massage experience without holding a device.</p><p><em><strong>26° SUPPORT</strong></em><br/>A considered support angle designed into your daily neck reset.</p><p><strong>Just 10 minutes. A little time set aside for your neck.</strong></p><p>Explore the research behind each feature: <a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">EMS research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Heat therapy research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Massage research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Pillow design research</a></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AKmMjF",
+        "text_9BnKUi"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/9月9日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
     "faq_pPgBLe": {
@@ -1515,24 +1582,6 @@
         "parallax_direction": "horizontal"
       }
     },
-    "custom_liquid_rFkMbR": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.name",
-      "settings": {
-        "liquid": "<style>\n.shop-the-feed .media-card__button { display: none !important; }\n</style>",
-        "color_text": "",
-        "color_background": "#f4f1eb",
-        "gradient_background": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 28,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "comparison_table_H43Yrg": {
       "type": "comparison-table",
       "blocks": {
@@ -1776,7 +1825,7 @@
       ],
       "name": "t:sections.video-with-text.name",
       "settings": {
-        "video": "shopify://files/videos/9月9日.mp4",
+        "video": "shopify://files/videos/7月2日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
         "description": "",
@@ -1895,69 +1944,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "image_with_text_dnm7r7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_i8AMzt": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>&nbsp;TRY YOUR 10-MINUTE RESET RISK-FREE&nbsp;</em>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_ALztjj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Give yourself 180 days to decide if QuestProps belongs in your routine.</p><p><em>180-DAY TRIAL<br/><br/>2-YEAR WARRANTY<br/><br/>FREE SHIPPING</em></p>",
-            "text_font": "body",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_i8AMzt",
-        "text_ALztjj"
-      ],
-      "name": "t:sections.image-with-text.name",
-      "settings": {
-        "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
-        "image_height": "500px",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "center",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "center",
-        "color_text": "#f4f1eb",
-        "color_background": "#221f1c",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 16,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
       }
     },
     "timeline_GkbVR3": {
@@ -2258,16 +2244,15 @@
     "testimonials_banner_mUptUN",
     "logo_list_EaLbPb",
     "images_with_text_dpq4mA",
+    "video_with_text_Rcpxrn",
     "faq_pPgBLe",
     "product_details_BeyWNM",
     "slideshow_hwmiUc",
-    "custom_liquid_rFkMbR",
     "comparison_table_H43Yrg",
     "blocks_pQ6eaq",
     "1790066332024cd932",
     "video_with_text_KV9rPw",
     "portfolio_TyQdme",
-    "image_with_text_dnm7r7",
     "timeline_GkbVR3",
     "1786265603ac9a21f6",
     "recently-viewed",
