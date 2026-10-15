@@ -856,7 +856,7 @@
         "account_name": "",
         "show_vendor": false,
         "show_price": false,
-        "heading": "Real People. Real Relief.",
+        "heading": "<em>Real People. Real Relief.</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -866,7 +866,7 @@
         "button_link": "",
         "button_external": false,
         "button_icon": false,
-        "highlighted_text": "none",
+        "highlighted_text": "scribble",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
@@ -1113,7 +1113,7 @@
         "heading_rnCkVY": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Your Neck & Your Head Are More Connected Than You Think.The connection is real.&nbsp;</em>",
+            "heading": "<em>YOUR NECK AND YOUR HEAD ARE MORE CONNECTED THAN YOU THINK.&nbsp;</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "marker",
@@ -1124,7 +1124,7 @@
         "text_BbhqzP": {
           "type": "text",
           "settings": {
-            "text": "<p>The International Classification of Headache Disorders recognizes <strong>cervicogenic headache</strong> — a type of headache associated with disorders of structures within the neck, including cervical spine and soft tissues.</p><p>Research also supports evaluating the neck when cervicogenic headache is suspected, because signs and symptoms involving the neck can help identify this type of headache.</p><p><strong>That’s why we start with the neck.</strong></p><p>QuestProps combines <strong>Gentle EMS + Heat + Massage + 26° Support</strong> into a simple 10-minute routine designed to help relax and reset your neck.</p><p><strong>Sources</strong></p><p><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/?utm_source=chatgpt.com\" title=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/?utm_source=chatgpt.com\">International Headache Society — ICHD-3</a><br/><a href=\"https://pubmed.ncbi.nlm.nih.gov/36088782/?utm_source=chatgpt.com\" title=\"https://pubmed.ncbi.nlm.nih.gov/36088782/?utm_source=chatgpt.com\">Demont et al., 2022 — <em>Musculoskeletal Science and Practice</em></a><br/><a href=\"https://pubmed.ncbi.nlm.nih.gov/41569783/?utm_source=chatgpt.com\" title=\"https://pubmed.ncbi.nlm.nih.gov/41569783/?utm_source=chatgpt.com\">Koonalinthip et al., 2026 — <em>European Journal of Pain</em></a></p>",
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p><p><em>Explore the research: </em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em>International Headache Society — ICHD-3</em></a></p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
