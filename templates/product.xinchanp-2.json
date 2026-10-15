@@ -1171,10 +1171,10 @@
         "heading_AKmMjF": {
           "type": "heading",
           "settings": {
-            "heading": "<em>4TECHNOLOGIES. &nbsp; 1 SIMPLE 10-MINUTE RESET.&nbsp;</em>",
+            "heading": "<em>4 WAYS TO GIVE YOUR NECK A BETTER RESET.&nbsp;</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "marker",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": false
           }
@@ -1182,7 +1182,7 @@
         "text_9BnKUi": {
           "type": "text",
           "settings": {
-            "text": "<p>QuestProps combines four features in one easy-to-use neck relaxation routine.</p><p><em><strong>GENTLE EMS</strong></em><br/>An additional layer of stimulation for your daily routine.</p><p><em><strong>SOOTHING HEAT</strong></em><br/>Enjoy gentle warmth as you unwind.</p><p><em><strong>HANDS-FREE MASSAGE</strong></em><br/>Sit back and enjoy a massage experience without holding a device.</p><p><em><strong>26° SUPPORT</strong></em><br/>A considered support angle designed into your daily neck reset.</p><p><strong>Just 10 minutes. A little time set aside for your neck.</strong></p><p>Explore the research behind each feature: <a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">EMS research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Heat therapy research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Massage research</a> · <a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Pillow design research</a></p>",
+            "text": "<p><strong>More than heat. More than massage. Four features, thoughtfully brought together in one simple 10-minute routine.</strong></p><p>Long hours sitting, driving, and looking down at a screen can leave your neck feeling tight and tired. QuestProps brings together four features to make taking time for your neck simple.</p><h3><em>01 — GENTLE EMS STIMULATION</em></h3><p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p><em>What research says:</em> A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -1190,7 +1190,7 @@
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "scribble",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
         }
@@ -1202,6 +1202,210 @@
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/9月9日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "#F4F1EB",
+        "color_background": "#221F1C",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_fzPQ3V": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_gKJMDn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Video with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_qp9eBC": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><em>02 — SOOTHING HEAT</em></h3><p>Enjoy gentle warmth as you settle in and unwind.</p><p>What research says: Research on heat for self-management of nonspecific neck pain suggests it may be an option for comfort, but the current evidence remains limited.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Read the research — Journal of Pain Research, 2026</a></p><p></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gKJMDn",
+        "text_qp9eBC"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_he9Afi": {
+      "type": "video-with-text",
+      "blocks": {
+        "text_FCpT3H": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><em>03 — HANDS-FREE MASSAGE</em></h3><p>Lie back, relax, and enjoy a massage experience without holding a device.</p><p>What research says: A Cochrane review assessed massage for neck pain. It found that evidence for its benefits remains uncertain, with results depending on the studies and treatment approaches examined.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Read the research — Cochrane Database of Systematic Reviews, 2024</a></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_GqMk4K": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "text_FCpT3H",
+        "button_GqMk4K"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/8月16日(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "#F4F1EB",
+        "color_background": "#221F1C",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_TzDQXw": {
+      "type": "video-with-text",
+      "blocks": {
+        "text_LJD9i3": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><em>04 — 26° NECK SUPPORT</em></h3><p>A built-in 26° support angle gives your neck a dedicated place to rest.</p><p>What research says: A systematic review examined how pillow design relates to neck pain and other outcomes. It found that pillow shape and height may affect cervical alignment, but it did not establish 26° as an optimal angle.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Read the research — Clinical Biomechanics, 2021</a></p><h3>FOUR FEATURES. ONE EASY ROUTINE. JUST 10 MINUTES.</h3><p>Make a little time for your neck — even on your busiest days.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_VwjfHF": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "text_LJD9i3",
+        "button_VwjfHF"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/7月15日 (1)(2).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "enable_video_autoplay": true,
@@ -1230,106 +1434,6 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
-      }
-    },
-    "faq_pPgBLe": {
-      "type": "faq",
-      "blocks": {
-        "question_fjzh9M": {
-          "type": "question",
-          "settings": {
-            "title": "WHY DOES MY NECK ALWAYS FEEL LIKE IT'S WORKING?",
-            "text": "<p>Your neck doesn't really get a break.</p><p>Sitting at a desk.<br/>Driving.<br/>Looking down at your phone.<br/>Working.<br/>Traveling.</p><p>All day, your neck is constantly supporting, adjusting and holding.</p><p>And when you finally try to relax, you often start another routine — stretching, massaging, repositioning, adjusting.</p><p><strong>Maybe your neck doesn't need more work.<br/>Maybe it needs a chance to let go.</strong></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_qdCbkk": {
-          "type": "question",
-          "settings": {
-            "title": "HOW FAST WILL I FEEL THE DIFFERENCE?",
-            "text": "<p><strong>First Use</strong><br/>Get familiar with your 10-minute reset.</p><p><strong>First Week</strong><br/>Build a simple daily routine.</p><p><strong>Long Term</strong><br/>Make 10 minutes of hands-free reset part of your day.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_ptU7mq": {
-          "type": "question",
-          "settings": {
-            "title": "WHAT IF NECK RESTORE ISN'T FOR ME?",
-            "text": "<p><strong>180-Day Risk-Free Trial</strong></p><p>Take your time getting used to your new routine. If it's not right for you, you're covered by our 180-day trial.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_nCAY8t": {
-          "type": "question",
-          "settings": {
-            "title": "WHAT DO I DO?",
-            "text": "<p><strong>1 —</strong> Position Neck Restore comfortably.</p><p><strong>2 —</strong> Choose your preferred settings.</p><p><strong>3 —</strong> Relax for 10 minutes.</p><p><strong>4 —</strong> Done.</p><p><strong>No complicated routine.<br/>No holding a device.<br/>Just 10 minutes.</strong></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_ATJ9xc": {
-          "type": "question",
-          "settings": {
-            "title": "IS THIS JUST ANOTHER NECK MASSAGER?",
-            "text": "<p><strong>Not exactly.</strong></p><p>It's not just a handheld massager.</p><p>It's not just heat.</p><p>It's not a device you need to keep operating.</p><p><strong>26° Support + Heat + Massage + Gentle EMS</strong></p><p><strong>Combined into one 10-minute hands-free routine.</strong></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_QhTdqi": {
-          "type": "question",
-          "settings": {
-            "title": "WHAT'S INSIDE NECK RESTORE?",
-            "text": "<p>26° Support</p><p>Heat</p><p>Massage</p><p>Gentle EMS</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "question_fjzh9M",
-        "question_qdCbkk",
-        "question_ptU7mq",
-        "question_nCAY8t",
-        "question_ATJ9xc",
-        "question_QhTdqi"
-      ],
-      "disabled": true,
-      "name": "t:sections.faq.name",
-      "settings": {
-        "style": "with-border",
-        "heading": "",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "#f4f1eb",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 10,
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "divider": false,
-        "narrow": true,
-        "rounded": false
       }
     },
     "product_details_BeyWNM": {
@@ -1946,119 +2050,6 @@
         "rounded": false
       }
     },
-    "timeline_GkbVR3": {
-      "type": "timeline",
-      "blocks": {
-        "content_4fVdtW": {
-          "type": "content",
-          "settings": {
-            "image": "shopify://shop_images/c7292e38499a12ce2fb7cdaadb071ea9.png",
-            "subheading": "FIRST USE",
-            "heading": "<em>Feel The Difference</em>",
-            "heading_tag": "h2",
-            "text": "<p>Warmth. Gentle massage. Support.<br/>A noticeable reset from your very first session.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "squiggle-underline-2",
-            "highlighted_reveal": false
-          }
-        },
-        "content_D4awQY": {
-          "type": "content",
-          "settings": {
-            "image": "shopify://shop_images/906994c779d05ee6c8d3340533a28d17.png",
-            "subheading": "WEEK 1",
-            "heading": "<em>Find Your Perfect Setting</em>",
-            "heading_tag": "h2",
-            "text": "<p>Discover the heat, massage and EMS combination that feels right for you.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "content_DQrEnB": {
-          "type": "content",
-          "settings": {
-            "image": "shopify://shop_images/423987f66c7c5d9867d497fc69972bd2.jpg",
-            "subheading": "WEEK 2",
-            "heading": "<em>Make It A Ritual</em>",
-            "heading_tag": "h2",
-            "text": "<p>After work. Before bed. After a long drive.<br/>Just 10 minutes when your neck needs a break.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "content_jUBMdn": {
-          "type": "content",
-          "settings": {
-            "image": "shopify://shop_images/e65e61519b2d1e8ea9f545bb129e5630.jpg",
-            "subheading": "WEEK 3+",
-            "heading": "<em>Keep Giving Your Neck A Break</em>",
-            "heading_tag": "h2",
-            "text": "<p>The goal isn't another complicated routine.<br/>It's making 10 quiet minutes for yourself part of the day.</p><p></p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        }
-      },
-      "block_order": [
-        "content_4fVdtW",
-        "content_D4awQY",
-        "content_DQrEnB",
-        "content_jUBMdn"
-      ],
-      "disabled": true,
-      "name": "t:sections.timeline.name",
-      "settings": {
-        "show_navigation": true,
-        "layout": "image_first",
-        "image_ratio": "portrait",
-        "image_ratio_mobile": "wide",
-        "heading": "<em>Your 10-Minute Routine, Week by Week</em>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "full_text",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "1786265603ac9a21f6": {
       "type": "apps",
       "blocks": {
@@ -2245,7 +2236,9 @@
     "logo_list_EaLbPb",
     "images_with_text_dpq4mA",
     "video_with_text_Rcpxrn",
-    "faq_pPgBLe",
+    "video_with_text_fzPQ3V",
+    "video_with_text_he9Afi",
+    "video_with_text_TzDQXw",
     "product_details_BeyWNM",
     "slideshow_hwmiUc",
     "comparison_table_H43Yrg",
@@ -2253,7 +2246,6 @@
     "1790066332024cd932",
     "video_with_text_KV9rPw",
     "portfolio_TyQdme",
-    "timeline_GkbVR3",
     "1786265603ac9a21f6",
     "recently-viewed",
     "help-drawer",
