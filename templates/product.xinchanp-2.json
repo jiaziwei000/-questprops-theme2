@@ -9,6 +9,86 @@
  */
 {
   "sections": {
+    "rich_text_9yTbHK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6P9tFf": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>&nbsp;Neck Care That Fits Your Life.&nbsp;</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "sketch-underline",
+            "highlighted_reveal": false
+          }
+        },
+        "text_qhMVaW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We create neck care solutions for people living with daily neck tension, helping them relax and feel more comfortable with simple, 10-minute routines.</p>",
+            "text_font": "subtitle",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_AEkx3V": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_6P9tFf",
+        "text_qhMVaW",
+        "button_AEkx3V"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#D2A146",
+        "color_background": "#32312F",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 36,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "main-product": {
       "type": "main-product",
       "blocks": {
@@ -1966,94 +2046,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "portfolio_TyQdme": {
-      "type": "portfolio",
-      "blocks": {
-        "profile_76prL9": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/402147f6e5c1e00522d6494bcbd0a232.jpg",
-            "heading": "26° SUPPORT",
-            "text": "<p><strong>A 26° support angle gives your neck a comfortable, supported position while you reset.</strong></p><p>It’s more than a massage surface — it creates a dedicated position for your 10-minute routine<br/></p>",
-            "color_text": "#ffffff",
-            "color_background": "#171717"
-          }
-        },
-        "profile_XinCmJ": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/38c3047fc18b260fd16e378384fb10f2.jpg",
-            "heading": "HEAT THERAPY",
-            "text": "<p><strong>Gentle warmth helps you ease into your daily reset.</strong></p><p><strong>Targeted warmth</strong><br/><br/></p>",
-            "color_text": "#ffffff",
-            "color_background": "#171717"
-          }
-        },
-        "profile_8NXC6m": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "Massage",
-            "text": "<p><strong>Massage helps create a more relaxing, hands-on feel without booking an appointment.</strong></p><p><strong>At-home use</strong></p>",
-            "color_text": "#ffffff",
-            "color_background": "#171717"
-          }
-        },
-        "profile_TkHdAz": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/513bd48e78d1b98727126e212ef0cfeb.png",
-            "heading": "EMS",
-            "text": "<p><strong>Gentle electrical stimulation adds another layer to your at-home routine.</strong></p><p><strong>Adjustable intensity</strong></p>",
-            "color_text": "#ffffff",
-            "color_background": "#171717"
-          }
-        }
-      },
-      "block_order": [
-        "profile_76prL9",
-        "profile_XinCmJ",
-        "profile_8NXC6m",
-        "profile_TkHdAz"
-      ],
-      "disabled": true,
-      "name": "t:sections.portfolio.name",
-      "settings": {
-        "columns": 2,
-        "carousel_on_desktop": false,
-        "layout": "default",
-        "image_ratio": "portrait",
-        "image_ratio_mobile": "portrait",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "<em>&nbsp;THE 4-TECHNOLOGY SYSTEM BEHIND YOUR 10-MINUTE RESET&nbsp;</em>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center justify-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "full_text",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "#f4f1eb",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 48,
-        "padding_bottom": 24,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "1786265603ac9a21f6": {
       "type": "apps",
       "blocks": {
@@ -2229,6 +2221,7 @@
     }
   },
   "order": [
+    "rich_text_9yTbHK",
     "main-product",
     "testimonials_banner_XPL8te",
     "scrolling-text",
@@ -2249,7 +2242,6 @@
     "blocks_pQ6eaq",
     "1790066332024cd932",
     "video_with_text_KV9rPw",
-    "portfolio_TyQdme",
     "1786265603ac9a21f6",
     "recently-viewed",
     "help-drawer",
