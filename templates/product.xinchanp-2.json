@@ -20,20 +20,20 @@
             "heading_tag": "h2",
             "highlighted_text": "scribble",
             "highlighted_scribble": "sketch-underline",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_qhMVaW": {
           "type": "text",
           "settings": {
-            "text": "<p>We create neck care solutions for people living with daily neck tension, helping them relax and feel more comfortable with simple, 10-minute routines.</p>",
+            "text": "<p><em>We create neck care solutions for people living with daily neck tension, helping them relax and feel more comfortable with simple, 10-minute routines.</em></p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -679,12 +679,12 @@
         "heading_wtzhEf": {
           "type": "heading",
           "settings": {
-            "heading": "We’re Not Here to Make Promises. We’re Here to Help You Feel Better.&nbsp;",
+            "heading": "<em>We’re Not Here to Make Promises. We’re Here to Help You Feel Better.&nbsp;</em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_ft8JUR": {
