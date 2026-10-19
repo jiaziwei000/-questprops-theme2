@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "<em>&nbsp;Neck Care That Fits Your Life.&nbsp;</em>",
-            "heading_size": "title-sm",
+            "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
             "highlighted_scribble": "sketch-underline",
@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "text": "<p>We create neck care solutions for people living with daily neck tension, helping them relax and feel more comfortable with simple, 10-minute routines.</p>",
-            "text_font": "subtitle",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
@@ -37,24 +37,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_AEkx3V": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_6P9tFf",
-        "text_qhMVaW",
-        "button_AEkx3V"
+        "text_qhMVaW"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
@@ -683,6 +670,73 @@
         "padding_bottom": 28,
         "divider": false,
         "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_bhDmRM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wtzhEf": {
+          "type": "heading",
+          "settings": {
+            "heading": "We’re Not Here to Make Promises. We’re Here to Help You Feel Better.&nbsp;",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_ft8JUR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>**01. Not Happy? Get Your Money Back Within 180 Days.**<br/><br/>If QuestProps isn't right for you, return it within 180 days for a refund.<br/><br/>**02. Tried It for 180 Days and Still Not Satisfied? Keep It.**<br/></p><p>No need to send it back. If you still don't love it after 180 days, it's yours to keep.</p>",
+            "text_font": "subtitle",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wtzhEf",
+        "text_ft8JUR"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#D2A146",
+        "color_background": "#32312F",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -1908,71 +1962,6 @@
         "rounded": false
       }
     },
-    "blocks_pQ6eaq": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_ab934ad_VP47pG": {
-          "type": "ai_gen_block_ab934ad",
-          "settings": {
-            "heading": "",
-            "desktop_width_percent": 100,
-            "feature_heading": "Feature / Criteria",
-            "brand_heading": "Neck Restore",
-            "brace_heading": "Stretching",
-            "chiro_heading": "Handheld Massager",
-            "video_heading": "Heat Pad",
-            "feature_1": "Hands-Free",
-            "brand_1": "✓",
-            "brace_1": "—",
-            "chiro_1": "—",
-            "video_1": "✓",
-            "feature_2": "26° Supported Position",
-            "brand_2": "✓",
-            "brace_2": "—",
-            "chiro_2": "—",
-            "video_2": "—",
-            "feature_3": "Heat",
-            "brand_3": "✓",
-            "brace_3": "—",
-            "chiro_3": "—",
-            "video_3": "✓",
-            "feature_4": "Massage",
-            "brand_4": "✓",
-            "brace_4": "—",
-            "chiro_4": "✓",
-            "video_4": "—",
-            "feature_5": "Gentle EMS",
-            "brand_5": "✓",
-            "brace_5": "—",
-            "chiro_5": "—",
-            "video_5": "—",
-            "feature_6": "10-Minute Routine",
-            "brand_6": "✓",
-            "brace_6": "△",
-            "chiro_6": "△",
-            "video_6": "△",
-            "text_color": "#171717",
-            "heading_color": "#f4f1eb",
-            "label_color": "#e8e8e4",
-            "header_background": "#f4f1eb",
-            "header_text_color": "#171717",
-            "highlight_background": "#a6745f",
-            "highlight_text_color": "#f4f1eb",
-            "table_background": "#f4f1eb",
-            "border_color": "#dbe5ef",
-            "heading_size": 48,
-            "body_size": 24
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_ab934ad_VP47pG"
-      ],
-      "disabled": true,
-      "name": "Comparison table",
-      "settings": {}
-    },
     "1790066332024cd932": {
       "type": "_blocks",
       "settings": {}
@@ -2227,6 +2216,7 @@
     "scrolling-text",
     "scroll_spy_rTBpXa",
     "multicolumn_with_icons_8JY49F",
+    "rich_text_bhDmRM",
     "shop_the_feed_6Cfpwk",
     "rich_text_ULKVqP",
     "testimonials_banner_mUptUN",
@@ -2239,7 +2229,6 @@
     "product_details_BeyWNM",
     "slideshow_hwmiUc",
     "comparison_table_H43Yrg",
-    "blocks_pQ6eaq",
     "1790066332024cd932",
     "video_with_text_KV9rPw",
     "1786265603ac9a21f6",
