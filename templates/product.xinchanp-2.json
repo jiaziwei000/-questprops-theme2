@@ -435,7 +435,7 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "media_size": 66,
+        "media_size": 70,
         "gallery_layout": "thumbnail",
         "thumbnail_position": "beside",
         "image_ratio": "adapt_first",
@@ -443,7 +443,7 @@
         "hide_variants": false,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
-        "mobile_layout": "full_width",
+        "mobile_layout": "partial",
         "image_ratio_mobile": "square",
         "mobile_thumbnail": true,
         "padding_top": 12,
