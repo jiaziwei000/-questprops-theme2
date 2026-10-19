@@ -1252,7 +1252,7 @@
             "heading_tag": "h2",
             "highlighted_text": "marker",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_BbhqzP": {
@@ -1310,7 +1310,7 @@
             "heading_tag": "h2",
             "highlighted_text": "full_text",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_9BnKUi": {
@@ -1717,7 +1717,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#f4f1eb",
+        "color_background": "#D0CEC8",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -2017,7 +2017,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "center",
         "color_text": "",
-        "color_background": "#ffffff",
+        "color_background": "#D0CEC8",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -2053,7 +2053,7 @@
       ],
       "settings": {
         "color_text": "",
-        "color_background": "#e8e8e4",
+        "color_background": "#D0CEC8",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
