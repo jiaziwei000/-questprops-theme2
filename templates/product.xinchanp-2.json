@@ -137,7 +137,7 @@
             "icon": "none",
             "iwidth": "fit",
             "icon_width": 24,
-            "text": "<strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;HOW LONG WILL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; YOU KEEP &nbsp;PUTTING IT OFF?&nbsp;</strong>",
+            "text": "<strong>&nbsp;HOW LONG WILL YOU KEEP &nbsp;PUTTING IT OFF?&nbsp;</strong>",
             "text_size": "text-sm"
           }
         },
