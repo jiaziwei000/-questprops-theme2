@@ -15,7 +15,7 @@
         "heading_6P9tFf": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Everyday Neck Care</em>, Built Around You.",
+            "heading": "<em><strong>Everyday Neck Care</strong></em><strong>,</strong> Built Around You.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "text",
@@ -682,7 +682,7 @@
             "heading": "<em><strong>WE STAND BEHIND WHAT WE MAKE</strong></em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "underline",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": true
           }
@@ -1024,7 +1024,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "<em><strong>&nbsp;Join 75,000+</strong></em><strong> Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;</strong>",
+        "heading": "<em>&nbsp;Join 75,000+</em> Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
@@ -1250,7 +1250,7 @@
             "heading": "<em>YOUR NECK AND YOUR HEAD ARE MORE CONNECTED THAN YOU THINK.&nbsp;</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "marker",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": true
           }
@@ -1308,7 +1308,7 @@
             "heading": "<em>4 WAYS TO GIVE YOUR NECK A BETTER RESET.&nbsp;</em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "full_text",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle",
             "highlighted_reveal": true
           }
@@ -1567,6 +1567,75 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 44,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_KV9rPw": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_ta6YiT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Don’t Wait Until Tension Feels Normal.</em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "highlighted_reveal": false
+          }
+        },
+        "text_GiYbLk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your neck works all day.<br/>You keep pushing through.<br/>Until “I’m fine” becomes “I’m used to it.”<br/>10 minutes can change how you end your day.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ta6YiT",
+        "text_GiYbLk"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/7月2日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "#d0cec8",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -1965,75 +2034,6 @@
     "1790066332024cd932": {
       "type": "_blocks",
       "settings": {}
-    },
-    "video_with_text_KV9rPw": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_ta6YiT": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>Don’t Wait Until Tension Feels Normal.</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "squiggle-underline",
-            "highlighted_reveal": false
-          }
-        },
-        "text_GiYbLk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Your neck works all day.<br/>You keep pushing through.<br/>Until “I’m fine” becomes “I’m used to it.”<br/>10 minutes can change how you end your day.</p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ta6YiT",
-        "text_GiYbLk"
-      ],
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video": "shopify://files/videos/7月2日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "adapt",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "center",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "center",
-        "color_text": "",
-        "color_background": "#d0cec8",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 48,
-        "padding_bottom": 32,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
     },
     "1786265603ac9a21f6": {
       "type": "apps",
