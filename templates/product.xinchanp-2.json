@@ -15,10 +15,10 @@
         "heading_6P9tFf": {
           "type": "heading",
           "settings": {
-            "heading": "<em>&nbsp;Neck Care That Fits Your Life.&nbsp;</em>",
+            "heading": "<em>Everyday Neck Care</em>, Built Around You.",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "scribble",
+            "highlighted_text": "text",
             "highlighted_scribble": "sketch-underline",
             "highlighted_reveal": true
           }
@@ -26,9 +26,9 @@
         "text_qhMVaW": {
           "type": "text",
           "settings": {
-            "text": "<p><em>We create neck care solutions for people living with daily neck tension, helping them relax and feel more comfortable with simple, 10-minute routines.</em></p>",
+            "text": "<p><strong>We’re QuestProps. We help you manage everyday neck tension and stiffness with simple, effective 10-minute neck care.</strong></p>",
             "text_font": "heading",
-            "text_size": "subtext-sm",
+            "text_size": "subtext-md",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -61,7 +61,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#d2a146",
+        "color_text": "#FFFFFF",
         "color_background": "#32312f",
         "gradient_background": "",
         "color_highlight": "",
@@ -1349,7 +1349,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "#f4f1eb",
-        "color_background": "#32312F",
+        "color_background": "#32312f",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -1487,7 +1487,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "#f4f1eb",
-        "color_background": "#32312F",
+        "color_background": "#32312f",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -1717,7 +1717,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#D0CEC8",
+        "color_background": "#d0cec8",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -2017,7 +2017,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "center",
         "color_text": "",
-        "color_background": "#D0CEC8",
+        "color_background": "#d0cec8",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -2053,7 +2053,7 @@
       ],
       "settings": {
         "color_text": "",
-        "color_background": "#D0CEC8",
+        "color_background": "#d0cec8",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
