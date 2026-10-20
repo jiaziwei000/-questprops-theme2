@@ -61,7 +61,7 @@
         "gradient_background": "",
         "color_highlight": "#f5f5f5",
         "gradient_highlight": "",
-        "hide_homepage": false,
+        "hide_homepage": true,
         "full_width": true,
         "rounded": true
       }
