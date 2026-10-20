@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "alert",
-            "text": "<strong>Free Worldwide Shipping · &nbsp; Ships within 24 hours &nbsp;· &nbsp;Delivers in 3–7 business days&nbsp;</strong>",
+            "text": "<strong>Free Worldwide Shipping</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -28,10 +28,22 @@
         },
         "announcement-2": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "email",
-            "text": "A question? Visit our contact page",
+            "text": "<strong>Delivers in 3–7 business days&nbsp;</strong>",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement_g6DTqe": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "text": "Welcome to our store",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -42,7 +54,8 @@
       },
       "block_order": [
         "announcement-1",
-        "announcement-2"
+        "announcement-2",
+        "announcement_g6DTqe"
       ],
       "settings": {
         "show_social": true,
