@@ -127,7 +127,7 @@
             "icon": "alert",
             "iwidth": "fit",
             "icon_width": 24,
-            "text": "&nbsp;Sitting. Driving. Scrolling &nbsp;Stiff",
+            "text": "Stiffness from sitting, driving and scrolling",
             "text_size": "text-sm"
           }
         },
@@ -211,7 +211,7 @@
             "icon": "none",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "No Need To Overthink It — You Have 180 Days.&nbsp;",
+            "text": "Heat · Massage · Gentle EMS · 26° Traction Support",
             "text_size": "text-sm"
           }
         },
