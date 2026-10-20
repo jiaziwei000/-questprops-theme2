@@ -434,7 +434,7 @@
         "image_ratio_mobile": "square",
         "mobile_thumbnail": true,
         "padding_top": 12,
-        "padding_bottom": 0,
+        "padding_bottom": 48,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -640,6 +640,7 @@
         "column_RiqH3K",
         "column_PEYUmm"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-border",
