@@ -679,7 +679,7 @@
         "heading_wtzhEf": {
           "type": "heading",
           "settings": {
-            "heading": "<em><strong>&nbsp;We Dare to Stand Behind What We Make.</strong></em>&nbsp;",
+            "heading": "<em><strong>WE STAND BEHIND WHAT WE MAKE</strong></em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "underline",
@@ -690,7 +690,7 @@
         "text_ft8JUR": {
           "type": "text",
           "settings": {
-            "text": "<p>**01. Not Happy? Get Your Money Back Within 180 Days.**<br/><br/>If QuestProps isn't right for you, return it within 180 days for a refund.<br/><br/>**02. Tried It for 180 Days and Still Not Satisfied? Keep It.**<br/></p><p>No need to send it back. If you still don't love it after 180 days, it's yours to keep.</p>",
+            "text": "<p>01. Give It 180 Days. If It’s Not Right for You, Get Your Money Back.<br/><br/>Try QuestProps at home. If you’re not satisfied, request a refund within 180 days, subject to our return policy.<br/><br/>02. Still Not Satisfied After 180 Days? Keep It.<br/><br/>You’ve given it a real chance. If you’re still not happy after 180 days, you can keep your product without sending it back.</p>",
             "text_font": "subtitle",
             "text_size": "subtext-sm",
             "text_max_size": 32,
@@ -710,7 +710,7 @@
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
-        "text_alignment_mobile": "center",
+        "text_alignment_mobile": "left",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
