@@ -992,7 +992,7 @@
         "show_price": false,
         "heading": "<em>Proof?</em> Here’s what our clients have to say.&nbsp;",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
