@@ -1116,9 +1116,9 @@
       "name": "t:sections.logo-list.name",
       "settings": {
         "layout": "marquee",
-        "grid_horizontal": 50,
+        "grid_horizontal": 75,
         "direction": "left",
-        "speed": 14,
+        "speed": 16,
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
