@@ -156,18 +156,17 @@
       "block_order": [
         "mega-menu"
       ],
-      "disabled": true,
       "settings": {
         "logo_h1": true,
         "menu": "main-menu",
         "menu_mobile": "",
         "menu_active": "block",
-        "hover_menu": true,
-        "header_layout": "left-center",
-        "sticky_header_type": "always",
-        "icons_size": "lg",
+        "hover_menu": false,
+        "header_layout": "center-split",
+        "sticky_header_type": "on-scroll-up",
+        "icons_size": "sm",
         "menu_drawer_icon_label": "",
-        "enable_language_selector_desktop": false,
+        "enable_language_selector_desktop": true,
         "enable_country_selector_desktop": false,
         "show_country_name_dekstop": false,
         "show_country_flag_desktop": false,
@@ -176,14 +175,14 @@
         "show_social": true,
         "enable_language_selector": true,
         "enable_country_selector": true,
-        "transparent_color_text": "#ffffff",
-        "color_text": "#171717",
-        "color_background": "#ffffff",
+        "transparent_color_text": "#B1AB91",
+        "color_text": "#E7E5D3",
+        "color_background": "#555450",
         "color_localization": "",
         "padding_top": 8,
         "padding_bottom": 8,
         "full_width": true,
-        "rounded": true
+        "rounded": false
       }
     }
   },
