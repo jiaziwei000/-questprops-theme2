@@ -16,7 +16,7 @@
       "settings": {
         "show_vendor": false,
         "show_cart_note": true,
-        "show_shipping_calculator": true,
+        "show_shipping_calculator": false,
         "add_discount_code": true,
         "show_view_cart_button": false,
         "show_checkout_button": true,
