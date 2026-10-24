@@ -215,13 +215,6 @@
             "text_size": "text-sm"
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
         "price_FdJzQz": {
           "type": "price",
           "settings": {
@@ -270,7 +263,6 @@
         },
         "product_variations_Wbwq3b": {
           "type": "product_variations",
-          "disabled": true,
           "settings": {
             "option_name": "",
             "option_value_metafield": "",
@@ -293,7 +285,6 @@
         },
         "product_bundle_88nBCN": {
           "type": "product_bundle",
-          "disabled": true,
           "settings": {
             "opened": true,
             "clickable": false,
@@ -301,7 +292,7 @@
             "icon": "tag",
             "iwidth": "fit",
             "icon_width": 34,
-            "heading": "Add-on Deal: Just $5.99— Valued at $69.99",
+            "heading": "Free Gift: Weighted Sleep Mask",
             "products": [
               "deep-sleep-eye-mask"
             ],
@@ -402,7 +393,6 @@
         "text_Gz7xFw",
         "text_xxEBHL",
         "text_QwEjqy",
-        "description",
         "price_FdJzQz",
         "badges_tnb6kp",
         "countdown",
@@ -1801,99 +1791,6 @@
         "rounded": false
       }
     },
-    "slideshow_hwmiUc": {
-      "type": "slideshow",
-      "blocks": {
-        "image_37zMjc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
-            "heading": "Frank Y.",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_rAa8Th": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
-            "heading": "Jess J.",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_maVUzf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20260521224109_308_75_f01bba64-4643-4eb9-a2d9-b88d5e6dffe4.png",
-            "heading": "Martha W.",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_8tKAk4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20260521224148_311_75.png",
-            "heading": "Martha S.",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "image_37zMjc",
-        "image_rAa8Th",
-        "image_maVUzf",
-        "image_8tKAk4"
-      ],
-      "disabled": true,
-      "name": "t:sections.slideshow.name",
-      "settings": {
-        "autoplay": true,
-        "autoplay_speed": 3,
-        "show_navigation": true,
-        "image_height": "650px",
-        "content_width": "small",
-        "image_height_mobile": "auto",
-        "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
-        "color_background": "#ffffff",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 15,
-        "padding_top": 28,
-        "padding_bottom": 44,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "horizontal"
-      }
-    },
     "comparison_table_H43Yrg": {
       "type": "comparison-table",
       "blocks": {
@@ -2229,7 +2126,6 @@
     "video_with_text_TzDQXw",
     "video_with_text_KV9rPw",
     "product_details_BeyWNM",
-    "slideshow_hwmiUc",
     "comparison_table_H43Yrg",
     "1790066332024cd932",
     "1786265603ac9a21f6",
