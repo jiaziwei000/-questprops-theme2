@@ -15,10 +15,10 @@
         "heading_6P9tFf": {
           "type": "heading",
           "settings": {
-            "heading": "<em><strong>We are QUESTPROPS.&nbsp;</strong></em>",
+            "heading": "<strong>We are </strong><em><strong>QUESTPROPS.&nbsp;</strong></em>",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "highlighted_text": "underline",
+            "highlighted_text": "text",
             "highlighted_scribble": "sketch-underline",
             "highlighted_reveal": true
           }
@@ -38,9 +38,9 @@
         "text_NxQcGL": {
           "type": "text",
           "settings": {
-            "text": "<p>We are made for anyone stuck with ongoing neck tension.</p>",
+            "text": "<p>Made for anyone stuck with<br/>ongoing neck tension.</p>",
             "text_font": "heading",
-            "text_size": "subtext-custom",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -64,6 +64,7 @@
         },
         "text_zLcFKW": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>WHY CHOOSE US: FOR TIGHT, STIFF NECKS.<br/>🎁 FREE EYE MASK INCLUDED WITH EVERY ORDER.<br/>PLUS WE REFUND YOU IF YOU'RE NOT SATISFIED –<br/><em>EVEN PAST 180 DAYS, NO RETURN REQUIRED.</em><br/></p>",
             "text_font": "subtitle",
@@ -105,7 +106,7 @@
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
