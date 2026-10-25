@@ -15,16 +15,71 @@
         "heading_6P9tFf": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Ordinary relief only relaxes surface muscles — we target the deep tension that builds up in your neck&nbsp;</em>",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "<em><strong>We are QUESTPROPS.&nbsp;</strong></em>",
+            "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "text",
+            "highlighted_text": "underline",
             "highlighted_scribble": "sketch-underline",
             "highlighted_reveal": true
           }
         },
+        "heading_jCcKhe": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em><strong>We are made for anyone stuck with ongoing neck tension.</strong></em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
+          }
+        },
+        "text_NxQcGL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are made for anyone stuck with ongoing neck tension.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-custom",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_NDEEyw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em><strong>Why choose us: Deep neck release, plus we refund you if you’re not satisfied — even past 180 days, no return required.</strong></em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
+          }
+        },
+        "text_zLcFKW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WHY CHOOSE US: FOR TIGHT, STIFF NECKS.<br/>🎁 FREE EYE MASK INCLUDED WITH EVERY ORDER.<br/>PLUS WE REFUND YOU IF YOU'RE NOT SATISFIED –<br/><em>EVEN PAST 180 DAYS, NO RETURN REQUIRED.</em><br/></p>",
+            "text_font": "subtitle",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
         "text_qhMVaW": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Our 26° supportive traction, heat & gentle EMS help ease deep neck tightness, for a more comfortable resting posture at home.</p>",
             "text_font": "heading",
@@ -41,12 +96,16 @@
       },
       "block_order": [
         "heading_6P9tFf",
+        "heading_jCcKhe",
+        "text_NxQcGL",
+        "heading_NDEEyw",
+        "text_zLcFKW",
         "text_qhMVaW"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
-        "text_alignment_mobile": "center",
+        "text_alignment_mobile": "left",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
