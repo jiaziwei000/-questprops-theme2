@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "<em><strong>We are QUESTPROPS.&nbsp;</strong></em>",
-            "heading_size": "title-md",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "underline",
             "highlighted_scribble": "sketch-underline",
@@ -44,7 +44,7 @@
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
-            "text_capitalize": false,
+            "text_capitalize": true,
             "secondary_color": false,
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
