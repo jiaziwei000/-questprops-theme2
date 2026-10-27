@@ -193,7 +193,7 @@
             "iwidth": "fit",
             "icon_width": 10,
             "text": "&nbsp;Ships from California. Arrives in <strong>3–5 days</strong>.&nbsp;",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_wN8YKW": {
@@ -203,7 +203,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "text": "Stock status: Very Low!&nbsp;",
-            "text_size": "text-base"
+            "text_size": "text-sm"
           }
         },
         "text_FjqDgN": {
@@ -286,7 +286,7 @@
           "settings": {
             "icon": "check_mark",
             "iwidth": "custom",
-            "icon_width": 24,
+            "icon_width": 26,
             "text": "Restores your neck’s natural 26° curve",
             "text_size": "text-sm"
           }
