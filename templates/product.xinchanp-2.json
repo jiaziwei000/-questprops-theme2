@@ -755,7 +755,7 @@
         "heading_wtzhEf": {
           "type": "heading",
           "settings": {
-            "heading": "<em><strong>Risk‑Free for 180 Full Days — and Beyond</strong></em>",
+            "heading": "<strong>&nbsp;A </strong><em><strong>Guarantee</strong></em><strong> No One Else Will Offer&nbsp;</strong>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "text",
@@ -786,7 +786,7 @@
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
