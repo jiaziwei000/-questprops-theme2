@@ -192,7 +192,7 @@
             "icon_image": "shopify://shop_images/f6ce487d78f3765ec0c68717f5bdb1a8.png",
             "iwidth": "fit",
             "icon_width": 10,
-            "text": "&nbsp;Ships from California. Arrives in <strong>3–5 days</strong>.&nbsp;",
+            "text": "&nbsp;Ships from California. Arrives in 2<strong>–5 days</strong>.&nbsp;",
             "text_size": "text-sm"
           }
         },
@@ -286,7 +286,7 @@
           "settings": {
             "icon": "check_mark",
             "iwidth": "custom",
-            "icon_width": 30,
+            "icon_width": 28,
             "text": "Restores your neck’s natural 26° curve",
             "text_size": "text-sm"
           }
