@@ -756,7 +756,7 @@
           "type": "heading",
           "settings": {
             "heading": "<em><strong>Risk‑Free for 180 Full Days — and Beyond</strong></em>",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "text",
             "highlighted_scribble": "circle",
@@ -1066,7 +1066,7 @@
         "account_name": "",
         "show_vendor": false,
         "show_price": false,
-        "heading": "<em>Proof?</em> Here’s what our clients have to say.&nbsp;",
+        "heading": "<em><strong>Proof?</strong></em><strong> Here’s what our clients have to say.&nbsp;</strong>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -1100,7 +1100,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "<em>&nbsp;Join 15,000+</em> Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;",
+        "heading": "<em><strong>&nbsp;Join 15,000+</strong></em><strong> Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;</strong>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
@@ -1323,8 +1323,8 @@
         "heading_rnCkVY": {
           "type": "heading",
           "settings": {
-            "heading": "<em>YOUR NECK AND YOUR HEAD ARE MORE CONNECTED THAN YOU THINK.&nbsp;</em>",
-            "heading_size": "title-sm",
+            "heading": "<em><strong>YOUR NECK AND YOUR HEAD ARE MORE CONNECTED THAN YOU THINK.&nbsp;</strong></em>",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
             "highlighted_scribble": "circle",
@@ -1357,7 +1357,7 @@
         "image_ratio": "portrait",
         "image_width": "medium",
         "layout": "image_first",
-        "text_alignment": "left",
+        "text_alignment": "center",
         "text_alignment_mobile": "left",
         "color_text": "",
         "color_background": "",
@@ -1513,13 +1513,81 @@
         "rounded": false
       }
     },
+    "rich_text_kG6z3G": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6gMJ4P": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET. </strong></em>&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
+          }
+        },
+        "text_6MC6An": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>More than heat. More than massage. Four features, thoughtfully brought together in one simple 10-minute routine.</strong></p><p>Long hours sitting, driving, and looking down at a screen can leave your neck feeling tight and tired. QuestProps brings together four features to make taking time for your neck simple..</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6gMJ4P",
+        "text_6MC6An"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#DFDBD4",
+        "color_background": "#32312F",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 8,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "video_with_text_Rcpxrn": {
       "type": "video-with-text",
       "blocks": {
         "heading_AKmMjF": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "<em>4 WAYS TO GIVE YOUR NECK A BETTER RESET.&nbsp;</em>",
+            "heading": "<em><strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET.&nbsp;</strong></em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "text",
@@ -1530,14 +1598,14 @@
         "text_9BnKUi": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>More than heat. More than massage. Four features, thoughtfully brought together in one simple 10-minute routine.</strong></p><p>Long hours sitting, driving, and looking down at a screen can leave your neck feeling tight and tired. QuestProps brings together four features to make taking time for your neck simple.</p><h3><em>01 — GENTLE EMS STIMULATION</em></h3><p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p>What research says: A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
+            "text": "<h2><em><strong>01 — GENTLE EMS STIMULATION</strong></em></h2><p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p>What research says: A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
@@ -1599,14 +1667,14 @@
         "text_qp9eBC": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>02 — SOOTHING HEAT</em></h3><p>Enjoy gentle warmth as you settle in and unwind.</p><p>What research says: Research on heat for self-management of nonspecific neck pain suggests it may be an option for comfort, but the current evidence remains limited.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Read the research — Journal of Pain Research, 2026</a></p><p></p>",
+            "text": "<h2><em><strong>02 — SOOTHING HEAT</strong></em></h2><p>Enjoy gentle warmth as you settle in and unwind.</p><p>What research says: Research on heat for self-management of nonspecific neck pain suggests it may be an option for comfort, but the current evidence remains limited.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Read the research — Journal of Pain Research, 2026</a></p><p></p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
           }
@@ -1656,14 +1724,14 @@
         "text_FCpT3H": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>03 — HANDS-FREE MASSAGE</em></h3><p>Lie back, relax, and enjoy a massage experience without holding a device.</p><p>What research says: A Cochrane review assessed massage for neck pain. It found that evidence for its benefits remains uncertain, with results depending on the studies and treatment approaches examined.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Read the research — Cochrane Database of Systematic Reviews, 2024</a></p>",
+            "text": "<h2><em><strong>03 — HANDS-FREE MASSAGE</strong></em></h2><p>Lie back, relax, and enjoy a massage experience without holding a device.</p><p>What research says: A Cochrane review assessed massage for neck pain. It found that evidence for its benefits remains uncertain, with results depending on the studies and treatment approaches examined.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Read the research — Cochrane Database of Systematic Reviews, 2024</a></p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -1725,14 +1793,14 @@
         "text_LJD9i3": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>04 — 26° NECK SUPPORT</em></h3><p>A built-in 26° support angle gives your neck a dedicated place to rest.</p><p>What research says: A systematic review examined how pillow design relates to neck pain and other outcomes. It found that pillow shape and height may affect cervical alignment, but it did not establish 26° as an optimal angle.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Read the research — Clinical Biomechanics, 2021</a></p><h3>FOUR FEATURES. ONE EASY ROUTINE. JUST 10 MINUTES.</h3><p>Make a little time for your neck — even on your busiest days.</p>",
+            "text": "<h2><em><strong>04 — 26° NECK SUPPORT</strong></em></h2><p>A built-in 26° support angle gives your neck a dedicated place to rest.</p><p>What research says: A systematic review examined how pillow design relates to neck pain and other outcomes. It found that pillow shape and height may affect cervical alignment, but it did not establish 26° as an optimal angle.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Read the research — Clinical Biomechanics, 2021</a></p><h3>FOUR FEATURES. ONE EASY ROUTINE. JUST 10 MINUTES.</h3><p>Make a little time for your neck — even on your busiest days.</p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": false,
+            "secondary_color": true,
             "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
@@ -1794,7 +1862,7 @@
         "heading_ta6YiT": {
           "type": "heading",
           "settings": {
-            "heading": "<em>Don’t Wait Until Tension Feels Normal.</em>",
+            "heading": "<em><strong>Don’t Wait Until Tension Feels Normal.</strong></em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -2206,6 +2274,7 @@
     "testimonials_banner_mUptUN",
     "images_with_text_dpq4mA",
     "comparison_table_H43Yrg",
+    "rich_text_kG6z3G",
     "video_with_text_Rcpxrn",
     "video_with_text_fzPQ3V",
     "video_with_text_he9Afi",
