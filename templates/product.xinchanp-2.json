@@ -485,7 +485,7 @@
         "image_ratio_mobile": "square",
         "mobile_thumbnail": true,
         "padding_top": 12,
-        "padding_bottom": 20,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": false,
         "rounded": true
