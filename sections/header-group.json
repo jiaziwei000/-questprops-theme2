@@ -18,11 +18,11 @@
           "type": "announcement",
           "settings": {
             "icon": "alert",
-            "text": "<strong>Free Worldwide Shipping</strong>",
+            "text": "<em><strong>Free</strong></em><strong> Worldwide Shipping</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
-            "highlighted_text": "marker",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "circle"
           }
         },
@@ -30,32 +30,18 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "<strong>Delivers in 3–7 business days&nbsp;</strong>",
+            "text": "orders ship from <em>USA</em> in 1 business day",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement_g6DTqe": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "text": "Welcome to our store",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
         "announcement-1",
-        "announcement-2",
-        "announcement_g6DTqe"
+        "announcement-2"
       ],
       "settings": {
         "show_social": true,

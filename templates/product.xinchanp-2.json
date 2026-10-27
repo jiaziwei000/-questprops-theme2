@@ -488,7 +488,7 @@
         "padding_bottom": 68,
         "divider": false,
         "full_width": false,
-        "rounded": false
+        "rounded": true
       }
     },
     "testimonials_banner_XPL8te": {
