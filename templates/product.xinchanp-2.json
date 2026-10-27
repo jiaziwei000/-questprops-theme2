@@ -170,6 +170,23 @@
             "show_rating": true
           }
         },
+        "price_FdJzQz": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "text_yLjrer": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "icon_image": "shopify://shop_images/f6ce487d78f3765ec0c68717f5bdb1a8.png",
+            "iwidth": "fit",
+            "icon_width": 10,
+            "text": "&nbsp;Ships from California. Arrives in <strong>3–5 days</strong>.&nbsp;",
+            "text_size": "text-base"
+          }
+        },
         "text_FjqDgN": {
           "type": "text",
           "disabled": true,
@@ -273,12 +290,6 @@
             "icon_width": 24,
             "text": "Heat · Massage · Gentle EMS · 26° Traction Support",
             "text_size": "text-sm"
-          }
-        },
-        "price_FdJzQz": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
           }
         },
         "badges_tnb6kp": {
@@ -444,6 +455,8 @@
         "share",
         "sticky_buy_button",
         "title",
+        "price_FdJzQz",
+        "text_yLjrer",
         "text_FjqDgN",
         "text_4Ep77n",
         "text_PmfzLH",
@@ -454,7 +467,6 @@
         "text_Gz7xFw",
         "text_xxEBHL",
         "text_QwEjqy",
-        "price_FdJzQz",
         "badges_tnb6kp",
         "countdown",
         "variant_picker",
