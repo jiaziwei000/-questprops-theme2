@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "orders ship from <em>USA</em> in 1 business day",
+            "text": "orders ship from <em>USA</em> in 2-5 business day",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
