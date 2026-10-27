@@ -203,11 +203,6 @@
         "disabled": false,
         "settings": {}
       },
-      "9241046253743163954": {
-        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
-        "disabled": false,
-        "settings": {}
-      },
       "2118589882331710876": {
         "type": "shopify://apps/essential-trust-badges/blocks/app-embed/0ff65b25-07e1-408e-950f-f54dd3d1751b",
         "disabled": false,
@@ -221,6 +216,11 @@
       "3991723993231535834": {
         "type": "shopify://apps/trackbee-connect/blocks/trackbee/4ee1d514-671e-48bf-bd4e-9373f4af089a",
         "disabled": false,
+        "settings": {}
+      },
+      "9241046253743163954": {
+        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
+        "disabled": true,
         "settings": {}
       }
     }

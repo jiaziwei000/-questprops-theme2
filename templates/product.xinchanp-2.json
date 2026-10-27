@@ -103,6 +103,7 @@
         "text_zLcFKW",
         "text_qhMVaW"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
