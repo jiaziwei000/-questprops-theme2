@@ -535,7 +535,7 @@
           "settings": {
             "text": "<p><strong>Deep Sleep Weighted Eye Mask</strong><br/>Value: <em><strong>$69.99</strong></em><br/>Free for the first 20 orders each day. &nbsp; &nbsp;<em> </em><em><strong>9 / 20 Left</strong></em></p>",
             "text_font": "heading",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -549,7 +549,7 @@
           "type": "text",
           "settings": {
             "text": "<p>*Rotating promo timer, physical gift quota max 20 daily</p>",
-            "text_font": "heading",
+            "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
@@ -588,8 +588,8 @@
         "layout": "image_first",
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "color_text": "#32312F",
-        "color_background": "#BCB8AF",
+        "color_text": "#32312f",
+        "color_background": "#bcb8af",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
