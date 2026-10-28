@@ -385,6 +385,7 @@
         },
         "liquid_hA8ByX": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"qp-gift-card\" style=\"margin:14px 0 18px;padding:16px;background:#BCB8AF;border:1px solid rgba(0,0,0,0.09);border-radius:14px;\">\n  <div style=\"display:flex;align-items:center;gap:16px;\">\n    <div style=\"flex-shrink:0;width:80px;height:80px;border-radius:10px;overflow:hidden;background:#ffffff;border:1px solid rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;padding:4px;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0778/4352/9959/files/56b86503e9188e77960911671c4bac3c.png?v=1788403093\" alt=\"Deep Sleep Weighted Eye Mask\" style=\"width:100%;height:100%;object-fit:contain;display:block;\" loading=\"lazy\" />\n    </div>\n    <div style=\"flex-grow:1;min-width:0;\">\n      <div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;\">\n        <span style=\"font-size:11px;letter-spacing:0.07em;text-transform:uppercase;color:#332f27;font-weight:600;\">Daily Complimentary Gift</span>\n        <span id=\"slotNum\" style=\"font-size:14px;font-weight:700;color:#5c2c24;\">9 / 20 Left</span>\n      </div>\n      <div style=\"font-size:14px;font-weight:600;color:#14120E;line-height:1.3;\">Deep Sleep Weighted Eye Mask</div>\n      <div style=\"font-size:11px;color:#36322A;line-height:1.4;margin-top:4px;\">Gentle micro-pressure to ease your rest. Automatically added for the first 20 orders each day.</div>\n      <div style=\"margin-top:5px;font-size:11px;font-weight:600;color:#2c2820;\">Value: $69.99</div>\n      <div style=\"margin-top:4px;font-size:10px;color:#504b40;font-style:italic;\">*Rotating promo timer, physical gift quota max 20 daily</div>\n    </div>\n  </div>\n</div>\n\n<script>\nlet current = 9;\nconst minSlot = 3;\nconst maxSlot = 9;\nconst totalGift = 20;\nconst el = document.getElementById('slotNum');\nfunction updateText(){\n  el.innerText = `${current} / ${totalGift} Left`;\n}\nupdateText();\nsetInterval(()=>{\n  current--;\n  if(current < minSlot){\n    current = maxSlot;\n  }\n  updateText();\n}, 60 * 60 * 1000);\n</script>"
           }
@@ -513,6 +514,94 @@
         "divider": false,
         "full_width": false,
         "rounded": true
+      }
+    },
+    "images_with_text_rxYQcr": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_tzFCN8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>LIMITED DAILY GIFT</strong></em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_jKfzCp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Deep Sleep Weighted Eye Mask</strong><br/>Value: <em><strong>$69.99</strong></em><br/>Free for the first 20 orders each day. &nbsp; &nbsp;<em> </em><em><strong>9 / 20 Left</strong></em></p>",
+            "text_font": "heading",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "marker",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_diiwif": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Rotating promo timer, physical gift quota max 20 daily</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_CdPTLm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_tzFCN8",
+        "text_jKfzCp",
+        "text_diiwif",
+        "button_CdPTLm"
+      ],
+      "name": "t:sections.images-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/56b86503e9188e77960911671c4bac3c.png",
+        "image_2": "shopify://shop_images/e93382225c55e61b9237e2341bd527fa.png",
+        "image_ratio": "landscape",
+        "image_width": "small",
+        "layout": "image_first",
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "color_text": "#32312F",
+        "color_background": "#BCB8AF",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": true
       }
     },
     "testimonials_banner_XPL8te": {
@@ -1375,144 +1464,6 @@
         "enable_parallax": true
       }
     },
-    "comparison_table_H43Yrg": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_NUPbez": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Hands-Free / 26° Support",
-            "heading_2": "Heat",
-            "heading_3": "Massage",
-            "heading_4": "Gentle EMS",
-            "heading_5": "10-Minute Routine",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": "",
-            "heading_21": "",
-            "heading_22": "",
-            "heading_23": "",
-            "heading_24": "",
-            "heading_25": ""
-          }
-        },
-        "values_4QEQHH": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>—</p>",
-            "value_2": "<p>△</p>",
-            "value_3": "<p>✓</p>",
-            "value_4": "<p>—</p>",
-            "value_5": "<p>△</p>",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "value_21": "",
-            "value_22": "",
-            "value_23": "",
-            "value_24": "",
-            "value_25": "",
-            "text_size": "text-sm"
-          }
-        },
-        "values_9M3dDU": {
-          "type": "values",
-          "settings": {
-            "product": "your-daily-neck-shoulder-reset",
-            "value_1": "<p>✓</p>",
-            "value_2": "<p>✓</p>",
-            "value_3": "<p>✓</p>",
-            "value_4": "<p>✓</p>",
-            "value_5": "<p>✓</p>",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "value_21": "",
-            "value_22": "",
-            "value_23": "",
-            "value_24": "",
-            "value_25": "",
-            "text_size": "text-sm"
-          }
-        }
-      },
-      "block_order": [
-        "headings_NUPbez",
-        "values_4QEQHH",
-        "values_9M3dDU"
-      ],
-      "disabled": true,
-      "name": "t:sections.comparison-table.name",
-      "settings": {
-        "sticky_product_info": true,
-        "first_available_variant": true,
-        "show_vendor": true,
-        "show_price": true,
-        "heading": "Why Neck Restore Feels Different",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p>Instead of adding another task to your day, Neck Restore brings your reset into one simple 10-minute routine.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
     "rich_text_kG6z3G": {
       "type": "rich-text",
       "blocks": {
@@ -2263,6 +2214,7 @@
   "order": [
     "rich_text_9yTbHK",
     "main-product",
+    "images_with_text_rxYQcr",
     "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_rTBpXa",
@@ -2273,7 +2225,6 @@
     "logo_list_EaLbPb",
     "testimonials_banner_mUptUN",
     "images_with_text_dpq4mA",
-    "comparison_table_H43Yrg",
     "rich_text_kG6z3G",
     "video_with_text_Rcpxrn",
     "video_with_text_fzPQ3V",
