@@ -589,7 +589,7 @@
         "text_alignment": "center",
         "text_alignment_mobile": "center",
         "color_text": "#32312f",
-        "color_background": "#bcb8af",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -602,240 +602,6 @@
         "full_width": false,
         "rounded": true,
         "enable_parallax": true
-      }
-    },
-    "testimonials_banner_XPL8te": {
-      "type": "testimonials-banner",
-      "blocks": {
-        "testimonial_rRhhd7": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I've been using this after work, and it's become one of my favorite parts of my evening routine. The warmth feels really soothing, and I like that it only takes about 10 minutes.</p>",
-            "author": "Sarah M.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_j7UjV7": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I sit at a desk most of the day, so my neck usually feels tight by the evening. I started using this while watching TV, and it's easy enough that I actually stick with it.</p>",
-            "author": "Michael R.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_AwdbXj": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I wasn't sure what to expect from the EMS at first, but it was surprisingly comfortable. I tried a few different settings and found one that works really well for me.</p>",
-            "author": "Linda P.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_rRhhd7",
-        "testimonial_j7UjV7",
-        "testimonial_AwdbXj"
-      ],
-      "disabled": true,
-      "name": "t:sections.testimonials-banner.name",
-      "settings": {
-        "transparent_header": false,
-        "image_height": "650px",
-        "content_position": "md:items-center md:justify-center",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 60,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<em><strong>180-Day Risk-Free Trial</strong></em>",
-            "text_size": 160,
-            "text_font": "heading",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "right",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": true,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "scroll_spy_rTBpXa": {
-      "type": "scroll-spy",
-      "blocks": {
-        "back_to_top_PEgi68": {
-          "type": "back_to_top",
-          "settings": {}
-        },
-        "nav_item_mYdftA": {
-          "type": "nav_item",
-          "settings": {
-            "title": "Highlights",
-            "target_id": "template--21709234897127__video-hero"
-          }
-        },
-        "nav_item_EGXbCq": {
-          "type": "nav_item",
-          "settings": {
-            "title": "Features",
-            "target_id": "shopify-section-template--21765574066407__product-details"
-          }
-        },
-        "nav_item_anEqfz": {
-          "type": "nav_item",
-          "settings": {
-            "title": "FAQs",
-            "target_id": "shopify-section-template--21765574066407__faq"
-          }
-        }
-      },
-      "block_order": [
-        "back_to_top_PEgi68",
-        "nav_item_mYdftA",
-        "nav_item_EGXbCq",
-        "nav_item_anEqfz"
-      ],
-      "disabled": true,
-      "name": "t:sections.scroll-spy.name",
-      "settings": {
-        "show_highlight": true,
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "color_text": "#171717",
-        "color_background": "#e8eaeb",
-        "gradient_background": "",
-        "full_width": false
-      }
-    },
-    "multicolumn_with_icons_8JY49F": {
-      "type": "multicolumn-with-icons",
-      "blocks": {
-        "column_EQiheB": {
-          "type": "column",
-          "settings": {
-            "icon": "watch",
-            "custom_icon": "",
-            "heading": "180 DayGuarantee",
-            "text": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_RiqH3K": {
-          "type": "column",
-          "settings": {
-            "icon": "star",
-            "custom_icon": "",
-            "heading": "75.000+Customers",
-            "text": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_PEYUmm": {
-          "type": "column",
-          "settings": {
-            "icon": "wash",
-            "custom_icon": "",
-            "heading": "Free Worldwide Shipping",
-            "text": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_EQiheB",
-        "column_RiqH3K",
-        "column_PEYUmm"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn-with-icons.name",
-      "settings": {
-        "style": "with-border",
-        "columns": 3,
-        "text_alignment": "center",
-        "heading": "",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 20,
-        "padding_bottom": 28,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "rich_text_bhDmRM": {
@@ -890,8 +656,8 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#d2a146",
-        "color_background": "#32312f",
+        "color_text": "#32312F",
+        "color_background": "#D0CDC7",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -899,7 +665,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 32,
         "divider": false,
         "narrow": true,
         "rounded": true
@@ -1155,7 +921,7 @@
         "account_name": "",
         "show_vendor": false,
         "show_price": false,
-        "heading": "<em><strong>Proof?</strong></em><strong> Here’s what our clients have to say.&nbsp;</strong>",
+        "heading": "<strong>Proof? Here’s what our clients have to say.&nbsp;</strong>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -1169,7 +935,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": true,
         "color_text": "",
-        "color_background": "",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1189,7 +955,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "<em><strong>&nbsp;Join 15,000+</strong></em><strong> Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;</strong>",
+        "heading": "<strong>&nbsp;Join 15,000+ Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;</strong>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
@@ -1203,8 +969,8 @@
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#f4f1eb",
-        "color_background": "#252422",
+        "color_text": "#32312F",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1298,7 +1064,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#221f1c",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1395,13 +1161,93 @@
         "gradient_background": "",
         "color_highlight": "#ffffff",
         "gradient_highlight": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 57,
+        "color_overlay": "#32312F",
+        "overlay_opacity": 18,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": false,
+        "rounded": true,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_UkPVhh": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_C9dXw4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>&nbsp;Your neck affects your head</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_byWnwH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p><p>Explore the research: <a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\">International Headache Society — ICHD-3</a></p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_Graxnb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_C9dXw4",
+        "text_byWnwH",
+        "button_Graxnb"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "center",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "center",
+        "color_text": "",
+        "color_background": "#E4DFD5",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
@@ -1440,6 +1286,7 @@
         "heading_rnCkVY",
         "text_BbhqzP"
       ],
+      "disabled": true,
       "name": "t:sections.images-with-text.name",
       "settings": {
         "image": "shopify://shop_images/0b1c94be666f840953079c4a4d7d325d.png",
@@ -1464,11 +1311,95 @@
         "enable_parallax": true
       }
     },
+    "portfolio_on_scroll_QKGPCn": {
+      "type": "portfolio-on-scroll",
+      "blocks": {
+        "profile_BebEnh": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
+            "heading": "GENTLE EMS STIMULATION",
+            "text": "<p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p>What research says: A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_KBrzyN": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/906994c779d05ee6c8d3340533a28d17.png",
+            "heading": "SOOTHING HEAT",
+            "text": "<p>Enjoy gentle warmth as you settle in and unwind.</p><p>What research says: Research on heat for self-management of nonspecific neck pain suggests it may be an option for comfort, but the current evidence remains limited.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Read the research — Journal of Pain Research, 2026</a></p><p></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_jz7pYB": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
+            "heading": "HANDS-FREE MASSAGE",
+            "text": "<p>Lie back, relax, and enjoy a massage experience without holding a device.</p><p>What research says: A Cochrane review assessed massage for neck pain. It found that evidence for its benefits remains uncertain, with results depending on the studies and treatment approaches examined.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Read the research — Cochrane Database of Systematic Reviews, 2024</a></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_UPYrGG": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "heading": "26° NECK SUPPORT",
+            "text": "<p>A built-in 26° support angle gives your neck a dedicated place to rest.</p><p>What research says: A systematic review examined how pillow design relates to neck pain and other outcomes. It found that pillow shape and height may affect cervical alignment, but it did not establish 26° as an optimal angle.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Read the research — Clinical Biomechanics, 2021</a></p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "profile_BebEnh",
+        "profile_KBrzyN",
+        "profile_jz7pYB",
+        "profile_UPYrGG"
+      ],
+      "name": "t:sections.portfolio-on-scroll.name",
+      "settings": {
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "heading": "<strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET</strong>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>More than heat. More than massage. Four features, thoughtfully brought together in one simple 10-minute routine.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#32312F",
+        "color_background": "#D0CDC7",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
     "rich_text_kG6z3G": {
       "type": "rich-text",
       "blocks": {
         "heading_6gMJ4P": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "<em><strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET. </strong></em>&nbsp;",
             "heading_size": "title-md",
@@ -1498,6 +1429,7 @@
         "heading_6gMJ4P",
         "text_6MC6An"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "left",
@@ -1566,6 +1498,7 @@
         "heading_AKmMjF",
         "text_9BnKUi"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/9月9日.mp4",
@@ -1635,6 +1568,7 @@
         "heading_gKJMDn",
         "text_qp9eBC"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
@@ -1704,6 +1638,7 @@
         "text_FCpT3H",
         "button_GqMk4K"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/8月16日(1).mp4",
@@ -1773,6 +1708,7 @@
         "text_LJD9i3",
         "button_VwjfHF"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/7月15日 (1)(2).mp4",
@@ -1858,7 +1794,7 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "center",
         "color_text": "",
-        "color_background": "#d0cec8",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -1871,7 +1807,7 @@
         "padding_bottom": 32,
         "divider": false,
         "full_width": false,
-        "rounded": false,
+        "rounded": true,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
@@ -2019,7 +1955,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#d0cec8",
+        "color_background": "#E4DFD5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -2215,16 +2151,14 @@
     "rich_text_9yTbHK",
     "main-product",
     "images_with_text_rxYQcr",
-    "testimonials_banner_XPL8te",
-    "scrolling-text",
-    "scroll_spy_rTBpXa",
-    "multicolumn_with_icons_8JY49F",
     "rich_text_bhDmRM",
     "shop_the_feed_6Cfpwk",
     "rich_text_ULKVqP",
     "logo_list_EaLbPb",
     "testimonials_banner_mUptUN",
+    "video_with_text_UkPVhh",
     "images_with_text_dpq4mA",
+    "portfolio_on_scroll_QKGPCn",
     "rich_text_kG6z3G",
     "video_with_text_Rcpxrn",
     "video_with_text_fzPQ3V",
