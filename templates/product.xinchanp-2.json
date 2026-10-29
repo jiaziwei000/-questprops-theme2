@@ -522,7 +522,7 @@
         "heading_tzFCN8": {
           "type": "heading",
           "settings": {
-            "heading": "<em><strong>LIMITED DAILY GIFT</strong></em>",
+            "heading": "<em>LIMITED DAILY </em><em><strong>GIFT</strong></em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
@@ -610,7 +610,7 @@
         "heading_wtzhEf": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>&nbsp;A Guarantee No One Else Will Offer&nbsp;</strong>",
+            "heading": "&nbsp;A <strong>Guarantee </strong>No One Else Will Offer&nbsp;",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "text",
@@ -921,7 +921,7 @@
         "account_name": "",
         "show_vendor": false,
         "show_price": false,
-        "heading": "<strong>Proof? Here’s what our clients have to say.&nbsp;</strong>",
+        "heading": "<strong>Proof? </strong>Here’s what our clients have to say.&nbsp;",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -955,7 +955,7 @@
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "<strong>Join 15,000+ Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;</strong>",
+        "heading": "Join<em> </em><strong>15,000+ </strong>Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
@@ -966,7 +966,7 @@
         "button_link": "",
         "button_external": false,
         "button_icon": true,
-        "highlighted_text": "text",
+        "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#32312f",
@@ -1268,7 +1268,7 @@
         "heading_xmEcwn": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Your neck affects your head</strong>&nbsp;",
+            "heading": "Your neck affects your head&nbsp;",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
