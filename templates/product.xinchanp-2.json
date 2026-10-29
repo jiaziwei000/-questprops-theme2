@@ -1219,6 +1219,7 @@
         "text_byWnwH",
         "button_Graxnb"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text.name",
       "settings": {
         "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
@@ -1251,6 +1252,72 @@
         "rounded": true,
         "enable_parallax": false,
         "parallax_direction": "vertical"
+      }
+    },
+    "reveal_video_with_text_overlay_fnzpA6": {
+      "type": "reveal-video-with-text-overlay",
+      "blocks": {
+        "subheading_mLP9pA": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_xmEcwn": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Your neck affects your head</strong>&nbsp;",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_gK3APp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p><p>Explore the research: <a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\">International Headache Society — ICHD-3</a></p>",
+            "text_font": "heading",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_mLP9pA",
+        "heading_xmEcwn",
+        "text_gK3APp"
+      ],
+      "name": "t:sections.reveal-video-with-text-overlay.name",
+      "settings": {
+        "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#E4DFD5",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "enable_parallax": true
       }
     },
     "images_with_text_dpq4mA": {
@@ -2158,6 +2225,7 @@
     "logo_list_EaLbPb",
     "testimonials_banner_mUptUN",
     "video_with_text_UkPVhh",
+    "reveal_video_with_text_overlay_fnzpA6",
     "images_with_text_dpq4mA",
     "portfolio_on_scroll_QKGPCn",
     "rich_text_kG6z3G",
