@@ -28,6 +28,7 @@
         },
         "announcement-2": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "email",
             "text": "orders ship from <em>USA</em> in 2-5 business day",
@@ -55,7 +56,7 @@
         "show_navigation": true,
         "direction": "left",
         "speed": 27,
-        "color_text": "#D0CEC8",
+        "color_text": "#d0cec8",
         "color_background": "#555450",
         "gradient_background": "",
         "color_highlight": "#f5f5f5",
@@ -175,8 +176,8 @@
         "enable_language_selector": true,
         "enable_country_selector": true,
         "transparent_color_text": "#b1ab91",
-        "color_text": "#32312F",
-        "color_background": "#DFDBD4",
+        "color_text": "#32312f",
+        "color_background": "#dfdbd4",
         "color_localization": "",
         "padding_top": 8,
         "padding_bottom": 8,

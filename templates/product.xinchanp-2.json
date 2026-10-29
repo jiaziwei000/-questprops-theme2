@@ -187,6 +187,7 @@
         },
         "text_yLjrer": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_image": "shopify://shop_images/f6ce487d78f3765ec0c68717f5bdb1a8.png",
@@ -198,6 +199,7 @@
         },
         "text_wN8YKW": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "alert",
             "iwidth": "custom",
@@ -514,6 +516,84 @@
         "divider": false,
         "full_width": true,
         "rounded": true
+      }
+    },
+    "product_details_KWnQpF": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab_t7yHCa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "box",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "What's Included",
+            "content": "<p><strong>What's Included</strong><br/>Questprops™ Neck Pillow — 4-in-1 traction, heat, massage, and EMS<br/>Handheld Remote Control — adjust settings easily while lying down<br/>USB‑C Charging Cable<br/>Quick‑Start Manual — clear, large-print instructions right out of the box</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_g6RNDK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "truck",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Shipping & Returns",
+            "content": "<p><strong>Free Shipping</strong><br/>All orders over $100 USD qualify for free shipping.</p><p><strong>Delivery Times</strong><br/>United States — 3–5 business days<br/>Canada — 5–10 business days<br/>United Kingdom — 5–7 business days<br/>Australia & New Zealand — 7–12 business days<br/>Germany — 3–5 business days<br/>All other countries — 7–14 business days</p><p><strong>Returns</strong><br/>Easy, hassle-free returns. We stand behind our product with our satisfaction guarantee.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_dCrUEN": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "wrench",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Guarantee & Warranty",
+            "content": "<p>Because <strong>we’re the only ones bold enough to make this promise</strong>.<br/>You get <strong>180 full nights</strong> to test Questprops.<br/>If you’re not satisfied within the first 180 days, send the unit back for a full refund.<br/>If you still aren’t happy even after those 180 days, we’ll issue your refund — <strong>you keep the device, no return required</strong>.<br/>No tedious forms, no hidden fine print. This guarantee applies <strong>one time per customer</strong>.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_t7yHCa",
+        "collapsible_tab_g6RNDK",
+        "collapsible_tab_dCrUEN"
+      ],
+      "name": "t:sections.product-details.name",
+      "settings": {
+        "style": "with-border",
+        "open_first_row": false,
+        "specifications_heading": "Included in the Box",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "images_with_text_rxYQcr": {
@@ -2219,6 +2299,7 @@
   "order": [
     "rich_text_9yTbHK",
     "main-product",
+    "product_details_KWnQpF",
     "images_with_text_rxYQcr",
     "rich_text_bhDmRM",
     "shop_the_feed_6Cfpwk",
