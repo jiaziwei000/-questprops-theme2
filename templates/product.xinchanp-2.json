@@ -1305,9 +1305,10 @@
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
+        "video_url_mobile": "",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
-        "color_text": "#E4DFD5",
+        "color_text": "#e4dfd5",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -1386,40 +1387,40 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "GENTLE EMS STIMULATION",
-            "text": "<p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p>What research says: A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
+            "heading": "Ease Neck Tension From Home",
+            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p>",
             "color_text": "#ffffff",
-            "color_background": "#5B5957"
+            "color_background": "#5b5957"
           }
         },
         "profile_KBrzyN": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/0d7317c0e43fb2d96843e0116cb726ef.jpg",
-            "heading": "SOOTHING HEAT",
-            "text": "<p>Enjoy gentle warmth as you settle in and unwind.</p><p>What research says: Research on heat for self-management of nonspecific neck pain suggests it may be an option for comfort, but the current evidence remains limited.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311469/\">Read the research — Journal of Pain Research, 2026</a></p><p></p>",
+            "image": "shopify://shop_images/89898.jpg",
+            "heading": "Warm Soothing Heat Therapy",
+            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p>",
             "color_text": "#ffffff",
-            "color_background": "#BCB8AF"
+            "color_background": "#bcb8af"
           }
         },
         "profile_jz7pYB": {
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
-            "heading": "HANDS-FREE MASSAGE",
-            "text": "<p>Lie back, relax, and enjoy a massage experience without holding a device.</p><p>What research says: A Cochrane review assessed massage for neck pain. It found that evidence for its benefits remains uncertain, with results depending on the studies and treatment approaches examined.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/38415786/\">Read the research — Cochrane Database of Systematic Reviews, 2024</a></p>",
+            "heading": "Other Benefits of Gentle EMS",
+            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p>",
             "color_text": "#ffffff",
-            "color_background": "#5B5957"
+            "color_background": "#5b5957"
           }
         },
         "profile_UPYrGG": {
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
-            "heading": "26° NECK SUPPORT",
-            "text": "<p>A built-in 26° support angle gives your neck a dedicated place to rest.</p><p>What research says: A systematic review examined how pillow design relates to neck pain and other outcomes. It found that pillow shape and height may affect cervical alignment, but it did not establish 26° as an optimal angle.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/33895703/\">Read the research — Clinical Biomechanics, 2021</a></p>",
+            "heading": "Support Your Neck’s Natural Alignment",
+            "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
             "color_text": "#ffffff",
-            "color_background": "#5B5957"
+            "color_background": "#5b5957"
           }
         }
       },
@@ -1432,13 +1433,13 @@
       "name": "t:sections.portfolio-on-scroll.name",
       "settings": {
         "image_ratio": "square",
-        "image_ratio_mobile": "landscape",
-        "heading": "<strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET</strong>",
+        "image_ratio_mobile": "portrait",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Four features, thoughtfully brought together in one simple 10-minute routine.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
