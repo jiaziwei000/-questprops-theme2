@@ -684,6 +684,81 @@
         "enable_parallax": true
       }
     },
+    "images_with_text_overlay_ye9DUM": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_tDq9UN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_AY6PW7": {
+          "type": "heading",
+          "settings": {
+            "heading": "A <strong>Guarantee </strong>No One Else Will Offer &nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_zkHKPH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/>Test it for <em><strong>180 full days</strong></em>.<br/>Return within 180 days for a full refund.<br/>If you’re still unhappy after that, we refund you — you keep the device.<br/>No fine print. One per customer. We take all the risk.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_tDq9UN",
+        "heading_AY6PW7",
+        "text_zkHKPH"
+      ],
+      "name": "t:sections.images-with-text-overlay.name",
+      "settings": {
+        "transparent_header": true,
+        "image_height": "700px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "center",
+        "image_1": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
+        "image_2": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
+        "image_3": "shopify://shop_images/1ad434408ea14be626987a232af7388d.jpg",
+        "image_4": "shopify://shop_images/efdb3d0dc1faab1258b8258c7ec4d4b4.png",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#212020",
+        "overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
     "rich_text_bhDmRM": {
       "type": "rich-text",
       "blocks": {
@@ -718,6 +793,7 @@
         "heading_wtzhEf",
         "text_ft8JUR"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
@@ -1543,145 +1619,6 @@
         "enable_parallax": true
       }
     },
-    "rich_text_kG6z3G": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_6gMJ4P": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<em><strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET. </strong></em>&nbsp;",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_6MC6An": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>More than heat. More than massage. Four features, thoughtfully brought together in one simple 10-minute routine.</strong></p><p>Long hours sitting, driving, and looking down at a screen can leave your neck feeling tight and tired. QuestProps brings together four features to make taking time for your neck simple..</p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_6gMJ4P",
-        "text_6MC6An"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#dfdbd4",
-        "color_background": "#32312f",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 8,
-        "divider": false,
-        "narrow": false,
-        "rounded": true
-      }
-    },
-    "video_with_text_Rcpxrn": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_AKmMjF": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<em><strong>4 WAYS TO GIVE YOUR NECK A BETTER RESET.&nbsp;</strong></em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_9BnKUi": {
-          "type": "text",
-          "settings": {
-            "text": "<h2><em><strong>01 — GENTLE EMS STIMULATION</strong></em></h2><p>Adds gentle electrical stimulation to your daily neck relaxation routine.</p><p>What research says: A systematic review examined electrical stimulation for neck pain and found that it may be helpful when combined with other interventions, although more high-quality research is needed.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/34288255/\">Read the research — European Journal of Pain, 2022</a></p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AKmMjF",
-        "text_9BnKUi"
-      ],
-      "disabled": true,
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video": "shopify://files/videos/9月9日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "400px",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "#f4f1eb",
-        "color_background": "#32312f",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "video_with_text_fzPQ3V": {
       "type": "video-with-text",
       "blocks": {
@@ -2302,6 +2239,7 @@
     "main-product",
     "product_details_KWnQpF",
     "images_with_text_rxYQcr",
+    "images_with_text_overlay_ye9DUM",
     "rich_text_bhDmRM",
     "shop_the_feed_6Cfpwk",
     "rich_text_ULKVqP",
@@ -2311,8 +2249,6 @@
     "reveal_video_with_text_overlay_fnzpA6",
     "images_with_text_dpq4mA",
     "portfolio_on_scroll_QKGPCn",
-    "rich_text_kG6z3G",
-    "video_with_text_Rcpxrn",
     "video_with_text_fzPQ3V",
     "video_with_text_he9Afi",
     "video_with_text_TzDQXw",
