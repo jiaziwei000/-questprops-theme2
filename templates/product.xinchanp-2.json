@@ -855,15 +855,15 @@
         "text_ft8JUR": {
           "type": "text",
           "settings": {
-            "text": "<p>because <strong>we’re the only ones bold enough to make this promise</strong>.<br/>You get <strong>180 full days</strong> to test it out.<br/>If you’re not satisfied within the first 180 days, send the unit back for a full refund.<br/>If you still aren’t happy even after those 180 days, we’ll issue your refund — <strong>you keep the device, no return required</strong>.<br/>No tedious forms, no hidden fine print. This extended guarantee applies <strong>one time per customer</strong>.<br/>We take all the risk, so you can focus on feeling better.</p>",
+            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/><em>You get </em><em><strong>180 full days</strong></em><em> </em>to test it out.<br/>If you’re not satisfied within the first 180 days, send the unit back for a full refund.<br/>If you still aren’t happy even after those 180 days, we’ll issue your refund —<em> </em><em><strong>you keep the device, no return required</strong></em>.<em><br/></em>No tedious forms, no hidden fine print. This extended guarantee applies<em> </em><em><strong>one time per customer</strong></em>.<br/>We take all the risk, so you can focus on feeling better.</p>",
             "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
-            "secondary_color": true,
-            "highlighted_text": "none",
+            "secondary_color": false,
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle"
           }
         }
