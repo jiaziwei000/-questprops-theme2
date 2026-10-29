@@ -50,7 +50,7 @@
         "enable_country_selector": true,
         "invert_icons_selectors": true,
         "announcement_position": "start",
-        "announcement_layout": "marquee",
+        "announcement_layout": "carousel",
         "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
