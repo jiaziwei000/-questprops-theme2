@@ -213,14 +213,14 @@
         "disabled": false,
         "settings": {}
       },
-      "9604309306827082646": {
-        "type": "shopify://apps/mori-scratch-card-popup/blocks/popup/019e1d61-0725-7ffa-8de9-7548f2731d08",
-        "disabled": true,
-        "settings": {}
-      },
       "2118589882331710876": {
         "type": "shopify://apps/essential-trust-badges/blocks/app-embed/0ff65b25-07e1-408e-950f-f54dd3d1751b",
         "disabled": true,
+        "settings": {}
+      },
+      "9604309306827082646": {
+        "type": "shopify://apps/mori-scratch-card-popup/blocks/popup/019e1d61-0725-7ffa-8de9-7548f2731d08",
+        "disabled": false,
         "settings": {}
       }
     }
