@@ -709,7 +709,7 @@
         "text_zkHKPH": {
           "type": "text",
           "settings": {
-            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/>Test it for <em><strong>180 full days</strong></em>.<br/>Return within 180 days for a full refund.<br/>If you’re still unhappy after that, we refund you — you keep the device.<br/>No fine print. One per customer. We take all the risk.</p>",
+            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/>Test it for <em><strong>180 full days</strong></em>.<br/>Return within 180 days for a full refund.<br/>If you’re still unhappy after that, we refund you — you keep the device.<br/>No fine print. We take all the risk.</p>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
