@@ -659,6 +659,7 @@
         "text_diiwif",
         "button_CdPTLm"
       ],
+      "disabled": true,
       "name": "t:sections.images-with-text.name",
       "settings": {
         "image": "shopify://shop_images/56b86503e9188e77960911671c4bac3c.png",
