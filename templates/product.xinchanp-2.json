@@ -1424,20 +1424,20 @@
         "heading_xmEcwn": {
           "type": "heading",
           "settings": {
-            "heading": "Your neck affects your head&nbsp;",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "<strong>Explore the research:</strong><em><strong> </strong></em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em><strong>International Headache Society — ICHD-3</strong></em></a><em><strong>&nbsp;</strong></em>",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_gK3APp": {
           "type": "text",
           "settings": {
-            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p><p>Explore the research: <a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\">International Headache Society — ICHD-3</a></p>",
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p>",
             "text_font": "heading",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -1460,11 +1460,11 @@
         "description": "",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
+        "text_alignment": "center",
         "video_url_mobile": "",
         "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#e4dfd5",
+        "text_alignment_mobile": "center",
+        "color_text": "#FFFFFF",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
