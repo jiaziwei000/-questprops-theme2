@@ -740,10 +740,11 @@
         "content_width": "small",
         "content_position": "md:items-center md:justify-center",
         "text_alignment": "center",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-center justify-center",
         "text_alignment_mobile": "center",
-        "color_text": "#FFFFFF",
+        "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -833,7 +834,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
-        "color_text": "#5B5957",
+        "color_text": "#5b5957",
         "color_background": "#d0cdc7",
         "gradient_background": "",
         "color_highlight": "",
@@ -1417,6 +1418,99 @@
         "rounded": false
       }
     },
+    "timeline_qHgKKT": {
+      "type": "timeline",
+      "blocks": {
+        "content_nkdKg6": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
+            "subheading": "Joannie Lee ",
+            "heading": "CMT ,Two Hands Wellness&nbsp;",
+            "heading_tag": "h1",
+            "text": "<p><strong>\"Questprops is one of the best neck pillows currently on the market.\"</strong><br/>\"If you have forward head posture or “shrimp posture,” the traction feature can help realign your vertebrae to go back to fully supporting your body. I use this myself and recommend it to my clients!\"</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_VAT439": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/mori_scratch_007f35bed22a763671382ba2a7065ea7.png",
+            "subheading": "Dr. Erin Cooper",
+            "heading": "Doctor of Physical Therapy",
+            "heading_tag": "h2",
+            "text": "<p>\"The Questprops Thera Pillow is a game-changer for cervical health.\"<br/>\"By combining precise traction with soothing heat and vibration, it actively helps restore proper spinal alignment and relieves the muscle fatigue caused by modern 'screen posture.\"</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "content_fWbTEr": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_12_04_10_17.png",
+            "subheading": "Certified Massage Therapist",
+            "heading": "Rachel Tribuzio",
+            "heading_tag": "h2",
+            "text": "<p><strong>\"It’s made such a difference in how my neck and shoulders feel\"</strong><br/>\"I use it before bed and don’t wake up with stiffness anymore! If you’re someone with neck tension or headaches and wants to live a pain free more comfortable life, it’s definitely worth it.\"</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        }
+      },
+      "block_order": [
+        "content_nkdKg6",
+        "content_VAT439",
+        "content_fWbTEr"
+      ],
+      "name": "t:sections.timeline.name",
+      "settings": {
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "wide",
+        "heading": "Trusted and Recommended by Experts&nbsp;",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "#BCB8AF",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
     "testimonials_banner_mUptUN": {
       "type": "testimonials-banner",
       "blocks": {
@@ -1487,6 +1581,7 @@
         "testimonial_yXgWEd",
         "testimonial_4dXdMz"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials-banner.name",
       "settings": {
         "transparent_header": false,
@@ -1656,7 +1751,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#F4F1EB",
+        "color_overlay": "#f4f1eb",
         "overlay_opacity": 40,
         "enable_parallax": false
       }
@@ -2154,6 +2249,7 @@
     "shop_the_feed_6Cfpwk",
     "rich_text_ULKVqP",
     "logo_list_EaLbPb",
+    "timeline_qHgKKT",
     "testimonials_banner_mUptUN",
     "video_with_text_UkPVhh",
     "reveal_video_with_text_overlay_fnzpA6",
