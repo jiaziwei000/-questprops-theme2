@@ -771,11 +771,10 @@
       "blocks": {
         "profile_BebEnh": {
           "type": "profile",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
             "heading": "Ease Neck Tension From Home",
-            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p>",
+            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p><p>91% of users reported <strong>reduced neck pain</strong> from the first session</p>",
             "color_text": "#ffffff",
             "color_background": "#5b5957"
           }
@@ -785,7 +784,7 @@
           "settings": {
             "image": "shopify://shop_images/89898.jpg",
             "heading": "Warm Soothing Heat Therapy",
-            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p>",
+            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p><p><em>Heat therapy is a clinically proven, effectivemethod to alleviate muscle cramps & recoverfrom injuries.</em></p>",
             "color_text": "#ffffff",
             "color_background": "#bcb8af"
           }
@@ -795,7 +794,7 @@
           "settings": {
             "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
             "heading": "Other Benefits of Gentle EMS",
-            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p>",
+            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p><p><em>87% of users were able to </em><span style=\"text-decoration:underline\"><em>alleviate TMJ & tension headaches</em></span><em> after 7 days of consistent use (15-20 min/day)</em></p>",
             "color_text": "#ffffff",
             "color_background": "#5b5957"
           }
@@ -821,12 +820,12 @@
       "settings": {
         "image_ratio": "adapt",
         "image_ratio_mobile": "landscape",
-        "heading": "Eliminate <strong>Neck Pain</strong> at Home&nbsp;",
+        "heading": "See how QUESTPROPS works",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Years of screen time and poor posture create stubborn neck tension, sore shoulders and tension headaches.<br/>10 minutes daily on your Questprops Pillow: gentle stretch, EMS and heat loosen tight neck tissue and ease discomfort.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
