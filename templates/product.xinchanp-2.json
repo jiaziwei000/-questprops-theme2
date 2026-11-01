@@ -1776,7 +1776,7 @@
       ],
       "name": "t:sections.images-with-text-overlay.name",
       "settings": {
-        "transparent_header": true,
+        "transparent_header": false,
         "image_height": "700px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
