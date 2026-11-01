@@ -1474,7 +1474,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 70,
-        "enable_parallax": true
+        "enable_parallax": false
       }
     },
     "images_with_text_dpq4mA": {
