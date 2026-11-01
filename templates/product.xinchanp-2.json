@@ -1410,6 +1410,82 @@
         "parallax_direction": "vertical"
       }
     },
+    "video_with_text_overlay_yMQVEf": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "subheading_eidTGB": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_qyHVgG": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;<strong>Explore the research:</strong><em><strong> </strong></em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em><strong>International Headache Society — ICHD-3</strong></em></a><em><strong> </strong></em>&nbsp;",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "underline",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_7dgJQF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_eidTGB",
+        "heading_qyHVgG",
+        "text_7dgJQF"
+      ],
+      "name": "t:sections.video-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/11月1日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "600px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#FFFFFF",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#212020",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
     "reveal_video_with_text_overlay_fnzpA6": {
       "type": "reveal-video-with-text-overlay",
       "blocks": {
@@ -1453,6 +1529,7 @@
         "heading_xmEcwn",
         "text_gK3APp"
       ],
+      "disabled": true,
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
         "video": "shopify://files/videos/11月1日.mp4",
@@ -1472,8 +1549,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "color_overlay": "#F4F1EB",
+        "overlay_opacity": 40,
         "enable_parallax": false
       }
     },
@@ -2246,6 +2323,7 @@
     "logo_list_EaLbPb",
     "testimonials_banner_mUptUN",
     "video_with_text_UkPVhh",
+    "video_with_text_overlay_yMQVEf",
     "reveal_video_with_text_overlay_fnzpA6",
     "images_with_text_dpq4mA",
     "portfolio_on_scroll_QKGPCn",
