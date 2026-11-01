@@ -1665,8 +1665,8 @@
       ],
       "name": "t:sections.portfolio-on-scroll.name",
       "settings": {
-        "image_ratio": "square",
-        "image_ratio_mobile": "portrait",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "landscape",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
