@@ -684,64 +684,66 @@
         "enable_parallax": true
       }
     },
-    "images_with_text_overlay_ye9DUM": {
-      "type": "images-with-text-overlay",
+    "video_with_text_overlay_yMQVEf": {
+      "type": "video-with-text-overlay",
       "blocks": {
-        "subheading_tDq9UN": {
+        "subheading_eidTGB": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
-            "subheading": "",
+            "subheading": "Add a tagline",
             "subheading_size": "subtitle-md",
             "secondary_color": true
           }
         },
-        "heading_AY6PW7": {
+        "heading_qyHVgG": {
           "type": "heading",
           "settings": {
-            "heading": "A <strong>Guarantee </strong>No One Else Will Offer &nbsp;",
-            "heading_size": "title-md",
+            "heading": "&nbsp;<strong>Explore the research:</strong><em><strong> </strong></em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em><strong>International Headache Society — ICHD-3</strong></em></a><em><strong> </strong></em>&nbsp;",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
+            "highlighted_text": "underline",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
-        "text_zkHKPH": {
+        "text_7dgJQF": {
           "type": "text",
           "settings": {
-            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/>Test it for <em><strong>180 full days</strong></em>.<br/>Return within 180 days for a full refund.<br/>If you’re still unhappy after that, we refund you — you keep the device.<br/>No fine print. We take all the risk.</p>",
-            "text_font": "body",
+            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p>",
+            "text_font": "heading",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
             "text_capitalize": false,
             "secondary_color": false,
-            "highlighted_text": "text",
+            "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "subheading_tDq9UN",
-        "heading_AY6PW7",
-        "text_zkHKPH"
+        "subheading_eidTGB",
+        "heading_qyHVgG",
+        "text_7dgJQF"
       ],
-      "name": "t:sections.images-with-text-overlay.name",
+      "name": "t:sections.video-with-text-overlay.name",
       "settings": {
-        "transparent_header": true,
-        "image_height": "700px",
+        "transparent_header": false,
+        "video": "shopify://files/videos/11月1日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "600px",
         "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
+        "content_position": "md:items-center md:justify-center",
         "text_alignment": "center",
-        "image_1": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
-        "image_2": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
-        "image_3": "shopify://shop_images/1ad434408ea14be626987a232af7388d.jpg",
-        "image_4": "shopify://shop_images/efdb3d0dc1faab1258b8258c7ec4d4b4.png",
         "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#FFFFFF",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -750,11 +752,93 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#212020",
-        "overlay_opacity": 100,
+        "overlay_opacity": 40,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
+        "rounded": true
+      }
+    },
+    "portfolio_on_scroll_QKGPCn": {
+      "type": "portfolio-on-scroll",
+      "blocks": {
+        "profile_BebEnh": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
+            "heading": "Ease Neck Tension From Home",
+            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        },
+        "profile_KBrzyN": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/89898.jpg",
+            "heading": "Warm Soothing Heat Therapy",
+            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#bcb8af"
+          }
+        },
+        "profile_jz7pYB": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
+            "heading": "Other Benefits of Gentle EMS",
+            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        },
+        "profile_UPYrGG": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "heading": "Support Your Neck’s Natural Alignment",
+            "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        }
+      },
+      "block_order": [
+        "profile_BebEnh",
+        "profile_KBrzyN",
+        "profile_jz7pYB",
+        "profile_UPYrGG"
+      ],
+      "name": "t:sections.portfolio-on-scroll.name",
+      "settings": {
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "landscape",
+        "heading": "<strong>See how QUESTPROPS works</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "2nd generation of 3-in-1 therapy",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#5B5957",
+        "color_background": "#d0cdc7",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
         "rounded": true,
         "enable_parallax": true
       }
@@ -1410,82 +1494,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "video_with_text_overlay_yMQVEf": {
-      "type": "video-with-text-overlay",
-      "blocks": {
-        "subheading_eidTGB": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Add a tagline",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_qyHVgG": {
-          "type": "heading",
-          "settings": {
-            "heading": "&nbsp;<strong>Explore the research:</strong><em><strong> </strong></em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em><strong>International Headache Society — ICHD-3</strong></em></a><em><strong> </strong></em>&nbsp;",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "underline",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_7dgJQF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_eidTGB",
-        "heading_qyHVgG",
-        "text_7dgJQF"
-      ],
-      "name": "t:sections.video-with-text-overlay.name",
-      "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/11月1日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "600px",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#FFFFFF",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#212020",
-        "overlay_opacity": 40,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": true
-      }
-    },
     "reveal_video_with_text_overlay_fnzpA6": {
       "type": "reveal-video-with-text-overlay",
       "blocks": {
@@ -1599,89 +1607,6 @@
         "text_alignment_mobile": "left",
         "color_text": "",
         "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": true,
-        "enable_parallax": true
-      }
-    },
-    "portfolio_on_scroll_QKGPCn": {
-      "type": "portfolio-on-scroll",
-      "blocks": {
-        "profile_BebEnh": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "Ease Neck Tension From Home",
-            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
-          }
-        },
-        "profile_KBrzyN": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/89898.jpg",
-            "heading": "Warm Soothing Heat Therapy",
-            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#bcb8af"
-          }
-        },
-        "profile_jz7pYB": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
-            "heading": "Other Benefits of Gentle EMS",
-            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
-          }
-        },
-        "profile_UPYrGG": {
-          "type": "profile",
-          "settings": {
-            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
-            "heading": "Support Your Neck’s Natural Alignment",
-            "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
-          }
-        }
-      },
-      "block_order": [
-        "profile_BebEnh",
-        "profile_KBrzyN",
-        "profile_jz7pYB",
-        "profile_UPYrGG"
-      ],
-      "name": "t:sections.portfolio-on-scroll.name",
-      "settings": {
-        "image_ratio": "adapt",
-        "image_ratio_mobile": "landscape",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#32312f",
-        "color_background": "#d0cdc7",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1973,6 +1898,81 @@
         "rounded": true,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "images_with_text_overlay_ye9DUM": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_tDq9UN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_AY6PW7": {
+          "type": "heading",
+          "settings": {
+            "heading": "A <strong>Guarantee </strong>No One Else Will Offer &nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_zkHKPH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/>Test it for <em><strong>180 full days</strong></em>.<br/>Return within 180 days for a full refund.<br/>If you’re still unhappy after that, we refund you — you keep the device.<br/>No fine print. We take all the risk.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_tDq9UN",
+        "heading_AY6PW7",
+        "text_zkHKPH"
+      ],
+      "name": "t:sections.images-with-text-overlay.name",
+      "settings": {
+        "transparent_header": true,
+        "image_height": "700px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "center",
+        "image_1": "shopify://shop_images/d7e7ddbccc6b9f330136575a0f775c6a.jpg",
+        "image_2": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
+        "image_3": "shopify://shop_images/1ad434408ea14be626987a232af7388d.jpg",
+        "image_4": "shopify://shop_images/efdb3d0dc1faab1258b8258c7ec4d4b4.png",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#212020",
+        "overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true
       }
     },
     "product_details_BeyWNM": {
