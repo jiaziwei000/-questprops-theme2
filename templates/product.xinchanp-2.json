@@ -1455,7 +1455,7 @@
       ],
       "name": "t:sections.reveal-video-with-text-overlay.name",
       "settings": {
-        "video": "shopify://files/videos/6月8日.mp4",
+        "video": "shopify://files/videos/11月1日.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "content_width": "small",
@@ -1464,7 +1464,7 @@
         "video_url_mobile": "",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "center",
-        "color_text": "#FFFFFF",
+        "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
