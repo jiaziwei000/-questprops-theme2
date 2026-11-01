@@ -337,7 +337,6 @@
         },
         "inventory": {
           "type": "inventory",
-          "disabled": true,
           "settings": {
             "inventory_threshold": 15,
             "show_inventory_transfer": false,
