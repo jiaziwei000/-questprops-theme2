@@ -1430,7 +1430,7 @@
             "heading_tag": "h2",
             "highlighted_text": "underline",
             "highlighted_scribble": "circle",
-            "highlighted_reveal": false
+            "highlighted_reveal": true
           }
         },
         "text_7dgJQF": {
@@ -1483,7 +1483,7 @@
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": false
+        "rounded": true
       }
     },
     "reveal_video_with_text_overlay_fnzpA6": {
