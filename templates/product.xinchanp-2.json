@@ -773,8 +773,8 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "Ease Neck Tension From Home",
-            "text": "<p>Years of screen time and poor posture create lasting neck tension. This strain irritates soft tissue, bringing dull discomfort in your neck, shoulders and tension headaches.<br/><br/>Rest on the Questprops Pillow for just 10 minutes daily. It uses gentle stretching, EMS and warmth to boost local circulation and release tight neck tissue.<br/><br/>Light pressure lifts away, so your neck feels looser and more comfortable.</p><p>91% of users reported <strong>reduced neck pain</strong> from the first session</p>",
+            "heading": "Massage Therapy Soothes Tissue Irritation",
+            "text": "<p>As a panicked reaction to combat the damage caused by excessive tension in the neck, <span style=\"text-decoration:underline\">our immune system excessively produces inflammatory substances.</span></p><p>The Questprops Massager uses massage pads, which were proven in recent studies to <strong>reduce the release of pro-inflammatory substances </strong>and promote anti-inflammatory cytokines, thus creating an environment that is more conducive to <strong>nerve & tissue healing.</strong><em>Promotes cellular repair & regeneration, aiding in the recovery of damaged tissues & nerves</em></p>",
             "color_text": "#ffffff",
             "color_background": "#5b5957"
           }
@@ -820,12 +820,12 @@
       "settings": {
         "image_ratio": "adapt",
         "image_ratio_mobile": "landscape",
-        "heading": "See how QUESTPROPS works",
+        "heading": "<strong>Relieve Tension Headaches,</strong> Neck, Shoulder and Upper Back Pain&nbsp;",
         "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
+        "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "",
+        "description": "<p>Lying on the QUESTPROPS Pillow activates 4 proven muscle relaxation & recovery techniques.<br/>It triggers endorphin release to ease neck discomfort, and boosts blood flow to deliver oxygen and nutrients for faster tissue recovery.<br/><br/></p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
