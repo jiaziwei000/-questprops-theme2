@@ -161,6 +161,16 @@
           "disabled": true,
           "settings": {}
         },
+        "text_PaAhTy": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "text": "Questprops",
+            "text_size": "text-base"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -467,6 +477,7 @@
         "rating_cJRMiA",
         "share",
         "sticky_buy_button",
+        "text_PaAhTy",
         "title",
         "price_FdJzQz",
         "badges_tnb6kp",
@@ -1497,7 +1508,7 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#BCB8AF",
+        "color_background": "#bcb8af",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
