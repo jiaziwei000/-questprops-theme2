@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "3–5 Day Delivery&nbsp;",
+            "text": "New Zealand 3–5 Day Delivery&nbsp;",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -169,7 +169,7 @@
         "enable_country_selector_desktop": true,
         "show_country_name_dekstop": true,
         "show_country_flag_desktop": true,
-        "logo_position_mobile": "center",
+        "logo_position_mobile": "left",
         "accordion_menu_mobile": false,
         "show_social": true,
         "enable_language_selector": true,
