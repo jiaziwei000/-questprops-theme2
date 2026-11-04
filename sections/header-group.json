@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "alert",
-            "text": "<em><strong>Free</strong></em><strong> Worldwide Shipping</strong>",
+            "text": "<strong>Free shipping within New Zealand</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "&nbsp;Australia & New Zealand &nbsp;3–7Day Delivery&nbsp;",
+            "text": "New Zealand &nbsp;3–7Day Delivery&nbsp;",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
