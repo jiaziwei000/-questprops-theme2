@@ -739,6 +739,7 @@
         "heading_qyHVgG",
         "text_7dgJQF"
       ],
+      "disabled": true,
       "name": "t:sections.video-with-text-overlay.name",
       "settings": {
         "transparent_header": false,
@@ -772,230 +773,76 @@
         "rounded": true
       }
     },
-    "quest_configure_ADy8iT": {
-      "type": "quest-configure",
-      "disabled": true,
-      "name": "QUEST Configurator",
-      "settings": {}
-    },
-    "portfolio_on_scroll_QKGPCn": {
-      "type": "portfolio-on-scroll",
+    "logo_list_EaLbPb": {
+      "type": "logo-list",
       "blocks": {
-        "profile_BebEnh": {
-          "type": "profile",
+        "logo_C89zCG": {
+          "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "Reduce Inflammation With Massage Therapy",
-            "text": "<p>As a panicked reaction to combat the damage caused by excessive tension in the neck, <span style=\"text-decoration:underline\">our immune system excessively produces inflammatory substances.</span></p><p>The Questprops Massager uses massage pads, which were proven in recent studies to <strong>reduce the release of pro-inflammatory substances </strong>and promote anti-inflammatory cytokines, thus creating an environment that is more conducive to <strong>nerve & tissue healing.</strong><em>Promotes cellular repair & regeneration, aiding in the recovery of damaged tissues & nerves</em></p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
+            "image": "shopify://shop_images/007f35bed22a763671382ba2a7065ea7.jpg",
+            "height": 152,
+            "link": ""
           }
         },
-        "profile_KBrzyN": {
-          "type": "profile",
+        "logo_MV9x9Y": {
+          "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/89898.jpg",
-            "heading": "Speed Up Healing With Heat Therapy",
-            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p><p><em>Heat therapy is a clinically proven, effectivemethod to alleviate muscle cramps & recoverfrom injuries.</em></p>",
-            "color_text": "#ffffff",
-            "color_background": "#bcb8af"
+            "image": "shopify://shop_images/20260521224058_307_75.png",
+            "height": 152,
+            "link": ""
           }
         },
-        "profile_jz7pYB": {
-          "type": "profile",
+        "logo_eBab8j": {
+          "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
-            "heading": "Other Benefits of Gentle EMS",
-            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p><p><em>87% of users were able to </em><span style=\"text-decoration:underline\"><em>alleviate TMJ & tension headaches</em></span><em> after 7 days of consistent use (15-20 min/day)</em></p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
+            "image": "shopify://shop_images/1068bc61-434a-4b1b-a68c-b34a565ccd8e.webp",
+            "height": 152,
+            "link": ""
           }
         },
-        "profile_UPYrGG": {
-          "type": "profile",
+        "logo_NqhFDH": {
+          "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
-            "heading": "Restore Your Neck's Natural Curve to Ease Neck Pain",
-            "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#5b5957"
+            "image": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_rVHBUm": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0000.jpg",
+            "height": 152,
+            "link": ""
+          }
+        },
+        "logo_PRhcT6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/20260521224127_310_75.png",
+            "height": 152,
+            "link": ""
           }
         }
       },
       "block_order": [
-        "profile_BebEnh",
-        "profile_KBrzyN",
-        "profile_jz7pYB",
-        "profile_UPYrGG"
+        "logo_C89zCG",
+        "logo_MV9x9Y",
+        "logo_eBab8j",
+        "logo_NqhFDH",
+        "logo_rVHBUm",
+        "logo_PRhcT6"
       ],
-      "name": "t:sections.portfolio-on-scroll.name",
+      "name": "t:sections.logo-list.name",
       "settings": {
-        "image_ratio": "adapt",
-        "image_ratio_mobile": "square",
-        "heading": "&nbsp;Ease <strong>Neck Pain </strong>at Home&nbsp;",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#5b5957",
-        "color_background": "#d0cdc7",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": true,
-        "enable_parallax": true
-      }
-    },
-    "rich_text_bhDmRM": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_wtzhEf": {
-          "type": "heading",
-          "settings": {
-            "heading": "&nbsp;A <strong>Guarantee </strong>No One Else Will Offer&nbsp;",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_ft8JUR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/><em>You get </em><em><strong>180 full days</strong></em><em> </em>to test it out.<br/>If you’re not satisfied within the first 180 days, send the unit back for a full refund.<br/>If you still aren’t happy even after those 180 days, we’ll issue your refund —<em> </em><em><strong>you keep the device, no return required</strong></em>.<em><br/></em>No tedious forms, no hidden fine print. This extended guarantee applies<em> </em><em><strong>one time per customer</strong></em>.<br/>We take all the risk, so you can focus on feeling better.</p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "underline",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_wtzhEf",
-        "text_ft8JUR"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
-        "color_text": "#32312f",
-        "color_background": "#d0cdc7",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 32,
-        "divider": false,
-        "narrow": true,
-        "rounded": true
-      }
-    },
-    "lookbook_yc4K4M": {
-      "type": "lookbook",
-      "blocks": {
-        "content_7tEjCz": {
-          "type": "content",
-          "settings": {
-            "icon": "bag",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "",
-            "text": "",
-            "link": "",
-            "color_text": "#ffffff",
-            "vertical": 50,
-            "horizontal": 50,
-            "vertical_mobile": 50,
-            "horizontal_mobile": 50
-          }
-        },
-        "content_4YbMkD": {
-          "type": "content",
-          "settings": {
-            "icon": "award",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "",
-            "text": "",
-            "link": "",
-            "color_text": "#ffffff",
-            "vertical": 50,
-            "horizontal": 50,
-            "vertical_mobile": 50,
-            "horizontal_mobile": 50
-          }
-        },
-        "content_3jbNfm": {
-          "type": "content",
-          "settings": {
-            "icon": "chat_bubble",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "222",
-            "text": "",
-            "link": "",
-            "color_text": "#ffffff",
-            "vertical": 50,
-            "horizontal": 50,
-            "vertical_mobile": 50,
-            "horizontal_mobile": 50
-          }
-        }
-      },
-      "block_order": [
-        "content_7tEjCz",
-        "content_4YbMkD",
-        "content_3jbNfm"
-      ],
-      "disabled": true,
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
-        "image_mobile": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
-        "heading": "",
+        "layout": "marquee",
+        "grid_horizontal": 75,
+        "direction": "left",
+        "speed": 16,
+        "heading": "&nbsp;Join<em> </em><strong>15,000+ </strong>Customers Who Have Chosen QuestProps for Better Everyday Neck Care. &nbsp;",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
-        "heading_position": "none",
         "subheading": "",
         "description": "",
         "button_label": "",
@@ -1006,19 +853,17 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "",
+        "color_background": "#e4dfd5",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 30,
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "divider": false,
-        "full_width": false,
+        "full_width": true,
         "rounded": false
       }
     },
@@ -1272,7 +1117,7 @@
         "account_name": "",
         "show_vendor": false,
         "show_price": false,
-        "heading": "<strong>Proof? </strong>Here’s what our clients have to say.&nbsp;",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -1300,15 +1145,602 @@
         "rounded": true
       }
     },
-    "rich_text_ULKVqP": {
+    "video_with_text_pXncdW": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_7cniVU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ease <strong>Neck Pain </strong>at Home &nbsp;",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_FLhwYT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Years of hard work, prolonged sitting and bad posture put damaging tension on the cervical spine... This causes the cervical discs to <strong>squeeze out of place and put pressure on the nearby nerves</strong>, leading to that grinding pain...</p><p>Laying down on the Mendable Cradle for <span style=\"text-decoration:underline\">just 10 minutes a day</span> progressively <strong>improves blood circulation, relaxes tight muscles..</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_BkDjKt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✓91% of users reported <span style=\"text-decoration:underline\"><strong>reduced neck pain</strong></span> from the first session.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_VJU6RN": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_7cniVU",
+        "text_FLhwYT",
+        "text_BkDjKt",
+        "button_VJU6RN"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月7日(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_RCdeDb": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_WkfWbW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Restore Your Neck's Natural Curve to Ease <strong>Neck Pain&nbsp;</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_kAqtPj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Modern activities push the head further forward than what's normal. This causes the muscles to tighten and compensate, leaving the neck <strong>stuck in this position</strong> all the time.</p><p>What <span style=\"text-decoration:underline\">makes things worse</span> is that when muscles are stressed and contracted, they <strong>choke off their own blood supply.</strong> So even though your body is desperately trying to pump more blood into the neck area to strengthen the muscles, it simply can't.</p><p>To help restore the neck's natural curve, we equipped the Mendable Cradle with <span style=\"text-decoration:underline\">electrical muscle stimulation, or EMS</span>. This technology <strong>contracts the muscles through gentle electrical currents</strong> — basically mimicking exercise.</p><p>When you lay down on it, the Cradle holds your neck at the <strong>26° angle</strong>, which is the position <strong>designed to support decompression of the cervical spine.</strong> At the same time, the small electrical impulses encourage your muscles to <span style=\"text-decoration:underline\">contract and act like pumps, naturally pushing blood through the neck</span> and improving circulation.</p><p>This helps muscles <span style=\"text-decoration:underline\">relax and return to their natural position</span>, easing pressure on the cervical spine, and <strong>addressing the source of the neck pain.</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_NhrKBU": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_WkfWbW",
+        "text_kAqtPj",
+        "button_NhrKBU"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月7日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_qcAKqQ": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_nnx3Ey": {
+          "type": "heading",
+          "settings": {
+            "heading": "Other Clinically Proven Benefits of EMS&nbsp;",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_p7tUFy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>EMS provides pain relief by stimulating the release of endorphins — your body's natural pain killers.</p><p>It's also proven to strengthen muscles by contracting them — which makes them stronger, <strong>making it easier to start moving around again, and improving neck mobility.</strong></p><p>EMS also stimulates the nerves through gentle currents, helping them regenerate and repair to combat neck and shoulder pain.</p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_C4rWwr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ⓘ87% of users were able to alleviate TMJ and tension headaches after 7 days of consistent use (15–20 min/day).</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_HgxCB7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_nnx3Ey",
+        "text_p7tUFy",
+        "text_C4rWwr",
+        "button_HgxCB7"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月7日(2).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_hUgtFx": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_RGeLWR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Speed Up Healing With Heat Therapy&nbsp;",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_XB6qfX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Using adjustable, soothing warmth, the Mendable Cradle naturally increases blood circulation by dilating and widening the blood vessels in the neck area, <strong>allowing more room for fluid to pass through.</strong></p><p>Enhanced blood flow helps deliver more oxygen and healthy nutrients to your neck muscles and head, which <strong>supports the body's healing abilities and helps reduce inflammation.</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Q6fqTH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>♨Heat therapy is a clinically recognised method to help relieve muscle cramps and support recovery from injuries.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_tJwGeP": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_RGeLWR",
+        "text_XB6qfX",
+        "text_Q6fqTH",
+        "button_tJwGeP"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月7日(3).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_TMbL4U": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_NqKqBX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reduce Inflammation With Massage Therapy&nbsp;",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_LNz8TK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a reaction to excessive tension in the neck, the immune system can over-produce inflammatory substances.</p><p>The Mendable Cradle uses massage pads, which have been shown in studies to <strong>reduce the release of pro-inflammatory substances</strong> and promote anti-inflammatory cytokines, creating an environment that is more conducive to <strong>nerve and tissue recovery.</strong></p>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_qR47Pm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>+Supports cellular repair and regeneration, aiding the recovery of damaged tissues and nerves.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_ayPWUp": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_NqKqBX",
+        "text_LNz8TK",
+        "text_qR47Pm",
+        "button_ayPWUp"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/c2527a52cf6c4fd594ad6e3cc52f1972.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "quest_configure_ADy8iT": {
+      "type": "quest-configure",
+      "disabled": true,
+      "name": "QUEST Configurator",
+      "settings": {}
+    },
+    "portfolio_on_scroll_QKGPCn": {
+      "type": "portfolio-on-scroll",
+      "blocks": {
+        "profile_BebEnh": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
+            "heading": "Reduce Inflammation With Massage Therapy",
+            "text": "<p>As a panicked reaction to combat the damage caused by excessive tension in the neck, <span style=\"text-decoration:underline\">our immune system excessively produces inflammatory substances.</span></p><p>The Questprops Massager uses massage pads, which were proven in recent studies to <strong>reduce the release of pro-inflammatory substances </strong>and promote anti-inflammatory cytokines, thus creating an environment that is more conducive to <strong>nerve & tissue healing.</strong><em>Promotes cellular repair & regeneration, aiding in the recovery of damaged tissues & nerves</em></p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        },
+        "profile_KBrzyN": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/89898.jpg",
+            "heading": "Speed Up Healing With Heat Therapy",
+            "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p><p><em>Heat therapy is a clinically proven, effectivemethod to alleviate muscle cramps & recoverfrom injuries.</em></p>",
+            "color_text": "#ffffff",
+            "color_background": "#bcb8af"
+          }
+        },
+        "profile_jz7pYB": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/19ec9bbba21b7a54a1ca133e62f5095d_e9a552da-02e0-49c3-92b5-8563c6f93dea.jpg",
+            "heading": "Other Benefits of Gentle EMS",
+            "text": "<p>Gentle EMS encourages your body to release endorphins, for a calming, soothing sensation.</p><p>It activates neck muscles with soft contractions, supporting easier, more relaxed movement.</p><p>The mild pulses gently stimulate tissue, to ease that heavy discomfort in your neck and shoulders.</p><p><em>87% of users were able to </em><span style=\"text-decoration:underline\"><em>alleviate TMJ & tension headaches</em></span><em> after 7 days of consistent use (15-20 min/day)</em></p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        },
+        "profile_UPYrGG": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
+            "heading": "Restore Your Neck's Natural Curve to Ease Neck Pain",
+            "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#5b5957"
+          }
+        }
+      },
+      "block_order": [
+        "profile_BebEnh",
+        "profile_KBrzyN",
+        "profile_jz7pYB",
+        "profile_UPYrGG"
+      ],
+      "disabled": true,
+      "name": "t:sections.portfolio-on-scroll.name",
+      "settings": {
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "square",
+        "heading": "&nbsp;Ease <strong>Neck Pain </strong>at Home&nbsp;",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "#5b5957",
+        "color_background": "#d0cdc7",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
+    "rich_text_bhDmRM": {
       "type": "rich-text",
+      "blocks": {
+        "heading_wtzhEf": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;A <strong>Guarantee </strong>No One Else Will Offer&nbsp;",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": true
+          }
+        },
+        "text_ft8JUR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>because <em><strong>we’re the only ones bold enough to make this promise</strong></em>.<br/><em>You get </em><em><strong>180 full days</strong></em><em> </em>to test it out.<br/>If you’re not satisfied within the first 180 days, send the unit back for a full refund.<br/>If you still aren’t happy even after those 180 days, we’ll issue your refund —<em> </em><em><strong>you keep the device, no return required</strong></em>.<em><br/></em>No tedious forms, no hidden fine print. This extended guarantee applies<em> </em><em><strong>one time per customer</strong></em>.<br/>We take all the risk, so you can focus on feeling better.</p>",
+            "text_font": "heading",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "underline",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wtzhEf",
+        "text_ft8JUR"
+      ],
+      "disabled": true,
       "name": "t:sections.rich-text.name",
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
-        "heading": "Join<em> </em><strong>15,000+ </strong>Customers Who Have Chosen QuestProps for Better Everyday Neck Care.&nbsp;",
+        "heading": "",
         "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
+        "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
         "subheading": "",
@@ -1321,90 +1753,87 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "#32312f",
-        "color_background": "#e4dfd5",
+        "color_background": "#d0cdc7",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 24,
+        "padding_top": 72,
+        "padding_bottom": 32,
         "divider": false,
         "narrow": true,
         "rounded": true
       }
     },
-    "logo_list_EaLbPb": {
-      "type": "logo-list",
+    "lookbook_yc4K4M": {
+      "type": "lookbook",
       "blocks": {
-        "logo_C89zCG": {
-          "type": "logo",
+        "content_7tEjCz": {
+          "type": "content",
           "settings": {
-            "image": "shopify://shop_images/007f35bed22a763671382ba2a7065ea7.jpg",
-            "height": 152,
-            "link": ""
+            "icon": "bag",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
           }
         },
-        "logo_MV9x9Y": {
-          "type": "logo",
+        "content_4YbMkD": {
+          "type": "content",
           "settings": {
-            "image": "shopify://shop_images/20260521224058_307_75.png",
-            "height": 152,
-            "link": ""
+            "icon": "award",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
           }
         },
-        "logo_eBab8j": {
-          "type": "logo",
+        "content_3jbNfm": {
+          "type": "content",
           "settings": {
-            "image": "shopify://shop_images/1068bc61-434a-4b1b-a68c-b34a565ccd8e.webp",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_NqhFDH": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/0382a32cf355657c5218ec6f51128434.png",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_rVHBUm": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/0000.jpg",
-            "height": 152,
-            "link": ""
-          }
-        },
-        "logo_PRhcT6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/20260521224127_310_75.png",
-            "height": 152,
-            "link": ""
+            "icon": "chat_bubble",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "222",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
           }
         }
       },
       "block_order": [
-        "logo_C89zCG",
-        "logo_MV9x9Y",
-        "logo_eBab8j",
-        "logo_NqhFDH",
-        "logo_rVHBUm",
-        "logo_PRhcT6"
+        "content_7tEjCz",
+        "content_4YbMkD",
+        "content_3jbNfm"
       ],
-      "name": "t:sections.logo-list.name",
+      "disabled": true,
+      "name": "t:sections.lookbook.name",
       "settings": {
-        "layout": "marquee",
-        "grid_horizontal": 75,
-        "direction": "left",
-        "speed": 16,
+        "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
+        "image_mobile": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
+        "heading_position": "none",
         "subheading": "",
         "description": "",
         "button_label": "",
@@ -1415,17 +1844,19 @@
         "highlighted_scribble": "circle",
         "highlighted_reveal": false,
         "color_text": "",
-        "color_background": "#e4dfd5",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -1520,251 +1951,6 @@
         "divider": false,
         "full_width": false,
         "rounded": true
-      }
-    },
-    "testimonials_banner_mUptUN": {
-      "type": "testimonials-banner",
-      "blocks": {
-        "testimonial_8Eexjc": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>There's mine. I've used it twice for 2 nights in a row. I read the instructions and I used it once facing one way for 15 minutes or when it stopped. Then I used it again facing the other way. Wow, I can really tell! Good so far.<br/></p>",
-            "author": "Nick W.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/9ba96aec-33f0-416e-8ed1-06609d0cad28.webp",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_7TegmL": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "4-stars",
-            "text": "<p>I’ve had neck pain for 2.5 years with little relief. It complements my stretching routine well, but avoid overuse — too much triggers inflammation for me. Best with selective use; temperature and timer controls are simple.</p>",
-            "author": "Bobby",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224127_310_75_e9cbb892-5677-430c-8bb0-7da30dffd830.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_yXgWEd": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>Nice neck support. The heat really helps relieving my muscle soreness, better effect than my other neck massager. I usually go with medium heat; the high heat can be a bit too strong on bare skin. Love the timer too so that I can totally relax without worrying about falling asleep with the heat on.</p>",
-            "author": "Liam",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/282745a6405aa5307e6e675ad0a4061f.jpg",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_4dXdMz": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "text": "<p>8 years of programming left me with neck tension that turned into arm pain and headaches. Nothing I tried helped — until QuestProps. It reversed years of strain in just 2 weeks. You’ll feel a difference day one, stick with it for two weeks for full results.</p>",
-            "author": "Martha S.",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/20260521224109_308_75_db166abe-3a52-4294-bb11-b2a61d4a323e.png",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_8Eexjc",
-        "testimonial_7TegmL",
-        "testimonial_yXgWEd",
-        "testimonial_4dXdMz"
-      ],
-      "disabled": true,
-      "name": "t:sections.testimonials-banner.name",
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/d2b0e4a440759a6658bfbc5fb21ecfd2.png",
-        "image_height": "900px",
-        "content_position": "md:items-center md:justify-center",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#ffffff",
-        "gradient_highlight": "",
-        "color_overlay": "#32312f",
-        "overlay_opacity": 18,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "video_with_text_UkPVhh": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_C9dXw4": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>&nbsp;Your neck affects your head</strong>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_byWnwH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p><p>Explore the research: <a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\">International Headache Society — ICHD-3</a></p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_Graxnb": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_C9dXw4",
-        "text_byWnwH",
-        "button_Graxnb"
-      ],
-      "disabled": true,
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video": "shopify://files/videos/f0aa1820ddde4edd93b8294b850838c5_cb.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "500px",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "center",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "center",
-        "color_text": "",
-        "color_background": "#e4dfd5",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": true,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "reveal_video_with_text_overlay_fnzpA6": {
-      "type": "reveal-video-with-text-overlay",
-      "blocks": {
-        "subheading_mLP9pA": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_xmEcwn": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Explore the research:</strong><em><strong> </strong></em><a href=\"https://ichd-3.org/11-headache-or-facial-pain-attributed-to-disorder-of-the-cranium-neck-eyes-ears-nose-sinuses-teeth-mouth-or-other-facial-or-cervical-structure/11-2-headache-attributed-to-disorder-of-the-neck/11-2-1-cervicogenic-headache/\"><em><strong>International Headache Society — ICHD-3</strong></em></a><em><strong>&nbsp;</strong></em>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "underline",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": true
-          }
-        },
-        "text_gK3APp": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Long hours at a desk. Endless scrolling. Hours behind the wheel. Everyday habits can leave your neck feeling tight, stiff, and ready for a break.</p><p>Some headaches are linked to disorders of the neck, including the cervical spine and surrounding soft tissues.</p><p><strong>That’s why we start with the neck.</strong></p>",
-            "text_font": "heading",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_mLP9pA",
-        "heading_xmEcwn",
-        "text_gK3APp"
-      ],
-      "disabled": true,
-      "name": "t:sections.reveal-video-with-text-overlay.name",
-      "settings": {
-        "video": "shopify://files/videos/11月1日.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "center",
-        "video_url_mobile": "",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#f4f1eb",
-        "overlay_opacity": 40,
-        "enable_parallax": false
       }
     },
     "video_with_text_KV9rPw": {
@@ -2253,17 +2439,18 @@
     "product_details_KWnQpF",
     "images_with_text_rxYQcr",
     "video_with_text_overlay_yMQVEf",
+    "logo_list_EaLbPb",
+    "shop_the_feed_6Cfpwk",
+    "video_with_text_pXncdW",
+    "video_with_text_RCdeDb",
+    "video_with_text_qcAKqQ",
+    "video_with_text_hUgtFx",
+    "video_with_text_TMbL4U",
     "quest_configure_ADy8iT",
     "portfolio_on_scroll_QKGPCn",
     "rich_text_bhDmRM",
     "lookbook_yc4K4M",
-    "shop_the_feed_6Cfpwk",
-    "rich_text_ULKVqP",
-    "logo_list_EaLbPb",
     "timeline_qHgKKT",
-    "testimonials_banner_mUptUN",
-    "video_with_text_UkPVhh",
-    "reveal_video_with_text_overlay_fnzpA6",
     "video_with_text_KV9rPw",
     "images_with_text_overlay_ye9DUM",
     "product_details_BeyWNM",
