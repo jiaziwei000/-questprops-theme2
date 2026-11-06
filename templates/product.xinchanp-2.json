@@ -785,7 +785,7 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/3f53024023752c07e6fb47e94f18dcdf.jpg",
-            "heading": "Massage Therapy Soothes Tissue Irritation",
+            "heading": "Reduce Inflammation With Massage Therapy",
             "text": "<p>As a panicked reaction to combat the damage caused by excessive tension in the neck, <span style=\"text-decoration:underline\">our immune system excessively produces inflammatory substances.</span></p><p>The Questprops Massager uses massage pads, which were proven in recent studies to <strong>reduce the release of pro-inflammatory substances </strong>and promote anti-inflammatory cytokines, thus creating an environment that is more conducive to <strong>nerve & tissue healing.</strong><em>Promotes cellular repair & regeneration, aiding in the recovery of damaged tissues & nerves</em></p>",
             "color_text": "#ffffff",
             "color_background": "#5b5957"
@@ -795,7 +795,7 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/89898.jpg",
-            "heading": "Warm Soothing Heat Therapy",
+            "heading": "Speed Up Healing With Heat Therapy",
             "text": "<p>With adjustable, gentle warmth,<br/>Questprops encourages better local circulation<br/>by relaxing blood vessels in your neck area,<br/>supporting easier flow within the tissue.<br/><br/>This improved flow helps bring oxygen and nutrients<br/>to your neck muscles,<br/>creating a comforting, loosened feeling<br/>after a long day of tension.</p><p><em>Heat therapy is a clinically proven, effectivemethod to alleviate muscle cramps & recoverfrom injuries.</em></p>",
             "color_text": "#ffffff",
             "color_background": "#bcb8af"
@@ -815,7 +815,7 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/fdfedfca21e9018fb619b079ea7be6af.jpg",
-            "heading": "Support Your Neck’s Natural Alignment",
+            "heading": "Restore Your Neck's Natural Curve to Ease Neck Pain",
             "text": "<p>Daily screen use shifts your head forward from its comfortable resting position. Your neck muscles keep compensating, stuck in that strained posture all day.</p><p>Sustained tightness can limit local circulation, making it hard for your neck to unwind on its own.</p><p>We built the Questprops Pillow around a calibrated <strong>26° angle</strong>.<br/>When you rest on it, your neck gets gentle, passive stretching.<br/>Pressure lifts away from strained soft tissue, tight muscles gradually let go, and you can feel that heavy neck tension fade.</p>",
             "color_text": "#ffffff",
             "color_background": "#5b5957"
@@ -832,12 +832,12 @@
       "settings": {
         "image_ratio": "adapt",
         "image_ratio_mobile": "square",
-        "heading": "Neck, Shoulder and Upper Back Pain&nbsp;",
+        "heading": "&nbsp;Ease <strong>Neck Pain </strong>at Home&nbsp;",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
-        "subheading": "Relieve Tension Headaches",
-        "description": "<p>Lying on the QUESTPROPS Pillow activates 4 proven muscle relaxation & recovery techniques.<br/>It triggers endorphin release to ease neck discomfort, and boosts blood flow to deliver oxygen and nutrients for faster tissue recovery.</p>",
+        "subheading": "",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
