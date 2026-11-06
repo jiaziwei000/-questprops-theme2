@@ -1423,7 +1423,7 @@
         "heading_RGeLWR": {
           "type": "heading",
           "settings": {
-            "heading": "Speed Up Healing With Heat Therapy&nbsp;",
+            "heading": "Speed Up Healing With <strong>Heat Therapy&nbsp;</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -1519,7 +1519,7 @@
         "heading_NqKqBX": {
           "type": "heading",
           "settings": {
-            "heading": "Reduce Inflammation With Massage Therapy&nbsp;",
+            "heading": "Reduce Inflammation With <strong>Massage Therapy&nbsp;</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
