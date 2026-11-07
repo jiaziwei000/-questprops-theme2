@@ -222,6 +222,11 @@
         "type": "shopify://apps/mori-scratch-card-popup/blocks/popup/019e1d61-0725-7ffa-8de9-7548f2731d08",
         "disabled": true,
         "settings": {}
+      },
+      "12909877774541730221": {
+        "type": "shopify://apps/hoppy-currency/blocks/convertor/4308bdc1-22d7-400e-86ce-023e443d3b35",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
