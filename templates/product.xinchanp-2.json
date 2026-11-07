@@ -562,7 +562,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "Shipping & Returns",
-            "content": "<p><strong>Free Shipping</strong><br/>All orders over $100 USD qualify for free shipping.</p><p><strong>Delivery Times</strong><br/>United States — 3–5 business days<br/>Canada — 5–7 business days<br/>United Kingdom — 5–7 business days<br/>Australia & New Zealand — 3–7business days<br/>Germany — 3–5 business days<br/>All other countries — 5–9 business days</p><p><strong>Returns</strong><br/>Easy, hassle-free returns. We stand behind our product with our satisfaction guarantee.</p>",
+            "content": "<p><strong>Free Shipping</strong><br/>All orders over $100 USD qualify for free shipping.</p><p><strong>Delivery Times</strong></p><p>New Zealand — 3–5business days<br/>United States — 3–7 business days<br/>Canada — 5–7 business days<br/>United Kingdom — 5–7 business days<br/>Australia & New Zealand — 3–7business days<br/>Germany — 3–5 business days<br/>All other countries — 5–9 business days</p><p><strong>Returns</strong><br/>Easy, hassle-free returns. We stand behind our product with our satisfaction guarantee.</p>",
             "metafields": "",
             "text_size": "text-base"
           }
