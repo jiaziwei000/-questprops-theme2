@@ -15,7 +15,7 @@
         "free_shipping": {
           "type": "free_shipping",
           "settings": {
-            "minimum_amount": "0"
+            "minimum_amount": "NZD:10"
           }
         },
         "subtotal": {
