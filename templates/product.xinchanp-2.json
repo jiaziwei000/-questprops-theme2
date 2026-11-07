@@ -189,6 +189,7 @@
         },
         "text_4JJPfk": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
