@@ -225,7 +225,7 @@
       },
       "12909877774541730221": {
         "type": "shopify://apps/hoppy-currency/blocks/convertor/4308bdc1-22d7-400e-86ce-023e443d3b35",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
