@@ -12,13 +12,6 @@
     "main": {
       "type": "main-cart",
       "blocks": {
-        "free_shipping": {
-          "type": "free_shipping",
-          "disabled": true,
-          "settings": {
-            "minimum_amount": "NZD:10"
-          }
-        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -37,7 +30,6 @@
         }
       },
       "block_order": [
-        "free_shipping",
         "subtotal",
         "cart_note",
         "buttons"
