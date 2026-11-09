@@ -13,36 +13,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "icon": "alert",
-            "text": "<strong>Free shipping within New Zealand</strong>",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "icon": "email",
-            "text": "New Zealand &nbsp;3–5Day Delivery&nbsp;",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "announcement-1",
-        "announcement-2"
-      ],
+      "disabled": true,
       "settings": {
         "show_social": true,
         "enable_language_selector": true,
