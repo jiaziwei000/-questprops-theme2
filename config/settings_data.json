@@ -208,11 +208,6 @@
         "disabled": false,
         "settings": {}
       },
-      "9241046253743163954": {
-        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
-        "disabled": false,
-        "settings": {}
-      },
       "12909877774541730221": {
         "type": "shopify://apps/hoppy-currency/blocks/convertor/4308bdc1-22d7-400e-86ce-023e443d3b35",
         "disabled": true,
@@ -225,6 +220,11 @@
       },
       "9604309306827082646": {
         "type": "shopify://apps/mori-scratch-card-popup/blocks/popup/019e1d61-0725-7ffa-8de9-7548f2731d08",
+        "disabled": true,
+        "settings": {}
+      },
+      "9241046253743163954": {
+        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
         "disabled": true,
         "settings": {}
       }

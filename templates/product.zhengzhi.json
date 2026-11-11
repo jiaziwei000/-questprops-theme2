@@ -10,6 +10,12 @@
 {
   "order": [
     "main-product",
+    "video_with_text_bXitEQ",
+    "video_with_text_tWhQd3",
+    "video_with_text_AXMGdq",
+    "scrolling_text_ngCPpW",
+    "product_details_GDgtNX",
+    "blocks_wtfcBq",
     "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_DW6jBE",
@@ -244,6 +250,420 @@
         "rounded": false
       }
     },
+    "video_with_text_bXitEQ": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_wFgwKz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wear Your Story!",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_nccarV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Works on Any Fabric - Fix and<br/>refresh your favorite jumper, jeans,kitchen towels, or even your couch<br/>cover-all with a single handy tool.cover Any Damage - With theWooden Loom, you can craft custompatches up to 2 inches (5 cm) wideand as long as you need. Ideal forhiding tears, holes, or worn spots onclothes you love.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_RiFfQg": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_wFgwKz",
+        "text_nccarV",
+        "button_RiFfQg"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月12日.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_tWhQd3": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_mpyEGW": {
+          "type": "heading",
+          "settings": {
+            "heading": "BeginnerFriendly",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_8qJHtY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>V Perfect for Beginners - Includesa simple step-by-step guide plus5 video lessons to help youmaster every stage.<br/>V Make It Your Own - Customizeyour repairs and give each patcha personal touch. The kit alsocomes with 10 original patterntutorials to inspire your creations.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_HYi9Tr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mpyEGW",
+        "text_8qJHtY",
+        "button_HYi9Tr"
+      ],
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video": "shopify://files/videos/11月12日(1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "500px",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_AXMGdq": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_GMnrbJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "HandmadeQuality",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text_EznBqm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Ropov loom is meticulouslyhandcrafted from carefullyselected premium hardwood andindividually finished by hand tomeet our highest qualitystandards. No two pieces areexactly alike, making every loomtruly one of a kind. Each loom isindividually marked with its ownunique serial number as a symbolof authenticity, craftsmanship,and lasting quality.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_tGJdCi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_GMnrbJ",
+        "text_EznBqm",
+        "button_tGJdCi"
+      ],
+      "disabled": true,
+      "name": "t:sections.video-with-text.name",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "scrolling_text_ngCPpW": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_GCh9Bm": {
+          "type": "text",
+          "settings": {
+            "text": "<em>risk-free 30 day money back guarantee</em>",
+            "text_size": 108,
+            "text_font": "body",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_GCh9Bm"
+      ],
+      "name": "t:sections.scrolling-text.name",
+      "settings": {
+        "direction": "left",
+        "speed": 26,
+        "grid_horizontal": 135,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "product_details_GDgtNX": {
+      "type": "product-details",
+      "blocks": {
+        "description_9mYDg3": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "split_mode": true,
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "What's Included in the Kit?",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_cxgNat": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "How Big Patches Can You Make?",
+            "content": "<p>You can create patches up to2 x 2 inches (5.2 x 5.2 cm) whenusing all 14 top hooks. Using fewer hooks allows you to makesmaller patches as needed.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_EjYkJR": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "What's Included in the Kit?",
+            "content": "<p>The kit includes our wooden PatchMaker made of stainless steeland beech hardwood a latch hook,a sharp needle and printedinstructions with15 pattern designs and access to 5 videotutorials.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_w8LFY4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "How to Access Video Tutorials?",
+            "content": "<p>On the last page of the instruction booklet,you'll find a QR code.Scan it with your phone or type the link into your browser toaccess the video tutorials.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab_QahVHh": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "How Does It Work?",
+            "content": "<p>The Questprops holds your fabric in place while you weave threadback and forth to create a strong, knitted patch. Simply stretchthe fabric over the disc and start weaving with the help of the 14hooks at the top. By going over and under each vertical thread,you create an interlocking structure that holds the patch securely<br/>in place.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "description_9mYDg3",
+        "collapsible_tab_cxgNat",
+        "collapsible_tab_EjYkJR",
+        "collapsible_tab_w8LFY4",
+        "collapsible_tab_QahVHh"
+      ],
+      "name": "t:sections.product-details.name",
+      "settings": {
+        "style": "with-border",
+        "open_first_row": false,
+        "specifications_heading": "Included in the Box",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "blocks_wtfcBq": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_549c6cb_znk6By": {
+          "type": "ai_gen_block_549c6cb",
+          "settings": {
+            "button_label": "立即获取 • 限时优惠",
+            "button_url": "",
+            "target_anchor": "shopify-section-template--main",
+            "show_arrow": true,
+            "info_heading": "QuestProps™ 祛浮肿紧致仪",
+            "info_subtext": "今日立省 $30 • 全球免邮",
+            "device_display": "mobile",
+            "stack_on_mobile": false,
+            "scroll_threshold": 100,
+            "desktop_width_percent": 100,
+            "bar_bg_color": "#ffffff",
+            "bar_border_color": "#e5e5e5",
+            "button_bg_color": "#171717",
+            "button_text_color": "#ffffff",
+            "text_color": "#171717",
+            "subtext_color": "#666666",
+            "button_border_radius": 24,
+            "button_font_size": 15,
+            "bar_padding": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_549c6cb_znk6By"
+      ],
+      "name": "Sticky jump button",
+      "settings": {}
+    },
     "testimonials_banner_XPL8te": {
       "type": "testimonials-banner",
       "blocks": {
@@ -399,6 +819,7 @@
         "nav_item_DCjaa8",
         "nav_item_9feQNQ"
       ],
+      "disabled": true,
       "name": "t:sections.scroll-spy.name",
       "settings": {
         "show_highlight": true,
@@ -592,6 +1013,7 @@
         "image-3",
         "image-4"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "title-md",
@@ -858,6 +1280,7 @@
         "question_T7RUaN",
         "contact"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-background",
         "heading": "Frequently Asked Questions",
@@ -936,6 +1359,7 @@
         "text_diaEbf",
         "button_QPHEmb"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.name",
       "settings": {
         "image": "shopify://shop_images/304275f82482ad0f6f55e4a21a5367ee_fecae574-762b-4d31-a30f-fff7cde2e33e.png",
@@ -971,6 +1395,7 @@
       "blocks": {
         "judge_me_reviews_review_widget_eR7fJE": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
