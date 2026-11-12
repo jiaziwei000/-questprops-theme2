@@ -309,6 +309,7 @@
         "layout": "video_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
@@ -389,6 +390,7 @@
         "layout": "video_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
@@ -469,6 +471,7 @@
         "layout": "video_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
@@ -634,6 +637,7 @@
       "blocks": {
         "ai_gen_block_549c6cb_znk6By": {
           "type": "ai_gen_block_549c6cb",
+          "disabled": true,
           "settings": {
             "button_label": "立即获取 • 限时优惠",
             "button_url": "",
