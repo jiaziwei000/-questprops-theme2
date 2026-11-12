@@ -213,16 +213,6 @@
             "text_size": "text-sm"
           }
         },
-        "text-3": {
-          "type": "text",
-          "settings": {
-            "icon": "award",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "text": "2-Year Warranty",
-            "text_size": "text-sm"
-          }
-        },
         "text-4": {
           "type": "text",
           "settings": {
@@ -269,7 +259,6 @@
         "liquid_hA8ByX",
         "text-1",
         "text-2",
-        "text-3",
         "text-4",
         "pickup_availability",
         "complementary"
