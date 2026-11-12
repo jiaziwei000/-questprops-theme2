@@ -43,7 +43,7 @@
       ],
       "settings": {
         "heading_size": "title-xl tracking-heading",
-        "heading_alignment": "md:items-end",
+        "heading_alignment": "md:items-center md:flex-col",
         "heading_tag": "h1",
         "show_vendor": false,
         "show_payment_icons": true,
