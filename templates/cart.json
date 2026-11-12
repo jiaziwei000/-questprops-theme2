@@ -12,6 +12,12 @@
     "main": {
       "type": "main-cart",
       "blocks": {
+        "free_shipping_VMyGAh": {
+          "type": "free_shipping",
+          "settings": {
+            "minimum_amount": "50"
+          }
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -30,6 +36,7 @@
         }
       },
       "block_order": [
+        "free_shipping_VMyGAh",
         "subtotal",
         "cart_note",
         "buttons"
