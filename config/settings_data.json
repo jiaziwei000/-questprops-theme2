@@ -223,11 +223,6 @@
         "disabled": true,
         "settings": {}
       },
-      "9241046253743163954": {
-        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
-        "disabled": false,
-        "settings": {}
-      },
       "7313114205116804392": {
         "type": "shopify://apps/propel-replays/blocks/app-embed/64fbaaa3-2d4a-49f3-aba7-86e92e44999f",
         "disabled": true,
@@ -235,6 +230,11 @@
       },
       "1143683040400472741": {
         "type": "shopify://apps/cwilltrustoo-reviews/blocks/trustoo-review-switch/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+        "disabled": true,
+        "settings": {}
+      },
+      "9241046253743163954": {
+        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
         "disabled": true,
         "settings": {}
       }
