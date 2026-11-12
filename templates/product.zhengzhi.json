@@ -70,7 +70,13 @@
             "title_size_mobile": "product-title-md",
             "title_tag": "h1",
             "show_price": true,
-            "show_rating": false
+            "show_rating": true
+          }
+        },
+        "liquid_EEDQKQ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.rating-box{display:flex;align-items:center;gap:6px;font-size:16px;margin:8px 0;flex-wrap:wrap;}\n.star-fill{color:#f5a623;}\n.star-empty{color:#ddd;}\n.rating-num{font-weight:600;}\n.review-count{color:#666;}\n</style>\n<div class=\"rating-box\">\n  <span class=\"rating-num\">4.7</span>\n  <span>\n    <span class=\"star-fill\">★★★★</span>\n    <span class=\"star-empty\">★</span>\n  </span>\n  <span class=\"review-count\">(349 reviews)</span>\n</div>"
           }
         },
         "text_AaxmhT": {
@@ -246,6 +252,7 @@
         "sticky_buy_button",
         "vendor",
         "title",
+        "liquid_EEDQKQ",
         "text_AaxmhT",
         "text_fyPBMg",
         "text_QC3yh6",
