@@ -243,7 +243,7 @@
         "disabled": false,
         "settings": {
           "storefrontAccessToken": "",
-          "scriptInitMode": "immediate"
+          "scriptInitMode": "onload"
         }
       }
     }
