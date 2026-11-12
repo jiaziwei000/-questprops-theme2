@@ -42,7 +42,7 @@
         "show_navigation": false,
         "direction": "left",
         "speed": 25,
-        "color_text": "#d0cec8",
+        "color_text": "#FFFEFB",
         "color_background": "#555450",
         "gradient_background": "",
         "color_highlight": "#f5f5f5",
