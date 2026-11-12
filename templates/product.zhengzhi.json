@@ -16,6 +16,7 @@
     "scrolling_text_ngCPpW",
     "product_details_GDgtNX",
     "custom_liquid_yfnqNB",
+    "multicolumn_with_icons_YWkz8E",
     "blocks_wtfcBq",
     "testimonials_banner_XPL8te",
     "scrolling-text",
@@ -690,6 +691,106 @@
         "padding_bottom": 72,
         "divider": false,
         "narrow": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_with_icons_YWkz8E": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_L4CQ8J": {
+          "type": "column",
+          "settings": {
+            "icon": "support",
+            "custom_icon": "",
+            "heading": "&nbsp;24/7 Customer Support&nbsp;",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_4MnXwX": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "",
+            "heading": "&nbsp;Safe & Secure Payments&nbsp;",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_kJEEwb": {
+          "type": "column",
+          "settings": {
+            "icon": "creadit_card",
+            "custom_icon": "",
+            "heading": "100% Satisfaction Guaranteed&nbsp;",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_hQkMeM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "bag",
+            "custom_icon": "",
+            "heading": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_r6FWg9": {
+          "type": "column",
+          "settings": {
+            "icon": "calendar",
+            "custom_icon": "",
+            "heading": "Hassle-Free Returns&nbsp;",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_L4CQ8J",
+        "column_4MnXwX",
+        "column_kJEEwb",
+        "column_hQkMeM",
+        "column_r6FWg9"
+      ],
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
         "rounded": false
       }
     },
