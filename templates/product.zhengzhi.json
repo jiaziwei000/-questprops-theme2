@@ -12,13 +12,11 @@
     "main-product",
     "video_with_text_bXitEQ",
     "video_with_text_tWhQd3",
-    "video_with_text_AXMGdq",
     "scrolling_text_ngCPpW",
     "product_details_GDgtNX",
     "custom_liquid_yfnqNB",
     "multicolumn_with_icons_YWkz8E",
     "blocks_wtfcBq",
-    "testimonials_banner_XPL8te",
     "scrolling-text",
     "scroll_spy_DW6jBE",
     "video-hero",
@@ -126,28 +124,6 @@
             "lb-product-id": ""
           }
         },
-        "dealeasy_mm_bundle_builder_xJJAg8": {
-          "type": "shopify://apps/dealeasy/blocks/mm-bundle-builder/e47a8634-0496-480d-9e46-6f7fafd34b30",
-          "disabled": true,
-          "settings": {
-            "lb-product-handle": "",
-            "lb-product-id": ""
-          }
-        },
-        "product_bundle_fDmfkT": {
-          "type": "product_bundle",
-          "settings": {
-            "opened": true,
-            "clickable": false,
-            "variant_selection": false,
-            "icon": "none",
-            "iwidth": "custom",
-            "icon_width": 20,
-            "heading": "Popular upgrades",
-            "products": [],
-            "metafield": ""
-          }
-        },
         "rating_cJRMiA": {
           "type": "rating",
           "settings": {}
@@ -207,6 +183,34 @@
             "enable_back_in_stock": true,
             "show_back_in_stock_name": true,
             "show_back_in_stock_phone": true
+          }
+        },
+        "product_bundle_fDmfkT": {
+          "type": "product_bundle",
+          "name": "Pairs well with",
+          "settings": {
+            "opened": true,
+            "clickable": false,
+            "variant_selection": false,
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 118,
+            "heading": "Pairs well with",
+            "products": [
+              "mending-threads"
+            ],
+            "metafield": ""
+          }
+        },
+        "product_variations_WYzhRH": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
           }
         },
         "dealeasy_mm_related_bundles_NmFKFE": {
@@ -278,8 +282,6 @@
         "text_fyPBMg",
         "text_QC3yh6",
         "dealeasy_vd_cards_VXqQgQ",
-        "dealeasy_mm_bundle_builder_xJJAg8",
-        "product_bundle_fDmfkT",
         "rating_cJRMiA",
         "description",
         "countdown",
@@ -288,6 +290,8 @@
         "selleasy_lb_upsell_widget_ba_AADTfX",
         "selleasy_lb_upsell_widget_pac_wjA6hc",
         "buy_buttons",
+        "product_bundle_fDmfkT",
+        "product_variations_WYzhRH",
         "dealeasy_mm_related_bundles_NmFKFE",
         "liquid_hA8ByX",
         "text-1",
@@ -452,87 +456,6 @@
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "image_height": "500px",
-        "video_width": "medium",
-        "layout": "video_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "video_with_text_AXMGdq": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_GMnrbJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "HandmadeQuality",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "highlighted_reveal": false
-          }
-        },
-        "text_EznBqm": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every Ropov loom is meticulouslyhandcrafted from carefullyselected premium hardwood andindividually finished by hand tomeet our highest qualitystandards. No two pieces areexactly alike, making every loomtruly one of a kind. Each loom isindividually marked with its ownunique serial number as a symbolof authenticity, craftsmanship,and lasting quality.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_tGJdCi": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_GMnrbJ",
-        "text_EznBqm",
-        "button_tGJdCi"
-      ],
-      "disabled": true,
-      "name": "t:sections.video-with-text.name",
-      "settings": {
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "image_height": "adapt",
         "video_width": "medium",
         "layout": "video_first",
         "text_alignment": "left",
@@ -851,82 +774,6 @@
       ],
       "name": "Sticky jump button",
       "settings": {}
-    },
-    "testimonials_banner_XPL8te": {
-      "type": "testimonials-banner",
-      "blocks": {
-        "testimonial_rRhhd7": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I've been using this after work, and it's become one of my favorite parts of my evening routine. The warmth feels really soothing, and I like that it only takes about 10 minutes.</p>",
-            "author": "Sarah M.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_j7UjV7": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I sit at a desk most of the day, so my neck usually feels tight by the evening. I started using this while watching TV, and it's easy enough that I actually stick with it.</p>",
-            "author": "Michael R.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_AwdbXj": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I wasn't sure what to expect from the EMS at first, but it was surprisingly comfortable. I tried a few different settings and found one that works really well for me.</p>",
-            "author": "Linda P.",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "image_height": 30,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_rRhhd7",
-        "testimonial_j7UjV7",
-        "testimonial_AwdbXj"
-      ],
-      "disabled": true,
-      "name": "t:sections.testimonials-banner.name",
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/20260521224119_309_75_8d2b099c-731f-47fc-abe6-277c0c9abe69.png",
-        "image_height": "650px",
-        "content_position": "md:items-center md:justify-center",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 60,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
     },
     "scrolling-text": {
       "type": "scrolling-text",
