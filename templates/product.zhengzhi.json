@@ -209,6 +209,10 @@
             "show_back_in_stock_phone": true
           }
         },
+        "dealeasy_mm_related_bundles_NmFKFE": {
+          "type": "shopify://apps/dealeasy/blocks/mm-related-bundles/e47a8634-0496-480d-9e46-6f7fafd34b30",
+          "settings": {}
+        },
         "liquid_hA8ByX": {
           "type": "liquid",
           "disabled": true,
@@ -238,6 +242,7 @@
         },
         "text-4": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "box",
             "iwidth": "custom",
@@ -283,6 +288,7 @@
         "selleasy_lb_upsell_widget_ba_AADTfX",
         "selleasy_lb_upsell_widget_pac_wjA6hc",
         "buy_buttons",
+        "dealeasy_mm_related_bundles_NmFKFE",
         "liquid_hA8ByX",
         "text-1",
         "text-2",
