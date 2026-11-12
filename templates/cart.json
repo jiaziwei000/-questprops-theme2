@@ -12,10 +12,6 @@
     "main": {
       "type": "main-cart",
       "blocks": {
-        "selleasy_lb_upsell_widget_icul_LhMUDr": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-icul/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
-        },
         "free_shipping_VMyGAh": {
           "type": "free_shipping",
           "settings": {
@@ -37,19 +33,13 @@
           "settings": {
             "show_accelerated_buttons": true
           }
-        },
-        "selleasy_lb_upsell_widget_icuc_jpxPin": {
-          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-icuc/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {}
         }
       },
       "block_order": [
-        "selleasy_lb_upsell_widget_icul_LhMUDr",
         "free_shipping_VMyGAh",
         "subtotal",
         "cart_note",
-        "buttons",
-        "selleasy_lb_upsell_widget_icuc_jpxPin"
+        "buttons"
       ],
       "settings": {
         "heading_size": "title-xl tracking-heading",

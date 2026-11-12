@@ -193,7 +193,7 @@
             "clickable": false,
             "variant_selection": false,
             "icon": "none",
-            "iwidth": "custom",
+            "iwidth": "fit",
             "icon_width": 118,
             "heading": "Pairs well with",
             "products": [
