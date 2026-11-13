@@ -23,7 +23,7 @@
         "show_free_shipping_bar": true,
         "free_shipping_minimum_amount": "50",
         "cart_recommendations_enabled": true,
-        "cart_recommendations_heading": "You may also like",
+        "cart_recommendations_heading": "Often bought together",
         "cart_recommendations_limit": 5,
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
@@ -124,6 +124,7 @@
         "media",
         "floating"
       ],
+      "disabled": true,
       "settings": {
         "mode": "enabled",
         "only_homepage": true,
@@ -202,6 +203,7 @@
         "spacing",
         "buttons"
       ],
+      "disabled": true,
       "settings": {
         "mode": "enabled",
         "expiry": 30,
@@ -276,6 +278,7 @@
         "spacing",
         "buttons"
       ],
+      "disabled": true,
       "settings": {
         "mode": "enabled",
         "delay": 5,
