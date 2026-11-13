@@ -69,7 +69,7 @@
             "title_size": "product-title-md",
             "title_size_mobile": "product-title-md",
             "title_tag": "h1",
-            "show_price": true,
+            "show_price": false,
             "show_rating": false
           }
         },
@@ -81,6 +81,7 @@
         },
         "badges_tnb6kp": {
           "type": "badges",
+          "disabled": true,
           "settings": {
             "show_sold_out": false,
             "show_save_amount": true,
@@ -181,8 +182,8 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
             "enable_back_in_stock": true,
-            "show_back_in_stock_name": true,
-            "show_back_in_stock_phone": true
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
           }
         },
         "product_bundle_fDmfkT": {
