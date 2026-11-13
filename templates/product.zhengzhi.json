@@ -176,8 +176,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
-            "show_price": true,
+            "show_quantity_selector": false,
+            "show_price": false,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
             "enable_back_in_stock": true,
@@ -216,13 +216,6 @@
         "dealeasy_mm_related_bundles_NmFKFE": {
           "type": "shopify://apps/dealeasy/blocks/mm-related-bundles/e47a8634-0496-480d-9e46-6f7fafd34b30",
           "settings": {}
-        },
-        "liquid_hA8ByX": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "<div class=\"essential-banners-block\" id=\"fc56aa49-aa33-48f3-b7de-53e6aaf5243f\"></div>"
-          }
         },
         "text-1": {
           "type": "text",
@@ -293,7 +286,6 @@
         "product_bundle_fDmfkT",
         "product_variations_WYzhRH",
         "dealeasy_mm_related_bundles_NmFKFE",
-        "liquid_hA8ByX",
         "text-1",
         "text-2",
         "text-4",
