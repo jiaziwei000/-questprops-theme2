@@ -190,7 +190,7 @@
           "name": "Pairs well with",
           "settings": {
             "opened": true,
-            "clickable": false,
+            "clickable": true,
             "variant_selection": false,
             "icon": "none",
             "iwidth": "fit",
