@@ -20,14 +20,16 @@
         "add_discount_code": true,
         "show_view_cart_button": false,
         "show_checkout_button": true,
-        "show_free_shipping_bar": false,
-        "free_shipping_minimum_amount": "1000",
+        "show_free_shipping_bar": true,
+        "free_shipping_minimum_amount": "50",
         "cart_recommendations_enabled": true,
         "cart_recommendations_heading": "You may also like",
         "cart_recommendations_limit": 5,
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
-        "cart_recommendations_products": [],
+        "cart_recommendations_products": [
+          "mending-threads"
+        ],
         "empty_cart_message": "<p>Not sure where to start?<br/>Try these collections:</p>",
         "empty_cart_collections": [],
         "recent_products_enabled": true,
@@ -122,7 +124,6 @@
         "media",
         "floating"
       ],
-      "disabled": true,
       "settings": {
         "mode": "enabled",
         "only_homepage": true,
@@ -201,7 +202,6 @@
         "spacing",
         "buttons"
       ],
-      "disabled": true,
       "settings": {
         "mode": "enabled",
         "expiry": 30,
@@ -276,7 +276,6 @@
         "spacing",
         "buttons"
       ],
-      "disabled": true,
       "settings": {
         "mode": "enabled",
         "delay": 5,
@@ -346,7 +345,6 @@
         "mobile-dock-5",
         "mobile-dock-6"
       ],
-      "disabled": true,
       "settings": {
         "color_text": "#000000",
         "color_background": "#e8e8e4",
