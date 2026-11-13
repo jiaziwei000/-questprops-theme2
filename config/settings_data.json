@@ -234,11 +234,6 @@
         "disabled": true,
         "settings": {}
       },
-      "9241046253743163954": {
-        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
-        "disabled": true,
-        "settings": {}
-      },
       "18228966181090706294": {
         "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,
@@ -256,6 +251,11 @@
           "bundle_cart_validation": true,
           "custom_script_and_style": "<script></script>\n<style></style>"
         }
+      },
+      "9241046253743163954": {
+        "type": "shopify://apps/sticky-add-to-cart-bar/blocks/app-embed/e98261d9-7a53-483b-8aaa-054afd5be639",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
