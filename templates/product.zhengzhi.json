@@ -186,7 +186,6 @@
         },
         "complementary_Gt8Mjf": {
           "type": "complementary",
-          "disabled": true,
           "settings": {
             "heading": "Pairs well with{{ product.title }}",
             "product_limit": 10,
