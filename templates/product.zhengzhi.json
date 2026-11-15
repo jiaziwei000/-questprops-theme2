@@ -92,7 +92,7 @@
         "text_AaxmhT": {
           "type": "text",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark",
             "iwidth": "custom",
             "icon_width": 24,
             "text": "FREE Step-by-Step Mending Guide",
@@ -102,7 +102,7 @@
         "text_fyPBMg": {
           "type": "text",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark",
             "iwidth": "custom",
             "icon_width": 24,
             "text": "FREE 15 Creative Mending Patterns",
@@ -112,10 +112,10 @@
         "text_QC3yh6": {
           "type": "text",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark",
             "iwidth": "custom",
             "icon_width": 24,
-            "text": "FREE 5 Beginner-Friendly Video Tutorials",
+            "text": "FREE 5 Easy Video Tutorials&nbsp;",
             "text_size": "text-base"
           }
         },
