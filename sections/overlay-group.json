@@ -21,7 +21,7 @@
         "show_view_cart_button": true,
         "show_checkout_button": true,
         "show_free_shipping_bar": true,
-        "free_shipping_minimum_amount": "50",
+        "free_shipping_minimum_amount": "39.99",
         "cart_recommendations_enabled": true,
         "cart_recommendations_heading": "Often bought together",
         "cart_recommendations_limit": 5,
