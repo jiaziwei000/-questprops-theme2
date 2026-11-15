@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "Free Shipping on Orders over $50",
+            "text": "FREE UK SHIPPING ON ORDERS OVER £39.99&nbsp;",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -163,7 +163,7 @@
         "enable_country_selector": true,
         "transparent_color_text": "#b1ab91",
         "color_text": "#32312f",
-        "color_background": "#FFFFFF",
+        "color_background": "#ffffff",
         "color_localization": "",
         "padding_top": 8,
         "padding_bottom": 8,
