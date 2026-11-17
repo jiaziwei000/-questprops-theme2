@@ -62,7 +62,7 @@
         "gradient_highlight": "",
         "hide_homepage": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     },
     "header": {
