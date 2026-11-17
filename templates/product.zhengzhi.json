@@ -281,9 +281,9 @@
         "mobile_thumbnail": true,
         "padding_top": 24,
         "padding_bottom": 0,
-        "divider": false,
+        "divider": true,
         "full_width": true,
-        "rounded": false
+        "rounded": true
       }
     },
     "video_with_text_bXitEQ": {
