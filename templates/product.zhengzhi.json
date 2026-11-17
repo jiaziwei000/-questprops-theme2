@@ -77,13 +77,13 @@
         "price_dLBCHt": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": true
+            "show_taxes_notice": false
           }
         },
         "liquid_EEDQKQ": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n.rating-box{display:flex;align-items:center;gap:6px;font-size:16px;margin:8px 0;flex-wrap:wrap;}\n.star-fill{color:#f5a623;}\n.star-empty{color:#ddd;}\n.rating-num{font-weight:600;}\n.review-count{color:#666;}\n</style>\n<div class=\"rating-box\">\n  <span class=\"rating-num\">4.7</span>\n  <span>\n    <span class=\"star-fill\">★★★★</span>\n    <span class=\"star-empty\">★</span>\n  </span>\n  <span class=\"review-count\">(349 reviews)</span>\n</div>"
+            "liquid": "<style>\n.rating-block{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:5px;\n  font-family:inherit;\n  flex-wrap:wrap;\n}\n.rating-star-box{\n  width: clamp(18px, 2.5vw, 30px);\n  height: clamp(18px, 2.5vw, 30px);\n  background:#00b370;\n  border-radius:4px;\n  display:grid;\n  place-items:center;\n  color:#fff;\n  font-size: clamp(11px, 2vw, 18px);\n  font-weight:bold;\n}\n.rating-text{\n  font-size: clamp(13px, 2.8vw, 20px);\n  color:#333;\n  font-weight:500;\n  margin-left:6px;\n}\n.rating-text span{\n  text-decoration:underline;\n  text-underline-offset:3px;\n}\n</style>\n\n<div class=\"rating-block\">\n  <div class=\"rating-star-box\">★</div>\n  <div class=\"rating-star-box\">★</div>\n  <div class=\"rating-star-box\">★</div>\n  <div class=\"rating-star-box\">★</div>\n  <div class=\"rating-star-box\">★</div>\n  <div class=\"rating-text\">4.8 <span>11,370 REVIEWS</span></div>\n</div>"
           }
         },
         "badges_tnb6kp": {
