@@ -14,6 +14,18 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_gczqw7": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "<strong>30-day returns: love it or your money back</strong>&nbsp;",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "announcement_iWFKMM": {
           "type": "announcement",
           "settings": {
@@ -28,6 +40,7 @@
         }
       },
       "block_order": [
+        "announcement_gczqw7",
         "announcement_iWFKMM"
       ],
       "settings": {
@@ -36,12 +49,12 @@
         "enable_country_selector": true,
         "invert_icons_selectors": true,
         "announcement_position": "center",
-        "announcement_layout": "carousel",
-        "autoplay": false,
+        "announcement_layout": "marquee",
+        "autoplay": true,
         "autoplay_speed": 5,
-        "show_navigation": false,
+        "show_navigation": true,
         "direction": "left",
-        "speed": 25,
+        "speed": 26,
         "color_text": "#fffefb",
         "color_background": "#555450",
         "gradient_background": "",
