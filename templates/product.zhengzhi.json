@@ -10,6 +10,7 @@
 {
   "order": [
     "main-product",
+    "image_comparison_9PcMGP",
     "video_with_text_bXitEQ",
     "video_with_text_tWhQd3",
     "scrolling_text_ngCPpW",
@@ -284,6 +285,67 @@
         "divider": true,
         "full_width": true,
         "rounded": true
+      }
+    },
+    "image_comparison_9PcMGP": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_yUDypg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/00165b722835a9f02724737d3a7e859b.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        },
+        "image_knNJRq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ed4962f1965e99d9600c9398c9345008.jpg",
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_yUDypg",
+        "image_knNJRq"
+      ],
+      "name": "t:sections.image-comparison.name",
+      "settings": {
+        "layout": "horizontal",
+        "image_height": "400px",
+        "image_height_mobile": "200px",
+        "heading": "Before & after",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "From a hole to something beautiful",
+        "description": "<p>A worn spot doesn't have to be hidden. Make the repair part of the garment and create something truly personal.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "video_with_text_bXitEQ": {
