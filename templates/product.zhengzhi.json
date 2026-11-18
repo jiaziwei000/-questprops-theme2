@@ -176,6 +176,7 @@
         },
         "paypal_payments_studio_paypal_product_button_JzDUXG": {
           "type": "shopify://apps/paypal-payments-studio/blocks/paypal-product-button/019df789-f519-7bce-9967-1ff928443aa9",
+          "disabled": true,
           "settings": {
             "hide_button": false,
             "button_color": "default",
