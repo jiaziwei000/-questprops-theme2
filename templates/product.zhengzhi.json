@@ -174,10 +174,30 @@
             "color_scheme": "accent-1"
           }
         },
+        "paypal_payments_studio_paypal_product_button_JzDUXG": {
+          "type": "shopify://apps/paypal-payments-studio/blocks/paypal-product-button/019df789-f519-7bce-9967-1ff928443aa9",
+          "settings": {
+            "hide_button": false,
+            "button_color": "default",
+            "button_shape": "default",
+            "font_size": 14,
+            "letter_spacing": 0,
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
         "selleasy_lb_upsell_widget_pac_wjA6hc": {
           "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-pac/790c1a03-a71f-4bc1-9869-00dad526d3c2",
           "disabled": true,
           "settings": {}
+        },
+        "paypal_payments_studio_paypal_messaging_iA3rCp": {
+          "type": "shopify://apps/paypal-payments-studio/blocks/paypal-messaging/019df789-f519-7bce-9967-1ff928443aa9",
+          "disabled": true,
+          "settings": {
+            "font_size": 14,
+            "letter_spacing": 0
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -259,7 +279,9 @@
         "countdown",
         "variant_picker",
         "inventory",
+        "paypal_payments_studio_paypal_product_button_JzDUXG",
         "selleasy_lb_upsell_widget_pac_wjA6hc",
+        "paypal_payments_studio_paypal_messaging_iA3rCp",
         "buy_buttons",
         "complementary_Gt8Mjf",
         "product_bundle_6PJyBf",

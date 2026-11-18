@@ -56,6 +56,38 @@
         "rounded": false
       }
     },
+    "1795033734bc01d928": {
+      "type": "apps",
+      "blocks": {
+        "paypal_payments_studio_paypal_cart_button_J8cKRH": {
+          "type": "shopify://apps/paypal-payments-studio/blocks/paypal-cart-button/019df789-f519-7bce-9967-1ff928443aa9",
+          "settings": {
+            "button_color": "default",
+            "button_shape": "default",
+            "font_size": 14,
+            "letter_spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "paypal_payments_studio_paypal_cart_button_J8cKRH"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -91,6 +123,7 @@
   },
   "order": [
     "main",
+    "1795033734bc01d928",
     "recently-viewed"
   ]
 }
